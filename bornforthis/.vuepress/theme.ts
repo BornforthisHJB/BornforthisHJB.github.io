@@ -76,6 +76,10 @@ export default hopeTheme({
   },
 
   plugins: {
+    search: {
+      
+    },
+
     blog: {
       autoExcerpt: true,
     },
