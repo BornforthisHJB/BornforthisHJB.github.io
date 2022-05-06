@@ -3,7 +3,7 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default hopeTheme({
-  hostname: "https://dev.bornforthis.cn/",
+  hostname: "https://www.bornforthis.cn/",
 
   author: {
     name: "AndersonHJB",
@@ -35,6 +35,7 @@ export default hopeTheme({
     avatar: "/aiyc.jpg",
     description: "一个思考者 ",
     intro: "/intro.md",
+    articlePerPage: 6,
     medias: {
       // Baidu: "https://example.com",
       // Bitbucket: "https://example.com",
