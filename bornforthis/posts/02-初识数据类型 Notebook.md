@@ -14,6 +14,8 @@ tag:
 
 # 02-初识数据类型 Notebook
 
+![img](02-初识数据类型 Notebook.assets/blog202205061310294.png)
+
 ![img](https://bornforthis.cn/img//blog202205061310294.png)
 
 ## 1. 数字型【int、float】
