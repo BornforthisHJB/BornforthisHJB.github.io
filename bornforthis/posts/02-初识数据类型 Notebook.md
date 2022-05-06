@@ -1,3 +1,17 @@
+---
+icon: edit
+title: 02-初识数据类型 Notebook
+date: 2022-01-09
+category:
+  - CategoryA
+  - CategoryB
+tag:
+  - tag A
+  - tag B
+---
+
+
+
 # 02-初识数据类型 Notebook
 
 ![img](https://gitee.com/huangjiabaoaiyc/image/raw/master/202205061247195.png)
