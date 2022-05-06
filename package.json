@@ -1,0 +1,17 @@
+{
+  "name": "bornforthis",
+  "version": "2.0.0",
+  "description": "AI悦创,Python,编程一对一,C++,Java,AI,人工智能,黄家宝",
+  "license": "MIT",
+  "scripts": {
+    "docs:build": "vuepress build bornforthis",
+    "docs:clean-dev": "vuepress dev bornforthis --clean-cache",
+    "docs:dev": "vuepress dev bornforthis"
+  },
+  "devDependencies": {
+    "@vuepress/client": "^2.0.0-beta.43",
+    "vue": "^3.2.31",
+    "vuepress": "^2.0.0-beta.43",
+    "vuepress-theme-hope": "^2.0.0-beta.51"
+  }
+}
