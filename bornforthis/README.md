@@ -26,7 +26,7 @@ projects:
   - icon: article
     name: 编程私教课程
     desc: 编程一对一教学，包教包会！
-    link: https://你的文章链接
+    link: onepython/
 
   - icon: friend
     name: 伙伴名称
