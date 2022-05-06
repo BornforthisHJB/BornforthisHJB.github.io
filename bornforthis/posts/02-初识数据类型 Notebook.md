@@ -14,7 +14,7 @@ tag:
 
 # 02-初识数据类型 Notebook
 
-![img](https://gitee.com/huangjiabaoaiyc/image/raw/master/202205061247195.png)
+![img](https://github.aiyc.top/aiyccdn/auto_img/202205061256276.png)
 
 ## 1. 数字型【int、float】
 
