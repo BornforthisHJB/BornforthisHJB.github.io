@@ -16,7 +16,7 @@ export default hopeTheme({
 
   repo: "BornforthisHJB/BornforthisHJB.github.io",
 
-  docsDir: "demo/src",
+  docsDir: "bornforthis/",
 
   // navbar
   navbar: navbar,
