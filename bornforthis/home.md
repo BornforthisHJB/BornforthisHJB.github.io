@@ -1,6 +1,6 @@
 ---
 home: true
-icon: home
+icon: workingDirectory
 title: 文档主页
 heroImage: /img_home/logo_min.png
 heroText: AI悦创

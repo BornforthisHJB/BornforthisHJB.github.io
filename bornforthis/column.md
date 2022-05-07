@@ -1,6 +1,6 @@
 ---
 home: true
-icon: home
+icon: workingDirectory
 title: 专栏
 heroImage: /img_home/logo_min.png
 heroText: 专栏
