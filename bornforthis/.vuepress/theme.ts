@@ -77,13 +77,13 @@ export default hopeTheme({
   },
   
   plugins: {
-    search: {
-      locales: {
-        "/": {
-          placeholder: "搜索",
-        },
-      },
-    },
+    // search: {
+    //   locales: {
+    //     "/": {
+    //       placeholder: "搜索",
+    //     },
+    //   },
+    // },
     // search: {
     //   locales: {
     //     "/": {
