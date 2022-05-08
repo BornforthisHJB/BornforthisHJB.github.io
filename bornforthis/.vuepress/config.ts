@@ -1,4 +1,5 @@
 import { defineUserConfig } from "vuepress";
+import { searchPlugin } from "@vuepress/plugin-search";
 import theme from "./theme";
 // const { searchPlugin } = require('@vuepress/plugin-search');
 
@@ -18,6 +19,18 @@ export default defineUserConfig({
         // href: "/css/font_2410206_mfj6e1vbwo.css",
       },
     ],
+  ],
+
+  plugins: [
+    searchPlugin({
+      // ...
+
+      locales: {
+        "/": {
+          placeholder: "搜索",
+        },
+      },
+    }),
   ],
 
   theme,

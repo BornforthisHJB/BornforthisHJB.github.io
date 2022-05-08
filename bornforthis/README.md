@@ -6,7 +6,8 @@ title: 主页
 heroImage: /img_home/logo_min.png
 heroText: AI悦创
 heroFullScreen: true
-tagline: 你浅者见浅，深者见深——黄家宝
+bgImage: /img_home/L1009890.jpg
+tagline: 浅者见浅，深者见深——黄家宝<br/>“I love the people I photograph”——Bruce Gilden
 projects:
   - icon: project
     name: 项目名称
