@@ -33,9 +33,9 @@ export default defineUserConfig({
       },
     }),
 
-    // sitemapPlugin({
-    //   // 配置选项
-    // }),
+    sitemapPlugin({
+      hostname: "bornforthis.cn",
+    }),
   ],
 
   theme,
