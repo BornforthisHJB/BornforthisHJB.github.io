@@ -1465,7 +1465,7 @@
     ora "^5.4.1"
     upath "^2.0.1"
 
-"@vueuse/core@^8.2.1", "@vueuse/core@^8.4.0", "@vueuse/core@^8.4.1":
+"@vueuse/core@^8.2.1", "@vueuse/core@^8.4.0", "@vueuse/core@^8.4.1", "@vueuse/core@^8.4.2":
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-8.4.2.tgz#e5be73f40394150e6a1b6abd59e5adb7c6bb6c1f"
   integrity sha512-dUVU96lii1ZdWoNJXauQNt+4QrHz1DKbuW+y6pDR2N10q7rGZJMDU7pQeMcC2XeosX7kMODfaBuqsF03NozzLg==
@@ -4512,6 +4512,20 @@ vuepress-plugin-photo-swipe@2.0.0-beta.51:
     vue-router "^4.0.15"
     vuepress-plugin-sass-palette "2.0.0-beta.51"
 
+vuepress-plugin-photo-swipe@^2.0.0-beta.52:
+  version "2.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-photo-swipe/-/vuepress-plugin-photo-swipe-2.0.0-beta.52.tgz#9b970ce9f106e8b251773d862aaa089d18ae6c74"
+  integrity sha512-sO4szDeobT6A/jyrNP3OhIP7sVh+jdcxQtSkShGOxcvt/N4KeDQD1lCrOfxSt9AIQWeZpnhcA5x2jpaSGdIHPg==
+  dependencies:
+    "@mr-hope/vuepress-shared" "2.0.0-beta.52"
+    "@vuepress/client" "2.0.0-beta.43"
+    "@vuepress/utils" "2.0.0-beta.43"
+    "@vueuse/core" "^8.4.2"
+    photoswipe "^5.2.4"
+    vue "^3.2.33"
+    vue-router "^4.0.15"
+    vuepress-plugin-sass-palette "2.0.0-beta.52"
+
 vuepress-plugin-pwa2@2.0.0-beta.51:
   version "2.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-pwa2/-/vuepress-plugin-pwa2-2.0.0-beta.51.tgz#908aa01b9982584c19d09f7db477f0bcc7ab7812"
@@ -4542,6 +4556,16 @@ vuepress-plugin-sass-palette@2.0.0-beta.51:
   integrity sha512-XdlV0i4gBCG/gZqG4TbO3zJFU2jyCc9RUb2KXpgK6MHU/nm0KIm/5ewJWBb2AJvnDdbNrAyoRlEahZm/ImQHKw==
   dependencies:
     "@mr-hope/vuepress-shared" "2.0.0-beta.51"
+    "@vuepress/utils" "2.0.0-beta.43"
+    chokidar "^3.5.3"
+    sass "^1.51.0"
+
+vuepress-plugin-sass-palette@2.0.0-beta.52:
+  version "2.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-sass-palette/-/vuepress-plugin-sass-palette-2.0.0-beta.52.tgz#a9c43b7b42fc6773ae5527dfc375eb8ad7f064d9"
+  integrity sha512-W83jVwakQwsKn58y1jbc5JWtW0+atLAevaN+rd3EpqKP5HrgQInZXeK38mLgjxz2vnAeENEUn29kHtr2tOMRUQ==
+  dependencies:
+    "@mr-hope/vuepress-shared" "2.0.0-beta.52"
     "@vuepress/utils" "2.0.0-beta.43"
     chokidar "^3.5.3"
     sass "^1.51.0"

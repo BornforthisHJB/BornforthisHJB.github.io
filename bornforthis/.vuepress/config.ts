@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
+// import { photoSwipePlugin } from "vuepress-plugin-photo-swipe";
 import theme from "./theme";
 // const { searchPlugin } = require('@vuepress/plugin-search');
 import { sitemapPlugin } from "vuepress-plugin-sitemap2";
@@ -30,6 +31,13 @@ export default defineUserConfig({
   ],
 
   plugins: [
+    // photoSwipePlugin({
+    //   zoom: "string";
+    //   close: "close";
+    //   share: "Share";
+
+    // }),
+
     searchPlugin({
       // ...
 
