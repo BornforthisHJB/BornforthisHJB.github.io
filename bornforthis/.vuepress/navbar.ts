@@ -42,6 +42,7 @@ export default navbar([
         // icon: "diagram",
         // link: "https://bornforthis.cn",
         children: [
+          { text: "Vue", icon: "vue", link: "https://v2.vuepress.vuejs.org/zh/"},
           { text: "主题", icon: "vue", link: "https://vuepress-theme-hope.github.io/v2/zh/"},
           { text: "Waline", icon: "waline", link: "https://waline.js.org/"},
         ],
