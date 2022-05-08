@@ -2,6 +2,11 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
+  { 
+    text: "关于悦创",
+    icon: "people",
+    link: "intro.md"
+  },
   "/home",
   { 
     text: "悦创社区", 
