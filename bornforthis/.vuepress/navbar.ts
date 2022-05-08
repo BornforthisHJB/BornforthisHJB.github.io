@@ -39,10 +39,11 @@ export default navbar([
     children: [
       {
         text: "开发本站", 
-        link: "https://bornforthis.cn",
+        // icon: "diagram",
+        // link: "https://bornforthis.cn",
         children: [
-          { text: "主题", link: "https://vuepress-theme-hope.github.io/v2/zh/"},
-          
+          { text: "主题", icon: "vue", link: "https://vuepress-theme-hope.github.io/v2/zh/"},
+          { text: "Waline", icon: "waline", link: "https://waline.js.org/"},
         ],
       }
     ],

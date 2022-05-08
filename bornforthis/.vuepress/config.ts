@@ -13,6 +13,13 @@ export default defineUserConfig({
 
   head: [
     [
+      "script",
+      { 
+        type: "text/javascript",
+        src: "/js/baidu.js"
+      }
+    ],
+    [
       "link",
       {
         rel: "stylesheet",
