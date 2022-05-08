@@ -95,14 +95,14 @@ export default hopeTheme({
     // 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。
     // 为了避免打扰主题开发者以及消耗他的资源，请不要在你的正式环境中直接使用下列配置!!!!!
     comment: {
-      /**
-       * Using giscus
-       */
-      type: "giscus",
-      repo: "BornforthisHJB/comment",
-      repoId: "R_kgDOHTJESw",
-      category: "Announcements",
-      categoryId: "DIC_kwDOHTJES84CO_Qz",
+      // /**
+      //  * Using giscus
+      //  */
+      // type: "giscus",
+      // repo: "BornforthisHJB/comment",
+      // repoId: "R_kgDOHTJESw",
+      // category: "Announcements",
+      // categoryId: "DIC_kwDOHTJES84CO_Qz",
 
       /**
        * Using twikoo
@@ -113,8 +113,8 @@ export default hopeTheme({
       /**
        * Using Waline
        */
-      // type: "waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+      type: "waline",
+      serverURL: "https://comment.bornforthis.cn/",
     },
 
     mdEnhance: {
