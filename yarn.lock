@@ -972,6 +972,23 @@
     vue "^3.2.33"
     vue-router "^4.0.15"
 
+"@mr-hope/vuepress-shared@2.0.0-beta.52":
+  version "2.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/@mr-hope/vuepress-shared/-/vuepress-shared-2.0.0-beta.52.tgz#03846bb0f8c6204539b43ac9f2433073b0c60cea"
+  integrity sha512-jwvuMQ/VEDZbnnHzHL0c4KiMcYbuKp+RcH3/wtJlXfR7SsmuNvG9vTCe1VQl8NfHyMPaQh/K6HQBQAiI5ceWpw==
+  dependencies:
+    "@vuepress/client" "2.0.0-beta.43"
+    "@vuepress/plugin-git" "2.0.0-beta.43"
+    "@vuepress/plugin-theme-data" "2.0.0-beta.43"
+    "@vuepress/shared" "2.0.0-beta.43"
+    "@vuepress/utils" "2.0.0-beta.43"
+    chalk "^4.1.2"
+    dayjs "^1.11.1"
+    execa "^5.1.1"
+    ora "^5.4.1"
+    vue "^3.2.33"
+    vue-router "^4.0.15"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -4544,6 +4561,16 @@ vuepress-plugin-sitemap2@2.0.0-beta.51:
   integrity sha512-Y1xAqrp9OuzMEoUEQGGZerQRUeRGPTA+NfiqigofLVVXXkPZGM7SW8ZTiwPXuQFyGBq/mH3NFVVqOlp7sByuAA==
   dependencies:
     "@mr-hope/vuepress-shared" "2.0.0-beta.51"
+    "@vuepress/shared" "2.0.0-beta.43"
+    "@vuepress/utils" "2.0.0-beta.43"
+    sitemap "^7.1.1"
+
+vuepress-plugin-sitemap2@^2.0.0-beta.52:
+  version "2.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-sitemap2/-/vuepress-plugin-sitemap2-2.0.0-beta.52.tgz#1a6f6f6ae7f323eb03e4fa34dea263b4987a53c4"
+  integrity sha512-IE7UFLEvqRCdLnWWxSAUPEAHeSWoSpS/+UUvJG3NManEPvFntBPwoVAEgCHeJLgDZYqnds5fZjVWVr3qRRg+yw==
+  dependencies:
+    "@mr-hope/vuepress-shared" "2.0.0-beta.52"
     "@vuepress/shared" "2.0.0-beta.43"
     "@vuepress/utils" "2.0.0-beta.43"
     sitemap "^7.1.1"

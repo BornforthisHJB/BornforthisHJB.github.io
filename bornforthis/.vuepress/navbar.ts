@@ -33,4 +33,18 @@ export default navbar([
       
     ]
   },
+  { 
+    text: "友情链接",
+    icon: "alias", 
+    children: [
+      {
+        text: "开发本站", 
+        link: "https://bornforthis.cn",
+        children: [
+          { text: "主题", link: "https://vuepress-theme-hope.github.io/v2/zh/"},
+          
+        ],
+      }
+    ],
+  }
 ]);

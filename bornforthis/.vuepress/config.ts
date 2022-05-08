@@ -1,7 +1,8 @@
 import { defineUserConfig } from "vuepress";
-// import { searchPlugin } from "@vuepress/plugin-search";
+import { searchPlugin } from "@vuepress/plugin-search";
 import theme from "./theme";
-const { searchPlugin } = require('@vuepress/plugin-search');
+// const { searchPlugin } = require('@vuepress/plugin-search');
+import { sitemapPlugin } from "vuepress-plugin-sitemap2";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -31,6 +32,10 @@ export default defineUserConfig({
         },
       },
     }),
+
+    // sitemapPlugin({
+    //   // 配置选项
+    // }),
   ],
 
   theme,

@@ -117,6 +117,14 @@ export default hopeTheme({
       serverURL: "https://comment.bornforthis.cn/",
       comment: true, // 评论数统计
       pageview: true, // 浏览量统计
+      emoji: [
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
+      ],
     },
 
     mdEnhance: {
