@@ -115,6 +115,8 @@ export default hopeTheme({
        */
       type: "waline",
       serverURL: "https://comment.bornforthis.cn/",
+      comment: true, // 评论数统计
+      pageview: true, // 浏览量统计
     },
 
     mdEnhance: {
