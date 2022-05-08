@@ -39,7 +39,7 @@ projects:
     desc: 自定义详细介绍
     link: https://你的自定义链接
 
-footer: 自定义你的页脚文字
+footer: 长期招收编程一对一学员！微信：Jiabcdefh
 ---
 
 如果你有其他需求或者疑问，点击：[QQ 在线客服](http://wpa.qq.com/msgrd?v=3&uin=1432803776&site=qq&menu=yes)
