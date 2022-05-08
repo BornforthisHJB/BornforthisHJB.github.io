@@ -2,6 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
 // const { search } = require('@vuepress/plugin-search')
+// import { searchPlugin } from "@vuepress/plugin-search";
 
 export default hopeTheme({
   hostname: "https://www.bornforthis.cn/",
@@ -77,13 +78,6 @@ export default hopeTheme({
   },
   
   plugins: {
-    // search: {
-    //   locales: {
-    //     "/": {
-    //       placeholder: "搜索",
-    //     },
-    //   },
-    // },
     // search: {
     //   locales: {
     //     "/": {

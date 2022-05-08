@@ -1,7 +1,7 @@
 import { defineUserConfig } from "vuepress";
-import { searchPlugin } from "@vuepress/plugin-search";
+// import { searchPlugin } from "@vuepress/plugin-search";
 import theme from "./theme";
-// const { searchPlugin } = require('@vuepress/plugin-search');
+const { searchPlugin } = require('@vuepress/plugin-search');
 
 export default defineUserConfig({
   lang: "zh-CN",
