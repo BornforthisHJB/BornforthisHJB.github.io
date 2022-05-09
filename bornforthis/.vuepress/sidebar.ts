@@ -52,6 +52,7 @@ export default sidebar({
     "/column/py/basequestion/" :[
     { 
       text: "Python 基础入门课程计划",
+	  link: "../../../onepython.md",
       children: [
         "q1",
 		"hw_word_game",
