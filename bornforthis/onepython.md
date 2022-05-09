@@ -1,4 +1,31 @@
-# Python 零基础入门一对一教学课程表
+---
+title:  Python 零基础入门一对一教学课程表
+date: 2021-03-02 12:10:52
+author: AI悦创
+isOriginal: true
+category: Python 基础
+tag:
+    - Python 基础
+icon: false
+sticky: false
+star: false
+password: false
+article: true
+timeline: true
+image: false
+navbar: true
+sidebarIcon: true
+headerDepth: 3
+comment: true
+lastUpdated: true
+editLink: false
+prev: 01.md
+next: 03.md
+backToTop: true
+toc: true
+---
+
+
 
 ## 课程内容：
 
