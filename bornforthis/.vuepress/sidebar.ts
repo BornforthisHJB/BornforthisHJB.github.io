@@ -61,5 +61,12 @@ export default sidebar({
 		"hw_word_game",
       ]
     },
+	{
+		text: "答案",
+		collapsable: true,
+		children: [
+			"answer1",
+		],
+	},
 		  ],
     });
