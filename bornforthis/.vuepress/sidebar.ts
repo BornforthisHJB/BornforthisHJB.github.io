@@ -54,6 +54,7 @@ export default sidebar({
       text: "Python 基础入门课程计划",
       children: [
         "q1",
+		"hw_word_game",
       ]
     },
 		  ],
