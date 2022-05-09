@@ -54,7 +54,7 @@ export default sidebar({
       text: "Python 基础入门课程计划",
 	  // 可选的, 设置分组是否可以折叠，默认值是 false,
 	  collapsable: true,
-	  link: "../../../onepython.md",
+	  link: "../../../onepython",
       children: [
         "q1",
 		"hw_word_game",
