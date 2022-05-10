@@ -67,6 +67,7 @@ export default sidebar({
 		collapsable: true,
 		children: [
 			"answer1",
+			"answer2",
 		],
 	},
 		  ],
