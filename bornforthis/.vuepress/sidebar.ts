@@ -58,6 +58,7 @@ export default sidebar({
       children: [
 		"",
         "q1",
+		"q2",
 		"hw_word_game",
       ]
     },
