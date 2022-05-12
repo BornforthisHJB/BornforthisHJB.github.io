@@ -12,10 +12,10 @@ features:
     details: 程序员必备的文章编写神器，就算你不是程序员也可以一试
     link: /column/md
 
-  - title: 幻灯片页面
-    icon: slides
+  - title: Python3 爬虫
+    icon: debug
     details: 添加幻灯片页面以显示你喜欢的内容
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/layout/slides
+    link: /column/crawler
 
   - title: 布局增强
     icon: layout

@@ -6,7 +6,7 @@ isOriginal: true
 category: Python 私教练习题【基础】
 tag:
     - Python 基础练习题
-icon: state
+icon: python
 sticky: false
 star: false
 password: false
