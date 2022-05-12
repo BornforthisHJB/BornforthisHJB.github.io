@@ -78,8 +78,9 @@ export default sidebar({
 			text: "开篇词",
 			collapsable: true,
 			children: [
-				"s1_01",
-				"s1_02",
+				{ text: "01-Python 环境搭建", icon: "debug", link: "s1_01"},
+				// "s1_01",
+				{ text: "02-为什么做？", icon: "debug", link: "s1_02"},
 
 		]
 },],
