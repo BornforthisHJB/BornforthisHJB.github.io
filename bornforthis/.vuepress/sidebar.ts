@@ -79,6 +79,7 @@ export default sidebar({
 			collapsable: true,
 			children: [
 				"s1_01",
+				"s1_02",
 
 		]
 },],
