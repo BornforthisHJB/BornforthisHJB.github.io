@@ -82,6 +82,7 @@ export default sidebar({
 				// "s1_01",
 				{ text: "02-为什么做？", icon: "debug", link: "s1_02"},
 				{ text: "03-悦创随笔", icon: "debug", link: "s1_03"},
+				{ text: "04-如何被动过万收入", icon: "debug", link: "s1_04"},
 		]
 },],
     });
