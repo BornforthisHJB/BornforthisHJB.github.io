@@ -78,8 +78,8 @@ export default sidebar({
 			text: "开篇词",
 			collapsable: true,
 			children: [
-				"01",
-				
+				"s1_01",
+
 		]
 },],
     });
