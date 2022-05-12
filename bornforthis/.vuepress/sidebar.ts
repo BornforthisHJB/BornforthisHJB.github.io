@@ -88,7 +88,8 @@ export default sidebar({
 			text: "模块一：爬虫基础原理", 
 			collapsable: true,
 			children: [
-				"s1_05",
+				"s2_01",
+				"s2_02",
 			],
 		},
 	],
