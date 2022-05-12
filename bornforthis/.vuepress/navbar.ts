@@ -5,7 +5,7 @@ export default navbar([
   { 
     text: "关于悦创",
     icon: "people",
-    link: "intro.md"
+    link: "/intro",
   },
   "/home",
   { 
