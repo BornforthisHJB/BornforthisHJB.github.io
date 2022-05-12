@@ -4,12 +4,12 @@ home: true
 icon: home
 title: Crawler
 heroImage: /ColumnImages/crawler/home.png
-heroText: Markdown 专栏
+heroText: 爬虫专栏
 heroFullScreen: true
-tagline: 快速带你入门 Markdown 硬技能！
+tagline: 快速带你入门 Python3 网络爬虫
 actions:
   - text: 开始学习 💡
-    link: /column/md/01
+    link: /column/crawler/01
     type: primary	
 
   - text: 与作者联系 👋
@@ -18,13 +18,9 @@ actions:
 footer: 立志降低教育成本，普及编程教育，提供优质资源教程——流沙团队宣
 ---
 
-
-
-Python3 网络爬虫系统教学「目录」
-
 # Python3 网络爬虫系统教学
 
-博客链接：https://www.aiyc.top/python3spiderlearn
+博客链接：[https://bornforthis.cn/column/crawler/](https://bornforthis.cn/column/crawler/)
 
 你好，我是悦创。
 
@@ -32,10 +28,10 @@ Python3 网络爬虫系统教学「目录」
 
 有兴趣跟我报名 Python3 网络爬虫私教的同学可以通过一下几种方式联系我，详细了解：
 
-1. 通过 QQ 联系我，在网站的右下方。「QQ：1432803776」
+1. 通过 QQ 联系我，在网站的右下方。「[QQ](http://wpa.qq.com/msgrd?v=3&uin=1432803776&site=qq&menu=yes)：1432803776」
 2. 公众号：AI悦创，加小编微信。「公众号二维码在文章右侧」
-3. 私教课费用目前 6900元，一对一教学。「肯定是有广度有深度」
-4. 包含 **安卓逆向入门**
+3. 私教课费用目前 8900 元，一对一教学。「肯定是有广度有深度」价格可以稍微上下浮动
+4. 包含 **安卓逆向入门**【待定】
 
 > 部分内容来源网络，如有侵权请予联系删除。
 

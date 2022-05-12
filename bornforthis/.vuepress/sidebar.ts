@@ -71,4 +71,15 @@ export default sidebar({
 		],
 	},
 		  ],
+
+	"/column/crawler/": [
+		"",
+		{
+			text: "开篇词",
+			collapsable: true,
+			children: [
+				"01",
+				
+		]
+},],
     });
