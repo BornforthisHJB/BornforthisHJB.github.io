@@ -106,8 +106,8 @@ export default sidebar({
 			collapsable: true,
 			children: [
 				"replenish01",
-				{ text: "更智能的延迟插件", icon: "debug", link: "replensh02"},
-			]
+				{ text: "02-更智能的延迟插件", icon: "debug", link: "replenish02"},
+			],
 		},
 	],
     });
