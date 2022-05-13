@@ -99,6 +99,7 @@ export default sidebar({
 				// 	],
 				// }
 				"s2_02",
+				"s2_03",
 			],
 		},
 		{ 
