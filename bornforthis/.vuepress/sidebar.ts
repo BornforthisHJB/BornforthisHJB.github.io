@@ -99,8 +99,15 @@ export default sidebar({
 				// 	],
 				// }
 				"s2_02",
-				"s2_0201",
 			],
+		},
+		{ 
+			text: "补充",
+			collapsable: true,
+			children: [
+				"replenish01",
+				{ text: "更智能的延迟插件", icon: "debug", link: "replensh02"},
+			]
 		},
 	],
     });

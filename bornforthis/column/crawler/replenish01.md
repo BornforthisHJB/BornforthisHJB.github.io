@@ -1,5 +1,5 @@
 ---
-title: 02-1 Referer 案例
+title: 01-Referer 案例
 date: 2020-08-07 12:02:30
 author: AI悦创
 isOriginal: true
@@ -19,8 +19,8 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: s2_02.md
-next: s2_03.md
+prev: README.md
+next: replenish02.md
 backToTop: true
 toc: true
 ---
