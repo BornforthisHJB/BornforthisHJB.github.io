@@ -20,9 +20,9 @@ projects:
     link: https://github.com/AndersonHJB
 
   - icon: book
-    name: 书籍名称
-    desc: 书籍详细描述
-    link: https://你的书籍链接
+    name: 专栏
+    desc: AI悦创专栏
+    link: /column.md
 
   - icon: article
     name: 编程私教课程
