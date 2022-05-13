@@ -89,7 +89,17 @@ export default sidebar({
 			collapsable: true,
 			children: [
 				"s2_01",
+				// {
+				// 	text: "02-什么是网络爬虫",
+				// 	collapsable: true,
+				// 	link: "s2_02",
+				// 	icon: "debug",
+				// 	children: [
+				// 		"s2_0201",
+				// 	],
+				// }
 				"s2_02",
+				"s2_0201",
 			],
 		},
 	],
