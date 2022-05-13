@@ -107,6 +107,7 @@ export default sidebar({
 			children: [
 				"replenish01",
 				{ text: "02-更智能的延迟插件", icon: "debug", link: "replenish02"},
+				"replenish03",
 			],
 		},
 	],
