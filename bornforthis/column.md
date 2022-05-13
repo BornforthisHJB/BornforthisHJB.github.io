@@ -14,7 +14,7 @@ features:
 
   - title: Python3 爬虫
     icon: debug
-    details: 添加幻灯片页面以显示你喜欢的内容
+    details: Python3 网络爬虫系统入门
     link: /column/crawler
 
   - title: 布局增强
