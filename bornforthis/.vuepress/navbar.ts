@@ -34,7 +34,14 @@ export default navbar([
           { text: "留言", link: "https://comment.bornforthis.cn/"},
           { text: "评论管理", link: "https://comment.bornforthis.cn/ui"},
         ]
-      }
+      },
+      { 
+        text: "Git",
+        children: [
+          { text: "Github", icon: "github", link: "https://gitee.com/huangjiabaoaiyc"},
+          { text: "Gitee", icon: "gitee", link: "https://gitee.com/huangjiabaoaiyc"},
+        ]
+      },
       
     ]
   },
