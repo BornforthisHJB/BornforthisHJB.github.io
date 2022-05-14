@@ -5,7 +5,7 @@ import sidebar from "./sidebar";
 // import { searchPlugin } from "@vuepress/plugin-search";
 
 export default hopeTheme({
-  hostname: "https://www.bornforthis.cn/",
+  hostname: "https://bornforthis.cn/",
 
   author: {
     name: "AndersonHJB",
