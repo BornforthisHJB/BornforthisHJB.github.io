@@ -2,7 +2,7 @@
 home: true
 layout: Blog
 icon: home
-title: 主页
+title: 黄家宝
 heroImage: /img_home/logo_min.png
 heroText: AI悦创
 heroFullScreen: true
