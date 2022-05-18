@@ -40,11 +40,11 @@ toc: true
 | 02                        | **第二节丨字符串**                                           |
 | 03                        | [**作业一丨创建一个问答式简历软件**](https://www.aiyc.top/588.html)：https://www.aiyc.top/588.html |
 | 04                        | **作业一讲解**                                               |
-| 05                        | [**章节测试二**](https://www.aiyc.top/597.html)：https://www.aiyc.top/597.html |
+| 05                        | [**章节测试二**](column/py/basequestion/q2)                  |
 | **第三章 数据类型（中）** |                                                              |
 | 01                        | **第一节丨列表**                                             |
 | 02                        | **第二节丨元组**                                             |
-| 03                        | [**章节测试三**](https://www.aiyc.top/607.html)：https://www.aiyc.top/607.html |
+| 03                        | [**章节测试三**](column/py/basequestion/q3)                  |
 | **第四章 数据类型（下）** |                                                              |
 | 01                        | **第一节丨字典**                                             |
 | 02                        | **第二节丨集合**                                             |
