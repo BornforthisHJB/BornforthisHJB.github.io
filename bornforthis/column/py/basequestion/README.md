@@ -46,14 +46,14 @@ toc: true
 | **第四章 数据类型（下）** |                                                              |
 | 01                        | **第一节丨字典**                                             |
 | 02                        | **第二节丨集合**                                             |
-| 03                        | [**章节测试四**](https://www.aiyc.top/613.html)：https://www.aiyc.top/613.html |
+| 03                        | [**章节测试四**](./q4)                                       |
 | **第五章 if条件判断**     |                                                              |
 | 01                        | **第一节丨布尔表达式**                                       |
 | 02                        | **第二节丨if条件判断**                                       |
-| 03                        | [**章节测试五**](https://www.aiyc.top/618.html)：https://www.aiyc.top/618.html |
+| 03                        | [**章节测试五**](./q5)                                       |
 | **第六章 while循环**      |                                                              |
 | 01                        | **while循环**                                                |
-| 02                        | [**章节测试六**](https://www.aiyc.top/623.html)：https://www.aiyc.top/623.html |
+| 02                        | [**章节测试六**](./q6)                                       |
 | **第七章 for循环**        |                                                              |
 | 01                        | **for循环**                                                  |
 | 02                        | [**作业二丨创建一个运势预测软件**](https://www.aiyc.top/628.html)：https://www.aiyc.top/628.html |
