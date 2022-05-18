@@ -25,8 +25,6 @@ backToTop: true
 toc: true
 ---
 
-<center><h1>一个问答式简历程序</h1></center>
-
 通过一句一句的提问获取用户的信息，生成一个格式化的简历。
 
 **如例：**
