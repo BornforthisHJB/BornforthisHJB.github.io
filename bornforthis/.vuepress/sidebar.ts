@@ -61,6 +61,7 @@ export default sidebar({
 		"hw1",
 		"q2",
 		"q3",
+		"q4",
 		"hw_word_game",
       ]
     },
