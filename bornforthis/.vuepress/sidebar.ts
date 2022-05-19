@@ -79,6 +79,13 @@ export default sidebar({
 			"answer6",
 		],
 	},
+	{
+		text: "问答",
+		collapsable: true,
+		children: [
+			"faq1",
+		],
+	},
 		  ],
 
 	"/column/crawler/": [
