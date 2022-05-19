@@ -214,10 +214,6 @@ print('\n'.join([' '.join([f"{j}x{i}={i * j}" for j in range(1, i + 1)]) for i i
 
 
 
-<live-player width="" height="" src="https://video.aiyc.top/Tommy_Fernandez_Tian/one/one.m3u8">
-
-
-
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
