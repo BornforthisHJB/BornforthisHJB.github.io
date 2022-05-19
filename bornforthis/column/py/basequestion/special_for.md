@@ -129,7 +129,19 @@ multiplication(1)
 
 :::
 
+::: details 第七种方式：使用 1 行语句
 
+```python
+print('\n'.join([' '.join(["%2s x%2s = %2s" % (j, i, i * j) for j in range(1, i + 1)]) for i in range(1, 10)]))
+```
+
+上面的一行代码优化之后：
+
+```python
+print('\n'.join([' '.join([f"{j}x{i}={i * j}" for j in range(1, i + 1)]) for i in range(1, 10)]))
+```
+
+:::
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
