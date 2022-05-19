@@ -29,7 +29,7 @@ toc: true
 
 ## 1. 九九乘法表
 
-输出结果：
+要求输出结果：
 
 ```python
 1x1=1    
@@ -43,7 +43,9 @@ toc: true
 1x9=9    2x9=18    3x9=27    4x9=36    5x9=45    6x9=54    7x9=63    8x9=72    9x9=81
 ```
 
-::: details 第一种方式：for 循环实现【for-for 嵌套】
+:::: code-group
+
+::: code-group-item for-for:active
 
 ```python
 # 九九乘法表
@@ -55,7 +57,7 @@ for i in range(1, 10):
 
 :::
 
-::: details 第二种方式：while【while-while 嵌套】
+::: code-group-item while-while
 
 ```python
 # 九九乘法表
@@ -71,7 +73,7 @@ while i <= 9:
 
 :::
 
-::: details 第三种方式：while【while-for 嵌套】
+::: code-group-item while-for
 
 ```python
 i = 1
@@ -84,7 +86,7 @@ while i <= 9:
 
 :::
 
-::: details 第四种方式：while【for-while 嵌套】
+::: code-group-item for-while
 
 ```python
 for i in range(1, 10):
@@ -97,7 +99,7 @@ for i in range(1, 10):
 
 :::
 
-::: details 第五种方式：定义一个变量 a
+::: code-group-item 定义一个变量 a
 
 ```python
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -112,9 +114,7 @@ for i in a:
 
 :::
 
-::: info 未学到函数的，可以选择阅读
-
-::: details 第六种方式：使用递归
+::: code-group-item 使用递归
 
 ```python
 def multiplication(n):
@@ -129,7 +129,7 @@ multiplication(1)
 
 :::
 
-::: details 第七种方式：使用 1 行语句
+::: code-group-item 使用 1 行语句
 
 ```python
 print('\n'.join([' '.join(["%2s x%2s = %2s" % (j, i, i * j) for j in range(1, i + 1)]) for i in range(1, 10)]))
@@ -138,6 +138,75 @@ print('\n'.join([' '.join(["%2s x%2s = %2s" % (j, i, i * j) for j in range(1, i 
 上面的一行代码优化之后：
 
 ```python
+print('\n'.join([' '.join([f"{j}x{i}={i * j}" for j in range(1, i + 1)]) for i in range(1, 10)]))
+```
+
+:::
+
+::::
+
+::: details 合并答案
+
+```python
+# 第一种方式：for 循环实现【for-for 嵌套】
+# 九九乘法表
+for i in range(1, 10):
+    for j in range(1, i+1):
+        print('{}x{}={}\t'.format(j, i, i*j), end='')
+    print()
+
+
+# 第二种方式：while【while-while 嵌套】
+# 九九乘法表
+i = 1
+while i <= 9:
+    j = 1
+    while (j <= i):  # j 的大小是由 i 来控制的
+        print(f'{i}*{j}={i * j}', end='\t')
+        j += 1
+    print('')
+    i += 1
+
+# 第三种方式：while【while-for 嵌套】
+i = 1
+while i <= 9:
+    for j in range(1, i + 1):  # range()函数左闭右开
+        print(f'{i}*{j}={i * j}', end=' ')
+    i += 1
+    print()
+
+# 第四种方式：while【for-while 嵌套】
+for i in range(1, 10):
+    j = 0
+    while j < i:
+        j += 1
+        print(f"{i}*{j}={i * j}", end=' ')
+    print()
+ 
+# 第五种方式：定义一个变量 a
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for i in a:
+    j = 1
+    while j <= i:
+        print(f'{i}*{j}={i * j}', end='\t')
+        # %-3d 是控制输出结果占据3位，且从左面开始对齐
+        j += 1
+    print()
+   
+# 未学到函数的，可以选择阅读
+# 第六种方式：使用递归
+def multiplication(n):
+    if n < 10:
+        for m in range(1, n + 1):
+            print(f"{m}*{n}={m * n}", end="\t")
+        print()
+        multiplication(n + 1)
+
+multiplication(1)
+
+# 第七种方式：使用 1 行语句
+print('\n'.join([' '.join(["%2s x%2s = %2s" % (j, i, i * j) for j in range(1, i + 1)]) for i in range(1, 10)]))
+# 上面的一行代码优化之后：
 print('\n'.join([' '.join([f"{j}x{i}={i * j}" for j in range(1, i + 1)]) for i in range(1, 10)]))
 ```
 
