@@ -43,7 +43,7 @@ toc: true
 1x9=9    2x9=18    3x9=27    4x9=36    5x9=45    6x9=54    7x9=63    8x9=72    9x9=81
 ```
 
-::: details for 循环实现
+::: details 第一种方式：for 循环实现【for-for 嵌套】
 
 ```python
 # 九九乘法表
@@ -54,6 +54,82 @@ for i in range(1, 10):
 ```
 
 :::
+
+::: details 第二种方式：while【while-while 嵌套】
+
+```python
+# 九九乘法表
+i = 1
+while i <= 9:
+    j = 1
+    while (j <= i):  # j 的大小是由 i 来控制的
+        print(f'{i}*{j}={i * j}', end='\t')
+        j += 1
+    print('')
+    i += 1
+```
+
+:::
+
+::: details 第三种方式：while【while-for 嵌套】
+
+```python
+i = 1
+while i <= 9:
+    for j in range(1, i + 1):  # range()函数左闭右开
+        print(f'{i}*{j}={i * j}', end=' ')
+    i += 1
+    print()
+```
+
+:::
+
+::: details 第四种方式：while【for-while 嵌套】
+
+```python
+for i in range(1, 10):
+    j = 0
+    while j < i:
+        j += 1
+        print(f"{i}*{j}={i * j}", end=' ')
+    print()
+```
+
+:::
+
+::: details 第五种方式：定义一个变量 a
+
+```python
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for i in a:
+    j = 1
+    while j <= i:
+        print(f'{i}*{j}={i * j}', end='\t')
+        # %-3d 是控制输出结果占据3位，且从左面开始对齐
+        j += 1
+    print()
+```
+
+:::
+
+::: info 未学到函数的，可以选择阅读
+
+::: details 第六种方式：使用递归
+
+```python
+def multiplication(n):
+    if n < 10:
+        for m in range(1, n + 1):
+            print(f"{m}*{n}={m * n}", end="\t")
+        print()
+        multiplication(n + 1)
+
+multiplication(1)
+```
+
+:::
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
