@@ -25,13 +25,13 @@ backToTop: true
 toc: true
 ---
 
-# 项目链接如下
+## 项目链接如下
 
 [https://github.com/AndersonHJB/Python_FAQ](https://github.com/AndersonHJB/Python_FAQ)
 
 
 
-# 报错如下
+## 报错如下
 
 ![image-20220519194710393](./bq.assets/image-20220519194710393.png)
 
@@ -59,13 +59,13 @@ D:\Github_pages\Python_FAQ\01-Python: No such file or directory
 
 :::
 
-# 解决方法
+## 解决方法
 
 去掉项目名称中的所有空格。
 
 
 
-# Why？
+## Why？
 
 命令行或者代码中，包含空格时，其实大部分是语法或者命令：
 
