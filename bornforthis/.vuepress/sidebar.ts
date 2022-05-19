@@ -80,10 +80,17 @@ export default sidebar({
 		],
 	},
 	{
-		text: "问答",
+		text: "FQA",
 		collapsable: true,
 		children: [
 			"faq1",
+		],
+	},
+	{
+		text: "专项练习",
+		collapsable: true,
+		children: [
+			"special_for",
 		],
 	},
 		  ],
