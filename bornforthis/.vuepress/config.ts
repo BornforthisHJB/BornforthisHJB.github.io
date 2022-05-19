@@ -13,6 +13,41 @@ export default defineUserConfig({
   base: "/",
 
   head: [
+    // [
+    //   "script",
+    //   { 
+    //     type: "text/javascript",
+    //     src: "/js/video-js/m3u8player.js"
+    //   },
+    // ],
+    // [
+    //   "script",
+    //   { 
+    //     type: "text/javascript",
+    //     src: "/js/video-js/videojs-contrib-hls.min.js"
+    //   },
+    // ],
+    // [
+    //   "script",
+    //   { 
+    //     type: "text/javascript",
+    //     src: "/js/video-js/video.js"
+    //   },
+    // ],
+    // [
+    //   "script",
+    //   { 
+    //     type: "text/javascript",
+    //     src: "/js/video-js/jquery-3.2.1.min.js"
+    //   },
+    // ],
+    // [
+    //   "link",
+    //   {
+    //     rel: "stylesheet",
+    //     href: "/js/video-js/video-js.css"
+    //   },
+    // ],
     [
       "script",
       { 
