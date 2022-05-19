@@ -76,6 +76,7 @@ export default sidebar({
 			"answer3",
 			"answer4",
 			"answer5",
+			"answer6",
 		],
 	},
 		  ],
