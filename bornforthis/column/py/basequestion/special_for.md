@@ -43,7 +43,7 @@ toc: true
 1x9=9    2x9=18    3x9=27    4x9=36    5x9=45    6x9=54    7x9=63    8x9=72    9x9=81
 ```
 
-::: details
+::: details for 循环实现
 
 ```python
 # 九九乘法表
