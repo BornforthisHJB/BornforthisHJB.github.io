@@ -100,7 +100,7 @@ print("Jaden", Jaden)
 
 ::::
 
-::: waring 警告！！！
+::: danger 警告！！！
 
 不要出现如下方法！！！
 
