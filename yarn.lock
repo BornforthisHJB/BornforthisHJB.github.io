@@ -4695,6 +4695,15 @@ vuepress-plugin-seo2@2.0.0-beta.51:
     "@vuepress/shared" "2.0.0-beta.43"
     "@vuepress/utils" "2.0.0-beta.43"
 
+vuepress-plugin-seo2@^2.0.0-beta.64:
+  version "2.0.0-beta.64"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-seo2/-/vuepress-plugin-seo2-2.0.0-beta.64.tgz#8762fdfe22b2507a306345c5ee1a61d7b403303f"
+  integrity sha512-6X5JIJWmeIh+B2gWCP4irH5NhlR+OQF32dSTmUlw1uP4X9+wS0H8yBPmHxtonQjAYaKDuvhU6IVJPk08j9cVoA==
+  dependencies:
+    "@mr-hope/vuepress-shared" "2.0.0-beta.64"
+    "@vuepress/shared" "2.0.0-beta.45"
+    "@vuepress/utils" "2.0.0-beta.45"
+
 vuepress-plugin-sitemap2@2.0.0-beta.51:
   version "2.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-sitemap2/-/vuepress-plugin-sitemap2-2.0.0-beta.51.tgz#9d4eb4263c0461713855b0812ce3ab74446ff3c0"
