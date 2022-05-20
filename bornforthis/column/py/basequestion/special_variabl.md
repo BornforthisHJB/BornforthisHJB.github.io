@@ -127,7 +127,7 @@ print("Jaden", Austin)
 
 
 
-::: info 
+::: info 悦创金句
 
 程序员就是连接人与机器之间的桥梁——AI悦创
 
