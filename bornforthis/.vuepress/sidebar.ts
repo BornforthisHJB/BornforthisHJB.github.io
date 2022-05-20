@@ -94,6 +94,13 @@ export default sidebar({
 			"special_for",
 		],
 	},
+	{
+		text: "技巧点拨",
+		collapsable: true,
+		children: [
+			"skill_pycharm1",
+		],
+	},
 		  ],
 
 	"/column/crawler/": [
