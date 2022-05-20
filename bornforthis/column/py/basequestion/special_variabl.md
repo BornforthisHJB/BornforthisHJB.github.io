@@ -93,7 +93,14 @@ print("Jaden", Jaden)
 ::: code-group-item answer2
 
 ```python
-
+Austin = "Coke"
+Jaden = "juice"
+print("Austin", Austin)
+print("Jaden", Jaden)
+Austin, Jaden = Jaden, Austin
+print("-" * 12)
+print("Austin", Austin)
+print("Jaden", Jaden)
 ```
 
 :::
