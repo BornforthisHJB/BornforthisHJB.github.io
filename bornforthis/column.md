@@ -17,10 +17,10 @@ features:
     details: Python3 网络爬虫系统入门
     link: /column/crawler
 
-  - title: 布局增强
-    icon: layout
-    details: 添加路径导航、页脚、改进的导航栏、改进的页面导航等。
-    link: #
+  - title: Python 基础
+    icon: python
+    details: 万人私人教练，带你入门。
+    link: /column/py/basequestion
 
   - title: 浏览量与评论
     icon: comment
