@@ -100,9 +100,9 @@ print("Jaden", Jaden)
 
 ::::
 
-::: danger 警告！！！
+:::: danger 警告！！！
 
-不要出现如下方法！！！
+::: details 不要出现如下方法！！！
 
 ```python
 Austin = "Coke"
@@ -115,6 +115,10 @@ print("Jaden", Austin)
 ```
 
 :::
+
+::::
+
+
 
 ::: info 
 
