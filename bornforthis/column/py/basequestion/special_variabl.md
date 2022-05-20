@@ -35,7 +35,9 @@ Austin 想喝**果汁**，Jaden 想喝**可乐**。**哥哥喝弟弟都有专属
 
 **问：如何交换哥哥与弟弟杯中的果汁？**
 
-**样例代码：**
+:::: code-group
+
+::: code-group-item 样例代码:active
 
 ```python
 Austin = "Coke"
@@ -53,6 +55,24 @@ Austin juice
 Jaden Coke
 ```
 
+:::
+
+::: code-group-item 提示
+
+两种方法思路：
+
+**方法一：** 联想现实生活，现实生活中你会如何解决？
+
+**方法二：** Python 多个变量赋予不同值。
+
+```python
+a, b, c = 1, 2, 3
+```
+
+:::
+
+::::
+
 ::: waring 警告！！！
 
 不要出现如下方法！！！
@@ -66,6 +86,12 @@ print("Jaden", Jaden)
 print("Austin", Jaden)
 print("Jaden", Austin)
 ```
+
+:::
+
+::: info 
+
+程序员就是连接人与机器之间的桥梁——AI悦创
 
 :::
 
