@@ -90,6 +90,7 @@ export default sidebar({
 		text: "专项练习",
 		collapsable: true,
 		children: [
+			"special_variabl",
 			"special_for",
 		],
 	},
