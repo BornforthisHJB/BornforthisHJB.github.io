@@ -76,7 +76,16 @@ a, b, c = 1, 2, 3
 ::: code-group-item answer１
 
 ```python
-
+Austin = "Coke"
+Jaden = "juice"
+print("Austin", Austin)
+print("Jaden", Jaden)
+Empty_cup = Austin
+Austin = Jaden
+Jaden = Empty_cup
+print("-" * 12)
+print("Austin", Austin)
+print("Jaden", Jaden)
 ```
 
 :::
