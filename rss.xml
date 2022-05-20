@@ -6,8 +6,8 @@
     <link>https://bornforthis.cn/</link>
     <description>AI悦创,Python,编程一对一,C++,Java,AI,人工智能,黄家宝</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 20 May 2022 07:16:33 GMT</pubDate>
-    <lastBuildDate>Fri, 20 May 2022 07:16:33 GMT</lastBuildDate>
+    <pubDate>Fri, 20 May 2022 08:26:55 GMT</pubDate>
+    <lastBuildDate>Fri, 20 May 2022 08:26:55 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -15,6 +15,7 @@
       <url>/img_home/logo_min.png</url>
       <link>https://bornforthis.cn/</link>
     </image>
+    <category>编辑器机器</category>
     <category>Python 私教练习题【基础】</category>
     <category>Python 私教问答</category>
     <category>技术杂谈</category>
@@ -27,6 +28,70 @@
     <category>Python Base Notebook</category>
     <category>Markdown 基础</category>
     <category>使用指南</category>
+    <item>
+      <title>01-Pycharm 自动添加作者等信息</title>
+      <link>https://bornforthis.cn/column/py/basequestion/skill_pycharm1.html</link>
+      <guid>https://bornforthis.cn/column/py/basequestion/skill_pycharm1.html</guid>
+      <source url="https://bornforthis.cn/rss.xml">01-Pycharm 自动添加作者等信息</source>
+      <category>编辑器机器</category>
+      <pubDate>Fri, 20 May 2022 16:01:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="_1-按照下面路径以此打开" tabindex="-1"> 1. 按照下面路径以此打开</h2>
+<p><img src="@source/column/py/basequestion/skill_pycharm1.assets/image-20220520161417800.png" alt="image-20220520161417800" loading="lazy"></p>
+<h2 id="_2-设置相关代码" tabindex="-1"> 2. 设置相关代码</h2>
+<div><pre><code><span>##!/usr/bin/python3</span>
+<span># -*- coding: utf-8 -*-</span>
+<span># @Time    : ${DATE} ${TIME}</span>
+<span># @Author  : AI悦创</span>
+<span># @FileName: ${NAME}.py</span>
+<span># @Software: ${PRODUCT_NAME}</span>
+<span># @Blog    ：https://bornforthis.cn/</span>
+</code></pre><div aria-hidden="true"><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>设定的规则说明如下：</p>
+<div><pre><code>（a）shebang行
+
+<span>#!/usr/bin/python3</span>
+
+（b）预定义的变量要扩展为格式为$ <span>{</span><span>&lt;</span>variable_name<span>></span><span>}</span>的相应值。
+
+可用的预定义文件模板变量为：
+
+$ <span>{</span>PROJECT_NAME<span>}</span> <span>-</span> 当前项目的名称。
+
+$ <span>{</span>NAME<span>}</span> <span>-</span> 在文件创建过程中在“新建文件”对话框中指定的新文件的名称。
+
+$ <span>{</span>USER<span>}</span> <span>-</span> 当前用户的登录名。
+
+$ <span>{</span>DATE<span>}</span> <span>-</span> 当前的系统日期。
+
+$ <span>{</span>TIME<span>}</span> <span>-</span> 当前系统时间。
+
+$ <span>{</span>YEAR<span>}</span> <span>-</span> 今年。
+
+$ <span>{</span>MONTH<span>}</span> <span>-</span> 当月。
+
+$ <span>{</span>DAY<span>}</span> <span>-</span> 当月的当天。
+
+$ <span>{</span>HOUR<span>}</span> <span>-</span> 目前的小时。
+
+$ <span>{</span>MINUTE<span>}</span> <span>-</span> 当前分钟。
+
+$ <span>{</span>PRODUCT_NAME<span>}</span> <span>-</span> 将在其中创建文件的IDE的名称。
+
+$ <span>{</span>MONTH_NAME_SHORT<span>}</span> <span>-</span> 月份名称的前<span>3</span>个字母。 示例：<span>1</span>月，<span>2</span>月等
+
+$ <span>{</span>MONTH_NAME_FULL<span>}</span> <span>-</span> 一个月的全名。 示例：<span>1</span>月，<span>2</span>月等
+</code></pre><div aria-hidden="true"><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br></div></div><p>欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！</p>
+<details><summary>公众号：AI悦创【二维码】</summary>
+<p><img src="/gzh.jpg" alt="" loading="lazy"></p>
+</details>
+<div><p>AI悦创·编程一对一</p>
+<p>AI悦创·推出辅导班啦，包括「Python 语言辅导班、C++ 辅导班、java 辅导班、算法/数据结构辅导班、少儿编程、pygame 游戏开发」，全部都是一对一教学：一对一辅导 + 一对一答疑 + 布置作业 + 项目实践等。当然，还有线下线上摄影课程、Photoshop、Premiere 一对一教学、QQ、微信在线，随时响应！微信：Jiabcdefh</p>
+<p>C++ 信息奥赛题解，长期更新！长期招收一对一中小学信息奥赛集训，莆田、厦门地区有机会线下上门，其他地区线上。微信：Jiabcdefh</p>
+<p>方法一：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1432803776&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener noreferrer">QQ</a></p>
+<p>方法二：微信：Jiabcdefh</p>
+</div>
+<p><img src="/zsxq.jpg" alt="" loading="lazy"></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>01-变量专项练习</title>
       <link>https://bornforthis.cn/column/py/basequestion/special_variabl.html</link>
