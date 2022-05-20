@@ -63,10 +63,28 @@ Jaden Coke
 
 **方法一：** 联想现实生活，现实生活中你会如何解决？
 
+> 现实生活中，我想你会引入一个空杯子来操作，那你会如何操作？思考后再思考代码中如何实现？
+
 **方法二：** Python 多个变量赋予不同值。
 
 ```python
 a, b, c = 1, 2, 3
+```
+
+:::
+
+::: code-group-item answer１
+
+```python
+
+```
+
+:::
+
+::: code-group-item answer2
+
+```python
+
 ```
 
 :::
