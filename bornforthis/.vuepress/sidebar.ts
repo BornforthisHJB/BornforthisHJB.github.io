@@ -68,7 +68,7 @@ export default sidebar({
       ]
     },
 	{
-		text: "答案",
+		text: "章节答案",
 		collapsable: true,
 		children: [
 			"answer1",
@@ -77,13 +77,6 @@ export default sidebar({
 			"answer4",
 			"answer5",
 			"answer6",
-		],
-	},
-	{
-		text: "FQA",
-		collapsable: true,
-		children: [
-			"faq1",
 		],
 	},
 	{
@@ -99,6 +92,13 @@ export default sidebar({
 		collapsable: true,
 		children: [
 			"skill_pycharm1",
+		],
+	},
+	{
+		text: "FQA",
+		collapsable: true,
+		children: [
+			"faq1",
 		],
 	},
 		  ],
