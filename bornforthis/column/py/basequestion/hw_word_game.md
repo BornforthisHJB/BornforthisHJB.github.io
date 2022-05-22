@@ -18,7 +18,7 @@ sidebarIcon: true
 headerDepth: 5
 comment: true
 lastUpdated: true
-editLink: false
+editLink: true
 prev: README.md
 next: 02.md
 backToTop: true

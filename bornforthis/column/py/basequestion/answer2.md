@@ -18,7 +18,7 @@ sidebarIcon: true
 headerDepth: 5
 comment: true
 lastUpdated: true
-editLink: false
+editLink: true
 prev: answer1.md
 next: answer3.md
 backToTop: true

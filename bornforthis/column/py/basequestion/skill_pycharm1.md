@@ -20,7 +20,7 @@ sidebarIcon: true
 headerDepth: 5
 comment: true
 lastUpdated: true
-editLink: false
+editLink: true
 prev: false
 next: skill_pycharm2.md
 backToTop: true

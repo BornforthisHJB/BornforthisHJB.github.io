@@ -18,7 +18,7 @@ sidebarIcon: true
 headerDepth: 5
 comment: true
 lastUpdated: true
-editLink: false
+editLink: true
 prev: special_for.md
 next: special_for.md
 backToTop: true

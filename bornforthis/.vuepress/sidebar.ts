@@ -95,6 +95,13 @@ export default sidebar({
 		],
 	},
 	{
+		text: "补充知识",
+		collapsable: true,
+		children: [
+			{ text: "01-Python 导出/导入依赖包", icon: "python", link: ""},
+		],
+	},
+	{
 		text: "FQA",
 		collapsable: true,
 		children: [
