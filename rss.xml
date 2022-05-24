@@ -6,8 +6,8 @@
     <link>https://bornforthis.cn/</link>
     <description>AI悦创,Python,编程一对一,C++,Java,AI,人工智能,黄家宝</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 24 May 2022 15:49:16 GMT</pubDate>
-    <lastBuildDate>Tue, 24 May 2022 15:49:16 GMT</lastBuildDate>
+    <pubDate>Tue, 24 May 2022 15:52:25 GMT</pubDate>
+    <lastBuildDate>Tue, 24 May 2022 15:52:25 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -108,6 +108,23 @@ d <span>=</span> <span>2.5</span>
 <p>（3）只有当 n+1 位数字是 5 的时候，容易混淆，如果 n 为偶数，则 n+1 位数是5，则进位，例如 <code>round(1.23456, 3)</code> 最终变为 1.235</p>
 <p>（4）如果 n 为奇数，则 n+1 位是数 5，那不进位，例如 <code>round(2.355, 2)</code>，最终为 2.35</p>
 <p>（5）如果 n 为 0，即没有填写 n 的时候，最终结果与上面相反，即整数部分为偶数的时候，小数位 5 不进位，例如： <code>round(2.5)</code> 变为2。</p>
+<div><pre><code>In <span>[</span><span>21</span><span>]</span><span>:</span> <span>round</span><span>(</span><span>2.5</span><span>)</span>
+Out<span>[</span><span>21</span><span>]</span><span>:</span> <span>2</span>
+
+In <span>[</span><span>22</span><span>]</span><span>:</span> <span>round</span><span>(</span><span>3.5</span><span>)</span>
+Out<span>[</span><span>22</span><span>]</span><span>:</span> <span>4</span>
+
+In <span>[</span><span>23</span><span>]</span><span>:</span> <span>round</span><span>(</span><span>4.5</span><span>)</span>
+Out<span>[</span><span>23</span><span>]</span><span>:</span> <span>4</span>
+
+In <span>[</span><span>24</span><span>]</span><span>:</span> <span>round</span><span>(</span><span>5.5</span><span>)</span>
+Out<span>[</span><span>24</span><span>]</span><span>:</span> <span>6</span>
+
+In <span>[</span><span>25</span><span>]</span><span>:</span> <span>round</span><span>(</span><span>6.5</span><span>)</span>
+Out<span>[</span><span>25</span><span>]</span><span>:</span> <span>6</span>
+</code></pre><div aria-hidden="true"><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><div><p>小结</p>
+<p>n 为 0 的时候，奇数向上取整、偶数向下取整。</p>
+</div>
 <p>（6）整数部分为奇数的时候，小数位 5 进位。（ <code>round(3.5)</code> 变为 4）</p>
 <h2 id="_4-不进行四舍五入-直接进行截断" tabindex="-1"> 4. 不进行四舍五入，直接进行截断</h2>
 <p>（1）可以放大指定的倍数，然后取整，然后再除以指定的倍数。</p>
