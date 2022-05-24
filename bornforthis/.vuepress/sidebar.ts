@@ -31,6 +31,17 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+
+	"/column/tkinter/" :[
+		{ 
+		  text: "FQA",
+		  // 可选的, 设置分组是否可以折叠，默认值是 false,
+		  collapsable: true,
+		//   link: "https://bornforthis.cn/onepython.html",
+		  children: [
+			"tearoff",
+		  ]
+		},],
   "/column/md/": [
 		"",
 		{
