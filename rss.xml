@@ -6,8 +6,8 @@
     <link>https://bornforthis.cn/</link>
     <description>AI悦创,Python,编程一对一,C++,Java,AI,人工智能,黄家宝</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 24 May 2022 03:45:58 GMT</pubDate>
-    <lastBuildDate>Tue, 24 May 2022 03:45:58 GMT</lastBuildDate>
+    <pubDate>Tue, 24 May 2022 09:57:40 GMT</pubDate>
+    <lastBuildDate>Tue, 24 May 2022 09:57:40 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -15,6 +15,7 @@
       <url>/img_home/logo_min.png</url>
       <link>https://bornforthis.cn/</link>
     </image>
+    <category>tkinter</category>
     <category>pip</category>
     <category>编辑器机器</category>
     <category>Python 私教练习题【基础】</category>
@@ -29,6 +30,18 @@
     <category>Python Base Notebook</category>
     <category>Markdown 基础</category>
     <category>使用指南</category>
+    <item>
+      <title>01-Tkinter 中 tearoff 的作用</title>
+      <link>https://bornforthis.cn/column/tkinter/tearoff.html</link>
+      <guid>https://bornforthis.cn/column/tkinter/tearoff.html</guid>
+      <source url="https://bornforthis.cn/rss.xml">01-Tkinter 中 tearoff 的作用</source>
+      <category>tkinter</category>
+      <pubDate>Tue, 24 May 2022 17:26:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>你好，我是悦创。</p>
+<p>我想你在学习 tkinter 的时候，会出现这个疑问：程序运行的时候菜单之下出现了一个虚线项。如下图：</p>
+<p><img src="@source/column/tkinter/tearoff.assets/image-20220524173907212.png" alt="image-20220524173907212" loading="lazy"></p>
+]]></content:encoded>
+    </item>
     <item>
       <title>01-Python 导出/导入依赖包</title>
       <link>https://bornforthis.cn/column/py/basequestion/requirements.html</link>
