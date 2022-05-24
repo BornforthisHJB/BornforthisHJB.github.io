@@ -3,7 +3,7 @@ title: 01-Pycharm 自动添加作者等信息
 date: 2022-05-20 16:01:00
 author: AI悦创
 isOriginal: true
-category: 编辑器机器
+category: 编辑器技巧
 tag:
     - 编辑器技巧
     - Pycharm

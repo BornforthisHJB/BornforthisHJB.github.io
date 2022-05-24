@@ -109,7 +109,8 @@ export default sidebar({
 		text: "补充知识",
 		collapsable: true,
 		children: [
-			"requirements"
+			"requirements",
+			"radix_point"
 		],
 	},
 	{
