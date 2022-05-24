@@ -6,8 +6,8 @@
     <link>https://bornforthis.cn/</link>
     <description>AI悦创,Python,编程一对一,C++,Java,AI,人工智能,黄家宝</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 24 May 2022 09:57:40 GMT</pubDate>
-    <lastBuildDate>Tue, 24 May 2022 09:57:40 GMT</lastBuildDate>
+    <pubDate>Tue, 24 May 2022 10:50:49 GMT</pubDate>
+    <lastBuildDate>Tue, 24 May 2022 10:50:49 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -40,6 +40,85 @@
       <content:encoded><![CDATA[<p>你好，我是悦创。</p>
 <p>我想你在学习 tkinter 的时候，会出现这个疑问：程序运行的时候菜单之下出现了一个虚线项。如下图：</p>
 <p><img src="@source/column/tkinter/tearoff.assets/image-20220524173907212.png" alt="image-20220524173907212" loading="lazy"></p>
+<p>点击这个虚线选项后，菜单单独浮于应用之上：</p>
+<p><img src="@source/column/tkinter/tearoff.assets/image-20220524183243382.png" alt="image-20220524183243382" loading="lazy"></p>
+<p>进查询发现了 tearoff 选项，当 <code>tearoff=1</code> 的时候该菜单被设置为可以独立出来的菜单，点击虚线就可以将菜单独立出来，当 <code>tearoff=0</code> 时就是正常的菜单了，但是默认情况下 <code>tearoff=1</code> ，所以在程序中需要设置一下：</p>
+<h2 id="当设置为-0-的时候" tabindex="-1"> 当设置为 0 的时候</h2>
+<div><pre><code><span># -*- coding: utf-8 -*-</span>
+<span>"""
+@Time    : 2022/1/3 11:32
+@Author  : AI悦创
+@FileName: main.py
+@Software: PyCharm
+@Blog    ：https://www.aiyc.top
+@公众号   ：AI悦创
+@description：
+"""</span>
+<span>#!/usr/bin/python</span>
+<span>#coding: utf-8</span>
+ 
+<span>import</span> tkinter <span>as</span> tk
+root <span>=</span> tk<span>.</span>Tk<span>(</span><span>)</span>
+root<span>.</span>title<span>(</span><span>'菜单练习'</span><span>)</span>
+menu <span>=</span> tk<span>.</span>Menu<span>(</span>root<span>)</span>
+submenu <span>=</span> tk<span>.</span>Menu<span>(</span>menu<span>,</span> tearoff <span>=</span> <span>0</span><span>)</span>
+submenu<span>.</span>add_command<span>(</span>label <span>=</span> <span>'打开'</span><span>)</span>
+submenu<span>.</span>add_command<span>(</span>label <span>=</span> <span>'保存'</span><span>)</span>
+submenu<span>.</span>add_command<span>(</span>label <span>=</span> <span>'关闭'</span><span>)</span>
+menu<span>.</span>add_cascade<span>(</span>label <span>=</span> <span>'文件'</span><span>,</span> menu <span>=</span> submenu<span>)</span>
+root<span>.</span>config<span>(</span>menu <span>=</span> menu<span>)</span>
+root<span>.</span>mainloop<span>(</span><span>)</span>
+</code></pre><div aria-hidden="true"><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br></div></div><p>如图：</p>
+<p><img src="@source/column/tkinter/tearoff.assets/image-20220524184421188.png" alt="image-20220524184421188" loading="lazy"></p>
+<h2 id="设置为-1-的时候" tabindex="-1"> 设置为 1 的时候</h2>
+<p><img src="@source/column/tkinter/tearoff.assets/image-20220524184613533.png" alt="image-20220524184613533" loading="lazy"></p>
+<p>多了一个虚线，如果点击的话就会发现，这个菜单框可以独立出来显示。</p>
+<p>补充示例：</p>
+<div><pre><code><span># -*- coding: utf-8 -*-</span>
+<span>"""
+@Time    : 2022/1/3 11:32
+@Author  : AI悦创
+@FileName: main.py
+@Software: PyCharm
+@Blog    ：https://www.aiyc.top
+@公众号   ：AI悦创
+@description：
+"""</span>
+<span>from</span> tkinter <span>import</span> Menu<span>,</span> Tk
+
+<span>if</span> __name__ <span>==</span> <span>"__main__"</span><span>:</span>
+    root <span>=</span> Tk<span>(</span><span>)</span>
+    root<span>.</span>title<span>(</span><span>'主窗体'</span><span>)</span>
+    <span># 在屏幕左上角绘制240&amp;480的主窗体</span>
+    root<span>.</span>geometry<span>(</span><span>'240x480+0+0'</span><span>)</span>
+    <span># 自定义菜单</span>
+    menu_bar <span>=</span> Menu<span>(</span>root<span>)</span>
+    <span># 创建菜单项目</span>
+    <span># tearoff 如果等于1，该菜单下面会有一个虚线选项（表明该菜单可以独立出来），如果设置成1则没有</span>
+    stu_menu <span>=</span> Menu<span>(</span>menu_bar<span>,</span>tearoff<span>=</span><span>0</span><span>)</span>
+    stu_menu<span>.</span>add_command<span>(</span>label<span>=</span><span>'add'</span><span>,</span> command<span>=</span><span>''</span><span>)</span>
+    stu_menu<span>.</span>add_command<span>(</span>label<span>=</span><span>'query'</span><span>,</span> command<span>=</span><span>''</span><span>)</span>
+    menu_bar<span>.</span>add_cascade<span>(</span>label<span>=</span><span>'学生'</span><span>,</span> menu<span>=</span>stu_menu<span>)</span>
+
+    <span># create score menu</span>
+    score_menu <span>=</span> Menu<span>(</span>menu_bar<span>)</span>
+    score_menu<span>.</span>add_command<span>(</span>label<span>=</span><span>'添加'</span><span>,</span> command<span>=</span><span>''</span><span>)</span>
+    score_menu<span>.</span>add_command<span>(</span>label<span>=</span><span>'查询'</span><span>,</span> command<span>=</span><span>''</span><span>)</span>
+    menu_bar<span>.</span>add_cascade<span>(</span>label<span>=</span><span>'成绩'</span><span>,</span> menu<span>=</span>score_menu<span>)</span>
+
+    root<span>.</span>config<span>(</span>menu<span>=</span>menu_bar<span>)</span>
+    root<span>.</span>mainloop<span>(</span><span>)</span>
+</code></pre><div aria-hidden="true"><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br></div></div><p>欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！</p>
+<details><summary>公众号：AI悦创【二维码】</summary>
+<p><img src="/gzh.jpg" alt="" loading="lazy"></p>
+</details>
+<div><p>AI悦创·编程一对一</p>
+<p>AI悦创·推出辅导班啦，包括「Python 语言辅导班、C++ 辅导班、java 辅导班、算法/数据结构辅导班、少儿编程、pygame 游戏开发」，全部都是一对一教学：一对一辅导 + 一对一答疑 + 布置作业 + 项目实践等。当然，还有线下线上摄影课程、Photoshop、Premiere 一对一教学、QQ、微信在线，随时响应！微信：Jiabcdefh</p>
+<p>C++ 信息奥赛题解，长期更新！长期招收一对一中小学信息奥赛集训，莆田、厦门地区有机会线下上门，其他地区线上。微信：Jiabcdefh</p>
+<p>方法一：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1432803776&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener noreferrer">QQ</a></p>
+<p>方法二：微信：Jiabcdefh</p>
+</div>
+<p><img src="/zsxq.jpg" alt="" loading="lazy"></p>
 ]]></content:encoded>
     </item>
     <item>
