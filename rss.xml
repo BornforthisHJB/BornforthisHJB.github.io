@@ -6,8 +6,8 @@
     <link>https://bornforthis.cn/</link>
     <description>AI悦创,Python,编程一对一,C++,Java,AI,人工智能,黄家宝</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 24 May 2022 15:45:33 GMT</pubDate>
-    <lastBuildDate>Tue, 24 May 2022 15:45:33 GMT</lastBuildDate>
+    <pubDate>Tue, 24 May 2022 15:49:16 GMT</pubDate>
+    <lastBuildDate>Tue, 24 May 2022 15:49:16 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -103,12 +103,12 @@ d <span>=</span> <span>2.5</span>
 <span>2.35</span>    <span># 2.355 居然没进位</span>
 <span>4</span>       <span># 最终 3.5 居然变为 4 了</span>
 <span>2</span>       <span># 最终 2.5 取值变为 2</span>
-</code></pre><div aria-hidden="true"><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>（1）通过上面的函数，看着是不是很晕，感觉 <code>round(x, n)</code> 函数是否进位也没看出是啥规律；
-（2）<code>round(x, n)</code> 函数中，是否进位或四舍五入，取决于 n 位以及 n+1 位小数的值；
-（3）只有当 n+1 位数字是 5 的时候，容易混淆，如果 n 为偶数，则 n+1 位数是5，则进位，例如 <code>round(1.23456, 3)</code> 最终变为 1.235
-（4）如果 n 为奇数，则 n+1 位是数 5，那不进位，例如 <code>round(2.355, 2)</code>，最终为 2.35
-（5）如果 n 为 0，即没有填写 n 的时候，最终结果与上面相反，即整数部分为偶数的时候，小数位 5 不进位，例如： <code>round(2.5)</code> 变为2。
-（6）整数部分为奇数的时候，小数位 5 进位。（ <code>round(3.5)</code> 变为 4）</p>
+</code></pre><div aria-hidden="true"><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>（1）通过上面的函数，看着是不是很晕，感觉 <code>round(x, n)</code> 函数是否进位也没看出是啥规律；</p>
+<p>（2）<code>round(x, n)</code> 函数中，是否进位或四舍五入，取决于 n 位以及 n+1 位小数的值；</p>
+<p>（3）只有当 n+1 位数字是 5 的时候，容易混淆，如果 n 为偶数，则 n+1 位数是5，则进位，例如 <code>round(1.23456, 3)</code> 最终变为 1.235</p>
+<p>（4）如果 n 为奇数，则 n+1 位是数 5，那不进位，例如 <code>round(2.355, 2)</code>，最终为 2.35</p>
+<p>（5）如果 n 为 0，即没有填写 n 的时候，最终结果与上面相反，即整数部分为偶数的时候，小数位 5 不进位，例如： <code>round(2.5)</code> 变为2。</p>
+<p>（6）整数部分为奇数的时候，小数位 5 进位。（ <code>round(3.5)</code> 变为 4）</p>
 <h2 id="_4-不进行四舍五入-直接进行截断" tabindex="-1"> 4. 不进行四舍五入，直接进行截断</h2>
 <p>（1）可以放大指定的倍数，然后取整，然后再除以指定的倍数。</p>
 <div><pre><code><span>#保留三位小数截断 python3</span>
