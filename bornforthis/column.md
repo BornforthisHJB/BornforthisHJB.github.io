@@ -22,10 +22,10 @@ features:
     details: 万人私人教练，带你入门。
     link: /column/py/basequestion
 
-  - title: 浏览量与评论
+  - title: 软件下载
     icon: comment
-    details: 配合 Waline 来开启阅读量统计与评论支持
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/comment.html
+    details: AI悦创·编程软件下载
+    link: /column/install
 
   - title: 文章信息
     icon: info
