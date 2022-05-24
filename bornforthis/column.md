@@ -23,7 +23,7 @@ features:
     link: /column/py/basequestion
 
   - title: 软件下载
-    icon: comment
+    icon: load
     details: AI悦创·编程软件下载
     link: /column/install
 
