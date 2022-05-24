@@ -3,13 +3,13 @@ blog: false
 home: true
 icon: home
 title: AI悦创·下载页
-heroImage: /ColumnImages/crawler/home.png
+heroImage: /ColumnImages/app/home-banner-carry.png
 heroText: AI悦创·下载页
 heroFullScreen: true
 tagline: 急速下载
 actions:
-  - text: Go 💡
-    link: http://wpa.qq.com/msgrd?v=3&uin=1432803776&site=qq&menu=yes
+  - text: 开始下载 💡
+    link: https://bornforthis.cn/column/download
     type: primary	
 
   - text: 与作者联系 👋
@@ -22,15 +22,15 @@ footer: 立志降低教育成本，普及编程教育，提供优质资源教程
 
 ## 下载目录
 
-| 序号        | 名称                                                         |
-| ----------- | ------------------------------------------------------------ |
-| **Windows** |                                                              |
-| 01          | [**Snipaste-2.7.3-Beta-x64.zip**](/data/安装包/Windows/截图软件/Snipaste-2.7.3-Beta-x64.zip) |
-|             |                                                              |
-|             |                                                              |
-|             |                                                              |
-|             |                                                              |
-|             |                                                              |
+| 序号        | 名称     | 下载地址                                                     | 官网                                                   |
+| ----------- | -------- | ------------------------------------------------------------ | ------------------------------------------------------ |
+| **Windows** |          |                                                              |                                                        |
+| 01          | Snipaste | [**Snipaste-2.7.3-Beta-x64.zip**](https://aiyc.lanzouf.com/iqFUt05dg7qd) | [https://www.snipaste.com/](https://www.snipaste.com/) |
+|             |          |                                                              |                                                        |
+|             |          |                                                              |                                                        |
+|             |          |                                                              |                                                        |
+|             |          |                                                              |                                                        |
+|             |          |                                                              |                                                        |
 
 ::: details 公众号：AI悦创【二维码】
 

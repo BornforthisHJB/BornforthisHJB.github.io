@@ -27,10 +27,10 @@ features:
     details: AI悦创·编程软件下载
     link: /column/download
 
-  - title: 文章信息
-    icon: info
-    details: 为你的文章添加作者、写作日期、预计阅读时间、字数统计等信息
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/page-info.html
+  - title: tkinter
+    icon: computer
+    details: 全网最优质的 tkinter 教程
+    link: /column/tkinter
 
   - title: 博客支持
     icon: blog
