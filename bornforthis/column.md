@@ -25,7 +25,7 @@ features:
   - title: 软件下载
     icon: load
     details: AI悦创·编程软件下载
-    link: /column/install
+    link: /column/download
 
   - title: 文章信息
     icon: info
