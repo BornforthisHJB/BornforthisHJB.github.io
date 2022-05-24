@@ -20,7 +20,7 @@ export default navbar([
           { text: "数据结构与算法可视化", icon: "discover", link: "https://huangjiabaoaiyc.gitee.io/visualgo/"},
           { text: "Markdown Online", icon: "markdown", link: "https://bornforthis.cn/markdown-editor/ "},
           { text: "Json Online", icon: "json", link: "https://bornforthis.cn/json/"},
-          { text: "m3u8 播放器", icon: "preview", link: "https://bornforthis.cn/m3u8/index.html"}
+          { text: "m3u8 播放器", icon: "preview", link: "https://bornforthis.cn/m3u8"}
         ]
       },
       {
