@@ -85,6 +85,7 @@ export default hopeTheme({
       global: true,
       triggerWords: 10,
       disableCopy: true,
+      disableSelection: false,
     },
     
 
