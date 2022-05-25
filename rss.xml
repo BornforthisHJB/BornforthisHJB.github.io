@@ -6,8 +6,8 @@
     <link>https://bornforthis.cn/</link>
     <description>AI悦创,Python,编程一对一,C++,Java,AI,人工智能,黄家宝</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 25 May 2022 05:53:11 GMT</pubDate>
-    <lastBuildDate>Wed, 25 May 2022 05:53:11 GMT</lastBuildDate>
+    <pubDate>Wed, 25 May 2022 05:53:24 GMT</pubDate>
+    <lastBuildDate>Wed, 25 May 2022 05:53:24 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -820,7 +820,50 @@ D:\Github_pages\Python_FAQ\01-Python: No such file or directory
       <category>技术杂谈</category>
       <pubDate>Mon, 16 May 2022 15:20:02 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="_1-实现-python-分割视频" tabindex="-1"> 1. 实现 Python 分割视频</h1>
-<div><pre><code></code></pre><div aria-hidden="true"></div></div><p>欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！</p>
+<div><pre><code><span># -*- coding: utf-8 -*-</span>
+<span># @Author: AI悦创</span>
+<span># @Date:   2022-05-19 11:40:50</span>
+<span># @Last Modified by:   aiyc</span>
+<span># @Last Modified time: 2022-05-20 11:28:48</span>
+<span>import</span> os<span>,</span> time
+
+<span>def</span> <span>parse_path</span><span>(</span>path<span>)</span><span>:</span>
+	<span># for i in os.walk(path):</span>
+	<span>for</span> dirpath<span>,</span> dirnames<span>,</span> filenames <span>in</span> os<span>.</span>walk<span>(</span>path<span>)</span><span>:</span>
+		<span># print(i)</span>
+		<span>for</span> path <span>in</span> filenames<span>:</span>
+			<span># print(os.path.join(dirpath, path))</span>
+			<span># file_path = os.path.join(dirpath, path)</span>
+			<span># if file_path.split(".")[-1] == "mp4": </span>
+			<span>if</span> path<span>.</span>split<span>(</span><span>"."</span><span>)</span><span>[</span><span>-</span><span>1</span><span>]</span> <span>==</span> <span>"mp4"</span><span>:</span> 
+				<span># print(file_path)</span>
+				<span>return</span> path
+
+<span>def</span> <span>generate_html</span><span>(</span><span>)</span><span>:</span>
+	<span>pass</span>
+<span>def</span> <span>split_movie</span><span>(</span>path<span>,</span> movie_name<span>=</span><span>"Defualt"</span><span>)</span><span>:</span>
+	<span># os.system("cd result")</span>
+	os<span>.</span>chdir<span>(</span><span>"result"</span><span>)</span>  <span># 指定输出路径</span>
+	<span>print</span><span>(</span>os<span>.</span>getcwd<span>(</span><span>)</span><span>)</span>
+	time<span>.</span>sleep<span>(</span><span>6</span><span>)</span>
+	os<span>.</span>system<span>(</span><span><span>f"ffmpeg -i </span><span><span>{</span>path<span>}</span></span><span> -profile:v "</span></span> \
+		<span>"baseline -level 3.0 -s 1920x1080 -start_number 0 "</span> \
+		<span><span>f"-hls_time 10 -hls_list_size 0 -f hls </span><span><span>{</span>movie_name<span>}</span></span><span>.m3u8"</span></span><span>)</span>
+
+<span>def</span> <span>main</span><span>(</span><span>)</span><span>:</span>
+	path <span>=</span> <span>"."</span>
+	file_path <span>=</span> parse_path<span>(</span>path<span>)</span>
+	r_path <span>=</span> os<span>.</span>path<span>.</span>join<span>(</span>os<span>.</span>getcwd<span>(</span><span>)</span><span>,</span> file_path<span>)</span>
+	<span># movie_name = file_path.split(".")[0].replace("\\", "")</span>
+	movie_name <span>=</span> file_path<span>.</span>split<span>(</span><span>"."</span><span>)</span><span>[</span><span>0</span><span>]</span>
+	<span>print</span><span>(</span><span><span>f"r_path: </span><span><span>{</span>r_path<span>}</span></span><span>, \nmovie_name: </span><span><span>{</span>movie_name<span>}</span></span><span>"</span></span><span>)</span>
+	<span># print(os.getcwd())</span>
+	<span># print(os.path.join(os.getcwd(), file_path))</span>
+	split_movie<span>(</span>r_path<span>,</span> movie_name<span>)</span>
+
+<span>if</span> __name__ <span>==</span> <span>"__main__"</span><span>:</span>
+	main<span>(</span><span>)</span>
+</code></pre><div aria-hidden="true"><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br></div></div><p>欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！</p>
 <details><summary>公众号：AI悦创【二维码】</summary>
 <p><img src="/gzh.jpg" alt="" loading="lazy"></p>
 </details>
