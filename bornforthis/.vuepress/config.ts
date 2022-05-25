@@ -4,8 +4,8 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import theme from "./theme";
 // const { searchPlugin } = require('@vuepress/plugin-search');
 // import { sitemapPlugin } from "vuepress-plugin-sitemap2";
-import { feedPlugin } from "vuepress-plugin-feed2";
-import { copyrightPlugin } from "vuepress-plugin-copyright2";
+// import { feedPlugin } from "vuepress-plugin-feed2";
+// import { copyrightPlugin } from "vuepress-plugin-copyright2";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -57,17 +57,18 @@ export default defineUserConfig({
       },
     }),
 
-    feedPlugin({
-      hostname: "https://bornforthis.cn/",
-      rss: true,
-      image: "/img_home/logo_min.png",
-    }),
+    // feedPlugin({
+    //   hostname: "https://bornforthis.cn/",
+    //   rss: true,
+    //   image: "/img_home/logo_min.png",
+    // }),
 
-    copyrightPlugin({
-      author: "AI悦创",
-      global: true,
-      triggerWords: 10,
-    }),
+    // copyrightPlugin({
+    //   author: "AI悦创",
+    //   global: true,
+    //   triggerWords: 10,
+    //   hostname: "https://bornforthis.cn/",
+    // }),
 
     // sitemapPlugin({
     //   hostname: "bornforthis.cn",

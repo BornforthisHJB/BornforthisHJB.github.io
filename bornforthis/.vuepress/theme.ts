@@ -80,13 +80,11 @@ export default hopeTheme({
   },
   
   plugins: {
-    // search: {
-    //   locales: {
-    //     "/": {
-    //       placeholder: "搜索",
-    //     },
-    //   },
-    // },
+    copyright: {
+      author: "黄家宝|AI悦创",
+      global: true,
+      triggerWords: 10,
+    },
     
 
     blog: {
