@@ -3,8 +3,9 @@ import { searchPlugin } from "@vuepress/plugin-search";
 // import { photoSwipePlugin } from "vuepress-plugin-photo-swipe";
 import theme from "./theme";
 // const { searchPlugin } = require('@vuepress/plugin-search');
-import { sitemapPlugin } from "vuepress-plugin-sitemap2";
+// import { sitemapPlugin } from "vuepress-plugin-sitemap2";
 import { feedPlugin } from "vuepress-plugin-feed2";
+import { copyrightPlugin } from "vuepress-plugin-copyright2";
 
 export default defineUserConfig({
   lang: "zh-CN",
