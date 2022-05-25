@@ -63,6 +63,12 @@ export default defineUserConfig({
       image: "/img_home/logo_min.png",
     }),
 
+    copyrightPlugin({
+      author: "AI悦创",
+      global: true,
+      triggerWords: 10,
+    }),
+
     // sitemapPlugin({
     //   hostname: "bornforthis.cn",
     // }),
