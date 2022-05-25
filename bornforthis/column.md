@@ -32,10 +32,10 @@ features:
     details: 全网最优质的 tkinter 教程
     link: /column/tkinter
 
-  - title: 博客支持
+  - title: My Web Share
     icon: blog
     details: 使用一些很棒的布局提供博客功能，通过文章的日期、标签和分类，自动生成文章、分类、标签与时间轴列表
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/blog/intro.html
+    link: /learning_web
 
   - title: 主题色切换
     icon: palette
