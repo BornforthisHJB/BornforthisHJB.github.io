@@ -4712,16 +4712,6 @@ vuepress-plugin-feed2@2.0.0-beta.51:
     "@vuepress/utils" "2.0.0-beta.43"
     xml-js "^1.6.11"
 
-vuepress-plugin-feed2@^2.0.0-beta.64:
-  version "2.0.0-beta.64"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-feed2/-/vuepress-plugin-feed2-2.0.0-beta.64.tgz#38ea2da47ebc9ca2e7dc36a0f59a4f6bd6a08bee"
-  integrity sha512-VvZOdl+tNyDTti/rGjj/M0gBR+CxYRkMxulR5vz8WiTR42rEHZKLHet3VxdJA1Bz/JnnFpKDXzE7pcO9mfMfqg==
-  dependencies:
-    "@mr-hope/vuepress-shared" "2.0.0-beta.64"
-    "@vuepress/shared" "2.0.0-beta.45"
-    "@vuepress/utils" "2.0.0-beta.45"
-    xml-js "^1.6.11"
-
 vuepress-plugin-md-enhance@2.0.0-beta.51:
   version "2.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-md-enhance/-/vuepress-plugin-md-enhance-2.0.0-beta.51.tgz#f62596830efd7cdaf2e6d166cc9c74bec5ba9605"
