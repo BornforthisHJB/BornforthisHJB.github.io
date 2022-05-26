@@ -48,6 +48,11 @@ export default navbar([
       
     ]
   },
+  {
+    text: "私教计划",
+    icon: "github",
+    link: "https://www.yuque.com/docs/share/d94147a1-57f8-4750-b436-d657b0a4531c?#gCUv"
+  },
   { 
     text: "友情链接",
     icon: "alias", 
