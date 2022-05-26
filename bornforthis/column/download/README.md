@@ -24,15 +24,15 @@ footer: 立志降低教育成本，普及编程教育，提供优质资源教程
 
 ## 下载目录
 
-| 序号        | 名称     | 下载地址                                                     | 官网                                                       |
-| ----------- | -------- | ------------------------------------------------------------ | ---------------------------------------------------------- |
-| **Windows** |          |                                                              |                                                            |
-| 01          | Snipaste | [**Snipaste-2.7.3-Beta-x64.zip**](https://aiyc.lanzouf.com/iqFUt05dg7qd) | [https://www.snipaste.com/](https://www.snipaste.com/)     |
-| 02          | Spyder   | **[Spyder_64bit_full.exe](https://github.com/spyder-ide/spyder/releases)** | [https://www.spyder-ide.org/](https://www.spyder-ide.org/) |
-|             |          |                                                              |                                                            |
-|             |          |                                                              |                                                            |
-|             |          |                                                              |                                                            |
-|             |          |                                                              |                                                            |
+| 序号        | 名称     | 下载地址                                                     | 官网                                                         |
+| ----------- | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Windows** |          |                                                              |                                                              |
+| 01          | Snipaste | [**Snipaste-2.7.3-Beta-x64.zip**](https://aiyc.lanzouf.com/iqFUt05dg7qd) | [https://www.snipaste.com/](https://www.snipaste.com/)       |
+| 02          | Spyder   | **[Spyder_64bit_full.exe](https://github.com/spyder-ide/spyder/releases)** | [https://www.spyder-ide.org/](https://www.spyder-ide.org/)   |
+| 03          | devC++   | [Dev-Cpp 5.11 TDM-GCC 4.9.2 Setup.exe](/data/windows/Dev-Cpp 5.11 TDM-GCC 4.9.2 Setup.exe) | [https://sourceforge.net/projects/orwelldevcpp/](https://sourceforge.net/projects/orwelldevcpp/) |
+|             |          |                                                              |                                                              |
+|             |          |                                                              |                                                              |
+|             |          |                                                              |                                                              |
 
 ::: details 公众号：AI悦创【二维码】
 
