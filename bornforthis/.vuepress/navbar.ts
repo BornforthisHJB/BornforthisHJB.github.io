@@ -33,6 +33,7 @@ export default navbar([
           { text: "51CTO博客", link: "https://blog.51cto.com/aiyc"},
           { text: "腾讯云社区", link: "https://cloud.tencent.com/developer/user/7111610"},
           { text: "留言", link: "https://comment.bornforthis.cn/"},
+          { text: "悦兮小栈", link: "https://comment.blovey.art/"},
           { text: "评论管理", link: "https://comment.bornforthis.cn/ui"},
         ]
       },
@@ -41,6 +42,7 @@ export default navbar([
         children: [
           { text: "Github", icon: "github", link: "https://gitee.com/huangjiabaoaiyc"},
           { text: "Gitee", icon: "gitee", link: "https://gitee.com/huangjiabaoaiyc"},
+          { text: "vercel", icon: "gitee", link: "https://vercel.com/"},
         ]
       },
       
