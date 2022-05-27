@@ -40,7 +40,7 @@ features:
   - title: 编程初学者入门训练
     icon: code
     details: 该专题为编程入门级别，涉及编程基础语法，基本结构等。
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/interface/theme-color.html
+    link: /column/practice_code
 
   - title: 程序员数学基础课
     icon: geometry
