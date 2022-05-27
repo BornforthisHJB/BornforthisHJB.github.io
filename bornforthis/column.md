@@ -33,18 +33,18 @@ features:
     link: /column/tkinter
 
   - title: My Web Share
-    icon: blog
-    details: 使用一些很棒的布局提供博客功能，通过文章的日期、标签和分类，自动生成文章、分类、标签与时间轴列表
+    icon: page
+    details: 本人平时参考的网站，逐步更新中~
     link: /learning_web
 
-  - title: 主题色切换
-    icon: palette
-    details: 支持自定义主题色并允许用户在预设的主题颜色之间切换
+  - title: 编程初学者入门训练
+    icon: code
+    details: 该专题为编程入门级别，涉及编程基础语法，基本结构等。
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/interface/theme-color.html
 
-  - title: 深色模式
-    icon: contrast
-    details: 可以自由切换浅色模式与深色模式
+  - title: 程序员数学基础课
+    icon: geometry
+    details: 数学基础的好坏，会直接决定一个程序员的发展潜力
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/interface/darkmode.html
 
   - title: 完整的无障碍支持
