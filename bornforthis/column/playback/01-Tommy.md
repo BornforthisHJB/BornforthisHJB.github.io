@@ -33,7 +33,7 @@ toc: true
 | 02   | Python 变量【中】-8h  | [https://video.aiyc.top/Tommy_Fernandez_Tian/two/two.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/two/two.m3u8) |
 | 03   | Python 变量【下】-7h  | [https://video.aiyc.top/Tommy_Fernandez_Tian/three/three.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/three/three.m3u8) |
 | 04   | 初识数据类型【上】-6h | [https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8) |
-| 05   | 初识数据类型【中】-5h |                                                              |
+| 05   | 初识数据类型【中】-5h | [https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8) |
 
 
 
