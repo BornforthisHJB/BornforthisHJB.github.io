@@ -27,10 +27,13 @@ toc: true
 
 你好，我是悦创。
 
-| 序号 | 内容 | 链接                                                         |
-| ---- | ---- | ------------------------------------------------------------ |
-| 01   |      | [https://video.aiyc.top/Tommy_Fernandez_Tian/one/one.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/one/one.m3u8) |
-| 02   |      |                                                              |
+| 序号 | 内容                  | 链接                                                         |
+| ---- | --------------------- | ------------------------------------------------------------ |
+| 01   | Python 变量【上】-9h  | [https://video.aiyc.top/Tommy_Fernandez_Tian/one/one.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/one/one.m3u8) |
+| 02   | Python 变量【中】-8h  | [https://video.aiyc.top/Tommy_Fernandez_Tian/two/two.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/two/two.m3u8) |
+| 03   | Python 变量【下】-7h  | [https://video.aiyc.top/Tommy_Fernandez_Tian/three/three.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/three/three.m3u8) |
+| 04   | 初识数据类型【上】-6h | [https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8) |
+| 05   | 初识数据类型【中】-5h |                                                              |
 
 
 
