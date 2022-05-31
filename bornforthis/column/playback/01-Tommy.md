@@ -35,7 +35,9 @@ toc: true
 | 04   | 初识数据类型【上】-6h | [https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8) |
 | 05   | 初识数据类型【中】-5h | [https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8) |
 
-::::: details 便捷复制 m3u8
+
+
+## 便捷复制 m3u8
 
 :::: code-group
 
@@ -80,8 +82,6 @@ https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8
 :::
 
 ::::
-
-:::::
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
