@@ -76,6 +76,7 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/guide/encrypt.html": ["1234"],
+      "/column/playback/01-Tommy.html": "20220517",
     },
   },
   

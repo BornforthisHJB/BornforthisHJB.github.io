@@ -47,13 +47,13 @@ features:
     details: 数学基础的好坏，会直接决定一个程序员的发展潜力
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/interface/darkmode.html
 
-  - title: 完整的无障碍支持
-    icon: support
-    details: 为你的网站带来完整的无障碍支持
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/interface/accessibility.html
+  - title: 私教学员回放
+    icon: lock
+    details: 密码访问播放
+    link: /column/playback
 
   - title: 文章加密
-    icon: lock
+    icon: support
     details: 你可以为你的特定页面或特定目录进行加密，以便陌生人不能随意访问它们
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/encrypt.html
 
