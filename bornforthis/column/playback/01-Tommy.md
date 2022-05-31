@@ -35,13 +35,37 @@ toc: true
 | 04   | 初识数据类型【上】-6h | [https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8) |
 | 05   | 初识数据类型【中】-5h | [https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8) |
 
-::: details Python 变量【上】-9h
+::::: details 便捷复制 m3u8
+
+:::: code-group
+
+::: code-group-item 01:active
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/one/one.m3u8
 ```
 
 :::
+
+::: code-group-item 02
+
+```url
+https://video.aiyc.top/Tommy_Fernandez_Tian/two/two.m3u8
+```
+
+:::
+
+::: code-group-item 03
+
+```url
+https://video.aiyc.top/Tommy_Fernandez_Tian/three/three.m3u8
+```
+
+:::
+
+::::
+
+:::::
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
