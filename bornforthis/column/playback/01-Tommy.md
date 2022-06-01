@@ -3,9 +3,9 @@ title: 01-Tommy Fernandez Tian
 date: 2022-05-31 17:26:00
 author: AI悦创
 isOriginal: true
-category: tkinter
+category: 私教回放
 tag:
-    - tkinter
+    - 私教回放
 icon: lock
 sticky: false
 star: false
