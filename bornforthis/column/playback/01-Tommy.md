@@ -34,6 +34,7 @@ toc: true
 | 03   | Python 变量【下】-7h  | [https://video.aiyc.top/Tommy_Fernandez_Tian/three/three.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/three/three.m3u8) |
 | 04   | 初识数据类型【上】-6h | [https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8) |
 | 05   | 初识数据类型【中】-5h | [https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8) |
+| 06   | 数字型【上】-4h       | [https://video.aiyc.top/Tommy_Fernandez_Tian/six/six.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/six/six.m3u8) |
 
 
 
@@ -77,6 +78,14 @@ https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8
+```
+
+:::
+
+::: code-group-item 06
+
+```url
+https://video.aiyc.top/Tommy_Fernandez_Tian/six/six.m3u8
 ```
 
 :::
