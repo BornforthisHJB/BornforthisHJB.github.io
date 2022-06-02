@@ -55,7 +55,7 @@ features:
   - title: Python 办公自动化
     icon: react
     details: 你有没有想过，下班晚可能是因为自己工作比较低效？
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/encrypt.html
+    link: /column/pyauto
 
   - title: 复制按钮
     icon: copy
