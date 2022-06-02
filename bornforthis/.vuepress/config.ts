@@ -13,8 +13,21 @@ export default defineUserConfig({
   description: "AI悦创,Python,编程一对一,C++,Java,AI,人工智能,黄家宝",
   // searchPlugin: true,
   base: "/",
-
   head: [
+    // [
+    //   "link",
+    //   {
+    //     rel: "stylesheet",
+    //     href: "https://pyscript.net/alpha/pyscript.css",
+    //   },
+    // ],
+    // [
+    //   "script",
+    //   { 
+    //     type: "text/javascript",
+    //     src: "https://pyscript.net/alpha/pyscript.js"
+    //   },
+    // ],
     [
       "script",
       { 
