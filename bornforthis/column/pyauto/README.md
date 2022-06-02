@@ -3,7 +3,7 @@ blog: false
 home: true
 icon: home
 title: Python 办公自动化
-heroImage: /ColumnImages/tkinter/what-is-tkinter-used-for.png
+heroImage: /ColumnImages/pyauto/pyauto.jpg
 heroText: tkinter 专栏
 heroFullScreen: true
 tagline: 快速带你入门 Python GUI-tkinter

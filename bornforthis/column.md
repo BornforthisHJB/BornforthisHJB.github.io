@@ -52,9 +52,9 @@ features:
     details: 密码访问播放
     link: /column/playback
 
-  - title: 文章加密
-    icon: support
-    details: 你可以为你的特定页面或特定目录进行加密，以便陌生人不能随意访问它们
+  - title: Python 办公自动化
+    icon: react
+    details: 你有没有想过，下班晚可能是因为自己工作比较低效？
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/encrypt.html
 
   - title: 复制按钮
