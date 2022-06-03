@@ -9,7 +9,7 @@ heroFullScreen: true
 tagline: 通过 Python 来实现自动化办公，减少手动操作，解放人力。
 actions:
   - text: 开始学习 💡
-    link: /column/tkinter/tearoff
+    link: /column/pyauto/auto_01
     type: primary	
 
   - text: 与作者联系 👋
