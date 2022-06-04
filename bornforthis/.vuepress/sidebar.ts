@@ -31,7 +31,17 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/pyauto/": [
+		{
+			text: "课前准备",
+			collapsable: true,
+			children: [
+			"",
+			"auto_01",
 
+		],
+	}
+	],
 	"/column/tkinter/" :[
 		{ 
 		  text: "FQA",
