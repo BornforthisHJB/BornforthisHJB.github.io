@@ -113,6 +113,7 @@ export default sidebar({
 		collapsable: true,
 		children: [
 			"skill_pycharm1",
+			"skill_ipython1",
 		],
 	},
 	{

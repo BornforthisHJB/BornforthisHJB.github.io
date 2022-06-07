@@ -22,7 +22,7 @@ comment: true
 lastUpdated: true
 editLink: true
 prev: false
-next: skill_pycharm2.md
+next: skill_ipython1.md
 backToTop: true
 toc: true
 ---
