@@ -36,6 +36,7 @@ toc: true
 | 05   | 初识数据类型【中】-5h   | [https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8) |
 | 06   | 数字型【上】-4h         | [https://video.aiyc.top/Tommy_Fernandez_Tian/six/six.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/six/six.m3u8) |
 | 07   | 数字型、字符串【上】-3h | [https://video.aiyc.top/Tommy_Fernandez_Tian/seven/seven.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/seven/seven.m3u8) |
+| 08   | 字符串数据提取【中】-2h | [https://video.aiyc.top/Tommy_Fernandez_Tian/eight/eight.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/eight/eight.m3u8) |
 
 
 
@@ -95,6 +96,14 @@ https://video.aiyc.top/Tommy_Fernandez_Tian/six/six.m3u8
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/seven/seven.m3u8
+```
+
+:::
+
+::: code-group-item 08
+
+```url
+https://video.aiyc.top/Tommy_Fernandez_Tian/eight/eight.m3u8
 ```
 
 :::
