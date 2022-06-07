@@ -1,6 +1,6 @@
 ---
 title: 02-如何将 IPython 的历史记录导出到.py 文件中?
-date: 2022-05-20 16:01:00
+date: 2022-06-07 16:01:00
 author: AI悦创
 isOriginal: true
 category: 
