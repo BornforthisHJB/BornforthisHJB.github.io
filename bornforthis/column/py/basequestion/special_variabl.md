@@ -20,7 +20,7 @@ comment: true
 lastUpdated: true
 editLink: true
 prev: special_for.md
-next: special_for.md
+next: special_yunsuanfu.md
 backToTop: true
 toc: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: 02-for 循环专项练习
+title: 03-for 循环专项练习
 date: 2022-05-19 20:30:00
 author: AI悦创
 isOriginal: true
@@ -19,7 +19,7 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: special_for.md
+prev: special_yunsuanfu.md
 next: special_for.md
 backToTop: true
 toc: true

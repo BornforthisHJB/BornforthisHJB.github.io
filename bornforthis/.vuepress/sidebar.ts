@@ -105,6 +105,7 @@ export default sidebar({
 		collapsable: true,
 		children: [
 			"special_variabl",
+			"special_yunsuanfu",
 			"special_for",
 		],
 	},
