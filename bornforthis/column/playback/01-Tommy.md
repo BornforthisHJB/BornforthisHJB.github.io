@@ -37,6 +37,7 @@ toc: true
 | 06   | 数字型【上】-4h         | [https://video.aiyc.top/Tommy_Fernandez_Tian/six/six.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/six/six.m3u8) |
 | 07   | 数字型、字符串【上】-3h | [https://video.aiyc.top/Tommy_Fernandez_Tian/seven/seven.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/seven/seven.m3u8) |
 | 08   | 字符串数据提取【中】-2h | [https://video.aiyc.top/Tommy_Fernandez_Tian/eight/eight.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/eight/eight.m3u8) |
+| 09   | 字符串数据提取【下】-1h | [https://video.aiyc.top/Tommy_Fernandez_Tian/nine/meeting_03.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/nine/meeting_03.m3u8) |
 
 
 
@@ -104,6 +105,14 @@ https://video.aiyc.top/Tommy_Fernandez_Tian/seven/seven.m3u8
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/eight/eight.m3u8
+```
+
+:::
+
+::: code-group-item 09
+
+```url
+https://video.aiyc.top/Tommy_Fernandez_Tian/nine/meeting_03.m3u8
 ```
 
 :::
