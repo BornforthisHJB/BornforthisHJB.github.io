@@ -9,20 +9,6 @@ export default defineUserConfig({
   // searchPlugin: true,
   base: "/",
   head: [
-    // [
-    //   "link",
-    //   {
-    //     rel: "stylesheet",
-    //     href: "https://pyscript.net/alpha/pyscript.css",
-    //   },
-    // ],
-    // [
-    //   "script",
-    //   { 
-    //     type: "text/javascript",
-    //     src: "https://pyscript.net/alpha/pyscript.js"
-    //   },
-    // ],
     [
       "script",
       { 
@@ -48,13 +34,6 @@ export default defineUserConfig({
   ],
 
   plugins: [
-    // photoSwipePlugin({
-    //   zoom: "string";
-    //   close: "close";
-    //   share: "Share";
-
-    // }),
-
     searchPlugin({
       // ...
 
@@ -64,23 +43,6 @@ export default defineUserConfig({
         },
       },
     }),
-
-    // feedPlugin({
-    //   hostname: "https://bornforthis.cn/",
-    //   rss: true,
-    //   image: "/img_home/logo_min.png",
-    // }),
-
-    // copyrightPlugin({
-    //   author: "AI悦创",
-    //   global: true,
-    //   triggerWords: 10,
-    //   hostname: "https://bornforthis.cn/",
-    // }),
-
-    // sitemapPlugin({
-    //   hostname: "bornforthis.cn",
-    // }),
   ],
 
   theme,
