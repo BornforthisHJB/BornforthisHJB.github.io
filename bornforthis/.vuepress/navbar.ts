@@ -79,7 +79,7 @@ export default navbar([
   },
   { 
     text: "开源 Py 库",
-    icon: "library",
+    icon: "workingDirectory",
     link: "https://pypi.org/user/Bornforthis/"
   }
 ]);
