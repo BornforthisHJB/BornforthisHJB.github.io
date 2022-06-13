@@ -13,7 +13,7 @@ export default hopeTheme({
 
   iconPrefix: "iconfont icon-",
   
-  iconAssets: 'iconfont',
+  iconAssets: "iconfont",
 
   logo: "/img_home/logo_min.png",
 
@@ -102,22 +102,16 @@ export default hopeTheme({
       // /**
       //  * Using giscus
       //  */
-      // type: "giscus",
+      // provider: "giscus",
       // repo: "BornforthisHJB/comment",
       // repoId: "R_kgDOHTJESw",
       // category: "Announcements",
       // categoryId: "DIC_kwDOHTJES84CO_Qz",
 
       /**
-       * Using twikoo
-       */
-      // type: "twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
-
-      /**
        * Using Waline
        */
-      type: "waline",
+      provider: "Waline",
       serverURL: "https://comment.bornforthis.cn/",
       comment: true, // 评论数统计
       pageview: true, // 浏览量统计
