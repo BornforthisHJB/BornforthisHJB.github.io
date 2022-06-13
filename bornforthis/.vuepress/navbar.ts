@@ -61,7 +61,7 @@ export default navbar([
     link: "https://study.163.com/provider/480000002277025/course.htm"
   },
   { 
-    text: "开源 Py 库",
+    text: "开源Py库",
     icon: "workingDirectory",
     link: "https://pypi.org/user/Bornforthis/"
   },
