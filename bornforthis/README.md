@@ -34,7 +34,7 @@ projects:
     desc: 伙伴详细介绍
     link: https://你的伙伴链接
 
-  - icon: /logo.svg
+  - icon: friend
     name: 自定义项目
     desc: Python 来实现自动化办公，解放人力。
     link: /autooffice
