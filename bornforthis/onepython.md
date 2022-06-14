@@ -19,8 +19,8 @@ headerDepth: 3
 comment: true
 lastUpdated: true
 editLink: false
-prev: 01.md
-next: 03.md
+prev: onepython.md
+next: autooffice.md
 backToTop: true
 toc: true
 ---

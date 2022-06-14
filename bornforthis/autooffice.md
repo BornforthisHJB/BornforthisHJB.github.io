@@ -1,12 +1,12 @@
 ---
-title: Python 办公自动化·一对一教学课程表
-date: 2022-06-14 14:45:52
+title:  Python 办公自动化一对一教学课程表
+date: 2022-06-14 15:09:52
 author: AI悦创
 isOriginal: true
-category: Python 基础
+category: Python 办公自动化
 tag:
-    - Python 基础
-icon:false
+    - Python 办公自动化
+icon: false
 sticky: false
 star: false
 password: false
@@ -19,8 +19,8 @@ headerDepth: 3
 comment: true
 lastUpdated: true
 editLink: false
-prev: 01.md
-next: 03.md
+prev: autooffice.md
+next: onepython.md
 backToTop: true
 toc: true
 ---
