@@ -1,17 +1,12 @@
 ---
-blog: false
-home: false
-icon: home
 title: Python 办公自动化·一对一教学课程表
-heroImage: /ColumnImages/pyauto/pyauto.jpg
-title:  Python 零基础入门一对一教学课程表
 date: 2022-06-14 14:45:52
 author: AI悦创
 isOriginal: true
 category: Python 基础
 tag:
     - Python 基础
-icon: false
+icon:false
 sticky: false
 star: false
 password: false
@@ -29,6 +24,9 @@ next: 03.md
 backToTop: true
 toc: true
 ---
+
+![](/ColumnImages/pyauto/pyauto.jpg)
+
 
 | 序号                                               | 内容                                                   |
 | -------------------------------------------------- | ------------------------------------------------------ |
