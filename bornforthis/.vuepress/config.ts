@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
+import { pwaPlugin } from "vuepress-plugin-pwa2";
 import theme from "./theme";
 
 export default defineUserConfig({
@@ -7,6 +8,7 @@ export default defineUserConfig({
   title: "AI悦创",
   description: "AI悦创,Python,编程一对一,C++,Java,AI,人工智能,黄家宝",
   base: "/",
+  shouldPrefetch: false,
   head: [
     [
       "script",
@@ -33,6 +35,11 @@ export default defineUserConfig({
   ],
 
   plugins: [
+    pwaPlugin({
+      // cacheHTML: true,
+      update: "available",
+    }),
+    
     searchPlugin({
       locales: {
         "/": {
