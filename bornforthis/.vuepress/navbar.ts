@@ -53,17 +53,17 @@ export default navbar([
   {
     text: "私教计划",
     icon: "alias",
-    link: "https://www.yuque.com/docs/share/d94147a1-57f8-4750-b436-d657b0a4531c?#gCUv"
+    link: "https://www.yuque.com/docs/share/d94147a1-57f8-4750-b436-d657b0a4531c?#gCUv",
   },
   {
     text: "网易云课堂",
     icon: "view",
-    link: "https://study.163.com/provider/480000002277025/course.htm"
+    link: "https://study.163.com/provider/480000002277025/course.htm",
   },
   { 
     text: "开源Py库",
     icon: "workingDirectory",
-    link: "https://pypi.org/user/Bornforthis/"
+    link: "https://pypi.org/user/Bornforthis/",
   },
   { 
     text: "友情链接",
