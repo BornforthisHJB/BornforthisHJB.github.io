@@ -9,7 +9,7 @@ heroFullScreen: true
 bgImage: /img_home/L1009890.jpg
 tagline: 浅者见浅，深者见深——黄家宝<br/>“I love the people I photograph”——Bruce Gilden
 projects:
-  - icon: play
+  - icon: project
     name: 私教回放
     desc: 私教学员在线回放
     link: https://bornforthis.cn/column/playback
