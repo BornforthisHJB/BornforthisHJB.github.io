@@ -35,7 +35,7 @@ projects:
     link: https://你的伙伴链接
 
   - icon: friend
-    name: 自定义项目
+    name: 办公自动化
     desc: Python 来实现自动化办公，解放人力。
     link: /autooffice
 
