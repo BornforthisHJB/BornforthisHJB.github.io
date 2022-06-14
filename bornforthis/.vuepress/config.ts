@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { pwaPlugin } from "vuepress-plugin-pwa2";
+// import { photoSwipePlugin } from "vuepress-plugin-photo-swipe";
 import theme from "./theme";
 
 export default defineUserConfig({
@@ -35,9 +36,16 @@ export default defineUserConfig({
   ],
 
   plugins: [
+    // photoSwipePlugin({
+    //   // 你的选项
+    // }),
+
     pwaPlugin({
       // cacheHTML: true,
+      // update: "available",
+      // update: "force",
       update: "hint",
+      // maxSize: 6,
     }),
     
     searchPlugin({
