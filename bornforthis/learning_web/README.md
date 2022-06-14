@@ -20,11 +20,13 @@ actions:
 footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 ---
 
-| 序号 | 网站名称           | 内容                 | 链接                                                         | 语言 | 发现原因            |
-| ---- | ------------------ | -------------------- | ------------------------------------------------------------ | ---- | ------------------- |
-| 01   | **studytonight**   | 可以学习 IT 类型资料 | [https://www.studytonight.com/](https://www.studytonight.com/) | En   | 搜寻 tkinter 知识点 |
-| 02   | **tutorialspoint** | 可以学习 IT 类型资料 | [https://www.tutorialspoint.com/](https://www.tutorialspoint.com/) | En   | 搜寻 tkinter 知识点 |
-| 03   |                    |                      |                                                              |      |                     |
+| 序号 | 网站名称           | 内容                 | 链接                                                         | 语言 | 发现原因               |
+| ---- | ------------------ | -------------------- | ------------------------------------------------------------ | ---- | ---------------------- |
+| 01   | **studytonight**   | 可以学习 IT 类型资料 | [https://www.studytonight.com/](https://www.studytonight.com/) | EN   | 搜寻 tkinter 知识点    |
+| 02   | **tutorialspoint** | 可以学习 IT 类型资料 | [https://www.tutorialspoint.com/](https://www.tutorialspoint.com/) | EN   | 搜寻 tkinter 知识点    |
+| 03   | **programiz**      | 可以学习 IT 类型资料 | [https://www.programiz.com/](https://www.programiz.com/)     | EN   | 搜寻 casefold() 知识点 |
+| 04   | **cainiaojc**      | 可以学习 IT 类型资料 | [https://www.cainiaojc.com/](https://www.cainiaojc.com/)     | ZH   | 搜寻 casefold() 知识点 |
+| 05   |                    |                      |                                                              |      |                        |
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
