@@ -37,7 +37,7 @@ export default defineUserConfig({
   plugins: [
     pwaPlugin({
       // cacheHTML: true,
-      update: "available",
+      update: "hint",
     }),
     
     searchPlugin({
