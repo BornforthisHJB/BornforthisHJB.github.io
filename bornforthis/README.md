@@ -36,8 +36,8 @@ projects:
 
   - icon: /logo.svg
     name: 自定义项目
-    desc: 自定义详细介绍
-    link: https://你的自定义链接
+    desc: Python 来实现自动化办公，解放人力。
+    link: /autooffice
 
 footer: 长期招收编程一对一学员！微信：Jiabcdefh
 ---
