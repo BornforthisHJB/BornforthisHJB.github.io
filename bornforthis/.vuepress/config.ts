@@ -35,10 +35,6 @@ export default defineUserConfig({
   ],
 
   plugins: [
-    // photoSwipePlugin({
-    //   // 你的选项
-    // }),
-
     pwaPlugin({
       // cacheHTML: true,
       // update: "available",
