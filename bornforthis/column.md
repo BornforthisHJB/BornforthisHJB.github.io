@@ -57,10 +57,10 @@ features:
     details: 你有没有想过，下班晚可能是因为自己工作比较低效？
     link: /column/pyauto
 
-  - title: 复制按钮
-    icon: copy
-    details: 一键复制代码块中的代码
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/copy-code.html
+  - title: Python 学习合集
+    icon: python
+    details: 文字专栏带你快速入门
+    link: /column/py/Python_tutorial
 
   - title: 图片预览
     icon: pic
