@@ -44,89 +44,69 @@ toc: true
 
 ## 便捷复制 m3u8
 
-:::: code-group
+::: code-tabs#shell
 
-::: code-group-item 01:active
+@tab 01
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/one/one.m3u8
 ```
 
-:::
-
-::: code-group-item 02
+@tab 02
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/two/two.m3u8
 ```
 
-:::
-
-::: code-group-item 03
+@tab 03
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/three/three.m3u8
 ```
 
-:::
-
-::: code-group-item 04
+@tab 04
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/four/four.m3u8
 ```
 
-:::
-
-::: code-group-item 05
+@tab 05
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/five/five.m3u8
 ```
 
-:::
-
-::: code-group-item 06
+@tab 06
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/six/six.m3u8
 ```
 
-:::
-
-::: code-group-item 07
+@tab 07
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/seven/seven.m3u8
 ```
 
-:::
-
-::: code-group-item 08
+@tab 08
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/eight/eight.m3u8
 ```
 
-:::
-
-::: code-group-item 09
+@tab 09
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/nine/meeting_03.m3u8
 ```
 
-::: code-group-item 10
-
-:::
+@tab 10
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/ten/ten.m3u8
 ```
 
 :::
-
-::::
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
