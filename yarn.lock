@@ -4196,7 +4196,7 @@ vuepress-plugin-photo-swipe@2.0.0-beta.83:
     vuepress-plugin-sass-palette "2.0.0-beta.83"
     vuepress-shared "2.0.0-beta.83"
 
-vuepress-plugin-pwa2@2.0.0-beta.83, vuepress-plugin-pwa2@^2.0.0-beta.82:
+vuepress-plugin-pwa2@2.0.0-beta.83, vuepress-plugin-pwa2@^2.0.0-beta.83:
   version "2.0.0-beta.83"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-pwa2/-/vuepress-plugin-pwa2-2.0.0-beta.83.tgz#e83f5c56ccd2c1c5ae6716817f1cd857faabeb11"
   integrity sha512-HNWvuv01UYVP2mSyPb1v+JEk7c/d/agoVqiw0FVTN/jw9cZX4TJEuBSIDSfNqoN2kEYPA30iCv69oAQ1Yfq3vg==
