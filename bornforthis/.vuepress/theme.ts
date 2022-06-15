@@ -20,6 +20,7 @@ export default hopeTheme({
   repo: "BornforthisHJB/BornforthisHJB.github.io",
 
   docsDir: "bornforthis/",
+  
   darkmode: "enable",
 
   // navbar
