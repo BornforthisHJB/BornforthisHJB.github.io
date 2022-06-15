@@ -43,9 +43,9 @@ toc: true
 1x9=9    2x9=18    3x9=27    4x9=36    5x9=45    6x9=54    7x9=63    8x9=72    9x9=81
 ```
 
-:::: code-group
+::: code-tabs#shell
 
-::: code-group-item for-for:active
+@tab for-for
 
 ```python
 # 九九乘法表
@@ -55,9 +55,7 @@ for i in range(1, 10):
     print()
 ```
 
-:::
-
-::: code-group-item while-while
+@tab while-while
 
 ```python
 # 九九乘法表
@@ -71,9 +69,7 @@ while i <= 9:
     i += 1
 ```
 
-:::
-
-::: code-group-item while-for
+@tab while-for
 
 ```python
 i = 1
@@ -84,9 +80,7 @@ while i <= 9:
     print()
 ```
 
-:::
-
-::: code-group-item for-while
+@tab for-while
 
 ```python
 for i in range(1, 10):
@@ -97,9 +91,7 @@ for i in range(1, 10):
     print()
 ```
 
-:::
-
-::: code-group-item 定义一个变量 a
+@tab 定义一个变量 a
 
 ```python
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -112,9 +104,7 @@ for i in a:
     print()
 ```
 
-:::
-
-::: code-group-item 使用递归
+@tab 使用递归
 
 ```python
 def multiplication(n):
@@ -127,9 +117,7 @@ def multiplication(n):
 multiplication(1)
 ```
 
-:::
-
-::: code-group-item 使用 1 行语句
+@tab 使用 1 行语句
 
 ```python
 print('\n'.join([' '.join(["%2s x%2s = %2s" % (j, i, i * j) for j in range(1, i + 1)]) for i in range(1, 10)]))
@@ -142,8 +130,6 @@ print('\n'.join([' '.join([f"{j}x{i}={i * j}" for j in range(1, i + 1)]) for i i
 ```
 
 :::
-
-::::
 
 ::: details 合并答案
 
@@ -211,8 +197,6 @@ print('\n'.join([' '.join([f"{j}x{i}={i * j}" for j in range(1, i + 1)]) for i i
 ```
 
 :::
-
-
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
