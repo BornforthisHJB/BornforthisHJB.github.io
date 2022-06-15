@@ -35,9 +35,9 @@ Austin 想喝**果汁**，Jaden 想喝**可乐**。**哥哥喝弟弟都有专属
 
 **问：如何交换哥哥与弟弟杯中的果汁？**
 
-:::: code-group
+::: code-tabs#shell
 
-::: code-group-item 样例代码:active
+@tab 样例代码
 
 ```python
 Austin = "Coke"
@@ -55,9 +55,7 @@ Austin juice
 Jaden Coke
 ```
 
-:::
-
-::: code-group-item 提示
+@tab 提示
 
 两种方法思路：
 
@@ -71,9 +69,7 @@ Jaden Coke
 a, b, c = 1, 2, 3
 ```
 
-:::
-
-::: code-group-item answer１
+@tab answer１
 
 ```python
 Austin = "Coke"
@@ -88,9 +84,7 @@ print("Austin", Austin)
 print("Jaden", Jaden)
 ```
 
-:::
-
-::: code-group-item answer2
+@tab answer2
 
 ```python
 Austin = "Coke"
@@ -104,8 +98,6 @@ print("Jaden", Jaden)
 ```
 
 :::
-
-::::
 
 :::: danger 警告！！！
 
