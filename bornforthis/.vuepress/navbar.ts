@@ -7,7 +7,18 @@ export default navbar([
     icon: "people",
     link: "/intro",
   },
-  "/home",
+  { 
+    text: "文档主页",
+    link: "/home",
+    children: [
+      { 
+        text: "程序员的私房菜",
+        children: [
+          "/column/cookdinner/01-yogurt"
+        ]
+      }
+    ]
+  },
   { 
     text: "悦创社区", 
     icon: "creative", 
@@ -102,7 +113,7 @@ export default navbar([
           { text: "今日头条", link: "https://www.toutiao.com/c/user/token/MS4wLjABAAAA0lL5AB1qcqjHTRzZskVepIpHq_GlaDZqSs5DG1qjRpCBxyXEniSGIGiIIEFXrXme/?source=mine_home&log_from=1c726ddbc65f6_1655376345491&wid=1655376400664"},
           { text: "CSDN 视频", link: "https://blog.csdn.net/qq_33254766?type=video"},
           { text: "知乎视频", link: "https://www.zhihu.com/people/aiyuechuang/zvideos"},
-          
+
         ]
       },
     ],
