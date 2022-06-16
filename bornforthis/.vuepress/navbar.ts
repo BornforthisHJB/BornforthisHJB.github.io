@@ -32,6 +32,7 @@ export default navbar([
           { text: "掘金", link: "https://juejin.cn/user/2305051222344061"},
           { text: "思否", link: "https://segmentfault.com/u/aiyc"},
           { text: "51CTO博客", link: "https://blog.51cto.com/aiyc"},
+          { text: "medium", link: "https://medium.com/@aiyuechuang"},
           { text: "腾讯云社区", link: "https://cloud.tencent.com/developer/user/7111610"},
           { text: "阿里云社区", link: "https://developer.aliyun.com/profile/expert/a65od3nwohg4i"},
           { text: "留言", link: "https://comment.bornforthis.cn/"},
