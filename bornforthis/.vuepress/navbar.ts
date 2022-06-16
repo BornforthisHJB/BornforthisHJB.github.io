@@ -94,7 +94,7 @@ export default navbar([
   },
   {
     text: "Plan",
-    icon: "time", 
+    icon: "any", 
     link: "/plan",
   },
 ]);
