@@ -95,7 +95,12 @@ export default navbar([
         text: "悦创视频平台", 
         icon: "play",
         children: [
-          { text: "哔哩哔哩", link: "https://space.bilibili.com/405961705"}
+          { text: "哔哩哔哩", link: "https://space.bilibili.com/405961705"},
+          { text: "YouTube", link: "https://www.youtube.com/channel/UCT525Fk74w_l9Pk06OxkLxg"},
+          { text: "抖音", link: "https://www.douyin.com/user/MS4wLjABAAAAXMiezc1TmBxz0zFxeqmWHo3JpceLXlMChTLU4cHFMCA"},
+          { text: "西瓜视频", link: "https://www.ixigua.com/home/2049088928100061"},
+          { text: "今日头条", link: "https://www.toutiao.com/c/user/token/MS4wLjABAAAA0lL5AB1qcqjHTRzZskVepIpHq_GlaDZqSs5DG1qjRpCBxyXEniSGIGiIIEFXrXme/?source=mine_home&log_from=1c726ddbc65f6_1655376345491&wid=1655376400664"},
+          
         ]
       },
     ],
