@@ -92,4 +92,9 @@ export default navbar([
       }
     ],
   },
+  {
+    text: "Plan",
+    icon: "time", 
+    link: "/plan",
+  },
 ]);
