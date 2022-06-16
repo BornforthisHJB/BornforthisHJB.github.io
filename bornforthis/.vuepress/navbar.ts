@@ -14,7 +14,7 @@ export default navbar([
       { 
         text: "程序员的私房菜",
         children: [
-          { text: "私房菜", link: "column/cookdinner/01-yogurt"},
+          { text: "私房菜", link: "/column/cookdinner/01-yogurt"},
         ]
       }
     ]
