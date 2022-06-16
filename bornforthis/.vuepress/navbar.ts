@@ -89,7 +89,14 @@ export default navbar([
           { text: "Unsplash", icon: "pic", link: "https://unsplash.com/"},
           { text: "Dribbble", icon: "emoji", link: "https://dribbble.com/"},
         ]
-      }
+      },
+      { 
+        text: "悦创视频平台", 
+        icon: "play",
+        children: [
+          { text: "哔哩哔哩", link: "https://space.bilibili.com/405961705"}
+        ]
+      },
     ],
   },
   {
