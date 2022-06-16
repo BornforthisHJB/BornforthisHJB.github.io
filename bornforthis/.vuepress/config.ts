@@ -10,13 +10,13 @@ export default defineUserConfig({
   base: "/",
   shouldPrefetch: false,
   head: [
-    [
-      "script",
-      { 
-        type: "text/javascript",
-        src: "/js/myjs.js"
-      },
-    ],
+    // [
+    //   "script",
+    //   { 
+    //     type: "text/javascript",
+    //     src: "/js/myjs.js"
+    //   },
+    // ],
     [
       "script",
       { 
