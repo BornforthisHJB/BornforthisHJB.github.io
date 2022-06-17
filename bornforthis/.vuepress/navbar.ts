@@ -8,9 +8,15 @@ export default navbar([
     link: "/intro",
   },
   { 
-    text: "文档主页",
-    link: "/home",
+    text: "专栏",
     children: [
+      { 
+        text: "文档主页",
+        icon: "workingDirectory",
+        children: [
+          "/home",
+        ]
+      },
       { 
         text: "程序员的私房菜",
         children: [
