@@ -33,6 +33,13 @@ import { sidebar } from "vuepress-theme-hope";
 export default sidebar({
 	"/column/pyauto/": [
 		{
+			text: "办公自动化 BASE",
+			collapsable: true,
+			children: [
+				"auto_base01"
+			],
+		},
+		{
 			text: "课前准备",
 			collapsable: true,
 			children: [
