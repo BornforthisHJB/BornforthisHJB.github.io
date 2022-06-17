@@ -9,10 +9,11 @@ export default navbar([
   },
   { 
     text: "专栏",
+    icon: "workingDirectory",
+    // link: "/home",
     children: [
       { 
         text: "文档主页",
-        icon: "workingDirectory",
         children: [
           "/home",
         ]
