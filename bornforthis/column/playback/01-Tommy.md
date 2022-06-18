@@ -107,6 +107,10 @@ https://video.aiyc.top/Tommy_Fernandez_Tian/nine/meeting_03.m3u8
 https://video.aiyc.top/Tommy_Fernandez_Tian/ten/ten.m3u8
 ```
 
+:::
+
+::: code-tabs#shell
+
 @tab 11
 
 ```url
