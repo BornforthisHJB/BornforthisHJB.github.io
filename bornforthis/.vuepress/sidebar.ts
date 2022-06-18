@@ -31,6 +31,15 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/cookdinner/": [
+		{ 
+			text: "2022年6月",
+			children: [
+				"01-yogurt",
+				"02-Orange_peel_coke_chicken_wings",
+			],
+		}
+	],
 	"/column/pyauto/": [
 		{
 			text: "办公自动化 BASE",
