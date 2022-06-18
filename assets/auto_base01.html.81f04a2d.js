@@ -1,1 +1,0 @@
-import{_ as t}from"./plugin-vue_export-helper.21dcd24c.js";import{o,c as _,a as e}from"./app.f15d4498.js";const s={},a=e("p",null,"\u4F60\u597D\uFF0C\u6211\u662F\u60A6\u521B\u3002",-1),c=e("p",null,"\u5F85\u66F4\u65B0\uFF01",-1),n=[a,c];function r(l,i){return o(),_("div",null,n)}var f=t(s,[["render",r],["__file","auto_base01.html.vue"]]);export{f as default};
