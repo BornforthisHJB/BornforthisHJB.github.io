@@ -45,7 +45,10 @@ export default sidebar({
 			text: "办公自动化 BASE",
 			collapsable: true,
 			children: [
-				"auto_base01"
+				"auto_base01",
+				"auto_base02",
+				"auto_base03",
+				"auto_base04",
 			],
 		},
 		{
