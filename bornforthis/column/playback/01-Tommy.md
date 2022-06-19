@@ -40,6 +40,7 @@ toc: true
 | 09   | 字符串数据提取【下】-1h         | [https://video.aiyc.top/Tommy_Fernandez_Tian/nine/meeting_03.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/nine/meeting_03.m3u8) |
 | 10   | 字符串内置函数复习 and input-0h | [https://video.aiyc.top/Tommy_Fernandez_Tian/ten/ten.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/ten/ten.m3u8) |
 | 11   | 字符串复习 and web1-剩余 5h     | [https://video.aiyc.top/Tommy_Fernandez_Tian/eleven/eleven.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/eleven/eleven.m3u8) |
+| 12   | 列表-剩余-4h                    | [https://video.aiyc.top/Tommy_Fernandez_Tian/13/13.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/13/13.m3u8) |
 
 
 
@@ -115,6 +116,12 @@ https://video.aiyc.top/Tommy_Fernandez_Tian/ten/ten.m3u8
 
 ```url
 https://video.aiyc.top/Tommy_Fernandez_Tian/eleven/eleven.m3u8
+```
+
+@tab 12
+
+```python
+https://video.aiyc.top/Tommy_Fernandez_Tian/13/13.m3u8
 ```
 
 :::
