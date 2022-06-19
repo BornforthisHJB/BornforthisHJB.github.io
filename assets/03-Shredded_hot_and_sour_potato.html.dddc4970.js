@@ -1,1 +1,0 @@
-import{_}from"./plugin-vue_export-helper.21dcd24c.js";import{o as e,c as o}from"./app.d5873a85.js";const t={};function r(a,c){return e(),o("div")}var s=_(t,[["render",r],["__file","03-Shredded_hot_and_sour_potato.html.vue"]]);export{s as default};
