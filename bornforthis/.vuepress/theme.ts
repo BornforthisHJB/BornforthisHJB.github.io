@@ -69,7 +69,7 @@ export default hopeTheme({
       // Wechat: "https://example.com",
       Weibo: "https://weibo.com/u/5673898686",
       // Whatsapp: "https://example.com",
-      // Youtube: "https://example.com",
+      Youtube: "https://www.youtube.com/channel/UCT525Fk74w_l9Pk06OxkLxg",
       Zhihu: "https://www.zhihu.com/people/aiyuechuang",
     },
   },

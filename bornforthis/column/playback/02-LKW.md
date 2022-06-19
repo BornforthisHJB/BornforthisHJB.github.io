@@ -30,7 +30,7 @@ toc: true
 | 序号 | 内容         | 链接                                                         |
 | ---- | ------------ | ------------------------------------------------------------ |
 | 01   | web2-剩余 6h | [https://video.aiyc.top/lkw/one/one.m3u8](https://video.aiyc.top/lkw/one/one.m3u8) |
-|      |              |                                                              |
+| 02   | web3-剩余-4h | [https://video.aiyc.top/lkw/two/two.m3u8](https://video.aiyc.top/lkw/two/two.m3u8) |
 |      |              |                                                              |
 |      |              |                                                              |
 |      |              |                                                              |
@@ -46,8 +46,14 @@ toc: true
 
 @tab 01
 
-```url
+```web-idl
 https://video.aiyc.top/lkw/one/one.m3u8
+```
+
+@tab 02
+
+```web-idl
+https://video.aiyc.top/lkw/two/two.m3u8
 ```
 
 :::
