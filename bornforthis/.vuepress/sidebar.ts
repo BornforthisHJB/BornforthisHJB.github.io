@@ -31,12 +31,21 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/py/Python_tutorial/": [
+		{ 
+			text: "Python 基础",
+			children: [
+				"",
+			]
+		}
+	],
 	"/column/cookdinner/": [
 		{ 
 			text: "2022年6月",
 			children: [
 				"01-yogurt",
 				"02-Orange_peel_coke_chicken_wings",
+				"03-Shredded_hot_and_sour_potato",
 			],
 		}
 	],

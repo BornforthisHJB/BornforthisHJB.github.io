@@ -71,15 +71,15 @@ time: 2022-06-18 13:06:49
 11. 摆盘；
 12. 加薄荷叶，靠鸡肉把薄荷叶的香气激发出来；
 
-## 视频待更新
+## 视频
 
-### 哔哩哔哩
+::: tabs
+
+@tab 哔哩哔哩
 
 <iframe src="//player.bilibili.com/player.html?aid=642506051&bvid=BV12Y4y1G7VE&cid=750557306&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%; height: 500px; max-width: 100%；align:center; padding:20px 0;"> </iframe>
 
-### Youtube
-
-::: details 国外选手观看
+@tab Youtube 国外选手观看
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IwKyunTrd0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
