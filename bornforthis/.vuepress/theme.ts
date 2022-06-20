@@ -127,14 +127,26 @@ export default hopeTheme({
       ],
     },
 
+    // components: {
+    //   pdf: true,
+    // },
+
     mdEnhance: {
-      enableAll: true,
-      // attrs: true,
-      // container: true,
-      // tabs: true,
+      tex: true,
+      // enableAll: true,
+      attrs: true,
+      tabs: true,
       // vpre: true,
-      // codetabs: true,
-      // align: true,
+      codetabs: true,
+      tasklist: true,
+      // 启用图片标记
+      imageMark: true,
+      // 启用图片大小
+      imageSize: true,
+      align: true, // 自定义对齐
+      footnote: true,
+      // this is the default option, so you can use it directly
+      container: true,
       presentation: {
         plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
