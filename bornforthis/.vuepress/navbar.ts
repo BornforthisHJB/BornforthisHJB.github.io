@@ -16,6 +16,8 @@ export default navbar([
         text: "文档主页",
         children: [
           "/home",
+          { text: "私教回放", icon: "play", link: "/column/playback/"},
+          { text: "Python 合集", icon: "python", link: "/column/py/Python_tutorial/"},
         ]
       },
       { 
