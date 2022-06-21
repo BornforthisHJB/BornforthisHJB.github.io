@@ -11,6 +11,18 @@ export default defineUserConfig({
   shouldPrefetch: false,
   head: [
     // [
+    //   "link", {
+    //     rel: "stylesheet",
+    //     href: "https://pyscript.net/alpha/pyscript.css",
+    //   }
+    // ],
+    // [
+    //   "script", {
+    //     type: "text/javascript",
+    //     src: "https://pyscript.net/alpha/pyscript.js",
+    //   }
+    // ],
+    // [
     //   "script",
     //   { 
     //     type: "text/javascript",
