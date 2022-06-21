@@ -127,9 +127,11 @@ export default hopeTheme({
       ],
     },
 
-    // components: {
-    //   pdf: true,
-    // },
+    components: [
+      "Badge",
+      "PDF",
+      "YouTube",
+    ],
 
     mdEnhance: {
       tex: true,
