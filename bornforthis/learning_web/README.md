@@ -26,7 +26,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | 02   | **tutorialspoint** | 可以学习 IT 类型资料 | [https://www.tutorialspoint.com/](https://www.tutorialspoint.com/) | EN   | 搜寻 tkinter 知识点    |
 | 03   | **programiz**      | 可以学习 IT 类型资料 | [https://www.programiz.com/](https://www.programiz.com/)     | EN   | 搜寻 casefold() 知识点 |
 | 04   | **cainiaojc**      | 可以学习 IT 类型资料 | [https://www.cainiaojc.com/](https://www.cainiaojc.com/)     | ZH   | 搜寻 casefold() 知识点 |
-| 05   |                    |                      |                                                              |      |                        |
+| 05   | **pyscript**       | 开源web运行Python    | [https://pyscript.net/](https://pyscript.net/)               | EN   |                        |
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
