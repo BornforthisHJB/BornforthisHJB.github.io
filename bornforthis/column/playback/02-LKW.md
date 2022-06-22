@@ -27,16 +27,16 @@ toc: true
 
 你好，我是悦创。
 
-| 序号 | 内容         | 链接                                                         |
-| ---- | ------------ | ------------------------------------------------------------ |
-| 01   | web2-剩余 6h | [https://video.aiyc.top/lkw/one/one.m3u8](https://video.aiyc.top/lkw/one/one.m3u8) |
-| 02   | web3-剩余-4h | [https://video.aiyc.top/lkw/two/two.m3u8](https://video.aiyc.top/lkw/two/two.m3u8) |
-|      |              |                                                              |
-|      |              |                                                              |
-|      |              |                                                              |
-|      |              |                                                              |
-|      |              |                                                              |
-|      |              |                                                              |
+| 序号 | 内容             | 链接                                                         |
+| ---- | ---------------- | ------------------------------------------------------------ |
+| 01   | web2-剩余 6h     | [https://video.aiyc.top/lkw/one/one.m3u8](https://video.aiyc.top/lkw/one/one.m3u8) |
+| 02   | web3-剩余-4h     | [https://video.aiyc.top/lkw/two/two.m3u8](https://video.aiyc.top/lkw/two/two.m3u8) |
+| 03   | web4-剩余课时 2h | [https://video.aiyc.top/lkw/03/03.m3u8](https://video.aiyc.top/lkw/03/03.m3u8) |
+|      |                  |                                                              |
+|      |                  |                                                              |
+|      |                  |                                                              |
+|      |                  |                                                              |
+|      |                  |                                                              |
 
 
 
@@ -54,6 +54,12 @@ https://video.aiyc.top/lkw/one/one.m3u8
 
 ```web-idl
 https://video.aiyc.top/lkw/two/two.m3u8
+```
+
+@tab 03
+
+```web-idl
+https://video.aiyc.top/lkw/03/03.m3u8
 ```
 
 :::
