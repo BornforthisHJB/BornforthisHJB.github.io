@@ -11,6 +11,22 @@ export default defineUserConfig({
   shouldPrefetch: false,
   head: [
     // [
+    //   "script",
+    //   {
+    //     type: "text/javascript",
+    //     src: "//unpkg.byted-static.com/xgplayer@2.31.2/browser/index.js",
+    //     charset: "utf-8",
+    //   }
+    // ],
+    // [
+    //   "script",
+    //   {
+    //     type: "text/javascript",
+    //     src: "//unpkg.byted-static.com/xgplayer-hls.js/2.2.2/browser/index.js",
+    //     charset: "utf-8",
+    //   }
+    // ],
+    // [
     //   "link", {
     //     rel: "stylesheet",
     //     href: "https://pyscript.net/alpha/pyscript.css",
