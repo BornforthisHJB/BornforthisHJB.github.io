@@ -46,6 +46,7 @@ export default sidebar({
 				"01-yogurt",
 				"02-Orange_peel_coke_chicken_wings",
 				"03-Shredded_hot_and_sour_potato",
+				"04-Braise_in_soy_sauce_chicken_wings",
 			],
 		}
 	],

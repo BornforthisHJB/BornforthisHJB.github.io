@@ -170,9 +170,40 @@ Process finished with exit code 0
 
 它可以实现什么功能呢，好奇的你先一睹为快吧！
 
-![img](./README.assets/e93cb2fd1011ed198cada24923a04838.gif)
+```python
+print(40 * "*")
+print("""欢迎光临小悦奶茶馆！\n小悦奶茶馆售卖宇宙无敌奶茶！\n奶茶虽好，可不要贪杯哦！\n每一次限尝一种口味：\n1. 原味冰奶茶 3元\n2. 香蕉冰奶茶 5元\n3. 草莓冰奶茶 5元\n4. 蒟蒻冰奶茶 7元\n5. 珍珠冰奶茶 7元""")
+print(40 * "*")
+milk_tea_no = input("请选择购买奶茶的编号 1/2/3/4/5:")
+sum_money = 0
+if int(milk_tea_no) <= 5 and int(milk_tea_no) >= 1:
+    milk_tea_amount = int(input("请输入您要购买的数量(整数哦):"))
+    if milk_tea_no == "1":
+        sum_money = milk_tea_amount * 3
+        print(f"您购买的是{milk_tea_no}号奶茶, 共购买{milk_tea_amount}杯，总计{sum_money}")
+    elif milk_tea_no == "2":
+        sum_money = milk_tea_amount * 5
+        print(f"您购买的是{milk_tea_no}号奶茶, 共购买{milk_tea_amount}杯，总计{sum_money}")
+    elif milk_tea_no == "3":
+        sum_money = milk_tea_amount * 5
+        print(f"您购买的是{milk_tea_no}号奶茶, 共购买{milk_tea_amount}杯，总计{sum_money}")
+    elif milk_tea_no == "4":
+        sum_money = milk_tea_amount * 7
+        print(f"您购买的是{milk_tea_no}号奶茶, 共购买{milk_tea_amount}杯，总计{sum_money}")
+    else:
+        sum_money = milk_tea_amount * 7
+        print(f"您购买的是{milk_tea_no}号奶茶, 共购买{milk_tea_amount}杯，总计{sum_money}")
+vip = input("您是小悦奶茶馆的会员吗(y/n)?").lower()
+if vip == "y":
+    print(f"您可以享受会员价，折后总价: {sum_money * 0.9}元")
+else:
+    print(f"很抱歉，你只能按原价{sum_money}元，购买。")
+print('****************************************')
+print('做一枚有态度、有思想的奶茶馆（傲娇脸）！\n\t祝您今日购物愉快！\n\t\t诚挚欢迎您再次光临！')
+print('****************************************')
+```
 
-点单程序启动之后，顾客就可以根据提示输入想要购买的奶茶编号和购买数量，程序会马上打印顾客的购买信息，会员还可以享受9折优惠。
+点单程序启动之后，顾客就可以根据提示输入想要购买的奶茶编号和购买数量，程序会马上打印顾客的购买信息，会员还可以享受 9 折优惠。
 
 
 
