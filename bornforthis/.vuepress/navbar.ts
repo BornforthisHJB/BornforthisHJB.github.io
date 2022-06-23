@@ -55,6 +55,7 @@ export default navbar([
           { text: "medium", link: "https://medium.com/@aiyuechuang"},
           { text: "腾讯云社区", link: "https://cloud.tencent.com/developer/user/7111610"},
           { text: "阿里云社区", link: "https://developer.aliyun.com/profile/expert/a65od3nwohg4i"},
+          { text: "博客园", link: "https://www.cnblogs.com/bornforthis/"},
           { text: "留言", link: "https://comment.bornforthis.cn/"},
           { text: "悦兮小栈", link: "https://comment.blovey.art/"},
           { text: "评论管理", link: "https://comment.bornforthis.cn/ui"},
