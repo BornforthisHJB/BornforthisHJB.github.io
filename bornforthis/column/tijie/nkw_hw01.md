@@ -63,6 +63,10 @@ arr = s.split(" ")  # 以空格分割字符串并将结果存入数组 arr
 print(len(arr[-1]))   # 打印最后一个元素 arr[-1] 的长度即为最后一个单词的长度
 ```
 
+## 题目链接
+
+[https://www.nowcoder.com/practice/8c949ea5f36f422594b306a2300315da](https://www.nowcoder.com/practice/8c949ea5f36f422594b306a2300315da)
+
 ## 图解
 
 ![img](./nkw_hw01.assets/WX20211014-193743@2x.png)
