@@ -63,12 +63,12 @@ features:
     link: /column/py/Python_tutorial
 
   - title: 编程题解
-    icon: pic
+    icon: code
     details: 编程题解大全
     link: /column/tijie
 
   - title: PDF 合集
-    icon: config
+    icon: repo
     details: AI悦创·PDF 分享
     link: /column/pdf
 
