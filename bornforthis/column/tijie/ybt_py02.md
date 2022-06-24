@@ -25,47 +25,7 @@ backToTop: true
 toc: true
 ---
 
-## 【题目描述】
 
-输入 a，b，c 三个整数，求它们的和 s。
-
-### 【输入】
-
-a b c（a，b，c 为三个整数）。
-
-### 【输出】
-
-a+b+c 的和 s。
-
-## 【输入样例】
-
-```
-2 3 5
-```
-
-## 【输出样例】
-
-```
-10
-```
-
-::: details 看题步骤
-
-**第一步：** 看问题
-
-**第二步：** 看示例
-
-:::
-
-## 答案
-
-```python
-numbers_list = input().split(" ")
-a, b, c = numbers_list
-# print(a, b, c)
-r_sum = int(a) + int(b) + int(c)
-print(r_sum)
-```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 

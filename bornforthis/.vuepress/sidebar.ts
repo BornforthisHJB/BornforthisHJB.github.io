@@ -52,6 +52,7 @@ export default sidebar({
 			collapsable: true,
 			children: [
 				"ybt_py01",
+				"ybt_py02",
 			],
 		}
 	],
