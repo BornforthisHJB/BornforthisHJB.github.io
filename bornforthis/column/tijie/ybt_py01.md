@@ -1,6 +1,6 @@
 ---
-title: 01-
-date: 2022-06-24 19:03:15
+title: 01-求 3 个整数的和
+date: 2022-06-24 19:28:48
 author: AI悦创
 isOriginal: true
 category: 一本通 Python 题解
@@ -25,7 +25,45 @@ backToTop: true
 toc: true
 ---
 
+### 【题目描述】
 
+输入 a，b，c 三个整数，求它们的和 s。
+
+### 【输入】
+
+a b c（a，b，c 为三个整数）。
+
+### 【输出】
+
+a+b+c 的和 s。
+
+### 【输入样例】
+
+```
+2 3 5
+```
+
+### 【输出样例】
+
+```
+10
+```
+
+::: details 看题步骤
+
+**第一步：** 看问题
+
+**第二步：** 看示例
+
+:::
+
+```python
+numbers_list = input().split(" ")
+a, b, c = numbers_list
+# print(a, b, c)
+r_sum = int(a) + int(b) + int(c)
+print(r_sum)
+```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
