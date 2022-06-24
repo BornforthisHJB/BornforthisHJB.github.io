@@ -46,6 +46,13 @@ export default sidebar({
 					]
 				}
 			]
+		},
+		{ 
+			text: "一本通",
+			collapsable: true,
+			children: [
+				"ybt_py01",
+			],
 		}
 	],
 	"/column/py/Python_tutorial/": [
