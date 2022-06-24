@@ -67,10 +67,10 @@ features:
     details: 编程题解大全
     link: /column/tijie
 
-  - title: SEO 增强
+  - title: PDF 合集
     icon: config
-    details: 将最终生成的网页针对搜索引擎进行优化。
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/advanced/seo.html
+    details: AI悦创·PDF 分享
+    link: /column/pdf
 
   - title: Sitemap
     icon: sitemap
