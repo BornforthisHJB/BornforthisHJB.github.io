@@ -31,6 +31,15 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/pdf/": [
+		{ 
+			text: "IT类",
+			collapsable: true,
+			children: [
+				"",
+			],
+		}
+	],
 	"/column/tijie/": [
 		"",
 		{ 
