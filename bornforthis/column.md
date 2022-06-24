@@ -62,10 +62,10 @@ features:
     details: 文字专栏带你快速入门
     link: /column/py/Python_tutorial
 
-  - title: 图片预览
+  - title: 编程题解
     icon: pic
-    details: 像相册一样允许你浏览、缩放并分享你的页面图片
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/photo-swipe.html
+    details: 编程题解大全
+    link: /column/tijie
 
   - title: SEO 增强
     icon: config

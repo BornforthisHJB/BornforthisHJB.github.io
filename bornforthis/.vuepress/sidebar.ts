@@ -31,6 +31,23 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/tijie/": [
+		"",
+		{ 
+			text: "牛客网",
+			collapsable: true,
+			children: [
+				{ 
+					text: "华为机试",
+					collapsable: true,
+					children: [
+						"nkw_hw01",
+						"nkw_hw02",
+					]
+				}
+			]
+		}
+	],
 	"/column/py/Python_tutorial/": [
 		{ 
 			text: "Python 基础",
