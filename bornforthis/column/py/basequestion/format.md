@@ -29,7 +29,20 @@ toc: true
 
 对输出格式的控制不只是打印空格分隔的值，还需要更多方式。格式化输出包括以下几种方法。
 
-使用 [格式化字符串字面值](https://docs.python.org/zh-cn/3/tutorial/inputoutput.html#tut-f-strings) ，要在字符串开头的引号/三引号前添加 `f` 或 `F` 。在这种字符串中，可以在 `{` 和 `}` 字符之间输入引用的变量，或字面值的 Python 表达式。
+- 使用 [格式化字符串字面值](https://docs.python.org/zh-cn/3/tutorial/inputoutput.html#tut-f-strings) ，要在字符串开头的引号/三引号前添加 `f` 或 `F` 。在这种字符串中，可以在 `{` 和 `}` 字符之间输入引用的变量，或字面值的 Python 表达式。
+
+```python
+In [56]: year = 2016
+
+In [57]: event = 'Referendum'
+
+In [58]: s = f'Results of the {year} {event}'
+
+In [59]: s
+Out[59]: 'Results of the 2016 Referendum'
+```
+
+- 字符串的 [`str.format()`](https://docs.python.org/zh-cn/3/library/stdtypes.html#str.format) 方法需要更多手动操作。该方法也用 `{` 和 `}` 标记替换变量的位置，虽然这种方法支持详细的格式化指令，但需要提供格式化信息。
 
 
 

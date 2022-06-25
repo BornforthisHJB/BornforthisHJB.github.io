@@ -27,7 +27,8 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | 03   | **programiz**      | 可以学习 IT 类型资料 | [https://www.programiz.com/](https://www.programiz.com/)     | EN   | 搜寻 casefold() 知识点 |
 | 04   | **cainiaojc**      | 可以学习 IT 类型资料 | [https://www.cainiaojc.com/](https://www.cainiaojc.com/)     | ZH   | 搜寻 casefold() 知识点 |
 | 05   | **pyscript**       | 开源web运行Python    | [https://pyscript.net/](https://pyscript.net/)               | EN   | 公众号                 |
-| 06   | W3Schools          | 学习代码             | [https://www.w3schools.com/](https://www.w3schools.com/)     | EN   | HTML                   |
+| 06   | **W3Schools**      | 学习代码             | [https://www.w3schools.com/](https://www.w3schools.com/)     | EN   | HTML                   |
+| 07   | **markmap**        | Markdown 转 脑图     | [https://markmap.js.org/](https://markmap.js.org/)           | EN   |                        |
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
