@@ -72,6 +72,18 @@ while True:
         s = s.replace(select, "")
 ```
 
+```python
+while True:
+    try:
+        l = input()
+        for i in range(0, len(l), 8):
+            print("{0:0<8s}".format(l[i:i+8]))
+    except:
+        break
+```
+
+
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
