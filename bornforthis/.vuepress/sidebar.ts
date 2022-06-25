@@ -53,6 +53,7 @@ export default sidebar({
 						"nkw_hw01",
 						"nkw_hw02",
 						"nkw_hw03",
+						"nkw_hw04",
 					]
 				}
 			]
