@@ -74,7 +74,57 @@ toc: true
 2 
 ```
 
-​     
+## 答案
+
+### 方法一
+
+```python
+n = input()
+random_num_list = []
+for _ in range(int(n)):
+    random_num = input()
+    random_num_list.append(int(random_num))
+r = list(set(random_num_list))
+r.sort()
+for i in r:
+	print(i)
+```
+
+### 方法二
+
+```python
+n = input()
+random_num_list = []
+for _ in range(int(n)):
+    random_num = int(input())
+    if random_num not in random_num_list:
+    	random_num_list.append(random_num)
+    else:
+        pass
+random_num_list.sort()
+for i in random_num_list:
+	print(i)
+```
+
+### 方法三
+
+```python
+while True:
+    try:
+        n = input()      #指定为N个数，输入
+        lst = []         #指定一个空列表
+        for i in range(int(n)):        #循环N次
+            lst.append(int(input()))      #空集合中追加一个N个数中的某一个随机数
+        uniq=set(lst)        #列表去重，但是会变成无序
+        lst=list(uniq)       #集合转列表
+        lst.sort()           #列表排序
+        for i in lst:
+            print(i)         #打印列表
+    except:
+        break
+```
+
+
 
 
 
