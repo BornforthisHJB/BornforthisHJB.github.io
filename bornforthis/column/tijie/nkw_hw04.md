@@ -37,13 +37,40 @@ toc: true
 
 ### 输出描述：
 
-依次输出所有分割后的长度为8的新字符串
+依次输出所有分割后的长度为 8 的新字符串
 
 ## 示例1
 
+### 输入：
 
+```python
+abc
+```
 
+### 输出：
 
+```python
+abc00000
+```
+
+## 答案
+
+```python
+s = input()
+while True:
+    length_s = len(s)
+    if not s:
+        break
+    elif length_s <= 8:
+        num_0 = 8 - length_s
+        s += num_0 * "0"
+        print(s)
+        break
+    else:
+        select = s[:8]
+        print(select)
+        s = s.replace(select, "")
+```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
