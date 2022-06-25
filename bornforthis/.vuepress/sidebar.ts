@@ -52,6 +52,7 @@ export default sidebar({
 					children: [
 						"nkw_hw01",
 						"nkw_hw02",
+						"nkw_hw03",
 					]
 				}
 			]
