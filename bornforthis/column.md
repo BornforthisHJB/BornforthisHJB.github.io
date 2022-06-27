@@ -72,10 +72,10 @@ features:
     details: AI悦创·PDF 分享
     link: /column/pdf
 
-  - title: Sitemap
-    icon: sitemap
-    details: 自动为你的网站生成 Sitemap
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/advanced/sitemap.html
+  - title: PPT
+    icon: slides
+    details: PPT 改丑计划
+    link: /column/PPT
 
   - title: Feed 支持
     icon: rss
