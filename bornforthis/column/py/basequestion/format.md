@@ -80,7 +80,16 @@ Out[82]: 'The value of x is 32.5, and y is 40000...'
 
 ## 7.1.1. 格式化字符串字面值
 
+[格式化字符串字面值](https://docs.python.org/zh-cn/3/reference/lexical_analysis.html#f-strings) （简称为 f-字符串）在字符串前加前缀 `f` 或 `F`，通过 `{expression}` 表达式，把 Python 表达式的值添加到字符串内。
 
+格式说明符是可选的，写在表达式后面，可以更好地控制格式化值的方式。下例将 pi 舍入到小数点后三位：
+
+```python
+In [42]: import math
+
+In [43]: print(f'The value of pi is approximately {math.pi:.3f}.')
+The value of pi is approximately 3.142.
+```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
