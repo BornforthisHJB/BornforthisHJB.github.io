@@ -81,7 +81,10 @@ export default navbar([
   {
     text: "网易云课堂",
     icon: "view",
-    link: "https://study.163.com/provider/480000002277025/course.htm",
+    children: [
+      { text: "网易云课堂主页", icon: "view", link: "https://study.163.com/provider/480000002277025/course.htm"},
+      { text: "AI悦创·讲师主页", icon: "view", link: "https://m.study.163.com/user/1144240044.htm"}
+    ]
   },
   { 
     text: "开源Py库",
