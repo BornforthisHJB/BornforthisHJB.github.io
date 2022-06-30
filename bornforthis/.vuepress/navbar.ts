@@ -79,11 +79,12 @@ export default navbar([
     link: "https://www.yuque.com/docs/share/d94147a1-57f8-4750-b436-d657b0a4531c?#gCUv",
   },
   {
-    text: "网易云课堂",
+    text: "在线课堂",
     icon: "view",
     children: [
       { text: "网易云课堂主页", icon: "view", link: "https://study.163.com/provider/480000002277025/course.htm"},
-      { text: "AI悦创·讲师主页", icon: "view", link: "https://m.study.163.com/user/1144240044.htm"}
+      { text: "AI悦创·讲师主页", icon: "view", link: "https://m.study.163.com/user/1144240044.htm"},
+      { text: "51CTO", icon: "view", link: "https://edu.51cto.com/lecturer/13952552.html"}
     ]
   },
   { 
