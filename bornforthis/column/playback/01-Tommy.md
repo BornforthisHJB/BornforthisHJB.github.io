@@ -45,6 +45,7 @@ toc: true
 | 14   | list-hw-2h                      | [https://video.aiyc.top/Tommy_Fernandez_Tian/14/14.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/14/14.m3u8) |
 | 15   | 元组-1h                         | [https://video.aiyc.top/Tommy_Fernandez_Tian/15/15.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/15/15.m3u8) |
 | 16   | 字典-剩余 0h                    | [https://video.aiyc.top/Tommy_Fernandez_Tian/16/16.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/16/16.m3u8) |
+| 17   | dict and set-剩余 -1 课时       | [https://video.aiyc.top/Tommy_Fernandez_Tian/17/17.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/17/17.m3u8) |
 
 
 
@@ -144,6 +145,12 @@ https://video.aiyc.top/Tommy_Fernandez_Tian/15/15.m3u8
 
 ```python
 https://video.aiyc.top/Tommy_Fernandez_Tian/16/16.m3u8
+```
+
+@tab 17
+
+```python
+https://video.aiyc.top/Tommy_Fernandez_Tian/17/17.m3u8
 ```
 
 :::
