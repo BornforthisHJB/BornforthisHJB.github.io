@@ -77,10 +77,10 @@ features:
     details: PPT 改丑计划
     link: /column/PPT
 
-  - title: Feed 支持
-    icon: rss
-    details: 生成你的 Feed，并通知你的用户订阅它
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/advanced/feed.html
+  - title: 摄影专栏
+    icon: compare
+    details: 为你私人定制的摄影课程
+    link: /column/photography
 
   - title: PWA 支持
     icon: mobile

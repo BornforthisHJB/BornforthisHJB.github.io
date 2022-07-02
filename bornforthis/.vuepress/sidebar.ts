@@ -31,6 +31,15 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/photography/": [
+		{ 
+			text: "器材基础",
+			children: [
+				"",
+				"01",
+			],
+		}
+	],
 	"/column/pdf/": [
 		{ 
 			text: "IT类",
