@@ -57,7 +57,7 @@ toc: true
 s = int(input())
 p = float(input())
 
-if s <  6:
+if s < 6:
     j = 1.0
 elif s <= 10:
     j = 0.9
@@ -65,10 +65,8 @@ else:
     j = 0.8
 # 数量*单价*打折数
 t = s * p * j
-print("%.1f"%t)
+print("%.1f" %t)
 ```
-
-
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
