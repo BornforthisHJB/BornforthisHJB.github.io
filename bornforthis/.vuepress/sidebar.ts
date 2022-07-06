@@ -73,6 +73,7 @@ export default sidebar({
 			children: [
 				"ybt_py01",
 				"ybt_py02",
+				"ybt_py03",
 			],
 		}
 	],
