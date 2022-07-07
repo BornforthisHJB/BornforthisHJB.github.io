@@ -32,7 +32,7 @@ toc: true
 | 01   | web2-剩余 6h     | [https://video.aiyc.top/lkw/one/one.m3u8](https://video.aiyc.top/lkw/one/one.m3u8) |
 | 02   | web3-剩余-4h     | [https://video.aiyc.top/lkw/two/two.m3u8](https://video.aiyc.top/lkw/two/two.m3u8) |
 | 03   | web4-剩余课时 2h | [https://video.aiyc.top/lkw/03/03.m3u8](https://video.aiyc.top/lkw/03/03.m3u8) |
-|      |                  |                                                              |
+| 04   | web5-剩余0h      | 未上传，在阿里云网盘                                         |
 |      |                  |                                                              |
 |      |                  |                                                              |
 |      |                  |                                                              |
