@@ -93,6 +93,7 @@ export default sidebar({
 				"02-Orange_peel_coke_chicken_wings",
 				"03-Shredded_hot_and_sour_potato",
 				"04-Braise_in_soy_sauce_chicken_wings",
+				"05-Steamed_eggplant_with_garlic_and_vermicelli",
 			],
 		}
 	],
