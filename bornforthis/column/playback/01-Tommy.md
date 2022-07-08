@@ -47,7 +47,7 @@ toc: true
 | 16   | 字典-剩余 0h                    | [https://video.aiyc.top/Tommy_Fernandez_Tian/16/16.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/16/16.m3u8) |
 | 17   | dict and set-剩余 -1 课时       | [https://video.aiyc.top/Tommy_Fernandez_Tian/17/17.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/17/17.m3u8) |
 | 18   | set-剩余6h                      | [https://video.aiyc.top/Tommy_Fernandez_Tian/18/18.m3u8](https://video.aiyc.top/Tommy_Fernandez_Tian/18/18.m3u8) |
-|      |                                 |                                                              |
+| 19   | bool-剩余 4.5h                  | 「18-bool-剩余4.5h.mp4」https://www.aliyundrive.com/s/Zi43Fi2foYV 点击链接保存，或者复制本段内容，打开「阿里云盘」APP ，无需下载极速在线查看，视频原画倍速播放。 |
 |      |                                 |                                                              |
 |      |                                 |                                                              |
 
