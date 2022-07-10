@@ -82,10 +82,10 @@ features:
     details: 为你私人定制的摄影课程
     link: /column/photography
 
-  - title: PWA 支持
-    icon: mobile
-    details: 让你的网站更像一个 APP
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/advanced/pwa.html
+  - title: web
+    icon: network
+    details: web 专栏
+    link: /column/web
 
   - title: 更多新特性
     icon: more
