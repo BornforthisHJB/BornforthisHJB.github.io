@@ -18,7 +18,7 @@ time: 2022-06-19 17:20:59
 
 ::: details 微信
 
-![IMG_3148](./vpn.assets/IMG_3148.JPG)
+![IMG_3148](./vpn.assets/weixing.JPG)
 
 :::
 
@@ -26,6 +26,6 @@ time: 2022-06-19 17:20:59
 
 ::: details
 
-![IMG_3149](./vpn.assets/IMG_3149.JPG)
+![IMG_3149](./vpn.assets/zfb.JPG)
 
 :::
