@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { pwaPlugin } from "vuepress-plugin-pwa2";
 import theme from "./theme";
+// import { commentPlugin } from "vuepress-plugin-comment2";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -63,6 +64,11 @@ export default defineUserConfig({
   ],
   
   plugins: [
+    // commentPlugin({
+    //   pageSize: 10,
+    //   copyright: false,
+    // }),
+
     pwaPlugin({
       // cacheHTML: true,
       // update: "available",
