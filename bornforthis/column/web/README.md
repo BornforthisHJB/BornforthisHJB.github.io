@@ -89,12 +89,68 @@ Web 前端技术应用领域广泛，诸多优秀的移动端产品同样有赖�
 
 2. **一款编辑器**。如同作家写作需要纸笔输出文字一样，学习编程需要编辑器编写代码。推荐初学者使用：
 
-- Notepad: https://notepad-plus-plus.org/download/
-- Viso Studio Code： https://visualstudio.microsoft.com/zh-hans/downloads/
+- Notepad: [https://notepad-plus-plus.org/download/](https://notepad-plus-plus.org/download/)
+- Viso Studio Code： [https://code.visualstudio.com/](https://code.visualstudio.com/)
+- WebStorm：[https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)
+- SublimeText：[https://www.sublimetext.com/download](https://www.sublimetext.com/download)
 
-Windows 操作系统，安装时注意查看电脑的位数。32位的电脑下载`32-bit x86`的版本；64位的电脑下载`64-bit x64`的版本。
+Windows 操作系统，安装时注意查看电脑的位数。32 位的电脑下载 `32-bit x86` 的版本；64 位的电脑下载 `64-bit x64` 的版本。
 
-例如：Notepad 的下载
+**例如：Notepad 的下载**
+
+![img](./README.assets/1608015280915399.png)
+
+**如何知道电脑的位数呢？**
+
+查看 Windows 10 系统版本方法：
+
+**方法1：** 打开桌面【此电脑】，此电脑的地址栏中输入【`控制面板\系统和安全\系统`】按回车进入系统信息页面就能查看当前操作系统版本。如下图：
+
+![img](./README.assets/1608017773275613.png)
+
+**方法2：** 键盘上按下  WIN 键（![img](./README.assets/1608016396711571.png))+R 键 输入 **dxdiag** 点击确定，在弹出的 `DirectX 诊断工具`【系统】>【系统信息】>【操作系统：】中可查看当前操作系统版本。如下图：
+
+![img](./README.assets/1608015938491151.png)
+
+3. **两款浏览器**。编写完代码后，需要把代码在浏览器中运行出来，这个步骤叫做：**测试**。不同的浏览器会呈现出不同的网页效果，建议初学者下载两款浏览器用于测试。
+
+常用的现代浏览器有：
+
+![image-20220711022219600](./README.assets/image-20220711022219600.png)
+
+推荐使用谷歌浏览器，官方下载地址：[https://www.google.cn/intl/zh-CN/chrome/](https://www.google.cn/intl/zh-CN/chrome/)
+
+![image-20220711022551534](./README.assets/image-20220711022551534.png)
+
+【判断题】HTML 不是编程语言，它是超文本标记语言。
+
+- [x] 正确
+- [ ] 错误
+
+【多选题】CSS 是层叠样式表单，它可为网站添加样式。这些样式包括：
+
+- [x] 字号
+- [x] 文本背景
+- [x] 字体颜色
+
+【判断题】JS 是 JavaScript 的简称。
+
+- [x] 正确
+- [ ] 错误
+
+【判断题】JS 是一门能够添加网站交互功能的编程语言。
+
+- [x] 正确
+- [ ] 错误
+
+## 学习 Web 的思想准备
+
+在开始学习 Web 之前，你还需要注意几个细节：
+
+- **使用英文小写命名文件:** 很多计算机，特别是 Web 服务器对中文、大小写敏感。我们尽量使用英文小写字母命名文件。
+- **不使用空格分离文件名：**因为浏览器、Web服务器、编程语言对“空格”的理解和处理不同，所以为了确保网页链接不被破坏。请在英文输入法下使用横线“-”分离文件名中的英文单词。记住是使用横线，不是下划线。
+
+![对错](./README.assets/image-20220711023040934.png)
 
 
 
