@@ -84,7 +84,8 @@ export default navbar([
     children: [
       { text: "网易云课堂主页", icon: "view", link: "https://study.163.com/provider/480000002277025/course.htm"},
       { text: "AI悦创·讲师主页", icon: "view", link: "https://m.study.163.com/user/1144240044.htm"},
-      { text: "51CTO", icon: "view", link: "https://edu.51cto.com/lecturer/13952552.html"}
+      { text: "51CTO", icon: "view", link: "https://edu.51cto.com/lecturer/13952552.html"},
+      { text: "录课悲惨经历", icon: "view", link: "/Record_the_class"}
     ]
   },
   { 
