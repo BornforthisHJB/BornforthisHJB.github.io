@@ -16,16 +16,8 @@ time: 2022-06-19 17:20:59
 
 不闲聊，付款后，添加 VX：Jiabcdefh
 
-::: details 微信
+
 
 ![](./vpn.assets/weixing.jpg)
 
-:::
-
-
-
-::: details 支付宝
-
 ![](./vpn.assets/zfb.jpg)
-
-:::
