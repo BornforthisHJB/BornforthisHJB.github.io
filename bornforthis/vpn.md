@@ -16,3 +16,16 @@ time: 2022-06-19 17:20:59
 
 不闲聊，付款后，添加 VX：Jiabcdefh
 
+::: details 微信
+
+![IMG_3148](./vpn.assets/IMG_3148.JPG)
+
+:::
+
+
+
+::: details
+
+![IMG_3149](./vpn.assets/IMG_3149.JPG)
+
+:::
