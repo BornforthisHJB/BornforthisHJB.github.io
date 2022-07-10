@@ -18,6 +18,17 @@ time: 2022-06-19 17:20:59
 
 
 
+::: details 微信
+
 ![](./vpn.assets/01.jpg)
 
+:::
+
+
+
+::: details 支付宝
+
 ![](./vpn.assets/02.jpg)
+
+:::
+
