@@ -114,21 +114,41 @@ export default sidebar({
 		}
 	],
 	"/column/pyauto/": [
+		"",
 		{
-			text: "办公自动化 BASE",
+			text: "卷一：办公自动化 BASE",
 			collapsable: true,
 			children: [
-				"auto_base01",
-				"auto_base02",
-				"auto_base03",
-				"auto_base04",
+				{ 
+					text: "一、 Python 自动化办公",
+					collapsable: true,
+					children: [
+						"auto_base01",
+						"auto_base02",
+					],
+				},
+				{
+					text: "二、Python 环境安装",
+					collapsable: true,
+					children: [
+						"auto_base03",
+						"auto_base04",
+					],
+				},
+				{
+					text: "三、Python 自动化处理 Excel",
+					collapsable: true,
+					children: [
+						"auto_base05",
+					],
+				}
+				
 			],
 		},
 		{
 			text: "课前准备",
 			collapsable: true,
 			children: [
-			"",
 			"auto_01",
 
 		],

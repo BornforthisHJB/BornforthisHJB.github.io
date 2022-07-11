@@ -19,6 +19,7 @@ export default navbar([
           { text: "私教回放", icon: "play", link: "/column/playback/"},
           { text: "Python 合集", icon: "python", link: "/column/py/Python_tutorial/"},
           { text: "Web 专栏", icon: "network", link: "/column/web"},
+          { text: "Python 办公自动化", icon: "python", link: "/column/pyauto"},
           { text: "题解", icon: "code", link: "/column/tijie"},
         ]
       },
