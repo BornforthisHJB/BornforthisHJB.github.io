@@ -16,8 +16,6 @@ time: 2022-06-19 17:20:59
 
 不闲聊，付款后，添加 VX：Jiabcdefh
 
-
-
 ::: details 微信
 
 ![](./vpn.assets/01.jpg)
@@ -32,3 +30,4 @@ time: 2022-06-19 17:20:59
 
 :::
 
+1. IOS 使用教程：[https://bornforthis.cn/posts/30.html](https://bornforthis.cn/posts/30.html)
