@@ -93,6 +93,75 @@ wb.save('虚假用户数据.xls')
 
 然后找到文件，文件的位置就是你 Python 代码文件的旁边。使用 office 或者 wps 打开这个 xls 文件，如下截图：
 
+![image-20220712002219935](./auto_base05.assets/image-20220712002219935.png)
+
+一共有 100 行，其中头部一行，虚假用户信息 99 行。
+
+
+
+## 读取 Excel 文件
+
+写文件已经搞定，接下来就要学习下 Excel 的读操作。
+
+- 写入 Excel 的库是 xlwt，对应 write；
+- 读取 Excel 的库是 xlrd，对应 read；
+
+xlrd 的安装命令：`pip install xlrd`
+
+```cmd
+pip install xlrd
+```
+
+首先导入 xlrd，然后打开前面写好的 “**虚假用户数据.xls**”，代码如下：
+
+```python
+import xlrd
+
+wb = xlrd.open_workbook('虚假用户数据.xls')
+```
+
+打开了文件之后，wb 代表当前文件。读取数据，需要指定具体的 sheet，有两种方式，分别是通过索引和名称，如下代码：
+
+```python
+sheets = wb.sheets()  # 获取文件中全部的 sheet，返回结构是 list。
+# print(sheets)  # [Sheet  0:<第一个sheet>]
+sheet = sheets[0]  # 通过索引顺序获取。
+
+sheet = wb.sheet_by_index(0)  # 直接通过索引顺序获取。
+
+sheet = wb.sheet_by_name('第一个sheet')  # 通过名称获取。
+```
+
+此时获取到了 sheet 对象，然后从这里取出数据就可以。
+
+sheet 的内容是二维表格，取数据全靠行数和列数，定位具体的格子，然后拿到格子里面的内容。
+
+**如果我们要取出全部的内容咋办？**——获取 sheet 的总行数和列数，然后循环就行。
+
+取出总行数和列数的代码如下：
+
+```python
+rows = sheet.nrows  # 行
+cols = sheet.ncols  # 列
+```
+
+rows 就是总行数，cols 是总列数。有这两值，然后两层循环，取数据就行，如下代码：
+
+```python
+for row in range(rows):
+	for col in range(cols):
+		print(sheet.cell(row, col).value, end=' , ')
+	print('\n')
+```
+
+效果图【只截图头部】：
+
+![image-20220712005318357](./auto_base05.assets/image-20220712005318357.png)
+
+读数据，指定某行某列，定位到具体方格，取出里面的值即可，代码是 `sheet.cell(row, col).value` 。
+
+
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
