@@ -1,12 +1,12 @@
 ---
-title: 01-为什么学习Web知识？
+title: 01-为什么学习 Web 知识？
 date: 2022-07-11 01:21:49
 author: AI悦创
 isOriginal: true
 category: web 专栏
 tag:
     - web 专栏
-icon: code
+icon: network
 sticky: false
 star: false
 password: false
@@ -20,7 +20,7 @@ comment: true
 lastUpdated: true
 editLink: true
 prev: README.md
-next: nkw_hw02.md
+next: base_01.md
 backToTop: true
 toc: true
 ---
@@ -153,7 +153,7 @@ Windows 操作系统，安装时注意查看电脑的位数。32 位的电脑下
 - [x] my-file.html
 - [ ] my_file.html
 
-- **提前做好规划：**你想做什么样的网页？请先画好草图。即便是专业的研发团队，也是先由美工或是产品经理用原型工具规划好网页布局，再由工程师实现的。比如：你想为你的宠物狗制作一个网页，记录它的成长。建议你从手绘一张草图，考虑网页结构开始。
+- **提前做好规划：** 你想做什么样的网页？请先画好草图。即便是专业的研发团队，也是先由美工或是产品经理用原型工具规划好网页布局，再由工程师实现的。比如：你想为你的宠物狗制作一个网页，记录它的成长。建议你从手绘一张草图，考虑网页结构开始。
 
 ![img](./README.assets/1563432983505901-20220711084715393.jpg)
 
@@ -163,8 +163,6 @@ Windows 操作系统，安装时注意查看电脑的位数。32 位的电脑下
 - [ ] my_file.html
 - [x] my-file.html
 - [ ] My File.html
-
-内容为大纲，具体上课内容，机动调整！
 
 ::: details 公众号：AI悦创【二维码】
 

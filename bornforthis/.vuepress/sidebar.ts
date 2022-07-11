@@ -31,6 +31,22 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/web/": [
+		{
+			text: "Web 前端入门扫盲课程",
+			collapsable: true,
+			children: [
+				{ 
+					text: "第一章 Web 概述", 
+					collapsable: true,
+					children: [
+						"",
+						"base_01",
+					],
+				}
+			],
+		}
+	],
 	"/column/photography/": [
 		{ 
 			text: "器材基础",
