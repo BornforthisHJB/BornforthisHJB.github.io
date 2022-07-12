@@ -37,6 +37,10 @@ toc: true
 pip install xlwt
 ```
 
+常规的创建 Excel 流程：
+
+![办公自动化-Excel流程](./auto_base05.assets/办公自动化-Excel流程.png)
+
 新建 Python 文件，第一个代码块，先导入 xlwt 这个库，并新建一个 WorkBook 对象。
 
 ```python
