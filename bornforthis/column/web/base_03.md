@@ -1,6 +1,6 @@
 ---
 title: 03-实战：萨摩耶“猎豹”的第一篇成长日记
-date: 2022-07-12 22:28:48
+date: 2022-07-12 23:54:55
 author: AI悦创
 isOriginal: true
 category: web 专栏
@@ -19,8 +19,8 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: base_01.md
-next: base_03.md
+prev: base_02.md
+next: base_04.md
 backToTop: true
 toc: true
 ---
