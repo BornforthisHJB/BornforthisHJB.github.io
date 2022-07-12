@@ -160,8 +160,6 @@ for row in range(rows):
 
 读数据，指定某行某列，定位到具体方格，取出里面的值即可，代码是 `sheet.cell(row, col).value` 。
 
-
-
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
