@@ -30,9 +30,9 @@ projects:
     link: onepython/
 
   - icon: friend
-    name: 伙伴名称
+    name: Python 小咖养成计划
     desc: 伙伴详细介绍
-    link: https://你的伙伴链接
+    link: https://study.163.com/course/courseMain.htm?courseId=1212917814
 
   - icon: friend
     name: 办公自动化

@@ -25,6 +25,10 @@ backToTop: true
 toc: true
 ---
 
+## 网易云课堂录播课
+
+Python小咖养成计划：[https://study.163.com/course/courseMain.htm?courseId=1212917814](https://study.163.com/course/courseMain.htm?courseId=1212917814)
+
 ## 课程内容：
 
 | 序号                      | 名称                                                         |
