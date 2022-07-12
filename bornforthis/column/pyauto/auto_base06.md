@@ -31,18 +31,59 @@ toc: true
 
 ### 需求
 
-往“**虚假用户数据.xls**”里面，追加额外的 50 条用户数据，就是**标题+数据**，达到150条。
+往“**虚假用户数据.xls**”里面，追加额外的 50 条用户数据，就是**标题+数据**，达到 150 条。
 
 ### 思路
 
 - xlrd 是读取 Excel 文件的库
-- xlwt是写入Excel的库
+- xlwt 是写入 Excel 的库
 
 如果使用以上两个库，可以一边读取，一边写入新文件。
 
-不过在此，有另一个方便使用的库，库名是xlutils，安装命令：`pip install xlutils`。
+不过在此，有另一个方便使用的库，库名是 xlutils，安装命令：`pip install xlutils`。
 
-安装好之后，开始写代码，完成追加50条数据的需求。
+```cmd
+pip install xlutils
+```
+
+安装好之后，开始写代码，完成追加 50 条数据的需求。
+
+## 书写代码
+
+1. 导入所需的库，分别是 xlrd 和 xlutils
+
+```python
+import xlrd
+from xlutils.copy import copy
+```
+
+2. 使用 xlrd 打开文件，然后 xlutils 赋值打开后的 workbook，如下代码：
+
+```python
+wb = xlrd.open_workbook('虚假用户数据.xls', formatting_info=True)
+xwb = copy(wb)
+```
+
+wb 对象是 workbook，xwb 也是 workbook，但是后者可以写操作，前者不可以。
+
+3. 有了 workbook 之后，就开始指定 sheet，并获取这个 sheet 的总行数。
+
+```python
+sheet = xwb.get_sheet('第一个sheet')
+rows = sheet.get_rows()
+length = len(rows)
+print(length)  # 输出 100
+```
+
+指定名称为“**第一个sheet**”的 sheet，然后获取全部的行，并输出总量，就得到了 sheet 中有 100 行。
+
+（4）有了具体的行数，然后保证原有数据不变动的情况下，从第101行写数据。101行的索引是100，索引循环的起始数值是100。
+
+
+
+
+
+
 
 
 

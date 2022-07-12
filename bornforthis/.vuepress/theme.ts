@@ -21,7 +21,9 @@ export default hopeTheme({
 
   docsDir: "bornforthis/",
   
-  darkmode: "enable",
+  // darkmode: "enable", // 强制深色模式
+  // darkmode: "switch",
+  darkmode: "toggle",
 
   // navbar
   navbar: navbar,
