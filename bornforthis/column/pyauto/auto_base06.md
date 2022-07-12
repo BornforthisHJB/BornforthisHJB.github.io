@@ -77,15 +77,40 @@ print(length)  # 输出 100
 
 指定名称为“**第一个sheet**”的 sheet，然后获取全部的行，并输出总量，就得到了 sheet 中有 100 行。
 
-（4）有了具体的行数，然后保证原有数据不变动的情况下，从第101行写数据。101行的索引是100，索引循环的起始数值是100。
+4. 有了具体的行数，然后保证原有数据不变动的情况下，从第 101 行写数据。101 行的索引是 100，索引循环的起始数值是 100。
 
+```python
+import faker
 
+fake = faker.Faker()
+for i in range(len(rows), 150):
+	sheet.write(i, 0, fake.first_name() + ' ' + fake.last_name())
+	sheet.write(i, 1, fake.address())
+	sheet.write(i, 2, fake.phone_number())
+	sheet.write(i, 3, fake.city())
+```
 
+range 函数，从 `len(rows)` 开始，到 `150-1` 结束，共 50 条。 faker 库是制造虚假数据的，这个在前面写数据有用过，循环写入了 50条。
 
+5. 最后保存就可以了
 
+```python
+xwb.save('虚假用户数据.xls')
+```
 
+使用 xwb，也就是操作之后的 workbook 对象，直接保存原来的文件名就可以了。
 
+## Office 办公软件查看数据结果
 
+最后使用 Excel 软件打开这个 xls 文件，查看数据有多少行，如下代码：
+
+![image-20220712135438520](./auto_base06.assets/image-20220712135438520.png)
+
+总共 150 行，原有数据 100 行，加上新写入的 50 行，数据没问题。
+
+将以上的代码，合并起来多次运行，“**虚假用户数据.xls**” 的数据量会逐步增加，运行一次增加 50 行。
+
+xlutils 是 `xlrd+xlwt` 的操作合集，但又不等于他们相加。库不一样，完成的操作不一样，所需的场景也不同，不同的需求用不同的库。
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
