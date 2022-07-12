@@ -35,4 +35,5 @@ time: 2022-06-19 17:20:59
 :::
 
 1. IOS 使用教程：[https://bornforthis.cn/posts/30.html](https://bornforthis.cn/posts/30.html)
+2. Clash For Windows 教程：[https://bornforthis.cn/posts/31.html](https://bornforthis.cn/posts/31.html)
 
