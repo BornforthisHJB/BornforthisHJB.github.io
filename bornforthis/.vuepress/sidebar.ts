@@ -90,6 +90,10 @@ export default sidebar({
 				"ybt_py01",
 				"ybt_py02",
 				"ybt_py03",
+				"ybt_py04",
+				"ybt_py05",
+				"ybt_py06",
+				"ybt_py07",
 			],
 		}
 	],

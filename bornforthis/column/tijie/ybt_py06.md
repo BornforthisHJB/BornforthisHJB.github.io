@@ -1,6 +1,6 @@
 ---
-title: 04-飞船速度(教科)
-date: 2022-07-12 19:21:47
+title: 06-最大优惠价(粤版)
+date: 2022-07-12 19:22:48
 author: AI悦创
 isOriginal: true
 category: 一本通 Python 题解
@@ -19,44 +19,51 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: ybt_py03.md
-next: ybt_py05.md
+prev: ybt_py05.md
+next: ybt_py07.md
 backToTop: true
 toc: true
 ---
 
 ## 【题目描述】
 
-当飞船的速度大等于 7.91 千米/秒时飞船能成功飞行，给出飞船速度，请判断飞船是否能够成功飞行。
+三款笔记本的优惠价不同，请给出优惠价最大值。
 
 ### 【输入】
 
-一个实数 x，表示飞船速度是 x 千米/秒。
+一行三个实数，分别表示三款笔记本的优惠价。
 
 ### 【输出】
 
-如果飞船能成功飞行，则输出“飞船成功飞行！”，否则输出“飞船不能升空！”
+输出一个实数，表示优惠价最大值。
 
 ## 【输入样例】
 
 ```
-8.01
+32.5 63.4 78
 ```
 
 ## 【输出样例】
 
 ```
-飞船成功飞行！
+78.0
 ```
 
 ## 代码
 
 ```python
-v = float(input())  # 输入飞船速度
-if v >= 7.91:  # 判断飞船能否飞行成功的速度
-	print("飞船成功飞行!")
+# 读入一行字符串，split() 将字符串以空格分开
+a, b, c = input().split()
+# float(a) 将字符串 a 转化为浮点数
+a, b, c = float(a), float(b), float(c)
+if a > b:  # 比较 a, b 价钱，大的赋值给 m
+	m = a
 else:
-	print("飞行不能升空!")
+	m = b
+
+if c > m:  # 若 c 比 a, b 大，则 m 等于 c
+	m = c
+print(m)
 ```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！

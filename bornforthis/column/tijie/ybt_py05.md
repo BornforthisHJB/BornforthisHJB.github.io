@@ -1,6 +1,6 @@
 ---
-title: 04-飞船速度(教科)
-date: 2022-07-12 19:21:47
+title: 05-猜数游戏(浙版)
+date: 2022-07-12 19:22:05
 author: AI悦创
 isOriginal: true
 category: 一本通 Python 题解
@@ -19,45 +19,67 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: ybt_py03.md
-next: ybt_py05.md
+prev: ybt_py04.md
+next: ybt_py06.md
 backToTop: true
 toc: true
 ---
 
 ## 【题目描述】
 
-当飞船的速度大等于 7.91 千米/秒时飞船能成功飞行，给出飞船速度，请判断飞船是否能够成功飞行。
+请设计一个猜数游戏平台，有两个玩家 Alice 和 Bob。Alice 给定一个数，请 Bob 猜这个数是多少。猜数方法是交互的：Bob 输入猜测的数字，平台给出相应的提示：“偏大”“偏小”或“正确”。若所猜数字正确，则游戏结束；否则继续猜数。
+
+请你实现这个猜数游戏平台。
 
 ### 【输入】
 
-一个实数 x，表示飞船速度是 x 千米/秒。
+第一行输入一个数，表示 Alice 给定的数。
+
+接着输入若干行，表示 Bob 的猜数过程。每行一个整数，表示 Bob 猜测的数字。
 
 ### 【输出】
 
-如果飞船能成功飞行，则输出“飞船成功飞行！”，否则输出“飞船不能升空！”
+对于每一行输入，输出一行。输出偏大”“偏小”或“正确”。
 
 ## 【输入样例】
 
 ```
-8.01
+23
+300
+20
+100
+25
+23
 ```
 
-## 【输出样例】
+### 【输出样例】
 
 ```
-飞船成功飞行！
+偏大
+偏小
+偏大
+偏大
+正确
 ```
 
 ## 代码
 
 ```python
-v = float(input())  # 输入飞船速度
-if v >= 7.91:  # 判断飞船能否飞行成功的速度
-	print("飞船成功飞行!")
-else:
-	print("飞行不能升空!")
+number = int(input())
+running = False
+while not running:
+    # Bob 猜测数字 guess
+    guess = int(input())
+    if guess == number:
+        print("正确")
+        running = True
+    elif guess < number:
+        print("偏小")
+    else:
+        print("偏大")
 ```
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
