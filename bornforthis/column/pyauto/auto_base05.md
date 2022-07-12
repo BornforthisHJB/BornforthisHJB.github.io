@@ -66,6 +66,24 @@ for head in head_data:
 
 write 函数写入，分别是 `x 行, x 列, 数据`，头部数据永远是第一行，所以第 0 行。数据的列，则是当前数据所在列表的索引，直接使用index 函数即可。
 
+另外两种写入方法：
+
+```python
+for index, head in enumerate(head_data):
+	# print(head)
+	sheet.write(0, index, head)
+	# sheet.write(行, 列, 插入的数据)
+```
+
+```python
+i = 0
+for head in head_data:
+	sheet.write(0, i, head)
+	i += 1
+```
+
+---
+
 有了头部数据，现在就开始写入内容了，分别是：随机姓名、随机地址、随机号码、随机城市，数据的来源都是 faker 库，一个专门创建虚假数据用来测试的库，安装命令：`pip install faker`。
 
 ```cmd
