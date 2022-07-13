@@ -254,7 +254,8 @@ export default sidebar({
 		collapsable: true,
 		children: [
 			"requirements",
-			"radix_point"
+			"radix_point",
+			"format"
 		],
 	},
 	{
