@@ -39,13 +39,13 @@ toc: true
 
 ## 【输入样例】
 
-```
+```python
 32.5 63.4 78
 ```
 
 ## 【输出样例】
 
-```
+```python
 78.0
 ```
 
@@ -64,6 +64,23 @@ else:
 if c > m:  # 若 c 比 a, b 大，则 m 等于 c
 	m = c
 print(m)
+```
+
+```python
+a, b, c = input().split()  # 列表->
+a, b, c = float(a), float(b), float(c)
+
+max_num = a  # 存最大值
+
+# if max_num > b:
+# 	pass
+# elif max_num < b:
+# 	max_num = b
+if max_num < b:
+	max_num = b
+if max_num < c:
+	max_num = c
+print(max_num)
 ```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！

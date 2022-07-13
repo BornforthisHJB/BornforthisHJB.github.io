@@ -1,6 +1,6 @@
 ---
-title: 07-最大优惠价(粤版)
-date: 2022-07-12 19:37:03
+title: 07-输出偶数
+date: 2022-07-13 19:46:50
 author: AI悦创
 isOriginal: true
 category: 一本通 Python 题解
@@ -19,15 +19,52 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: ybt_py05.md
-next: ybt_py07.md
+prev: ybt_py06.md
+next: ybt_py08.md
 backToTop: true
 toc: true
 ---
 
+## 【题目描述】
 
+按照由小到大的顺序，输出1∼n之间的所有偶数。
 
+### 【输入】
 
+输入 n。
+
+### 【输出】
+
+输出为一行，各个偶数之间用一个空格隔开。
+
+## 【输入样例】
+
+```python
+10
+```
+
+## 【输出样例】
+
+```python
+2 4 6 8 10
+```
+
+## 代码
+
+```python
+n = int(input())
+for i in range(1, n+1):
+    # 如果 i 为偶数，则输出 i 的值
+    if i % 2 == 0:
+        # end= " " 表示输出之间用 "" 隔开
+        print(i, end=" ")
+```
+
+```python
+n = int(input())
+for i in range(2, n+1, 2):
+	print(i, end=" ")
+```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 

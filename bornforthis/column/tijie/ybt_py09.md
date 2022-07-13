@@ -1,6 +1,6 @@
 ---
-title: 03-购买笔记本(粤版)
-date: 2022-07-06 19:41:51
+title: 09-判断闰年(粤版)
+date: 2022-07-13 20:02:56
 author: AI悦创
 isOriginal: true
 category: 一本通 Python 题解
@@ -19,54 +19,13 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: ybt_py02.md
-next: ybt_py04.md
+prev: ybt_py08.md
+next: ybt_py10.md
 backToTop: true
 toc: true
 ---
 
-## 【题目描述】
 
-某商店笔记本有促销活动，规定购买 6 本以上（含 6 本）10 本以下（含 10 本）打九折，购买 11 本以上（含 11 本）打八折。给定笔记本单价和购买数量，请问购买总费用。
-
-### 【输入】
-
-第一行一个整数 s，表示购买 s 本笔记本。
-
-第二行一个实数 p，表示笔记本单价是 p。
-
-### 【输出】
-
-输出一行，表示总费用。保留小数点后一位。
-
-### 【输入样例】
-
-```python
-100 3.2
-```
-
-### 【输出样例】
-
-```python
-256.0
-```
-
-## 代码
-
-```python
-s = int(input())
-p = float(input())
-
-if s < 6:
-    j = 1.0
-elif s <= 10:
-    j = 0.9
-else:
-    j = 0.8
-# 数量*单价*打折数
-t = s * p * j
-print("%.1f" %t)
-```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
