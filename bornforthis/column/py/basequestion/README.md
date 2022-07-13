@@ -27,7 +27,7 @@ toc: true
 
 ## 网易云课堂录播课
 
-Python小咖养成计划：[https://study.163.com/course/courseMain.htm?courseId=1212917814](https://study.163.com/course/courseMain.htm?courseId=1212917814)
+Python小咖养成计划：[https://study.163.com/course/courseMain.htm?courseId=1212917814&share=2&shareId=480000002277025](https://study.163.com/course/courseMain.htm?courseId=1212917814&share=2&shareId=480000002277025)
 
 ## 课程内容：
 

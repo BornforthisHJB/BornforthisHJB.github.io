@@ -32,7 +32,7 @@ projects:
   - icon: friend
     name: Python 小咖养成计划
     desc: 伙伴详细介绍
-    link: https://study.163.com/course/courseMain.htm?courseId=1212917814
+    link: https://study.163.com/course/courseMain.htm?courseId=1212917814&share=2&shareId=480000002277025
 
   - icon: friend
     name: 办公自动化
