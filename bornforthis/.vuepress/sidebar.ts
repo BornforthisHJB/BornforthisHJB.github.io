@@ -32,6 +32,7 @@ import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
 	"/posts/": "structure",
+	"/posts/html": "structure",
 	"/column/web/": [
 		{
 			text: "Web 前端入门扫盲课程",
