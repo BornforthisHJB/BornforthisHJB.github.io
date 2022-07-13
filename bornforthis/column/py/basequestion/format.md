@@ -91,6 +91,14 @@ In [43]: print(f'The value of pi is approximately {math.pi:.3f}.')
 The value of pi is approximately 3.142.
 ```
 
+在 `':'` 后传递整数，为该字段设置最小字符宽度，常用于列对齐：
+
+
+
+
+
+
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】

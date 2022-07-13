@@ -68,7 +68,14 @@ else:
     print("%d年不是闰年" % x)
 ```
 
-
+```python
+# 输入给定 1 个整数 n
+x = int(input())
+if x % 400 == 0 or (x % 100 > 0 and x % 4 == 0):  # 判断是否为闰年
+    print("{}年是闰年".format(x))
+else:
+    print("{}年不是闰年".format(x))
+```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
