@@ -44,6 +44,13 @@ export default sidebar({
 						"base_01",
 						"base_02",
 					],
+				},
+				{
+					text: "第二章 HTML 入门",
+					collapsable: true,
+					children: [
+						"base_03",
+					]
 				}
 			],
 		}
