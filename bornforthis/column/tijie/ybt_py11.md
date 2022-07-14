@@ -1,6 +1,6 @@
 ---
-title: 04-飞船速度(教科)
-date: 2022-07-12 19:21:47
+title: 11-网购笔记本(粤教)
+date: 2022-07-14 20:02:02
 author: AI悦创
 isOriginal: true
 category: 一本通 Python 题解
@@ -19,45 +19,39 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: ybt_py03.md
-next: ybt_py05.md
+prev: ybt_py10.md
+next: ybt_py12.md
 backToTop: true
 toc: true
 ---
 
 ## 【题目描述】
 
-当飞船的速度大等于 7.91 千米/秒时飞船能成功飞行，给出飞船速度，请判断飞船是否能够成功飞行。
+某小组决定网购单价为1元至10元的十种笔记本各一本，求一共要花多少钱?
 
 ### 【输入】
 
-一个实数 x，表示飞船速度是 x 千米/秒。
+(无)
 
 ### 【输出】
 
-如果飞船能成功飞行，则输出“飞船成功飞行！”，否则输出“飞船不能升空！”
+一行一个整数，表示答案。
 
 ## 【输入样例】
 
-```python
-8.01
+```
+(无)
 ```
 
 ## 【输出样例】
 
-```python
-飞船成功飞行！
+```
+(无)
 ```
 
-## 代码
 
-```python
-v = float(input())  # 输入飞船速度
-if v >= 7.91:  # 判断飞船能否飞行成功的速度
-	print("飞船成功飞行!")
-else:
-	print("飞行不能升空!")
-```
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 

@@ -1,6 +1,6 @@
 ---
-title: 10-
-date: 2022-07-13 20:52:15
+title: 10-练3.3最适宜运动心率2(科教)
+date: 2022-07-14 19:35:11
 author: AI悦创
 isOriginal: true
 category: 一本通 Python 题解
@@ -19,11 +19,56 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: ybt_py08.md
-next: ybt_py10.md
+prev: ybt_py09.md
+next: ybt_py11.md
 backToTop: true
 toc: true
 ---
+
+## 【题目描述】
+
+最适宜运动心率的公式有性别差异，试问最适宜运动心率？
+
+男性最适宜运动心率 = (220-年龄-安静心率)×(60%~80%)+安静心率
+
+女性最适宜运动心率 = (210-年龄-安静心率)×(60%~80%)+安静心率
+
+### 【输入】
+
+三行，第一行输入年龄（实数），第二行输入安静心率（实数）,第三行输入“male”或“female”表示性别。
+
+### 【输出】
+
+输出最适宜的运动心率的范围。
+
+## 【输入样例】
+
+```python
+16
+71 
+male
+```
+
+## 【输出样例】
+
+```python
+150.8~177.4
+```
+
+## 代码
+
+```python
+age = float(input())  # 输入年龄
+HRrest = float(input())  # 输入安静心率
+gender = input()  # 输入性别
+if gender == "male":  # 性别是否是男性 male
+	low = (220 - age - HRrest) * 0.6 + HRrest  # 计算男性 male 最适宜运动心率低值
+	high = (220 - age - HRrest) * 0.8 + HRrest  # 计算男性 male 最适宜运动心率高值
+else:
+	low = (210 - age - HRrest) * 0.6 + HRrest  # 计算女性 female 最适宜运动心率低值
+	high = (210 - age - HRrest) * 0.8 + HRrest  # 计算女性 female 最适宜运动心率高值
+print(low, high, sep="~")  # 输出最适合运动心率的范围
+```
 
 
 
@@ -49,7 +94,7 @@ C++ 信息奥赛题解，长期更新！长期招收一对一中小学信息奥�
 
 ![](/zsxq.jpg)
 
-P105
+
 
 
 
