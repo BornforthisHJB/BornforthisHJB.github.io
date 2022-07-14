@@ -7,7 +7,7 @@ icon: time
 
 - HTML 手册待更新！
 - [ ] [HTML 参考手册- (HTML5 标准)](./posts/html/01.html)
-- [ ] 详解
+- [ ] 详解[html](./posts/html/01.md)
 
 
 
