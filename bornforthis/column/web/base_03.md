@@ -58,11 +58,17 @@ HTML **由一系列的元素组成**，这些元素用于组成网页上的模�
 
 HTML 的标签大约几十个。每个标签有几个属性。在初学阶段，你不需要将它全部记下来。你只需记住最常用的十几个即可。
 
-当你在实践中，遇到生疏的标签或属性时，请查阅 `w3cschool.cn` 的手册：https://m.w3cschool.cn/htmltags/html-reference.html 
+当你在实践中，遇到生疏的标签或属性时，请查阅 `w3cschool.cn` 的手册：[https://www.w3cschool.cn/htmltags/html-reference.html](https://www.w3cschool.cn/htmltags/html-reference.html)
 
 对照列表中的例子用起来就能解决实际的问题了。
 
+【单选题】以下关于 HTML 描述准确的是？
 
+- [ ] HTML 是超文本标记语言，超文本标记语言是入门级的编程语言。
+- [x] HTML 是由一系列元素构成的超文本标记语言。
+- [ ] HTML是由一系列元素构成的编程语言。
+
+## HTML 的元素构成及属性
 
 
 
