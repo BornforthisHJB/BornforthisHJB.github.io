@@ -65,6 +65,7 @@ export default navbar([
           { text: "留言", link: "https://comment.bornforthis.cn/"},
           { text: "悦兮小栈", link: "https://comment.blovey.art/"},
           { text: "评论管理", link: "https://comment.bornforthis.cn/ui"},
+          { text: "Stackoverflow", link: "https://stackoverflow.com/users/19551173/ai%e6%82%a6%e5%88%9b"},
         ]
       },
       { 
