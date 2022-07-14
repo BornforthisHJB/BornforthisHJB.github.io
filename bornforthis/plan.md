@@ -3,6 +3,14 @@ title: AI悦创施工计划
 icon: time
 ---
 
+## 2022年07月14日
+
+- HTML 手册待更新！
+- [ ] [HTML 参考手册- (HTML5 标准)](./posts/html/01.html)
+- [ ] 详解
+
+
+
 ## 2022年06月23日
 
 - Python 开发学习配套库
