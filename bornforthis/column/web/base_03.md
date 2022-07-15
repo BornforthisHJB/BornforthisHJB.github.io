@@ -155,7 +155,7 @@ HTML 的元素构成如图：
 <p>我的名字叫猎豹。我是一只<strong>萨摩耶</p>。</strong>
 ```
 
-<button name="button" style = "color: red" onclick="https://www.w3schools.com/CPP/cpp_math.asp">尝试一下</button>
+<button name="button" type="submit" style="color: red" onclick="https://bornforthis.cn/web_run/web_column/01.html"><a href="https://bornforthis.cn/web_run/web_column/01.html">尝试一下</a></button>
 
 
 
