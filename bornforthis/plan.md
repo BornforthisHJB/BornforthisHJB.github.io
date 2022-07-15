@@ -3,6 +3,18 @@ title: AI悦创施工计划
 icon: time
 ---
 
+## 2022年07月15日
+
+Python 库研究：
+
+- [ ] datetime 研究
+- [ ] pathlib 研究
+- [ ] time 研究
+- [ ] faker 研究
+- [ ] tkinter 备课
+
+
+
 ## 2022年07月14日
 
 - HTML 手册待更新！
@@ -16,11 +28,6 @@ icon: time
 - Python 开发学习配套库
     - 奶茶店模块
 - 整理 LB 课程开发 PPT 资料
-- 
-
-
-
-
 
 
 
