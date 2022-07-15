@@ -129,7 +129,7 @@ HTML 的元素构成如图：
 
 我们可以将 `<strong>` 元素嵌入在 `<p>` 元素中。
 
-点击“**[尝试一下](https://bornforthis.cn/web_run/web_column/01.html)**”，查看效果。：[<button name="button" style="color: black"><a href="https://bornforthis.cn/web_run/web_column/01.html">尝试一下</a></button>](https://bornforthis.cn/web_run/web_column/01.html)
+点击“**[尝试一下](https://bornforthis.cn/web_run/web_column/01.html)**”，查看效果。：[<button name="button" style="color: black"><a href="https://bornforthis.cn/web_run/web_column/01.html" target="_blank">尝试一下</a></button>](https://bornforthis.cn/web_run/web_column/01.html)
 
 ```html
 <p>我叫猎豹。我是一只<strong>萨摩耶</strong>。</p>
