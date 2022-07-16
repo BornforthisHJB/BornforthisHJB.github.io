@@ -60,8 +60,8 @@ sheet = wb.add_sheet('第一个sheet')
 ```python
 head_data = ['姓名', '地址', '手机号', '城市']
 for head in head_data:
-	sheet.write(0, head_data.index(head), head)
-	# sheet.write(行, 列, 写入数据)
+    sheet.write(0, head_data.index(head), head)
+    # sheet.write(行, 列, 写入数据)
 ```
 
 write 函数写入，分别是 `x 行, x 列, 数据`，头部数据永远是第一行，所以第 0 行。数据的列，则是当前数据所在列表的索引，直接使用index 函数即可。
@@ -70,16 +70,16 @@ write 函数写入，分别是 `x 行, x 列, 数据`，头部数据永远是第
 
 ```python
 for index, head in enumerate(head_data):
-	# print(head)
-	sheet.write(0, index, head)
-	# sheet.write(行, 列, 插入的数据)
+    # print(head)
+    sheet.write(0, index, head)
+    # sheet.write(行, 列, 插入的数据)
 ```
 
 ```python
 i = 0
 for head in head_data:
-	sheet.write(0, i, head)
-	i += 1
+    sheet.write(0, i, head)
+    i += 1
 ```
 
 ---
@@ -97,10 +97,10 @@ import faker
 
 fake = faker.Faker()
 for i in range(1, 100):
-	sheet.write(i, 0, fake.first_name() + ' ' + fake.last_name())
-	sheet.write(i, 1, fake.address())
-	sheet.write(i, 2, fake.phone_number())
-	sheet.write(i, 3, fake.city())
+    sheet.write(i, 0, fake.first_name() + ' ' + fake.last_name())
+    sheet.write(i, 1, fake.address())
+    sheet.write(i, 2, fake.phone_number())
+    sheet.write(i, 3, fake.city())
 ```
 
 数据全部写好了，但是此时数据保存在 wb 这个对象中，wb 就是最开始的 Workbook。
@@ -171,9 +171,9 @@ rows 就是总行数，cols 是总列数。有这两值，然后两层循环，�
 
 ```python
 for row in range(rows):
-	for col in range(cols):
-		print(sheet.cell(row, col).value, end=' , ')
-	print('\n')
+    for col in range(cols):
+        print(sheet.cell(row, col).value, end=' , ')
+    print('\n')
 ```
 
 效果图【只截图头部】：

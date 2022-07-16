@@ -84,10 +84,10 @@ import faker
 
 fake = faker.Faker()
 for i in range(len(rows), 150):
-	sheet.write(i, 0, fake.first_name() + ' ' + fake.last_name())
-	sheet.write(i, 1, fake.address())
-	sheet.write(i, 2, fake.phone_number())
-	sheet.write(i, 3, fake.city())
+    sheet.write(i, 0, fake.first_name() + ' ' + fake.last_name())
+    sheet.write(i, 1, fake.address())
+    sheet.write(i, 2, fake.phone_number())
+    sheet.write(i, 3, fake.city())
 ```
 
 range 函数，从 `len(rows)` 开始，到 `150-1` 结束，共 50 条。 faker 库是制造虚假数据的，这个在前面写数据有用过，循环写入了 50条。
