@@ -13,7 +13,7 @@ export default navbar([
     // link: "/home",
     children: [
       { 
-        text: "文档主页",
+        text: "IT 文档主页",
         children: [
           "/column",
           { text: "私教回放", icon: "play", link: "/column/playback/"},
@@ -31,6 +31,13 @@ export default navbar([
         children: [
           { text: "私房菜", link: "/column/cookdinner/01-yogurt"},
         ]
+      },
+      {
+        text: "艺术",
+        children: [
+          { text: "摄影", icon: "compare", link: "/column/photography/"},
+          { text: "五哥摄影课堂", icon: "compare", link: "/column/Fifth_brother_photography_class/"},
+        ],
       }
     ]
   },

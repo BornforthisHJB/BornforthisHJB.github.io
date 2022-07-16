@@ -31,6 +31,9 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/Fifth_brother_photography_class/": [
+		"",
+	],
 	"/column/PPT/": [
 		{ 
 			text: "卷一：零基础学习 PPT",
