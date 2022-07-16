@@ -155,7 +155,95 @@ HTML 的元素构成如图：
 <p>我的名字叫猎豹。我是一只<strong>萨摩耶</p>。</strong>
 ```
 
-<button name="button" style="color: black"><a href="https://bornforthis.cn/web_run/web_column/01.html" target="_blank">尝试一下</a></button>
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_03/base_03.html" target="_blank">尝试一下</a></button>
+
+你发现句号被单独列为一行了，对吗？
+
+这就是层叠顺序错误的结果。
+
+【排序】将 `<em>` 元素嵌套在 `<p>` 元素中强调句子"`沐春风,惹红尘一身`"中的“**沐春风，**”，正确排序的是？
+
+> **HTML 着重元素** (`<em>`) 标记出需要用户着重阅读的内容， `<em>` 元素是可以嵌套的，嵌套层次越深，则其包含的内容被认定为越需要着重阅读。
+>
+> **请注意：** 通常地，该元素会被浏览器展示为斜体文本， 但是，它不应该仅仅用于应用斜体样式；为此目的，请使用 CSS 样式。使用 `cite` 元素标记作品的标题（书籍，戏剧，歌曲等）；它通常也采用斜体样式，但具有不同的含义。使用 `<strong>` 元素标记比周围文本更重要的文本。
+
+- [ ] 惹红尘一身。
+- [ ] 沐春风，
+- [ ] `</p>`
+- [ ] `</em>`
+- [ ] `<em>`
+- [ ] `<p>`
+
+```html
+<p><em>沐春风,</em>惹红尘一身</p>
+```
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_03/base_03-1.html" target="_blank">尝试一下</a></button>
+
+## 块级元素和内联元素
+
+在 HTML 中有两种元素类别：块级元素和内联元素。
+
+- **块级元素** ：其代码如**块状显示**。块级元素通常用于展示页面上层结构化的内容。如：进行，列表，导航菜单，页脚等。中，但可嵌入在其他块级元素中。
+- **内联元素：**它常出现在块级元素中并包裹着一小部分文档内容。内联元素在形式上通常**如行状显示。**它通常出现在一堆文字之间。如，超链接元素 `<a>` ，专有元素 `<em>` 元素和 `<strong>` 元素都是内联元素。
+
+如下面这段文字介绍：
+
+第一周杰伦是歌手。第二周杰伦是音乐制作人。第三周杰伦是电影导演。
+
+点击“**尝试一下**”，查看内联元素 `<em>` 的效果。
+
+```html
+<em>周杰伦是歌手。</em><em>周杰伦是音乐制作人。</em><em>周杰伦是电影导演。</em>
+```
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_03/base_03-2.html" target="_blank">尝试一下</a></button>
+
+内联元素 `<em>` 使关于周杰伦的介绍如**行状**显示。
+
+再点击下面的“**尝试一下**”，查看块级元素 `<p>` 的效果。
+
+```html
+<p>周杰伦是歌手。</p><p>周杰伦是音乐制作人。</p><p>周杰伦是电影导演。</p>
+```
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_03/base_03-3.html" target="_blank">尝试一下</a></button>
+
+相同的内容，块级元素如**块状**显示。
+
+#### 之前：内联元素运行效果
+
+![image-20220716092933554](./base_03.assets/image-20220716092933554.png)
+
+#### 之后：块级元素运行效果
+
+![image-20220716093001963](./base_03.assets/image-20220716093001963.png)
+
+## 空元素
+
+一个完整元素=开始标签+内容+结束标签
+
+以上公式并不能适用所有的HTML元素。
+
+一些元素只有一个标签，元素的标签内附有一些额外信息。这样的元素叫做“**空元素**”。
+
+`<img>` 就是一个空元素。它通常被插入一张一张指定的图片。
+
+点击“**尝试一下**”，看看空元素 `<img>` 的运行效果。
+
+```html
+<img src="https://bornforthis.cn/gzh.jpg">
+```
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_03/base_03-4.html" target="_blank">尝试一下</a></button>
+
+你看到这张图片了吗？
+
+![image-20220716094109125](./base_03.assets/image-20220716094109125.png)
+
+它是由 `<img>` 元素中的属性 `src =""` 双引号内的地址，向浏览器指定了一张图片。
+
+空元素 `<img>`，虽然没有内容和结束标签，但它也依然可以运行出效果。
 
 
 
