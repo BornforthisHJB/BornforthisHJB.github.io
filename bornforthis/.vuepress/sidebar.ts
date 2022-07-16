@@ -32,7 +32,20 @@ import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
 	"/column/PPT/": [
-		""
+		{ 
+			text: "卷一：零基础学习 PPT",
+			collapsable: true,
+			children: [
+				"",
+			]
+		},
+		{
+			text: "卷二：PPT 改丑计划",
+			collapsable: true,
+			children: [
+				""
+			]
+		},
 	],
 	"/posts/": "structure",
 	"/posts/html": "structure",
