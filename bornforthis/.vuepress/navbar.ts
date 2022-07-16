@@ -38,6 +38,12 @@ export default navbar([
           { text: "摄影", icon: "compare", link: "/column/photography/"},
           { text: "五哥摄影课堂", icon: "compare", link: "/column/Fifth_brother_photography_class/"},
         ],
+      },
+      {
+        text: "得到",
+        children: [
+          { text: "薛兆丰的经济学课", icon: "blog", link: "/dedao/01-Xue_Zhaofeng_economics_class"},
+        ]
       }
     ]
   },

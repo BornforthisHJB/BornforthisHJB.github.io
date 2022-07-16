@@ -31,6 +31,15 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/dedao/01-Xue_Zhaofeng_economics_class/": [
+		{
+			text: "课前必读(1讲)",
+			collapsable: true,
+			children: [
+				"",
+			]
+		}
+	],
 	"/column/Fifth_brother_photography_class/": [
 		"",
 	],
