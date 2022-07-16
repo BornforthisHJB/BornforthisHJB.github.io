@@ -1,7 +1,7 @@
 ---
 home: true
 icon: any
-title: 学习网站分享
+title: 学习网站分享和好的开源项目
 heroImage: /ColumnImages/learn_web/p7txftoOcjMKWNE06fYFodUWzavRIJdiss7VJGIC.jpg
 heroText: AI悦创学习网站分享
 tagline: 我的阅读网站，与你分享~
@@ -20,6 +20,9 @@ actions:
 footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 ---
 
+## 学习网站
+
+
 | 序号 | 网站名称                          | 内容                      | 链接                                                         | 语言 | 发现原因                |
 | ---- | --------------------------------- | ------------------------- | ------------------------------------------------------------ | ---- | ----------------------- |
 | 01   | **studytonight**                  | 可以学习 IT 类型资料      | [https://www.studytonight.com/](https://www.studytonight.com/) | EN   | 搜寻 tkinter 知识点     |
@@ -35,6 +38,15 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 |      |                                   |                           |                                                              |      |                         |
 |      |                                   |                           |                                                              |      |                         |
 |      |                                   |                           |                                                              |      |                         |
+
+## 好的开源项目
+
+| 序号 | 名称          | 链接                                                         | 作用          |
+| ---- | ------------- | ------------------------------------------------------------ | ------------- |
+| 01   | **LiaScript** | [https://github.com/LiaScript/LiaScript](https://github.com/LiaScript/LiaScript) | 交互式 Python |
+| 02   |               |                                                              |               |
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 

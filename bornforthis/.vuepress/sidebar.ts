@@ -166,6 +166,9 @@ export default sidebar({
 			],
 		}
 	],
+	"/column/pyauto/gkk/": [
+		"",
+	],
 	"/column/pyauto/": [
 		"",
 		{
