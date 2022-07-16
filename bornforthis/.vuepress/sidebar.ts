@@ -31,6 +31,9 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/PPT/": [
+		""
+	],
 	"/posts/": "structure",
 	"/posts/html": "structure",
 	// "/Open_up_your_pattern/": [
