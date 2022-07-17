@@ -43,6 +43,54 @@ toc: true
 python3
 ```
 
+- 使用 Windows 的读者在命令行（CMD）中执行命令
+
+```python
+python
+```
+
+之后你会看一些版本和帮助信息：
+
+> ➜ ~ python3 Python 3.7.3 (default, Mar 27 2019, 09:23:15)
+> [Clang 10.0.1 (clang-1001.0.46.3)] on darwin
+> Type “help”, “copyright”, “credits” or “license” for more information.
+> \>>>
+
+这便是 Python 解释器交互模式，上例中左下角的 `>>>` 表示这里是输入代码的地方，此时正在等待你的输入。试着输入一些内容，然后按回车键去执行它：
+
+```python
+12345 + 54321
+```
+
+> \>>> 12345 + 54321
+> 66666
+
+```python
+'apple' + 'pen'
+```
+
+> \>>> ‘apple’ + ‘pen’
+> ‘applepen’
+
+可以看到，按下回车键后解释器会立即执行刚才输入的代码，并直接将执行结果输出出来。
+
+## 执行 Python 文件
+
+再来看下如何执行 Python 文件。所谓 Python 文件，其实就是保存 Python 代码的文件，通常将其文件后缀名约定为 `.py`。
+
+> 扩展：其实用别的后缀名甚至不用后缀名都是可以的，但是既然是约定，那么大家就该遵守。`.py` 后缀能很清晰的表明这是 Python 文件。
+
+我们来创建一个文件，如 `today.py`，然后把以下代码拷贝进去：
+
+```python
+import datetime
+
+today = datetime.date.today().strftime('%Y{}%m{}%d{}').format(*'年月日')
+print('今天是：' + today)
+```
+
+
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
