@@ -180,6 +180,13 @@ export default sidebar({
 						"mk_py03",
 						"mk_py04",
 					],
+				},
+				{
+					text: "第 2 章 通用语言特性",
+					collapsable: true,
+					children: [
+						"mk_py05",
+					]
 				}
 			],
 		}
