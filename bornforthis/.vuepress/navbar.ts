@@ -82,6 +82,9 @@ export default navbar([
           { text: "评论管理", link: "https://comment.bornforthis.cn/ui"},
           { text: "Stackoverflow", link: "https://stackoverflow.com/users/19551173/ai%e6%82%a6%e5%88%9b"},
           { text: "Mdnice", link: "https://mdnice.com/user/417729638227"},
+          { text: "AI悦创随笔1", link: "/posts/12.html"},
+          { text: "随笔2", link: "/essays"},
+          // { text: "随笔", children: [{ text: "AI悦创随笔1", link: "https://bornforthis.cn/posts/12.html"}, { text: "随笔2", link: "/essays"}]},
         ]
       },
       { 
