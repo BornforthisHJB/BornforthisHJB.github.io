@@ -89,9 +89,43 @@ today = datetime.date.today().strftime('%Y{}%m{}%d{}').format(*'年月日')
 print('今天是：' + today)
 ```
 
+然后通过 Python 命令来执行这个 `today.py` 文件：
+
+- Windows 下执行：
+
+```cmd
+python today.py
+```
+
+> C:> python today.py
+> 今天是：2022年07月17日
+
+- Linux 和 MacOS 下执行：
+
+```python
+python3 today.py
+```
+
+> ➜ ~ python3 today.py
+> 今天是：2022年07月17日
+
+> 注意：上述文件使用的是省略了路径前缀的相对路径形式，执行命令前须先进入到 Python 文件所在目录（即确保工作目录和文件所在目录一致），否则解释器会找不到该文件。也可以直接使用绝对路径的形式，如 `python C:\Users\happy\today.py`，此时无需考虑工作目录。
 
 
 
+## 交互模式执行和 Python 文件执行的差别
+
+显而易见，Python 代码的交互模式执行和文件执行在使用形式上是不同的。除此之外，在输出结果的方式上这两种方法也存在一些不同。
+
+比如代码：
+
+```python
+12345 + 54321
+```
+
+在交互模式下执行时，计算结果会被直接输出出来：
+
+> 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
