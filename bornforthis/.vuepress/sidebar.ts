@@ -186,6 +186,7 @@ export default sidebar({
 					collapsable: true,
 					children: [
 						"mk_py05",
+						"mk_py06",
 					]
 				}
 			],
