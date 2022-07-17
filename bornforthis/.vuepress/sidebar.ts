@@ -214,6 +214,7 @@ export default sidebar({
 						"auto_base08",
 						"auto_base09",
 						"auto_base10",
+						"auto_base11",
 					],
 				}
 				
