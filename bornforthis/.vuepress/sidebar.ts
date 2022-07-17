@@ -162,9 +162,23 @@ export default sidebar({
 	"/column/py/Python_tutorial/": [
 		{ 
 			text: "Python 基础",
+			collapsable: true,
 			children: [
 				"",
 			]
+		},
+		{
+			text: "Python 通用教程",
+			collapsable: true,
+			children: [
+				{
+					text: "第 1 章 入门准备",
+					collapsable: true,
+					children: [
+						"mk_py01",
+					],
+				}
+			],
 		}
 	],
 	"/column/cookdinner/": [
