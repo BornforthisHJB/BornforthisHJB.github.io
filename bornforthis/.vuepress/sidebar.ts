@@ -95,6 +95,7 @@ export default sidebar({
 	"/column/photography/": [
 		{ 
 			text: "器材基础",
+			collapsable: true,
 			children: [
 				"",
 				"01",
