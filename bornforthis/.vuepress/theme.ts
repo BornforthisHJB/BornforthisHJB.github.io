@@ -78,8 +78,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      // "/dedao/01-Xue_Zhaofeng_economics_class/": "123123",
-      // "/guide/encrypt.html": ["1234"],
+
       "/column/playback/01-Tommy.html": "20220517",
       "/column/playback/02-LKW.html": "lkw",
       "/column/playback/03-20220610.html": "20220610",
