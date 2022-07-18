@@ -94,13 +94,20 @@ export default sidebar({
 	],
 	"/column/photography/": [
 		{ 
-			text: "器材基础",
+			text: "器材基础Plus",
 			collapsable: true,
 			children: [
-				"",
-				"01",
-			],
+				{
+					text: "学前班",
+					collapsable: true,
+					children: [
+						"",
+						"01",
+					]
+				}
+			]
 		}
+		
 	],
 	"/column/pdf/": [
 		{ 
