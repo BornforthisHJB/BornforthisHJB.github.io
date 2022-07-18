@@ -2,6 +2,28 @@
 title: 1.1 如果一生只选一次技能，请选 PPT
 time: 2022-06-27 14:00:24
 icon: slides
+author: AI悦创
+isOriginal: true
+category: 
+    - PPT 教程
+tag:
+    - PPT 教程
+sticky: false
+star: false
+password: false
+article: true
+timeline: true
+image: false
+navbar: true
+sidebarIcon: true
+headerDepth: 5
+comment: true
+lastUpdated: true
+editLink: true
+prev: false
+next: 01.md
+backToTop: true
+toc: true
 ---
 
 ## 1. PPT 凭什么很重要？
