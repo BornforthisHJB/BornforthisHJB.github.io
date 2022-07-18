@@ -42,7 +42,7 @@ export default navbar([
       {
         text: "得到",
         children: [
-          { text: "薛兆丰的经济学课", icon: "blog", link: "/dedao/01-薛兆丰的经济学课/"},
+          { text: "薛兆丰的经济学课", icon: "blog", link: "/dedao/01-Xue-Zhaofengs-economics-class/"},
         ]
       }
     ]
