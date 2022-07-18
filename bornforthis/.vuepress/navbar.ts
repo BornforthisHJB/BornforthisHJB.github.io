@@ -23,6 +23,7 @@ export default navbar([
           { text: "Python 办公自动化", icon: "python", link: "/column/pyauto"},
           { text: "题解", icon: "code", link: "/column/tijie"},
           { text: "公开课资料", icon: "blog", link: "/column/pyauto/gkk/"},
+          { text: "编程思维", icon: "read", link: "/column/Programmingthinking/"},
         ]
       },
       { 

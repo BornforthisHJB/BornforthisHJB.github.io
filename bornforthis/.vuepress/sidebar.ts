@@ -31,6 +31,15 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/Programmingthinking/": [
+		{
+			text: "试听",
+			collapsable: true,
+			children: [
+				"",
+			]
+		}
+	],
 	"/dedao/01-Xue-Zhaofengs-economics-class/": [
 		{
 			text: "课前必读(1讲)",
