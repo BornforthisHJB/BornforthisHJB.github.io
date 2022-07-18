@@ -45,6 +45,7 @@ export default sidebar({
 		"",
 	],
 	"/column/PPT/": [
+		"note",
 		{ 
 			text: "卷一：零基础学习 PPT",
 			collapsable: true,
