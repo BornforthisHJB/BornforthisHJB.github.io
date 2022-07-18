@@ -22,7 +22,6 @@ export default navbar([
           { text: "Web 专栏", icon: "network", link: "/column/web"},
           { text: "Python 办公自动化", icon: "python", link: "/column/pyauto"},
           { text: "题解", icon: "code", link: "/column/tijie"},
-          { text: "PPT 教程", icon: "slides", link: "/column/PPT/"},
           { text: "公开课资料", icon: "blog", link: "/column/pyauto/gkk/"},
         ]
       },
@@ -37,6 +36,7 @@ export default navbar([
         children: [
           { text: "摄影", icon: "compare", link: "/column/photography/"},
           { text: "五哥摄影课堂", icon: "compare", link: "/column/Fifth_brother_photography_class/"},
+          { text: "PPT 教程", icon: "slides", link: "/column/PPT/"},
         ],
       },
       {
