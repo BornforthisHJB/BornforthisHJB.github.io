@@ -31,7 +31,7 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
-	"/dedao/01-Xue_Zhaofeng_economics_class/": [
+	"/dedao/01-薛兆丰的经济学课/": [
 		{
 			text: "课前必读(1讲)",
 			collapsable: true,
