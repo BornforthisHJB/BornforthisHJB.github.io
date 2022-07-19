@@ -24,7 +24,7 @@ export default navbar([
           { text: "题解", icon: "code", link: "/column/tijie"},
           { text: "公开课资料", icon: "blog", link: "/column/pyauto/gkk/"},
           { text: "编程思维", icon: "read", link: "/column/Programmingthinking/"},
-          { text: "零基础学习机器学习", link: "/column/TensorFlow/零基础实战机器学习/"},
+          { text: "零基础学习机器学习", icon: "centos", link: "/column/TensorFlow/零基础实战机器学习/"},
         ]
       },
       { 
