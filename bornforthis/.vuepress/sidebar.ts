@@ -31,6 +31,15 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/TensorFlow/零基础实战机器学习/": [
+		{
+			text: "开篇词 (1讲)",
+			collapsable: true,
+			children: [
+				""
+			]
+		}
+	],
 	"/column/Programmingthinking/": [
 		{
 			text: "试听",
