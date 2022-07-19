@@ -63,7 +63,8 @@ export default navbar([
           { text: "Json Online", icon: "json", link: "https://bornforthis.cn/json/"},
           { text: "m3u8 播放器", icon: "preview", link: "https://bornforthis.cn/m3u8"},
           { text: "进制在线转换", icon: "tool", link: "https://bornforthis.cn/tool"},
-          { text: "HTML Online", icon: "network", link: "https://bornforthis.cn/html_online/"}
+          { text: "HTML Online", icon: "network", link: "https://bornforthis.cn/html_online/"},
+          { text: "在线转换", icon: "network", link: "https://convertio.co/zh/"},
         ]
       },
       {
