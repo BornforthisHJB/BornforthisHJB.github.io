@@ -31,7 +31,7 @@ toc: true
 ![img](./README.assets/38ea18722c985b5610374532e2fc90bc.jpg)
 
 <audio id="audio" controls="" preload="none">
-      <source id="mp3" src="https://bornforthis.cn/开篇词｜开发者为什么要从实战出发学机器学习？.mp3">
+      <source id="mp3" src="/零基础实战机器学习/01.mp3">
 </audio>
 
 
