@@ -38,6 +38,13 @@ export default sidebar({
 			children: [
 				""
 			]
+		},
+		{
+			text: "准备篇 (4讲)",
+			collapsable: true,
+			children: [
+				"01",
+			]
 		}
 	],
 	"/column/Programmingthinking/": [

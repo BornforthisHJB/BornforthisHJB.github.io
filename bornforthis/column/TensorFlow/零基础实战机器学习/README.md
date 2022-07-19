@@ -31,7 +31,7 @@ toc: true
 ![img](./README.assets/38ea18722c985b5610374532e2fc90bc.jpg)
 
 <audio id="audio" controls="" preload="none">
-      <source id="mp3" src="/零基础实战机器学习/01.mp3">
+      <source id="mp3" src="/零基础实战机器学习/00.mp3">
 </audio>
 
 你好，我是黄佳。
