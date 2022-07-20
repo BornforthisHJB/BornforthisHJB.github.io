@@ -1,7 +1,7 @@
 ---
 home: true
 icon: any
-title: 资源网站
+title: 网站分享
 heroImage: /ColumnImages/learn_web/p7txftoOcjMKWNE06fYFodUWzavRIJdiss7VJGIC.jpg
 heroText: AI悦创学习网站分享
 tagline: 阅读网站\资源网站，与你分享~
@@ -55,6 +55,15 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 |      |                                                      |                                                  |        |
 |      |                                                      |                                                  |        |
 |      |                                                      |                                                  |        |
+
+## 设计类网站分享
+
+| 序号 | 名称                                                         | 链接                                                       | 说明            |
+| ---- | ------------------------------------------------------------ | ---------------------------------------------------------- | --------------- |
+| 01   | ![BrandCrowd](./README.assets/brandcrowd-logo-5d59400c52.svg) | [https://www.brandcrowd.com/](https://www.brandcrowd.com/) | logo 生成器网站 |
+|      |                                                              |                                                            |                 |
+|      |                                                              |                                                            |                 |
+|      |                                                              |                                                            |                 |
 
 
 
