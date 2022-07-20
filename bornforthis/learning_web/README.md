@@ -48,13 +48,13 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 
 ## 资源网站
 
-| 序号 | 名称                                               | 链接                                             | 描述   |
-| ---- | -------------------------------------------------- | ------------------------------------------------ | ------ |
-| 01   | ![精品MAC应用分享](README.assets/logo-8305990.png) | [https://xclient.info/](https://xclient.info/)   |        |
-| 02   | MacWk                                              | [https://www.macwk.com/](https://www.macwk.com/) | 绝绝子 |
-|      |                                                    |                                                  |        |
-|      |                                                    |                                                  |        |
-|      |                                                    |                                                  |        |
+| 序号 | 名称                                                 | 链接                                             | 描述   |
+| ---- | ---------------------------------------------------- | ------------------------------------------------ | ------ |
+| 01   | ![精品MAC应用分享](./README.assets/logo-8305990.png) | [https://xclient.info/](https://xclient.info/)   |        |
+| 02   | MacWk                                                | [https://www.macwk.com/](https://www.macwk.com/) | 绝绝子 |
+|      |                                                      |                                                  |        |
+|      |                                                      |                                                  |        |
+|      |                                                      |                                                  |        |
 
 
 
