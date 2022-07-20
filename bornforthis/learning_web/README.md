@@ -1,13 +1,13 @@
 ---
 home: true
 icon: any
-title: 学习网站分享和好的开源项目
+title: 资源网站
 heroImage: /ColumnImages/learn_web/p7txftoOcjMKWNE06fYFodUWzavRIJdiss7VJGIC.jpg
 heroText: AI悦创学习网站分享
-tagline: 我的阅读网站，与你分享~
+tagline: 阅读网站\资源网站，与你分享~
 actions:
   - text: 开始学习 💡
-    link: /learning_web
+    link: /learning_web/01
 
   - text: 专栏 📚
     link: https://bornforthis.cn/column.html
@@ -45,6 +45,16 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | ---- | ------------- | ------------------------------------------------------------ | ------------- |
 | 01   | **LiaScript** | [https://github.com/LiaScript/LiaScript](https://github.com/LiaScript/LiaScript) | 交互式 Python |
 | 02   |               |                                                              |               |
+
+## 资源网站
+
+| 序号 | 名称                                               | 链接                                             | 描述   |
+| ---- | -------------------------------------------------- | ------------------------------------------------ | ------ |
+| 01   | ![精品MAC应用分享](README.assets/logo-8305990.png) | [https://xclient.info/](https://xclient.info/)   |        |
+| 02   | MacWk                                              | [https://www.macwk.com/](https://www.macwk.com/) | 绝绝子 |
+|      |                                                    |                                                  |        |
+|      |                                                    |                                                  |        |
+|      |                                                    |                                                  |        |
 
 
 
