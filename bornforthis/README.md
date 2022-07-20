@@ -7,7 +7,7 @@ heroImage: /img_home/logo_min.png
 heroText: AI悦创
 heroFullScreen: true
 bgImage: /img_home/L1009890.jpg
-tagline: <font color="red">浅者见浅，深者见深——黄家宝</font><br/>“I love the people I photograph”——Bruce Gilden
+tagline: 浅者见浅，深者见深——黄家宝<br/>“I love the people I photograph”——Bruce Gilden
 projects:
   - icon: play
     name: 私教回放
