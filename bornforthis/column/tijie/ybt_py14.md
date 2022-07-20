@@ -1,6 +1,6 @@
 ---
-title: 13-练4.1  for循环求和
-date: 2022-07-20 19:34:03
+title: 14-练4.3  输出奇偶数之和
+date: 2022-07-20 19:40:41
 author: AI悦创
 isOriginal: true
 category: 一本通 Python 题解
@@ -19,44 +19,48 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: ybt_py12.md
-next: ybt_py14.md
+prev: ybt_py13.md
+next: ybt_py15.md
 backToTop: true
 toc: true
 ---
 
 ## 【题目描述】
 
-利用for循环。计算输出1+2+3+...+n的和。
+利用 for 循环，分别输出 `1∼n` 之间的所有奇数的和、偶数的和。
 
 ### 【输入】
 
-输入n。
+输入 n。
 
 ### 【输出】
 
-如题述，之和。
+输出为一行，两个数(用一个空格隔开)，偶数之和与奇数之和。
 
 ## 【输入样例】
 
-```
+```python
 10
 ```
 
 ## 【输出样例】
 
-```
-55
+```python
+30 25
 ```
 
 ## 代码
 
 ```python
 n = int(input())
-total = 0
-for i in range(1, n+1):
-    total += i
-print(total)
+even_number = 0
+odd_number = 0
+for i in range(1, n + 1):
+    if i % 2 == 0:
+        even_number += i
+    else:
+        odd_number += i
+print(even_number, odd_number)
 ```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！

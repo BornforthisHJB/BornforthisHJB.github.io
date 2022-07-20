@@ -1,6 +1,6 @@
 ---
-title: 13-练4.1  for循环求和
-date: 2022-07-20 19:34:03
+title: 15-练4.4  求阶乘 n!的值
+date: 2022-07-20 19:55:26
 author: AI悦创
 isOriginal: true
 category: 一本通 Python 题解
@@ -19,44 +19,46 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: ybt_py12.md
-next: ybt_py14.md
+prev: ybt_py14.md
+next: ybt_py16.md
 backToTop: true
 toc: true
 ---
 
 ## 【题目描述】
 
-利用for循环。计算输出1+2+3+...+n的和。
+利用 for 循环求 n! 的值。
+
+提示，n!=1×2×...×n。
 
 ### 【输入】
 
-输入n。
+输入一个正整数 n。
 
 ### 【输出】
 
-如题述，之和。
+输出 n! 的值。
 
 ## 【输入样例】
 
 ```
-10
+4
 ```
 
 ## 【输出样例】
 
 ```
-55
+24
 ```
 
 ## 代码
 
 ```python
 n = int(input())
-total = 0
-for i in range(1, n+1):
-    total += i
-print(total)
+factorial = 1
+for i in range(1, n + 1):
+    factorial = factorial * i
+print(factorial)
 ```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！

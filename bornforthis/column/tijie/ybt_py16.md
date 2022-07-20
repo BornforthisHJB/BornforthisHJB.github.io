@@ -1,6 +1,6 @@
 ---
-title: 13-练4.1  for循环求和
-date: 2022-07-20 19:34:03
+title: 16-【例4.7】数字反转(沪版)
+date: 2022-07-20 20:00:07
 author: AI悦创
 isOriginal: true
 category: 一本通 Python 题解
@@ -19,45 +19,62 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: ybt_py12.md
-next: ybt_py14.md
+prev: ybt_py15.md
+next: ybt_py17.md
 backToTop: true
 toc: true
 ---
 
 ## 【题目描述】
 
-利用for循环。计算输出1+2+3+...+n的和。
+给定一个正整数，请将该数各位上数字反转得到一个新数。得到的新数的最高位数字不应为零，例如输入380，反转后得到的新数为83。
 
 ### 【输入】
 
-输入n。
+一行一个正整数。
 
 ### 【输出】
 
-如题述，之和。
+一行一个正整数，表示反转后的新数。
 
 ## 【输入样例】
 
 ```
-10
+726
 ```
 
 ## 【输出样例】
 
 ```
-55
+627 
 ```
 
-## 代码
+## 代码「耍流氓代码」
 
 ```python
-n = int(input())
-total = 0
-for i in range(1, n+1):
-    total += i
-print(total)
+n = input()
+n = int(n[::-1])
+print(n)
 ```
+
+## 正常考点代码
+
+每次将原数对 10 取模，可以求出末位数，并除 10 取整消除末位数。
+
+将新数 10 + 此数，即可将其添加至新数末尾，反复执行至原数为 0 即可。
+
+```python
+num = int(input())
+# reverseNum 是逆序数
+reverseNum = 0
+while num > 0:
+    # 取出 num 的最后一位，放在 reverseNum 的末尾
+    reverseNum = reverseNum * 10 + num % 10
+    num = num // 10
+print(reverseNum)
+```
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
