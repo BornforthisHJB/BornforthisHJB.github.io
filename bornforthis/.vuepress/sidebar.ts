@@ -31,10 +31,10 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
-	"/learning_web/": [
-		"",
-		"01",
-	],
+	// "/learning_web/": [
+	// 	"",
+	// 	"01",
+	// ],
 	"/column/TensorFlow/零基础实战机器学习/": [
 		{
 			text: "开篇词 (1讲)",
