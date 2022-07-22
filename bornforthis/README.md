@@ -6,7 +6,7 @@ title: 黄家宝
 heroImage: /img_home/logo_min.png
 heroText: AI悦创
 heroFullScreen: true
-bgImage: /img_home/L1009890.jpg
+bgImage: https://img-blog.csdnimg.cn/30458f75cce14373b32b4f1a8c5f96c0.jpeg
 tagline: 浅者见浅，深者见深——黄家宝<br/>“I love the people I photograph”——Bruce Gilden
 projects:
   - icon: play
