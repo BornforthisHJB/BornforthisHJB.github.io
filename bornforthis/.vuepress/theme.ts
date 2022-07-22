@@ -49,7 +49,7 @@ export default hopeTheme({
       // Dingding: "https://example.com",
       // Discord: "https://example.com",
       // Dribbble: "https://example.com",
-      // Email: "https://example.com",
+      Email: "mailto:bornforthis@bornforthis.cn",
       // Evernote: "https://example.com",
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
