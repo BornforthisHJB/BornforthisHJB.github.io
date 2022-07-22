@@ -35,7 +35,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | 08   | ![logo](./README.assets/logo.png) | 学习 Python 与 gui 之类的 | [https://www.delftstack.com/zh/](https://www.delftstack.com/zh/) | EN   | Python GUI Tkinter Text |
 | 09   | 流沙团队书籍                      | 全栈                      | [https://book.bornforthi.com/](https://book.bornforthi.com/) | zh   |                         |
 | 10   | mozilla                           | Web                       | [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/) | EN   | HTML em                 |
-|      |                                   |                           |                                                              |      |                         |
+| 11   |                                   |                           |                                                              |      |                         |
 |      |                                   |                           |                                                              |      |                         |
 |      |                                   |                           |                                                              |      |                         |
 
@@ -74,6 +74,15 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 |      |                  |                                                              |
 |      |                  |                                                              |
 |      |                  |                                                              |
+
+## 方便备课
+
+| 序号 | 名称     | 内容 | 链接                                             | 说明   |
+| ---- | -------- | ---- | ------------------------------------------------ | ------ |
+| 01   | 简明教程 | IT   | [https://www.jmjc.tech/](https://www.jmjc.tech/) | 备课用 |
+|      |          |      |                                                  |        |
+|      |          |      |                                                  |        |
+|      |          |      |                                                  |        |
 
 
 
