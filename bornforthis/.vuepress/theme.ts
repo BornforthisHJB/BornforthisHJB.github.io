@@ -56,7 +56,7 @@ export default hopeTheme({
       Gitee: "https://gitee.com/huangjiabaoaiyc",
       GitHub: "https://github.com/AndersonHJB",
       // Gitlab: "https://example.com",
-      Gmail: "https://aiyuechuang@gmail.com",
+      Gmail: "mailto:aiyuechuang@gmail.com",
       // Instagram: "https://example.com",
       // Lines: "https://example.com",
       // Linkedin: "https://example.com",
