@@ -74,6 +74,11 @@ Python小咖养成计划：[https://study.163.com/course/courseMain.htm?courseId
 | 03                        | **第三节丨self参数的使用**                                   |
 | 04                        | [**章节测试九**](https://www.aiyc.top/642.html)：https://www.aiyc.top/642.html |
 | 05                        | [**项目作业丨对话式对战游戏设计**](https://www.aiyc.top/647.html)：https://www.aiyc.top/647.html |
+| **第十章 扩展**           |                                                              |
+| 01                        | 文件读取                                                     |
+| 02                        | 简易 NLP                                                     |
+| 03                        | 异常处理                                                     |
+| 04                        |                                                              |
 | **阶段测试**              |                                                              |
 | 01                        | [**Python-基础课程结业测试**](https://www.aiyc.top/649.html)：https://www.aiyc.top/649.html |
 | **课程重点总结及答疑**    |                                                              |
