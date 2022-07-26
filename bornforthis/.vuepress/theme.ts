@@ -31,7 +31,7 @@ export default hopeTheme({
   // sidebar
   sidebar: sidebar,
 
-  footer: "长期招收编程一对一学员！微信：Jiabcdefh",
+  footer: '长期招收编程一对一学员！微信：Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>',
 
   displayFooter: true,
 

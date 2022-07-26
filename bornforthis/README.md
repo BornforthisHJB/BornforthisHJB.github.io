@@ -39,7 +39,7 @@ projects:
     desc: Python 来实现自动化办公，解放人力。
     link: /autooffice
 
-footer: 长期招收编程一对一学员！微信：Jiabcdefh
+footer: 长期招收编程一对一学员！微信：Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>
 ---
 
 如果你有其他需求或者疑问，点击：[QQ 在线客服](http://wpa.qq.com/msgrd?v=3&uin=1432803776&site=qq&menu=yes)
