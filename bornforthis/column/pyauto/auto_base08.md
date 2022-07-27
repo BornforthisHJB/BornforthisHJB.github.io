@@ -41,7 +41,7 @@ toc: true
 
 中型数据库：[SqlServer](https://baike.baidu.com/item/SqlServer/463101?fr=aladdin)、[Mysql](https://baike.baidu.com/item/MySQL/471251)、[MariaDB](https://baike.baidu.com/item/mariaDB/6466119?fr=aladdin)、[PostgreSQL](https://baike.baidu.com/item/PostgreSQL/530240?fr=aladdin)、[Redis](https://baike.baidu.com/item/Redis/6549233)等。
 
-小型数据库：[Sqlite](https://baike.baidu.com/item/SQLite/375020?fr=aladdin)、[Access](https://baike.baidu.com/item/Microsoft Office Access/7748166?fromtitle=access&fromid=10275&fr=aladdin)。
+小型数据库：[Sqlite](https://baike.baidu.com/item/SQLite/375020?fr=aladdin)、[Access](https://baike.baidu.com/item/Microsoft Office Access/7748166?fromtitle=access&fromid=10275&fr=aladdin) 。
 
 #### 如何选择 
 
