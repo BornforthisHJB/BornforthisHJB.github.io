@@ -24,17 +24,22 @@ footer: 立志降低教育成本，普及编程教育，提供优质资源教程
 
 ## 下载目录
 
-| 序号        | 名称        | 下载地址                                                     | 官网                                                         |
-| ----------- | ----------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Windows** |             |                                                              |                                                              |
-| 01          | Snipaste    | [**Snipaste-2.7.3-Beta-x64.zip**](https://aiyc.lanzouf.com/iqFUt05dg7qd) | [https://www.snipaste.com/](https://www.snipaste.com/)       |
-| 02          | Spyder      | **[Spyder_64bit_full.exe](https://github.com/spyder-ide/spyder/releases)** | [https://www.spyder-ide.org/](https://www.spyder-ide.org/)   |
-| 03          | devC++      | [Dev-Cpp 5.11 TDM-GCC 4.9.2 Setup.exe](https://aiyc.lanzouf.com/iH8Wl06jgjub) | [https://sourceforge.net/projects/orwelldevcpp/](https://sourceforge.net/projects/orwelldevcpp/) |
-| 04          | Java JDK    | [jdk-11.0.2_windows-x64_bin.exe](https://res001.geekbang.org/tools/jdk-11.0.2_windows-x64_bin.exe) | [https://www.oracle.com/java/technologies/downloads/#jdk18-windows](https://www.oracle.com/java/technologies/downloads/#jdk18-windows) |
-| 05          | SublimeText | [sublime_text_build_4126_x64_setup.exe](https://aiyc.lanzouf.com/iuBw106jgk9g) | [https://www.sublimetext.com/download](https://www.sublimetext.com/download) |
-| **MacOS**   |             |                                                              |                                                              |
-| 01          | Java JDK    | [jdk-11.0.2_osx-x64_bin.dmg](https://res001.geekbang.org/tools/jdk-11.0.2_osx-x64_bin.dmg) | [https://www.oracle.com/java/technologies/downloads/#jdk18-mac](https://www.oracle.com/java/technologies/downloads/#jdk18-mac) |
-| 02          | SublimeText | [sublime_text_build_4126_mac.zip](https://aiyc.lanzouf.com/iOosQ06jgsza) | [https://www.sublimetext.com/download](https://www.sublimetext.com/download) |
+| 序号        | 名称                                      | 下载地址                                                     | 官网                                                         | 作用 |
+| ----------- | ----------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
+| **Windows** |                                           |                                                              |                                                              |      |
+| 01          | Snipaste                                  | [**Snipaste-2.7.3-Beta-x64.zip**](https://aiyc.lanzouf.com/iqFUt05dg7qd) | [https://www.snipaste.com/](https://www.snipaste.com/)       |      |
+| 02          | Spyder                                    | **[Spyder_64bit_full.exe](https://github.com/spyder-ide/spyder/releases)** | [https://www.spyder-ide.org/](https://www.spyder-ide.org/)   |      |
+| 03          | devC++                                    | [Dev-Cpp 5.11 TDM-GCC 4.9.2 Setup.exe](https://aiyc.lanzouf.com/iH8Wl06jgjub) | [https://sourceforge.net/projects/orwelldevcpp/](https://sourceforge.net/projects/orwelldevcpp/) |      |
+| 04          | Java JDK                                  | [jdk-11.0.2_windows-x64_bin.exe](https://res001.geekbang.org/tools/jdk-11.0.2_windows-x64_bin.exe) | [https://www.oracle.com/java/technologies/downloads/#jdk18-windows](https://www.oracle.com/java/technologies/downloads/#jdk18-windows) |      |
+| 05          | SublimeText                               | [sublime_text_build_4126_x64_setup.exe](https://aiyc.lanzouf.com/iuBw106jgk9g) | [https://www.sublimetext.com/download](https://www.sublimetext.com/download) |      |
+| **MacOS**   |                                           |                                                              |                                                              |      |
+| 01          | Java JDK                                  | [jdk-11.0.2_osx-x64_bin.dmg](https://res001.geekbang.org/tools/jdk-11.0.2_osx-x64_bin.dmg) | [https://www.oracle.com/java/technologies/downloads/#jdk18-mac](https://www.oracle.com/java/technologies/downloads/#jdk18-mac) |      |
+| 02          | SublimeText                               | [sublime_text_build_4126_mac.zip](https://aiyc.lanzouf.com/iOosQ06jgsza) | [https://www.sublimetext.com/download](https://www.sublimetext.com/download) |      |
+| 03          | Charles_4.6.3b2_(最低10.7)__macwk.com.dmg | [https://aiyc.lanzouf.com/iAjzB08hx8da](https://aiyc.lanzouf.com/iAjzB08hx8da) | [https://www.charlesproxy.com/](https://www.charlesproxy.com/) | 抓包 |
+|             |                                           |                                                              |                                                              |      |
+|             |                                           |                                                              |                                                              |      |
+|             |                                           |                                                              |                                                              |      |
+|             |                                           |                                                              |                                                              |      |
 
 ::: details 公众号：AI悦创【二维码】
 
