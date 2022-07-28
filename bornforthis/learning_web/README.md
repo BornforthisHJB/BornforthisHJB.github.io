@@ -70,7 +70,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | 序号 | 名称             | 链接                                                         |
 | ---- | ---------------- | ------------------------------------------------------------ |
 | 01   | 田浩良的精彩人生 | [https://www.tommytian57.com/](https://www.tommytian57.com/) |
-|      |                  |                                                              |
+| 02   | 刘家惠           | [https://github.com/ImJ-MAC](https://github.com/ImJ-MAC)     |
 |      |                  |                                                              |
 |      |                  |                                                              |
 |      |                  |                                                              |
