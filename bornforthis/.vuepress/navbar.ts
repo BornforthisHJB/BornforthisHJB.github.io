@@ -64,7 +64,7 @@ export default navbar([
           { text: "m3u8 播放器", icon: "preview", link: "https://bornforthis.cn/m3u8"},
           { text: "进制在线转换", icon: "tool", link: "https://bornforthis.cn/tool"},
           { text: "HTML Online", icon: "network", link: "https://bornforthis.cn/html_online/"},
-          { text: "在线转换", icon: "network", link: "https://convertio.co/zh/"},
+          { text: "格式在线转换", icon: "network", link: "https://convertio.co/zh/"},
         ]
       },
       {
