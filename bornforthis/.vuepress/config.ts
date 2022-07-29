@@ -75,12 +75,14 @@ export default defineUserConfig({
       // update: "force",
       update: "hint",
       // maxSize: 6,
+      // favicon: "/"
     }),
     
     searchPlugin({
       locales: {
         "/": {
           placeholder: "搜索",
+          
         },
       },
     }),

@@ -84,6 +84,17 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 |      |          |      |                                                    |        |
 |      |          |      |                                                    |        |
 
+## 论文平台
+
+| 序号 | 名称                                                         | 链接                                                     |
+| ---- | ------------------------------------------------------------ | -------------------------------------------------------- |
+| 01   | [钛学术文献服务平台](https://doc.taixueshu.com/)             | [https://doc.taixueshu.com/](https://doc.taixueshu.com/) |
+| 02   | [![img](./README.assets/toplogo.png)](https://mall.cnki.net/) | [https://mall.cnki.net/](https://mall.cnki.net/)         |
+|      |                                                              |                                                          |
+|      |                                                              |                                                          |
+|      |                                                              |                                                          |
+|      |                                                              |                                                          |
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
