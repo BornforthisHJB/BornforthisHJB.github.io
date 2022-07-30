@@ -31,6 +31,22 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/data_analysis": [
+		{ 
+			text: "阶段一：快速掌握数据分析必备技能",
+			collapsable: true,
+			children: [
+				{
+					text: "第1周 走进数据分析",
+					collapsable: true,
+					children: [
+						"01",
+						"02",
+					]
+				}
+			]
+		}
+	],
 	// "/learning_web/": [
 	// 	"",
 	// 	"01",

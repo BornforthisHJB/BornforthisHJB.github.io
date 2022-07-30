@@ -62,7 +62,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------- |
 | 01   | ![BrandCrowd](./README.assets/brandcrowd-logo-5d59400c52.svg) | [https://www.brandcrowd.com/](https://www.brandcrowd.com/)   | logo 生成器网站   |
 | 02   | Unicode                                                      | [https://unicode-table.com/cn/](https://unicode-table.com/cn/) | HTML Unicode 编码 |
-|      |                                                              |                                                              |                   |
+| 03   | Favicon                                                      | [https://www.logosc.cn/](https://www.logosc.cn/)             | Favicon           |
 |      |                                                              |                                                              |                   |
 
 ## 学员网站
