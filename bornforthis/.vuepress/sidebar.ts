@@ -34,14 +34,20 @@ export default sidebar({
 	"/column/data_analysis": [
 		{ 
 			text: "阶段一：快速掌握数据分析必备技能",
+			icon: "state",
 			collapsable: true,
 			children: [
 				{
 					text: "第1周 走进数据分析",
 					collapsable: true,
 					children: [
-						"01",
-						"02",
+						{
+							text: "第1章 认识互联网数据分析",
+							collapsable: true,
+							children: [
+								"01",
+							]
+						}
 					]
 				}
 			]
