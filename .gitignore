@@ -1,0 +1,5 @@
+
+node_modules/
+bornforthis/.vuepress/.cache/
+bornforthis/.vuepress/.temp/
+bornforthis/.vuepress/dist/
