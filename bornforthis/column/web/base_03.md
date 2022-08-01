@@ -251,27 +251,58 @@ HTML 的元素构成如图：
 
 ```html
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <title>My Puppy</title>
-  </head>
-  <body>
-    <p>这是我的宠物成长日记页面</p>
-  </body>
+</head>
+<body>
+<p>这是我的宠物成长日记页面</p>
+</body>
 </html>
 ```
 
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_03/base_03-5.html" target="_blank">尝试一下</a></button>
+
+- `<!DOCTYPE html >`：**它是文档声明** 。你不需要记忆这行代码，也不需要纠结于它的意义。当它出现时，知道它是一行文档类型的说明即可。
+- `<html></html>`：`<html>` 元素是整个完整页面的根元素。
+- `<head></head>`：`<head>` 元素是一个容器。它包含了所有 HTML 页面的头部信息。这些信息用户不一定全都看见。这些信息包括搜索关键字，页面描述，CSS 样式等。
+-  `<title></title>`：`<title>` 元素用来设置页面标题。它出现在浏览器标签上，当你的浏览器标记或收藏页面时，它可用来描述页面。如：`bornforthis.cn` 的主页面 title
+
+![image-20220801231401758](./base_03.assets/image-20220801231401758.png)
 
 
 
+- `<body></body>`：`<body>` 元素包含了访问页面时所有显示在页面上的内容：文本，图片，音频，视频、动画等等。之前的课程，我们介绍过的 `<h>` 元素、`<p>` 元素、`<img>` 元素均可嵌套在 `<body>` 元素之中形成网页的主体内容。
+
+综上：**HTML 的文档结构包括网页的 `<head>` 头部和 `<body>` 主体两个部分。**
+
+【选词填空】选择合适的元素填写在空格处。
+
+![image-20220801231641053](./base_03.assets/image-20220801231641053.png)
 
 
 
+```html
+<!DOCTYPE html>
 
+<html>
 
+<head> 
 
+My Puppy</title> 
 
+     
 
+<body> 
+
+ <h1>猎豹的成长日记     
+
+<p>我今天满月啦！主人带我到公园里散步。我好喜欢这里的草地。</p> 
+
+ </body>
+```
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_03/base_03-6.html" target="_blank">尝试一下·去补全</a></button>
 
 
 
