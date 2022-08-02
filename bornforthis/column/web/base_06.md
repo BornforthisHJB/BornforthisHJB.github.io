@@ -181,6 +181,20 @@ Lisa想这样写：
 
 下一章，我们将带领你入门CSS。CSS将使猎豹的成长日记变得更加美观。
 
+## 优化
+
+![image-20220802215317895](./base_06.assets/image-20220802215317895.png)
+
+![image-20220802215421253](./base_06.assets/image-20220802215421253.png)
+
+```link
+
+```
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_06/index.html" target="_blank">成品</a></button>
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_06/base_06.html" target="_blank">在线试一试</a></button>
+
 ::: details 公众号：AI悦创【二维码】
 
 ![](/gzh.jpg)
