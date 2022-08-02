@@ -25,6 +25,12 @@ backToTop: true
 toc: true
 ---
 
+## 重温 `<img>` 元素
+
+```html
+<img src="https://7n.w3cschool.cn/attachments/image/20190719/1563518038368123.jpg">
+```
+
 
 
 ::: details 公众号：AI悦创【二维码】
