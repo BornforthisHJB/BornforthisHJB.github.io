@@ -340,12 +340,29 @@ My Puppy</title>
 点击“尝试一下”，看看 `<img>` 元素运行的效果：
 
 ```html
-<img src="https://atts.w3cschool.cn/attachments/image/20190808/1565246800318681.png" alt="views">
+<img src="https://bornforthis.cn/cdn/images/base-03-1.png" alt="views">
 ```
 
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_03/base_03-8.html" target="_blank">尝试一下</a></button>
 
+在上述案例中，`src=""` 是 `<img>` 的必要属性。它的值是图片文件的 URL。URL 就是浏览器找到该图的路径。 `alt=""` 也是 `<img>` 的属性。它的值是文本。它规定了当图像无法显示时的替代显示。
 
+- **第3步：使用 `<p>` 元素。** 在前面的知识点中，我们常用它来举例子。它表示段落。它可描述文本。
 
+```html
+<p>7月20日上午，在川西高原最美的时节，来自四方的宾朋齐聚在世外桃源—神座村，隆重举行阿坝·神座特种4A级景区授牌仪式。</p>
+```
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_03/base_03-9.html" target="_blank">尝试一下</a></button>
+
+通过以上 3 个步骤，你也能制作出简单结构的网页了。
+
+【单选题】以下关于 src 和 alt 描述准确的是？
+
+- [x] src 是 `<img>`  元素的必要属性。
+- [ ] src 和 alt 都是 `<img>` 元素的必要属性。
+- [ ] alt 是属性的值。
+- [ ] src 是图片元素。
 
 ::: details 公众号：AI悦创【二维码】
 
