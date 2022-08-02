@@ -1,6 +1,6 @@
 ---
 title: 09-CSS 基本知识
-date: 2022-08-02 22:17:57
+date: 2022-08-02 23:15:22
 author: AI悦创
 isOriginal: true
 category: web 专栏
@@ -19,11 +19,41 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: base_06.md
-next: base_08.md
+prev: base_07.md
+next: base_09.md
 backToTop: true
 toc: true
 ---
+
+## CSS 盒模型的应用
+
+CSS 布局主要就是基于盒模型。每个占据页面空间的块都能有这样的属性：
+
+- **padding: 内边距。** 它围绕着内容的空间。
+- **border: 边框。** 它紧接着内边距的线。
+- **margin: 外边距。** 它围绕元素外部的空间。
+
+![image-20220802231929105](./base_08.assets/image-20220802231929105.png)
+
+## 更改背景颜色
+
+以下这条 CSS 规则可以帮助你将整个界面的颜色设置为任意的颜色。
+
+```css
+html {
+    background-color: #00539F;
+}
+```
+
+案例中的 `#00539F` 是什么呢？
+
+它是颜色的十六进制编码。它能够把你想要展示的颜色准确的告诉浏览器。
+
+**怎么获取这些颜色编码呢？**
+
+打开百度，输入关键字“在线取色器”。有许多网站可查询颜色编码。获取颜色编码的过程大同小异，如图所示：
+
+
 
 
 
