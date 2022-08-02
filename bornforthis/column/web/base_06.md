@@ -187,10 +187,6 @@ Lisa想这样写：
 
 ![image-20220802215421253](./base_06.assets/image-20220802215421253.png)
 
-```link
-
-```
-
 <button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_06/index.html" target="_blank">成品</a></button>
 
 <button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_06/base_06.html" target="_blank">在线试一试</a></button>
