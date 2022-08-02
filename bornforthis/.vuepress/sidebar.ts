@@ -142,6 +142,7 @@ export default sidebar({
 						"base_03",
 						"base_04",
 						"base_05",
+						"base_06",
 					]
 				}
 			],

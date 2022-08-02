@@ -192,7 +192,7 @@ toc: true
 
 ## 第6步 测试运行
 
-- **运行： ** 将 html 文件拖入浏览器。查看效果。
+- **运行：** 将 html 文件拖入浏览器。查看效果。
 
 > 也可以直接双击，一般未修改的情况，html 文件默认使用浏览器打开。
 
@@ -208,6 +208,10 @@ toc: true
 因为你仅初步了解了 HTML，所以第一个网页看起来还很简陋。
 
 但随着进一步了解 `HTML` ,`CSS` ,`JS` 之后，你的网页会更加漂亮！
+
+## 资料下载：
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/data/base_02/my_first_page.zip" target="_blank">尝试一下</a></button>
 
 ::: details 公众号：AI悦创【二维码】
 
