@@ -344,7 +344,7 @@ My Puppy</title>
 点击“尝试一下”，看看 `<img>` 元素运行的效果：
 
 ```html
-<img src="https://bornforthis.cn/cdn/images/base.png" alt="views">
+<img src="https://bornforthis.cn/web_runing/data/base_03/img/base-03-01.png" alt="views">
 ```
 
 <button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_03/base_03-8.html" target="_blank">尝试一下</a></button>
