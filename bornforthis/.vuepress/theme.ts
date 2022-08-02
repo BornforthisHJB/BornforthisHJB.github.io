@@ -92,7 +92,7 @@ export default hopeTheme({
     copyright: {
       author: "黄家宝|AI悦创",
       global: true,
-      triggerWords: 10,
+      triggerWords: 100,
       disableCopy: false,
       disableSelection: false,
     },
