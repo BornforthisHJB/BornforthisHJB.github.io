@@ -19,3 +19,15 @@ icon: repo
 ---
 
 <PDF url="/pdf/03-使用8421.pdf" />
+
+---
+
+<PDF url="/pdf/04-Python数据分析基础.pdf" />
+
+---
+
+<PDF url="/pdf/05-Python数据分析实战_2016版.pdf" />
+
+---
+
+<PDF url="/pdf/06-Python数据分析与挖掘实战.pdf" />
