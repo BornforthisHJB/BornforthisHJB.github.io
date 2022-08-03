@@ -55,6 +55,41 @@ html {
 
 ![image-20220803100830625](./base_08.assets/image-20220803100830625.png)
 
+## 文档格式设置
+
+以下代码可以控制 `<body>` 元素的格式样式：
+
+```css
+body {
+    width: 600px;
+	margin: 0 auto;
+	background-color: #FF9500;
+    border: 5px solid black;
+}
+```
+
+以上每个属性的含义是：
+
+- `width: 600px;`  —— body 元素的宽度保持 600 像素。
+- `margin: 0 auto;`  —— 为 margin 或 padding 等属性设置两个值，第一个值代表元素的上、下方向（本例设置为 0）；第二个值代表左、右两边（本例中的 auto 是特殊值，含义是水平方向左右对称）。
+- `background-color: #FF9500; `—— 它指定元素的背景颜色。
+- `padding: 0 20px 20px 20px;` —— 内边距设置的四个值。用于给网页内容的四周制造一些空白空间。这些空间为上方、右边、下方，左边的内边距，像素为 20。它们的值按照上、右、下、左的顺序排列。
+- `border: 5px solid black;`  —— 直接为 body 设置 5 像素的黑色实线边框。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ::: details 公众号：AI悦创【二维码】
