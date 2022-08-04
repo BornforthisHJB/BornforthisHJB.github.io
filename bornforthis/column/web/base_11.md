@@ -91,11 +91,51 @@ document.querySelector('html').onclick = function() {
 
 <button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_10/base_10-3.html" target="_blank">尝试一下</a></button>
 
-
+![image-20220804231652817](./base_11.assets/image-20220804231652817.png)
 
 将事件与元素绑定有许多方法。本例选用了 `<html>` 元素，把一个匿名函数（即未命名的函数，此匿名函数包含单击鼠标时要运行的代码）赋值给了 html 的 onclick 属性。
 
+【选词填空】请选择相应的字符以使声明完整：
 
+![image-20220804231722081](./base_11.assets/image-20220804231722081.png)
+
+::: details 答案
+
+![image-20220804231753169](./base_11.assets/image-20220804231753169.png)
+
+:::
+
+【单选题】关于以下代码的执行结果说法错误的是？
+
+```javascript
+let mylove = 'AI悦创'; 
+if (mylove === 'AI悦创') { 
+    alert('AI悦创--随时随地学编程！'); 
+ } 
+else {
+    alert('学编程，从 Bornforthis.cn 开始！'); 
+}
+```
+
+- [ ] 如果返回为真，则执行"AI悦创--随时随地学编程！”。
+- [x] 如果返回为假，则执行“AI悦创--随时随地学编程！”后再执行“学编程，从 Bornforthis.cn 开始！"。
+- [ ] 如果返回为假，则跳过第一个代码块，执行“学编程，从 Bornforthis.cn 开始！”
+
+> 词句是条件语句。如果测试 if 中的值为真，则执行第一个代码块。如果 if 中的值为假，则跳过第一个代码块，执行第二个代码块。
+
+【判断题】使用函数，你就能够对代码进行复用。
+
+- [x] 正确
+- [ ] 错误
+
+【单选题】以下关于事件说法错误的是？
+
+- [ ] 事件可用来增强网页的交互性。
+- [ ] 事件是可以被 JavaScript 侦测到的一种行为。
+- [ ] 事件就是一些动作。比如：点击、提交、确认等等。
+- [x] 事件由一系列的静态行为构成。
+
+>  事件是动态的。
 
 
 
