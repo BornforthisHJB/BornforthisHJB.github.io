@@ -160,6 +160,7 @@ export default sidebar({
 					collapsable: true,
 					children: [
 						"base_10",
+						"base_11",
 					]
 				}
 			],

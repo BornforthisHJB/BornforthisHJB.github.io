@@ -38,6 +38,6 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 |                                  | 10   | [实战：萨摩耶“猎豹”的精修成长日记](./base_09.md)   |          |
 | **第四章： JavaScript 入门**     |      |                                                    |          |
 |                                  | 11   | [JavaScript 概述](./base_10.md)                    |          |
-|                                  |      |                                                    |          |
+|                                  | 12   | [JavaScript 基础知识](./base_11.md)                |          |
 |                                  |      |                                                    |          |
 
