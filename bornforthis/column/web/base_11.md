@@ -54,6 +54,49 @@ if (bestchoice === 'bornforthi.com') {
 
 <button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_10/base_10-2.html" target="_blank">尝试一下</a></button>
 
+## 函数
+
+**函数用来封装可复用的功能。**
+
+如果没有函数，一段操作用几次就要重复写几次，效率很低。而使用函数则只需写下函数名和一些简短的信息就可以了。比如：
+
+```javascript
+let myvariable = document.querySelector('h1');
+alert('前方高能！');
+```
+
+`document.querySelector` 和 `alert` 是浏览器 **内置的** 函数，随时可用。
+
+使用函数 `alert( )` 可在浏览器窗口内弹出 **警告框。** 引号内的'前方高能’是一个字符串参数，它是警告框里显示的内容。如下图：
+
+![image-20220804230951887](./base_11.assets/image-20220804230951887.png)
+
+![image-20220804231142876](./base_11.assets/image-20220804231142876.png)
+
+
+
+
+
+## 事件
+
+**事件**为网页添加**交互能力**。它可以捕捉浏览器操作并运行代码做为响应。
+
+最简单的事件是点击事件。可尝试将下面的代码输入控制台，然后点击页面的任意位置：
+
+```javascript
+document.querySelector('html').onclick = function() {
+    alert('别来找我，我好烦！');
+}
+```
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_10/base_10-3.html" target="_blank">尝试一下</a></button>
+
+
+
+将事件与元素绑定有许多方法。本例选用了 `<html>` 元素，把一个匿名函数（即未命名的函数，此匿名函数包含单击鼠标时要运行的代码）赋值给了 html 的 onclick 属性。
+
+
+
 
 
 ::: details 公众号：AI悦创【二维码】
