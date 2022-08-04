@@ -147,12 +147,19 @@ export default sidebar({
 					]
 				},
 				{
-					text: "第三章 CSS入门",
+					text: "第三章 CSS 入门",
 					collapsable: true,
 					children: [
 						"base_07",
 						"base_08",
 						"base_09",
+					]
+				},
+				{
+					text: "第四章 JavaScript 入门",
+					collapsable: true,
+					children: [
+						"base_10",
 					]
 				}
 			],
