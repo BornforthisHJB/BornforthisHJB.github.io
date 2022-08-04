@@ -27,9 +27,66 @@ toc: true
 
 ## 萨摩耶“猎豹”的互动成长日记
 
-大家好! 我是Lisa的宠物犬萨摩耶, 猎豹。
+大家好! 我是 Lisa 的宠物犬萨摩耶, 猎豹。
 
 我很想和朋友们互动，你能帮我在我的网页日记上添加一些互动效果，使它对用户更加友好吗？
+
+![JS实战](./base_12.assets/1564991359624001.jpg)
+
+## 第1步 修改标题
+
+我们将使用 JS 修改标题, 使你感性认识 JS 发挥的作用。
+
+首先得为存放 JS 文件新建一个文件夹，它将专门用于存放项目中的 script（脚本）文件：
+
+![image-20220804233322279](./base_12.assets/image-20220804233322279.png)
+
+新建一个 js 文件：
+
+![image-20220804233403297](./base_12.assets/image-20220804233403297.png)
+
+
+
+代码如下：
+
+```javascript
+window.onload = function () {
+    let myHeading = document.querySelector('h1');
+    myHeading.textContent = 'Hello, my friends!';
+};
+```
+
+![image-20220804233457133](./base_12.assets/image-20220804233457133.png)
+
+再将以下代码，复制到 `index.html` 文件中的 `<head>` 和 `</head>` 之间：
+
+```html
+<script src="script/first_js.js"></script>
+```
+
+![image-20220804233637478](./base_12.assets/image-20220804233637478.png)
+
+接着，保存 html 文件，将 `index.html` 拖入浏览器，看看变化;
+
+### Before
+
+![image-20220804233808070](./base_12.assets/image-20220804233808070.png)
+
+### After
+
+![image-20220804233730539](./base_12.assets/image-20220804233730539.png)
+
+使用 JS 使标题内容发生了改变。
+
+你也可以此为示例，对网页的其它部分进行修改。
+
+## 第2步 添加图像切换器
+
+为了增加网页的互动性，我们将用 JS 为猎豹的成长日记添加一个图片切换器。
+
+它能使用户在点击图片时自动切换到另一张图片。
+
+为此我们向 Lisa 索要了猎豹的新照片，并把这张照片命名为 pic3 保存在 img 文件夹中。
 
 ::: details 公众号：AI悦创【二维码】
 

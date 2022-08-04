@@ -227,6 +227,12 @@ img {
 
 接下来，我们将带领你入门 JS，JS 能使猎豹的成长日记与访问它的用户互动起来。
 
+## 代码下载
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/data/base_09/base_09.zip" target="_blank">代码下载</a></button>
+
+
+
 ::: details 公众号：AI悦创【二维码】
 
 ![](/gzh.jpg)
