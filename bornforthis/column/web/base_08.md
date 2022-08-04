@@ -35,6 +35,8 @@ CSS 布局主要就是基于盒模型。每个占据页面空间的块都能有�
 
 ![image-20220802231929105](./base_08.assets/image-20220802231929105.png)
 
+![CSS 框模型](./base_08.assets/boxmodel.png)
+
 ---
 
 不同部分的说明：
@@ -65,7 +67,31 @@ div {
 
 <button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_08/base_08-1.html" target="_blank">在线试一试</a></button>
 
+```css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 200px;
+			height: 200px;
+			border-top: 1px dotted green;
+			border-right: 1px solid red;
+			border-bottom: 1px dashed orange;
+			border-left: 1px double blue;
+		}
+ 
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
+```
 
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_08/base_08-2.html" target="_blank">在线试一试</a></button>
 
 
 
