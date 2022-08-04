@@ -151,6 +151,7 @@ export default sidebar({
 					children: [
 						"base_07",
 						"base_08",
+						"base_09",
 					]
 				}
 			],
