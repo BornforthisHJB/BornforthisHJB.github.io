@@ -88,6 +88,44 @@ window.onload = function () {
 
 为此我们向 Lisa 索要了猎豹的新照片，并把这张照片命名为 pic3 保存在 img 文件夹中。
 
+![pic3](./base_12.assets/1564912856214029.jpg)
+
+请在你的编译器中，打开 `first_js.js` 文件，首先删除在第 1 步中更改标题所用的"Hello, myfriends!"的那段代码。
+
+将下列代码复制到当前文件中：
+
+```javascript
+window.onload = function () {
+
+    let myImage = document.querySelector('img');
+
+    myImage.onclick = function () {
+        let mySrc = myImage.getAttribute('src');
+        if (mySrc === 'img/dog.jpg') {
+            myImage.setAttribute('src', 'img/pic3.JPG');
+        } else {
+            myImage.setAttribute('src', 'img/dog.jpg');
+        }
+    }
+};
+```
+
+![image-20220804234715312](./base_12.assets/image-20220804234715312.png)
+
+保存当前文件。
+
+将 `index.html` 拖入浏览器中，点击第一张图标，看看是否完成了图片切换效果：
+
+
+
+当你点击图片上图，它能自动切换，你的图像切换器就制作完成啦！
+
+本步骤用到了 `if...else...` 语句，如果你仅仅复制了代码而并不知道原理所在，请复习这个知识点。
+
+这样你就能为猎豹切换出更多图片啦！
+
+
+
 ::: details 公众号：AI悦创【二维码】
 
 ![](/gzh.jpg)
