@@ -122,6 +122,7 @@ export default sidebar({
 	// ],
 	"/Open_up_your_pattern/": "structure",
 	"/column/web/": [
+		"catalogue",
 		{
 			text: "Web 前端入门扫盲课程",
 			collapsable: true,
