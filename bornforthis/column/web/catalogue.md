@@ -40,7 +40,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 |                                  | 11   | [JavaScript 概述](./base_10.md)                    |          |
 |                                  | 12   | [JavaScript 基础知识](./base_11.md)                |          |
 |                                  | 13   | [实战：萨摩耶“猎豹”的互动成长日记](./base_12.md)   |          |
-|                                  | 14   | [实战：萨摩耶“猎豹”的互动成长日记](./base_12.md)   |          |
-|                                  |      |                                                    |          |
+| **阶段一：前端基础入门**         |      |                                                    |          |
+|                                  | 01   |                                                    |          |
 |                                  |      |                                                    |          |
 
