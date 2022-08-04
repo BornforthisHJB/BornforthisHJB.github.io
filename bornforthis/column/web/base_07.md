@@ -73,18 +73,18 @@ CSS 的样式就像化妆盒中的眼影、腮红、口红等。它告诉浏览�
 - 在每个规则集里要用 **分号** 将多个声明分隔开;
 
 ```css
-p{  
-   color:red; 
-   width:500px; 
-   border:1px solid black;
+p {
+    color:red; 
+    width:500px;
+    border:1px solid black;
 }
 ```
 
 我们也可利用 CSS 选择多个元素，将其同时修改成一种样式，不同的选择器用逗号分开。如下面的例子：
 
 ```css
-p,li,h1{
- color:red;
+p, li, h1 {
+    color:red;
 }
 ```
 
