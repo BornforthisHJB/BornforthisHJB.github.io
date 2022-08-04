@@ -48,6 +48,29 @@ CSS 布局主要就是基于盒模型。每个占据页面空间的块都能有�
 
 ![CSS box-model](./base_08.assets/box-model.gif)
 
+## 元素的宽度和高度
+
+![Remark](./base_08.assets/lamp.gif)**重要:** 当您指定一个 CSS 元素的宽度和高度属性时，你只是设置内容区域的宽度和高度。要知道，完整大小的元素，你还必须添加内边距，边框和外边距。
+
+下面的例子中的元素的总宽度为 450px：
+
+```css
+div {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+```
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_08/base_08-1.html" target="_blank">在线试一试</a></button>
+
+
+
+
+
+
+
 ## 更改背景颜色
 
 以下这条 CSS 规则可以帮助你将整个界面的颜色设置为任意的颜色。
