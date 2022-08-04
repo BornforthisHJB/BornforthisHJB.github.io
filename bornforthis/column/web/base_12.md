@@ -20,7 +20,7 @@ comment: true
 lastUpdated: true
 editLink: true
 prev: base_11.md
-next: base_13.md
+next: txk_01.md
 backToTop: true
 toc: true
 ---
@@ -178,11 +178,21 @@ window.onload = function () {
 };
 ```
 
+如果你跟着我们的步骤，你会得到一个个性化欢迎界面：
+
+![image-20220804235853730](./base_12.assets/image-20220804235853730.png)
+
+![image-20220804235910941](./base_12.assets/image-20220804235910941.png)
+
+![image-20220804235928828](./base_12.assets/image-20220804235928828.png)
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_13/01/base_13-2.html" target="_blank">尝试一下</a></button>
 
 
 
+## 代码下载
 
-
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/data/base_13/base_13.zip" target="_blank">尝试一下</a></button>
 
 ::: details 公众号：AI悦创【二维码】
 
