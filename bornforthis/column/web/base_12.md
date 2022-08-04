@@ -140,6 +140,18 @@ window.onload = function () {
 
 如图操作，我们将其置于 `<h1>` 下面：
 
+![image-20220804235438471](./base_12.assets/image-20220804235438471.png)
+
+将以下代码复制到script1.js的文件中，并保存当前文件及html文件。
+
+```
+
+```
+
+
+
+
+
 
 
 ::: details 公众号：AI悦创【二维码】
