@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{o as t,c}from"./app.eb4afa8f.js";const o={};function r(a,_){return t(),c("div")}var f=e(o,[["render",r],["__file","catalogue.html.vue"]]);export{f as default};
