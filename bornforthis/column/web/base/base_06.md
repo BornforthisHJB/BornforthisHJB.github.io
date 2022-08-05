@@ -191,6 +191,10 @@ Lisa想这样写：
 
 <button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_06/base_06.html" target="_blank">在线试一试</a></button>
 
+## 代码下载 
+
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/data/base_06/base_06.zip" target="_blank">代码下载</a></button>
+
 ::: details 公众号：AI悦创【二维码】
 
 ![](/gzh.jpg)

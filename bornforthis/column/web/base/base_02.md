@@ -211,7 +211,7 @@ toc: true
 
 ## 资料下载：
 
-<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/data/base_02/my_first_page.zip" target="_blank">尝试一下</a></button>
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/data/base_02/my_first_page.zip" target="_blank">资料下载</a></button>
 
 ::: details 公众号：AI悦创【二维码】
 
