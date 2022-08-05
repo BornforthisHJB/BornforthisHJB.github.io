@@ -132,36 +132,36 @@ export default sidebar({
 					collapsable: true,
 					children: [
 						"",
-						"base_01",
-						"base_02",
+						"base/base_01",
+						"base/base_02",
 					],
 				},
 				{
 					text: "第二章 HTML 入门",
 					collapsable: true,
 					children: [
-						"base_03",
-						"base_04",
-						"base_05",
-						"base_06",
+						"base/base_03",
+						"base/base_04",
+						"base/base_05",
+						"base/base_06",
 					]
 				},
 				{
 					text: "第三章 CSS 入门",
 					collapsable: true,
 					children: [
-						"base_07",
-						"base_08",
-						"base_09",
+						"base/base_07",
+						"base/base_08",
+						"base/base_09",
 					]
 				},
 				{
 					text: "第四章 JavaScript 入门",
 					collapsable: true,
 					children: [
-						"base_10",
-						"base_11",
-						"base_12",
+						"base/base_10",
+						"base/base_11",
+						"base/base_12",
 					]
 				}
 			],
@@ -184,8 +184,8 @@ export default sidebar({
 										{
 											text: "第1章 课程简介",
 											children: [
-												"txk_01",
-												"txk_02",
+												"txk/txk_01",
+												"txk/txk_02",
 											]
 										}
 									]
