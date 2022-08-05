@@ -1,6 +1,6 @@
 ---
-title: 1-3 课程简介 
-date: 2022-08-05 11:59:39
+title: 2-1 前端开发行业介绍  
+date: 2022-08-05 12:09:37
 author: AI悦创
 isOriginal: true
 category: web 专栏
@@ -19,11 +19,25 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: txk_02.md
-next: txk_04.md
+prev: txk_03.md
+next: txk_05.md
 backToTop: true
 toc: true
 ---
+
+## 前端开发行业介绍 
+
+- 前端开发的前身是 “**网页制作**” ，随着 **移动端的兴起和 4G、5G 技术的普及**，互联网产品业务月来越复杂，在 2011 年前后，逐步蜕变为前端开发。「在 2011年之前，实际上前端和后端是基本上不分家的。但是在 2011年之后，智能手机开始普及，大家的智能手机也基本上是 2011年前后买的。」
+- 什么是“前端”：一切用户能够看见的东西、产生交互的东西，都是前端同学在负责。
+- 后端： 负责数据、数据库等，增删改查等操作。
+
+## 前端开发变革
+
+- 2016 年前后，前端开发突然迎来了 **技术井喷期**，开发形式突然 **发生了翻天覆地的变化**。
+
+![Node.js - Wikipedia](./txk_04.assets/1200px-Node.js_logo.svg.png)
+
+
 
 
 

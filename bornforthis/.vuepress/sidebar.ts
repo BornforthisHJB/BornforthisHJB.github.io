@@ -183,9 +183,18 @@ export default sidebar({
 									children: [
 										{
 											text: "第1章 课程简介",
+											collapsable: true,
 											children: [
-												"txk/txk_01",
-												"txk/txk_02",
+												"txk/week1/txk_01",
+												"txk/week1/txk_02",
+												"txk/week1/txk_03",
+											]
+										},
+										{
+											text: "第2章 前端开发行情与课程体系介绍",
+											collapsable: true,
+											children: [
+												"txk/week1/txk_04",
 											]
 										}
 									]
