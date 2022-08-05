@@ -45,7 +45,7 @@ export default sidebar({
 							text: "第1章 认识互联网数据分析",
 							collapsable: true,
 							children: [
-								"01",
+								"week1/01",
 							]
 						}
 					]
