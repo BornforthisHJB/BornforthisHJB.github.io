@@ -131,7 +131,7 @@ export default sidebar({
 					text: "第一章 Web 概述", 
 					collapsable: true,
 					children: [
-						"",
+						"base/",
 						"base/base_01",
 						"base/base_02",
 					],
