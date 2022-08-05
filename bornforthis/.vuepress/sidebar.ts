@@ -174,9 +174,33 @@ export default sidebar({
 					text: "阶段一：前端基础入门",
 					collapsable: true,
 					children: [
-						"txk_01.md",
+						{
+							text: "第1周: HTML5 基础语法与标签",
+							collapsable: true,
+							children: [
+								{
+									text: "前置引导课（课前必看）",
+									children: [
+										{
+											text: "第1章 课程简介",
+											children: [
+												"txk_01",
+												"txk_02",
+											]
+										}
+									]
+								}
+							]
+						}
 					]
 				}
+			]
+		},
+		{
+			text: "电子教辅",
+			collapsable: true,
+			children: [
+				"book/html-01",
 			]
 		}
 	],
