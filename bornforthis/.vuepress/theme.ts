@@ -17,7 +17,8 @@ export default hopeTheme({
 
   logo: "/img_home/logo_min.png",
 
-  repo: "BornforthisHJB/BornforthisHJB.github.io",
+  // repo: "BornforthisHJB/BornforthisHJB.github.io",
+  editLink: false,
 
   docsDir: "bornforthis/",
   
