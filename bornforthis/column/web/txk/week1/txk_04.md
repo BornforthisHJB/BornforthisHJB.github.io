@@ -35,7 +35,7 @@ toc: true
 
 - 2016 年前后，前端开发突然迎来了 **技术井喷期**，开发形式突然 **发生了翻天覆地的变化**。
 
-![Node.js - Wikipedia](./txk_04.assets/1200px-Node.js_logo.svg.png)
+<img src="./txk_04.assets/1200px-Node.js_logo.svg.png" alt="Node.js - Wikipedia" style="zoom:50%;" />
 
 
 
