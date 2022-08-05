@@ -19,6 +19,7 @@ export default hopeTheme({
 
   // repo: "BornforthisHJB/BornforthisHJB.github.io",
   editLink: false,
+  // lastUpdated: false,
 
   docsDir: "bornforthis/",
   
@@ -122,7 +123,8 @@ export default hopeTheme({
       provider: "Waline",
       serverURL: "https://comment.bornforthis.cn/",
       comment: true, // 评论数统计
-      pageview: true, // 浏览量统计
+      // pageview: true, // 浏览量统计
+      pageview: true,
       copyright: false,
       // dark: true,
       emoji: [
