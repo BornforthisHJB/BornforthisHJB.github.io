@@ -34,7 +34,7 @@ export default sidebar({
 	"/column/data_analysis": [
 		{ 
 			text: "阶段一：快速掌握数据分析必备技能",
-			icon: "state",
+			icon: "zhuzhuangtu",
 			collapsable: true,
 			children: [
 				{
@@ -337,6 +337,7 @@ export default sidebar({
 	],
 	"/column/pyauto/gkk/": [
 		"",
+		// { text: "公众号", link: "01"},
 	],
 	"/column/pyauto/": [
 		"",
