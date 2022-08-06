@@ -66,6 +66,7 @@ export default navbar([
           { text: "进制在线转换", icon: "tool", link: "https://bornforthis.cn/tool"},
           { text: "HTML Online", icon: "network", link: "https://bornforthis.cn/html_online/"},
           { text: "格式在线转换", icon: "network", link: "https://convertio.co/zh/"},
+          { text: "在线转换2", icon: "network", link: "https://www.aconvert.com/cn/"},
         ]
       },
       {
