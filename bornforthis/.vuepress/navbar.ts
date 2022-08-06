@@ -25,7 +25,7 @@ export default navbar([
           { text: "公开课资料", icon: "blog", link: "/column/pyauto/gkk/"},
           { text: "编程思维", icon: "read", link: "/column/Programmingthinking/"},
           { text: "零基础学习机器学习", icon: "centos", link: "/column/TensorFlow/零基础实战机器学习/"},
-          { text: "数据分析", icon: "state", link: "/column/data_analysis/01"},
+          { text: "数据分析", icon: "state", link: "/column/data_analysis/week1/01"},
         ]
       },
       { 
