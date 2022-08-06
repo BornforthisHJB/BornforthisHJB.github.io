@@ -83,6 +83,7 @@ export default hopeTheme({
     config: {
       // "/dedao/01-Xue_Zhaofeng_economics_class/": "123123",
       // "/guide/encrypt.html": ["1234"],
+      "/column/data_analysis/": "123123",
       "/column/TensorFlow/零基础实战机器学习/": "123123",
       "/column/Programmingthinking/": "123123",
       "/column/playback/01-Tommy.html": "20220517",
