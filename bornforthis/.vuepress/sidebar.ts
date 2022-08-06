@@ -57,6 +57,26 @@ export default sidebar({
 	// 	"",
 	// 	"01",
 	// ],
+	"/column/data-structure/": [
+		{
+			text: "阶段一：算法与数据结构基础",
+			collapsable: true,
+			children: [
+				{
+					text: "第1周 线性查找法",
+					collapsable: true,
+					children: [
+						{
+							text: "第1章 欢迎大家来到算法与数据结构的世界",
+							children: [
+								"week1/01",
+							]
+						}
+					]
+				}
+			]
+		}
+	],
 	"/column/TensorFlow/零基础实战机器学习/": [
 		{
 			text: "开篇词 (1讲)",
