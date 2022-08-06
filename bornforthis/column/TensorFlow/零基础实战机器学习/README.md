@@ -1,7 +1,7 @@
 ---
 title: 00-开篇词｜开发者为什么要从实战出发学机器学习？
 time: 2022-07-19 14:58:39
-icon: centos
+icon: icon-rgb_jiqixuexisuanfayinqing
 author: AI悦创
 isOriginal: true
 category: 
