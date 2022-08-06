@@ -139,7 +139,7 @@ export default navbar([
           // { text: "Leancloud", link: "https://leancloud.app/"},
           { text: "变更日志", icon: "time", link: "/changelog"},
           // { text: "Vercel", link: "https://vercel.com/dashboard"},
-          { text: "turingapi", link: "http://www.turingapi.com/"},
+          // { text: "turingapi", link: "http://www.turingapi.com/"},
           { text: "1v1官网", link: "https://www.class1v1.com/"},
         ],
       },
