@@ -70,6 +70,7 @@ export default sidebar({
 							text: "第1章 欢迎大家来到算法与数据结构的世界",
 							children: [
 								"week1/01",
+								"week1/02",
 							]
 						}
 					]
