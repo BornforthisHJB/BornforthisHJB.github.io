@@ -473,6 +473,7 @@ export default sidebar({
 			"special_variabl",
 			"special_yunsuanfu",
 			"special_for",
+			"special_while",
 		],
 	},
 	{
