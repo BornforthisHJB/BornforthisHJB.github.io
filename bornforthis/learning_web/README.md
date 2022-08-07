@@ -67,13 +67,13 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 
 ## 学员网站
 
-| 序号 | 名称             | 链接                                                         | GitHub                                                       |
-| ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 01   | 田浩良的精彩人生 | [https://www.tommytian57.com/](https://www.tommytian57.com/) | [https://github.com/tommytian57/tommytian57.github.io](https://github.com/tommytian57/tommytian57.github.io) |
-| 02   | 刘家惠           | [https://www.imjmac.com/](https://www.imjmac.com/)           | [https://github.com/ImJ-MAC/ImJ-MAC.github.io](https://github.com/ImJ-MAC/ImJ-MAC.github.io) |
-|      |                  |                                                              |                                                              |
-|      |                  |                                                              |                                                              |
-|      |                  |                                                              |                                                              |
+| 序号 | 名称             | 链接                                                         | GitHub                                                       | 日期                                                   |
+| ---- | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------ |
+| 01   | 田浩良的精彩人生 | [https://www.tommytian57.com/](https://www.tommytian57.com/) | [https://github.com/tommytian57/tommytian57.github.io](https://github.com/tommytian57/tommytian57.github.io) | 成功日期：2022年8月6日，晚 11:35:30「美·纽约」正式上线 |
+| 02   | 刘家惠           | [https://www.imjmac.com/](https://www.imjmac.com/)           | [https://github.com/ImJ-MAC/ImJ-MAC.github.io](https://github.com/ImJ-MAC/ImJ-MAC.github.io) |                                                        |
+|      |                  |                                                              |                                                              |                                                        |
+|      |                  |                                                              |                                                              |                                                        |
+|      |                  |                                                              |                                                              |                                                        |
 
 ## 方便备课
 
