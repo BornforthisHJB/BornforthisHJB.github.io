@@ -64,9 +64,9 @@ def requests_fun(url, binary=False):
                 return response.content
             else:
                 return response.text
-        return "Nonexxxx"
+        return None
     except RequestException as e:
-        return "Nonelllll"
+        return None
 
 
 def save_music(path, binary):
