@@ -48,5 +48,65 @@ import re
 ## 3. 编写代码
 
 ```python
+import requests
+import re
+from requests.exceptions import RequestException
+from urllib.parse import urljoin
+
+BASE = "https://bornforthis.cn/web_runing/crawler/regex/"
+
+
+def requests_fun(url, binary=False):
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            if binary:
+                return response.content
+            else:
+                return response.text
+        return "Nonexxxx"
+    except RequestException as e:
+        return "Nonelllll"
+
+
+def save_music(path, binary):
+    with open(path, "wb") as f:
+        f.write(binary)
+
+
+def parse(html):
+    pattern = '<a.*?href="(.*?)".*?</a>'
+    result = re.findall(pattern, html)
+    return result
+
+
+def joint(url_lst):
+    url_list = []
+    for url in url_lst:
+        url = urljoin(BASE, url)
+        url_list.append(url)
+    return url_list
+
+
+def postfix(url):
+    music_name = url.split("/")[-1]
+    return music_name
+
+
+def main():
+    url = "https://bornforthis.cn/web_runing/crawler/regex/index.html"
+    html = requests_fun(url)
+    # url_lst = parse(html)
+    url_list = joint(parse(html))
+    # print(url_list)
+    for url in url_list:
+        # print(url)
+        binary_content = requests_fun(url, binary=True)
+        # print(binary_content)
+        save_music(f"data/music/{postfix(url)}", binary_content)
+
+
+if __name__ == '__main__':
+    main()
 ```
 
