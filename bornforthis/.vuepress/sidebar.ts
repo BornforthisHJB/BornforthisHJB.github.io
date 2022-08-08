@@ -31,6 +31,7 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/blog/crawler/": "structure",
 	"/column/data_analysis": [
 		{ 
 			text: "阶段一：快速掌握数据分析必备技能",
