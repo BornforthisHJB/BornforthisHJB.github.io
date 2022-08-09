@@ -81,6 +81,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
+      "/column/web/": "123123a",
       "/dedao/01-Xue_Zhaofeng_economics_class/": "123123",
       // "/guide/encrypt.html": ["1234"],
       "/column/data_analysis/": "123123",
