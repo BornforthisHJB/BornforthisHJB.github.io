@@ -81,14 +81,14 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/column/Fifth_brother_photography_class/": "sy",
-      "/column/data-structure/": "sjjg",
-      "/column/web/": "qd",
-      "/dedao/01-Xue_Zhaofeng_economics_class/": "xzf",
+      "/column/Fifth_brother_photography_class/": "123123a",
+      "/column/data-structure/": "123123a",
+      "/column/web/": "123123a",
+      "/dedao/01-Xue_Zhaofeng_economics_class/": "123123a",
       // "/guide/encrypt.html": ["1234"],
-      "/column/data_analysis/": "sjfx",
-      "/column/TensorFlow/零基础实战机器学习/": "jqxx",
-      "/column/Programmingthinking/": "123123",
+      "/column/data_analysis/": "123123a",
+      "/column/TensorFlow/零基础实战机器学习/": "123123a",
+      "/column/Programmingthinking/": "123123a",
       "/column/playback/01-Tommy.html": "20220517",
       "/column/playback/02-LKW.html": "lkw",
       "/column/playback/03-20220610.html": "20220610",
