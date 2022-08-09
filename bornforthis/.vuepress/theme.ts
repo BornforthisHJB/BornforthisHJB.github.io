@@ -81,13 +81,13 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      
+
       "/column/data-structure/": "123123b",
       "/column/web/": "123123a",
-      "/dedao/01-Xue_Zhaofeng_economics_class/": "123123",
+      "/dedao/01-Xue_Zhaofeng_economics_class/": "123123b",
       // "/guide/encrypt.html": ["1234"],
-      "/column/data_analysis/": "123123",
-      "/column/TensorFlow/零基础实战机器学习/": "123123",
+      "/column/data_analysis/": "123123c",
+      "/column/TensorFlow/零基础实战机器学习/": "123123d",
       "/column/Programmingthinking/": "123123",
       "/column/playback/01-Tommy.html": "20220517",
       "/column/playback/02-LKW.html": "lkw",
