@@ -34,7 +34,7 @@ export default hopeTheme({
   // sidebar
   sidebar: sidebar,
 
-  footer: '长期招收编程一对一学员！微信：Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>',
+  footer: '长期招收编程一对一学员!微信:Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>',
 
   displayFooter: true,
 
@@ -81,7 +81,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      // "/dedao/01-Xue_Zhaofeng_economics_class/": "123123",
+      "/dedao/01-Xue_Zhaofeng_economics_class/": "123123",
       // "/guide/encrypt.html": ["1234"],
       "/column/data_analysis/": "123123",
       "/column/TensorFlow/零基础实战机器学习/": "123123",
