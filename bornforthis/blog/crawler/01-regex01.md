@@ -9,7 +9,7 @@ tag:
     - crawler
 icon: WEBCRAWLER
 sticky: false
-star: true
+star: false
 password: false
 article: true
 timeline: true
