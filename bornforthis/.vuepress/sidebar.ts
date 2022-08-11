@@ -31,6 +31,9 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/python60/": [
+		"01",
+	],
 	"/blog/crawler/": "structure",
 	"/blog/2022/": "structure",
 	"/column/data_analysis": [
