@@ -97,7 +97,7 @@ export default navbar([
       { 
         text: "Git",
         children: [
-          { text: "Github", icon: "github", link: "https://gitee.com/huangjiabaoaiyc"},
+          { text: "Github", icon: "github", link: "https://github.com/AndersonHJB"},
           { text: "Gitee", icon: "gitee", link: "https://gitee.com/huangjiabaoaiyc"},
           { text: "vercel", icon: "gitee", link: "https://vercel.com/"},
         ]
