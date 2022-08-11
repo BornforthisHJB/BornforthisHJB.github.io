@@ -33,6 +33,7 @@ import { sidebar } from "vuepress-theme-hope";
 export default sidebar({
 	"/column/python60/": [
 		"01",
+		"02",
 	],
 	"/blog/crawler/": "structure",
 	"/blog/2022/": "structure",
