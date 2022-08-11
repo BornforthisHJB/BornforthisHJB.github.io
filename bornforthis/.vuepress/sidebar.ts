@@ -52,6 +52,7 @@ export default sidebar({
 							// collapsable: true,
 							children: [
 								"week1/01",
+								"week1/02",
 							]
 						}
 					]
