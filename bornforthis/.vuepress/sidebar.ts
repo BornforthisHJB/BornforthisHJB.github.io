@@ -54,6 +54,12 @@ export default sidebar({
 								"week1/01",
 								"week1/02",
 							]
+						},
+						{
+							text: "第2章 常见的数据类型",
+							children: [
+								"week1/03",
+							]
 						}
 					]
 				}
