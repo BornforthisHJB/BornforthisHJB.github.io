@@ -27,7 +27,7 @@ export default navbar([
           { text: "零基础学习机器学习", icon: "centos", link: "/column/TensorFlow/零基础实战机器学习/"},
           { text: "数据分析", icon: "state", link: "/column/data_analysis/week1/01"},
           { text: "数据结构与算法", icon: "shujujiegou-01", link: "/column/data-structure/week1/01"},
-          { text: "Python 60 Day", icon: "python", link: "/column/python60/"},
+          { text: "Python 60 Day", icon: "python", link: "/column/python60/01"},
         ]
       },
       { 
