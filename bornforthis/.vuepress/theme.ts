@@ -20,7 +20,6 @@ export default hopeTheme({
 
   // repo: "BornforthisHJB/BornforthisHJB.github.io",
   editLink: false,
-  // lastUpdated: false,
 
   docsDir: "bornforthis/",
   
