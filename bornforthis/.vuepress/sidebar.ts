@@ -34,6 +34,9 @@ export default sidebar({
 	"/column/python60/": [
 		"01",
 		"02",
+		"03",
+		"04",
+		"05",
 	],
 	"/blog/crawler/": "structure",
 	"/blog/2022/": "structure",
