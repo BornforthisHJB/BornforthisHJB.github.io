@@ -62,6 +62,11 @@ export default sidebar({
 							text: "第2章 常见的数据类型",
 							children: [
 								"week1/03",
+								"week1/04",
+								"week1/05",
+								"week1/06",
+								"week1/07",
+								"week1/08",
 							]
 						}
 					]
