@@ -47,8 +47,8 @@ export default hopeTheme({
     articlePerPage: 6,
     medias: {
       Email: "mailto:bornforthis@bornforthis.cn",
-      Gitee: "https://gitee.com/huangjiabaoaiyc",
-      GitHub: "https://github.com/AndersonHJB",
+      // Gitee: "https://gitee.com/huangjiabaoaiyc",
+      // GitHub: "https://github.com/AndersonHJB",
       Gmail: "mailto:aiyuechuang@gmail.com",
       QQ: "http://wpa.qq.com/msgrd?v=3&uin=1432803776&site=qq&menu=yes",
       Youtube: "https://www.youtube.com/channel/UCT525Fk74w_l9Pk06OxkLxg",
