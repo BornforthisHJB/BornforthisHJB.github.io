@@ -42,7 +42,7 @@ export default hopeTheme({
   blog: {
     name: "AI悦创",
     avatar: "/aiyc.jpg",
-    description: "一个思考者 ",
+    description: "一个思考者,编程私教 1v1",
     intro: "/intro.md",
     articlePerPage: 6,
     medias: {
