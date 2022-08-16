@@ -72,6 +72,13 @@ export default sidebar({
 					]
 				}
 			]
+		},
+		{
+			text: "pyecharts",
+			collapsable: true,
+			children: [
+				"pyecharts/01",
+			]
 		}
 	],
 	// "/learning_web/": [
@@ -415,6 +422,7 @@ export default sidebar({
 						"auto_base09",
 						"auto_base10",
 						"auto_base11",
+						"auto_base12",
 					],
 				}
 				
