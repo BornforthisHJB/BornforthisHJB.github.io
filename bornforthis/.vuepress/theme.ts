@@ -63,7 +63,7 @@ export default hopeTheme({
       "/column/data-structure/": "123123a",
       "/column/web/": "123123a",
       "/dedao/": "123123a",
-      "/column/data_analysis/": "123123a",
+      "/column/data_analysis/week1": "123123a",
       "/column/TensorFlow/零基础实战机器学习/": "123123a",
       "/column/Programmingthinking/": "123123a",
       "/column/playback/01-Tommy.html": "20220517",

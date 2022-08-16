@@ -78,6 +78,7 @@ export default sidebar({
 			collapsable: true,
 			children: [
 				"pyecharts/01",
+				"pyecharts/02",
 			]
 		}
 	],
