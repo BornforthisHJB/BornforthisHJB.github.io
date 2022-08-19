@@ -31,6 +31,10 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"1v1/01-Thomas-hw-note/": [
+		"01-Variable",
+		
+	],
 	"/column/python60/": [
 		"01",
 		"02",
