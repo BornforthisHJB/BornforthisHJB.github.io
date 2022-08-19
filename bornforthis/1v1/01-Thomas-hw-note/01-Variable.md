@@ -28,6 +28,12 @@ backToTop: true
 toc: true
 ---
 
+## 0. 课程回放
+
+[https://www.aliyundrive.com/s/cx7Kqc6Ss2f](https://www.aliyundrive.com/s/cx7Kqc6Ss2f)
+
+
+
 ## 1. 知识点
 
 ### 1.1 什么是变量
