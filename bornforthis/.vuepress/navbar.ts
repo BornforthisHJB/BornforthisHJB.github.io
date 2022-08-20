@@ -115,7 +115,7 @@ export default navbar([
     icon: "view",
     children: [
       { text: "网易云课堂主页", icon: "view", link: "https://study.163.com/provider/480000002277025/course.htm"},
-      { text: "AI悦创·讲师主页", icon: "view", link: "https://m.study.163.com/user/1144240044.htm"},
+      // { text: "AI悦创·讲师主页", icon: "view", link: "https://m.study.163.com/user/1144240044.htm"},
       { text: "51CTO", icon: "view", link: "https://edu.51cto.com/lecturer/13952552.html"},
       { text: "录课悲惨经历", icon: "view", link: "/Record_the_class"}
     ]
@@ -134,10 +134,10 @@ export default navbar([
         // icon: "diagram",
         // link: "https://bornforthis.cn",
         children: [
-          { text: "Vue", icon: "vue", link: "https://v2.vuepress.vuejs.org/zh/"},
+          // { text: "Vue", icon: "vue", link: "https://v2.vuepress.vuejs.org/zh/"},
           // { text: "主题", icon: "vue", link: "https://vuepress-theme-hope.github.io/v2/zh/"},
           // { text: "Waline", icon: "waline", link: "https://waline.js.org/"},
-          { text: "iconfont", link: "https://www.iconfont.cn/"},
+          // { text: "iconfont", link: "https://www.iconfont.cn/"},
           // { text: "Leancloud", link: "https://leancloud.app/"},
           { text: "变更日志", icon: "time", link: "/changelog"},
           // { text: "Vercel", link: "https://vercel.com/dashboard"},
@@ -175,9 +175,9 @@ export default navbar([
     icon: "any", 
     link: "/plan",
   },
-  {
-    text: "谷歌学术助手",
-    icon: "any", 
-    link: "/vpn",
-  },
+  // {
+  //   text: "谷歌学术助手",
+  //   icon: "any", 
+  //   link: "/vpn",
+  // },
 ]);
