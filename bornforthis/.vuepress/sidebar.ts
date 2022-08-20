@@ -508,6 +508,7 @@ export default sidebar({
 			"special_yunsuanfu",
 			"special_for",
 			"special_while",
+			"special_list",
 		],
 	},
 	{
