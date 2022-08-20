@@ -58,6 +58,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
+      "/1v1/": ["123123"],
       "/column/python60/": "123123a",
       "/column/Fifth_brother_photography_class/": "123123a",
       "/column/data-structure/": "123123a",
