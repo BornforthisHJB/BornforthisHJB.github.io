@@ -108,7 +108,7 @@ export default navbar([
   {
     text: "私教计划",
     icon: "alias",
-    link: "#",
+    link: "/1554.html",
   },
   {
     text: "在线课堂",
