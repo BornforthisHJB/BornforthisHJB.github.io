@@ -108,7 +108,7 @@ export default navbar([
   {
     text: "私教计划",
     icon: "alias",
-    link: "/401.html",
+    link: "https://bornforthis.cn/web_runing/Tester/1554.html",
   },
   {
     text: "在线课堂",
