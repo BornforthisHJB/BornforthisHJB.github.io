@@ -392,13 +392,14 @@ export default sidebar({
 	],
 	"/column/cookdinner/": [
 		{ 
-			text: "2022年6月",
+			text: "2022年",
 			children: [
 				"01-yogurt",
 				"02-Orange_peel_coke_chicken_wings",
 				"03-Shredded_hot_and_sour_potato",
 				"04-Braise_in_soy_sauce_chicken_wings",
 				"05-Sauted-Shredded-Pork-in-Sweet-Bean-Sauce",
+				"06-paihuanggua",
 			],
 		}
 	],

@@ -1,6 +1,12 @@
 ---
 title: 04-红烧鸡翅|简单好味道 五星好味道
 time: 2022-06-23 17:50:19
+author: AI悦创
+isOriginal: true
+category: 
+    - 程序员的私房菜
+tag:
+    - 程序员的私房菜
 ---
 
 ## 用料

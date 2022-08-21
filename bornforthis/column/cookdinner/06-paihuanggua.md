@@ -1,6 +1,6 @@
 ---
-title: 01-自制酸奶
-time: 2022-06-16 13:43:30
+title: 06-拍黄瓜
+time: 2022-08-21 17:38:54
 author: AI悦创
 isOriginal: true
 category: 
@@ -9,17 +9,41 @@ tag:
     - 程序员的私房菜
 ---
 
-::: tabs
+拍黄瓜是一道家常凉菜，主料是黄瓜，用各种调料拌制而成。清凉爽口，适合夏季食用。黄瓜属于凉性，夏季食用能够清热去火，排除体内毒素的效果，还具有*的效果，并且味道鲜美的拍黄瓜夏季食用还能帮助消化。
 
-@tab 哔哩哔哩
+## 用料
 
-<iframe src="//player.bilibili.com/player.html?aid=982531242&bvid=BV1Jt4y1h7MR&cid=747791959&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%; height: 500px; max-width: 100%；align:center; padding:20px 0;"> </iframe>
+- 黄瓜
+- 大蒜
+- 糖
+- 香油
+- 凉拌酱油
+- 醋
+- 红油
 
-@tab YouTube
+## 步骤
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NbZbuWZeaM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### 1. 拿刀拍黄瓜
 
-:::
+### 2. 斜切 45º 
+
+### 3. 把大蒜捣碎「弄碎」
+
+### 4. 把糖撒在黄瓜上
+
+### 5. 把蒜泥撒上去
+
+### 6. 醋
+
+### 7. 酱油
+
+### 8. 香油
+
+### 9. h红油
+
+### 10. 
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
@@ -42,4 +66,8 @@ C++ 信息奥赛题解，长期更新！长期招收一对一中小学信息奥�
 :::
 
 ![](/zsxq.jpg)
+
+
+
+
 
