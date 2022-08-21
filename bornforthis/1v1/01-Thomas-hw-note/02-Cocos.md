@@ -1,6 +1,6 @@
 ---
-title: 01-变量
-date: 2022-08-19 20:50:52
+title: 02-博客网站环境搭建
+date: 2022-08-21 08:30:11
 author: AI悦创
 isOriginal: true
 category:
@@ -22,13 +22,47 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: 02.md
+prev: 01-Variable.md
 next: 04.md
 backToTop: true
 toc: true
 ---
 
-## 1. 环境搭建
+## 1. 安装谷歌浏览器 Chrom
+
+下载地址：[https://www.google.com/intl/zh-CN/chrome/](https://www.google.com/intl/zh-CN/chrome/)
+
+
+
+
+
+## 1. 更好用的命令行工具
+
+[https://iterm2.com/](https://iterm2.com/)
+
+## 0. 安装 brew
+
+官方网站：[https://brew.sh/](https://brew.sh/)
+
+官方源安装命令：
+
+```cmd
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+
+
+## 1. 科学上网
+
+
+
+## 2. 注册 GitHub
+
+
+
+## 3. 安装 git
+
+
 
 
 
