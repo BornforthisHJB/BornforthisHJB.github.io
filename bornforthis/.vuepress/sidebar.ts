@@ -262,6 +262,7 @@ export default sidebar({
 											collapsable: true,
 											children: [
 												"txk/week1/txk_04",
+												"txk/week1/txk_05",
 											]
 										}
 									]
