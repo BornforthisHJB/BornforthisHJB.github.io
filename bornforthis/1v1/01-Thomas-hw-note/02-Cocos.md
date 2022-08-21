@@ -122,7 +122,7 @@ brew install git
 
 ## 7. 注册 GitHub
 
-
+![Snipaste_2022-08-21_10-39-38](./02-Cocos.assets/Snipaste_2022-08-21_10-39-38.png)
 
 ## 课后反馈
 
