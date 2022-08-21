@@ -116,19 +116,11 @@ brew install git
 
 
 
+## 6. 访问 Github
 
 
 
-
-## 1. 科学上网
-
-
-
-## 2. 注册 GitHub
-
-
-
-## 3. 安装 git
+## 7. 注册 GitHub
 
 
 
