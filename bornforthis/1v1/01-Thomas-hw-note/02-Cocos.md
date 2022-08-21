@@ -30,9 +30,57 @@ toc: true
 
 ## 0. 讲解作业
 
+1. 考点：变量
+
+### 输出特定格式
+
+```python
+a = 1
+b = 2
+c = 3
+```
+
+问题1答案：
+
+```python
+print(a, b, c)
+```
+
+问题2答案：
+
+```python
+print(a)
+print(b)
+print(c)
+```
+
+### 交换果汁
+
+两个杯子实现：
+
+![image-20220821093010404](./02-Cocos.assets/image-20220821093010404.png)
+
+那能否一个杯子实现呢？
+
+```python
+a = "果汁"
+b = "可乐"
+empty_cup = a
+a = b
+b = empty_cup
+print("a:", a)
+print("b:", b)
+```
 
 
-## 1. 安装谷歌浏览器 Chrom
+
+## 1. 安装向日葵
+
+下载地址：[https://sunlogin.oray.com/download?categ=personal](https://sunlogin.oray.com/download?categ=personal)
+
+
+
+## 2. 安装谷歌浏览器 Chrom
 
 下载地址：[https://www.google.com/intl/zh-CN/chrome/](https://www.google.com/intl/zh-CN/chrome/)
 
@@ -40,13 +88,13 @@ toc: true
 
 
 
-
-
-## 2. 更好用的命令行工具
+## 3. 更好用的命令行工具
 
 [https://iterm2.com/](https://iterm2.com/)
 
-## 0. 安装 brew
+
+
+## 4. 安装 brew
 
 官方网站：[https://brew.sh/](https://brew.sh/)
 
@@ -55,6 +103,20 @@ toc: true
 ```cmd
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
+国内安装命令：[https://bornforthis.cn/blog/2022/02.html](https://bornforthis.cn/blog/2022/02.html)
+
+
+
+## 5. 安装 git
+
+```cmd
+brew install git
+```
+
+
+
+
 
 
 
@@ -67,6 +129,15 @@ toc: true
 
 
 ## 3. 安装 git
+
+
+
+## 课后反馈
+
+1. 字符串编写时，双引号没有习惯性的打出来；
+2. 思维敏捷、主动思考
+
+
 
 
 
