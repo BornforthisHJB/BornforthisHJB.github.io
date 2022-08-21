@@ -32,8 +32,20 @@ import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
 	"/1v1/01-Thomas-hw-note/": [
-		"01-Variable",
-		// "02-"
+		{
+			text: "搭建个人博客",
+			collapsable: true,
+			children:[
+				"02-Cocos",
+			]
+		},
+		{
+			text: "Python 基础",
+			collapsable: true,
+			children: [
+				"01-Variable",
+			]
+		}
 	],
 	"/column/python60/": [
 		"01",
