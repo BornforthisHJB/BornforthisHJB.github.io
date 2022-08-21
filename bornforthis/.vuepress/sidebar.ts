@@ -499,6 +499,9 @@ export default sidebar({
 		"q4",
 		"q5",
 		"q6",
+		"q7",
+		"q8",
+		"q9",
 		"hw_word_game",
       ]
     },
@@ -512,6 +515,10 @@ export default sidebar({
 			"answer4",
 			"answer5",
 			"answer6",
+			"answer7",
+			"answer8",
+			"answer9",
+			"answer10",
 		],
 	},
 	{
