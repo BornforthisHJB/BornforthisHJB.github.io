@@ -28,15 +28,21 @@ backToTop: true
 toc: true
 ---
 
+## 0. 讲解作业
+
+
+
 ## 1. 安装谷歌浏览器 Chrom
 
 下载地址：[https://www.google.com/intl/zh-CN/chrome/](https://www.google.com/intl/zh-CN/chrome/)
 
+搜索引擎设置为：百度
 
 
 
 
-## 1. 更好用的命令行工具
+
+## 2. 更好用的命令行工具
 
 [https://iterm2.com/](https://iterm2.com/)
 
