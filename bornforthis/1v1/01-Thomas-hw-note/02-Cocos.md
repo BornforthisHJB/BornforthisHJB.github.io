@@ -1,5 +1,5 @@
 ---
-title: 02-博客网站环境搭建
+title: 01-博客网站环境搭建
 date: 2022-08-21 08:30:11
 author: AI悦创
 isOriginal: true
