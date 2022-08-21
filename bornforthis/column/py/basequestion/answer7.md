@@ -71,6 +71,62 @@ toc: true
 
 :::
 
+4. 下面的语句哪个会无限循环下去：
+    A. `for a in range(10): time.sleep(10)`
+
+    B. `while 1<10: time.sleep(10)`
+
+    C. `while True: break`
+
+    D. `a = [3,-1,','] for i in a[:]: if not a: break`
+
+::: tip 答案解析
+
+正确答案：B 易错项：C
+
+A 中的 for 循环是从 a=0 循环至 a=9，则当 a=10 时自动跳出循环；C 中有 break 语句，可跳出当前 while True 形成的死循环；D 中同理可以用 break 语句跳出当前的死循环。
+
+:::
+
+5. (多选题) 下面的代码，哪些会输出1,2,3 三个数字(多选):
+    A. `for i in range(3): print(i)`
+
+    B. `aList = [0,1,2] for i in aList: print(i+1)`
+
+    C. `i = 1 while i < 3: print(i) i+=1`
+
+    D. `for i in range(3): print(i+1)`
+
+::: tip 答案解析
+
+正确答案：B,D 易错项：C
+
+A 输出 0，1，2、C 输出1，2。其中 C 的 while 函数是先输出再执行 i+1，则当 i=3 时已经不符合 while 循环的条件，即跳出循环，不会输出 i 的当前值。
+
+:::
+
+6. Python 3.x 语句 `for i in range(3):print(i, end=',')` 的输出结果为_____________________。 
+
+::: tip 答案解析
+
+正确答案：`(0,1,2,)`
+
+:::
+
+7. 下面程序的执行结果是__________________。
+
+![img](./answer7.assets/addcf8b06660d79b35f793b5cfbd87d0.png)
+
+::: tip 答案解析
+
+正确答案：1
+
+for 循环里生成了 0-100 的累加效果，但累加的最终结果并没有输出。当 for 循环结束之后进入 else 的 print() 输出函数才得到了程序的执行结果：1。
+
+:::
+
+
+
 
 
 
