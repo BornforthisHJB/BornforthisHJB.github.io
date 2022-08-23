@@ -83,6 +83,7 @@ export default sidebar({
 								"week1/06",
 								"week1/07",
 								"week1/08",
+								"week1/09",
 							]
 						}
 					]
