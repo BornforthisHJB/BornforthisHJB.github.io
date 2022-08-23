@@ -96,6 +96,13 @@ export default sidebar({
 				"pyecharts/01",
 				"pyecharts/02",
 			]
+		},
+		{
+			text: "FAQ",
+			collapsable: true,
+			children: [
+				"FAQ/01-Excel中$.md"
+			]
 		}
 	],
 	// "/learning_web/": [
