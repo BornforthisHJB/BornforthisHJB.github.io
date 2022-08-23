@@ -101,7 +101,8 @@ export default sidebar({
 			text: "FAQ",
 			collapsable: true,
 			children: [
-				"FAQ/01-Excel中$.md"
+				"FAQ/01-Excel中$.md",
+				"FAQ/02"
 			]
 		}
 	],
