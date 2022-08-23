@@ -60,11 +60,11 @@ export default hopeTheme({
     config: {
       "/1v1/": ["123123"],
       "/column/python60/": "123123a",
-      "/column/Fifth_brother_photography_class/": "123123a",
+      // "/column/Fifth_brother_photography_class/": "123123a",
       "/column/data-structure/": "123123a",
       // "/column/web/": "123123a",
       "/dedao/": "123123a",
-      "/column/data_analysis/week1": "123123a",
+      // "/column/data_analysis/week1": "123123a",
       "/column/TensorFlow/零基础实战机器学习/": "123123a",
       "/column/Programmingthinking/": "123123a",
       "/column/playback/01-Tommy.html": "20220517",
