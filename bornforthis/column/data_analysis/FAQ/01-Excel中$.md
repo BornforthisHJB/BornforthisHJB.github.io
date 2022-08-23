@@ -4,9 +4,12 @@ icon: zhuzhuangtu
 time: 2022-08-23 09:51:26
 author: AI悦创
 isOriginal: true
-category: 数据分析
+category: 
+    - 数据分析
+    - 数据分析 FAQ
 tag:
     - 数据分析
+    - 数据分析 FAQ
 sticky: false
 star: false
 password: false
