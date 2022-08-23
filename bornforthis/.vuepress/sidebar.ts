@@ -410,6 +410,7 @@ export default sidebar({
 				"04-Braise_in_soy_sauce_chicken_wings",
 				"05-Sauted-Shredded-Pork-in-Sweet-Bean-Sauce",
 				"06-paihuanggua",
+				"07-糖醋虾仁",
 			],
 		}
 	],
