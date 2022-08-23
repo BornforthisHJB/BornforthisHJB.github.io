@@ -411,6 +411,7 @@ export default sidebar({
 				"05-Sauted-Shredded-Pork-in-Sweet-Bean-Sauce",
 				"06-paihuanggua",
 				"07-糖醋虾仁",
+				"08-煎山药",
 			],
 		}
 	],
