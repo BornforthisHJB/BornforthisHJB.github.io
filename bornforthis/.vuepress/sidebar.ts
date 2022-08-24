@@ -54,6 +54,7 @@ export default sidebar({
 		"04",
 		"05",
 	],
+	"/archives/" : "structure",
 	"/blog/crawler/": "structure",
 	"/blog/2022/": "structure",
 	"/column/data_analysis": [
