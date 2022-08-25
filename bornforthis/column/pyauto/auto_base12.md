@@ -27,6 +27,8 @@ toc: true
 
 ## 需求说明
 
+你好，我是悦创。
+
 xlsxwriter 只能创建新的文件，不能对文件进行数据的追加和读取操作。
 
 需要追加和读取 xlsx 文件，就需要用到 openpyxl 这个库了。安装命令：`pip install openpyxl`。
@@ -38,7 +40,7 @@ pip install openpyxl
 使用 openpyxl 完成这面这个需求：
 
 - 读取上面创建好的 `xlsxwriter插入数据和折线图.xlsx` 文件，复制一份，保存到 poenpyxl 插入数据和折线图[copy xlsxwriter].xlsx复制的文件中
-- sheet1 保持和源文件的sheet1一致，折线图不画复制的文件中
+- sheet1 保持和源文件的 sheet1 一致，折线图不画复制的文件中
 - 创建一个 sheet2，sheet2 的数据从 sheet1 中拷贝过来
 - 随机的增加 1 年的随机数据，也就是 2020 年 1 月至 12 月的日期，数据1和数据2的12个数据随机生成
 - 在sheet2中画一个折线图，统计数据1和数据2
