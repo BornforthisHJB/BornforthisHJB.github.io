@@ -176,9 +176,9 @@ export default navbar([
     icon: "any", 
     link: "/plan",
   },
-  // {
-  //   text: "谷歌学术助手",
-  //   icon: "any", 
-  //   link: "/vpn",
-  // },
+  {
+    text: "谷歌学术助手",
+    icon: "any", 
+    link: "/vpn",
+  },
 ]);
