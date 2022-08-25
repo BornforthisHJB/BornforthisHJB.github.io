@@ -106,6 +106,40 @@ wb.close()
 
 数据写入完毕。
 
+**补充：**
+
+```python
+data = [
+    ['2022-{i}'.format(i=i) for i in range(1, 13)],
+    [random.randint(1, 100) for i in range(12)],
+    [random.randint(1, 100) for i in range(12)],
+]
+```
+
+当前完整代码：
+
+```python
+import xlsxwriter
+import random  # 导入模块
+
+wb = xlsxwriter.Workbook('xlsxwriter插入数据.xlsx')
+worksheet1 = wb.add_worksheet('代码操作记录')
+headings = ['日期', '数据1', '数据2']
+worksheet1.write_row('A1', headings)
+
+data = [
+    ['2022-{i}'.format(i=i) for i in range(1, 13)],
+    [random.randint(1, 100) for i in range(12)],
+    [random.randint(1, 100) for i in range(12)],
+]
+worksheet1.write_column('A2', data[0])
+worksheet1.write_column('B2', data[1])
+worksheet1.write_column('C2', data[2])
+wb.close()
+```
+
+
+
 ## 新建图表对象
 
 数据写好了，但是 Excel 不仅仅只是存放数据的，也可以生成图表。下面我们就学习下如何生成图表。
@@ -119,7 +153,7 @@ import xlsxwriter, random  # 导入模块
 
 wb = xlsxwriter.Workbook('xlsxwriter插入数据和折线图.xlsx')  # 创建新的excel
 
-worksheet = wb.add_worksheet('sheet1')  # 创建新的sheet
+worksheet1 = wb.add_worksheet('代码操作记录')  # 创建新的sheet
 
 headings = ['日期', '数据1', '数据2']  # 创建表头
 
@@ -130,17 +164,17 @@ data = [
     [random.randint(1, 100) for i in range(12)],
 ]
 
-worksheet.write_row('A1', headings)
+worksheet1.write_row('A1', headings)
 
-worksheet.write_column('A2', data[0])
-worksheet.write_column('B2', data[1])
-worksheet.write_column('C2', data[2])  # 将数据插入到表格中
+worksheet1.write_column('A2', data[0])
+worksheet1.write_column('B2', data[1])
+worksheet1.write_column('C2', data[2])  # 将数据插入到表格中
 ```
 
-第一部分，折线图表的定义：
+**第一部分，折线图表的定义：**
 
 ```python
-chart_col = wb.add_chart({'type':'line'})        #新建图表格式 line 为折线图
+chart_col = wb.add_chart({'type': 'line'})        #新建图表格式 line 为折线图
 ```
 
 有了图表对象，下面就是往里加入数据。
@@ -152,17 +186,17 @@ chart_col = wb.add_chart({'type':'line'})        #新建图表格式 line 为折
 ```python
 chart_col.add_series(  # 给图表设置格式，填充内容
     {
-        'name': '=sheet1!$B$1',
-        'categories': '=sheet1!$A$2:$A$7',
-        'values': '=sheet1!$B$2:$B$7',
+        'name': '=代码操作记录!$B$1',
+        'categories': '=代码操作记录!$A$2:$A$7',
+        'values': '=代码操作记录!$B$2:$B$7',
         'line': {'color': 'blue'},
     }
 )
 chart_col.add_series(  # 给图表设置格式，填充内容
     {
-        'name': '=sheet1!$C$1',
-        'categories': '=sheet1!$A$2:$A$7',
-        'values': '=sheet1!$C$2:$C$7',
+        'name': '=代码操作记录!$C$1',
+        'categories': '=代码操作记录!$A$2:$A$7',
+        'values': '=代码操作记录!$C$2:$C$7',
         'line': {'color': 'green'},
     }
 )
@@ -181,8 +215,8 @@ chart_col.set_title({'name': '虚假数据折线图'})
 chart_col.set_x_axis({'name': "横坐标"})
 chart_col.set_y_axis({'name': '纵坐标'})  # 设置图表表头及坐标轴
 
-worksheet.insert_chart('D2', chart_col, {'x_offset': 25, 'y_offset': 10})  # 放置图表位置
-
+worksheet1.insert_chart('D2', chart_col, {'x_offset': 25, 'y_offset': 10})  # 放置图表位置
+# worksheet1.insert_chart('D2', chart_col)  # 放置图表位置
 wb.close()
 ```
 
@@ -195,6 +229,54 @@ wb.close()
 ![image-20220717201003183](./auto_base11.assets/image-20220717201003183.png)
 
 以上就是 xlsxwriter 的使用示例，有图的加入，比较有趣。但是 xlsxwriter 只能创建新的文件，不能追加和读取。
+
+## 完整代码
+
+```python
+import xlsxwriter
+import random  # 导入模块
+
+wb = xlsxwriter.Workbook('xlsxwriter插入数据.xlsx')
+worksheet1 = wb.add_worksheet('代码操作记录')
+headings = ['日期', '数据1', '数据2']
+worksheet1.write_row('A1', headings)
+
+data = [
+    ['2022-{i}'.format(i=i) for i in range(1, 13)],
+    [random.randint(1, 100) for i in range(12)],
+    [random.randint(1, 100) for i in range(12)],
+]
+worksheet1.write_column('A2', data[0])
+worksheet1.write_column('B2', data[1])
+worksheet1.write_column('C2', data[2])
+
+# 开始画图表
+chart_col = wb.add_chart({'type': 'line'})
+chart_col.add_series(
+    {
+        'name': '=代码操作记录!$B$1',
+        'categories': '=代码操作记录!$A$2:$A$7',
+        'values':   '=代码操作记录!$B$2:$B$7',
+        'line': {'color': 'blue'},
+    }
+)
+chart_col.add_series(
+    {
+        'name': '=代码操作记录!$C$1',
+        'categories': '=代码操作记录!$A$2:$A$7',
+        'values':   '=代码操作记录!$C$2:$C$7',
+        'line': {'color': 'green'},
+    }
+)
+chart_col.set_title({'name': '虚假数据折线图'})
+chart_col.set_x_axis({'name': "横坐标"})
+chart_col.set_y_axis({'name': '纵坐标'})  # 设置图表表头及坐标轴
+
+worksheet1.insert_chart(
+    'D2', chart_col, {'x_offset': 25, 'y_offset': 10})  # 放置图表位置
+
+wb.close()
+```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
