@@ -39,6 +39,7 @@ export default sidebar({
 				"02-Cocos",
 				"03-web02",
 				"04-web03",
+				"05-web04",
 			]
 		},
 		{
