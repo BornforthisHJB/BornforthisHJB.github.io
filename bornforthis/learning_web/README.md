@@ -45,6 +45,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | ---- | ------------- | ------------------------------------------------------------ | ------------- |
 | 01   | **LiaScript** | [https://github.com/LiaScript/LiaScript](https://github.com/LiaScript/LiaScript) | 交互式 Python |
 | 02   | **httrack**   | [https://www.httrack.com/page/2/en/index.html](https://www.httrack.com/page/2/en/index.html) |               |
+| 03   | **cdnpkg**    | [https://www.cdnpkg.com/](https://www.cdnpkg.com/)           |               |
 
 ## 资源网站
 
