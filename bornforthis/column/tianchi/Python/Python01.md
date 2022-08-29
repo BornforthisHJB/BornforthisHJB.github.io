@@ -1,7 +1,7 @@
 ---
-title: 2-5 统计指标：集中趋势 
-icon: zhuzhuangtu
-time: 2022-08-23 00:14:38
+title: 01-Python入门上
+icon: Python
+time: 2022-08-30 00:15:50
 author: AI悦创
 isOriginal: true
 category: 
@@ -34,7 +34,63 @@ Python 是一种通用编程语言，其在科学计算和机器学习领域具�
 
 AI悦创官方为大家准备知识星球，在学习过程中，大家有任何教程内容或者平台使用问题都可以在知识星球内提出，扫码即可加入：
 
-<img src="/zsxq.jpg" width=30% />
+![](/zsxq.jpg)
+
+本实验包括以下内容：
+- 变量、运算符与数据类型
+    - 注释
+    - 运算符
+    - 变量和赋值
+    - 数据类型与转换
+    - print() 函数
+- 位运算
+    - 原码、反码和补码
+    - 按位非操作 ~
+    - 按位与操作 &
+    - 按位或操作 |
+    - 按位异或操作 ^
+    - 按位左移操作 <<
+    - 按位右移操作 >>
+    - 利用位运算实现快速计算
+    - 利用位运算实现整数集合
+- 条件语句
+    - if 语句
+    - if - else 语句
+    - if - elif - else 语句
+    - assert 关键词
+- 循环语句
+    - while 循环
+    - while - else 循环
+    - for 循环
+    - for - else 循环
+    - range() 函数
+    - enumerate() 函数
+    - break 语句
+    - continue 语句
+    - pass 语句
+    - 推导式
+- 异常处理
+    - Python 标准异常总结
+    - Python 标准警告总结
+    - try - except 语句
+    - try - except - finally 语句
+    - try - except - else 语句
+    - raise 语句
+
+## 变量、运算符与数据类型
+
+### 1. 注释
+
+- 在 Python 中，`#` 表示注释，作用于整行。
+
+【例子】单行注释
+
+```python
+# 这是一个注释
+print("Hello world")
+
+# Hello world
+```
 
 
 
