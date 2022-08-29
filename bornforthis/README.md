@@ -39,6 +39,11 @@ projects:
     desc: Python 来实现自动化办公，解放人力。
     link: /autooffice
 
+  - icon: pengyoufill
+    name: 友情链接
+    desc: 友情链接
+    link: /friendship-link.md
+
 footer: 长期招收编程一对一学员！微信：Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>
 ---
 
