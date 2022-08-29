@@ -31,6 +31,16 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/tianchi/": [
+		{
+			text: "Python 入门与实践",
+			icon: "python",
+			collapsable: true,
+			children: [
+				"Python/Python01"
+			],
+		}
+	],
 	"/1v1/01-Thomas-hw-note/": [
 		{
 			text: "搭建个人博客",
