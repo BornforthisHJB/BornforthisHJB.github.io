@@ -144,6 +144,7 @@ export default navbar([
           { text: "Vercel", link: "https://vercel.com/dashboard"},
           // { text: "turingapi", link: "http://www.turingapi.com/"},
           { text: "1v1官网", link: "https://www.class1v1.com/"},
+          { text: "友情链接", link: "/friendship-link"}
         ],
       },
       { 
@@ -166,7 +167,6 @@ export default navbar([
           { text: "CSDN 视频", link: "https://blog.csdn.net/qq_33254766?type=video"},
           { text: "知乎视频", link: "https://www.zhihu.com/people/aiyuechuang/zvideos"},
           { text: "摄影课程", link: "https://list.youku.com/albumlist/show/id_68857050"},
-
         ]
       },
     ],
