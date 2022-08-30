@@ -50,6 +50,7 @@ export default sidebar({
 				"03-web02",
 				"04-web03",
 				"05-web04",
+				"06-web05",
 			]
 		},
 		{
