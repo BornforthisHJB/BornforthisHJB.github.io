@@ -11,6 +11,8 @@ tag:
     - Python
     - AI悦创·天池计划
 sticky: false
+dir:
+    text: AI悦创·天池计划
 star: false
 password: false
 article: true
@@ -18,7 +20,7 @@ timeline: true
 image: false
 navbar: true
 sidebarIcon: true
-headerDepth: 5
+headerDepth: 6
 comment: true
 lastUpdated: true
 editLink: false
@@ -28,7 +30,9 @@ backToTop: true
 toc: true
 ---
 
-## 简介
+[[toc]]
+
+## 0. 简介
 
 Python 是一种通用编程语言，其在科学计算和机器学习领域具有广泛的应用。如果我们打算利用 Python 来执行机器学习，那么对 Python 有一些基本的了解就是至关重要的。本 Python 入门系列体验就是为这样的初学者精心准备的。
 
@@ -77,13 +81,13 @@ AI悦创官方为大家准备知识星球，在学习过程中，大家有任何
     - try - except - else 语句
     - raise 语句
 
-## 变量、运算符与数据类型
+## 1. 变量、运算符与数据类型
 
-### 1. 注释
+### 1.1 注释
 
 - 在 Python 中，`#` 表示注释，作用于整行。
 
-【例子】单行注释
+#### 1.1.1【例子】单行注释
 
 ```python
 # 这是一个注释
@@ -92,9 +96,49 @@ print("Hello world")
 # Hello world
 ```
 
+输出：
 
+```python
+Hello world
+```
 
+- `''' '''` 或者 `""" """` 表示区间注释，在三引号之间的所有内容被注释
 
+#### 1.1.2【例子】多行注释
+
+```python
+'''
+这是多行注释，用三个单引号
+这是多行注释，用三个单引号
+这是多行注释，用三个单引号
+'''
+print("Hello china") 
+# Hello china
+
+"""
+这是多行注释，用三个双引号
+这是多行注释，用三个双引号 
+这是多行注释，用三个双引号
+"""
+print("hello china") 
+# hello china
+```
+
+输出：
+
+```python
+Hello china
+hello china
+```
+
+#### 1.1.3【我是测试题1】请在下方代码块中打印 (print) 出 hello+你的姓名
+
+如：print("hello 老表")
+
+```python
+# 写下你的答案
+
+```
 
 
 

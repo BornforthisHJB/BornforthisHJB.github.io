@@ -124,6 +124,8 @@ export default hopeTheme({
     ],
 
     mdEnhance: {
+      
+      // level: [1, 2, 3, 4, 5, 6],
       tex: true,
       // enableAll: true,
       attrs: true,
