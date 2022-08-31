@@ -20,8 +20,6 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: 01.md
-next: 02.md
 backToTop: true
 toc: true
 ---
