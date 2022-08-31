@@ -27,7 +27,8 @@ export default navbar([
           { text: "数据分析", icon: "state", link: "/column/data_analysis/week1/01"},
           { text: "数据结构与算法", icon: "shujujiegou-01", link: "/column/data-structure/week1/01"},
           { text: "Python 60 Day", icon: "python", link: "/column/python60/01"},
-          { text: "AI悦创·天池计划", icon: "dianchi1", link: "/column/tianchi/Python/Python01"}
+          { text: "AI悦创·天池计划", icon: "dianchi1", link: "/column/tianchi/Python/Python01"},
+          { text: "Java体系课", icon: "java", link: "/column/Java/chapter01/01.md"},
         ]
       },
       { 

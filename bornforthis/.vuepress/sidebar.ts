@@ -31,6 +31,16 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/Java/": [
+		{
+			text: "第一章 Java编程基础 (30讲)",
+			collapsable: true,
+			icon: "java",
+			children: [
+				"chapter01/01",
+			],
+		}
+	],
 	"/column/tianchi/": [
 		{
 			text: "Python 入门与实践",
