@@ -52,21 +52,22 @@ def get_urls(sitemap):
 def submit_baidu(site: str, token: str, sitemap: str):
     msg = []
     url_list = get_urls(sitemap)
-    response = requests.post(url=f'http://data.zz.baidu.com/urls?site={site}&token={token}',
+    # print(url_list)
+    url_content = "\n".join(url_list)
+    response = requests.post(url=f"http://data.zz.baidu.com/urls?site={site}&token={token}",
                              headers={
-                                 'User-Agent': 'curl/7.12.1',
-                                 'Host': 'data.zz.baidu.com',
-                                 'Content-Type': 'text/plain',
-                                 'Content-Length': '83'
+                                 "User-Agent": "curl/7.12.1",
+                                 "Host": "data.zz.baidu.com",
+                                 "Content-Type": "text/plain",
+                                 "Content-Length": "83"
                              },
-                             data='\n'.join(url_list)
-
+                             data=url_content
                              )
     if response.status_code == 200:
         data = response.json()
-        msg.append(f"成功推送的url条数 {data.get('success')}")
+        msg.append(f"成功推送的 url 条数 {data.get('success')}")
         msg.append(f"当天剩余的可推送url条数 {data.get('remain')}")
-        msg.append(f'今日推送的url列表:')
+        msg.append(f'今日推送的 url 列表:')
 
         for url in url_list:
             msg.append(f"{url}")
@@ -86,8 +87,8 @@ def submit_baidu(site: str, token: str, sitemap: str):
 
 if __name__ == '__main__':
     try:
-        info = submit_baidu(site='https://www.songonline.top', token='',
-                            sitemap='https://www.songonline.top/sitemap.xml')
+        info = submit_baidu(site='https://bornforthis.cn', token='rJcdDY5O4W9rd9eG',
+                            sitemap='https://www.bornforthis.cn/sitemap.xml')
         print('\n'.join(info))
     except Exception as e:
         print(e)
