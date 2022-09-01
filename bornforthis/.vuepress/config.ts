@@ -30,13 +30,13 @@ export default defineUserConfig({
     // [
     //   "link", {
     //     rel: "stylesheet",
-    //     href: "https://pyscript.net/alpha/pyscript.css",
+    //     href: "https://cdn.jsdelivr.net/npm/@docsearch/css@3",
     //   }
     // ],
     // [
     //   "script", {
     //     type: "text/javascript",
-    //     src: "https://pyscript.net/alpha/pyscript.js",
+    //     src: "https://cdn.jsdelivr.net/npm/@docsearch/js@3",
     //   }
     // ],
     // [
