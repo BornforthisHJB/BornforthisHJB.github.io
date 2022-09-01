@@ -1,6 +1,6 @@
 ---
 title: 01-悦宝计划
-icon: compare
+icon: jihua2
 time: 2022-08-27 21:58:37
 author: AI悦创
 isOriginal: true
