@@ -36,3 +36,19 @@
 //             ""
 //     ]
 //   });
+
+
+
+//   docsearch({
+
+//     appId: ACD1S100IT,
+
+//     apiKey: df2d78d6d7451ef63cf71bb8df85be24,
+
+//     indexName: bornforthis,
+
+//     container: '### REPLACE ME WITH A CONTAINER (e.g. div) ###'
+
+//     debug: false // Set debug to true if you want to inspect the modal
+
+//   });
