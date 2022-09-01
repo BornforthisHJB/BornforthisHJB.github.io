@@ -29,6 +29,7 @@ export default navbar([
           { text: "Python 60 Day", icon: "python", link: "/column/python60/01"},
           { text: "AI悦创·天池计划", icon: "dianchi1", link: "/column/tianchi/Python/Python01"},
           { text: "Java体系课", icon: "java", link: "/column/Java/chapter01/01.md"},
+          { text: "AI悦创·1v1", icon: "java", link: "/1v1/"},
         ]
       },
       { 
