@@ -9,7 +9,7 @@ category:
 tag:
     - Python 1v1
     - Thomas-hw-note
-icon: blog
+icon: notebook2
 sticky: false
 star: false
 password: false
