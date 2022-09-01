@@ -31,6 +31,16 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/1v1/02-yuebao": [
+		{
+			text: "2022年",
+			icon: "jihua2",
+			collapsable: true,
+			children: [
+				"01-Plan",
+			],
+		}
+	],
 	"/column/Java/": [
 		{
 			text: "第一章 Java编程基础 (30讲)",
