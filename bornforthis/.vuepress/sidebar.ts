@@ -202,7 +202,7 @@ export default sidebar({
 	"/column/PPT/": [
 		"note",
 		{ 
-			text: "卷一：零基础学习 PPT",
+			text: "卷一:零基础学习 PPT",
 			collapsable: true,
 			children: [
 				"",
@@ -210,7 +210,7 @@ export default sidebar({
 			]
 		},
 		{
-			text: "卷二：PPT 改丑计划",
+			text: "卷二:PPT 改丑计划",
 			collapsable: true,
 			children: [
 				""
@@ -329,6 +329,8 @@ export default sidebar({
 						"",
 						"01",
 						"02",
+						"03",
+						"04",
 					]
 				}
 			]
