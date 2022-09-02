@@ -75,6 +75,9 @@ export default hopeTheme({
   },
   
   plugins: {
+    pwa: {
+      update: "hint",
+    },
     copyright: {
       author: "黄家宝|AI悦创",
       global: true,
