@@ -18,7 +18,6 @@ export default defineUserConfig({
         crossorigin: "anonymous",
         type: "text/javascript",
         src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5987340307114699",
-        charset: "utf-8",
       }
     ],
     // [
