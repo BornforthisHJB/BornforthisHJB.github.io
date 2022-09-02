@@ -12,14 +12,15 @@ export default defineUserConfig({
   base: "/",
   shouldPrefetch: false,
   head: [
-    // [
-    //   "script",
-    //   {
-    //     type: "text/javascript",
-    //     src: "//unpkg.byted-static.com/xgplayer@2.31.2/browser/index.js",
-    //     charset: "utf-8",
-    //   }
-    // ],
+    [
+      "script",
+      {
+        crossorigin: "anonymous",
+        type: "text/javascript",
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5987340307114699",
+        charset: "utf-8",
+      }
+    ],
     // [
     //   "script",
     //   {
