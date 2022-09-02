@@ -31,6 +31,16 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
+	"/column/摄影入门课/": [
+		{
+			text: "开篇词 (1讲)",
+			collapsable: true,
+			icon: "cameraadd",
+			children: [
+				"",
+			]
+		}
+	],
 	"/1v1/02-yuebao": [
 		{
 			text: "2022年",
