@@ -72,6 +72,7 @@ export default navbar([
           { text: "HTML Online", icon: "network", link: "https://bornforthis.cn/html_online/"},
           { text: "格式在线转换", icon: "network", link: "https://convertio.co/zh/"},
           { text: "在线转换2", icon: "network", link: "https://www.aconvert.com/cn/"},
+          { text: "Python", icon: "python", link: "https://bornforthis.cn/python/#/"},
         ]
       },
       {
@@ -96,7 +97,8 @@ export default navbar([
           { text: "AI悦创随笔1", link: "/posts/12.html"},
           { text: "随笔2", link: "/essays"},
           { text: "摄影", link: "https://huangjiabaoaiyc.gitee.io/img/"},
-          { text: "Search", link: "https://crawler.algolia.com/admin/crawlers"}
+          { text: "Search", link: "https://crawler.algolia.com/admin/crawlers"},
+
           // { text: "随笔", children: [{ text: "AI悦创随笔1", link: "https://bornforthis.cn/posts/12.html"}, { text: "随笔2", link: "/essays"}]},
         ]
       },
