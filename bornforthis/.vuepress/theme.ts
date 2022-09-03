@@ -19,7 +19,7 @@ export default hopeTheme({
   logo: "/img_home/logo_min.png",
 
   // repo: "BornforthisHJB/BornforthisHJB.github.io",
-  repo: "AndersonHJB",
+  repo: "AndersonHJB/AndersonHJB.github.io",
   editLink: false,
 
   docsDir: "bornforthis/",
