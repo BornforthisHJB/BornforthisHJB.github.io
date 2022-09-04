@@ -73,6 +73,7 @@ export default navbar([
           { text: "格式在线转换", icon: "network", link: "https://convertio.co/zh/"},
           { text: "在线转换2", icon: "network", link: "https://www.aconvert.com/cn/"},
           { text: "Python", icon: "python", link: "https://bornforthis.cn/python/#/"},
+          { text: "Python", icon: "python", link: "https://bornforthis.cn/python/index.html/"},
         ]
       },
       {
