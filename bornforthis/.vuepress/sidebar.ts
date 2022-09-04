@@ -31,7 +31,11 @@ import { sidebar } from "vuepress-theme-hope";
 //     });
 
 export default sidebar({
-	"/": "structure",
+	"/": [
+		"",
+		"intro",
+		"/1v1/",
+	],
 	"/column/摄影入门课/": [
 		{
 			text: "开篇词 (1讲)",
