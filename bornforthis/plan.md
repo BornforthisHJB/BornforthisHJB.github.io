@@ -4,9 +4,15 @@ icon: plane
 date: 2022-09-04 12:24:00
 ---
 
+## 2022年09月05日
+
+- [ ] Java 体系课的答疑贴
+- [ ] Java 体系课专栏发布
+- [ ] 
+
 ## 2022年08月03日
 
-- [ ] Web 笔记开发
+- [x] Web 笔记开发：[https://github.com/BornforthisHJB/Notebook](https://github.com/BornforthisHJB/Notebook)
 
 
 
