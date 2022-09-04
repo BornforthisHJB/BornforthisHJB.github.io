@@ -35,6 +35,8 @@ export default sidebar({
 		"",
 		"intro",
 		"/1v1/",
+		"home",
+		"onepython",
 	],
 	"/column/摄影入门课/": [
 		{

@@ -6,7 +6,7 @@ isOriginal: true
 category: Python 基础
 tag:
     - Python 基础
-icon: false
+icon: python
 sticky: false
 star: false
 password: false
