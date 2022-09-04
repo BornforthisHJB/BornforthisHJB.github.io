@@ -1,5 +1,6 @@
 ---
-title: 友情链接 
+title: 友情链接
+icon: pengyoufill
 ---
 
 | 序号 | 名称         | 链接                                                       | 网站说明           |

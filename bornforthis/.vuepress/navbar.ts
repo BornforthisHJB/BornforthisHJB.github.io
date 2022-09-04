@@ -151,8 +151,8 @@ export default navbar([
           { text: "变更日志", icon: "time", link: "/changelog"},
           { text: "Vercel", link: "https://vercel.com/dashboard"},
           // { text: "turingapi", link: "http://www.turingapi.com/"},
-          { text: "1v1官网", link: "https://www.class1v1.com/"},
-          { text: "友情链接", link: "/friendship-link"}
+          { text: "1v1官网", icon: "1v1-4", link: "https://www.class1v1.com/"},
+          { text: "友情链接", icon: "pengyoufill", link: "/friendship-link"}
         ],
       },
       { 
