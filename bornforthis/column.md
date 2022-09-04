@@ -95,7 +95,7 @@ features:
   - title: 机器学习
     icon: siwei
     details: 时代下的趋势～
-    link: /column/Programmingthinking/
+    link: /column/TensorFlow/零基础实战机器学习/
 
   - title: 更多新特性
     icon: more
