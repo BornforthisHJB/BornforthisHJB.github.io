@@ -8,7 +8,7 @@ date: 2022-09-04 12:24:00
 
 - [ ] Java 体系课的答疑贴
 - [ ] Java 体系课专栏发布
-- [ ] 
+- [ ] 数据分析备课
 
 ## 2022年08月03日
 
@@ -40,7 +40,7 @@ Python 库研究：
 - [ ] faker 研究
 - [ ] tkinter 备课
 - [ ] pyautogui 库研究：[https://pyautogui.readthedocs.io/en/latest/](https://pyautogui.readthedocs.io/en/latest/)
-- [ ] 
+- [ ] matplotlib：[https://matplotlib.org/](https://matplotlib.org/)
 
 
 
