@@ -63,7 +63,16 @@ export default sidebar({
 			collapsable: true,
 			icon: "cameraadd",
 			children: [
-				"",
+				"03-Dannie",
+			]
+		}
+	],
+	"/1v1/03-Dannie": [
+		{
+			text: "Python 环境搭建",
+			icon: "python",
+			children: [
+				"01"
 			]
 		}
 	],
