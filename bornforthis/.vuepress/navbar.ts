@@ -22,7 +22,7 @@ export default navbar([
           { text: "Python 办公自动化", icon: "python", link: "/column/pyauto"},
           { text: "题解", icon: "code", link: "/column/tijie"},
           { text: "公开课资料", icon: "blog", link: "/column/pyauto/gkk/"},
-          { text: "编程思维", icon: "read", link: "/column/Programmingthinking/"},
+          { text: "编程思维", icon: "siwei", link: "/column/Programmingthinking/"},
           { text: "零基础学习机器学习", icon: "centos", link: "/column/TensorFlow/零基础实战机器学习/"},
           { text: "数据分析", icon: "state", link: "/column/data_analysis/week1/01"},
           { text: "数据结构与算法", icon: "shujujiegou-01", link: "/column/data-structure/week1/01"},

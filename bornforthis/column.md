@@ -85,7 +85,17 @@ features:
   - title: web
     icon: network
     details: web 专栏
-    link: /column/web
+    link: /column/web/catalogue
+
+  - title: 编程思维
+    icon: siwei
+    details: 编程的本质，其实是一种思维～
+    link: /column/Programmingthinking/
+
+  - title: 机器学习
+    icon: siwei
+    details: 时代下的趋势～
+    link: /column/Programmingthinking/
 
   - title: 更多新特性
     icon: more
