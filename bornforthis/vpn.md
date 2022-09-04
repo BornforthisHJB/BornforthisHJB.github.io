@@ -38,3 +38,4 @@ icon: chrome
 1. IOS 使用教程：[https://bornforthis.cn/posts/30.html](https://bornforthis.cn/posts/30.html)
 2. Clash For Windows 教程：[https://bornforthis.cn/posts/31.html](https://bornforthis.cn/posts/31.html)
 
+<div align=center><img src="/ewm/Jiabcdefh.jpg" alt="微信号：Jiabcdefh" style="zoom:25%;" /></div>

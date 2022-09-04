@@ -20,3 +20,4 @@ icon: time
 > 3. 及时分类备份；
 > 4. PPT 知识点补充：Bandzip 安装；
 
+<div align=center><img src="/ewm/Jiabcdefh.jpg" alt="微信号：Jiabcdefh" style="zoom:25%;" /></div>

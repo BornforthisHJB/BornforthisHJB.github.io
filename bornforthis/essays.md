@@ -19,8 +19,6 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: false
-next: false
 backToTop: true
 toc: true
 ---
