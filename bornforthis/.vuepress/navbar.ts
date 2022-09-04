@@ -180,12 +180,12 @@ export default navbar([
   },
   {
     text: "Plan",
-    icon: "any", 
+    icon: "plane", 
     link: "/plan",
   },
   {
     text: "谷歌学术助手",
-    icon: "any", 
+    icon: "chrome", 
     link: "/vpn",
   },
 ]);
