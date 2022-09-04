@@ -93,7 +93,7 @@ features:
     link: /column/Programmingthinking/
 
   - title: 机器学习
-    icon: siwei
+    icon: icon-rgb_jiqixuexisuanfayinqing
     details: 时代下的趋势～
     link: /column/TensorFlow/零基础实战机器学习/
 
