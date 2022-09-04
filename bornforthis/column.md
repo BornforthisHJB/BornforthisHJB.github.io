@@ -97,6 +97,16 @@ features:
     details: 时代下的趋势～
     link: /column/TensorFlow/零基础实战机器学习/
 
+  - title: 数据分析
+    icon: zhuzhuangtu
+    details: 跟我一起，用数据解析世界～
+    link: /column/data_analysis/week1/01
+
+  - title: Python 60 Days
+    icon: python
+    details: Python 60天精通～
+    link: /column/python60/01
+
   - title: 更多新特性
     icon: more
     details: 包括图标支持、全屏按钮、返回顶部按钮等
