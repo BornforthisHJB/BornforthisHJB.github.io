@@ -78,6 +78,8 @@ export default hopeTheme({
   plugins: {
     pwa: {
       update: "hint",
+      maxPicSize: 2048,
+      
     },
     copyright: {
       author: "黄家宝|AI悦创",
