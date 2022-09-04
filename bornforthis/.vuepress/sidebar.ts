@@ -34,9 +34,23 @@ export default sidebar({
 	"/": [
 		"",
 		"intro",
-		"/1v1/",
+		{
+			text: "私教笔记",
+			icon: "1v1-4",
+			link: "/1v1/",
+		},
 		"home",
-		"onepython",
+		{
+			text: "Python一对一教学",
+			icon: "python",
+			link: "onepython",
+		},
+		{
+			text: "Python 体系课",
+			icon: "python",
+			link: "1v1-txk",
+		},
+
 	],
 	"/column/摄影入门课/": [
 		{

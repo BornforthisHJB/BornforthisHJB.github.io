@@ -5,7 +5,7 @@ author: AI悦创
 isOriginal: true
 category: Python 基础
 tag:
-    - Python 基础
+    - Python 体系课
 icon: python
 sticky: false
 star: false
@@ -19,9 +19,9 @@ headerDepth: 3
 comment: true
 lastUpdated: true
 editLink: false
-prev: onepython.md
-next: autooffice.md
 backToTop: true
 toc: true
 ---
+
+## 阶段一：
 
