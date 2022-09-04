@@ -63,7 +63,7 @@ export default sidebar({
 			collapsable: true,
 			icon: "cameraadd",
 			children: [
-				"03-Dannie",
+				"",
 			]
 		}
 	],
