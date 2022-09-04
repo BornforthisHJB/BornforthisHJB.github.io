@@ -39,7 +39,7 @@ Python 库研究：
 - [ ] time 研究
 - [ ] faker 研究
 - [ ] tkinter 备课
-- [ ] pyautogui 库研究：[]
+- [ ] pyautogui 库研究：[https://pyautogui.readthedocs.io/en/latest/](https://pyautogui.readthedocs.io/en/latest/)
 - [ ] 
 
 
