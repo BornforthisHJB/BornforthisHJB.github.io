@@ -50,6 +50,11 @@ export default sidebar({
 			icon: "python",
 			link: "1v1-txk",
 		},
+		"friendship-link",
+		"Record_the_class",
+		"plan",
+		"vpn",
+		"learning_web",
 
 	],
 	"/column/摄影入门课/": [

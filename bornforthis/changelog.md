@@ -32,16 +32,6 @@ width=800>
 
 **播放：**
 
-<iframe 
-src="https://v.xiaohongshu.com/01e284d1cd6bdf230183700380d6d6fda0_259.mp4?sign=2a88f9e24468c75ffb69817190a64f29&t=62ab5380" 
-scrolling="no" 
-border="0" 
-frameborder="no" 
-framespacing="0" 
-allowfullscreen="true" 
-height=600 
-width=800> 
-</iframe>
 
 :::
 
