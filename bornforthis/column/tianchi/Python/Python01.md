@@ -1,6 +1,6 @@
 ---
 title: 01-Python入门上
-icon: Python
+icon: python
 time: 2022-08-30 00:15:50
 author: AI悦创
 isOriginal: true
@@ -11,8 +11,6 @@ tag:
     - Python
     - AI悦创·天池计划
 sticky: false
-dir:
-    text: AI悦创·天池计划
 star: false
 password: false
 article: true
