@@ -501,6 +501,7 @@ export default sidebar({
 				"10-蒜蓉荷兰豆",
 				"11-番茄牛腩",
 				"12-paihuanggua2",
+				"13-虾仁滑蛋",
 			],
 		}
 	],
