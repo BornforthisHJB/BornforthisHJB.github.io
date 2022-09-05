@@ -12,15 +12,15 @@ export default defineUserConfig({
   base: "/",
   shouldPrefetch: false,
   head: [
-    [
-      "script",
-      {
-        async: true,
-        defer: true,
-        type: "text/javascript",
-        src: "https://platform.linkedin.com/badges/js/profile.js",
-      }
-    ],
+    // [
+    //   "script",
+    //   {
+    //     async: true,
+    //     defer: true,
+    //     type: "text/javascript",
+    //     src: "https://platform.linkedin.com/badges/js/profile.js",
+    //   }
+    // ],
     // [
     //   "script",
     //   {
