@@ -72,7 +72,8 @@ export default sidebar({
 			text: "Python 环境搭建",
 			icon: "python",
 			children: [
-				"01"
+				"01",
+				"02",
 			]
 		}
 	],
