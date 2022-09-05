@@ -78,13 +78,12 @@ export default hopeTheme({
   },
   
   plugins: {
-    sitemap: {
+    // sitemap: {
       
-    },
+    // },
     pwa: {
       update: "hint",
       maxPicSize: 2048,
-      
     },
     copyright: {
       author: "黄家宝|AI悦创",
