@@ -21,7 +21,8 @@ export default hopeTheme({
   // repo: "BornforthisHJB/BornforthisHJB.github.io",
   // repo: "AndersonHJB/AndersonHJB.github.io",
   repo: "AndersonHJB?tab=repositories",
-  editLink: false,
+  // editLink: false,
+  // lastUpdated: true,
 
   docsDir: "bornforthis/",
   
@@ -77,6 +78,9 @@ export default hopeTheme({
   },
   
   plugins: {
+    sitemap: {
+      
+    },
     pwa: {
       update: "hint",
       maxPicSize: 2048,
