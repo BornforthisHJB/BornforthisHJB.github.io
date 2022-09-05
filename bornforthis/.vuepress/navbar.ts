@@ -99,6 +99,7 @@ export default navbar([
           { text: "随笔2", link: "/essays"},
           { text: "摄影", link: "https://huangjiabaoaiyc.gitee.io/img/"},
           { text: "Search", link: "https://crawler.algolia.com/admin/crawlers"},
+          { text: "领英", link: "https://www.linkedin.com/in/bornforthis/"},
 
           // { text: "随笔", children: [{ text: "AI悦创随笔1", link: "https://bornforthis.cn/posts/12.html"}, { text: "随笔2", link: "/essays"}]},
         ]
