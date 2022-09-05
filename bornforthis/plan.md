@@ -41,6 +41,7 @@ Python 库研究：
 - [ ] tkinter 备课
 - [ ] pyautogui 库研究：[https://pyautogui.readthedocs.io/en/latest/](https://pyautogui.readthedocs.io/en/latest/)
 - [ ] matplotlib：[https://matplotlib.org/](https://matplotlib.org/)
+- [ ] plotly 可视化库：[https://plotly.com/graphing-libraries/](https://plotly.com/graphing-libraries/)
 
 
 
