@@ -497,6 +497,7 @@ export default sidebar({
 				"06-paihuanggua",
 				"07-糖醋虾仁",
 				"08-煎山药",
+				"10-蒜蓉荷兰豆",
 			],
 		}
 	],
