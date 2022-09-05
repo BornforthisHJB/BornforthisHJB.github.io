@@ -500,7 +500,7 @@ export default sidebar({
 				"08-煎山药",
 				"10-蒜蓉荷兰豆",
 				"11-番茄牛腩",
-				
+				"12-paihuanggua2",
 			],
 		}
 	],
