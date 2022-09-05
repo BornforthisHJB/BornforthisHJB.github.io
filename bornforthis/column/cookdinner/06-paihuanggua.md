@@ -2,6 +2,7 @@
 title: 06-拍黄瓜
 time: 2022-08-21 17:38:54
 author: AI悦创
+icon: meishi2
 isOriginal: true
 category: 
     - 程序员的私房菜
