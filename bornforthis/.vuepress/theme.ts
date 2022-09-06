@@ -82,7 +82,7 @@ export default hopeTheme({
       
     // },
     pwa: {
-      update: "hint",
+      update: "available",
       maxPicSize: 2048,
     },
     copyright: {
