@@ -70,6 +70,7 @@ export default sidebar({
 	"/1v1/03-Dannie": [
 		{
 			text: "Python 环境搭建",
+			collapsable: true,
 			icon: "python",
 			children: [
 				"01",
