@@ -292,7 +292,7 @@ export default sidebar({
 			children: [
 				{ 
 					text: "第一章 Web 概述", 
-					collapsable: true,
+					// collapsable: true,
 					children: [
 						"base/",
 						"base/base_01",
@@ -301,7 +301,7 @@ export default sidebar({
 				},
 				{
 					text: "第二章 HTML 入门",
-					collapsable: true,
+					// collapsable: true,
 					children: [
 						"base/base_03",
 						"base/base_04",
@@ -311,7 +311,7 @@ export default sidebar({
 				},
 				{
 					text: "第三章 CSS 入门",
-					collapsable: true,
+					// collapsable: true,
 					children: [
 						"base/base_07",
 						"base/base_08",
@@ -320,7 +320,7 @@ export default sidebar({
 				},
 				{
 					text: "第四章 JavaScript 入门",
-					collapsable: true,
+					// collapsable: true,
 					children: [
 						"base/base_10",
 						"base/base_11",
@@ -339,14 +339,14 @@ export default sidebar({
 					children: [
 						{
 							text: "第1周: HTML5 基础语法与标签",
-							collapsable: true,
+							// collapsable: true,
 							children: [
 								{
 									text: "前置引导课（课前必看）",
 									children: [
 										{
 											text: "第1章 课程简介",
-											collapsable: true,
+											// collapsable: true,
 											children: [
 												"txk/week1/txk_01",
 												"txk/week1/txk_02",
@@ -355,7 +355,7 @@ export default sidebar({
 										},
 										{
 											text: "第2章 前端开发行情与课程体系介绍",
-											collapsable: true,
+											// collapsable: true,
 											children: [
 												"txk/week1/txk_04",
 												"txk/week1/txk_05",

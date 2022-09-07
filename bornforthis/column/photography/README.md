@@ -20,8 +20,6 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: README.md
-next: 01.md
 backToTop: true
 toc: true
 ---
