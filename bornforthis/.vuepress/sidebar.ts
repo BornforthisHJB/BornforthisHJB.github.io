@@ -384,7 +384,7 @@ export default sidebar({
 			children: [
 				{
 					text: "学前班",
-					collapsable: true,
+					// collapsable: true,
 					children: [
 						"",
 						"01",
@@ -416,7 +416,7 @@ export default sidebar({
 			children: [
 				{ 
 					text: "华为机试",
-					collapsable: true,
+					// collapsable: true,
 					children: [
 						"nkw_hw01",
 						"nkw_hw02",
