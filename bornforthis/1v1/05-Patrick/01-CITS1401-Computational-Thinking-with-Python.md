@@ -193,7 +193,66 @@ neutral expressions of the remaining subjects in the dataset. Your output will b
 1. The ID of the person with which the reference face has the maximum cosine similarity, and
 2. The maximum cosine similarity value. The formula to calculate cosine similarity is provided at the end of this project sheet.
 
+All returned lists should have the values in order. For example, for OP2, the main list has 4 sub-lists which 
 
+should be ordered according to the expressions **'Neutral', 'Angry', 'Disgust', 'Happy'.** Inside each sub-list 
+
+are 8 elements for the distances which must be ordered as per Table-2. All returned numeric outputs (both in lists and individual) must contain values rounded to four decimal places (if required to be rounded off). 
+
+Do not round the values during calculations. Instead round them only at the time when you save them into the final output variables.
+
+## Examples:
+
+Download the **ExpData_Sample.csv** file from the folder of Project 1 on LMS or Moodle. Some examples of how you can call your program from the Python shell (and examine the results it returns) are:
+
+```python
+>>> OP1,OP2,OP3,OP4 = main('ExpData_Sample.csv','E001','stats')
+>>> OP1 
+[[45.0087, 48.448, 29.9972, 32.9404], [104.1724, 110.913, 93.9636, 98.5776], [33.9933, 39.7572, 34.695, 40.0872], [49.5445, 66.477,31.0483, 34.1107], [5.5607, 9.7036, 5.4345, 9.3448], [7.4147, 8.9331, 7.4147, 8.7645], [150.0258, 175.289, 118.1052, 127.0695], [137.8113, 154.4196, 107.0492, 111.6436]]
+```
+
+```python
+>>> OP2
+[[16.3175, 10.2088, -0.5075, 34.6928, 0.3588, 0.0187, 48.2195, 46.5544], 
+[15.2932, 12.3354, -0.33, 18.4962, 0.1669, 0.1686, 39.2716, 45.8233], 
+[13.1529, 9.3969, -0.7016, 27.0089, 0.3791, 0.0, 39.5195, 36.9674], 
+[15.4137, 10.9684, -0.6347, 24.5052, 0.1262, 0.2101, 31.9206, 26.9959]]
+```
+
+```python
+>>> OP3
+[46.7753, 106.8638, 37.9698, 58.3879, 7.5469, 8.1489,160.8882, 148.6113]
+```
+
+```python
+>>> OP4
+[1.0775, 1.6565, 2.2229, 1.1442, 1.408, 0.6276, 3.5032, 1.8129]
+```
+
+```python
+>>> ID,cossim = main('ExpData_Sample.csv','E001','FR')
+```
+
+```python
+>>> ID
+'A004'
+```
+
+```python
+>>> cossim
+0.9992
+```
+
+
+
+## Assumptions:
+
+Your program can assume the following: 
+
+- Anything that is meant to be a string (i.e. header row) will be a string, and anything that is meant to be a number (i.e. data) will be a number.
+- The order of columns in each row will follow the order of the headings provided in the first row. 
+- The data of each individual adult will always be contiguous. It will never be spread out randomly.
+- The data for each expression will always be contiguous and in the order: **'Neutral', 'Angry', 'Disgust',** **'Happy'.**
 
 ![image-20220908182040558](./01-CITS1401-Computational-Thinking-with-Python.assets/image-20220908182040558.png)
 
