@@ -270,6 +270,35 @@ for text in content_lst:
             ID, Expression, Distance, Gdis, Ldis = ID, Expression, float(Distance), float(Gdis), float(Ldis)
 ```
 
+> 上面为了去除第一行的 head 使用的方法为：判断是否为纯数字。我更推荐下面编写成函数所用的代码方法，切片提取。`content_lst[1:]`。
+
+写代码建议：先实现基本的然后再改写成函数。
+
+```python
+def main(csvfile, adultID="", Option=""):
+    """
+        csvfile: 文件路径
+        adultID: 用户 ID
+        Option：用户操作
+        data_lst: 初步读取数据且处理的结果
+    """
+    data_lst = []
+    f = open(csvfile, "r")
+    content_lst = f.read().split("\n")
+    f.close()
+    for text in content_lst[1:]:
+        list_text = text.split(",")
+        if len(list_text) == 5:
+#             ID, Expression, Distance, Gdis, Ldis = list_text[0], list_text[1], float(list_text[2]), float(list_text[3]), float(list_text[4])
+            data_lst.append([list_text[0], list_text[1], float(list_text[2]), float(list_text[3]), float(list_text[4])])
+    return data_lst
+#     return opt1, "", "", "" 
+    
+            
+path = "data/ExpData_Sample.csv"
+main(path)
+```
+
 
 
 ### OP1
