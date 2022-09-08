@@ -299,7 +299,79 @@ path = "data/ExpData_Sample.csv"
 main(path)
 ```
 
-这里处理的
+这里处理的数据的逻辑是把每个数据按原本的数据来进行修改。「列表嵌套」
+
+```python
+def main(csvfile, adultID="", Option=""):
+    """
+        csvfile: 文件路径
+        adultID: 用户 ID
+        Option：用户操作
+        data_lst: 初步读取数据且处理的结果
+    """
+    data_lst = []
+    f = open(csvfile, "r")
+    content_lst = f.read().split("\n")
+    f.close()
+    for text in content_lst[1:]:
+        list_text = text.split(",")
+        if len(list_text) == 5:
+            data_lst.append([list_text[0], list_text[1], int(list_text[2]), float(list_text[3]), float(list_text[4])])
+    # 筛选出所需要处理的数据，并存入 select_list 列表
+    select_list = []
+    for text_lst in data_lst:
+        # if adultID == text_lst[0]:
+        if adultID in text_lst:
+            select_list.append(text_lst)
+#     print(select_list)
+    # 寻找 min_Gdis, max_Gdis, min_Ldis, max_Ldis 共有两两种方法
+    # 方法一：使用判断 if
+#     min_Gdis, max_Gdis, min_Ldis, max_Ldis = select_list[0][3], select_list[0][3], select_list[0][4], select_list[0][4]
+    # 最简单、容易理解的是使用 list
+    Gdis_lst_1 = []
+    Gdis_lst_2 = []
+    Gdis_lst_3 = []
+    Gdis_lst_4 = []
+    Gdis_lst_5 = []
+    Gdis_lst_6 = []
+    Gdis_lst_7 = []
+    Gdis_lst_8 = []
+    for s_detail in select_list:
+        if 1 in s_detail:
+            Gdis_lst_1.append(s_detail[3])
+#             Gdis_lst.append(s_detail) # 快速验证代码是否实现
+        elif 2 in s_detail:
+            Gdis_lst_2.append(s_detail[3])
+        elif 3 in s_detail:
+            Gdis_lst_3.append(s_detail[3])
+        elif 4 in s_detail:
+            Gdis_lst_4.append(s_detail[3])
+        elif 5 in s_detail:
+            Gdis_lst_5.append(s_detail[3])
+        elif 6 in s_detail:
+            Gdis_lst_6.append(s_detail[3])
+        elif 7 in s_detail:
+            Gdis_lst_7.append(s_detail[3])
+        else:
+            Gdis_lst_8.append(s_detail[3])
+            
+#     print(Gdis_lst)
+    print(max(Gdis_lst_1), min(Gdis_lst_1))
+    print(max(Gdis_lst_2), min(Gdis_lst_2))
+    print(max(Gdis_lst_3), min(Gdis_lst_3))
+    print(max(Gdis_lst_4), min(Gdis_lst_4))
+    print(max(Gdis_lst_5), min(Gdis_lst_5))
+    print(max(Gdis_lst_6), min(Gdis_lst_6))
+    print(max(Gdis_lst_7), min(Gdis_lst_7))
+    print(max(Gdis_lst_8), min(Gdis_lst_7))
+            
+path = "data/ExpData_Sample.csv"
+main(path, adultID="A002")
+```
+
+
+
+
 
 ### OP1
 
