@@ -243,6 +243,16 @@ Download the **ExpData_Sample.csv** file from the folder of Project 1 on LMS or 
 0.9992
 ```
 
+## 第一阶段答案
+
+### 读取
+
+首先要解决文件读取：
+
+
+
+### OP1
+
 
 
 ## Assumptions:
@@ -253,6 +263,11 @@ Your program can assume the following:
 - The order of columns in each row will follow the order of the headings provided in the first row. 
 - The data of each individual adult will always be contiguous. It will never be spread out randomly.
 - The data for each expression will always be contiguous and in the order: **'Neutral', 'Angry', 'Disgust',** **'Happy'.**
+- The data for distance may or may not be in order as in Table-2. For example, it is possible that the 6th distance of a particular expression is listed first and the 1st distance is listed last.
+- Distances can never be negative or zero. If any distance is negative or equal to zero, then replace it with 50.
+- No data will be missing in the csv file.
+- The **main()** function will always be provided with valid input parameters.
+- The formula for standard deviation and for calculating cosine similarity can be found at the end of the project sheet.
 
 ![image-20220908182040558](./01-CITS1401-Computational-Thinking-with-Python.assets/image-20220908182040558.png)
 
