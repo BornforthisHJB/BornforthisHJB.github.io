@@ -249,6 +249,27 @@ Download the **ExpData_Sample.csv** file from the folder of Project 1 on LMS or 
 
 首先要解决文件读取：
 
+```python
+path = "data/ExpData_Sample.csv"
+f = open(path, "r")
+content = f.read()
+# print(content)
+content_lst = content.split("\n")
+```
+
+接下来，把每列的数据处理出来，以便后续操作：
+
+```python
+# for text in content_lst[1:]:
+for text in content_lst:
+#     print(text.split(","))
+    list_text = text.split(",")
+    if len(list_text) == 5:
+        ID, Expression, Distance, Gdis, Ldis = list_text
+        if Distance.replace(".", "").isdigit():
+            ID, Expression, Distance, Gdis, Ldis = ID, Expression, float(Distance), float(Gdis), float(Ldis)
+```
+
 
 
 ### OP1
