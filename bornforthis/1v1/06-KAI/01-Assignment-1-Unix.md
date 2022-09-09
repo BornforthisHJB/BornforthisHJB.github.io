@@ -39,6 +39,17 @@ toc: true
 7. SublimeText：[https://www.sublimetext.com/download](https://www.sublimetext.com/download)
 8. [https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)
 
+## Windows Software For Secure Access:
+
+**Login Shell Programs**
+
+- **[putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html):** Further [information ](http://the.earth.li/~sgtatham/putty/0.53b/htmldoc/)and some [example commands](https://cims.nyu.edu/webapps/content/systems/userservices/netaccess/secure#putty)
+
+**File Transfer Programs**
+
+- **[winscp](https://winscp.net/)**
+- **[psftp](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html):** Further [information](http://the.earth.li/~sgtatham/putty/0.53b/htmldoc/Chapter6.html#6) and some [example commands](https://cims.nyu.edu/webapps/content/systems/userservices/netaccess/secure#psftp)
+
 ## 2. Assignment 1: Unix
 
 This assignment will create an initial Web page for you on a Unix server at i6.cims.nyu.edu/~netid.
@@ -106,6 +117,7 @@ Text submission
     - Python
     - Blog
     - 。。。
+    - 让自己更加高效。
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
