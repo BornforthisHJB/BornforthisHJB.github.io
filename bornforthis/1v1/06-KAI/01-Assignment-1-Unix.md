@@ -34,8 +34,8 @@ toc: true
 2. [http://www.barebones.com/products/textwrangler/](http://www.barebones.com/products/textwrangler/)
 3. [https://notepad-plus-plus.org/](https://notepad-plus-plus.org/)
 4. [https://fetchsoftworks.com/](https://fetchsoftworks.com/)
-5. Putty
-6. WinScp
+5. Putty：命令行操作服务器，SSH
+6. WinScp：文件操作
 7. 
 
 
