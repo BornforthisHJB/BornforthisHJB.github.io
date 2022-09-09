@@ -36,7 +36,50 @@ toc: true
 4. [https://fetchsoftworks.com/](https://fetchsoftworks.com/)
 5. Putty：命令行操作服务器，SSH
 6. WinScp：文件操作
-7. 
+
+## 2. Assignment 1: Unix
+
+This assignment will create an initial Web page for you on a Unix server at i6.cims.nyu.edu/~netid.
+
+This will just set up your Web page for the first time. Soon you will update the page, but for now you just need to access your account and establish your page.
+
+### 2.1 Writing Your Web Page
+
+You need to establish your page with your name in the title and body.
+
+Use [Atom](https://atom.io/), [TextWrangler](http://www.barebones.com/products/textwrangler/) (Mac), or [Notepad++](http://notepad-plus-plus.org/) (Windows) to type in or copy the HTML code below and enter your name into the title and body of the page.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Your name goes here</title>
+  </head>
+  <body>
+    <p>Your name and any other text you would like goes here.</p>
+  </body>
+</html>
+```
+
+Save this file as “`index.html`” on your computer. Test it locally in a Web browser to make sure it looks as it should using File > Open File . . . from within Chrome, Firefox, or Safari.
+
+### 2.2 Uploading Your Web Page
+
+Now, use an SFTP program to transfer your “index.html” Web page file from your computer to the i6 server. [Fetch](https://fetchsoftworks.com/) is a Mac SFTP program available for free to NYU students [from ITS](https://www.nyu.edu/its/software/#fetch). Alternatively, you can try [Cyberduck](http://cyberduck.ch/) for the Mac or [WinSCP](http://winscp.net/) for Windows. Whatever program you use, be sure to connect using SFTP (as opposed to FTP).
+
+If you are using Fetch, here is the opening screen; fill it in as follows but with your own NetID and click “Connect.” After logging in, you can use “Put” to copy files to the server and “Get” to bring files down from the server to your local machine.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
