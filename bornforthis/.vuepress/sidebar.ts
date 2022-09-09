@@ -109,7 +109,6 @@ export default sidebar({
 		}
 	],
 	"/1v1/06-KAI/": [
-		"/1v1/README",
 		{
 			text: "Web",
 			icon: "network",
