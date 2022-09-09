@@ -84,7 +84,16 @@ export default sidebar({
 			icon: "python",
 			link: "03-Dannie/01",
 		},
-		"06-KAI/01-Assignment-1-Unix",
+		{
+			text: "04-TommyTian",
+			icon: "network",
+			link: "04-TommyTian/01",
+		},
+		{
+			text: "06-KAI",
+			icon: "python",
+			link: "06-KAI/01-Assignment-1-Unix",
+		}
 	],
 	"/1v1/03-Dannie": [
 		{
