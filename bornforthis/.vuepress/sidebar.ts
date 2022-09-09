@@ -80,6 +80,15 @@ export default sidebar({
 			]
 		}
 	],
+	"/1v1/03-KAI/": [
+		{
+			text: "Web",
+			icon: "network",
+			children: [
+				"01-web",
+			]
+		}
+	],
 	"/1v1/02-yuebao": [
 		{
 			text: "2022年",
