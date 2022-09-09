@@ -95,15 +95,7 @@ Text submission
 
 ![image-20220909214735804](./01-Assignment-1-Unix.assets/image-20220909214735804.png)
 
-
-
-
-
-
-
-
-
-
+成功：[https://i6.cims.nyu.edu/~zq2076/index.html](https://i6.cims.nyu.edu/~zq2076/index.html)
 
 
 
