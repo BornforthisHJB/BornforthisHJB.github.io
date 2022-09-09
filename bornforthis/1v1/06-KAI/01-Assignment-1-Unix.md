@@ -36,6 +36,7 @@ toc: true
 4. [https://fetchsoftworks.com/](https://fetchsoftworks.com/)
 5. Putty：命令行操作服务器，SSH
 6. WinScp：文件操作
+7. SublimeText：[https://www.sublimetext.com/download](https://www.sublimetext.com/download)
 
 ## 2. Assignment 1: Unix
 
