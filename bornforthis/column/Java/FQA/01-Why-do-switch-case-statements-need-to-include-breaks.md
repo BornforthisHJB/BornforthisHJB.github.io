@@ -61,3 +61,83 @@ Default
 
 为此，我们也可以看一下上面的代码编译后的 class 文件，我们可以看到如下内容：
 
+```java
+public static void main();  
+   0  iload_0 [n]  
+   1  tableswitch default: 49  
+        case 1: 28  
+        case 2: 35  
+        case 3: 42  
+  28  getstatic java.lang.System.out : java.io.PrintStream [22]  
+  31  iconst_1  
+  32  invokevirtual java.io.PrintStream.println(int) : void [28]  
+  35  getstatic java.lang.System.out : java.io.PrintStream [22]  
+  38  iconst_2  
+  39  invokevirtual java.io.PrintStream.println(int) : void [28]  
+  42  getstatic java.lang.System.out : java.io.PrintStream [22]  
+  45  iconst_3  
+  46  invokevirtual java.io.PrintStream.println(int) : void [28]  
+  49  getstatic java.lang.System.out : java.io.PrintStream [22]  
+  52  ldc <String "Default"> [33]  
+  54  invokevirtual java.io.PrintStream.println(java.lang.String) : void [35]
+```
+
+上面编译后的语句每行前面的数字是程序的指定序号，我们可以把它简单的理解为行号，我们可以看到数字为 1 的那行定义了一个  switch 指定，其默认会跳到 49 行，如果传入的参数是 1 则跳到 28 行执行，如果是 2 则跳到 35 行执行，如果是 3 则跳到 42 行执行。
+
+那么我们先来看程序的第 28 行到 32 行，其对应的就是调用 `System.out.println` 输出 1，完了后没有特殊的指令，程序是会继续顺序执行的，也就是会依次执行 35、38、直到 57 行结束。
+
+如果我们把源程序的 case 语句末端都加上 break 语句，如下这样：
+
+```java
+public class demo {
+    public static void main(String[] args) {
+        int n = 2;
+        switch (n) {
+            case 1:
+                System.out.println(1);
+                break;
+            case 2:
+                System.out.println(2);
+                break;
+            case 3:
+                System.out.println(3);
+                break;
+            default:
+                System.out.println("Default");
+                break;
+        }
+    }
+}
+```
+
+ 那么对应的编译的 class 文件通过，编辑器打开后可以看到如下内容：
+
+```java
+public static void main();  
+   0  iload_0 [n]  
+   1  tableswitch default: 58  
+        case 1: 28  
+        case 2: 38  
+        case 3: 48  
+  28  getstatic java.lang.System.out : java.io.PrintStream [22]  
+  31  iconst_1  
+  32  invokevirtual java.io.PrintStream.println(int) : void [28]  
+  35  goto 66  
+  38  getstatic java.lang.System.out : java.io.PrintStream [22]  
+  41  iconst_2  
+  42  invokevirtual java.io.PrintStream.println(int) : void [28]  
+  45  goto 66  
+  48  getstatic java.lang.System.out : java.io.PrintStream [22]  
+  51  iconst_3  
+  52  invokevirtual java.io.PrintStream.println(int) : void [28]  
+  55  goto 66  
+  58  getstatic java.lang.System.out : java.io.PrintStream [22]  
+  61  ldc <String "Default"> [33]  
+  63  invokevirtual java.io.PrintStream.println(java.lang.String) : void [35]  
+  66  return
+```
+
+我们可以看到 switch 语句默认会执行 58 行，如果传入的参数是 1 则会执行 28 行，如果是 2 则会从 38 行开始执行，接着我们可以看到 28 行开始是执行的 `System.out.println(1)` 的逻辑，完了后会顺序执行到 35 行，35 行的指令是会引导程序执行到第 66 行，也就是跳出了 switch 逻辑，对应我们的测试代码就是程序结束了。这也是为什么我们在使用 switch 语句时通常需要在每个 case 语句结束时加入 break 指令的原因。
+
+
+
