@@ -113,7 +113,7 @@ export default sidebar({
 			text: "Web",
 			icon: "network",
 			children: [
-				"01-web",
+				"01-Assignment-1-Unix",
 			]
 		}
 	],
