@@ -1,5 +1,5 @@
 ---
-title: 01-Assignment 1: Unix
+title: 01-Assignment 1 Unix
 icon: network
 time: 2022-09-09 20:38:52
 author: AI悦创

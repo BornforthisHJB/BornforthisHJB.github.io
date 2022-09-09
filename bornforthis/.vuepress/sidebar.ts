@@ -72,12 +72,18 @@ export default sidebar({
 		{
 			text: "01-Thomas-hw-note",
 			icon: "python",
-			collapsable: true,
+			// collapsable: true,
 			link: "01-Thomas-hw-note/01-Variable",
 		},
-		
-		"02-yuebao/01-Plan",
-		"03-Dannie/01",
+		{
+			text: "02-yuebao",
+			link: "02-yuebao/01-Plan",
+		},
+		{
+			text: "03-Dannie",
+			icon: "python",
+			link: "03-Dannie/01",
+		},
 		"06-KAI/01-Assignment-1-Unix",
 	],
 	"/1v1/03-Dannie": [
