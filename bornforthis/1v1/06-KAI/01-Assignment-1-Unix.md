@@ -69,7 +69,7 @@ Now, use an SFTP program to transfer your “index.html” Web page file from yo
 
 If you are using Fetch, here is the opening screen; fill it in as follows but with your own NetID and click “Connect.” After logging in, you can use “Put” to copy files to the server and “Get” to bring files down from the server to your local machine.
 
-
+![Screen Shot 2017-09-29 at 11.06.54 AM](./01-Assignment-1-Unix.assets/Screen-Shot-2017-09-29-at-11.06.54-AM-1024x820.png)
 
 
 
