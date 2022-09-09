@@ -73,21 +73,27 @@ If you are using Fetch, here is the opening screen; fill it in as follows but wi
 
 ![Screen Shot 2017-09-29 at 11.06.54 AM](./01-Assignment-1-Unix.assets/Screen-Shot-2017-09-29-at-11.06.54-AM-1024x820.png)
 
+Upload the index.html file from your computer to your i6 account inside your **public_html** folder. Once you have uploaded the file, check to make sure your Web page is visible at: i6.cims.nyu.edu/~netid
 
+### 2.3 Submitting Your Assignment
 
+- Post the URL of your Web page to BrightSpace for your instructor and grader.
 
+**Start Date**
 
+- Sep 8, 2022 6:59 AM
 
+**Due Date**
 
+- Sep 13, 2022 8:00 AM
 
+![Screen Shot 2017-09-29 at 11.06.54 AM](./01-Assignment-1-Unix.assets/Screen Shot 2017-09-29 at 11.06.54 AM.png)
 
+## Submit
 
+Text submission
 
-
-
-
-
-
+![image-20220909214735804](./01-Assignment-1-Unix.assets/image-20220909214735804.png)
 
 
 
