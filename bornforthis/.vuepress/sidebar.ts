@@ -104,7 +104,7 @@ export default sidebar({
 			collapsable: true,
 			icon: "java",
 			children: [
-				"01-Why-do-switch-case-statements-need-to-include-breaks",
+				"FQA/01-Why-do-switch-case-statements-need-to-include-breaks",
 			]
 		}
 	],
