@@ -1,13 +1,17 @@
 ---
-title: 01-
-icon: python
+title: 01-Assignment 1: Unix
+icon: network
 time: 2022-09-09 20:38:52
 author: AI悦创
 isOriginal: true
 category: 
     - Python 1v1
+    - Java 1v1
+    - 纽约大学一对一
 tag:
     - Python 1v1
+    - Java 1v1
+    - 纽约大学一对一
 sticky: false
 star: false
 password: false
@@ -24,7 +28,12 @@ backToTop: true
 toc: true
 ---
 
+## 1. 软件安装
 
+1. [https://atom.io/](https://atom.io/)
+2. [http://www.barebones.com/products/textwrangler/](http://www.barebones.com/products/textwrangler/)
+3. [https://notepad-plus-plus.org/](https://notepad-plus-plus.org/)
+4. [https://fetchsoftworks.com/](https://fetchsoftworks.com/)
 
 
 

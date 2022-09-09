@@ -1,3 +1,4 @@
+import { text } from "stream/consumers";
 import { sidebar } from "vuepress-theme-hope";
 
 // export default sidebar({
@@ -67,6 +68,18 @@ export default sidebar({
 			]
 		}
 	],
+	"/1v1/": [
+		{
+			text: "01-Thomas-hw-note",
+			icon: "python",
+			collapsable: true,
+			link: "01-Thomas-hw-note/01-Variable",
+		},
+		
+		"02-yuebao/01-Plan",
+		"03-Dannie/01",
+		"06-KAI/01-Assignment-1-Unix",
+	],
 	"/1v1/03-Dannie": [
 		{
 			text: "Python 环境搭建",
@@ -80,7 +93,7 @@ export default sidebar({
 			]
 		}
 	],
-	"/1v1/03-KAI/": [
+	"/1v1/06-KAI/": [
 		{
 			text: "Web",
 			icon: "network",
