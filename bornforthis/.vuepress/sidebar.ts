@@ -98,6 +98,14 @@ export default sidebar({
 			children: [
 				"chapter01/01",
 			],
+		},
+		{
+			text: "FQA",
+			collapsable: true,
+			icon: "java",
+			children: [
+				"01-Why-do-switch-case-statements-need-to-include-breaks",
+			]
 		}
 	],
 	"/column/tianchi/": [
