@@ -23,21 +23,21 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 ## 学习网站
 
 
-| 序号 | 网站名称                          | 内容                      | 链接                                                         | 语言 | 发现原因                |
-| ---- | --------------------------------- | ------------------------- | ------------------------------------------------------------ | ---- | ----------------------- |
-| 01   | **studytonight**                  | 可以学习 IT 类型资料      | [https://www.studytonight.com/](https://www.studytonight.com/) | EN   | 搜寻 tkinter 知识点     |
-| 02   | **tutorialspoint**                | 可以学习 IT 类型资料      | [https://www.tutorialspoint.com/](https://www.tutorialspoint.com/) | EN   | 搜寻 tkinter 知识点     |
-| 03   | **programiz**                     | 可以学习 IT 类型资料      | [https://www.programiz.com/](https://www.programiz.com/)     | EN   | 搜寻 casefold() 知识点  |
-| 04   | **cainiaojc**                     | 可以学习 IT 类型资料      | [https://www.cainiaojc.com/](https://www.cainiaojc.com/)     | ZH   | 搜寻 casefold() 知识点  |
-| 05   | **pyscript**                      | 开源web运行Python         | [https://pyscript.net/](https://pyscript.net/)               | EN   | 公众号                  |
-| 06   | **W3Schools**                     | 学习代码                  | [https://www.w3schools.com/](https://www.w3schools.com/)     | EN   | HTML                    |
-| 07   | **markmap**                       | Markdown 转 脑图          | [https://markmap.js.org/](https://markmap.js.org/)           | EN   |                         |
-| 08   | ![logo](./README.assets/logo.png) | 学习 Python 与 gui 之类的 | [https://www.delftstack.com/zh/](https://www.delftstack.com/zh/) | EN   | Python GUI Tkinter Text |
-| 09   | 流沙团队书籍                      | 全栈                      | [https://book.bornforthi.com/](https://book.bornforthi.com/) | zh   |                         |
-| 10   | mozilla                           | Web                       | [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/) | EN   | HTML em                 |
-| 11   |                                   |                           |                                                              |      |                         |
-|      |                                   |                           |                                                              |      |                         |
-|      |                                   |                           |                                                              |      |                         |
+| 序号 | 网站名称                                                     | 内容                      | 链接                                                         | 语言 | 发现原因                |
+| ---- | ------------------------------------------------------------ | ------------------------- | ------------------------------------------------------------ | ---- | ----------------------- |
+| 01   | **studytonight**                                             | 可以学习 IT 类型资料      | [https://www.studytonight.com/](https://www.studytonight.com/) | EN   | 搜寻 tkinter 知识点     |
+| 02   | **tutorialspoint**                                           | 可以学习 IT 类型资料      | [https://www.tutorialspoint.com/](https://www.tutorialspoint.com/) | EN   | 搜寻 tkinter 知识点     |
+| 03   | **programiz**                                                | 可以学习 IT 类型资料      | [https://www.programiz.com/](https://www.programiz.com/)     | EN   | 搜寻 casefold() 知识点  |
+| 04   | **cainiaojc**                                                | 可以学习 IT 类型资料      | [https://www.cainiaojc.com/](https://www.cainiaojc.com/)     | ZH   | 搜寻 casefold() 知识点  |
+| 05   | **pyscript**                                                 | 开源web运行Python         | [https://pyscript.net/](https://pyscript.net/)               | EN   | 公众号                  |
+| 06   | **W3Schools**                                                | 学习代码                  | [https://www.w3schools.com/](https://www.w3schools.com/)     | EN   | HTML                    |
+| 07   | **markmap**                                                  | Markdown 转 脑图          | [https://markmap.js.org/](https://markmap.js.org/)           | EN   |                         |
+| 08   | ![logo](./README.assets/logo.png)                            | 学习 Python 与 gui 之类的 | [https://www.delftstack.com/zh/](https://www.delftstack.com/zh/) | EN   | Python GUI Tkinter Text |
+| 09   | 流沙团队书籍                                                 | 全栈                      | [https://book.bornforthi.com/](https://book.bornforthi.com/) | zh   |                         |
+| 10   | mozilla                                                      | Web                       | [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/) | EN   | HTML em                 |
+| 11   | ![geeksforgeeks](./README.assets/gfg-gg-logo.svg)**geeksforgeeks** | 全栈                      | [https://www.geeksforgeeks.org/](https://www.geeksforgeeks.org/) | EN   | Python                  |
+|      |                                                              |                           |                                                              |      |                         |
+|      |                                                              |                           |                                                              |      |                         |
 
 ## 好的开源项目
 
