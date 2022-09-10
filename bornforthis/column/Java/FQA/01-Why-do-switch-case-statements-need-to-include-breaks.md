@@ -26,6 +26,8 @@ backToTop: true
 toc: true
 ---
 
+你好，我们在研究 switch 之前呢，我要给你介绍一下 javap。—— javap 是 jdk 自带的一个工具，可以反编译，也可以查看 java 编译器生成的字节码，是分析代码的一个好工具。
+
 假设我们有如下这样一个 switch 语句：
 
 ```java
