@@ -599,6 +599,15 @@ if __name__ == '__main__':
 
 目前已经完成 stats 的结果，还差一个 FR 的结果。
 
+添加一个 if 判断即可：
+
+```python
+    if Option.upper() == "STATS":
+        return OP1_list, OP2_list, OP3_list, OP4_list
+    elif Option.upper() == "FR":
+        return ID, cossim
+```
+
 
 
 
