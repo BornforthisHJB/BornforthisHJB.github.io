@@ -3,14 +3,14 @@ title: 友情链接
 icon: pengyoufill
 ---
 
-| 序号 | 名称         | 链接                                                       | 网站说明           |
-| ---- | ------------ | ---------------------------------------------------------- | ------------------ |
-| 01   | **Oh-la!**   | [https://www.thomasxiao.com](https://www.thomasxiao.com)   |                    |
-| 02   | **初的小站** | [https://www.songonline.top/](https://www.songonline.top/) | 记录分享自己的生活 |
-|      |              |                                                            |                    |
-|      |              |                                                            |                    |
-|      |              |                                                            |                    |
-|      |              |                                                            |                    |
-|      |              |                                                            |                    |
-|      |              |                                                            |                    |
+| 序号 | 名称             | 链接                                                         | 网站说明           |
+| ---- | ---------------- | ------------------------------------------------------------ | ------------------ |
+| 01   | **Oh-la!**       | [https://www.thomasxiao.com](https://www.thomasxiao.com)     |                    |
+| 02   | **初的小站**     | [https://www.songonline.top/](https://www.songonline.top/)   | 记录分享自己的生活 |
+| 03   | **danniepython** | [http://www.danniepython.com/](http://www.danniepython.com/) | 学员笔记网站       |
+|      |                  |                                                              |                    |
+|      |                  |                                                              |                    |
+|      |                  |                                                              |                    |
+|      |                  |                                                              |                    |
+|      |                  |                                                              |                    |
 
