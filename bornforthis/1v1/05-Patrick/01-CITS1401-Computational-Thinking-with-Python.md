@@ -371,9 +371,239 @@ main(path, adultID="A002")
 
 
 
+## over op1、op2、op3、op4
+
+```python
+def main(csvfile, adultID="", Option=""):
+    data_list = []
+    f = open(csvfile, "r")
+    content = f.read()
+    content_list = content.split("\n")
+    f.close()
+    for text in content_list[1:]:
+        text = text.split(",")
+        if len(text) == 5:
+            data_list.append([text[0], text[1], int(text[2]), float(text[3]), float(text[4])])
+    # return data_list
+    select_list = []
+    for text_list in data_list:
+        if adultID == text_list[0]:
+            select_list.append(text_list)
+    # print(data_list)
+
+    Gdis_list_1 = []
+    Gdis_list_2 = []
+    Gdis_list_3 = []
+    Gdis_list_4 = []
+    Gdis_list_5 = []
+    Gdis_list_6 = []
+    Gdis_list_7 = []
+    Gdis_list_8 = []
+    Ldis_list_1 = []
+    Ldis_list_2 = []
+    Ldis_list_3 = []
+    Ldis_list_4 = []
+    Ldis_list_5 = []
+    Ldis_list_6 = []
+    Ldis_list_7 = []
+    Ldis_list_8 = []
+
+    for Distance_list in select_list:
+        if 1 in Distance_list:
+            Gdis_list_1.append(Distance_list[3])
+        elif 2 in Distance_list:
+            Gdis_list_2.append(Distance_list[3])
+        elif 3 in Distance_list:
+            Gdis_list_3.append(Distance_list[3])
+        elif 4 in Distance_list:
+            Gdis_list_4.append(Distance_list[3])
+        elif 5 in Distance_list:
+            Gdis_list_5.append(Distance_list[3])
+        elif 6 in Distance_list:
+            Gdis_list_6.append(Distance_list[3])
+        elif 7 in Distance_list:
+            Gdis_list_7.append(Distance_list[3])
+        else:
+            Gdis_list_8.append(Distance_list[3])
+
+    '''
+    print(min(Gdis_list_1),max(Gdis_list_1))
+    print(min(Gdis_list_2),max(Gdis_list_2))
+    print(min(Gdis_list_3),max(Gdis_list_3))
+    print(min(Gdis_list_4),max(Gdis_list_4))
+    print(min(Gdis_list_5),max(Gdis_list_5))
+    print(min(Gdis_list_6),max(Gdis_list_6))
+    print(min(Gdis_list_7),max(Gdis_list_7))
+    print(min(Gdis_list_8),max(Gdis_list_8))
+    '''
+
+    for Distance_list in select_list:
+        if 1 in Distance_list:
+            Ldis_list_1.append(Distance_list[4])
+        elif 2 in Distance_list:
+            Ldis_list_2.append(Distance_list[4])
+        elif 3 in Distance_list:
+            Ldis_list_3.append(Distance_list[4])
+        elif 4 in Distance_list:
+            Ldis_list_4.append(Distance_list[4])
+        elif 5 in Distance_list:
+            Ldis_list_5.append(Distance_list[4])
+        elif 6 in Distance_list:
+            Ldis_list_6.append(Distance_list[4])
+        elif 7 in Distance_list:
+            Ldis_list_7.append(Distance_list[4])
+        else:
+            Ldis_list_8.append(Distance_list[4])
+    # print(Ldis_list_1)
+    '''        
+    print(min(Ldis_list_1),max(Ldis_list_1))
+    print(min(Ldis_list_2),max(Ldis_list_2))
+    print(min(Ldis_list_3),max(Ldis_list_3))
+    print(min(Ldis_list_4),max(Ldis_list_4))
+    print(min(Ldis_list_5),max(Ldis_list_5))
+    print(min(Ldis_list_6),max(Ldis_list_6))
+    print(min(Ldis_list_7),max(Ldis_list_7))
+    print(min(Ldis_list_8),max(Ldis_list_8))
+    '''
+    dis_list_1 = [min(Gdis_list_1), max(Gdis_list_1), min(Ldis_list_1), max(Ldis_list_1)]
+    dis_list_2 = [min(Gdis_list_2), max(Gdis_list_2), min(Ldis_list_2), max(Ldis_list_2)]
+    dis_list_3 = [min(Gdis_list_3), max(Gdis_list_3), min(Ldis_list_3), max(Ldis_list_3)]
+    dis_list_4 = [min(Gdis_list_4), max(Gdis_list_4), min(Ldis_list_4), max(Ldis_list_4)]
+    dis_list_5 = [min(Gdis_list_5), max(Gdis_list_5), min(Ldis_list_5), max(Ldis_list_5)]
+    dis_list_6 = [min(Gdis_list_6), max(Gdis_list_6), min(Ldis_list_6), max(Ldis_list_6)]
+    dis_list_7 = [min(Gdis_list_7), max(Gdis_list_7), min(Ldis_list_7), max(Ldis_list_7)]
+    dis_list_8 = [min(Gdis_list_8), max(Gdis_list_8), min(Ldis_list_8), max(Ldis_list_8)]
+    OP1_list = [dis_list_1, dis_list_2, dis_list_3, dis_list_4, dis_list_5, dis_list_6, dis_list_7, dis_list_8]
+    # print(OP1_list)
+
+    Gdis_Neutral_list = []
+    Ldis_Neutral_list = []
+    sub_Neutral_list = []
+    Gdis_Angry_list = []
+    Ldis_Angry_list = []
+    sub_Angry_list = []
+    Gdis_Disgust_list = []
+    Ldis_Disgust_list = []
+    sub_Disgust_list = []
+    Gdis_Happy_list = []
+    Ldis_Happy_list = []
+    sub_Happy_list = []
+    for Exp_list in select_list:
+        if 'Neutral' in Exp_list:
+            Gdis_Neutral_list.append(Exp_list[3])
+            Ldis_Neutral_list.append(Exp_list[4])
+            sub_Neutral_list = [Gdis_Neutral_list[i] - Ldis_Neutral_list[i] for i in range(len(Gdis_Neutral_list))]
+
+    for Exp_list in select_list:
+        if 'Angry' in Exp_list:
+            Gdis_Angry_list.append(Exp_list[3])
+            Ldis_Angry_list.append(Exp_list[4])
+            sub_Angry_list = [Gdis_Angry_list[i] - Ldis_Angry_list[i] for i in range(len(Gdis_Angry_list))]
+
+    for Exp_list in select_list:
+        if 'Disgust' in Exp_list:
+            Gdis_Disgust_list.append(Exp_list[3])
+            Ldis_Disgust_list.append(Exp_list[4])
+            sub_Disgust_list = [Gdis_Disgust_list[i] - Ldis_Disgust_list[i] for i in range(len(Gdis_Disgust_list))]
+
+    for Exp_list in select_list:
+        if 'Happy' in Exp_list:
+            Gdis_Happy_list.append(Exp_list[3])
+            Ldis_Happy_list.append(Exp_list[4])
+            sub_Happy_list = [Gdis_Happy_list[i] - Ldis_Happy_list[i] for i in range(len(Gdis_Happy_list))]
+
+    OP2_list = [sub_Neutral_list, sub_Angry_list, sub_Disgust_list, sub_Happy_list]
+    # print(OP2_list)
+
+    avg_G_1 = sum(Gdis_list_1) / len(Gdis_list_1)
+    avg_G_2 = sum(Gdis_list_2) / len(Gdis_list_2)
+    avg_G_3 = sum(Gdis_list_3) / len(Gdis_list_3)
+    avg_G_4 = sum(Gdis_list_4) / len(Gdis_list_4)
+    avg_G_5 = sum(Gdis_list_5) / len(Gdis_list_5)
+    avg_G_6 = sum(Gdis_list_6) / len(Gdis_list_6)
+    avg_G_7 = sum(Gdis_list_7) / len(Gdis_list_7)
+    avg_G_8 = sum(Gdis_list_8) / len(Gdis_list_8)
+    OP3_list = [avg_G_1, avg_G_2, avg_G_3, avg_G_4, avg_G_5, avg_G_6, avg_G_7, avg_G_8]
+    # print(OP3_list)
+
+    avg_L_1 = sum(Ldis_list_1) / len(Ldis_list_1)
+    avg_L_2 = sum(Ldis_list_2) / len(Ldis_list_2)
+    avg_L_3 = sum(Ldis_list_3) / len(Ldis_list_3)
+    avg_L_4 = sum(Ldis_list_4) / len(Ldis_list_4)
+    avg_L_5 = sum(Ldis_list_5) / len(Ldis_list_5)
+    avg_L_6 = sum(Ldis_list_6) / len(Ldis_list_6)
+    avg_L_7 = sum(Ldis_list_7) / len(Ldis_list_7)
+    avg_L_8 = sum(Ldis_list_8) / len(Ldis_list_8)
+
+    square_Ldis_list_1 = []
+    square_Ldis_list_2 = []
+    square_Ldis_list_3 = []
+    square_Ldis_list_4 = []
+    square_Ldis_list_5 = []
+    square_Ldis_list_6 = []
+    square_Ldis_list_7 = []
+    square_Ldis_list_8 = []
+    for i in Ldis_list_1:
+        square_Ldis_list_1.append((i - avg_L_1) ** 2)
+        variance_1 = sum(square_Ldis_list_1) / len(square_Ldis_list_1)
+        standard_1 = variance_1 ** (1 / 2)
+
+    for i in Ldis_list_2:
+        square_Ldis_list_2.append((i - avg_L_2) ** 2)
+        variance_2 = sum(square_Ldis_list_2) / len(square_Ldis_list_2)
+        standard_2 = variance_2 ** (1 / 2)
+
+    for i in Ldis_list_3:
+        square_Ldis_list_3.append((i - avg_L_3) ** 2)
+        variance_3 = sum(square_Ldis_list_3) / len(square_Ldis_list_3)
+        standard_3 = variance_3 ** (1 / 2)
+
+    for i in Ldis_list_4:
+        square_Ldis_list_4.append((i - avg_L_4) ** 2)
+        variance_4 = sum(square_Ldis_list_4) / len(square_Ldis_list_4)
+        standard_4 = variance_4 ** (1 / 2)
+
+    for i in Ldis_list_5:
+        square_Ldis_list_5.append((i - avg_L_5) ** 2)
+        variance_5 = sum(square_Ldis_list_5) / len(square_Ldis_list_5)
+        standard_5 = variance_5 ** (1 / 2)
+
+    for i in Ldis_list_6:
+        square_Ldis_list_6.append((i - avg_L_6) ** 2)
+        variance_6 = sum(square_Ldis_list_6) / len(square_Ldis_list_6)
+        standard_6 = variance_6 ** (1 / 2)
+
+    for i in Ldis_list_7:
+        square_Ldis_list_7.append((i - avg_L_7) ** 2)
+        variance_7 = sum(square_Ldis_list_7) / len(square_Ldis_list_7)
+        standard_7 = variance_7 ** (1 / 2)
+
+    for i in Ldis_list_8:
+        square_Ldis_list_8.append((i - avg_L_8) ** 2)
+        variance_8 = sum(square_Ldis_list_8) / len(square_Ldis_list_8)
+        standard_8 = variance_8 ** (1 / 2)
+
+    OP4_list = [standard_1, standard_2, standard_3, standard_4, standard_5, standard_6, standard_7, standard_8]
+    # print(OP4_list)
+    return OP1_list, OP2_list, OP3_list, OP4_list
 
 
-### OP1
+if __name__ == '__main__':
+    path = "ExpData_Sample.csv"
+    main(csvfile=path, adultID="E001")
+```
+
+![image-20220911110429465](./01-CITS1401-Computational-Thinking-with-Python.assets/image-20220911110429465.png)
+
+## 添加 Stats
+
+目前已经完成 stats 的结果，还差一个 FR 的结果。
+
+
+
+
+
+
 
 
 
