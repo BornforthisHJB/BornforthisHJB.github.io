@@ -286,7 +286,75 @@ public class switch_test {
 
 > goto：无条件跳转，goto 1 表示跳转到标号 1 的代码处。
 
-再写代码样例，这次在代码中给每个case都加上break。
+再写代码样例，这次在代码中给每个 case 都加上 break。
+
+```java
+public class switch_test {
+    public static void main(String[] args) {
+        int i = 0;
+        switch (i) {
+            case 0:
+                System.out.println(0);
+                break;
+            case 1:
+                System.out.println(1);
+                break;
+            case 2:
+                System.out.println(2);
+                break;
+        }
+    }
+}
+// 输出
+0
+```
+
+还是进行使用命令行编译和反编译：
+
+```java
+➜  src git:(main) ✗ javac switch_test.java
+➜  src git:(main) ✗ javap -c switch_test  
+Compiled from "switch_test.java"
+public class switch_test {
+  public switch_test();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: iconst_0
+       1: istore_1
+       2: iload_1
+       3: tableswitch   { // 0 to 2
+                     0: 28
+                     1: 38
+                     2: 48
+               default: 55
+          }
+      28: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      31: iconst_0
+      32: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      35: goto          55
+      38: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      41: iconst_1
+      42: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      45: goto          55
+      48: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      51: iconst_2
+      52: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      55: return
+}
+```
+
+如图，与第一次的字节码相比，在标号 35、45 都有了 goto 指令。
+
+如果 case 0 匹配成功，则跳到标号 28 执行，执行完代码块对应的31、32指令之后，执行35的goto指令跳转到标号55，这样就跳出了switch作用范围，case 1和2也不会被执行。
+
+等等，怎么少了一个goto，在标号55的上方应该还有一个goto才对！其实这就涉及到了编译器优化技术，最后一个goto也是跳转到标号55的指令，但没有goto下一步也一样顺序执行此行指令，所以这个goto被编译器视为无用代码进行了消除。
+
+
 
 
 
