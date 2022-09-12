@@ -43,17 +43,22 @@ toc: true
 按照惯例，先写 demo 表述问题。
 
 ```java
- public static void main(String[] args) {
-    int i = 0;
-    switch (i) {
-        case 0:
-            System.out.println(0);
-        case 1:
-            System.out.println(1);
-        case 2:
-            System.out.println(2);
-  }
+public class switch_test {
+    public static void main(String[] args) {
+        int i = 0;
+        switch (i) {
+            case 0:
+                System.out.println(0);
+            case 1:
+                System.out.println(1);
+            case 2:
+                System.out.println(2);
+        }
+    }
+}
 ```
+
+运行代码，结果如下：
 
 
 
