@@ -64,7 +64,7 @@ public class switch_test {
 
 明明只匹配了 case 0，为什么 1 和 2 也执行了？很费解！按照惯用套路，看看字节码能不能给个答案。
 
-## javac 编译和 javap 查看：
+## javac 编译和 javap 查看
 
 
 
