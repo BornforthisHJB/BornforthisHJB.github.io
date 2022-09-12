@@ -60,11 +60,11 @@ public class switch_test {
 
 运行代码，结果如下：
 
+![image-20220912124509701](./01-Why-do-switch-case-statements-need-to-include-breaks.assets/image-20220912124509701.png)
 
+明明只匹配了 case 0，为什么 1 和 2 也执行了？很费解！按照惯用套路，看看字节码能不能给个答案。
 
-
-
-
+## javac 编译和 javap 查看：
 
 
 
