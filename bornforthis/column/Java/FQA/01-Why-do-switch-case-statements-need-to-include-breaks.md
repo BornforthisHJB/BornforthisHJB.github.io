@@ -42,6 +42,33 @@ toc: true
 
 按照惯例，先写 demo 表述问题。
 
+```java
+ public static void main(String[] args) {
+    int i = 0;
+    switch (i) {
+        case 0:
+            System.out.println(0);
+        case 1:
+            System.out.println(1);
+        case 2:
+            System.out.println(2);
+  }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 你好，我们在研究 switch 之前呢，我要给你介绍一下 javap。—— javap 是 jdk 自带的一个工具，可以反编译，也可以查看 java 编译器生成的字节码，是分析代码的一个好工具。
