@@ -250,25 +250,43 @@ public class switch_test {
 ```
 
 ```java
+public class switch_test {
+    public static void main(String[] args) {
+        int i = 0;
+        switch (i) {
+            case 0:
+                System.out.println(0);
+//                break;
+                return;
+            case 111:
+                System.out.println(1);
+//                break;
+                return;
+            case 2:
+                System.out.println(2);
+//                break;
+                return;
+        }
+        System.out.println("无 return");
+    }
+}
 ```
 
+```java
+0
+```
 
-
-
-
-
-
-
+可以看见，原本的 `无 return` 没有再输出了。
 
 那怎么办嘞....
 
+![img](./01-Why-do-switch-case-statements-need-to-include-breaks.assets/20210617133452366.gif)
 
+## 关于 goto
 
+> goto：无条件跳转，goto 1 表示跳转到标号 1 的代码处。
 
-
-
-
-
+再写代码样例，这次在代码中给每个case都加上break。
 
 
 
