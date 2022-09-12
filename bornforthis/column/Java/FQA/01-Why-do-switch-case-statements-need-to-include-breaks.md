@@ -187,13 +187,82 @@ public class switch_test {
 }
 ```
 
-如上代码，case 为 0 时，跳转到标号 28 代码处；为1时跳转到标号35代码处；为2时跳转到标号43代码处；default则跳转到标号49代码处。
+如上代码：
 
-这不，答案就出来了，当case 0匹配了之后，直接跳转到标号28代码处开始执行，输出0，然后策马奔腾，一路小下坡，顺序执行完后面所有代码，直到标号49 return，方法完执行完成，程序结束。
+- case 为 0 时，跳转到标号 28 代码处；
+- 为 1 时跳转到标号 35 代码处；
+- 为 2 时跳转到标号 43 代码处；
+- default 则跳转到标号 49 代码处。
 
-如果按照正常的思维，是不是case 0匹配之后，跳到28，执行完28、31、32输出0之后，就应该直接跳走，直接执行49。那么，这个"跳走”用字节码应该怎么表示？
+这不，答案就出来了，当 case 0 匹配了之后，直接跳转到标号 28 代码处开始执行，输出 0，然后策马奔腾，一路小下坡，顺序执行完后面所有代码，直到标号 49 return，方法完执行完成，程序结束。
 
-用return？那不行，因为return会结束方法，这样switch后代码也无法执行。那怎么办嘞....
+**如果按照正常的思维，是不是 case 0 匹配之后，跳到 28，执行完 28、31、32 输出 0 之后，就应该直接跳走，直接执行 49。那么，这个"跳走”用字节码应该怎么表示？**
+
+用 return？那不行，因为 return 会结束方法，这样 switch 后代码也无法执行。
+
+```java
+public class switch_test {
+    public static void main(String[] args) {
+        int i = 0;
+        switch (i) {
+            case 0:
+                System.out.println(0);
+            case 111:
+                System.out.println(1);
+            case 2:
+                System.out.println(2);
+        }
+        System.out.println("无 return");
+    }
+}
+```
+
+```java
+0
+1
+2
+无 return
+```
+
+```java
+public class switch_test {
+    public static void main(String[] args) {
+        int i = 0;
+        switch (i) {
+            case 0:
+                System.out.println(0);
+                break;
+            case 111:
+                System.out.println(1);
+                break;
+            case 2:
+                System.out.println(2);
+                break;
+        }
+        System.out.println("无 return");
+    }
+}
+```
+
+```java
+0
+无 return
+```
+
+```java
+```
+
+
+
+
+
+
+
+
+
+那怎么办嘞....
+
+
 
 
 
