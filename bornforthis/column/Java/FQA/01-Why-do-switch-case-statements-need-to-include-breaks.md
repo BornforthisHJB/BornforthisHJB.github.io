@@ -375,6 +375,54 @@ public class if_test {
 
 编译成字节码：
 
+```java
+➜  src git:(main) ✗ javac if_test.java 
+➜  src git:(main) ✗ javap -c if_test 
+Compiled from "if_test.java"
+public class if_test {
+  public if_test();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: iconst_0
+       1: istore_1
+       2: iload_1
+       3: ifne          16
+       6: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       9: iconst_0
+      10: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      13: goto          43
+      16: iload_1
+      17: iconst_1
+      18: if_icmpne     31
+      21: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      24: iconst_1
+      25: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      28: goto          43
+      31: iload_1
+      32: iconst_2
+      33: if_icmpne     43
+      36: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      39: iconst_2
+      40: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      43: return
+}
+```
+
+if_icmpne 用于比较两个 int 数。
+
+**从字节码也可以看出 if 和 switch 的区别：**
+
+- if 条件和代码块的字节码是顺序的，switch 条件和代码块是分开的；
+- if 自动生成 goto 指令，switch 只有加了break才生成goto指令。
+
+结语
+case中的break告诉前端编译器：给每个case对应代码块的最后加上goto。这样，执行完匹配上的代码之后，就可以略过后面的case代码块了。
+
 
 
 
