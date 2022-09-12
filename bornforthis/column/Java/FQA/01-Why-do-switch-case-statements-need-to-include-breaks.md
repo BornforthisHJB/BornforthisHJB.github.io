@@ -109,7 +109,60 @@ GNU 样式的选项可使用 = (而非空白) 来分隔选项名称
 ## 实现反编译
 
 ```java
+➜  src git:(main) ✗ javac switch_test.java
+➜  src git:(main) ✗ javap -c switch_test 
+Compiled from "switch_test.java"
+public class switch_test {
+  public switch_test();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: iconst_0
+       1: istore_1
+       2: iload_1
+       3: tableswitch   { // 0 to 2
+                     0: 28
+                     1: 35
+                     2: 42
+               default: 49
+          }
+      28: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      31: iconst_0
+      32: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      35: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      38: iconst_1
+      39: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      42: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      45: iconst_2
+      46: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      49: return
+}
 ```
+
+tableswitch 和 lookupswitch 都用于 switch 条件跳转。
+
+- tableswitch：用于 case 值连续，例如上面代码中的 0、1、2；
+- lookupswitch：用于 case 值不连续。
+
+![lookupswitch：用于 case 值不连续](./01-Why-do-switch-case-statements-need-to-include-breaks.assets/image-20220912140001899.png)
+
+从字节码可以看出：switch中的case条件和对应代码块是分开的。如上图，case为0时，跳转到标号28代码处；为1时跳转到标号35代码处；为2时跳转到标号43代码处；default则跳转到标号49代码处。
+
+这不，答案就出来了，当case 0匹配了之后，直接跳转到标号28代码处开始执行，输出0，然后策马奔腾，一路小下坡，顺序执行完后面所有代码，直到标号49 return，方法完执行完成，程序结束。
+
+如果按照正常的思维，是不是case 0匹配之后，跳到28，执行完28、31、32输出0之后，就应该直接跳走，直接执行49。那么，这个"跳走”用字节码应该怎么表示？
+
+用return？那不行，因为return会结束方法，这样switch后代码也无法执行。那怎么办嘞....
+
+
+
+
+
+
 
 
 
