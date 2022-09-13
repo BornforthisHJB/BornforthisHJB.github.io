@@ -128,6 +128,15 @@ export default sidebar({
 			],
 		}
 	],
+	"/1v1/05-Patrick/": [
+		{
+			text: "HomeWork",
+			icon: "python",
+			children: [
+				"01-CITS1401-Computational-Thinking-with-Python",
+			]
+		}
+	],
 	"/column/Java/": [
 		{
 			text: "第一章 Java编程基础 (30讲)",
