@@ -1126,7 +1126,7 @@ def main(csvfile, adultID="", Option="STATS"):
         print("-*" * 8 + "key:" + adultID + "\tand\t" + key + "-*" * 8)
         print("sum_num", sum_num)
         print("sqrt_a", sqrt_a)
-        print("sqrt_a", sqrt_a)
+        print("sqrt_b", sqrt_b)
         print("result FR:", sum_num / ((sqrt_a ** 0.5) * (sqrt_b ** 0.5)))
         print("-*" * 8 + "key" + "-*" * 8)
     # for opt in lst2:
