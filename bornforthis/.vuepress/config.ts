@@ -1,9 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
-// import { pwaPlugin } from "vuepress-plugin-pwa2";
 // import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import theme from "./theme";
-// import { commentPlugin } from "vuepress-plugin-comment2";
 
 export default defineUserConfig({
   lang: "zh-CN",
