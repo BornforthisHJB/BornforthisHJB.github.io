@@ -6,7 +6,7 @@ isOriginal: true
 category: Python 办公自动化
 tag:
     - Python 办公自动化
-icon: false
+icon: python
 sticky: false
 star: false
 password: false
