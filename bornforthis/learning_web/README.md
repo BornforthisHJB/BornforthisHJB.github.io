@@ -41,11 +41,13 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 
 ## 好的开源项目
 
-| 序号 | 名称          | 链接                                                         | 作用          |
-| ---- | ------------- | ------------------------------------------------------------ | ------------- |
-| 01   | **LiaScript** | [https://github.com/LiaScript/LiaScript](https://github.com/LiaScript/LiaScript) | 交互式 Python |
-| 02   | **httrack**   | [https://www.httrack.com/page/2/en/index.html](https://www.httrack.com/page/2/en/index.html) |               |
-| 03   | **cdnpkg**    | [https://www.cdnpkg.com/](https://www.cdnpkg.com/)           |               |
+| 序号 | 名称          | 链接                                                         | 作用               |
+| ---- | ------------- | ------------------------------------------------------------ | ------------------ |
+| 01   | **LiaScript** | [https://github.com/LiaScript/LiaScript](https://github.com/LiaScript/LiaScript) | 交互式 Python      |
+| 02   | **httrack**   | [https://www.httrack.com/page/2/en/index.html](https://www.httrack.com/page/2/en/index.html) |                    |
+| 03   | **cdnpkg**    | [https://www.cdnpkg.com/](https://www.cdnpkg.com/)           |                    |
+| 04   | **okpy**      | [https://okpy.org/](https://okpy.org/)<br />[https://github.com/okpy/ok](https://github.com/okpy/ok) | 伯克利 Python 判题 |
+|      |               |                                                              |                    |
 
 ## 资源网站
 
