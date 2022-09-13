@@ -854,6 +854,40 @@ if __name__ == '__main__':
 
 
 
+## 实现同时计算两个列表
+
+```python
+In [15]: lst1 = [5, 2, 1,1, 3, 5, 2, 1]
+
+In [16]: lst2 = [4,1,12, 9,7,4,1,12]
+
+In [17]: zip_lst = zip(lst1, lst2)
+
+In [18]: sum_num = 0
+    ...: sqrt_a = 0
+    ...: sqrt_b = 0
+    ...: for a, b in zip_lst:
+    ...:     sum_num += a * b
+    ...:     sqrt_a += a ** 2
+    ...:     sqrt_b += b ** 2
+    ...:
+
+In [19]: sum_num
+Out[19]: 98
+
+In [20]: sqrt_b
+Out[20]: 452
+
+In [21]: sqrt_a
+Out[21]: 70
+
+In [22]: sum_num / (sqrt_a ** 0.5) * (sqrt_b ** 0.5)
+Out[22]: 249.0269061768226
+
+In [23]: sum_num / ((sqrt_a ** 0.5) * (sqrt_b ** 0.5))
+Out[23]: 0.5509444826920854
+```
+
 
 
 
