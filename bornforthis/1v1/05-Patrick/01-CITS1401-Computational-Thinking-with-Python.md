@@ -2181,11 +2181,14 @@ result FR: 0.9961872065027959
 Process finished with exit code 0
 ```
 
+## 结尾部分判断
 
-
-
-
-
+```python
+    if Option.upper() == "STATS":
+        return OP1_list, OP2_list, OP3_list, OP4_list
+    elif Option.upper() == "FR":
+        return ID, cossim
+```
 
 
 
