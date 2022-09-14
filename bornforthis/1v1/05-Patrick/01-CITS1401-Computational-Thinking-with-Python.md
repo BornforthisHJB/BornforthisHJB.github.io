@@ -1788,6 +1788,16 @@ if __name__ == '__main__':
 
 ```
 
+![image-20220914101206734](./01-CITS1401-Computational-Thinking-with-Python.assets/image-20220914101206734.png)
+
+![image-20220914101420886](./01-CITS1401-Computational-Thinking-with-Python.assets/image-20220914101420886.png)
+
+
+
+
+
+
+
 
 
 ## 实现同时计算两个列表
