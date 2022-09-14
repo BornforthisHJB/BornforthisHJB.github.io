@@ -2228,6 +2228,316 @@ Out[23]: 0.5509444826920854
 
 
 
+## 答案
+
+```python
+def parse(lst: list, set_title=set(), option=True, adultID=""):
+    r_lst = []
+    if option:
+        for details_list in lst:
+            if "Neutral" in details_list:
+                r_lst.append(details_list[3])
+        return r_lst
+    else:
+        data_dict = {}
+        for title in set_title:
+            data_dict[title] = []
+        for detail_lst in lst:
+            if detail_lst[0] in data_dict:
+                data_dict[detail_lst[0]].append(detail_lst[3])
+        del data_dict[adultID]
+        return data_dict
+
+
+def main(csvfile, adultID="", option="STATS"):
+    data_list = []
+    set_title = set()
+    f = open(csvfile, "r")
+    content = f.read()
+    content_list = content.split("\n")
+    f.close()
+    for text in content_list[1:]:
+        text = text.split(",")
+        if len(text) == 5:
+            data_list.append([text[0], text[1], int(text[2]), float(text[3]), float(text[4])])
+            set_title.add(text[0])
+    select_list = []
+    for text_list in data_list:
+        if adultID == text_list[0]:
+            select_list.append(text_list)
+    # print(data_list)
+
+    Gdis_list_1 = []
+    Gdis_list_2 = []
+    Gdis_list_3 = []
+    Gdis_list_4 = []
+    Gdis_list_5 = []
+    Gdis_list_6 = []
+    Gdis_list_7 = []
+    Gdis_list_8 = []
+    Ldis_list_1 = []
+    Ldis_list_2 = []
+    Ldis_list_3 = []
+    Ldis_list_4 = []
+    Ldis_list_5 = []
+    Ldis_list_6 = []
+    Ldis_list_7 = []
+    Ldis_list_8 = []
+
+    for Distance_list in select_list:
+        if 1 in Distance_list:
+            Gdis_list_1.append(Distance_list[3])
+        elif 2 in Distance_list:
+            Gdis_list_2.append(Distance_list[3])
+        elif 3 in Distance_list:
+            Gdis_list_3.append(Distance_list[3])
+        elif 4 in Distance_list:
+            Gdis_list_4.append(Distance_list[3])
+        elif 5 in Distance_list:
+            Gdis_list_5.append(Distance_list[3])
+        elif 6 in Distance_list:
+            Gdis_list_6.append(Distance_list[3])
+        elif 7 in Distance_list:
+            Gdis_list_7.append(Distance_list[3])
+        else:
+            Gdis_list_8.append(Distance_list[3])
+
+    for Distance_list in select_list:
+        if 1 in Distance_list:
+            Ldis_list_1.append(Distance_list[4])
+        elif 2 in Distance_list:
+            Ldis_list_2.append(Distance_list[4])
+        elif 3 in Distance_list:
+            Ldis_list_3.append(Distance_list[4])
+        elif 4 in Distance_list:
+            Ldis_list_4.append(Distance_list[4])
+        elif 5 in Distance_list:
+            Ldis_list_5.append(Distance_list[4])
+        elif 6 in Distance_list:
+            Ldis_list_6.append(Distance_list[4])
+        elif 7 in Distance_list:
+            Ldis_list_7.append(Distance_list[4])
+        else:
+            Ldis_list_8.append(Distance_list[4])
+    # print(Ldis_list_1)
+    '''        
+    print(min(Ldis_list_1),max(Ldis_list_1))
+    print(min(Ldis_list_2),max(Ldis_list_2))
+    print(min(Ldis_list_3),max(Ldis_list_3))
+    print(min(Ldis_list_4),max(Ldis_list_4))
+    print(min(Ldis_list_5),max(Ldis_list_5))
+    print(min(Ldis_list_6),max(Ldis_list_6))
+    print(min(Ldis_list_7),max(Ldis_list_7))
+    print(min(Ldis_list_8),max(Ldis_list_8))
+    '''
+    dis_list_1 = [min(Gdis_list_1), max(Gdis_list_1), min(Ldis_list_1), max(Ldis_list_1)]
+    dis_list_2 = [min(Gdis_list_2), max(Gdis_list_2), min(Ldis_list_2), max(Ldis_list_2)]
+    dis_list_3 = [min(Gdis_list_3), max(Gdis_list_3), min(Ldis_list_3), max(Ldis_list_3)]
+    dis_list_4 = [min(Gdis_list_4), max(Gdis_list_4), min(Ldis_list_4), max(Ldis_list_4)]
+    dis_list_5 = [min(Gdis_list_5), max(Gdis_list_5), min(Ldis_list_5), max(Ldis_list_5)]
+    dis_list_6 = [min(Gdis_list_6), max(Gdis_list_6), min(Ldis_list_6), max(Ldis_list_6)]
+    dis_list_7 = [min(Gdis_list_7), max(Gdis_list_7), min(Ldis_list_7), max(Ldis_list_7)]
+    dis_list_8 = [min(Gdis_list_8), max(Gdis_list_8), min(Ldis_list_8), max(Ldis_list_8)]
+    OP1_list = [dis_list_1, dis_list_2, dis_list_3, dis_list_4, dis_list_5, dis_list_6, dis_list_7, dis_list_8]
+    # print(OP1_list)
+
+    Gdis_Neutral_list = []
+    Ldis_Neutral_list = []
+    sub_Neutral_list = []
+    Gdis_Angry_list = []
+    Ldis_Angry_list = []
+    sub_Angry_list = []
+    Gdis_Disgust_list = []
+    Ldis_Disgust_list = []
+    sub_Disgust_list = []
+    Gdis_Happy_list = []
+    Ldis_Happy_list = []
+    sub_Happy_list = []
+    for Exp_list in select_list:
+        if 'Neutral' in Exp_list:
+            Gdis_Neutral_list.append(Exp_list[3])
+            Ldis_Neutral_list.append(Exp_list[4])
+            sub_Neutral_list = [Gdis_Neutral_list[i] - Ldis_Neutral_list[i] for i in range(len(Gdis_Neutral_list))]
+
+    for Exp_list in select_list:
+        if 'Angry' in Exp_list:
+            Gdis_Angry_list.append(Exp_list[3])
+            Ldis_Angry_list.append(Exp_list[4])
+            sub_Angry_list = [Gdis_Angry_list[i] - Ldis_Angry_list[i] for i in range(len(Gdis_Angry_list))]
+
+    for Exp_list in select_list:
+        if 'Disgust' in Exp_list:
+            Gdis_Disgust_list.append(Exp_list[3])
+            Ldis_Disgust_list.append(Exp_list[4])
+            sub_Disgust_list = [Gdis_Disgust_list[i] - Ldis_Disgust_list[i] for i in range(len(Gdis_Disgust_list))]
+
+    for Exp_list in select_list:
+        if 'Happy' in Exp_list:
+            Gdis_Happy_list.append(Exp_list[3])
+            Ldis_Happy_list.append(Exp_list[4])
+            sub_Happy_list = [Gdis_Happy_list[i] - Ldis_Happy_list[i] for i in range(len(Gdis_Happy_list))]
+
+    OP2_list = [sub_Neutral_list, sub_Angry_list, sub_Disgust_list, sub_Happy_list]
+    # print(OP2_list)
+
+    avg_G_1 = sum(Gdis_list_1) / len(Gdis_list_1)
+    avg_G_2 = sum(Gdis_list_2) / len(Gdis_list_2)
+    avg_G_3 = sum(Gdis_list_3) / len(Gdis_list_3)
+    avg_G_4 = sum(Gdis_list_4) / len(Gdis_list_4)
+    avg_G_5 = sum(Gdis_list_5) / len(Gdis_list_5)
+    avg_G_6 = sum(Gdis_list_6) / len(Gdis_list_6)
+    avg_G_7 = sum(Gdis_list_7) / len(Gdis_list_7)
+    avg_G_8 = sum(Gdis_list_8) / len(Gdis_list_8)
+    OP3_list = [avg_G_1, avg_G_2, avg_G_3, avg_G_4, avg_G_5, avg_G_6, avg_G_7, avg_G_8]
+    # print(OP3_list)
+
+    avg_L_1 = sum(Ldis_list_1) / len(Ldis_list_1)
+    avg_L_2 = sum(Ldis_list_2) / len(Ldis_list_2)
+    avg_L_3 = sum(Ldis_list_3) / len(Ldis_list_3)
+    avg_L_4 = sum(Ldis_list_4) / len(Ldis_list_4)
+    avg_L_5 = sum(Ldis_list_5) / len(Ldis_list_5)
+    avg_L_6 = sum(Ldis_list_6) / len(Ldis_list_6)
+    avg_L_7 = sum(Ldis_list_7) / len(Ldis_list_7)
+    avg_L_8 = sum(Ldis_list_8) / len(Ldis_list_8)
+
+    square_Ldis_list_1 = []
+    square_Ldis_list_2 = []
+    square_Ldis_list_3 = []
+    square_Ldis_list_4 = []
+    square_Ldis_list_5 = []
+    square_Ldis_list_6 = []
+    square_Ldis_list_7 = []
+    square_Ldis_list_8 = []
+    OP4_list = []
+    for i in Ldis_list_1:
+        square_Ldis_list_1.append((i - avg_L_1) ** 2)
+        variance_1 = sum(square_Ldis_list_1) / len(square_Ldis_list_1)
+        standard_1 = variance_1 ** (1 / 2)
+        OP4_list.append(standard_1)
+
+    for i in Ldis_list_2:
+        square_Ldis_list_2.append((i - avg_L_2) ** 2)
+        variance_2 = sum(square_Ldis_list_2) / len(square_Ldis_list_2)
+        standard_2 = variance_2 ** (1 / 2)
+        OP4_list.append(standard_2)
+
+    for i in Ldis_list_3:
+        square_Ldis_list_3.append((i - avg_L_3) ** 2)
+        variance_3 = sum(square_Ldis_list_3) / len(square_Ldis_list_3)
+        standard_3 = variance_3 ** (1 / 2)
+        OP4_list.append(standard_3)
+
+    for i in Ldis_list_4:
+        square_Ldis_list_4.append((i - avg_L_4) ** 2)
+        variance_4 = sum(square_Ldis_list_4) / len(square_Ldis_list_4)
+        standard_4 = variance_4 ** (1 / 2)
+        OP4_list.append(standard_4)
+
+    for i in Ldis_list_5:
+        square_Ldis_list_5.append((i - avg_L_5) ** 2)
+        variance_5 = sum(square_Ldis_list_5) / len(square_Ldis_list_5)
+        standard_5 = variance_5 ** (1 / 2)
+        OP4_list.append(standard_5)
+
+    for i in Ldis_list_6:
+        square_Ldis_list_6.append((i - avg_L_6) ** 2)
+        variance_6 = sum(square_Ldis_list_6) / len(square_Ldis_list_6)
+        standard_6 = variance_6 ** (1 / 2)
+        OP4_list.append(standard_6)
+
+    for i in Ldis_list_7:
+        square_Ldis_list_7.append((i - avg_L_7) ** 2)
+        variance_7 = sum(square_Ldis_list_7) / len(square_Ldis_list_7)
+        standard_7 = variance_7 ** (1 / 2)
+        OP4_list.append(standard_7)
+
+    for i in Ldis_list_8:
+        square_Ldis_list_8.append((i - avg_L_8) ** 2)
+        variance_8 = sum(square_Ldis_list_8) / len(square_Ldis_list_8)
+        standard_8 = variance_8 ** (1 / 2)
+        OP4_list.append(standard_8)
+
+    # OP4_list = [standard_1, standard_2, standard_3, standard_4, standard_5, standard_6, standard_7, standard_8]
+    # print(OP4_list)
+    result_fr_or_stats = []
+    option_lst = []
+    r_n = 0
+
+    # 区分目标列表
+    for lst in data_list:
+        # print(lst)
+        if adultID in lst:
+            # print(lst)
+            result_fr_or_stats.append(lst)
+        else:
+            option_lst.append(lst)
+
+    # print(len(result_fr_or_stats))
+    # print(set_title)
+    lst1 = parse(result_fr_or_stats, option=True)
+    data_dict = parse(option_lst, set_title=set_title, option=False, adultID=adultID)
+    # print(lst1)
+    # print(data_dict)
+    # max_value = []
+    max_dict = {"max_value": [], "max_key": []}  # 计算的结果值与 option 对象存放的字典
+    for key, value in data_dict.items():
+        # print(key, value)
+        sum_num = 0
+        sqrt_a = 0
+        sqrt_b = 0
+        for a, b in zip(lst1, value):
+            sum_num += a * b
+            sqrt_a += a ** 2
+            sqrt_b += b ** 2
+        # print("-*" * 8 + "key:" + adultID + "\tand\t" + key + "-*" * 8)
+        # print("sum_num", sum_num)
+        # print("sqrt_a", sqrt_a)
+        # print("sqrt_b", sqrt_b)
+        # max_value.append(sum_num / ((sqrt_a ** 0.5) * (sqrt_b ** 0.5)))
+        max_dict["max_value"].append(sum_num / ((sqrt_a ** 0.5) * (sqrt_b ** 0.5)))
+        max_dict["max_key"].append(key)
+        # print("result FR:", sum_num / ((sqrt_a ** 0.5) * (sqrt_b ** 0.5)))
+        # print("-*" * 8 + "key" + "-*" * 8)
+    # print("max_value:", max(max_value))
+    # print(max_dict)
+    cossim = max(max_dict["max_value"])
+    ID = max_dict["max_key"][max_dict["max_value"].index(cossim)]
+    # print(cossim, ID)
+    # for opt in lst2:
+    # # #     parse(opt)
+    #     for a, b in zip(lst1, opt):
+    #         sum_num += a * b
+    #         sqrt_a += a ** 2
+    #         sqrt_b += b ** 2
+    #         print("sum_num", sum_num, "sqrt_a", sqrt_a, "sqrt_b", sqrt_b)
+
+    # for Gdis_lst in result:
+    #     # print(Gdis_lst[3])
+    #     for details_gdis in option_lst:
+    #         # print(details_gdis[3])
+    #         r_n = (Gdis_lst[3] * details_gdis[3]) + r_n  # 思考
+    # # for 循环同时遍历两个列表
+    # print(r_n)
+    # ** 0.5
+    if option.upper() == "STATS":
+        return OP1_list, OP2_list, OP3_list, OP4_list
+    elif option.upper() == "FR":
+        return ID, cossim
+
+
+if __name__ == '__main__':
+    # path = "ExpData_Sample.csv"
+    # op1, op2, op3, op4 = main(csvfile="ExpData_Sample.csv", adultID="E001")
+    # print(op2)
+    ID, Cossim = main(csvfile="ExpData_Sample.csv", adultID="E001", option="FR")
+    print(ID, Cossim)
+    d = {"name": list, "age": int}
+    print(d)
+    d["name"] = [1, 2, 3]
+    print(d)
+
+```
+
 
 
 
