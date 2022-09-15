@@ -580,7 +580,6 @@ export default sidebar({
 			children: [
 				{ 
 					text: "一、 Python 自动化办公",
-					collapsable: true,
 					children: [
 						"auto_base01",
 						"auto_base02",
@@ -588,7 +587,6 @@ export default sidebar({
 				},
 				{
 					text: "二、Python 环境安装",
-					collapsable: true,
 					children: [
 						"auto_base03",
 						"auto_base04",
@@ -596,7 +594,6 @@ export default sidebar({
 				},
 				{
 					text: "三、Python 自动化处理 Excel",
-					collapsable: true,
 					children: [
 						"auto_base05",
 						"auto_base06",
