@@ -237,6 +237,31 @@ while divided <= 200 and index < 10:
 129可以整除3。商为43
 ```
 
+## 2.编写用户登陆程序
+
+### 2.1 用户数据
+
+| 序号 | 用户名 | 密码 |
+| ---- | ------ | ---- |
+| 01   | aiyc   | 123  |
+| 02   | cava   | 456  |
+| 03   | Austin | 9879 |
+| 04   | Jaden  | 7675 |
+
+### 2.2 答案
+
+```python
+data_dict = {"aiyc": "123", "cava": "456"}
+while True:
+    username = input("请输入你的账户名称：")
+    password = input("请输入你的密码：")
+    if username in data_dict and password == data_dict.get(username, False):
+        print("login Successful!")
+        break
+    else:
+        print("请重新输入。")
+```
+
 
 
 
