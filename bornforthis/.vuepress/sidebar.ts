@@ -97,7 +97,7 @@ export default sidebar({
 	// ],
 	"/1v1/03-Dannie": [
 		{
-			text: "Python 环境搭建",
+			text: "阶段一:Python基础",
 			collapsable: true,
 			icon: "python",
 			children: [
