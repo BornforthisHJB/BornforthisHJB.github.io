@@ -106,6 +106,7 @@ export default sidebar({
 				"03",
 				"04",
 				"05",
+				"06",
 			]
 		}
 	],
