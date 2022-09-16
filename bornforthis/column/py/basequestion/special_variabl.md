@@ -128,6 +128,12 @@ print("Jaden", Austin)
 Austin Jaden Alex Cava
 ```
 
+2. 输入效果如下：
+
+```python
+Austin$Jaden$Alex$Cava%
+```
+
 
 
 ::: info 悦创金句
