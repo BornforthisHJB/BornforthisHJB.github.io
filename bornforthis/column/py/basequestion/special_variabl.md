@@ -128,7 +128,7 @@ print("Jaden", Austin)
 Austin Jaden Alex Cava
 ```
 
-2. 输入效果如下：
+2. 输出效果如下：
 
 ```python
 Austin$Jaden$Alex$Cava%
