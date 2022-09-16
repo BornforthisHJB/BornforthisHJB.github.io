@@ -47,7 +47,11 @@ print("Jaden", Jaden)
 # 待补充代码
 print("Austin", Austin)
 print("Jaden", Jaden)
-# 输出
+```
+
+输出结果如下：
+
+```python
 Austin Coke
 Jaden juice
 -------------
@@ -115,6 +119,14 @@ print("Jaden", Austin)
 :::
 
 ::::
+
+## 2. 创建变量并输出
+
+1. 输出效果：
+
+```python
+Austin Jaden Alex Cava
+```
 
 
 
