@@ -28,9 +28,8 @@ backToTop: true
 toc: true
 ---
 
-## Question
+## Part 1: Birth Date Application: (30 pts)
 
-**Part 1: Birth Date Application: (30 pts)**
 Use MOD % and / division to separate digits for Birthday date
 Birthdays.java
 Ask for the user to enter a two people’s birthday as an 8 digit-number! The user should enter
