@@ -1,5 +1,5 @@
 ---
-title: 03-Windows命令行编写Java
+title: 03-Mac/Windows命令行编写Java
 icon: network
 time: 2022-09-20 01:06:52
 author: AI悦创
@@ -80,15 +80,14 @@ javac Demo.java
 java Demo
 ```
 
+## Mac
 
-
-
-
-
-
-
-
-
+1. cd 到你自己的目标路径
+2. touch 要新建的文件名称.java
+3. vim 编辑创建的文件 vim Demo.java
+4. i 开始输入代码
+5. esc 退出编辑
+6. :wq
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
