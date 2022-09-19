@@ -118,6 +118,7 @@ export default sidebar({
 			icon: "network",
 			children: [
 				"01-Assignment-1-Unix",
+				"02-Java-HW",
 			]
 		}
 	],
