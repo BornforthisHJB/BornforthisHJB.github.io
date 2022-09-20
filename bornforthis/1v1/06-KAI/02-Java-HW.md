@@ -1,5 +1,5 @@
 ---
-title: 02-Part 1-Birth Date Application: (30 pts)
+title: 02-Part 1-Birth Date Application(30 pts)
 icon: network
 time: 2022-09-20 00:06:52
 author: AI悦创
@@ -30,8 +30,7 @@ toc: true
 
 ## Part 1: Birth Date Application： (30 pts)
 
-Use MOD % and / division to separate digits for Birthday date
-Birthdays.java
+Use MOD % and / division to separate digits for Birthday date Birthdays.java
 Ask for the user to enter a two people’s birthday as an 8 digit-number! The user should enter
 the birthday for each person in an 8-digit format ("YYYYMMDD"). Then your program should
 compare the two birthday dates to determine which person is older, or if they have the same
@@ -68,8 +67,7 @@ each birthday so you do not have to do any data validation.
 
 
 第 1 部分：出生日期申请：（30 分）
-使用 MOD % 和 / 除法来分隔生日日期的数字
-生日.java
+使用 MOD % 和 / 除法来分隔生日日期的数字 **生日.java**
 要求用户输入两个人的生日作为 8 位数字！用户应输入
 每个人的生日，采用 8 位格式（“YYYYMMDD”）。那么你的程序应该
 比较两个生日日期以确定哪个人年龄较大，或者他们是否有相同的生日
