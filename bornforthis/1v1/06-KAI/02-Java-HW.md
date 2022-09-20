@@ -39,36 +39,41 @@ For example, President’s Obama's birthday is Aug 4,1961. So, it should be ente
 19610804 (YYYYMMDD). We can assume that the user enters good data with 8 digits for
 each birthday so you do not have to do any data validation.
 
-- This program should separate each 8-digit-number into three separate numbers to
-    represent the day, month, and the year, in that order. Only use the mathematical
-    operators to separate the digits (will cover this during class).
-    Thus, in our example the program would assign 4 to a first variable from the right, let's say
-    day, then assign 8 to a second variable, let's say month and 1961 to the number variable,
-    let's say year. (Do not worry about leading zeroes for days and months.)
-    Next the program should print out the date of birth written in the following standard format
-    MM/DD/YYYY for each person. So, the output for Obama’s date of birth should be as follow:
-    8/4/1961
-- Also, your program should be able to print which person is older or the other possibility that
-    they are the same age. You should use control structure allowing program to make decision
-    (smart). So, result should be decided by program and not you.
-    Example (Comparing Obama’s to Beyoncé Birthday):
-    Enter the birthday in 8-digit format for person's # 1: (YYYYMMDD): 19610804
-    Enter the birthday in 8-digit format for person's # 2, (YYYYMMDD): 19810904
-    For this example, the following result will be printed:
-    Enter name for person #1: Obama
-    Enter name for person #2: Beyoncé
-    Obama’s date of birth is: 8/4/1961
-    Beyoncé’s date of birth is: 9/4/1981
-    Obama is Older than Beyoncé!
-    Grading Criteria:
-    A. Program Execution (90%)
-- Meeting all of the require
+This program should separate each 8-digit-number into three separate numbers to
+represent the day, month, and the year, in that order. Only use the mathematical
+operators to separate the digits (will cover this during class).
+Thus, in our example the program would assign 4 to a first variable from the right, let's say
+day, then assign 8 to a second variable, let's say month and 1961 to the number variable,
+let's say year. (Do not worry about leading zeroes for days and months.)
+Next the program should print out the date of birth written in the following standard format
+MM/DD/YYYY for each person. So, the output for Obama’s date of birth should be as follow:
+8/4/1961
+
+Also, your program should be able to print which person is older or the other possibility that
+they are the same age. You should use control structure allowing program to make decision
+(smart). So, result should be decided by program and not you.
+Example (Comparing Obama’s to Beyoncé Birthday):
+Enter the birthday in 8-digit format for person's # 1: (YYYYMMDD): 19610804
+Enter the birthday in 8-digit format for person's # 2, (YYYYMMDD): 19810904
+For this example, the following result will be printed:
+Enter name for person #1: Obama
+Enter name for person #2: Beyoncé
+Obama’s date of birth is: 8/4/1961
+Beyoncé’s date of birth is: 9/4/1981
+Obama is Older than Beyoncé!
+Grading Criteria:
+A. Program Execution (90%)
+
+Meeting all of the require
 
 
 
-第 1 部分：出生日期申请：（30 分）
+## 第 1 部分：出生日期申请：（30 分）
+
 使用 MOD % 和 / 除法来分隔生日日期的数字 **生日.java**
+
 要求用户输入两个人的生日作为 8 位数字！用户应输入
+
 每个人的生日，采用 8 位格式（“YYYYMMDD”）。那么你的程序应该
 比较两个生日日期以确定哪个人年龄较大，或者他们是否有相同的生日
 年龄。

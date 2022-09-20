@@ -68,33 +68,7 @@ export default sidebar({
 			]
 		}
 	],
-	// "/1v1/": [
-	// 	{
-	// 		text: "01-Thomas-hw-note",
-	// 		icon: "python",
-	// 		// collapsable: true,
-	// 		link: "01-Thomas-hw-note/01-Variable",
-	// 	},
-	// 	{
-	// 		text: "02-yuebao",
-	// 		link: "02-yuebao/01-Plan",
-	// 	},
-	// 	{
-	// 		text: "03-Dannie",
-	// 		icon: "python",
-	// 		link: "03-Dannie/01",
-	// 	},
-	// 	{
-	// 		text: "04-TommyTian",
-	// 		icon: "network",
-	// 		link: "04-TommyTian/01",
-	// 	},
-	// 	{
-	// 		text: "06-KAI",
-	// 		icon: "python",
-	// 		link: "06-KAI/01-Assignment-1-Unix",
-	// 	}
-	// ],
+	
 	"/1v1/03-Dannie": [
 		{
 			text: "阶段一:Python基础",
@@ -183,6 +157,7 @@ export default sidebar({
 				"07-web06",
 				"08-web07",
 				"09-web08",
+				"10-web09",
 			]
 		},
 		{
