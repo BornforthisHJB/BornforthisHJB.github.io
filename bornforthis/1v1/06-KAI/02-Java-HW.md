@@ -28,7 +28,7 @@ backToTop: true
 toc: true
 ---
 
-## Part 1: Birth Date Application: (30 pts)
+## Part 1: Birth Date Application： (30 pts)
 
 Use MOD % and / division to separate digits for Birthday date
 Birthdays.java
