@@ -1,6 +1,6 @@
 ---
 title: 02-Part 1-Birth Date Application(30 pts)
-icon: network
+icon: java
 time: 2022-09-20 00:06:52
 author: AI悦创
 isOriginal: true
@@ -111,6 +111,29 @@ public class HW {
         System.out.println(day);
     }
 }
+```
+
+### 3. 编写成对象
+
+```java
+public class HW {
+    public static void main(String[] args) {
+
+    }
+
+    public String getBirthday(int birthday) {
+        int year = birthday / 10000;
+        int month = birthday % 10000 / 100;
+        int day = birthday % 10000 % 100;
+        String birthday_format = month + "/" + day + "/" + year;
+        return birthday_format;
+    }
+}
+```
+
+### 4. main
+
+```java
 ```
 
 
