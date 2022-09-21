@@ -93,8 +93,9 @@ export default sidebar({
 			icon: "network",
 			children: [
 				"01-Assignment-1-Unix",
-				"02-Java-HW",
+				"02-Part-1-Birth-Date-Application-30-pts",
 				"03-Mac-Windows命令行编写Java",
+				
 			]
 		}
 	],
