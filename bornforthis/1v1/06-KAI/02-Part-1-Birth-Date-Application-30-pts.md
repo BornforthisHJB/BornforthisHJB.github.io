@@ -134,11 +134,56 @@ public class HW {
 ### 4. main
 
 ```java
+import java.util.Scanner; // Scanner == java.util.Scanner
+
+public class Birthday {
+    public static void main(String[] args) {
+        Birthday birthday = new Birthday();  // 类的实例化
+        Scanner scanner = new Scanner(System.in);
+//        Scanner input = new Scanner(System.in);
+
+        // 获取姓名
+//        System.out.println("请输入第一个姓名:");
+        System.out.print("请输入第一个姓名:");
+         String name1 = scanner.next();
+         // String name1 = scanner.nextLine();
+
+        // 获取日期
+//        System.out.println("以 8 位格式输入" + name1 + "的生日:(YYYYMMDD):");
+        System.out.print("以 8 位格式输入" + name1 + "的生日:(YYYYMMDD):");
+        int birthday1 = scanner.nextInt();
+        String birthday1_format = birthday.getBirthday(birthday1);
+
+        System.out.print("请输入第一个姓名:");
+        String name2 = scanner.next();
+
+        System.out.print("以 8 位格式输入" + name2 + "的生日:(YYYYMMDD):");
+        int birthday2 = scanner.nextInt();
+        String birthday2_format = birthday.getBirthday(birthday2);
+
+        System.out.println("输出第一个人的姓名:" + name1);
+        System.out.println("输出第二个人的姓名:" + name2);
+        System.out.println(name1 + "的出生日期是:" + birthday1_format);
+        System.out.println(name2 + "的出生日期是:" + birthday2_format);
+
+        if (birthday1 < birthday2) {
+            System.out.println(name1 + "比" + name2 + "还老!");
+        }else if(birthday1 == birthday2){
+            System.out.println(name1 + "和" + name2 + "是同年同月同日生!");
+        }else {
+            System.out.println(name2 + "比" + name1 + "还老!");
+        }
+    }
+
+    public String getBirthday(int birthday) {
+        int year = birthday / 10000;
+        int month = birthday % 10000 / 100;
+        int day = birthday % 10000 % 100;
+        String birthday_format = month + "/" + day + "/" + year;
+        return birthday_format;
+    }
+}
 ```
-
-
-
-
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
