@@ -92,15 +92,16 @@ export default sidebar({
 			text: "Web",
 			icon: "network",
 			children: [
-				"01-Assignment-1-Unix",
+				{ text: "01-Assignment-1-Unix", icon: "network", link: "01-Assignment-1-Unix"},
 			]
 		},
 		{
 			text: "Java",
 			icon: "java",
 			children: [
-				"02-Part-1-Birth-Date-Application-30-pts",
-				"03-Mac-Windows命令行编写Java",
+				{ text: "02-Part-1-Birth-Date-Application-30-pts", icon: "java", link: "02-Part-1-Birth-Date-Application-30-pts"},
+				{ text: "03-Mac-Windows命令行编写Java", icon: "java", link: "03-Mac-Windows命令行编写Java"},
+				
 			]
 		}
 	],
