@@ -1,6 +1,6 @@
 ---
 title: Assignment 2-HTML
-icon: java
+icon: network
 time: 2022-09-22 21:00:00
 author: AI悦创
 isOriginal: true
