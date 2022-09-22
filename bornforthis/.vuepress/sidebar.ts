@@ -89,14 +89,14 @@ export default sidebar({
 	],
 	"/1v1/06-KAI/": [
 		{
-			text: "Web",
+			text: "一、Web",
 			icon: "network",
 			children: [
 				{ text: "01-Assignment-1-Unix", icon: "network", link: "01-Assignment-1-Unix"},
 			]
 		},
 		{
-			text: "Java",
+			text: "二、Java",
 			icon: "java",
 			children: [
 				{ text: "02-Part-1-Birth-Date-Application-30-pts", icon: "java", link: "02-Part-1-Birth-Date-Application-30-pts"},
