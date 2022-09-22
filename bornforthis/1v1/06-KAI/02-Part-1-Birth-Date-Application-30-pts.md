@@ -1,5 +1,5 @@
 ---
-title: 02-Part 1-Birth Date Application(30 pts)
+title: Part 1-Birth Date Application(30 pts)
 icon: java
 time: 2022-09-20 00:06:52
 author: AI悦创

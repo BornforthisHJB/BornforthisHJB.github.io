@@ -1,5 +1,5 @@
 ---
-title: 03-Mac/Windows命令行编写Java
+title: Mac/Windows命令行编写Java
 icon: java
 time: 2022-09-20 01:06:52
 author: AI悦创
