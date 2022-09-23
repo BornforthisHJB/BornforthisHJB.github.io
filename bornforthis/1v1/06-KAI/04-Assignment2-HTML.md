@@ -160,6 +160,47 @@ This assignment is worth 10 points.
 
 ### body
 
+```html
+<header>
+        <!--
+            HTML <a> 标签
+            <a> 标签定义超链接，用于从一个页面链接到另一个页面
+            <a> 元素最重要的属性是 href 属性，它指的我们点击后访问的链接
+            未被访问的链接带有下划线而且是蓝色的
+            已被访问的链接带有下划线而且是紫色的
+            活动链接带有下划线而且是红色的
+        -->
+<!--        <a href="index.html">访问主页</a>-->
+        <a href="index.html"><img src="static/img/logo.png" height="350" width="350" alt="主页 logo"></a>
+        <nav>
+            <!--
+                <nav> 标签定义导航链接部分
+                并不是所有的 HTML 文档都要使用到 <nav> 元素,只作为导航链接的区域
+            -->
+            <ol>
+                <li><a href="pizza.html">Pizza</a></li>
+                <li><a href="pasta.html">Pasta</a></li>
+                <li><a href="cereal.html">Cereal</a></li>
+            </ol>
+<!--            <ul>-->
+<!--                <li><a href="pizza.html">Pizza</a></li>-->
+<!--                <li><a href="pasta.html">Pasta</a></li>-->
+<!--                <li><a href="cereal.html">Cereal</a></li>-->
+<!--            </ul>-->
+<!--            <ul>-->
+<!--                <a href="pizza.html">Pizza</a> |-->
+<!--                <a href="pasta.html">Pasta</a> |-->
+<!--                <a href="cereal.html">Cereal</a> |-->
+<!--            </ul>-->
+
+        </nav>
+        <h1>喝奶奶～吃饭饭～睡觉觉～❤️</h1>
+    </header>
+    <section>
+
+    </section>
+```
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
