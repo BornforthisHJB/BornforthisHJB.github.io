@@ -161,7 +161,25 @@ This assignment is worth 10 points.
 ### body
 
 ```html
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is my Assignment 2!</title>
+    <meta name="description" content="This is a website about about delicious snacks that you can eat really late at night.">
+    <meta name="keywords" content="snacks,pizza,pasta,cereal,web design,nyu,so amazing">
+    <meta name="author" content="AndersonHJB Cleland">
+    <!--
+        标签定义及使用说明
+        元数据（Metadata）是数据的数据信息。
+        <meta> 标签提供了 HTML 文档的元数据。元数据不会显示在客户端，但是会被浏览器解析。
+        META元素通常用于指定网页的描述，关键词，文件的最后修改时间，作者及其他元数据。
+        元数据可以被使用浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他 Web 服务调用。
+        -->
+</head>
+<body>
+    <h1>Welcome to My Love!</h1>
+    <header>
         <!--
             HTML <a> 标签
             <a> 标签定义超链接，用于从一个页面链接到另一个页面
@@ -196,12 +214,89 @@ This assignment is worth 10 points.
         </nav>
         <h1>喝奶奶～吃饭饭～睡觉觉～❤️</h1>
     </header>
+    <hr>
     <section>
-
+        <article>
+            <h2>要抱抱❤️</h2>
+            <img src="static/img/hug.jpeg" alt="要抱抱❤️">
+        </article>
+        <hr>
+        <article>
+            <h2>要亲亲❤️</h2>
+            <img src="static/img/kiss.jpeg" alt="要亲亲❤️">
+        </article>
+        <hr>
+        <article>
+            <h2>扑倒你❤️</h2>
+            <img src="static/img/snap-back.jpeg" alt="扑倒你❤️">
+        </article>
     </section>
+    <footer>
+        <hr>
+        <p>Thanks ©<a href="https://bornforthis.cn" target="_blank">Thanks AndersonHJB</a></p>
+        <!--
+        target:
+            _blank: 在新窗口中打开被链接的文档
+            _self: 默认，在相同的浏览器框中打开链接的网站
+        -->
+        <p><a href="./index.html" target="_self">Go Back</a> to my website home.</p>
+    </footer>
+</body>
+</html>
 ```
 
+## 其他页面
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的披萨🍕</title>
+    <meta name="description" content="This is a xxxx">
+    <meta name="keywords" content="xxxxxxx">
+    <meta name="author" content="AndersonHJB">
+<!--    <link rel="shortcut icon" href="https://store.steampowered.com/favicon.ico" type="image/x-icon">-->
+    <link rel="shortcut icon" href="static/img/hug.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="static/img/logo.png" height="350" width="350" alt="主页 logo"></a>
+        <nav>
+            <ol>
+                <li><a href="pizza.html">Pizza</a></li>
+                <li><a href="pasta.html">Pasta</a></li>
+                <li><a href="cereal.html">Cereal</a></li>
+            </ol>
+        </nav>
+        <h1>xxxxxxxxx</h1>
+    </header>
+
+    <section>
+        <h2>xxxxx</h2>
+        <img src="static/img/cereal.jpg" alt="lxlsslslsl">
+        <p>xxxx<br>x</p>
+        <h3>xxxxxxxx</h3>
+        <ul>
+            <li>dddwdwdwdwd</li>
+            <li>dddwdwdwdwd</li>
+            <li>dddwdwdwdwd</li>
+            <li>dddwdwdwdwd</li>
+        </ul>
+    </section>
+    <footer>
+        <hr>
+        <p>Thanks ©<a href="https://bornforthis.cn" target="_blank">Thanks AndersonHJB</a></p>
+        <!--
+        target:
+            _blank: 在新窗口中打开被链接的文档
+            _self: 默认，在相同的浏览器框中打开链接的网站
+        -->
+        <p><a href="./index.html" target="_self">Go Back</a> to my website home.</p>
+    </footer>
+</body>
+</html>
+```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
