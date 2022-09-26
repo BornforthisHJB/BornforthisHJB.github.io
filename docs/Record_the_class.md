@@ -1,6 +1,7 @@
 ---
 title: 录课的悲催经历
 icon: time
+footer: 长期招收编程一对一学员！微信：Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>
 ---
 
 ## 2022年07月10日

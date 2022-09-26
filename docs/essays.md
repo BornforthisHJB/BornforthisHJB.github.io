@@ -21,6 +21,7 @@ lastUpdated: true
 editLink: true
 backToTop: true
 toc: true
+footer: 长期招收编程一对一学员！微信：Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>
 ---
 
 你好，我是悦创。欢迎在留言区写下你对某句话的见解，一起交流。

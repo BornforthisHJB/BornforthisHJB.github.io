@@ -2,6 +2,7 @@
 title: 谷歌助手
 time: 2022-06-19 17:20:59
 icon: chrome
+footer: 长期招收编程一对一学员！微信：Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>
 ---
 
 为广大科研及医务工作者、高校学生提供谷歌学术文献、期刊等资料产品的查询与加速访问。

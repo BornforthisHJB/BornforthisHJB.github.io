@@ -3,6 +3,7 @@ title: 变更日志
 icon: time
 author: AI悦创
 time: 2022-06-15 21:01:21
+footer: 长期招收编程一对一学员！微信：Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>
 ---
 
 该文件包含 AI悦创网站及其文章、专栏的所有显着更改，前面更新未记录。那今天开始记录。
