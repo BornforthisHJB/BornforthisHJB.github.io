@@ -123,40 +123,40 @@ export default hopeTheme({
     // If you don't need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    comment: {
-      /**
-       * Using Giscus
-       */
-      // provider: "giscus",
-      // repo: "BornforthisHJB/comment",
-      // repoId: "R_kgDOHTJESw",
-      // category: "Announcements",
-      // categoryId: "DIC_kwDOHTJES84CO_Qz",
+    // comment: {
+    //   /**
+    //    * Using Giscus
+    //    */
+    //   // provider: "giscus",
+    //   // repo: "BornforthisHJB/comment",
+    //   // repoId: "R_kgDOHTJESw",
+    //   // category: "Announcements",
+    //   // categoryId: "DIC_kwDOHTJES84CO_Qz",
 
-      /**
-       * Using Twikoo
-       */
-      // provider: "Twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
+    //   /**
+    //    * Using Twikoo
+    //    */
+    //   // provider: "Twikoo",
+    //   // envId: "https://twikoo.ccknbc.vercel.app",
 
-      /**
-       * Using Waline
-       */
-       provider: "Waline",
-       serverURL: "https://comment.bornforthis.cn/",
-       comment: true, // 评论数统计
-       pageview: true, // 浏览量统计
-       copyright: false,
-       dark: true,
-       emoji: [
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
-       ],
-    },
+    //   /**
+    //    * Using Waline
+    //    */
+    //    provider: "Waline",
+    //    serverURL: "https://comment.bornforthis.cn/",
+    //    comment: true, // 评论数统计
+    //    pageview: true, // 浏览量统计
+    //    copyright: false,
+    //    dark: true,
+    //    emoji: [
+    //      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+    //      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+    //      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+    //      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
+    //      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+    //      'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
+    //    ],
+    // },
     components: [
       "Badge",
       "PDF",
