@@ -1,7 +1,6 @@
 import {
   useRoute
-} from "./chunk-SWJALXVA.js";
-import "./chunk-YACYAO4R.js";
+} from "./chunk-SWQ4XTYF.js";
 import {
   defineComponent,
   h,
@@ -9,6 +8,7 @@ import {
   watch
 } from "./chunk-3JL2R52N.js";
 import "./chunk-XYQ66V4O.js";
+import "./chunk-YACYAO4R.js";
 import "./chunk-5E3NKPRU.js";
 
 // node_modules/vuepress-theme-hope/lib/client/components/SkipLink.js

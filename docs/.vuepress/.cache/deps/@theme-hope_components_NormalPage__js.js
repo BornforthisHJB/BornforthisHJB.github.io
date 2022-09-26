@@ -3,31 +3,31 @@ import {
 } from "./chunk-TE2S746S.js";
 import {
   TOC_default
-} from "./chunk-XLRFN3MT.js";
+} from "./chunk-P5DFSAFR.js";
 import {
   PageInfo_default,
   useContributors,
   useEditLink,
   useUpdateTime
-} from "./chunk-NIZ5LUTB.js";
-import {
-  useSidebarItems
-} from "./chunk-VRQAKWGS.js";
+} from "./chunk-PVLOVJE5.js";
 import {
   MarkdownContent_default
 } from "./chunk-5GKWOAH5.js";
 import {
   useDarkMode
-} from "./chunk-4WCRJWEO.js";
+} from "./chunk-D23HZS3M.js";
 import {
   getAncestorLinks
 } from "./chunk-TQJYOK4F.js";
+import {
+  useSidebarItems
+} from "./chunk-SDT7L76Q.js";
 import {
   useAutoLink,
   useNavigate,
   usePageInfo,
   useThemeLocaleData
-} from "./chunk-ANITSSXQ.js";
+} from "./chunk-4N7O3C7U.js";
 import {
   Mt,
   gt,
@@ -35,7 +35,7 @@ import {
 } from "./chunk-ZYA2Y74L.js";
 import {
   AutoLink_default
-} from "./chunk-VOEAUQSW.js";
+} from "./chunk-TPMJ53WD.js";
 import {
   Icon_default
 } from "./chunk-XGTIGYAN.js";
@@ -49,8 +49,7 @@ import {
   RouterLink,
   useRoute,
   useRouter
-} from "./chunk-SWJALXVA.js";
-import "./chunk-YACYAO4R.js";
+} from "./chunk-SWQ4XTYF.js";
 import {
   useEventListener
 } from "./chunk-JRULDCC4.js";
@@ -67,6 +66,7 @@ import {
 import {
   isString
 } from "./chunk-XYQ66V4O.js";
+import "./chunk-YACYAO4R.js";
 import "./chunk-5E3NKPRU.js";
 
 // node_modules/vuepress-theme-hope/lib/client/components/BreadCrumb.js

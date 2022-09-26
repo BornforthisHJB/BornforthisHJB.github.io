@@ -1,16 +1,16 @@
 import {
   useSidebarItems
-} from "./chunk-VRQAKWGS.js";
+} from "./chunk-SDT7L76Q.js";
 import {
   useMobile,
   usePageAuthor,
   useThemeLocaleData
-} from "./chunk-ANITSSXQ.js";
+} from "./chunk-4N7O3C7U.js";
 import {
   Mt,
   gt
 } from "./chunk-ZYA2Y74L.js";
-import "./chunk-VOEAUQSW.js";
+import "./chunk-TPMJ53WD.js";
 import "./chunk-XGTIGYAN.js";
 import {
   client_exports
@@ -18,8 +18,7 @@ import {
 import "./chunk-LS4IQIE6.js";
 import {
   useRouter
-} from "./chunk-SWJALXVA.js";
-import "./chunk-YACYAO4R.js";
+} from "./chunk-SWQ4XTYF.js";
 import {
   useEventListener,
   useThrottleFn
@@ -36,6 +35,7 @@ import {
   watch
 } from "./chunk-3JL2R52N.js";
 import "./chunk-XYQ66V4O.js";
+import "./chunk-YACYAO4R.js";
 import "./chunk-5E3NKPRU.js";
 
 // node_modules/vuepress-theme-hope/lib/client/components/PageFooter.js

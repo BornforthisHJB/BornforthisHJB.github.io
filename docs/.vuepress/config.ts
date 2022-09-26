@@ -27,12 +27,12 @@ export default defineUserConfig({
     //     charset: "utf-8",
     //   }
     // ],
-    // [
-    //   "link", {
-    //     rel: "stylesheet",
-    //     href: "https://cdn.jsdelivr.net/npm/@docsearch/css@3",
-    //   }
-    // ],
+    [
+      "link", {
+        rel: "shortcut icon",
+        href: "/favicon.ico",
+      }
+    ],
     // [
     //   "script", {
     //     type: "text/javascript",

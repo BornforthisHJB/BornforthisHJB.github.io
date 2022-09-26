@@ -1,13 +1,13 @@
 import {
   useAutoLink,
   useThemeLocaleData
-} from "./chunk-ANITSSXQ.js";
+} from "./chunk-4N7O3C7U.js";
 import {
   Ht
 } from "./chunk-ZYA2Y74L.js";
 import {
   AutoLink_default
-} from "./chunk-VOEAUQSW.js";
+} from "./chunk-TPMJ53WD.js";
 import {
   Icon_default
 } from "./chunk-XGTIGYAN.js";
@@ -21,7 +21,7 @@ import {
 } from "./chunk-LS4IQIE6.js";
 import {
   useRoute
-} from "./chunk-SWJALXVA.js";
+} from "./chunk-SWQ4XTYF.js";
 import {
   computed,
   h,
@@ -170,4 +170,4 @@ export {
   setupSidebarItems,
   useSidebarItems
 };
-//# sourceMappingURL=chunk-VRQAKWGS.js.map
+//# sourceMappingURL=chunk-SDT7L76Q.js.map

@@ -1,7 +1,4 @@
 import {
-  setupDevtoolsPlugin
-} from "./chunk-YACYAO4R.js";
-import {
   computed,
   defineComponent,
   getCurrentInstance,
@@ -19,6 +16,9 @@ import {
   watch,
   watchEffect
 } from "./chunk-3JL2R52N.js";
+import {
+  setupDevtoolsPlugin
+} from "./chunk-YACYAO4R.js";
 
 // node_modules/vue-router/dist/vue-router.mjs
 var isBrowser = typeof window !== "undefined";
@@ -2486,4 +2486,4 @@ export {
   * (c) 2022 Eduardo San Martin Morote
   * @license MIT
   */
-//# sourceMappingURL=chunk-SWJALXVA.js.map
+//# sourceMappingURL=chunk-SWQ4XTYF.js.map

@@ -12,7 +12,7 @@ import {
 import {
   RouterLink,
   useRoute
-} from "./chunk-SWJALXVA.js";
+} from "./chunk-SWQ4XTYF.js";
 import {
   computed,
   defineComponent,
@@ -92,4 +92,4 @@ var AutoLink_default = defineComponent({
 export {
   AutoLink_default
 };
-//# sourceMappingURL=chunk-VOEAUQSW.js.map
+//# sourceMappingURL=chunk-TPMJ53WD.js.map

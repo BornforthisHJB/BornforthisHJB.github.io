@@ -1,6 +1,6 @@
 import {
   useDarkMode
-} from "./chunk-4WCRJWEO.js";
+} from "./chunk-D23HZS3M.js";
 import {
   resolveRepoType
 } from "./chunk-TQJYOK4F.js";
@@ -10,14 +10,14 @@ import {
   usePure,
   useThemeData,
   useThemeLocaleData
-} from "./chunk-ANITSSXQ.js";
+} from "./chunk-4N7O3C7U.js";
 import {
   Mt,
   nt
 } from "./chunk-ZYA2Y74L.js";
 import {
   AutoLink_default
-} from "./chunk-VOEAUQSW.js";
+} from "./chunk-TPMJ53WD.js";
 import {
   Icon_default
 } from "./chunk-XGTIGYAN.js";
@@ -32,8 +32,7 @@ import {
   RouterLink,
   useRoute,
   useRouter
-} from "./chunk-SWJALXVA.js";
-import "./chunk-YACYAO4R.js";
+} from "./chunk-SWQ4XTYF.js";
 import {
   useFullscreen,
   useScrollLock
@@ -53,6 +52,7 @@ import {
 import {
   isString
 } from "./chunk-XYQ66V4O.js";
+import "./chunk-YACYAO4R.js";
 import "./chunk-5E3NKPRU.js";
 
 // node_modules/vuepress-theme-hope/lib/client/modules/navbar/components/icons/i18nIcon.js

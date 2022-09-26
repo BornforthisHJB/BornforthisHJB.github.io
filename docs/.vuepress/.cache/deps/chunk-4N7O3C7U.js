@@ -11,7 +11,7 @@ import {
 import {
   useRoute,
   useRouter
-} from "./chunk-SWJALXVA.js";
+} from "./chunk-SWQ4XTYF.js";
 import {
   useEventListener
 } from "./chunk-JRULDCC4.js";
@@ -178,4 +178,4 @@ export {
   usePageInfo,
   useScrollPromise
 };
-//# sourceMappingURL=chunk-ANITSSXQ.js.map
+//# sourceMappingURL=chunk-4N7O3C7U.js.map

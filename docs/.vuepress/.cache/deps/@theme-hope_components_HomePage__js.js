@@ -1,12 +1,12 @@
 import {
-  DropTransition_default
-} from "./chunk-VC4AEKQI.js";
-import {
   MarkdownContent_default
 } from "./chunk-5GKWOAH5.js";
 import {
+  DropTransition_default
+} from "./chunk-VC4AEKQI.js";
+import {
   AutoLink_default
-} from "./chunk-VOEAUQSW.js";
+} from "./chunk-TPMJ53WD.js";
 import {
   Icon_default
 } from "./chunk-XGTIGYAN.js";
@@ -18,8 +18,7 @@ import {
 } from "./chunk-LS4IQIE6.js";
 import {
   RouterLink
-} from "./chunk-SWJALXVA.js";
-import "./chunk-YACYAO4R.js";
+} from "./chunk-SWQ4XTYF.js";
 import {
   computed,
   defineComponent,
@@ -28,6 +27,7 @@ import {
 import {
   isArray
 } from "./chunk-XYQ66V4O.js";
+import "./chunk-YACYAO4R.js";
 import "./chunk-5E3NKPRU.js";
 
 // node_modules/vuepress-theme-hope/lib/client/components/HomeFeatures.js
