@@ -1,0 +1,52 @@
+<template><div><h2 id="【题目描述】" tabindex="-1"><a class="header-anchor" href="#【题目描述】" aria-hidden="true">#</a> 【题目描述】</h2>
+<p>三款笔记本的优惠价不同，请给出优惠价最大值。</p>
+<h3 id="【输入】" tabindex="-1"><a class="header-anchor" href="#【输入】" aria-hidden="true">#</a> 【输入】</h3>
+<p>一行三个实数，分别表示三款笔记本的优惠价。</p>
+<h3 id="【输出】" tabindex="-1"><a class="header-anchor" href="#【输出】" aria-hidden="true">#</a> 【输出】</h3>
+<p>输出一个实数，表示优惠价最大值。</p>
+<h2 id="【输入样例】" tabindex="-1"><a class="header-anchor" href="#【输入样例】" aria-hidden="true">#</a> 【输入样例】</h2>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token number">32.5</span> <span class="token number">63.4</span> <span class="token number">78</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="【输出样例】" tabindex="-1"><a class="header-anchor" href="#【输出样例】" aria-hidden="true">#</a> 【输出样例】</h2>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token number">78.0</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="代码" tabindex="-1"><a class="header-anchor" href="#代码" aria-hidden="true">#</a> 代码</h2>
+<div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code><span class="token comment"># 读入一行字符串，split() 将字符串以空格分开</span>
+a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># float(a) 将字符串 a 转化为浮点数</span>
+a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">float</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">float</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span>
+<span class="token keyword">if</span> a <span class="token operator">></span> b<span class="token punctuation">:</span>  <span class="token comment"># 比较 a, b 价钱，大的赋值给 m</span>
+	m <span class="token operator">=</span> a
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+	m <span class="token operator">=</span> b
+
+<span class="token keyword">if</span> c <span class="token operator">></span> m<span class="token punctuation">:</span>  <span class="token comment"># 若 c 比 a, b 大，则 m 等于 c</span>
+	m <span class="token operator">=</span> c
+<span class="token keyword">print</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python ext-py line-numbers-mode"><pre v-pre class="language-python"><code>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c <span class="token operator">=</span> <span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 列表-></span>
+a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">float</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token builtin">float</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span>
+
+max_num <span class="token operator">=</span> a  <span class="token comment"># 存最大值</span>
+
+<span class="token comment"># if max_num > b:</span>
+<span class="token comment"># 	pass</span>
+<span class="token comment"># elif max_num &lt; b:</span>
+<span class="token comment"># 	max_num = b</span>
+<span class="token keyword">if</span> max_num <span class="token operator">&lt;</span> b<span class="token punctuation">:</span>
+	max_num <span class="token operator">=</span> b
+<span class="token keyword">if</span> max_num <span class="token operator">&lt;</span> c<span class="token punctuation">:</span>
+	max_num <span class="token operator">=</span> c
+<span class="token keyword">print</span><span class="token punctuation">(</span>max_num<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！</p>
+<details class="custom-container details"><summary>公众号：AI悦创【二维码】</summary>
+<p><img src="/gzh.jpg" alt="" loading="lazy"></p>
+</details>
+<div class="custom-container info">
+<p class="custom-container-title">AI悦创·编程一对一</p>
+<p>AI悦创·推出辅导班啦，包括「Python 语言辅导班、C++ 辅导班、java 辅导班、算法/数据结构辅导班、少儿编程、pygame 游戏开发，华为 Python 机试」，全部都是一对一教学：一对一辅导 + 一对一答疑 + 布置作业 + 项目实践等。当然，还有线下线上摄影课程、Photoshop、Premiere 一对一教学、QQ、微信在线，随时响应！微信：Jiabcdefh</p>
+<p>C++ 信息奥赛题解，长期更新！长期招收一对一中小学信息奥赛集训，莆田、厦门地区有机会线下上门，其他地区线上。微信：Jiabcdefh</p>
+<p>方法一：<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1432803776&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener noreferrer">QQ<ExternalLinkIcon/></a></p>
+<p>方法二：微信：Jiabcdefh</p>
+</div>
+<p><img src="/zsxq.jpg" alt="" loading="lazy"></p>
+</div></template>
+
+
