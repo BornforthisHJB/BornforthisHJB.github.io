@@ -1,11 +1,11 @@
-import { useStyleTag } from "/Users/huangjiabao/GitHub/WebSites/Bornforthis.cn/node_modules/vuepress-plugin-components/lib/client/composables/index.js";
+import { useStyleTag } from "/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/node_modules/vuepress-plugin-components/lib/client/composables/index.js";
 import { h } from "vue";
 import { defineClientConfig } from "@vuepress/client";
-import FontIcon from "/Users/huangjiabao/GitHub/WebSites/Bornforthis.cn/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
-import Badge from "/Users/huangjiabao/GitHub/WebSites/Bornforthis.cn/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
-import PDF from "/Users/huangjiabao/GitHub/WebSites/Bornforthis.cn/node_modules/vuepress-plugin-components/lib/client/components/PDF.js";
-import YouTube from "/Users/huangjiabao/GitHub/WebSites/Bornforthis.cn/node_modules/vuepress-plugin-components/lib/client/components/YouTube.js";
-import BackToTop from "/Users/huangjiabao/GitHub/WebSites/Bornforthis.cn/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
+import FontIcon from "/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
+import Badge from "/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
+import PDF from "/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/node_modules/vuepress-plugin-components/lib/client/components/PDF.js";
+import YouTube from "/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/node_modules/vuepress-plugin-components/lib/client/components/YouTube.js";
+import BackToTop from "/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
 
 
 export default defineClientConfig({

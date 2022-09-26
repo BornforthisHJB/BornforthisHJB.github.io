@@ -2,9 +2,6 @@ import {
   LockIcon
 } from "./chunk-7PND6NJZ.js";
 import {
-  w
-} from "./chunk-BGOVVDTY.js";
-import {
   useThemeData,
   useThemeLocaleData
 } from "./chunk-ANITSSXQ.js";
@@ -25,9 +22,12 @@ import {
   nextTick,
   ref
 } from "./chunk-3JL2R52N.js";
+import {
+  w
+} from "./chunk-BGOVVDTY.js";
 
 // node_modules/vuepress-theme-hope/lib/client/modules/encrypt/components/PasswordModal.js
-import "/Users/huangjiabao/GitHub/WebSites/Bornforthis.cn/node_modules/vuepress-theme-hope/lib/client/modules/encrypt/styles/password-modal.scss";
+import "/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/node_modules/vuepress-theme-hope/lib/client/modules/encrypt/styles/password-modal.scss";
 var PasswordModal_default = defineComponent({
   name: "PasswordModal",
   props: {
@@ -161,4 +161,4 @@ export {
   useGlobalEcrypt,
   usePathEncrypt
 };
-//# sourceMappingURL=chunk-XUIQZH3W.js.map
+//# sourceMappingURL=chunk-634TCU3S.js.map

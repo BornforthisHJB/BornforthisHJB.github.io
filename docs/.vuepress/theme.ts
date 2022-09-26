@@ -226,14 +226,14 @@ export default hopeTheme({
       cacheHTML: false,
       cachePic: false,
       appendBase: true,
-      apple: {
-        icon: "/assets/icon/apple-icon-152.png",
-        statusBarColor: "black",
-      },
-      msTile: {
-        image: "/assets/icon/ms-icon-144.png",
-        color: "#ffffff",
-      },
+      // apple: {
+      //   icon: "/assets/icon/apple-icon-152.png",
+      //   statusBarColor: "black",
+      // },
+      // msTile: {
+      //   image: "/assets/icon/ms-icon-144.png",
+      //   color: "#ffffff",
+      // },
       // manifest: {
       //   icons: [
       //     {

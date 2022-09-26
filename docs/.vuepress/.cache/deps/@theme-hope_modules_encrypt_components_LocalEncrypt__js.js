@@ -1,9 +1,8 @@
 import {
   PasswordModal_default,
   usePathEncrypt
-} from "./chunk-XUIQZH3W.js";
+} from "./chunk-634TCU3S.js";
 import "./chunk-7PND6NJZ.js";
-import "./chunk-BGOVVDTY.js";
 import "./chunk-ANITSSXQ.js";
 import "./chunk-ZYA2Y74L.js";
 import "./chunk-FECFGNAG.js";
@@ -15,6 +14,7 @@ import {
   h
 } from "./chunk-3JL2R52N.js";
 import "./chunk-XYQ66V4O.js";
+import "./chunk-BGOVVDTY.js";
 import "./chunk-5E3NKPRU.js";
 
 // node_modules/vuepress-theme-hope/lib/client/modules/encrypt/components/LocalEncrypt.js

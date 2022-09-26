@@ -1,14 +1,14 @@
 import {
   Icon_default
-} from "./chunk-BK25LO4S.js";
+} from "./chunk-XGTIGYAN.js";
+import {
+  client_exports
+} from "./chunk-FECFGNAG.js";
 import {
   isLinkHttp,
   isLinkMailto,
   isLinkTel
 } from "./chunk-LS4IQIE6.js";
-import {
-  client_exports
-} from "./chunk-FECFGNAG.js";
 import {
   RouterLink,
   useRoute
@@ -92,4 +92,4 @@ var AutoLink_default = defineComponent({
 export {
   AutoLink_default
 };
-//# sourceMappingURL=chunk-HNIICZCG.js.map
+//# sourceMappingURL=chunk-VOEAUQSW.js.map

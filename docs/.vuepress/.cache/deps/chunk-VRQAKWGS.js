@@ -7,18 +7,18 @@ import {
 } from "./chunk-ZYA2Y74L.js";
 import {
   AutoLink_default
-} from "./chunk-HNIICZCG.js";
+} from "./chunk-VOEAUQSW.js";
 import {
   Icon_default
-} from "./chunk-BK25LO4S.js";
+} from "./chunk-XGTIGYAN.js";
+import {
+  client_exports
+} from "./chunk-FECFGNAG.js";
 import {
   ensureEndingSlash,
   isLinkExternal,
   isPlainObject
 } from "./chunk-LS4IQIE6.js";
-import {
-  client_exports
-} from "./chunk-FECFGNAG.js";
 import {
   useRoute
 } from "./chunk-SWJALXVA.js";
@@ -170,4 +170,4 @@ export {
   setupSidebarItems,
   useSidebarItems
 };
-//# sourceMappingURL=chunk-LUWUJ7AQ.js.map
+//# sourceMappingURL=chunk-VRQAKWGS.js.map
