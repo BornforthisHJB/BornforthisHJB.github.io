@@ -217,7 +217,7 @@ export default hopeTheme({
       disableSelection: false,
     },
 
-    pwa: false,
+    // pwa: false,
     pwa: {
       update: "hint",
       maxPicSize: 90000,
