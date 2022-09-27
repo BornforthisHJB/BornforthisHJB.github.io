@@ -1,5 +1,5 @@
-bornforthis/.vuepress/dist/
+docs/.vuepress/dist/
 node_modules/
-bornforthis/.vuepress/.cache/
-bornforthis/.vuepress/.temp/
+docs/.vuepress/.cache/
+docs/.vuepress/.temp/
 .DS_Store
