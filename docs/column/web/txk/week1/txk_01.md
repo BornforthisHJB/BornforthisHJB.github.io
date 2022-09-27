@@ -6,7 +6,7 @@ isOriginal: true
 category: web 专栏
 tag:
     - web 专栏
-icon: network
+icon: web
 sticky: false
 star: false
 password: false

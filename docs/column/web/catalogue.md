@@ -1,6 +1,6 @@
 ---
 home: true
-icon: network
+icon: web
 title: Web 工程师入门体系私教课程
 heroImage: /ColumnImages/web/62a00ebf0932983806960344.jpg
 heroText: Web 工程师入门体系课
