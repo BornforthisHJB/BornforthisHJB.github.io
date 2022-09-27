@@ -261,49 +261,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "01-为什么我们要学习编程？",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1. 为什么需要学习编程？",
-        "slug": "_1-为什么需要学习编程",
-        "link": "#_1-为什么需要学习编程",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2. 那么编程的核心是什么？",
-        "slug": "_2-那么编程的核心是什么",
-        "link": "#_2-那么编程的核心是什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3. 经得起时间考验的通识技能",
-        "slug": "_3-经得起时间考验的通识技能",
-        "link": "#_3-经得起时间考验的通识技能",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4. 本专栏讲了些什么？",
-        "slug": "_4-本专栏讲了些什么",
-        "link": "#_4-本专栏讲了些什么",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5. 分享交流",
-        "slug": "_5-分享交流",
-        "link": "#_5-分享交流",
-        "children": []
-      }
-    ],
-    "path": "/Open_up_your_pattern/01.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "手把手教你GitBook使用",
     "headers": [
       {
@@ -421,9 +378,45 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "网站便携编写 copy",
-    "headers": [],
-    "path": "/Tool/01.html",
+    "title": "01-为什么我们要学习编程？",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. 为什么需要学习编程？",
+        "slug": "_1-为什么需要学习编程",
+        "link": "#_1-为什么需要学习编程",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 那么编程的核心是什么？",
+        "slug": "_2-那么编程的核心是什么",
+        "link": "#_2-那么编程的核心是什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3. 经得起时间考验的通识技能",
+        "slug": "_3-经得起时间考验的通识技能",
+        "link": "#_3-经得起时间考验的通识技能",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4. 本专栏讲了些什么？",
+        "slug": "_4-本专栏讲了些什么",
+        "link": "#_4-本专栏讲了些什么",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5. 分享交流",
+        "slug": "_5-分享交流",
+        "link": "#_5-分享交流",
+        "children": []
+      }
+    ],
+    "path": "/Open_up_your_pattern/01.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -431,6 +424,28 @@ export const searchIndex = [
     "title": "密码加密的文章",
     "headers": [],
     "path": "/guide/encrypt.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "简易 Web 练习生成器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. 功能实现与计划",
+        "slug": "_1-功能实现与计划",
+        "link": "#_1-功能实现与计划",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 功能依赖",
+        "slug": "_2-功能依赖",
+        "link": "#_2-功能依赖",
+        "children": []
+      }
+    ],
+    "path": "/project/01-Web_exercise_Generator.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -495,6 +510,667 @@ export const searchIndex = [
       }
     ],
     "path": "/learning_web/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "网站便携编写 copy",
+    "headers": [],
+    "path": "/Tool/01.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "ps 怎么把矩形变成圆形整张图片变成圆形",
+    "headers": [],
+    "path": "/ps/01.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "How to create DataFrame with feature importance from XGBClassifier made by GridSearchCV?",
+    "headers": [],
+    "path": "/stackoverflow/01.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "01-悦宝计划",
+    "headers": [
+      {
+        "level": 2,
+        "title": "计划制定时间：每周日晚上 23:00 ⌛️",
+        "slug": "计划制定时间-每周日晚上-23-00-⌛️",
+        "link": "#计划制定时间-每周日晚上-23-00-⌛️",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2022年09月06日",
+        "slug": "_2022年09月06日",
+        "link": "#_2022年09月06日",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2022年09月01日",
+        "slug": "_2022年09月01日",
+        "link": "#_2022年09月01日",
+        "children": []
+      }
+    ],
+    "path": "/1v1/02-yuebao/01-Plan.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "01-变量",
+    "headers": [
+      {
+        "level": 2,
+        "title": "0. 课程回放",
+        "slug": "_0-课程回放",
+        "link": "#_0-课程回放",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "1. 知识点",
+        "slug": "_1-知识点",
+        "link": "#_1-知识点",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.1 什么是变量",
+            "slug": "_1-1-什么是变量",
+            "link": "#_1-1-什么是变量",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2. 作业",
+        "slug": "_2-作业",
+        "link": "#_2-作业",
+        "children": [
+          {
+            "level": 3,
+            "title": "2.1 输出特定格式",
+            "slug": "_2-1-输出特定格式",
+            "link": "#_2-1-输出特定格式",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.2 交换果汁",
+            "slug": "_2-2-交换果汁",
+            "link": "#_2-2-交换果汁",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/1v1/01-Thomas-hw-note/01-Variable.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "01-博客网站环境搭建",
+    "headers": [
+      {
+        "level": 2,
+        "title": "0. 讲解作业",
+        "slug": "_0-讲解作业",
+        "link": "#_0-讲解作业",
+        "children": [
+          {
+            "level": 3,
+            "title": "输出特定格式",
+            "slug": "输出特定格式",
+            "link": "#输出特定格式",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "交换果汁",
+            "slug": "交换果汁",
+            "link": "#交换果汁",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "1. 安装向日葵",
+        "slug": "_1-安装向日葵",
+        "link": "#_1-安装向日葵",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 安装谷歌浏览器 Chrom",
+        "slug": "_2-安装谷歌浏览器-chrom",
+        "link": "#_2-安装谷歌浏览器-chrom",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3. 更好用的命令行工具",
+        "slug": "_3-更好用的命令行工具",
+        "link": "#_3-更好用的命令行工具",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4. 安装 brew",
+        "slug": "_4-安装-brew",
+        "link": "#_4-安装-brew",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5. 安装 git",
+        "slug": "_5-安装-git",
+        "link": "#_5-安装-git",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6. 访问 Github",
+        "slug": "_6-访问-github",
+        "link": "#_6-访问-github",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7. 注册 GitHub",
+        "slug": "_7-注册-github",
+        "link": "#_7-注册-github",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "课后反馈",
+        "slug": "课后反馈",
+        "link": "#课后反馈",
+        "children": []
+      }
+    ],
+    "path": "/1v1/01-Thomas-hw-note/02-Cocos.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "02-博客网站环境搭建&基本部署",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. VSCode 安装",
+        "slug": "_1-vscode-安装",
+        "link": "#_1-vscode-安装",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 安装 git、nodejs、yarn",
+        "slug": "_2-安装-git、nodejs、yarn",
+        "link": "#_2-安装-git、nodejs、yarn",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3. 检测 npm 版本",
+        "slug": "_3-检测-npm-版本",
+        "link": "#_3-检测-npm-版本",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4. npm 换源",
+        "slug": "_4-npm-换源",
+        "link": "#_4-npm-换源",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5. Git 与 GitHub",
+        "slug": "_5-git-与-github",
+        "link": "#_5-git-与-github",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6. 操作 GitHub",
+        "slug": "_6-操作-github",
+        "link": "#_6-操作-github",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7. 安装网站",
+        "slug": "_7-安装网站",
+        "link": "#_7-安装网站",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8. 网站启动命令",
+        "slug": "_8-网站启动命令",
+        "link": "#_8-网站启动命令",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "快捷键",
+        "slug": "快捷键",
+        "link": "#快捷键",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "课后反馈",
+        "slug": "课后反馈",
+        "link": "#课后反馈",
+        "children": []
+      }
+    ],
+    "path": "/1v1/01-Thomas-hw-note/03-web02.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "03-基本部署&设置网站",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. 进入网站路径",
+        "slug": "_1-进入网站路径",
+        "link": "#_1-进入网站路径",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.1 智慧方法",
+            "slug": "_1-1-智慧方法",
+            "link": "#_1-1-智慧方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.2 偷懒方法",
+            "slug": "_1-2-偷懒方法",
+            "link": "#_1-2-偷懒方法",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "1.3 运行本地运行",
+            "slug": "_1-3-运行本地运行",
+            "link": "#_1-3-运行本地运行",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "2. 修改",
+        "slug": "_2-修改",
+        "link": "#_2-修改",
+        "children": [
+          {
+            "level": 3,
+            "title": "2.1 修改博客名称",
+            "slug": "_2-1-修改博客名称",
+            "link": "#_2-1-修改博客名称",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.2 文件保存",
+            "slug": "_2-2-文件保存",
+            "link": "#_2-2-文件保存",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.3 tagline 设置你的口号",
+            "slug": "_2-3-tagline-设置你的口号",
+            "link": "#_2-3-tagline-设置你的口号",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.4 背景图片",
+            "slug": "_2-4-背景图片",
+            "link": "#_2-4-背景图片",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2.5 修改背景 logo",
+            "slug": "_2-5-修改背景-logo",
+            "link": "#_2-5-修改背景-logo",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "3. 把修改的部署上去",
+        "slug": "_3-把修改的部署上去",
+        "link": "#_3-把修改的部署上去",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "作业",
+        "slug": "作业",
+        "link": "#作业",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "课后反馈",
+        "slug": "课后反馈",
+        "link": "#课后反馈",
+        "children": []
+      }
+    ],
+    "path": "/1v1/01-Thomas-hw-note/04-web03.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "04-设置网站",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. 课前准备",
+        "slug": "_1-课前准备",
+        "link": "#_1-课前准备",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 修改网页左上角",
+        "slug": "_2-修改网页左上角",
+        "link": "#_2-修改网页左上角",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3. 修改博客作者",
+        "slug": "_3-修改博客作者",
+        "link": "#_3-修改博客作者",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4. 部署命令",
+        "slug": "_4-部署命令",
+        "link": "#_4-部署命令",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5. 修改社交平台",
+        "slug": "_5-修改社交平台",
+        "link": "#_5-修改社交平台",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6. 创建 about.md",
+        "slug": "_6-创建-about-md",
+        "link": "#_6-创建-about-md",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "作业",
+        "slug": "作业",
+        "link": "#作业",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "课后反馈",
+        "slug": "课后反馈",
+        "link": "#课后反馈",
+        "children": []
+      }
+    ],
+    "path": "/1v1/01-Thomas-hw-note/05-web04.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "05-设置网站",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. 购买域名",
+        "slug": "_1-购买域名",
+        "link": "#_1-购买域名",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 注册 CSDN",
+        "slug": "_2-注册-csdn",
+        "link": "#_2-注册-csdn",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3. 修改背景图片链接",
+        "slug": "_3-修改背景图片链接",
+        "link": "#_3-修改背景图片链接",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4. 删除",
+        "slug": "_4-删除",
+        "link": "#_4-删除",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5. 修改 footer",
+        "slug": "_5-修改-footer",
+        "link": "#_5-修改-footer",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6. 文章编写的初步操作",
+        "slug": "_6-文章编写的初步操作",
+        "link": "#_6-文章编写的初步操作",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7. 文章日期生成",
+        "slug": "_7-文章日期生成",
+        "link": "#_7-文章日期生成",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8. 阿里云域名解析",
+        "slug": "_8-阿里云域名解析",
+        "link": "#_8-阿里云域名解析",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "作业",
+        "slug": "作业",
+        "link": "#作业",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "课后反馈",
+        "slug": "课后反馈",
+        "link": "#课后反馈",
+        "children": []
+      }
+    ],
+    "path": "/1v1/01-Thomas-hw-note/06-web05.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "06-设置网站&文章编写 debug",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. 文章编写 debug",
+        "slug": "_1-文章编写-debug",
+        "link": "#_1-文章编写-debug",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 文章加密",
+        "slug": "_2-文章加密",
+        "link": "#_2-文章加密",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3. 修改自己的 GitHub 仓库",
+        "slug": "_3-修改自己的-github-仓库",
+        "link": "#_3-修改自己的-github-仓库",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "作业",
+        "slug": "作业",
+        "link": "#作业",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "课后反馈",
+        "slug": "课后反馈",
+        "link": "#课后反馈",
+        "children": []
+      }
+    ],
+    "path": "/1v1/01-Thomas-hw-note/07-web06.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "07-设置网站&文章编写 debug & 菜单栏",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. 文章加密解决",
+        "slug": "_1-文章加密解决",
+        "link": "#_1-文章加密解决",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 修改菜单栏",
+        "slug": "_2-修改菜单栏",
+        "link": "#_2-修改菜单栏",
+        "children": [
+          {
+            "level": 3,
+            "title": "2.1 修改的文件",
+            "slug": "_2-1-修改的文件",
+            "link": "#_2-1-修改的文件",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "作业",
+        "slug": "作业",
+        "link": "#作业",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "课后反馈",
+        "slug": "课后反馈",
+        "link": "#课后反馈",
+        "children": []
+      }
+    ],
+    "path": "/1v1/01-Thomas-hw-note/08-web07.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "08-多菜单栏设置",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.debug",
+        "slug": "_1-debug",
+        "link": "#_1-debug",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. 多菜栏设置",
+        "slug": "_2-多菜栏设置",
+        "link": "#_2-多菜栏设置",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "作业",
+        "slug": "作业",
+        "link": "#作业",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "课后反馈",
+        "slug": "课后反馈",
+        "link": "#课后反馈",
+        "children": []
+      }
+    ],
+    "path": "/1v1/01-Thomas-hw-note/09-web08.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "09-评论开发",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1. 留言功能",
+        "slug": "_1-留言功能",
+        "link": "#_1-留言功能",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "作业",
+        "slug": "作业",
+        "link": "#作业",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "课后反馈",
+        "slug": "课后反馈",
+        "link": "#课后反馈",
+        "children": []
+      }
+    ],
+    "path": "/1v1/01-Thomas-hw-note/10-web09.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2732,682 +3408,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "简易 Web 练习生成器",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1. 功能实现与计划",
-        "slug": "_1-功能实现与计划",
-        "link": "#_1-功能实现与计划",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2. 功能依赖",
-        "slug": "_2-功能依赖",
-        "link": "#_2-功能依赖",
-        "children": []
-      }
-    ],
-    "path": "/project/01-Web_exercise_Generator.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "ps 怎么把矩形变成圆形整张图片变成圆形",
-    "headers": [],
-    "path": "/ps/01.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "How to create DataFrame with feature importance from XGBClassifier made by GridSearchCV?",
-    "headers": [],
-    "path": "/stackoverflow/01.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "01-变量",
-    "headers": [
-      {
-        "level": 2,
-        "title": "0. 课程回放",
-        "slug": "_0-课程回放",
-        "link": "#_0-课程回放",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "1. 知识点",
-        "slug": "_1-知识点",
-        "link": "#_1-知识点",
-        "children": [
-          {
-            "level": 3,
-            "title": "1.1 什么是变量",
-            "slug": "_1-1-什么是变量",
-            "link": "#_1-1-什么是变量",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "2. 作业",
-        "slug": "_2-作业",
-        "link": "#_2-作业",
-        "children": [
-          {
-            "level": 3,
-            "title": "2.1 输出特定格式",
-            "slug": "_2-1-输出特定格式",
-            "link": "#_2-1-输出特定格式",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2.2 交换果汁",
-            "slug": "_2-2-交换果汁",
-            "link": "#_2-2-交换果汁",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/1v1/01-Thomas-hw-note/01-Variable.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "01-博客网站环境搭建",
-    "headers": [
-      {
-        "level": 2,
-        "title": "0. 讲解作业",
-        "slug": "_0-讲解作业",
-        "link": "#_0-讲解作业",
-        "children": [
-          {
-            "level": 3,
-            "title": "输出特定格式",
-            "slug": "输出特定格式",
-            "link": "#输出特定格式",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "交换果汁",
-            "slug": "交换果汁",
-            "link": "#交换果汁",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "1. 安装向日葵",
-        "slug": "_1-安装向日葵",
-        "link": "#_1-安装向日葵",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2. 安装谷歌浏览器 Chrom",
-        "slug": "_2-安装谷歌浏览器-chrom",
-        "link": "#_2-安装谷歌浏览器-chrom",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3. 更好用的命令行工具",
-        "slug": "_3-更好用的命令行工具",
-        "link": "#_3-更好用的命令行工具",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4. 安装 brew",
-        "slug": "_4-安装-brew",
-        "link": "#_4-安装-brew",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5. 安装 git",
-        "slug": "_5-安装-git",
-        "link": "#_5-安装-git",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6. 访问 Github",
-        "slug": "_6-访问-github",
-        "link": "#_6-访问-github",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7. 注册 GitHub",
-        "slug": "_7-注册-github",
-        "link": "#_7-注册-github",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "课后反馈",
-        "slug": "课后反馈",
-        "link": "#课后反馈",
-        "children": []
-      }
-    ],
-    "path": "/1v1/01-Thomas-hw-note/02-Cocos.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "02-博客网站环境搭建&基本部署",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1. VSCode 安装",
-        "slug": "_1-vscode-安装",
-        "link": "#_1-vscode-安装",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2. 安装 git、nodejs、yarn",
-        "slug": "_2-安装-git、nodejs、yarn",
-        "link": "#_2-安装-git、nodejs、yarn",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3. 检测 npm 版本",
-        "slug": "_3-检测-npm-版本",
-        "link": "#_3-检测-npm-版本",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4. npm 换源",
-        "slug": "_4-npm-换源",
-        "link": "#_4-npm-换源",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5. Git 与 GitHub",
-        "slug": "_5-git-与-github",
-        "link": "#_5-git-与-github",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6. 操作 GitHub",
-        "slug": "_6-操作-github",
-        "link": "#_6-操作-github",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7. 安装网站",
-        "slug": "_7-安装网站",
-        "link": "#_7-安装网站",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "8. 网站启动命令",
-        "slug": "_8-网站启动命令",
-        "link": "#_8-网站启动命令",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "快捷键",
-        "slug": "快捷键",
-        "link": "#快捷键",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "课后反馈",
-        "slug": "课后反馈",
-        "link": "#课后反馈",
-        "children": []
-      }
-    ],
-    "path": "/1v1/01-Thomas-hw-note/03-web02.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "03-基本部署&设置网站",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1. 进入网站路径",
-        "slug": "_1-进入网站路径",
-        "link": "#_1-进入网站路径",
-        "children": [
-          {
-            "level": 3,
-            "title": "1.1 智慧方法",
-            "slug": "_1-1-智慧方法",
-            "link": "#_1-1-智慧方法",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "1.2 偷懒方法",
-            "slug": "_1-2-偷懒方法",
-            "link": "#_1-2-偷懒方法",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "1.3 运行本地运行",
-            "slug": "_1-3-运行本地运行",
-            "link": "#_1-3-运行本地运行",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "2. 修改",
-        "slug": "_2-修改",
-        "link": "#_2-修改",
-        "children": [
-          {
-            "level": 3,
-            "title": "2.1 修改博客名称",
-            "slug": "_2-1-修改博客名称",
-            "link": "#_2-1-修改博客名称",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2.2 文件保存",
-            "slug": "_2-2-文件保存",
-            "link": "#_2-2-文件保存",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2.3 tagline 设置你的口号",
-            "slug": "_2-3-tagline-设置你的口号",
-            "link": "#_2-3-tagline-设置你的口号",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2.4 背景图片",
-            "slug": "_2-4-背景图片",
-            "link": "#_2-4-背景图片",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "2.5 修改背景 logo",
-            "slug": "_2-5-修改背景-logo",
-            "link": "#_2-5-修改背景-logo",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "3. 把修改的部署上去",
-        "slug": "_3-把修改的部署上去",
-        "link": "#_3-把修改的部署上去",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "作业",
-        "slug": "作业",
-        "link": "#作业",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "课后反馈",
-        "slug": "课后反馈",
-        "link": "#课后反馈",
-        "children": []
-      }
-    ],
-    "path": "/1v1/01-Thomas-hw-note/04-web03.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "04-设置网站",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1. 课前准备",
-        "slug": "_1-课前准备",
-        "link": "#_1-课前准备",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2. 修改网页左上角",
-        "slug": "_2-修改网页左上角",
-        "link": "#_2-修改网页左上角",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3. 修改博客作者",
-        "slug": "_3-修改博客作者",
-        "link": "#_3-修改博客作者",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4. 部署命令",
-        "slug": "_4-部署命令",
-        "link": "#_4-部署命令",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5. 修改社交平台",
-        "slug": "_5-修改社交平台",
-        "link": "#_5-修改社交平台",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6. 创建 about.md",
-        "slug": "_6-创建-about-md",
-        "link": "#_6-创建-about-md",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "作业",
-        "slug": "作业",
-        "link": "#作业",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "课后反馈",
-        "slug": "课后反馈",
-        "link": "#课后反馈",
-        "children": []
-      }
-    ],
-    "path": "/1v1/01-Thomas-hw-note/05-web04.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "05-设置网站",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1. 购买域名",
-        "slug": "_1-购买域名",
-        "link": "#_1-购买域名",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2. 注册 CSDN",
-        "slug": "_2-注册-csdn",
-        "link": "#_2-注册-csdn",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3. 修改背景图片链接",
-        "slug": "_3-修改背景图片链接",
-        "link": "#_3-修改背景图片链接",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4. 删除",
-        "slug": "_4-删除",
-        "link": "#_4-删除",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5. 修改 footer",
-        "slug": "_5-修改-footer",
-        "link": "#_5-修改-footer",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6. 文章编写的初步操作",
-        "slug": "_6-文章编写的初步操作",
-        "link": "#_6-文章编写的初步操作",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7. 文章日期生成",
-        "slug": "_7-文章日期生成",
-        "link": "#_7-文章日期生成",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "8. 阿里云域名解析",
-        "slug": "_8-阿里云域名解析",
-        "link": "#_8-阿里云域名解析",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "作业",
-        "slug": "作业",
-        "link": "#作业",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "课后反馈",
-        "slug": "课后反馈",
-        "link": "#课后反馈",
-        "children": []
-      }
-    ],
-    "path": "/1v1/01-Thomas-hw-note/06-web05.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "06-设置网站&文章编写 debug",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1. 文章编写 debug",
-        "slug": "_1-文章编写-debug",
-        "link": "#_1-文章编写-debug",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2. 文章加密",
-        "slug": "_2-文章加密",
-        "link": "#_2-文章加密",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3. 修改自己的 GitHub 仓库",
-        "slug": "_3-修改自己的-github-仓库",
-        "link": "#_3-修改自己的-github-仓库",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "作业",
-        "slug": "作业",
-        "link": "#作业",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "课后反馈",
-        "slug": "课后反馈",
-        "link": "#课后反馈",
-        "children": []
-      }
-    ],
-    "path": "/1v1/01-Thomas-hw-note/07-web06.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "07-设置网站&文章编写 debug & 菜单栏",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1. 文章加密解决",
-        "slug": "_1-文章加密解决",
-        "link": "#_1-文章加密解决",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2. 修改菜单栏",
-        "slug": "_2-修改菜单栏",
-        "link": "#_2-修改菜单栏",
-        "children": [
-          {
-            "level": 3,
-            "title": "2.1 修改的文件",
-            "slug": "_2-1-修改的文件",
-            "link": "#_2-1-修改的文件",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "作业",
-        "slug": "作业",
-        "link": "#作业",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "课后反馈",
-        "slug": "课后反馈",
-        "link": "#课后反馈",
-        "children": []
-      }
-    ],
-    "path": "/1v1/01-Thomas-hw-note/08-web07.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "08-多菜单栏设置",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.debug",
-        "slug": "_1-debug",
-        "link": "#_1-debug",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2. 多菜栏设置",
-        "slug": "_2-多菜栏设置",
-        "link": "#_2-多菜栏设置",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "作业",
-        "slug": "作业",
-        "link": "#作业",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "课后反馈",
-        "slug": "课后反馈",
-        "link": "#课后反馈",
-        "children": []
-      }
-    ],
-    "path": "/1v1/01-Thomas-hw-note/09-web08.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "09-评论开发",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1. 留言功能",
-        "slug": "_1-留言功能",
-        "link": "#_1-留言功能",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "作业",
-        "slug": "作业",
-        "link": "#作业",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "课后反馈",
-        "slug": "课后反馈",
-        "link": "#课后反馈",
-        "children": []
-      }
-    ],
-    "path": "/1v1/01-Thomas-hw-note/10-web09.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "01-悦宝计划",
-    "headers": [
-      {
-        "level": 2,
-        "title": "计划制定时间：每周日晚上 23:00 ⌛️",
-        "slug": "计划制定时间-每周日晚上-23-00-⌛️",
-        "link": "#计划制定时间-每周日晚上-23-00-⌛️",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2022年09月06日",
-        "slug": "_2022年09月06日",
-        "link": "#_2022年09月06日",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2022年09月01日",
-        "slug": "_2022年09月01日",
-        "link": "#_2022年09月01日",
-        "children": []
-      }
-    ],
-    "path": "/1v1/02-yuebao/01-Plan.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "01-Python 环境搭建「Dannie」",
     "headers": [
       {
@@ -4372,6 +4372,20 @@ export const searchIndex = [
       }
     ],
     "path": "/blog/crawler/02-baidu.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "付费观看，QQ：1432803776",
+    "headers": [],
+    "path": "/dedao/01-Xue-Zhaofengs-economics-class/01.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "发刊词丨只给你地道的经济学思维",
+    "headers": [],
+    "path": "/dedao/01-Xue-Zhaofengs-economics-class/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -6702,21 +6716,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "AI悦创·下载页",
-    "headers": [
-      {
-        "level": 2,
-        "title": "下载目录",
-        "slug": "下载目录",
-        "link": "#下载目录",
-        "children": []
-      }
-    ],
-    "path": "/column/download/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "01-Markdown 标题",
     "headers": [],
     "path": "/column/md/01.html",
@@ -6777,6 +6776,21 @@ export const searchIndex = [
     "title": "Markdown",
     "headers": [],
     "path": "/column/md/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "AI悦创·下载页",
+    "headers": [
+      {
+        "level": 2,
+        "title": "下载目录",
+        "slug": "下载目录",
+        "link": "#下载目录",
+        "children": []
+      }
+    ],
+    "path": "/column/download/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -7230,196 +7244,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Day 1：Python 两大特性和四大基本语法",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Python 语言两大特性",
-        "slug": "python-语言两大特性",
-        "link": "#python-语言两大特性",
-        "children": [
-          {
-            "level": 3,
-            "title": "什么是动态语言？",
-            "slug": "什么是动态语言",
-            "link": "#什么是动态语言",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "什么是强类型语言？",
-            "slug": "什么是强类型语言",
-            "link": "#什么是强类型语言",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "四大基本语法",
-        "slug": "四大基本语法",
-        "link": "#四大基本语法",
-        "children": [
-          {
-            "level": 3,
-            "title": "命名规则",
-            "slug": "命名规则",
-            "link": "#命名规则",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "缩进原则",
-            "slug": "缩进原则",
-            "link": "#缩进原则",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "特殊关键字",
-            "slug": "特殊关键字",
-            "link": "#特殊关键字",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "特殊运算符",
-            "slug": "特殊运算符",
-            "link": "#特殊运算符",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "小结",
-        "slug": "小结",
-        "link": "#小结",
-        "children": []
-      }
-    ],
-    "path": "/column/python60/01.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Day 2：Python 四大数据类型总结",
-    "headers": [
-      {
-        "level": 2,
-        "title": "基本数据类型",
-        "slug": "基本数据类型",
-        "link": "#基本数据类型",
-        "children": [
-          {
-            "level": 3,
-            "title": "数值型",
-            "slug": "数值型",
-            "link": "#数值型",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "容器型",
-            "slug": "容器型",
-            "link": "#容器型",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "字符串",
-            "slug": "字符串",
-            "link": "#字符串",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "自定义类型",
-            "slug": "自定义类型",
-            "link": "#自定义类型",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "小结",
-        "slug": "小结",
-        "link": "#小结",
-        "children": []
-      }
-    ],
-    "path": "/column/python60/02.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Day 3：list 和 tuple 的基本操作、深浅拷贝和切片操作详细等 5 个方面总结",
-    "headers": [
-      {
-        "level": 2,
-        "title": "列表",
-        "slug": "列表",
-        "link": "#列表",
-        "children": [
-          {
-            "level": 3,
-            "title": "基本操作",
-            "slug": "基本操作",
-            "link": "#基本操作",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "深浅拷贝",
-            "slug": "深浅拷贝",
-            "link": "#深浅拷贝",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "切片",
-            "slug": "切片",
-            "link": "#切片",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "元组",
-        "slug": "元组",
-        "link": "#元组",
-        "children": [
-          {
-            "level": 3,
-            "title": "基本操作",
-            "slug": "基本操作-1",
-            "link": "#基本操作-1",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "可变与不可变",
-            "slug": "可变与不可变",
-            "link": "#可变与不可变",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "小结",
-        "slug": "小结",
-        "link": "#小结",
-        "children": []
-      }
-    ],
-    "path": "/column/python60/03.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "Python 办公自动化",
     "headers": [],
     "path": "/column/pyauto/",
@@ -7852,6 +7676,225 @@ export const searchIndex = [
       }
     ],
     "path": "/column/pyauto/auto_base12.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Day 1：Python 两大特性和四大基本语法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Python 语言两大特性",
+        "slug": "python-语言两大特性",
+        "link": "#python-语言两大特性",
+        "children": [
+          {
+            "level": 3,
+            "title": "什么是动态语言？",
+            "slug": "什么是动态语言",
+            "link": "#什么是动态语言",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "什么是强类型语言？",
+            "slug": "什么是强类型语言",
+            "link": "#什么是强类型语言",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "四大基本语法",
+        "slug": "四大基本语法",
+        "link": "#四大基本语法",
+        "children": [
+          {
+            "level": 3,
+            "title": "命名规则",
+            "slug": "命名规则",
+            "link": "#命名规则",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "缩进原则",
+            "slug": "缩进原则",
+            "link": "#缩进原则",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "特殊关键字",
+            "slug": "特殊关键字",
+            "link": "#特殊关键字",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "特殊运算符",
+            "slug": "特殊运算符",
+            "link": "#特殊运算符",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "小结",
+        "slug": "小结",
+        "link": "#小结",
+        "children": []
+      }
+    ],
+    "path": "/column/python60/01.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Day 2：Python 四大数据类型总结",
+    "headers": [
+      {
+        "level": 2,
+        "title": "基本数据类型",
+        "slug": "基本数据类型",
+        "link": "#基本数据类型",
+        "children": [
+          {
+            "level": 3,
+            "title": "数值型",
+            "slug": "数值型",
+            "link": "#数值型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "容器型",
+            "slug": "容器型",
+            "link": "#容器型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "字符串",
+            "slug": "字符串",
+            "link": "#字符串",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "自定义类型",
+            "slug": "自定义类型",
+            "link": "#自定义类型",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "小结",
+        "slug": "小结",
+        "link": "#小结",
+        "children": []
+      }
+    ],
+    "path": "/column/python60/02.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Day 3：list 和 tuple 的基本操作、深浅拷贝和切片操作详细等 5 个方面总结",
+    "headers": [
+      {
+        "level": 2,
+        "title": "列表",
+        "slug": "列表",
+        "link": "#列表",
+        "children": [
+          {
+            "level": 3,
+            "title": "基本操作",
+            "slug": "基本操作",
+            "link": "#基本操作",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "深浅拷贝",
+            "slug": "深浅拷贝",
+            "link": "#深浅拷贝",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "切片",
+            "slug": "切片",
+            "link": "#切片",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "元组",
+        "slug": "元组",
+        "link": "#元组",
+        "children": [
+          {
+            "level": 3,
+            "title": "基本操作",
+            "slug": "基本操作-1",
+            "link": "#基本操作-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "可变与不可变",
+            "slug": "可变与不可变",
+            "link": "#可变与不可变",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "小结",
+        "slug": "小结",
+        "link": "#小结",
+        "children": []
+      }
+    ],
+    "path": "/column/python60/03.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "tkinter",
+    "headers": [],
+    "path": "/column/tkinter/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "01-Tkinter 中 tearoff 的作用",
+    "headers": [
+      {
+        "level": 2,
+        "title": "当设置为 0 的时候",
+        "slug": "当设置为-0-的时候",
+        "link": "#当设置为-0-的时候",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "设置为 1 的时候",
+        "slug": "设置为-1-的时候",
+        "link": "#设置为-1-的时候",
+        "children": []
+      }
+    ],
+    "path": "/column/tkinter/tearoff.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -9065,35 +9108,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "tkinter",
-    "headers": [],
-    "path": "/column/tkinter/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "01-Tkinter 中 tearoff 的作用",
-    "headers": [
-      {
-        "level": 2,
-        "title": "当设置为 0 的时候",
-        "slug": "当设置为-0-的时候",
-        "link": "#当设置为-0-的时候",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "设置为 1 的时候",
-        "slug": "设置为-1-的时候",
-        "link": "#设置为-1-的时候",
-        "children": []
-      }
-    ],
-    "path": "/column/tkinter/tearoff.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "Web 工程师入门体系私教课程",
     "headers": [
       {
@@ -9112,20 +9126,6 @@ export const searchIndex = [
     "title": "开篇词 | 拍了十三年照片，我还是个小白",
     "headers": [],
     "path": "/column/%E6%91%84%E5%BD%B1%E5%85%A5%E9%97%A8%E8%AF%BE/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "付费观看，QQ：1432803776",
-    "headers": [],
-    "path": "/dedao/01-Xue-Zhaofengs-economics-class/01.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "发刊词丨只给你地道的经济学思维",
-    "headers": [],
-    "path": "/dedao/01-Xue-Zhaofengs-economics-class/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -9969,7 +9969,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "「作业」2-2 【学习任务】根据所学知识辨识对应的数据类型",
+    "title": "2-2 【学习任务】根据所学知识辨识对应的数据类型",
     "headers": [
       {
         "level": 2,
@@ -10137,6 +10137,21 @@ export const searchIndex = [
       }
     ],
     "path": "/column/data_analysis/week1/07.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "2-6 【讨论题】计算两组薪酬数据的平均值、中位数、众数",
+    "headers": [
+      {
+        "level": 2,
+        "title": "期待你和我一起，用数据解析世界",
+        "slug": "期待你和我一起-用数据解析世界",
+        "link": "#期待你和我一起-用数据解析世界",
+        "children": []
+      }
+    ],
+    "path": "/column/data_analysis/week1/08.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -10913,36 +10928,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "01-Python入门上",
-    "headers": [
-      {
-        "level": 2,
-        "title": "0. 简介",
-        "slug": "_0-简介",
-        "link": "#_0-简介",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "1. 变量、运算符与数据类型",
-        "slug": "_1-变量、运算符与数据类型",
-        "link": "#_1-变量、运算符与数据类型",
-        "children": [
-          {
-            "level": 3,
-            "title": "1.1 注释",
-            "slug": "_1-1-注释",
-            "link": "#_1-1-注释",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/column/tianchi/Python/Python01.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "01-Python 追加 Excel 数据",
     "headers": [
       {
@@ -10983,6 +10968,107 @@ export const searchIndex = [
       }
     ],
     "path": "/column/pyauto/gkk/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "01-Python入门上",
+    "headers": [
+      {
+        "level": 2,
+        "title": "0. 简介",
+        "slug": "_0-简介",
+        "link": "#_0-简介",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "1. 变量、运算符与数据类型",
+        "slug": "_1-变量、运算符与数据类型",
+        "link": "#_1-变量、运算符与数据类型",
+        "children": [
+          {
+            "level": 3,
+            "title": "1.1 注释",
+            "slug": "_1-1-注释",
+            "link": "#_1-1-注释",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/column/tianchi/Python/Python01.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "01-HTML 介绍",
+    "headers": [
+      {
+        "level": 2,
+        "title": "HTML 介绍",
+        "slug": "html-介绍",
+        "link": "#html-介绍",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "1. 什么是 HTML",
+        "slug": "_1-什么是-html",
+        "link": "#_1-什么是-html",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2. HTML 的由来",
+        "slug": "_2-html-的由来",
+        "link": "#_2-html-的由来",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3. 与普通文本的区别",
+        "slug": "_3-与普通文本的区别",
+        "link": "#_3-与普通文本的区别",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4. HTML 的标准",
+        "slug": "_4-html-的标准",
+        "link": "#_4-html-的标准",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5. HTML 的特点",
+        "slug": "_5-html-的特点",
+        "link": "#_5-html-的特点",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "6. HTML 的应用",
+        "slug": "_6-html-的应用",
+        "link": "#_6-html-的应用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "7. 课程设计",
+        "slug": "_7-课程设计",
+        "link": "#_7-课程设计",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "8. 学习基础",
+        "slug": "_8-学习基础",
+        "link": "#_8-学习基础",
+        "children": []
+      }
+    ],
+    "path": "/column/web/book/html-01.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -11582,77 +11668,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "01-HTML 介绍",
-    "headers": [
-      {
-        "level": 2,
-        "title": "HTML 介绍",
-        "slug": "html-介绍",
-        "link": "#html-介绍",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "1. 什么是 HTML",
-        "slug": "_1-什么是-html",
-        "link": "#_1-什么是-html",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2. HTML 的由来",
-        "slug": "_2-html-的由来",
-        "link": "#_2-html-的由来",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3. 与普通文本的区别",
-        "slug": "_3-与普通文本的区别",
-        "link": "#_3-与普通文本的区别",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4. HTML 的标准",
-        "slug": "_4-html-的标准",
-        "link": "#_4-html-的标准",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5. HTML 的特点",
-        "slug": "_5-html-的特点",
-        "link": "#_5-html-的特点",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "6. HTML 的应用",
-        "slug": "_6-html-的应用",
-        "link": "#_6-html-的应用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "7. 课程设计",
-        "slug": "_7-课程设计",
-        "link": "#_7-课程设计",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "8. 学习基础",
-        "slug": "_8-学习基础",
-        "link": "#_8-学习基础",
-        "children": []
-      }
-    ],
-    "path": "/column/web/book/html-01.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "开篇词 | 你为什么需要数据分析能力？",
     "headers": [],
     "path": "/column/data_analysis/Data-analysis-practice-45-lectures/Phase-one/01.html",
@@ -12069,20 +12084,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "把你的格局打开 分类",
-    "headers": [],
-    "path": "/category/%E6%8A%8A%E4%BD%A0%E7%9A%84%E6%A0%BC%E5%B1%80%E6%89%93%E5%BC%80/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "把你的格局打开 标签",
-    "headers": [],
-    "path": "/tag/%E6%8A%8A%E4%BD%A0%E7%9A%84%E6%A0%BC%E5%B1%80%E6%89%93%E5%BC%80/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "GitBook 分类",
     "headers": [],
     "path": "/category/gitbook/",
@@ -12097,6 +12098,20 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "把你的格局打开 分类",
+    "headers": [],
+    "path": "/category/%E6%8A%8A%E4%BD%A0%E7%9A%84%E6%A0%BC%E5%B1%80%E6%89%93%E5%BC%80/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "把你的格局打开 标签",
+    "headers": [],
+    "path": "/tag/%E6%8A%8A%E4%BD%A0%E7%9A%84%E6%A0%BC%E5%B1%80%E6%89%93%E5%BC%80/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "使用指南 分类",
     "headers": [],
     "path": "/category/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/",
@@ -12107,6 +12122,146 @@ export const searchIndex = [
     "title": "文章加密 标签",
     "headers": [],
     "path": "/tag/%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Bornforthis项目 分类",
+    "headers": [],
+    "path": "/category/bornforthis%E9%A1%B9%E7%9B%AE/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Bornforthis项目 标签",
+    "headers": [],
+    "path": "/tag/bornforthis%E9%A1%B9%E7%9B%AE/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "PS 笔记 分类",
+    "headers": [],
+    "path": "/category/ps-%E7%AC%94%E8%AE%B0/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "PS 笔记 标签",
+    "headers": [],
+    "path": "/tag/ps-%E7%AC%94%E8%AE%B0/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "stackoverflow 分类",
+    "headers": [],
+    "path": "/category/stackoverflow/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "stackoverflow 标签",
+    "headers": [],
+    "path": "/tag/stackoverflow/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "python 分类",
+    "headers": [],
+    "path": "/category/python/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "python 标签",
+    "headers": [],
+    "path": "/tag/python/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "machine-learning 分类",
+    "headers": [],
+    "path": "/category/machine-learning/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "machine-learning 标签",
+    "headers": [],
+    "path": "/tag/machine-learning/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "scikit-learn 分类",
+    "headers": [],
+    "path": "/category/scikit-learn/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "scikit-learn 标签",
+    "headers": [],
+    "path": "/tag/scikit-learn/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "xgboost 分类",
+    "headers": [],
+    "path": "/category/xgboost/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "xgboost 标签",
+    "headers": [],
+    "path": "/tag/xgboost/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "gridsearchcv 分类",
+    "headers": [],
+    "path": "/category/gridsearchcv/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "gridsearchcv 标签",
+    "headers": [],
+    "path": "/tag/gridsearchcv/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "摄影专栏 分类",
+    "headers": [],
+    "path": "/category/%E6%91%84%E5%BD%B1%E4%B8%93%E6%A0%8F/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "摄影专栏 标签",
+    "headers": [],
+    "path": "/tag/%E6%91%84%E5%BD%B1%E4%B8%93%E6%A0%8F/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Thomas-hw-note 分类",
+    "headers": [],
+    "path": "/category/thomas-hw-note/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Thomas-hw-note 标签",
+    "headers": [],
+    "path": "/tag/thomas-hw-note/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12226,13 +12381,6 @@ export const searchIndex = [
     "title": "JavaScript 分类",
     "headers": [],
     "path": "/category/javascript/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Python 标签",
-    "headers": [],
-    "path": "/tag/python/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12601,9 +12749,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Bornforthis项目 分类",
+    "title": "Python 基础笔记 分类",
     "headers": [],
-    "path": "/category/bornforthis%E9%A1%B9%E7%9B%AE/",
+    "path": "/category/python-%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12615,9 +12763,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "PS 笔记 分类",
+    "title": "Java 1v1 分类",
     "headers": [],
-    "path": "/category/ps-%E7%AC%94%E8%AE%B0/",
+    "path": "/category/java-1v1/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12629,9 +12777,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "stackoverflow 分类",
+    "title": "纽约大学一对一 分类",
     "headers": [],
-    "path": "/category/stackoverflow/",
+    "path": "/category/%E7%BA%BD%E7%BA%A6%E5%A4%A7%E5%AD%A6%E4%B8%80%E5%AF%B9%E4%B8%80/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12643,9 +12791,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "python 分类",
+    "title": "web 1v1 分类",
     "headers": [],
-    "path": "/category/python/",
+    "path": "/category/web-1v1/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12657,9 +12805,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "machine-learning 分类",
+    "title": "crawler 分类",
     "headers": [],
-    "path": "/category/machine-learning/",
+    "path": "/category/crawler/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12671,9 +12819,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "scikit-learn 分类",
+    "title": "百度收录小技巧 分类",
     "headers": [],
-    "path": "/category/scikit-learn/",
+    "path": "/category/%E7%99%BE%E5%BA%A6%E6%94%B6%E5%BD%95%E5%B0%8F%E6%8A%80%E5%B7%A7/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12685,142 +12833,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "xgboost 分类",
+    "title": "得到 分类",
     "headers": [],
-    "path": "/category/xgboost/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Bornforthis项目 标签",
-    "headers": [],
-    "path": "/tag/bornforthis%E9%A1%B9%E7%9B%AE/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "gridsearchcv 分类",
-    "headers": [],
-    "path": "/category/gridsearchcv/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "PS 笔记 标签",
-    "headers": [],
-    "path": "/tag/ps-%E7%AC%94%E8%AE%B0/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Thomas-hw-note 分类",
-    "headers": [],
-    "path": "/category/thomas-hw-note/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "stackoverflow 标签",
-    "headers": [],
-    "path": "/tag/stackoverflow/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "摄影专栏 分类",
-    "headers": [],
-    "path": "/category/%E6%91%84%E5%BD%B1%E4%B8%93%E6%A0%8F/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Python 基础笔记 分类",
-    "headers": [],
-    "path": "/category/python-%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "machine-learning 标签",
-    "headers": [],
-    "path": "/tag/machine-learning/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Java 1v1 分类",
-    "headers": [],
-    "path": "/category/java-1v1/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "scikit-learn 标签",
-    "headers": [],
-    "path": "/tag/scikit-learn/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "纽约大学一对一 分类",
-    "headers": [],
-    "path": "/category/%E7%BA%BD%E7%BA%A6%E5%A4%A7%E5%AD%A6%E4%B8%80%E5%AF%B9%E4%B8%80/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "xgboost 标签",
-    "headers": [],
-    "path": "/tag/xgboost/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "web 1v1 分类",
-    "headers": [],
-    "path": "/category/web-1v1/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "gridsearchcv 标签",
-    "headers": [],
-    "path": "/tag/gridsearchcv/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "crawler 分类",
-    "headers": [],
-    "path": "/category/crawler/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Thomas-hw-note 标签",
-    "headers": [],
-    "path": "/tag/thomas-hw-note/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "百度收录小技巧 分类",
-    "headers": [],
-    "path": "/category/%E7%99%BE%E5%BA%A6%E6%94%B6%E5%BD%95%E5%B0%8F%E6%8A%80%E5%B7%A7/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "摄影专栏 标签",
-    "headers": [],
-    "path": "/tag/%E6%91%84%E5%BD%B1%E4%B8%93%E6%A0%8F/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Homebrew 分类",
-    "headers": [],
-    "path": "/category/homebrew/",
+    "path": "/category/%E5%BE%97%E5%88%B0/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12832,6 +12847,13 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "薛兆丰的经济学课 分类",
+    "headers": [],
+    "path": "/category/%E8%96%9B%E5%85%86%E4%B8%B0%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E8%AF%BE/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Java 1v1 标签",
     "headers": [],
     "path": "/tag/java-1v1/",
@@ -12839,9 +12861,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Python 跑马灯 分类",
+    "title": "Homebrew 分类",
     "headers": [],
-    "path": "/category/python-%E8%B7%91%E9%A9%AC%E7%81%AF/",
+    "path": "/category/homebrew/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12853,13 +12875,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Python 小玩意 分类",
-    "headers": [],
-    "path": "/category/python-%E5%B0%8F%E7%8E%A9%E6%84%8F/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "web 1v1 标签",
     "headers": [],
     "path": "/tag/web-1v1/",
@@ -12867,9 +12882,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "百度文库 分类",
+    "title": "Python 跑马灯 分类",
     "headers": [],
-    "path": "/category/%E7%99%BE%E5%BA%A6%E6%96%87%E5%BA%93/",
+    "path": "/category/python-%E8%B7%91%E9%A9%AC%E7%81%AF/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12881,9 +12896,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Python 小技巧 分类",
+    "title": "Python 小玩意 分类",
     "headers": [],
-    "path": "/category/python-%E5%B0%8F%E6%8A%80%E5%B7%A7/",
+    "path": "/category/python-%E5%B0%8F%E7%8E%A9%E6%84%8F/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -12891,6 +12906,34 @@ export const searchIndex = [
     "title": "百度收录小技巧 标签",
     "headers": [],
     "path": "/tag/%E7%99%BE%E5%BA%A6%E6%94%B6%E5%BD%95%E5%B0%8F%E6%8A%80%E5%B7%A7/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "百度文库 分类",
+    "headers": [],
+    "path": "/category/%E7%99%BE%E5%BA%A6%E6%96%87%E5%BA%93/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "得到 标签",
+    "headers": [],
+    "path": "/tag/%E5%BE%97%E5%88%B0/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Python 小技巧 分类",
+    "headers": [],
+    "path": "/category/python-%E5%B0%8F%E6%8A%80%E5%B7%A7/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "薛兆丰的经济学课 标签",
+    "headers": [],
+    "path": "/tag/%E8%96%9B%E5%85%86%E4%B8%B0%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E8%AF%BE/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -13175,9 +13218,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "编程题解 分类",
+    "title": "tkinter 分类",
     "headers": [],
-    "path": "/category/%E7%BC%96%E7%A8%8B%E9%A2%98%E8%A7%A3/",
+    "path": "/category/tkinter/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -13189,16 +13232,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "华为机试题解 分类",
+    "title": "编程题解 分类",
     "headers": [],
-    "path": "/category/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95%E9%A2%98%E8%A7%A3/",
+    "path": "/category/%E7%BC%96%E7%A8%8B%E9%A2%98%E8%A7%A3/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "一本通 Python 题解 分类",
+    "title": "华为机试题解 分类",
     "headers": [],
-    "path": "/category/%E4%B8%80%E6%9C%AC%E9%80%9A-python-%E9%A2%98%E8%A7%A3/",
+    "path": "/category/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95%E9%A2%98%E8%A7%A3/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -13210,9 +13253,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "tkinter 分类",
+    "title": "一本通 Python 题解 分类",
     "headers": [],
-    "path": "/category/tkinter/",
+    "path": "/category/%E4%B8%80%E6%9C%AC%E9%80%9A-python-%E9%A2%98%E8%A7%A3/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -13224,9 +13267,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "得到 分类",
+    "title": "Java体系课 分类",
     "headers": [],
-    "path": "/category/%E5%BE%97%E5%88%B0/",
+    "path": "/category/java%E4%BD%93%E7%B3%BB%E8%AF%BE/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -13238,51 +13281,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "薛兆丰的经济学课 分类",
-    "headers": [],
-    "path": "/category/%E8%96%9B%E5%85%86%E4%B8%B0%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E8%AF%BE/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "编程题解 标签",
-    "headers": [],
-    "path": "/tag/%E7%BC%96%E7%A8%8B%E9%A2%98%E8%A7%A3/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Java体系课 分类",
-    "headers": [],
-    "path": "/category/java%E4%BD%93%E7%B3%BB%E8%AF%BE/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "华为机试题解 标签",
-    "headers": [],
-    "path": "/tag/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95%E9%A2%98%E8%A7%A3/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "Java FQA 分类",
     "headers": [],
     "path": "/category/java-fqa/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "一本通 Python 题解 标签",
-    "headers": [],
-    "path": "/tag/%E4%B8%80%E6%9C%AC%E9%80%9A-python-%E9%A2%98%E8%A7%A3/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "机器学习算法 分类",
-    "headers": [],
-    "path": "/category/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -13294,6 +13295,20 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "机器学习算法 分类",
+    "headers": [],
+    "path": "/category/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "编程题解 标签",
+    "headers": [],
+    "path": "/tag/%E7%BC%96%E7%A8%8B%E9%A2%98%E8%A7%A3/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "机器学习实战 分类",
     "headers": [],
     "path": "/category/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98/",
@@ -13301,16 +13316,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "得到 标签",
+    "title": "华为机试题解 标签",
     "headers": [],
-    "path": "/tag/%E5%BE%97%E5%88%B0/",
+    "path": "/tag/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95%E9%A2%98%E8%A7%A3/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "薛兆丰的经济学课 标签",
+    "title": "一本通 Python 题解 标签",
     "headers": [],
-    "path": "/tag/%E8%96%9B%E5%85%86%E4%B8%B0%E7%9A%84%E7%BB%8F%E6%B5%8E%E5%AD%A6%E8%AF%BE/",
+    "path": "/tag/%E4%B8%80%E6%9C%AC%E9%80%9A-python-%E9%A2%98%E8%A7%A3/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -13490,9 +13505,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "AI悦创·天池计划 分类",
+    "title": "公开课 分类",
     "headers": [],
-    "path": "/category/ai%E6%82%A6%E5%88%9B%C2%B7%E5%A4%A9%E6%B1%A0%E8%AE%A1%E5%88%92/",
+    "path": "/category/%E5%85%AC%E5%BC%80%E8%AF%BE/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -13504,9 +13519,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "公开课 分类",
+    "title": "AI悦创·天池计划 分类",
     "headers": [],
-    "path": "/category/%E5%85%AC%E5%BC%80%E8%AF%BE/",
+    "path": "/category/ai%E6%82%A6%E5%88%9B%C2%B7%E5%A4%A9%E6%B1%A0%E8%AE%A1%E5%88%92/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -13567,16 +13582,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "AI悦创·天池计划 标签",
+    "title": "公开课 标签",
     "headers": [],
-    "path": "/tag/ai%E6%82%A6%E5%88%9B%C2%B7%E5%A4%A9%E6%B1%A0%E8%AE%A1%E5%88%92/",
+    "path": "/tag/%E5%85%AC%E5%BC%80%E8%AF%BE/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "公开课 标签",
+    "title": "AI悦创·天池计划 标签",
     "headers": [],
-    "path": "/tag/%E5%85%AC%E5%BC%80%E8%AF%BE/",
+    "path": "/tag/ai%E6%82%A6%E5%88%9B%C2%B7%E5%A4%A9%E6%B1%A0%E8%AE%A1%E5%88%92/",
     "pathLocale": "/",
     "extraFields": []
   },

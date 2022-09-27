@@ -9,7 +9,7 @@ import clientConfig7 from '/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.git
 import clientConfig8 from '/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/docs/.vuepress/.temp/md-enhance/config.js'
 import clientConfig9 from '/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/node_modules/vuepress-plugin-photo-swipe/lib/client/config.js'
 import clientConfig10 from '/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/docs/.vuepress/.temp/theme-hope/config.js'
-import clientConfig11 from '/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/node_modules/@vuepress/plugin-docsearch/lib/client/config.js'
+import clientConfig11 from '/Users/huangjiabao/GitHub/WebSites/BornforthisHJB.github.io/node_modules/@vuepress/plugin-search/lib/client/config.js'
 
 export const clientConfigs = [
   clientConfig0,
