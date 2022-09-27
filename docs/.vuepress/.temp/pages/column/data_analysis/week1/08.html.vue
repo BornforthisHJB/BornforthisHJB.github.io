@@ -1,4 +1,6 @@
-<template><div><p><button name="button" style="color: black"><a href="/sjfx/Homework/2-3什么是统计指标.xlsx" target="_blank">答案</a></button></p>
+<template><div><h2 id="任务描述" tabindex="-1"><a class="header-anchor" href="#任务描述" aria-hidden="true">#</a> 任务描述</h2>
+<p>基于本节课所学习的内容，给大家两组薪酬数据，计算这两组薪酬数据的<strong>平均值、中位数、众数</strong>，并根据平均值、中位数和众数来判断哪一组的薪酬水平更高，原因是什么？</p>
+<p><button name="button" style="color: black"><a href="/sjfx/Homework/2-4统计指标：集中趋势.xlsx" target="_blank">答案</a></button></p>
 <h2 id="期待你和我一起-用数据解析世界" tabindex="-1"><a class="header-anchor" href="#期待你和我一起-用数据解析世界" aria-hidden="true">#</a> 期待你和我一起，用数据解析世界</h2>
 <p>欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！</p>
 <details class="custom-container details"><summary>公众号：AI悦创【二维码】</summary>
