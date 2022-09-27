@@ -69,9 +69,9 @@ export const zhNavbar = navbar([
           { text: "Json Online", icon: "json", link: "https://bornforthis.cn/json/"},
           { text: "m3u8 播放器", icon: "preview", link: "https://bornforthis.cn/m3u8"},
           { text: "进制在线转换", icon: "tool", link: "https://bornforthis.cn/tool"},
-          { text: "HTML Online", icon: "network", link: "https://bornforthis.cn/html_online/"},
-          { text: "格式在线转换", icon: "network", link: "https://convertio.co/zh/"},
-          { text: "在线转换2", icon: "network", link: "https://www.aconvert.com/cn/"},
+          { text: "HTML Online", icon: "web", link: "https://bornforthis.cn/html_online/"},
+          { text: "格式在线转换", icon: "web", link: "https://convertio.co/zh/"},
+          { text: "在线转换2", icon: "web", link: "https://www.aconvert.com/cn/"},
           { text: "Python", icon: "python", link: "https://bornforthis.cn/python/#/"},
           { text: "Python", icon: "python", link: "https://bornforthis.cn/python/index.html#/"},
         ]
