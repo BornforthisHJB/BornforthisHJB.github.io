@@ -69,15 +69,6 @@ export default defineUserConfig({
     //   copyright: false,
     // }),
 
-    // pwaPlugin({
-    //   // cacheHTML: true,
-    //   // update: "available",
-    //   // update: "force",
-    //   update: "hint",
-    //   // maxSize: 6,
-    //   // favicon: "/"
-    // }),
-
     // docsearchPlugin({
     //   // 你的选项
     //   // appId, apiKey 和 indexName 是必填的
