@@ -137,6 +137,7 @@ export const zhSidebar = sidebar({
 				"08-web07",
 				"09-web08",
 				"10-web09",
+				"11-web10",
 			]
 		},
 		{
