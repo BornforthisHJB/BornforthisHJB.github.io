@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { zhNavbar } from "./navbar.js";
-import { zhSidebar } from "./sidebar.js";
+import { Navbar } from "./navbar.js";
+import { Sidebar } from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://bornforthis.cn/",
