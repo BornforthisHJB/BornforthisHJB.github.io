@@ -305,10 +305,12 @@ export const zhSidebar = sidebar({
 		"catalogue",
 		{
 			text: "Web 前端入门扫盲课程",
+			// icon: "Web",
 			collapsable: true,
 			children: [
 				{ 
 					text: "第一章 Web 概述", 
+					icon: "Web",
 					// collapsable: true,
 					children: [
 						"base/",
@@ -318,6 +320,7 @@ export const zhSidebar = sidebar({
 				},
 				{
 					text: "第二章 HTML 入门",
+					icon: "Web",
 					// collapsable: true,
 					children: [
 						"base/base_03",
@@ -328,6 +331,7 @@ export const zhSidebar = sidebar({
 				},
 				{
 					text: "第三章 CSS 入门",
+					icon: "Web",
 					// collapsable: true,
 					children: [
 						"base/base_07",
@@ -337,6 +341,7 @@ export const zhSidebar = sidebar({
 				},
 				{
 					text: "第四章 JavaScript 入门",
+					icon: "Web",
 					// collapsable: true,
 					children: [
 						"base/base_10",
@@ -348,6 +353,7 @@ export const zhSidebar = sidebar({
 		},
 		{
 			text: "前端工程师2022版",
+			// icon: "Web",
 			collapsable: true,
 			children: [
 				{
