@@ -94,6 +94,29 @@ Finally, create a link from the “HTML” line of your assignments directory to
 
 > 最后，从作业目录的“HTML”行创建一个链接到新网站的主页。
 
+### 1. 修改第一次作业的 index.html
+
+```html
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <head>
+      <title>Your name goes here</title>
+  </head>
+  <body>
+    <p>Your name and any other text you would like goes here.</p>
+  <p>Student name ZU YAN QU</p>
+  <hr>
+  <h1>This my HomeWork Web link.</h1>
+  <ol>
+    <li><a href="https://i6.cims.nyu.edu/~zq2076/Assignment2/">曲祖延：Assignment2/</a></li>
+  </ol>
+  </body>
+</html>
+```
+
+
+
 ## Submitting Your Assignment
 
 Submit the following via [Brightspace](https://newclasses.nyu.edu/). 
