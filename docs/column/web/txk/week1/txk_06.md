@@ -1,6 +1,6 @@
 ---
-title: 2-2 前端开发主要技术介绍 
-date: 2022-08-21 23:44:32
+title: 2-3 本系列课程整体简介
+date: 2022-09-30 01:00:04
 author: AI悦创
 isOriginal: true
 category: web 专栏
@@ -19,20 +19,15 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: txk_04.md
-next: txk_06.md
+prev: txk_05.md
+next: txk_07.md
 backToTop: true
 toc: true
 ---
 
 ## 前端开发主要技术介绍
 
-在学习前端开发之前呢，大家肯定或多或少，听说过一些前端开发的技术名词。它们到底是什么呢？这节课我来给你们答疑一下。
 
-- HTML5：搭建网页结构的语言，增加了很多移动端的支持，简单好学。「HTML5 也是我们课程最先学习的语言」
-- CSS3：样式表，美化网页的语言，增加了很多动画、过渡等新特性，要记得英语单词非常多，不过非常有意思。
-- JavaScript：前端开发工程师最重要的“看家语言”，JS 功底的好坏，决定了职业高度，学习需要下苦功。
-- Vue.js / React.js：从 2016 年前后开始流行的前端框架，采用模块化开发、数据驱动、声明式编程，只需要前期“马步扎稳”，后面“武功招式”随便学。
 
 ::: details 公众号：AI悦创【二维码】
 
