@@ -106,7 +106,13 @@ Submit the following via [Brightspace](https://newclasses.nyu.edu/).
 
 - A compressed archive containing all the files of your new website
 
+> 一个压缩档案，包含你的新网站的所有文件
+
 Please note that you are required to submit files along with URLs in order to receive credit for your work.
+
+> 请注意，您需要提交文件和url，以便为您的工作获得学分。
+
+
 
 ## Grading
 
