@@ -384,6 +384,9 @@ export const zhSidebar = sidebar({
 											children: [
 												"txk/week1/txk_04",
 												"txk/week1/txk_05",
+												"txk/week1/txk_06",
+												"txk/week1/txk_07",
+												"txk/week1/txk_08",
 											]
 										}
 									]
