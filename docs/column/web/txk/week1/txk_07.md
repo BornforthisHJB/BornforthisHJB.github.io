@@ -1,6 +1,6 @@
 ---
-title: 2-3 本系列课程整体简介
-date: 2022-09-30 01:00:04
+title: 2-4 学习方法介绍
+date: 2022-09-30 01:08:51
 author: AI悦创
 isOriginal: true
 category: web 专栏
@@ -19,28 +19,13 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: txk_05.md
-next: txk_07.md
+prev: txk_06.md
+next: txk_08.md
 backToTop: true
 toc: true
 ---
 
-## 课程模块
 
-1. 网页布局基础知识：HTML5/CSS3/JavaScript「小悦医生项目，来贯穿学习」
-2. 企业核心编程思想——组件化开发
-3. 移动 WebApp 开发
-4. 小程序开发
-5. 主流框架 Vue.js/React.js
-6. 服务端开发 Node.js/MongoDB/koa2
-
-
-
-## 课程特点
-
-1. 一切服务于就业「基础与潮流」
-2. 培养动手能力「项目驱动」
-3. 重视学员兴趣
 
 
 
