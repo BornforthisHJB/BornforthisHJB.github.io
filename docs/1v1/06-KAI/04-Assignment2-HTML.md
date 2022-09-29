@@ -298,6 +298,10 @@ This assignment is worth 10 points.
 </html>
 ```
 
+## 代码下载
+
+<button name="button" style="color: black"><a href="/曲祖延/Assignment2-HTML/KAI-HTML.zip" target="_blank">答案</a></button>
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
