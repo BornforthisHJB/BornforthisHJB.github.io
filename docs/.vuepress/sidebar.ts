@@ -388,6 +388,14 @@ export const zhSidebar = sidebar({
 												"txk/week1/txk_07",
 												"txk/week1/txk_08",
 											]
+										},
+										{
+											text: "第3章 开发工具和环境准备",
+											children: [
+												"txk/week1/txk_09",
+												"txk/week1/txk_10",
+												"txk/week1/txk_11",
+											]
 										}
 									]
 								}
