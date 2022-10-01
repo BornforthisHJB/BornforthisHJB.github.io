@@ -30,6 +30,8 @@ toc: true
 
 ## Introduction to Computer Science 
 
+::: center
+
 ## CSC1-UA- 0101
 
 **Due date is 10/4 by 11:55 PM**
@@ -37,6 +39,8 @@ toc: true
 **Updated on 9/29**
 
 **Methods are not required for this assignment!**
+
+:::
 
 
 
