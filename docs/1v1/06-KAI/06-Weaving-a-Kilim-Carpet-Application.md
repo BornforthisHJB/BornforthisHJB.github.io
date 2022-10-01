@@ -79,9 +79,7 @@ Kilims are woven carpets which generally use symmetrical designs. For this assig
 
 > Kilims 是一种编织地毯，通常采用对称的设计。在这个作业中，我们不是使用织布机、羊毛和梭子，而是要求你使用循环和嵌套循环来制作你自己设计的图案。
 
-Write a program to weave **your own Kilim carpet** with 30 rows by 30 columns. The patterns should be **designed by you (it should be different than the design of carpet below**). **Your carpet though MUST include at least one diamond shape, checkerboards, and squares** (See 
-
-example below for these patterns). **Also, use other characters such as $ or % or + or @ rather** 
+Write a program to weave **your own Kilim carpet** with 30 rows by 30 columns. The patterns should be **designed by you (it should be different than the design of carpet below**). **Your carpet though MUST include at least one diamond shape, checkerboards, and squares** (See example below for these patterns). **Also, use other characters such as $ or % or + or @ rather** 
 
 **than a “\*” to weave the rug. Make sure not to copy the entire pattern from the below rug** 
 
