@@ -1,5 +1,5 @@
 ---
-title: 
+title: Assignment # 2
 icon: java
 time: 2022-10-01 07:23:10
 author: AI悦创
@@ -27,6 +27,16 @@ editLink: true
 backToTop: true
 toc: true
 ---
+
+## Introduction to Computer Science 
+
+## CSC1-UA- 0101
+
+**Due date is 10/4 by 11:55 PM**
+
+**Updated on 9/29**
+
+**Methods are not required for this assignment!**
 
 
 
