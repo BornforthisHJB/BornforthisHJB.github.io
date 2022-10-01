@@ -81,7 +81,9 @@ Kilims are woven carpets which generally use symmetrical designs. For this assig
 
 Write a program to weave **your own Kilim carpet** with 30 rows by 30 columns. The patterns should be **designed by you (it should be different than the design of carpet below**). **Your carpet though MUST include at least one diamond shape, checkerboards, and squares** (See example below for these patterns). **Also, use other characters such as $ or % or + or @ rather than a “\*” to weave the rug. Make sure not to copy the entire pattern from the below rug or copy patterns from another student**! Show your creativity by weaving a different design while meeting the requirements mentioned above. You will get extra credit for excellent design and added features.
 
-> 编写一个程序来编织你自己的30行30柱的Kilim地毯。图案应该是你自己设计的(应该和下面地毯的图案不一样)不过，你的地毯至少要有一种菱形、棋盘格和正方形的图案(见下面的例子)。此外，使用其他字符，如$或%或+或@而不是“*”来编织地毯。确保不要从下面的地毯复制整个图案或从其他学生复制图案!在满足上述要求的同时，通过编织不同的设计来展示你的创造力。优秀的设计和增加的功能将获得额外的学分。
+> 编写一个程序来编织你自己的 30 行 30 柱的 Kilim 地毯。图案应该是你自己设计的(应该和下面地毯的图案不一样)不过，你的地毯至少要有一种菱形、棋盘格和正方形的图案(见下面的例子)。此外，使用其他字符，如 $ 或 % 或 + 或 @ 而不是“*”来编织地毯。确保不要从下面的地毯复制整个图案或从其他学生复制图案!在满足上述要求的同时，通过编织不同的设计来展示你的创造力。优秀的设计和增加的功能将获得额外的学分。
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
