@@ -44,53 +44,37 @@ toc: true
 
 ## Code of Conduct
 
-All assignments are graded, meaning we expect you to adhere to the academic integrity standards 
+All assignments are graded, meaning we expect you to adhere to the academic integrity standards of NYU. To avoid any confusion regarding this, we will briefly state what is and isn’t allowed when working on an assignment.
 
-of NYU. To avoid any confusion regarding this, we will briefly state what is and isn’t allowed 
+Any document and program code that you submit must be fully written by yourself. You can, of course, discuss your work with fellow students, as long as these discussions are restricted to general solution techniques. Put differently, these discussions should not be about concrete code you are writing, nor about specific results you wish to submit. When discussing an assignment 
 
-when working on an assignment.
+with others, this should never lead to you possessing the complete or partial solution of others, regardless of whether the solution is in paper or digital form, and independent of who made the solution. That means, you are also not allowed to possess solutions by someone from a different year or course, by someone from another university, or code from the Internet, etc. This also implies that there is never a valid reason to share your code with fellow students, and that there is no valid reason to publish your code online in any form.
 
-Any document and program code that you submit must be fully written by yourself. You can, of 
-
-course, discuss your work with fellow students, as long as these discussions are restricted to 
-
-general solution techniques. Put differently, these discussions should not be about concrete code 
-
-you are writing, nor about specific results you wish to submit. When discussing an assignment 
-
-with others, this should never lead to you possessing the complete or partial solution of others, 
-
-regardless of whether the solution is in paper or digital form, and independent of who made the 
-
-solution. That means, you are also not allowed to possess solutions by someone from a different 
-
-year or course, by someone from another university, or code from the Internet, etc. This also 
-
-implies that there is never a valid reason to share your code with fellow students, and that there is 
-
-no valid reason to publish your code online in any form.
-
-Every student is responsible for the work they submit. If there is any doubt during the grading 
-
-about whether a student created the assignment themselves (e.g. if the solution matches that of 
-
-others), we reserve the option to let the student explain why this is the case. In case doubts 
-
-remain, or we decide to directly escalate the issue, the suspected violations will be reported to the 
-
-academic administration according to the policies of NYU (see https://cs.nyu.edu/home/undergrad/policy.html).
+Every student is responsible for the work they submit. If there is any doubt during the grading about whether a student created the assignment themselves (e.g. if the solution matches that of others), we reserve the option to let the student explain why this is the case. In case doubts remain, or we decide to directly escalate the issue, the suspected violations will be reported to the academic administration according to the policies of NYU (see [https://cs.nyu.edu/home/undergrad/policy.html](https://cs.nyu.edu/home/undergrad/policy.html)).
 
 
 
 ## Assignment # 2 Details
 
-**Part 1 (50 points):** **Weaving a Kilim Carpet Application**
+**Part 1 (50 points): Weaving a Kilim Carpet Application Weaving a Kilim Carpet Application using loops and nested loops: Save as Part1.java**
 
-**Weaving a Kilim Carpet Application using loops and nested loops:**
+> 第1部分(50分):使用循环和嵌套循环编织 Kilim Carpet 应用程序:保存为 Part1.java
 
-**Save as Part1.java**
+Kilims are woven carpets which generally use symmetrical designs. For this assignment, instead of using a loom, wool, and a shuttle, we are asking you to produce a pattern of your own design using loops and nested loops. 
 
+> Kilims 是一种编织地毯，通常采用对称的设计。在这个作业中，我们不是使用织布机、羊毛和梭子，而是要求你使用循环和嵌套循环来制作你自己设计的图案。
 
+Write a program to weave **your own Kilim carpet** with 30 rows by 30 columns. The patterns should be **designed by you (it should be different than the design of carpet below**). **Your carpet though MUST include at least one diamond shape, checkerboards, and squares** (See 
+
+example below for these patterns). **Also, use other characters such as $ or % or + or @ rather** 
+
+**than a “\*” to weave the rug. Make sure not to copy the entire pattern from the below rug** 
+
+**or copy patterns from another student**! Show your creativity by weaving a different design 
+
+while meeting the requirements mentioned above. You will get extra credit for excellent design 
+
+and added features.
 
 
 
