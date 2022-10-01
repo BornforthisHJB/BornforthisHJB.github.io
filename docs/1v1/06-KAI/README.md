@@ -44,9 +44,9 @@ We have an excellent tutors and graders for this course:
 
 | Due Date (**Always due by midnight on [Brightspace)](https://brightspace.nyu.edu/d2l/home/134485)** | Description                                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| **[Assignment # 0](https://cs.nyu.edu/~odeh/introJavaSect9/private/assignments/asg0.pdf) due by 9/11 (No submission required) ** | Install Java version 1.8, download/Use a textEditor such as Sublime, and learn how to use a command line console to compile and execute Java programs. |
-| **[Assignment # 1](https://cs.nyu.edu/~odeh/introJavaSect9/private/assignments/assignment1.pdf) Due by 9/25 by Midnight (postponed) ** | Basic Java Programming using Data types, Variables, and Control Structure |
-| **[Assignment # 2](https://cs.nyu.edu/~odeh/introJavaSect9/private/assignments/assignment2.pdf) Due by 10/4 by Midnight (postponed) ** | Using loops, and nested loops (Methods not needed for this assignment) |
+| **[Assignment # 0](https://cs.nyu.edu/~odeh/introJavaSect9/private/assignments/asg0.pdf) due by 9/11 (No submission required)** | Install Java version 1.8, download/Use a textEditor such as Sublime, and learn how to use a command line console to compile and execute Java programs. |
+| **[Assignment # 1](https://cs.nyu.edu/~odeh/introJavaSect9/private/assignments/assignment1.pdf) Due by 9/25 by Midnight (postponed)** | Basic Java Programming using Data types, Variables, and Control Structure |
+| **[Assignment # 2](https://cs.nyu.edu/~odeh/introJavaSect9/private/assignments/assignment2.pdf) Due by 10/4 by Midnight (postponed)** | Using loops, and nested loops (Methods not needed for this assignment) |
 
 ### **Grading Policy:**
 
