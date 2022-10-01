@@ -42,7 +42,43 @@ toc: true
 
 :::
 
+## Code of Conduct
 
+All assignments are graded, meaning we expect you to adhere to the academic integrity standards 
+
+of NYU. To avoid any confusion regarding this, we will briefly state what is and isn’t allowed 
+
+when working on an assignment.
+
+Any document and program code that you submit must be fully written by yourself. You can, of 
+
+course, discuss your work with fellow students, as long as these discussions are restricted to 
+
+general solution techniques. Put differently, these discussions should not be about concrete code 
+
+you are writing, nor about specific results you wish to submit. When discussing an assignment 
+
+with others, this should never lead to you possessing the complete or partial solution of others, 
+
+regardless of whether the solution is in paper or digital form, and independent of who made the 
+
+solution. That means, you are also not allowed to possess solutions by someone from a different 
+
+year or course, by someone from another university, or code from the Internet, etc. This also 
+
+implies that there is never a valid reason to share your code with fellow students, and that there is 
+
+no valid reason to publish your code online in any form.
+
+Every student is responsible for the work they submit. If there is any doubt during the grading 
+
+about whether a student created the assignment themselves (e.g. if the solution matches that of 
+
+others), we reserve the option to let the student explain why this is the case. In case doubts 
+
+remain, or we decide to directly escalate the issue, the suspected violations will be reported to the 
+
+academic administration according to the policies of NYU (see https://cs.nyu.edu/home/undergrad/policy.html).
 
 
 
