@@ -82,7 +82,13 @@ academic administration according to the policies of NYU (see https://cs.nyu.edu
 
 
 
+## Assignment # 2 Details
 
+**Part 1 (50 points):** **Weaving a Kilim Carpet Application**
+
+**Weaving a Kilim Carpet Application using loops and nested loops:**
+
+**Save as Part1.java**
 
 
 
