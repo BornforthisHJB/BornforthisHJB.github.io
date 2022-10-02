@@ -105,9 +105,13 @@ Write a program to weave **your own Kilim carpet** with 30 rows by 30 columns. T
 
 
 
+## Save it as Part2.java
 
+Number system helps to represent numbers used for humans and computers. Computers, in general, use binary numbers 0 and 1 to keep the calculations simple and to keep the amount of necessary circuitry less, which results in the least amount of space, energy consumption and cost. 
 
+When we type any letter or word, the computer translates them into numbers (binary, base 2) since computers can understand only numbers. A computer can understand only a few symbols called digits and these symbols describe different values depending on the position they hold in the number. In general, the binary number system is used in computers. However, the octal, decimal and hexadecimal systems are also used sometimes. Numbers can be represented in any of the number system categories like binary, decimal, hex, etc. Number conversion is extremely important for computer scientist and therefor, you are asked to build an application to convert between these four number systems mentioned here. I’m aware that there are many of these programs posted on the web but you MUST produce your own as we have access to plagiarism software that allows us to detect plagiarism from the web and from any other student work from past years or this year. Please refer to the plagiarism policy posted on the syllabus. 
 
+**The following is a diagram of converting numbers from 1 to 15 in all four number systems:**
 
 
 
