@@ -156,7 +156,7 @@ public class Example2 {
 
 ```
 
-### 2. 第二行
+### 2. 第二、三行
 
 ![image-20221002170100625](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002170100625.png)
 
@@ -253,6 +253,123 @@ public class Example2 {
         }
     }
 }
+```
+
+### 「看到这里，自己思考一下，下面如何实现吧～」
+
+### 3. 第四、五行
+
+![image-20221002221611005](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002221611005.png)
+
+```java
+public class Example2 {
+    public static void main(String[] args) {
+        // 第一行
+        for (int i = 0; i < 36; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");  // 换行
+
+        // 第二、三行 显而易见使用循环嵌套
+        for (int j = 0; j < 2; j++) {
+            for (int index = 0; index < 6; index++) {
+                for (int i = 0; i < 3; i++) {
+                    System.out.print("*");
+                }
+                for (int i = 0; i < 3; i++) {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println("");
+        }
+        // 第四、五行
+        for (int j = 0; j < 2; j++) {
+            for (int index = 0; index < 6; index++) {
+                for (int i = 0; i < 3; i++) {
+                    System.out.print(" ");
+                }
+                for (int i = 0; i < 3; i++) {
+                    System.out.print("*");
+                }
+            }
+            System.out.println("");
+        }
+    }
+}
+```
+
+输出：
+
+```java
+************************************
+***   ***   ***   ***   ***   ***   
+***   ***   ***   ***   ***   ***   
+   ***   ***   ***   ***   ***   ***
+   ***   ***   ***   ***   ***   ***
+```
+
+### 4. 第六行
+
+![image-20221002221831542](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002221831542.png)
+
+```java
+public class Example2 {
+    public static void main(String[] args) {
+        // 第一行
+        for (int i = 0; i < 36; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");  // 换行
+
+        // 第二、三行 显而易见使用循环嵌套
+        for (int j = 0; j < 2; j++) {
+            for (int index = 0; index < 6; index++) {
+                for (int i = 0; i < 3; i++) {
+                    System.out.print("*");
+                }
+                for (int i = 0; i < 3; i++) {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println("");
+        }
+        // 第四、五行
+        for (int j = 0; j < 2; j++) {
+            for (int index = 0; index < 6; index++) {
+                for (int i = 0; i < 3; i++) {
+                    System.out.print(" ");
+                }
+                for (int i = 0; i < 3; i++) {
+                    System.out.print("*");
+                }
+            }
+            System.out.println("");
+        }
+        // 第六行
+        for (int i = 0; i < 36; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");  // 换行
+    }
+}
+```
+
+输出：
+
+```java
+************************************
+***   ***   ***   ***   ***   ***   
+***   ***   ***   ***   ***   ***   
+   ***   ***   ***   ***   ***   ***
+   ***   ***   ***   ***   ***   ***
+************************************
+```
+
+### 5. 菱形编写
+
+```python
+In [48]: len("************************************")/2
+Out[48]: 18.0
 ```
 
 
