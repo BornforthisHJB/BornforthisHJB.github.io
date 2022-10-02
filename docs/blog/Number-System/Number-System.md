@@ -120,17 +120,79 @@ Now, let us discuss the different types of number systems with examples.
 
 The decimal number system has a base of 10 because it uses ten digits from 0 to 9. In the decimal number system, the positions successive to the left of the decimal point represent units, tens, hundreds, thousands and so on. This system is expressed in [decimal numbers](https://byjus.com/maths/decimals/). Every position shows a particular power of the base (10).
 
+> 十进制系统以10为基数，因为它使用了从0到9的10位数字。在十进制数制中，小数点左边连续的位置表示单位，如十、百、千等。这个系统用[十进制](https://byjus.com/maths/decimals/)表示。每个位置都表示底数(10)的特定幂。
+
 **Example of Decimal Number System:**
+
+> 十进制数字系统示例:
 
 The decimal number 1457 consists of the digit 7 in the units position, 5 in the tens place, 4 in the hundreds position, and 1 in the thousands place whose value can be written as: 
 
-(1×$10^{3}$) + (4×$10^{2}$) + (5×$101) + (7×100)
+> 十进制数字1457由个位的数字7、十位的数字5、百位的数字4和千位的数字1组成，其值可以写成:
 
-(1×1000) + (4×100) + (5×10) + (7×1)
+(1×$10^{3}$) + (4×$10^{2}$) + (5×$10^{1}$) + (7×$10^{0}$)
 
-1000 + 400 + 50 + 7
+=(1×1000) + (4×100) + (5×10) + (7×1)
 
-1457
+=1000 + 400 + 50 + 7
+
+=1457
+
+### Binary Number System (Base 2 Number System)
+
+> 二进位数制(2进制)
+
+The base 2 number system is also known as the [Binary number system](https://byjus.com/maths/binary-number-system/) wherein, only two binary digits exist, i.e., 0 and 1. Specifically, the usual base-2 is a radix of 2. The figures described under this system are known as binary numbers which are the combination of 0 and 1. For example, 110101 is a binary number.
+
+> 2 进制的数字系统也被称为[二进制数系统](https://byjus.com/maths/binary-number-system/)，其中只有两个二进制数字存在，即 0 和 1。具体来说，通常以 2 为底的基数是 2。在这个系统下描述的数字被称为二进制数，它是 0 和 1 的组合。例如，110101 是一个二进制数。
+
+We can convert any system into binary and vice versa.
+
+> 我们可以把任何系统转换成二进制，反之亦然。
+
+**Example**
+
+Write (14)10 as a binary number.
+
+> 把(14)10写成二进制数。
+
+**Solution:**
+
+![Base 2 Number System Example](./Number-System.assets/Number-System.png)
+
+::: center
+
+Base 2 Number System Example
+
+:::
+
+**∴**  (14)10 = 11102
+
+### Octal Number System (Base 8 Number System)
+
+In the [octal number system](https://byjus.com/maths/octal-number-system/), the base is 8 and it uses numbers from 0 to 7 to represent numbers. Octal numbers are commonly used in computer applications. Converting an octal number to decimal is the same as decimal conversion and is explained below using an example.
+
+**Example: Convert 2158 into decimal.**
+
+**Solution:**
+
+2158 = 2 × 82 + 1 × 81 + 5 × 80
+
+= 2 × 64 + 1 × 8 + 5 × 1
+
+= 128 + 8 + 5
+
+= 14110
+
+
+
+
+
+
+
+
+
+
 
 
 
