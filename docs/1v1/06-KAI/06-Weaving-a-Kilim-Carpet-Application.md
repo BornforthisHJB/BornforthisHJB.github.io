@@ -228,8 +228,36 @@ public class Example2 {
 
 那还有一行？怎么弄？copy 一份，在写一个？——再嵌套吧！「谁叫你们老师要嵌套」
 
+![image-20221002200919182](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002200919182.png)
+
 ```java
+public class Example2 {
+    public static void main(String[] args) {
+        // 第一行
+        for (int i = 0; i < 36; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");  // 换行
+
+        // 第二行 显而易见使用循环嵌套
+        for (int j = 0; j < 2; j++) {
+            for (int index = 0; index < 6; index++) {
+                for (int i = 0; i < 3; i++) {
+                    System.out.print("*");
+                }
+                for (int i = 0; i < 3; i++) {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println("");
+        }
+    }
+}
 ```
+
+
+
+
 
 
 
