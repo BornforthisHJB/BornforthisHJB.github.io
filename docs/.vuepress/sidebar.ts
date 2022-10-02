@@ -27,6 +27,22 @@ export const zhSidebar = sidebar({
 		"learning_web",
 
 	],
+	"/column/Python-core-technology-and-practice/": [
+		{
+			text: "开篇词",
+			icon: "python",
+			children: [
+				"01",
+			],
+		},
+		{
+			text: "基础篇",
+			icon: "python",
+			children: [
+				"13",
+			],
+		}
+	],
 	"/column/摄影入门课/": [
 		{
 			text: "开篇词 (1讲)",
