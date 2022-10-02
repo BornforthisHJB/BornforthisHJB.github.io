@@ -85,9 +85,35 @@ Write a program to weave **your own Kilim carpet** with 30 rows by 30 columns. T
 
 **Here is a 12th Century Moroccan Kilim Carpet sample pattern made of 25 rows and 36 columns:**
 
-**(This design is made up of stars (asterisks) and spaces, please ignore the border,** 
+**(This design is made up of stars (asterisks) and spaces, please ignore the border, color, and the shading effect):**
 
-**color, and the shading effect):**
+> 这是一张12世纪的摩洛哥Kilim地毯样品图案，25行36柱(这个图案由星号和空格组成，请忽略边框、颜色和阴影效果):
+
+![image-20221002115755664](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002115755664.png)
+
+
+
+**Here are the requirements:** 
+
+- Every print statement should print no more than one character such as '*' or one space ' '.  Do not use statements such as: `print("************************************")` but rather use loops for every repetition. 
+- Use loops and nested loops to produce these patterns. 
+- You can't use control structure such as switch or if/ else if /else in your program.
+- You have to design your own carpet (different than the carpet from above). 
+- Your carpet MUST include at least one diamond shape, checkerboards, and squares. (see example from above for these patterns).
+- Some of the patterns are repeated; you might want to first isolate the elements in the design (eg. the first two rows, the "checkerboard" elements, the triangle) and then combine them to form the "rug". 
+- If the Dimond is too difficult to produce as one pattern, you can break it into 4 triangles or apply any solution you see fit as long you comply with the assignment’s requirements. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
