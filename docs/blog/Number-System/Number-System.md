@@ -176,13 +176,13 @@ In the [octal number system](https://byjus.com/maths/octal-number-system/), the 
 
 > 在[八进制数系统](https://byjus.com/maths/octal-number-system/)中，基数是8，它使用从 0 到 7 的数字来表示数字。八进制数字在计算机应用中常用。将八进制数转换为十进制与十进制转换相同，下面将通过示例进行解释。
 
-**Example: Convert 2158 into decimal.**
+**Example: Convert $215_{8}$ into decimal.**
 
-> 示例:将2158转换为十进制。
+> 示例:将 $215_{8}$ 转换为十进制。
 
 **Solution:**
 
-$215_{8}$ = 2 × 82 + 1 × 81 + 5 × 80
+$215_{8}$ = 2 × $8^{2}$ + 1 × $8^{1}$ + 5 × $8^{0}$
 
 = 2 × 64 + 1 × 8 + 5 × 1
 
@@ -190,7 +190,17 @@ $215_{8}$ = 2 × 82 + 1 × 81 + 5 × 80
 
 = 14110
 
+### Hexadecimal Number System (Base 16 Number System)
 
+In the hexadecimal system, numbers are written or represented with base 16. In the hex system, the numbers are first represented just like in the decimal system, i.e. from 0 to 9. Then, the numbers are represented using the alphabet from A to F. The below-given table shows the representation of numbers in the [hexadecimal number system](https://byjus.com/maths/hexadecimal-number-system/).
+
+| **Hexadecimal** | **0** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9** | **A**  | **B**  | **C**  | **D**  | **E**  | **F**  |
+| --------------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ------ | ------ | ------ | ------ | ------ | ------ |
+| **Decimal**     | **0** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9** | **10** | **11** | **12** | **13** | **14** | **15** |
+
+
+
+## Number System Chart
 
 
 
