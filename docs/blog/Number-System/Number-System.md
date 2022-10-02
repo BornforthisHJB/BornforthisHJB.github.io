@@ -166,7 +166,7 @@ Base 2 Number System Example
 
 :::
 
-**∴**  (14)10 = 11102
+**∴**  (14)10 = $1110_{2}$
 
 ### Octal Number System (Base 8 Number System)
 
