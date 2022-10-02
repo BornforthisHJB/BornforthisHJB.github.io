@@ -195,7 +195,7 @@ public class Example2 {
 
 显而易见，这是单次循环生成的结果，那我们接下来可以实现多次循环。「也就是，在这两个循环外面包裹一次循环」
 
-![image-20221002171527465](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002171527465.png)
+![image-20221002171704708](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002171704708.png)
 
 ```java
 ```
