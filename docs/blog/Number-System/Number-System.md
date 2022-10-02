@@ -44,7 +44,49 @@ The number system or the numeral system is the system of naming or representing 
 - [Number System in Computers](https://byjus.com/#computer-numeral-system)
 - [FAQs](https://byjus.com/#FAQs)
 
+## What is Number System in Maths?
 
+> 数学中的数字系统是什么?
+
+A number system is defined as a system of writing to express numbers. It is the mathematical notation for representing numbers of a given set by using digits or other symbols in a consistent manner. It provides a unique representation of every number and represents the arithmetic and algebraic structure of the figures. It also allows us to operate arithmetic operations like addition, subtraction and division.
+
+> 数字系统被定义为一种表示数字的书写系统。它是一种数学表示法，用数字或其他符号以一致的方式表示给定集合中的数字。它提供了每个数字的唯一表示，并表示数字的算术和代数结构。它还允许我们进行加法、减法和除法等算术运算。
+
+The value of any digit in a number can be determined by:
+
+> 数字中任何数字的值可以通过以下方法确定:
+
+- The digit
+
+> 数字
+
+- Its position in the number
+
+> 它在数字中的位置
+
+- The base of the number system
+
+> 基数:数字系统的基数
+
+Before discussing the different types of number system examples, first, let us discuss what is a number?
+
+> 在讨论不同类型的数制例子之前，首先让我们讨论一下什么是数字?
+
+## What is a Number?
+
+> 什么是数字?
+
+A number is a mathematical value used for counting or measuring or labelling objects. Numbers are used to perform arithmetic calculations. Examples of numbers are natural numbers, whole numbers, rational and irrational numbers, etc. 0 is also a number that represents a null value. 
+
+> 数字是用来计数、测量或标记物体的数学值。数字用于进行算术计算。数字的例子有自然数、整数、有理数和无理数等。0也是表示空值的数字。
+
+A number has many other variations such as even and odd numbers, prime and composite numbers. Even and odd terms are used when a number is divisible by 2 or not, whereas prime and composite differentiate between the numbers that have only two factors and more than two factors, respectively.
+
+> 一个数字有许多其他的变化，如偶数和奇数，质数和合数。当一个数能被2整除或不能被2整除时，使用偶项和奇数项，而质数和合数分别对只有两个因数和两个以上因数的数进行区分。
+
+In a number system, these numbers are used as digits. 0 and 1 are the most common digits in the number system, that are used to represent binary numbers. On the other hand, 0 to 9 digits are also used for other number systems. Let us learn here the types of number systems.
+
+>  在数字系统中，这些数字被用作数字。0 和 1 是数制中最常见的数字，用于表示二进制数。另一方面，0 到 9 位数字也用于其他数字系统。让我们在这里学习数字系统的类型。
 
 
 
