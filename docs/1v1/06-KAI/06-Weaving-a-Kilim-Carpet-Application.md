@@ -484,13 +484,7 @@ public class Example2 {
 }
 ```
 
-
-
-
-
-
-
-
+菱形解决之后，后面的和上面的如法炮制。
 
 
 
@@ -522,35 +516,75 @@ When we type any letter or word, the computer translates them into numbers (bina
 
 Your application allows the user to enter a number in a specific numbers system chosen by the user and then your program converts this number to the number system that the user has chosen. 
 
+> 您的应用程序允许用户在用户选择的特定数字系统中输入一个数字，然后您的程序将该数字转换为用户选择的数字系统。
+
 **For example, here is a sample run of the program:**
+
+> 例如，下面是该程序的示例运行:
 
 Enter the name of the number system to convert from: bin, or dec, or oct or hex: **bin**
 
+> 输入要从:bin、dec、oct或hex: bin转换的数字系统的名称
+
 Enter number as a String: **111**
+
+> 输入number作为字符串:111
 
 Enter the name of the number system you want to convert to: bin, or dec, or oct or hex: **dec**
 
+> 输入您想要转换为的数字系统名称:bin、dec、oct或hex: dec
+
 The result is: **7**
+
+> 结果是:7
 
 **Here is information on algorithms for converting between number systems:**
 
+> 这里是关于数字系统之间转换的算法的信息:
+
 - Algorithm to convert from binary (base 2) to any system and from any number system to binary https://byjus.com/maths/number-system-conversion/
 
+> 将二进制(以2为基数)转换为任意系统，并将任意数字系统转换为二进制 [https://byjus.com/maths/number-system-conversion/](https://byjus.com/maths/number-system-conversion/) 的算法
+
 - Algorithm to convert from Decimal (base 10) to any other number system and from any number system to Decimal https://byjus.com/maths/number-system-conversion/
+
+> 从十进制(以10为基数)转换到任何其他数字系统以及从任何数字系统转换到十进制 [https://byjus.com/maths/number-system-conversion/](https://byjus.com/maths/number-system-conversion/) 的算法
+
 - Algorithm to convert from Hexadecimal (base 16) to any other number system and from any number system to Hexadecimal: https://byjus.com/maths/hexadecimal-numbersystem/
+
+> 从十六进制(以16为基数)转换到任何其他数字系统以及从任何数字系统转换到十六进制的算法: [https://byjus.com/maths/hexadecimal-numbersystem/](https://byjus.com/maths/hexadecimal-numbersystem/)
+
 - Algorithm to convert from Octal (base 8) to any other number system and from any number system to Octal: https://byjus.com/maths/octal-number-system/
+
+> 从八进制(以8为基数)转换到任何其他数字系统以及从任何数字系统转换到八进制的算法: [https://byjus.com/maths/octal-number-system/](https://byjus.com/maths/octal-number-system/)
 
 **Requirements:**
 
+> 要求:
+
 - To keep thing simple for you, use the range of numbers entered by user in your program between 0 and 15 (the same range provided by the above table) allowing you to test and see the result easily as all of the answers is provided by the table above. 
+
+> 为了简单起见，使用用户在程序中输入的0到15之间的数字范围(与上表提供的范围相同)，这样您就可以轻松地测试和查看结果，因为上表提供了所有的答案。
+
 - You can use a String to input the number especially in the case of binary so you don’t lose the leading zeros on the left when you input the number. 
+
+> 您可以使用String来输入数字，特别是在二进制的情况下，这样在输入数字时就不会丢失左边的前导零。
+
 - Do NOT USE already Built-in method fin java for conversions. You should produce your own algorithms (code) to convert from one system to another.
+
+> 不要使用已经内置的方法进行转换。您应该生成自己的算法(代码)来从一个系统转换到另一个系统。
 
 - You MUST use loops for efficiency.
 
+> 你必须使用循环来提高效率。
+
 - Please get started on the assignment immediately, and contact the class tutors as soon as possible with any questions. Don't expect a response the day before the due date as tutors get very busy. 
 
+> 请立即开始作业，并尽快与班主任联系。不要期望在截止日期的前一天得到回复，因为导师们非常忙。
+
 - **Extra credit for added features and for producing excellent and efficient algorithm.**
+
+> 额外的学分为增加的功能和产生优秀和高效的算法。
 
 
 
@@ -584,30 +618,59 @@ For adding excellent technical features and implementing excellent and efficient
 
 ## Notes about your program:
 
+> 关于您的程序的注意事项:
+
 - **Style counts** (that includes using meaningful names and providing sufficient comments in the body of the programs).
+
+> 样式计数(包括使用有意义的名称和在程序体中提供足够的注释)。
 
 - Make sure your program includes a comment at the beginning with your name, date, along with a brief synopsis of the program/algorithm using the multiline comment `\* */`.
 
+> 确保您的程序在开头包含您的姓名、日期注释，以及使用多行注释' \* */ '的程序/算法概要。
+
 - You should use comments throughout the source code to explain key steps and calculations
 
+> 您应该在整个源代码中使用注释来解释关键步骤和计算
+
 - You should use proper indentation (three or two spaces) and blank lines (or you can leave to the default of the text editor default spacing) to make your program easy to read
+
+> 您应该使用适当的缩进(三个或两个空格)和空行(或者您可以使用文本编辑器默认的默认间距)，以使您的程序易于阅读
+
 - Capitalize the first letter of the program name or class names (Prog1.java) 
+
+> 将程序名或类名的第一个字母大写(Prog1.java)
 
 - Choose intuitive names for variables and all identifiers such as names of programs, function or method names.
 
+> 为变量和所有标识符(如程序名、函数名或方法名)选择直观的名称。
+
 - You should use blank lines where appropriate to make your program easy to read.
+
+> 应该在适当的地方使用空行，以使程序易于阅读。
 
 - Make sure that your program does not contain any syntax errors, or logical or runtime errors.
 
+> 确保您的程序不包含任何语法错误、逻辑错误或运行时错误。
+
 - Make sure to use proper indentation after **{** with two spaces or whatever your editor default spacing is.
+
+> 确保在**{**之后使用适当的缩进，并使用两个空格或编辑器默认的空格。
 
 - Make sure to only submit your .java files with no errors to Brightspace. Place all the .java files inside a folder saved as FirstNameLastNameAsg2 and then zip the folder and submit it to Brightspace. No need to submit the .class files.
 
+> 确保只向Brightspace提交没有错误的。java文件。将所有的。java文件放在一个名为FirstNameLastNameAsg2的文件夹中，然后将该文件夹压缩并提交给Brightspace。不需要提交.class文件。
+
 - Late submissions will be penalized by 5% per 24 hours and it will not be accepted after the 3 days past the due date.
+
+> 逾期提交将每24小时加收5%的罚款，逾期3天将不予受理。
 
 - Note that your solution must work with no errors to be accepted. In case your program does not work using java, your submission will get a zero.
 
+> 注意，您的解决方案必须没有错误才能被接受。如果你的程序不能使用java工作，你的提交将得到一个零。
+
 - Make sure to check the lateness, extension, and plagiarism policy provided in the syllabus. 
+
+> 一定要检查课程大纲中规定的迟到、延期和抄袭政策。
 
 ## Submission
 
