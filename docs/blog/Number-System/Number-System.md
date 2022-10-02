@@ -124,7 +124,7 @@ The decimal number system has a base of 10 because it uses ten digits from 0 to 
 
 The decimal number 1457 consists of the digit 7 in the units position, 5 in the tens place, 4 in the hundreds position, and 1 in the thousands place whose value can be written as: 
 
-(1×$10^{3}$) + (4×$10^{2}$) + (5×101) + (7×100)
+(1×$10^{3}$) + (4×$10^{2}$) + (5×$101) + (7×100)
 
 (1×1000) + (4×100) + (5×10) + (7×1)
 
