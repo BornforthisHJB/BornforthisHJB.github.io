@@ -96,12 +96,32 @@ Write a program to weave **your own Kilim carpet** with 30 rows by 30 columns. T
 **Here are the requirements:** 
 
 - Every print statement should print no more than one character such as '*' or one space ' '.  Do not use statements such as: `print("************************************")` but rather use loops for every repetition. 
+
+> 每个打印语句应该打印不超过一个字符，例如'*'或一个空格' '。不要使用语句如: `print ("************************************")` 而是每个重复循环使用。
+
 - Use loops and nested loops to produce these patterns. 
+
+> 使用循环和嵌套循环来生成这些模式。
+
 - You can't use control structure such as switch or if/ else if /else in your program.
+
+> 不能在程序中使用switch或if/ else if/ else等控制结构。
+
 - You have to design your own carpet (different than the carpet from above). 
+
+> 你必须自己设计地毯(与上面的地毯不同)。
+
 - Your carpet MUST include at least one diamond shape, checkerboards, and squares. (see example from above for these patterns).
+
+> 你的地毯至少要有一种菱形、棋盘格和正方形。(参见上面的例子了解这些模式)。
+
 - Some of the patterns are repeated; you might want to first isolate the elements in the design (eg. the first two rows, the "checkerboard" elements, the triangle) and then combine them to form the "rug". 
+
+> 有些模式是重复的;你可能想要首先分离设计中的元素(例如。前两行，“棋盘”元素，三角形)，然后将它们组合成“地毯”。
+
 - If the Dimond is too difficult to produce as one pattern, you can break it into 4 triangles or apply any solution you see fit as long you comply with the assignment’s requirements. 
+
+> 如果菱形很难制作成一个图案，你可以把它分成4个三角形，或者应用任何你认为适合的解决方案，只要你符合作业的要求。
 
 
 
