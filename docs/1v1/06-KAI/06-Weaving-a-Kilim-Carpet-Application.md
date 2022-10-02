@@ -158,7 +158,47 @@ public class Example2 {
 
 ### 2. 第二行
 
+![image-20221002170100625](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002170100625.png)
 
+3 * 6 = 18
+
+![image-20221002171127155](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002171127155.png)
+
+```java
+public class Example2 {
+    public static void main(String[] args) {
+        // 第一行
+        for (int i = 0; i < 36; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");  // 换行
+
+        // 第二行 显而易见使用循环嵌套
+        for (int i = 0; i < 3; i++) {
+            System.out.print("*");
+        }
+        for (int i = 0; i < 3; i++) {
+            System.out.print(" ");
+        }
+    }
+}
+```
+
+输出：
+
+<img src="./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002171204901.png" alt="image-20221002171204901" style="zoom:25%;" />
+
+```java
+************************************
+***   
+```
+
+显而易见，这是单次循环生成的结果，那我们接下来可以实现多次循环。「也就是，在这两个循环外面包裹一次循环」
+
+![image-20221002171527465](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002171527465.png)
+
+```java
+```
 
 
 
