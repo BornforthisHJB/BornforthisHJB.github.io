@@ -123,6 +123,45 @@ Write a program to weave **your own Kilim carpet** with 30 rows by 30 columns. T
 
 > 如果菱形很难制作成一个图案，你可以把它分成4个三角形，或者应用任何你认为适合的解决方案，只要你符合作业的要求。
 
+## 解题
+
+### 1. 一行一行分析「第一行」
+
+![image-20221002165218970](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221002165218970.png)
+
+上面的 `*` 有几个？—— 36
+
+```python
+In [1]: s = len("中米米米米米米米米米米米本米米本米米本米米本米米本米米本米米本米米本米米") # 长度和上图是一样的，但是我使用图片识别直接提取的，所以字符串内容你不用管。
+
+In [2]: s
+Out[2]: 36
+```
+
+```java
+public class Example2 {
+    public static void main(String[] args) {
+        for (int i = 0; i < 36; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");  // 换行
+    }
+}
+```
+
+输出：
+
+```java
+************************************
+
+```
+
+### 2. 第二行
+
+
+
+
+
 
 
 ## Save it as Part2.java
