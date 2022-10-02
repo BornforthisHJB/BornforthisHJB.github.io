@@ -494,19 +494,124 @@ public class Example2 {
 
 
 
-## Save it as Part2.java
+## Part2 (50 points): Number System Conversion Application using loops: Save it as Part2.java
+
+> 第2部分(50分):使用循环的数字系统转换应用程序:将其保存为 `Part2.java` 
 
 Number system helps to represent numbers used for humans and computers. Computers, in general, use binary numbers 0 and 1 to keep the calculations simple and to keep the amount of necessary circuitry less, which results in the least amount of space, energy consumption and cost. 
 
+> 数字系统有助于表示人类和计算机使用的数字。一般来说，计算机使用二进制数字 0 和 1 来简化计算，减少必要的电路数量，从而减少空间、能源消耗和成本。
+
 When we type any letter or word, the computer translates them into numbers (binary, base 2) since computers can understand only numbers. A computer can understand only a few symbols called digits and these symbols describe different values depending on the position they hold in the number. In general, the binary number system is used in computers. However, the octal, decimal and hexadecimal systems are also used sometimes. Numbers can be represented in any of the number system categories like binary, decimal, hex, etc. Number conversion is extremely important for computer scientist and therefor, you are asked to build an application to convert between these four number systems mentioned here. I’m aware that there are many of these programs posted on the web but you MUST produce your own as we have access to plagiarism software that allows us to detect plagiarism from the web and from any other student work from past years or this year. Please refer to the plagiarism policy posted on the syllabus. 
+
+> 当我们输入任何字母或单词时，计算机会将它们翻译成数字(二进制，以2为基数)，因为计算机只能理解数字。
+>
+> 计算机只能理解少数被称为数字的符号，这些符号根据它们在数字中的位置描述不同的值。
+>
+> 一般来说，计算机使用二进制数系统。然而，八进制、十进制和十六进制有时也被使用。
+>
+> 数字可以用任何数字系统类别表示，如**二进制、十进制、十六进制**等。
+>
+> **数字转换**对于计算机科学家来说非常重要，因此，您需要构建一个应用程序来在这里提到的四种数字系统之间进行转换。我知道网上有很多这样的程序，但你必须制作你自己的，因为我们有剽窃软件，让我们可以检测从网上抄袭，从任何其他学生从过去几年或今年的作品。请参阅教学大纲上的抄袭规定。
 
 **The following is a diagram of converting numbers from 1 to 15 in all four number systems:**
 
+> 下面是四种数字系统中从1到15的转换示意图:
+
+![image-20221003001441676](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221003001441676.png)
+
+Your application allows the user to enter a number in a specific numbers system chosen by the user and then your program converts this number to the number system that the user has chosen. 
+
+**For example, here is a sample run of the program:**
+
+Enter the name of the number system to convert from: bin, or dec, or oct or hex: **bin**
+
+Enter number as a String: **111**
+
+Enter the name of the number system you want to convert to: bin, or dec, or oct or hex: **dec**
+
+The result is: **7**
+
+**Here is information on algorithms for converting between number systems:**
+
+- Algorithm to convert from binary (base 2) to any system and from any number system to binary https://byjus.com/maths/number-system-conversion/
+
+- Algorithm to convert from Decimal (base 10) to any other number system and from any number system to Decimal https://byjus.com/maths/number-system-conversion/
+- Algorithm to convert from Hexadecimal (base 16) to any other number system and from any number system to Hexadecimal: https://byjus.com/maths/hexadecimal-numbersystem/
+- Algorithm to convert from Octal (base 8) to any other number system and from any number system to Octal: https://byjus.com/maths/octal-number-system/
+
+**Requirements:**
+
+- To keep thing simple for you, use the range of numbers entered by user in your program between 0 and 15 (the same range provided by the above table) allowing you to test and see the result easily as all of the answers is provided by the table above. 
+- You can use a String to input the number especially in the case of binary so you don’t lose the leading zeros on the left when you input the number. 
+- Do NOT USE already Built-in method fin java for conversions. You should produce your own algorithms (code) to convert from one system to another.
+
+- You MUST use loops for efficiency.
+
+- Please get started on the assignment immediately, and contact the class tutors as soon as possible with any questions. Don't expect a response the day before the due date as tutors get very busy. 
+
+- **Extra credit for added features and for producing excellent and efficient algorithm.**
 
 
 
+## Grading Criteria:
+
+### A. Program Execution (90%)
+
+- Meeting all of the requirements of the assignments
+
+- No syntax, logical and runtime errors at all times
+
+- Produces the correct output all of the time for all cases
+
+### B. Coding Style (10%):
+
+- Code clear and easy to read
+
+- Proper indentation and spacing 
+
+- Good commenting style
+
+- Good identifier names
+
+- Clarity of code - code that’s easy to follow
+
+### C. Extra Credit (1 to 5):
+
+For adding excellent technical features and implementing excellent and efficient algorithms
 
 
+
+## Notes about your program:
+
+- **Style counts** (that includes using meaningful names and providing sufficient comments in the body of the programs).
+
+- Make sure your program includes a comment at the beginning with your name, date, along with a brief synopsis of the program/algorithm using the multiline comment `\* */`.
+
+- You should use comments throughout the source code to explain key steps and calculations
+
+- You should use proper indentation (three or two spaces) and blank lines (or you can leave to the default of the text editor default spacing) to make your program easy to read
+- Capitalize the first letter of the program name or class names (Prog1.java) 
+
+- Choose intuitive names for variables and all identifiers such as names of programs, function or method names.
+
+- You should use blank lines where appropriate to make your program easy to read.
+
+- Make sure that your program does not contain any syntax errors, or logical or runtime errors.
+
+- Make sure to use proper indentation after **{** with two spaces or whatever your editor default spacing is.
+
+- Make sure to only submit your .java files with no errors to Brightspace. Place all the .java files inside a folder saved as FirstNameLastNameAsg2 and then zip the folder and submit it to Brightspace. No need to submit the .class files.
+
+- Late submissions will be penalized by 5% per 24 hours and it will not be accepted after the 3 days past the due date.
+
+- Note that your solution must work with no errors to be accepted. In case your program does not work using java, your submission will get a zero.
+
+- Make sure to check the lateness, extension, and plagiarism policy provided in the syllabus. 
+
+## Submission
+
+Make sure to submit the assignment by the deadline as there a penalty for each date late (see homework Late Policy on the website) to Brightspace under the assignment posted by midnight in your time zone. Put all the .java files in a folder. The folder should be named with your name and the assignment number with no spaces such as **GraceHopperAsg2.zip** and place all the .java files needed for this assignment inside this folder and then zip it and submit it to BrightSpace. 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
