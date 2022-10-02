@@ -166,17 +166,23 @@ Base 2 Number System Example
 
 :::
 
-**∴**  (14)10 = $1110_{2}$
+**∴** $(14)_{10}$ = $1110_{2}$
 
 ### Octal Number System (Base 8 Number System)
 
+> 八进制数制(8进制)
+
 In the [octal number system](https://byjus.com/maths/octal-number-system/), the base is 8 and it uses numbers from 0 to 7 to represent numbers. Octal numbers are commonly used in computer applications. Converting an octal number to decimal is the same as decimal conversion and is explained below using an example.
+
+> 在[八进制数系统](https://byjus.com/maths/octal-number-system/)中，基数是8，它使用从 0 到 7 的数字来表示数字。八进制数字在计算机应用中常用。将八进制数转换为十进制与十进制转换相同，下面将通过示例进行解释。
 
 **Example: Convert 2158 into decimal.**
 
+> 示例:将2158转换为十进制。
+
 **Solution:**
 
-2158 = 2 × 82 + 1 × 81 + 5 × 80
+$215_{8}$ = 2 × 82 + 1 × 81 + 5 × 80
 
 = 2 × 64 + 1 × 8 + 5 × 1
 
