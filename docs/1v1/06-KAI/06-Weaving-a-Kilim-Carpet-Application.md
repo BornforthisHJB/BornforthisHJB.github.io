@@ -372,6 +372,60 @@ In [48]: len("************************************")/2
 Out[48]: 18.0
 ```
 
+在此之前，我们先单独编写出菱形：
+
+```java
+public class rhombus {
+    public static void main(String[] args) {
+        // 菱形编写
+        // 1
+        for (int i = 0; i < 18 - 1; i++) {
+            System.out.print(" ");
+        }
+        System.out.println("*");
+
+        // 2
+        for (int i = 0; i < 18 - 2; i++) {
+            System.out.print(" ");
+        }
+        for (int i = 0; i < 3; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");
+
+        // 3
+        for (int i = 0; i < 18 - 3; i++) {
+            System.out.print(" ");
+        }
+        for (int i = 0; i < 5; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");
+
+        // 4
+        for (int i = 0; i < 18 - 4; i++) {
+            System.out.print(" ");
+        }
+        for (int i = 0; i < 7; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");
+
+        // 5
+        for (int i = 0; i < 18 - 5; i++) {
+            System.out.print(" ");
+        }
+        for (int i = 0; i < 9; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");
+
+    }
+}
+```
+
+**观察循环规律，改写成嵌套循环。**
+
 
 
 
