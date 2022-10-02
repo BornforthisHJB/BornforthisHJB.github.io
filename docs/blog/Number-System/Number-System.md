@@ -88,9 +88,49 @@ In a number system, these numbers are used as digits. 0 and 1 are the most commo
 
 >  在数字系统中，这些数字被用作数字。0 和 1 是数制中最常见的数字，用于表示二进制数。另一方面，0 到 9 位数字也用于其他数字系统。让我们在这里学习数字系统的类型。
 
+## Types of Number System
 
+> 编号系统的类型
 
+There are various types of number systems in mathematics. The four most common number system types are:
 
+> 数学中有各种类型的数系。四种最常见的数字系统类型是:
+
+1. Decimal number system (Base- 10)
+
+> 十进位数制(进位- 10)
+
+2. Binary number system (Base- 2)
+
+> 二进制数系统(进位- 2)
+
+3. Octal number system (Base-8)
+
+> 八进制数制(Base-8)
+
+4. Hexadecimal number system (Base- 16)
+
+> 十六进制数系统(以16为基数)
+
+Now, let us discuss the different types of number systems with examples.
+
+> 现在，让我们用例子来讨论不同类型的数字系统。
+
+### Decimal Number System (Base 10 Number System)
+
+The decimal number system has a base of 10 because it uses ten digits from 0 to 9. In the decimal number system, the positions successive to the left of the decimal point represent units, tens, hundreds, thousands and so on. This system is expressed in [decimal numbers](https://byjus.com/maths/decimals/). Every position shows a particular power of the base (10).
+
+**Example of Decimal Number System:**
+
+The decimal number 1457 consists of the digit 7 in the units position, 5 in the tens place, 4 in the hundreds position, and 1 in the thousands place whose value can be written as: 
+
+(1×$10^{3}$) + (4×$10^{2}$) + (5×101) + (7×100)
+
+(1×1000) + (4×100) + (5×10) + (7×1)
+
+1000 + 400 + 50 + 7
+
+1457
 
 
 
