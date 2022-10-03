@@ -576,7 +576,20 @@ public class kai_part1 {
 }
 ```
 
-
+```java
+for (int rows = 0; rows < 5; rows++) {
+            for (int j = 0; j < 12; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < 5 - rows; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < 2 * rows + 1; k++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+```
 
 菱形解决之后，后面的和上面的如法炮制。
 
