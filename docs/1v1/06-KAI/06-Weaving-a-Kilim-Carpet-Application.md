@@ -591,6 +591,10 @@ for (int rows = 0; rows < 5; rows++) {
         }
 ```
 
+下半部分菱形：
+
+![image-20221003083019617](./06-Weaving-a-Kilim-Carpet-Application.assets/image-20221003083019617.png)
+
 菱形解决之后，后面的和上面的如法炮制。
 
 
