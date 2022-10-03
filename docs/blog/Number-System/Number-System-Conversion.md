@@ -32,7 +32,86 @@ As we know, the number system is a form of expressing the numbers. In **number s
 
 > 我们知道，数制是表示数字的一种形式。在数制转换中，我们将学习如何将一个进位的数转换为另一个进位的数。有各种各样的[数字系统](https://byjus.com/maths/number-system/)，如二进制数、十进制数、十六进制数、八进制数，可以进行练习。
 
+In this article, you will learn the conversion of one base number to another base number considering all the base numbers such as decimal, binary, octal and hexadecimal with the help of examples. Here, the following number system conversion methods are explained.
 
+> 在本文中，通过示例的帮助，您将学习一个基数到另一个基数的转换，考虑到所有的基数，如十进制、二进制、八进制和十六进制。在这里，解释下列数字系统转换方法。
+
+- Binary to Decimal Number System
+
+> 二进制到十进制的数字系统
+
+- Decimal to Binary Number System
+
+> 十进制到二进制的数字系统
+
+- Octal to Binary Number System
+
+> 八进制到二进制数系统
+
+- Binary to Octal Number System
+
+> 二进制到八进制数字系统
+
+- Binary to Hexadecimal Number System
+
+> 二进制到十六进制的数字系统
+
+- Hexadecimal to Binary Number System
+
+> 十六进制到二进制数系统
+
+Get the pdf of number system with a brief description in it. The general representation of number systems are;
+
+> 获取数字系统的 pdf，其中有一个简短的描述。数系的一般表示是:
+
+Decimal Number – Base 10 – $N_{10}$
+
+> 十进制数-以10为基数- N10
+
+Binary Number – Base 2 – $N_{2}$
+
+> 二进制数-以2为基数- $N_{2}$
+
+Octal Number – Base 8 – $N_{8}$
+
+> 八进制-以8为基数- $N_{8}$
+
+Hexadecimal Number – Base 16 – $N_{16}$
+
+> 十六进制数-以16为基数 - $N_{16}$
+
+## Number System Conversion Table
+
+> 数字系统转换表
+
+| Binary Numbers | Octal Numbers「八进制数」 | Decimal Numbers「十进制数」 | Hexadecimal Numbers「十六进制数字」 |
+| -------------- | ------------------------- | --------------------------- | ----------------------------------- |
+| 0000           | 0                         | 0                           | 0                                   |
+| 0001           | 1                         | 1                           | 1                                   |
+| 0010           | 2                         | 2                           | 2                                   |
+| 0011           | 3                         | 3                           | 3                                   |
+| 0100           | 4                         | 4                           | 4                                   |
+| 0101           | 5                         | 5                           | 5                                   |
+| 0110           | 6                         | 6                           | 6                                   |
+| 0111           | 7                         | 7                           | 7                                   |
+| 1000           | 10                        | 8                           | 8                                   |
+| 1001           | 11                        | 9                           | 9                                   |
+| 1010           | 12                        | 10                          | A                                   |
+| 1011           | 13                        | 11                          | B                                   |
+| 1100           | 14                        | 12                          | C                                   |
+| 1101           | 15                        | 13                          | D                                   |
+| 1110           | 16                        | 14                          | E                                   |
+| 1111           | 17                        | 15                          | F                                   |
+
+## Number System Conversion Methods
+
+> 数字系统转换方法
+
+Number system conversions deal with the operations to change the base of the numbers. For example, to change a decimal number with base 10 to binary number with base 2. We can also perform the arithmetic operations like addition, subtraction, multiplication on the number system. Here, we will learn the methods to convert the number of one base to the number of another base starting with the decimal number system. The representation of number system base conversion in general form for any base number is;
+
+> 数字系统转换处理改变数字基数的操作。例如，将以10为基数的十进制数更改为以2为基数的二进制数。我们还可以在数字系统上进行加减乘等算术运算。在这里，我们将从十进制数字系统开始学习将一个进位数转换为另一个进位数的方法。对于任何底数，一般形式的数制底数转换表示为:
+
+$(Number)_{b} = d_{n-1} d_{n-2}—–.d_{1} d_{0} . d_{1} d_{2} —- d_{m}$
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
