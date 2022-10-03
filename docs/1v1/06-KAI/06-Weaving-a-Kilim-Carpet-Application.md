@@ -484,6 +484,100 @@ public class Example2 {
 }
 ```
 
+---
+
+```java
+/*
+ * Author: AndersonHJB
+ * time: 2020年10月3日
+ * Project: Java Kilim*/
+public class kai_part1 {
+    public static void main(String[] args) {
+        for (int i = 0; i < 36; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");
+
+        for (int j = 0; j < 2; j++) {
+            for (int rows = 0; rows < 6; rows++) {
+                for (int i = 0; i < 3; i++) {
+                    System.out.print("*");
+                }
+                for (int i = 0; i < 3; i++) {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println("");
+        }
+
+        for (int j = 0; j < 2; j++) {
+            for (int rows = 0; rows < 6; rows++) {
+                for (int i = 0; i < 3; i++) {
+                    System.out.print(" ");
+                }
+                for (int i = 0; i < 3; i++) {
+                    System.out.print("*");
+                }
+            }
+            System.out.println("");
+        }
+
+        for (int i = 0; i < 36; i++) {
+            System.out.print("*");
+        }
+        System.out.println("");
+
+        // 菱形
+        // 1
+//        for (int i = 0; i < 17; i++) {
+//            System.out.print(" ");
+//        }
+//        System.out.println("*");
+//
+//        // 2
+//        for (int i = 0; i < 16; i++) {
+//            System.out.print(" ");
+//        }
+//        for (int i = 0; i < 3; i++) {
+//            System.out.print("*");
+//        }
+//        System.out.println("");
+//
+//        // 3
+//        for (int i = 0; i < 15; i++) {
+//            System.out.print(" ");
+//        }
+//        for (int i = 0; i < 5; i++) {
+//            System.out.print("*");
+//        }
+//
+//        // 4
+//        for (int i = 0; i < 15; i++) {
+//            System.out.print(" ");
+//        }
+//        for (int i = 0; i < 5; i++) {
+//            System.out.print("*");
+//        }
+        for (int rows = 0; rows < 5; rows++) {
+            for (int j = 0; j < 12; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < 5 - rows; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < 2 * rows + 1; k++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+
+
+    }
+}
+```
+
+
+
 菱形解决之后，后面的和上面的如法炮制。
 
 
