@@ -192,7 +192,11 @@ $215_{8}$ = 2 × $8^{2}$ + 1 × $8^{1}$ + 5 × $8^{0}$
 
 ### Hexadecimal Number System (Base 16 Number System)
 
+> 16进制数制
+
 In the hexadecimal system, numbers are written or represented with base 16. In the hex system, the numbers are first represented just like in the decimal system, i.e. from 0 to 9. Then, the numbers are represented using the alphabet from A to F. The below-given table shows the representation of numbers in the [hexadecimal number system](https://byjus.com/maths/hexadecimal-number-system/).
+
+> 在十六进制系统中，数字以16为基数书写或表示。在十六进制中，数字首先像十进制一样表示，即从0到9。然后，这些数字用从A到f的字母表表示。下表显示了[十六进制数字系统](https://byjus.com/maths/hexadecimal-number-system/)中的数字表示。
 
 | **Hexadecimal** | **0** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9** | **A**  | **B**  | **C**  | **D**  | **E**  | **F**  |
 | --------------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -202,9 +206,155 @@ In the hexadecimal system, numbers are written or represented with base 16. In t
 
 ## Number System Chart
 
+In the number system chart, the base values and the digits of different number systems can be found. Below is the chart of the numeral system.
+
+> 在编号系统图表中，可以找到不同编号系统的基值和数字。下面是数字系统的图表。
+
+![Number System Chart](./Number-System.assets/Base-10-number-system-02.jpg)
+
+::: center
+
+Number System Chart
+
+:::
+
+## Number System Conversion
+
+> 数字系统转换
+
+Numbers can be represented in any of the number system categories like binary, decimal, hex, etc. Also, any number which is represented in any of the number system types can be easily converted to other. Check the detailed lesson on the [conversions of number systems](https://byjus.com/maths/number-system-conversion/) to learn how to convert numbers in decimal to binary and vice versa, hexadecimal to binary and vice versa, and octal to binary and vice versa using various examples.
+
+> 数字可以用任何数字系统类别表示，如二进制、十进制、十六进制等。此外，任何一种数字系统类型所表示的任何数字都可以很容易地转换为其他数字。查看[数字系统的转换](https://byjus.com/maths/number-system-conversion/)的详细课程，学习如何使用各种示例将十进制数字转换为二进制，十六进制转换为二进制，反之亦然，八进制转换为二进制，反之亦然。
+
+With the help of the different conversion procedures explained above, now let us discuss in brief about the conversion of one number system to the other number system by taking a random number.
+
+> 借助上面解释的不同转换过程，现在让我们简单讨论一下如何通过取一个随机数将一个数字系统转换为另一个数字系统。
+
+Assume the number 349. Thus, the number 349 in different number systems is as follows:
+
+> 假设数字是349。因此，349在不同的数字系统中如下所示:
+
+The number 349 in the binary number system is 101011101
+
+> 二进制数系统中的数字349是101011101
+
+The number 349 in the decimal number system is 349.
+
+> 十进制中的数字349是349。
+
+The number 349 in the octal number system is 535.
+
+> 八进制数制中的数字349是535。
+
+The number 349 in the hexadecimal number system is 15D
+
+> 十六进制数字系统中的数字349是15D
 
 
 
+## Number System Examples
+
+> 数字系统的例子
+
+**Example 1:**
+
+> 示例1:
+
+Convert $(1056)_{16}$ to an octal number.
+
+> 将 $(1056)_{16}$ 转换为八进制数。
+
+**Solution:**
+
+Given, $(1056)_{16}$ is a hex number.
+
+> 给定，$(1056)_{16}$ 是一个十六进制数。
+
+First we need to convert the given hexadecimal number into decimal number
+
+> 首先，我们需要将给定的十六进制数转换为十进制数
+
+$(1056)_{16}$
+
+= 1 × $16^{3}$ + 0 × $16^{2}$ + 5 × $16^{1}$ + 6 × 160
+
+= 4096 + 0 + 80 + 6
+
+= $(4182)_{10}$
+
+Now we will convert this decimal number to the required octal number by repetitively dividing by 8.
+
+> 现在我们将通过重复除以8将这个十进制数转换为所需的八进制数。
+
+| 8    | 4182 | Remainder「剩余部分」 |
+| ---- | ---- | --------------------- |
+| 8    | 522  | 6                     |
+| 8    | 65   | 2                     |
+| 8    | 8    | 1                     |
+| 8    | 1    | 0                     |
+|      | 0    | 1                     |
+
+Therefore, taking the value of the remainder from bottom to top, we get;
+
+(4182)10 = (10126)8
+
+Therefore, 
+
+(1056)16 = (10126)8
+
+**Example 2:**
+
+Convert (1001001100)2 to a decimal number.
+
+**Solution:**
+
+(1001001100)2
+
+= 1 × 29 + 0 × 28 + 0 × 27 + 1 × 26 + 0 × 25 + 0 × 24 + 1 × 23 + 1 × 22 + 0 × 21 + 0 × 20
+
+= 512 + 64 + 8 + 4
+
+= (588)10
+
+**Example 3:**
+
+Convert 101012 into an octal number.
+
+**Solution:**
+
+Given, 
+
+ 101012 is the binary number
+
+We can write the given binary number as:
+
+010 101
+
+Now as we know, in the octal number system,
+
+010 → 2
+
+101 → 5
+
+Therefore, the required octal number is (25)8
+
+**Example 4:**
+
+Convert hexadecimal 2C to decimal number.
+
+**Solution:**
+
+We need to convert 2C16 into binary numbers first.
+
+2C → 00101100
+
+Now convert 001011002 into a decimal number.
+
+101100 = 1 × 25 + 0 × 24 + 1 × 23 + 1 × 22 + 0 × 21 + 0 × 20
+
+= 32 + 8 + 4
+
+= 44
 
 
 
