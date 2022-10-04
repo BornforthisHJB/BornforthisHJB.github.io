@@ -67,6 +67,12 @@ This is very similar to the Top-5 Frequent words problem in Worksheet 11. Feel f
 
 :::
 
+::: tips 翻译
+
+写一个 function approximate_song(filename)，来提取一个歌词文件中出现最多的词，如果有多个词出现频率一样的话就依字母顺序取第一个
+
+:::
+
 ### 1. 编写文件读取函数
 
 ```python
