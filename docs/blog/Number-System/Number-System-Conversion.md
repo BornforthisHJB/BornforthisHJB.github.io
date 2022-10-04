@@ -115,11 +115,11 @@ Number system conversions deal with the operations to change the base of the num
 >
 > 我们还可以在数字系统上进行加减乘等算术运算。在这里，我们将从十进制数字系统开始学习将一个进位数转换为另一个进位数的方法。对于任何底数，一般形式的数制底数转换表示为:
 
-$(Number)_{b} = d_{n-1} d_{n-2}—–.d_{1} d_{0} . d_{1} d_{2} —- d_{m}$
+$(Number)_{b} = d_{n-1} d_{n-2}$—–$.d_{1} d_{0} . d_{1} d_{2} $—- $d_{m}$
 
 In the above expression, dn-1 dn-2—–.d1 d0 represents the value of integer part and d-1 d-2 —- d-m represents the fractional part.
 
-> 在上面的表达式中，$d_{n-1} d_{n-2}——D_{1} d_{0}$表示整数部分的值，$d_{-1} d_{-2}——d_{-m}$ 表示小数部分的值。
+> 在上面的表达式中，$d_{n-1} d_{n-2}$——$D_{1} d_{0}$表示整数部分的值，$d_{-1} d_{-2}$——$d_{-m}$ 表示小数部分的值。
 
 Also, dn-1 is the Most significant bit (MSB) and d-m is the Least significant bit (LSB).
 
@@ -150,11 +150,33 @@ Suppose if we have to convert [decimal to binary](https://byjus.com/maths/decima
 
 > 假设我们必须将[十进制转换为二进制](https://byjus.com/maths/decimal-to-binary/)，然后将十进制数除以2。
 
-**Example** **1.** Convert (25)10 to binary number.
+**Example** **1.** Convert $(25)_{10}$ to binary number.
 
-> 
+> 例1。将 $(25)_{10}$ 转换为二进制数。
 
 **Solution:** Let us create a table based on this question.
+
+> **解决方案:** 让我们基于这个问题创建一个表。
+
+| Operation | Output | Remainder 「 剩余部分」 |
+| --------- | ------ | ----------------------- |
+| 25 ÷ 2    | 12     | 1(MSB)                  |
+| 12 ÷ 2`   | 6      | 0                       |
+| 6 ÷ 2     | 3      | 0                       |
+| 3 ÷ 2     | 1      | 1                       |
+| 1 ÷ 2     | 0      | 1(LSB)                  |
+
+Therefore, from the above table, we can write,
+
+(25)10 = (11001)2
+
+**Decimal to Octal Number:**
+
+To [convert decimal to octal number](https://byjus.com/maths/convert-decimal-to-octal/) we have to divide the given original number by 8 such that base 10 changes to base 8. Let us understand with the help of an example.
+
+**Example 2: Convert 12810 to octal number.**
+
+Solution: Let us represent the conversion in tabular form.
 
 
 
