@@ -1300,10 +1300,6 @@ public class Java_Generate_Carpet {
 
 
 
-
-
-
-
 ## Part2 (50 points): Number System Conversion Application using loops: Save it as Part2.java
 
 > 第2部分(50分):使用循环的数字系统转换应用程序:将其保存为 `Part2.java` 
