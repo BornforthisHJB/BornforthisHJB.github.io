@@ -30,7 +30,7 @@ backToTop: true
 toc: true
 ---
 
-## Forgetful Karaoke
+## 1. Forgetful Karaoke
 
 > 健忘的卡拉ok
 
@@ -101,9 +101,25 @@ approximate_song("data/somebody.txt")
 
 
 
+### Question
+
+![image-20221004202943624](./01-W14-Worksheet-14-File-IO-and-CSV-Files.assets/image-20221004202943624.png)
 
 
 
+
+
+## 2. Concatenate Files
+
+> 连接文件
+
+Write a function concatenate_files (filename1, filename2, new_filename) that concatenates the text from two source files such that the text from the file named by argument filename2 follows the text from filename1. The concatenated text should be written to a new file with the name given by new_file name. Your function must not return anything.
+
+> 编写一个函数 concatenate_files (filename1, filename2, new_filename)，它将来自两个源文件的文本连接在一起，这样，由参数filename2 命名的文件中的文本会跟随来自 filename1 的文本。连接的文本应该被写入一个名为 new_file name 的新文件。你的函数不能返回任何东西。
+
+We have provided sample input files named parti.txt and part2.txt containing a portion of the text from the novel *Alice* in  WonderlandXo test your function.
+
+> 我们在 WonderlandXo 中提供了名为 part2.txt 和 part2.txt 的示例输入文件，其中包含小说《爱丽丝》中的部分文本。
 
 
 
