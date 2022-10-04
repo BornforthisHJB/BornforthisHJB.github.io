@@ -190,7 +190,7 @@ Out[7]: [('cdf', 10), ('bi', 2), ('ap', 1)]
 
 ![image-20221004202943624](./01-W14-Worksheet-14-File-IO-and-CSV-Files.assets/image-20221004202943624.png)
 
-
+![image-20221004211451572](./01-W14-Worksheet-14-File-IO-and-CSV-Files.assets/image-20221004211451572.png)
 
 
 
