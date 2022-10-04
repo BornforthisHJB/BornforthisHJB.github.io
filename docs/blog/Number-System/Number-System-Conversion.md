@@ -161,16 +161,20 @@ Suppose if we have to convert [decimal to binary](https://byjus.com/maths/decima
 | Operation | Output | Remainder 「 剩余部分」 |
 | --------- | ------ | ----------------------- |
 | 25 ÷ 2    | 12     | 1(MSB)                  |
-| 12 ÷ 2`   | 6      | 0                       |
+| 12 ÷ 2    | 6      | 0                       |
 | 6 ÷ 2     | 3      | 0                       |
 | 3 ÷ 2     | 1      | 1                       |
 | 1 ÷ 2     | 0      | 1(LSB)                  |
 
 Therefore, from the above table, we can write,
 
-(25)10 = (11001)2
+> 因此，根据上表，我们可以写:
+
+$(25)_{10} = (11001)_{2}$
 
 **Decimal to Octal Number:**
+
+> 十进制到八进制数:
 
 To [convert decimal to octal number](https://byjus.com/maths/convert-decimal-to-octal/) we have to divide the given original number by 8 such that base 10 changes to base 8. Let us understand with the help of an example.
 
