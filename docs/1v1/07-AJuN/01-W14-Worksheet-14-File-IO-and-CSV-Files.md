@@ -59,7 +59,7 @@ Outputs should be as below:
 "whooo-oo"
 ```
 
-::: tips 提示 Dictionaries
+::: tip 提示 Dictionaries
 
 This is very similar to the Top-5 Frequent words problem in Worksheet 11. Feel free to reuse your solution!
 
@@ -67,7 +67,7 @@ This is very similar to the Top-5 Frequent words problem in Worksheet 11. Feel f
 
 :::
 
-::: tips 翻译
+::: tip 翻译
 
 写一个 function approximate_song(filename)，来提取一个歌词文件中出现最多的词，如果有多个词出现频率一样的话就依字母顺序取第一个
 
@@ -104,6 +104,62 @@ def approximate_song(filename):
 
 approximate_song("data/somebody.txt")
 ```
+
+### 2. 编写单词解析 and 字典
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/4 20:13
+# @Author  : AI悦创
+# @FileName: Forgetful_Karaoke.py.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+
+# 文件读取
+DATA_DICT = {}
+def read_file(filename):
+    """
+    :param filename:
+    作用: 文件读取
+    :return: 文本字符串,type: list
+    """
+    f = open(file=filename, mode="r", encoding="utf-8")
+    content = f.readlines()  # list
+    f.close()
+    return content
+
+
+def details_words(word):
+    global DATA_DICT
+    if word in DATA_DICT:
+        DATA_DICT[word] += 1
+    else:
+        DATA_DICT[word] = 1
+def parse(content_list):
+    for line in content_list:
+        # print(line)
+        line = line.replace("\n", " ")
+        # print(line, end="")
+        word_list = line.split(" ")
+        # print(word_list)
+        for word in word_list:
+            if word:
+                # print(word)
+                details_words(word)
+
+
+def approximate_song(filename):
+    """总调度"""
+    content_list = read_file(filename=filename)
+    # print(content_list)
+    parse(content_list)
+    print(DATA_DICT)
+
+
+approximate_song("data/somebody.txt")
+```
+
+
 
 
 
