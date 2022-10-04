@@ -119,9 +119,17 @@ $(Number)_{b} = d_{n-1} d_{n-2}—–.d_{1} d_{0} . d_{1} d_{2} —- d_{m}$
 
 In the above expression, dn-1 dn-2—–.d1 d0 represents the value of integer part and d-1 d-2 —- d-m represents the fractional part.
 
+> 在上面的表达式中，$d_{n-1} d_{n-2}——$。D1 d0表示整数部分的值，d-1 d-2——d-m表示小数部分的值。
+
 Also, dn-1 is the Most significant bit (MSB) and d-m is the Least significant bit (LSB).
 
+> 同样，dn-1是最有效位(MSB)， d-m是最不有效位(LSB)。
+
 Now let us learn, conversion from one base to another.
+
+> 现在让我们学习一下，从一个进制到另一个进制的转换。
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
