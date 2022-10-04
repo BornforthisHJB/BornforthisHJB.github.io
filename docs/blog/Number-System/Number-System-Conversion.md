@@ -119,15 +119,42 @@ $(Number)_{b} = d_{n-1} d_{n-2}—–.d_{1} d_{0} . d_{1} d_{2} —- d_{m}$
 
 In the above expression, dn-1 dn-2—–.d1 d0 represents the value of integer part and d-1 d-2 —- d-m represents the fractional part.
 
-> 在上面的表达式中，$d_{n-1} d_{n-2}——$。D1 d0表示整数部分的值，d-1 d-2——d-m表示小数部分的值。
+> 在上面的表达式中，$d_{n-1} d_{n-2}——D_{1} d_{0}$表示整数部分的值，$d_{-1} d_{-2}——d_{-m}$ 表示小数部分的值。
 
 Also, dn-1 is the Most significant bit (MSB) and d-m is the Least significant bit (LSB).
 
-> 同样，dn-1是最有效位(MSB)， d-m是最不有效位(LSB)。
+> 同样，$d_{n-1}$是最有效位(MSB)， $d_{-m}$ 是最不有效位(LSB)。
 
 Now let us learn, conversion from one base to another.
 
 > 现在让我们学习一下，从一个进制到另一个进制的转换。
+
+| Related Topics 「相关的话题」                                |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Binary Number System](https://byjus.com/maths/binary-number-system/) | [Hexadecimal Number System](https://byjus.com/maths/hexadecimal-number-system/) |
+| [Octal Number System](https://byjus.com/maths/octal-number-system/) | [Number System For Class 9](https://byjus.com/maths/number-system-for-class-9/) |
+
+## Decimal to Other Bases
+
+> 十进制到其他进制
+
+Converting a decimal number to other base numbers is easy. We have to divide the decimal number by the converted value of the new base.
+
+> 将十进制数转换为其他基本数很容易。我们必须用十进制数除以转换后的新进位值。
+
+**Decimal to Binary Number:**
+
+> 十进制到二进制数:
+
+Suppose if we have to convert [decimal to binary](https://byjus.com/maths/decimal-to-binary/), then divide the decimal number by 2.
+
+> 假设我们必须将[十进制转换为二进制](https://byjus.com/maths/decimal-to-binary/)，然后将十进制数除以2。
+
+**Example** **1.** Convert (25)10 to binary number.
+
+> 
+
+**Solution:** Let us create a table based on this question.
 
 
 
