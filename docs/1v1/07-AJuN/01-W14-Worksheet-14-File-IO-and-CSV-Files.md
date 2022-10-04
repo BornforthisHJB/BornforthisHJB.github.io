@@ -44,11 +44,20 @@ Write a function `approximate_song(filename)` that reads the lyrics of the song 
 
 We have provided lyrics for three songs for you to test your function: somebody.txt, barbrastrelsand.txt, and fakesong.txt. Note these are not the only files we will use to test your code. You can see the contents of these files by clicking on the tabs at the top-right of the page.
 
-> 我们提供了三首歌曲的歌词供您测试您的功能: `some .txt`、`barbrastrelsand.txt` 和 `faksong .txt` 。注意，这些并不是我们用来测试代码的唯一文件。您可以通过单击页面右上角的选项卡查看这些文件的内容。
+> 我们提供了三首歌曲的歌词供您测试您的功能: `some.txt`、`barbrastrelsand.txt` 和 `faksong .txt` 。注意，这些并不是我们用来测试代码的唯一文件。您可以通过单击页面右上角的选项卡查看这些文件的内容。
 
 Outputs should be as below:
 
 > 产出应如下:
+
+```python
+>>> approximate_song('somebody.txt1)
+'that'
+>>> approximate_song("fakesong.txt")
+"dum1"
+>>> approx-imate_song("arbrastre-isand.txt")
+"whooo-oo"
+```
 
 
 
