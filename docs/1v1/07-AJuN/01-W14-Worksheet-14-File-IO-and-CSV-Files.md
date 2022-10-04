@@ -159,6 +159,29 @@ def approximate_song(filename):
 approximate_song("data/somebody.txt")
 ```
 
+### 3. 字典排序
+
+```python
+In [1]: d = {"bi": 2, "ap": 1, "cdf": 10}
+
+In [2]: d_sorted_by_key = sorted(d.items(), key=lambda x: x[0])
+
+In [3]: d_sorted_by_key
+Out[3]: [('ap', 1), ('bi', 2), ('cdf', 10)]
+
+In [4]: d_sorted_by_value = sorted(d.items(), key=lambda x:x[1])
+
+In [5]: d_sorted_by_value
+Out[5]: [('ap', 1), ('bi', 2), ('cdf', 10)]
+
+In [6]: d_sorted_by_value = sorted(d.items(), key=lambda x:x[1], reverse=True)
+
+In [7]: d_sorted_by_value
+Out[7]: [('cdf', 10), ('bi', 2), ('ap', 1)]
+```
+
+
+
 
 
 
