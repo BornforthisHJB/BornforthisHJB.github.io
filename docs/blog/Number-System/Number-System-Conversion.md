@@ -113,6 +113,12 @@ Number system conversions deal with the operations to change the base of the num
 
 $(Number)_{b} = d_{n-1} d_{n-2}—–.d_{1} d_{0} . d_{1} d_{2} —- d_{m}$
 
+In the above expression, dn-1 dn-2—–.d1 d0 represents the value of integer part and d-1 d-2 —- d-m represents the fractional part.
+
+Also, dn-1 is the Most significant bit (MSB) and d-m is the Least significant bit (LSB).
+
+Now let us learn, conversion from one base to another.
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
