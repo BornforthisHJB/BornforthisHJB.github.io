@@ -59,7 +59,19 @@ Outputs should be as below:
 "whooo-oo"
 ```
 
-9 **Dictionaries
+::: tips 提示 Dictionaries
+
+This is very similar to the Top-5 Frequent words problem in Worksheet 11. Feel free to reuse your solution!
+
+> 这与习题11中的前5个经常出现的单词问题非常相似。请随意重用您的解决方案!
+
+:::
+
+### 1. 答案
+
+
+
+
 
 
 
