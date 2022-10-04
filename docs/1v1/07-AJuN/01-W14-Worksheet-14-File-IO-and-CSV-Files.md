@@ -51,7 +51,7 @@ Outputs should be as below:
 > 产出应如下:
 
 ```python
->>> approximate_song('somebody.txt1)
+>>> approximate_song('somebody.txt")
 'that'
 >>> approximate_song("fakesong.txt")
 "dum1"
@@ -67,7 +67,37 @@ This is very similar to the Top-5 Frequent words problem in Worksheet 11. Feel f
 
 :::
 
-### 1. 答案
+### 1. 编写文件读取函数
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/4 20:13
+# @Author  : AI悦创
+# @FileName: Forgetful_Karaoke.py.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+
+# 文件读取
+def read_file(filename):
+    """
+    :param filename:
+    作用: 文件读取
+    :return: 文本字符串,type: list
+    """
+    f = open(file=filename, mode="r", encoding="utf-8")
+    content = f.readlines()  # list
+    f.close()
+    return content
+
+
+def approximate_song(filename):
+    """总调度"""
+    content = read_file(filename=filename)
+    print(content)
+
+
+approximate_song("data/somebody.txt")
+```
 
 
 
