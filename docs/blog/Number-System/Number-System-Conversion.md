@@ -180,13 +180,80 @@ To [convert decimal to octal number](https://byjus.com/maths/convert-decimal-to-
 
 > 为了[将十进制数转换为八进制数](https://byjus.com/maths/convert-decimal-to-octal/)，我们必须将给定的原始数除以 8，这样以 10 为基数的数就变成以 8 为基数的数。让我们通过一个例子来理解。
 
-**Example 2: Convert 12810 to octal number.**
+**Example 2: Convert $128_{10}$ to octal number.**
 
-> 例2 :将 12810 转换为八进制数。
+> 例2 :将 $128_{10}$ 转换为八进制数。
 
 Solution: Let us represent the conversion in tabular form.
 
+> 解决方案:让我们用表格形式表示转换。
 
+| **Operation** | **Output** | **Remainder** |
+| ------------- | ---------- | ------------- |
+| 128÷8         | 16         | 0(MSB)        |
+| 16÷8          | 2          | 0             |
+| 2÷8           | 0          | 2(LSB)        |
+
+Therefore, the equivalent octal number = $200_{8}$
+
+> 因此，等效的八进制数= $200_{8}$
+
+**Decimal to Hexadecimal:**
+
+> 十进制十六进制:
+
+Again in [decimal to hex conversion](https://byjus.com/maths/decimal-to-hex-conversion/), we have to divide the given decimal number by 16.
+
+> 同样在[十进制到十六进制转换](https://byjus.com/maths/decimal-to-hex-conversion/)中，我们必须将给定的十进制数除以16。
+
+**Example 3: Convert $128_{10}$ to hex.**
+
+> 例3:将 $128_{10}$ 转换为十六进制。
+
+Solution: As per the method, we can create a table;
+
+> 解决方案:根据方法，我们可以创建一个表;
+
+| **Operation** | **Output** | **Remainder** |
+| ------------- | ---------- | ------------- |
+| 128÷16        | 8          | 0(MSB)        |
+| 8÷16          | 0          | 8(LSB)        |
+
+Therefore, the equivalent hexadecimal number is $80_{16}$
+
+> 因此，等效的十六进制数是 $80_{16}$
+
+Here MSB stands for a Most significant bit and LSB stands for a least significant bit.
+
+> 这里 MSB 代表最高有效位，LSB 代表最低有效位。
+
+## Other Base System to Decimal Conversion
+
+> 其他进制制到十进制的转换
+
+**Binary to Decimal:**
+
+> 二进制小数:
+
+In this conversion, binary number to a decimal number, we use multiplication method, in such a way that, if a number with base n has to be converted into a number with base 10, then each digit of the given number is multiplied from MSB to LSB with reducing the power of the base. Let us understand this conversion with the help of an example.
+
+> 在这个将二进制数转换为十进制数的过程中，我们使用乘法方法，如果一个以 n 为基数的数必须转换为以10为基数的数，那么给定数的每个数字都要从MSB乘到LSB，并减少底数的幂。让我们通过一个例子来理解这种转换。
+
+**Example 1****.** Convert (1101)2 into a decimal number.
+
+**Solution:** Given a binary number (1101)2.
+
+Now, multiplying each digit from MSB to LSB with reducing the power of the base number 2.
+
+1 × 23 + 1 × 22 + 0 × 21 + 1 × 20
+
+= 8 + 4 + 0 + 1
+
+= 13
+
+Therefore, (1101)2 = (13)10
+
+**Octal to Decimal:**
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
