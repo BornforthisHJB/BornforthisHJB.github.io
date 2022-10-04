@@ -5,13 +5,15 @@ time: 2022-10-04 19:42:05
 author: AI悦创
 isOriginal: true
 category: 
-    - Java 1v1
-    - web 1v1
-    - 纽约大学一对一
+    - 1v1
+    - Python 1v1
+    - 澳洲大学一对一
+    - 墨尔本大学
 tag:
-    - Java 1v1
-    - web 1v1
-    - 纽约大学一对一
+    - 1v1
+    - Python 1v1
+    - 澳洲大学一对一
+    - 墨尔本大学
 sticky: false
 star: false
 password: false

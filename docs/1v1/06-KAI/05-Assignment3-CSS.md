@@ -5,11 +5,11 @@ time: 2022-09-23 21:00:00
 author: AI悦创
 isOriginal: true
 category: 
-    - Java 1v1
+    - 1v1
     - web 1v1
     - 纽约大学一对一
 tag:
-    - Java 1v1
+    - 1v1
     - web 1v1
     - 纽约大学一对一
 sticky: false
