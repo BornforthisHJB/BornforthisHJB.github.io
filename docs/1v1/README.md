@@ -12,7 +12,7 @@ time: 2022-09-01 14:38:16
 | 04   | **TommyTian** | [04-TommyTian](04-TommyTian/01.md)                           |
 | 05   | **Patrick**   | [05-Patrick](05-Patrick/01-CITS1401-Computational-Thinking-with-Python.md) |
 | 06   | **KAI**       | [06-KAI](06-KAI/README.md)                                   |
-|      |               |                                                              |
+| 07   | **AJuN**      | [AJuN](01-W14-Worksheet-14-File-IO-and-CSV-Files)            |
 |      |               |                                                              |
 |      |               |                                                              |
 |      |               |                                                              |
