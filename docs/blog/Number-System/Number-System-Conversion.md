@@ -178,7 +178,11 @@ $(25)_{10} = (11001)_{2}$
 
 To [convert decimal to octal number](https://byjus.com/maths/convert-decimal-to-octal/) we have to divide the given original number by 8 such that base 10 changes to base 8. Let us understand with the help of an example.
 
+> 为了[将十进制数转换为八进制数](https://byjus.com/maths/convert-decimal-to-octal/)，我们必须将给定的原始数除以 8，这样以 10 为基数的数就变成以 8 为基数的数。让我们通过一个例子来理解。
+
 **Example 2: Convert 12810 to octal number.**
+
+> 例2 :将 12810 转换为八进制数。
 
 Solution: Let us represent the conversion in tabular form.
 
