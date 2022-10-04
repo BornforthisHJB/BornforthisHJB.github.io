@@ -109,7 +109,11 @@ Hexadecimal Number – Base 16 – $N_{16}$
 
 Number system conversions deal with the operations to change the base of the numbers. For example, to change a decimal number with base 10 to binary number with base 2. We can also perform the arithmetic operations like addition, subtraction, multiplication on the number system. Here, we will learn the methods to convert the number of one base to the number of another base starting with the decimal number system. The representation of number system base conversion in general form for any base number is;
 
-> 数字系统转换处理改变数字基数的操作。例如，将以10为基数的十进制数更改为以2为基数的二进制数。我们还可以在数字系统上进行加减乘等算术运算。在这里，我们将从十进制数字系统开始学习将一个进位数转换为另一个进位数的方法。对于任何底数，一般形式的数制底数转换表示为:
+> 数字系统转换处理改变数字基数的操作。
+>
+> 例如， **将以 10 为基数的十进制数更改为以 2 为基数的二进制数。** 
+>
+> 我们还可以在数字系统上进行加减乘等算术运算。在这里，我们将从十进制数字系统开始学习将一个进位数转换为另一个进位数的方法。对于任何底数，一般形式的数制底数转换表示为:
 
 $(Number)_{b} = d_{n-1} d_{n-2}—–.d_{1} d_{0} . d_{1} d_{2} —- d_{m}$
 
