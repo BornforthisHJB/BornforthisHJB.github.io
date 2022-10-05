@@ -90,7 +90,7 @@ The **reverse complement** of DNA is found by reversing the DNA sequence, then r
 
 Write a Python function `reverse_complement()` that takes a DNA sequence as a string, and returns the reverse complement. Test your function, then find and print the reverse complement of the following sequence:
 
-> 编写一个Python函数' reverse_complement() '，它接受一个DNA序列作为字符串，并返回反向补体。测试你的函数，然后找到并打印以下序列的逆补:
+> 编写一个 Python 函数' reverse_complement() '，它接受一个 DNA 序列作为字符串，并返回反向补体。测试你的函数，然后找到并打印以下序列的逆补:
 
     ATGCGCGGATCGTACCTAATCGATGGCATTAGCCGAGCCCGATTACGC
 
@@ -98,11 +98,31 @@ Note that this function is not needed for the remaining questions below.
 
 > 注意，下面其余的问题不需要这个函数。
 
+### 替换原则
+
+1. G-C
+2. T-A
+
+### 答案
+
+```python
+```
 
 
 
+### Question 2
 
+[Ribonucleic acid (RNA)](http://en.wikipedia.org/wiki/RNA) is a family of large biological molecules that are *transcribed* from DNA by the "RNA polymerase" enzyme. 
 
+> [核糖核酸(RNA)](http://en.wikipedia.org/wiki/RNA) 是一个大分子家族，由“RNA 聚合酶”酶从 DNA 转录而来。
+
+[Messenger RNA](http://en.wikipedia.org/wiki/Messenger_RNA) molecules (or mRNA) are a subset of RNA molecules that are used to pass information from DNA to ribosomes, which then translates the mRNA to protein sequences.
+
+> [信使RNA](http://en.wikipedia.org/wiki/Messenger_RNA) 分子(或mRNA)是 RNA 分子的一个子集，用于将信息从DNA传递到核糖体，然后核糖体将 mRNA 翻译成蛋白质序列。
+
+mRNA consists of a single strand of nucleotides that are identical to the ones found in DNA, with the exception of uracil (`U`), which replaces thymine (`T`).
+
+Write a Python function `dna_to_mrna()` that takes a DNA sequence and returns the corresponding mRNA sequence. For example, the DNA sequence `ATCGCGAT` should produce the mRNA sequence `AUCGCGAU`.
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
