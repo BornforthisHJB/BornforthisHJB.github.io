@@ -121,6 +121,10 @@ export const zhSidebar = sidebar({
 			icon: "java",
 			children: [
 				"chapter01/01",
+				"chapter01/02",
+				"chapter01/03",
+				"chapter01/04",
+				"chapter01/05",
 			],
 		},
 		{
