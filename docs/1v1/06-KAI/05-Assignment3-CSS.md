@@ -179,6 +179,27 @@ Link: [https://brightspace.nyu.edu/d2l/lms/dropbox/user/folder_submit_files.d2l?
 
 ## 答案：
 
+### index.html
+
+#### 1. 设置背景图
+
+**style.css**
+
+```css
+/* This is my external stylesheet */
+
+body {
+    background-image: url("/static/img/bg/background.jpg");
+    font-family: 'Open Sans', sans-serif;
+}
+```
+
+**Index.html**
+
+```html
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+```
+
 
 
 
