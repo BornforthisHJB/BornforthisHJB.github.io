@@ -185,9 +185,11 @@ When the mRNA is translated to a protein sequence, each set of three nucleotides
 
 > 因此，由氨基酸序列组成的蛋白质可以像DNA或mRNA一样被写成字母序列，但由于氨基酸多于4个，所以蛋白质可以使用更多的字母。
 
-The [data/p1_codons.txt](data/p1_codons.txt) file contains a list of codon-amino acid pairs. There are two columns:
+> protein也可以被写成字母序列，但是之前mrna每个字母可能要被写成多个字母
 
-> [data/p1_codons.txt](data/p1_codons.txt)文件包含密码子-氨基酸对的列表。有两栏:
+The [data/p1_codons.txt](/08-LionGuo/01-Homework-Problem-DNA-sequencing/p1_codons.txt) file contains a list of codon-amino acid pairs. There are two columns:
+
+> [data/p1_codons.txt](/08-LionGuo/01-Homework-Problem-DNA-sequencing/p1_codons.txt) 文件包含密码子-氨基酸对的列表。有两栏:
 
 ::: details p1_codons.txt
 
