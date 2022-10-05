@@ -1464,7 +1464,7 @@ For adding excellent technical features and implementing excellent and efficient
 
 - Make sure your program includes a comment at the beginning with your name, date, along with a brief synopsis of the program/algorithm using the multiline comment `\* */`.
 
-> 确保您的程序在开头包含您的姓名、日期注释，以及使用多行注释' \* */ '的程序/算法概要。
+> 确保您的程序在开头包含您的姓名、日期注释，以及使用多行注释' \* */ '的程序/算法概要。✅
 
 - You should use comments throughout the source code to explain key steps and calculations
 
