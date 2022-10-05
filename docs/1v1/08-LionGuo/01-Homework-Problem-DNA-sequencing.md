@@ -106,6 +106,37 @@ Note that this function is not needed for the remaining questions below.
 ### 答案
 
 ```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/5 21:48
+# @Author  : AI悦创
+# @FileName: hw1.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+def reverse_complement(dna_str):
+    reverse_dna_str = dna_str[::-1]
+    # replace_dna_str = reverse_dna_str.replace("G", "C")
+    # replace_dna_str = replace_dna_str.replace("C", "G")
+    # replace_dna_str = replace_dna_str.replace("A", "T")
+    # replace_dna_str = replace_dna_str.replace("T", "A")
+    # return replace_dna_str
+    TA = ["T", "A"]
+    CG = ["C", "G"]
+    result = []
+    for s in reverse_dna_str:
+        if s in TA:
+            if s == "T":
+                result.append("A")
+            else:
+                result.append("T")
+        else:
+            if s == "C":
+                result.append("G")
+            else:
+                result.append("C")
+    return "".join(result)
+
+
+reverse_complement("ATGCGGC")
 ```
 
 
@@ -122,7 +153,26 @@ Note that this function is not needed for the remaining questions below.
 
 mRNA consists of a single strand of nucleotides that are identical to the ones found in DNA, with the exception of uracil (`U`), which replaces thymine (`T`).
 
+> mRNA由一条核苷酸链组成，除了尿嘧啶(' U ')取代了胸腺嘧啶(' T ')之外，它与DNA中的核苷酸链相同。
+
 Write a Python function `dna_to_mrna()` that takes a DNA sequence and returns the corresponding mRNA sequence. For example, the DNA sequence `ATCGCGAT` should produce the mRNA sequence `AUCGCGAU`.
+
+> 编写一个Python函数' dna_to_mrna() '，它接受一个DNA序列并返回相应的mRNA序列。例如，DNA序列' ATCGCGAT '应该产生mRNA序列' AUCGCGAU '。
+
+### 替换原则
+
+1. 
+2. 
+
+### 答案
+
+
+
+## Part 2
+
+### Question 3
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
