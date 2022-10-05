@@ -187,9 +187,9 @@ When the mRNA is translated to a protein sequence, each set of three nucleotides
 
 > protein也可以被写成字母序列，但是之前mrna每个字母可能要被写成多个字母
 
-The [data/p1_codons.txt](/08-LionGuo/01-Homework-Problem-DNA-sequencing/p1_codons.txt) file contains a list of codon-amino acid pairs. There are two columns:
+The [data/p1_codons.txt](/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/p1_codons.txt) file contains a list of codon-amino acid pairs. There are two columns:
 
-> [data/p1_codons.txt](/08-LionGuo/01-Homework-Problem-DNA-sequencing/p1_codons.txt) 文件包含密码子-氨基酸对的列表。有两栏:
+> [data/p1_codons.txt](/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/p1_codons.txt) 文件包含密码子-氨基酸对的列表。有两栏:
 
 ::: details p1_codons.txt
 
