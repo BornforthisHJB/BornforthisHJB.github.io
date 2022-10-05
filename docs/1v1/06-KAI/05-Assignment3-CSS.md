@@ -50,11 +50,11 @@ Here is a list of required elements to include for the [[assignments home page](
 
 - Create an internal style sheet (within the `section of the document) with at least two different CSS rule sets(consisting of a selector and declaration block) for your assignments home page.`
 
-> 为你的作业主页创建一个内部样式表(在文档的“部分”内)，包含至少两个不同的 CSS 规则集(由选择器和声明块组成)。
+> 为你的作业主页创建一个内部样式表(在文档的“部分”内)，包含至少两个不同的 CSS 规则集(由 **选择器** 和 **声明块** 组成)。
 
 - Your assignments home page should also include two or more different inline style rules—as `style` attributes of HTML elements.
 
-> 你的作业主页还应该包括两个或更多不同的内联样式规则——作为HTML元素的“样式”属性。
+> 你的作业主页还应该包括两个或更多不同的内联样式规则——作为 HTML 元素的“样式”属性。
 
 Here is a list of required elements to include for the [[website about you](http://adamscher.com/class/cims/assignments/assignment-3/)] .
 
@@ -176,6 +176,12 @@ This assignment is worth 10 points.
 > 上传文件后，您必须单击“提交”完成提交。
 
 Link: [https://brightspace.nyu.edu/d2l/lms/dropbox/user/folder_submit_files.d2l?db=532082&grpid=0&isprv=0&bp=0&ou=218995](https://brightspace.nyu.edu/d2l/lms/dropbox/user/folder_submit_files.d2l?db=532082&grpid=0&isprv=0&bp=0&ou=218995)
+
+## 答案：
+
+
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
