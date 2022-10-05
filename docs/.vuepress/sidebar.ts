@@ -95,6 +95,15 @@ export const zhSidebar = sidebar({
 			]
 		}
 	],
+	"/1v1/08-LionGuo": [
+		{
+			text: "Python HW",
+			icon: "python",
+			children: [
+				"01-Homework-Problem-DNA-sequencing",
+			]
+		}
+	],
 	"/1v1/02-yuebao": [
 		{
 			text: "2022年",
