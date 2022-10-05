@@ -221,7 +221,74 @@ Print out the amino acid sequence for the following DNA sequence:
 
     AATCTCTACGGAAGTAGGTCAGTACTGATCGATCAGTCGATCGGGCGGCGATTTCGATCTGATTGTACGGCGGGCTAG
 
+### 答案
 
+```python
+def dna_to_mrna(dna):
+    mRNA = dna.replace("T", "U")
+    return mRNA
+
+
+def mrna_to_protein(mRNA):
+    with open("p1_codons.txt", "r") as f:
+        content_list = f.readlines()
+    # print(content_list)
+    target_list = []
+    for line in content_list:
+        line = tuple(line.replace("\n", "").split(" "))
+        # print(line)
+        target_list.append(line)
+    # print(target_list)
+    target_dict = dict(target_list)
+    print(target_dict)
+    # index = 0
+    result_lst = []
+    while True:
+        if mRNA:
+            use_mrna = mRNA[:3]
+            print("use_mrna:>>>", use_mrna)
+            if target_dict[use_mrna] == "Stop":
+                break
+            else:
+                result_lst.append(target_dict[use_mrna])
+            # print("use_mran:>>>", use_mrna)
+            # if target_list[index][1] == "Stop":
+            #     break
+            # elif use_mrna in target_list[index]:
+            #     result_lst.append(target_list[index][1])
+            #     index += 1
+            mRNA = mRNA[3:]
+        else:
+            break
+
+    # print(result_lst)
+    return "".join(result_lst)
+
+
+DNA = "AATCTCTACGGAAGTAGGTCAGTACTGATCGATCAGTCGATCGGGCGGCGATTTCGATCTGATTGTACGGCGGGCTAG"
+mRNA = dna_to_mrna(DNA)
+print(mRNA)
+# print(len(mRNA) / 3)
+r = mrna_to_protein(mRNA)
+print(r)
+```
+
+### Question 4
+
+In the previous questions, we have been specifying the DNA sequence by hand, but DNA sequences are usually long and are stored in files. A common file format is the [FASTA format](http://en.wikipedia.org/wiki/FASTA_format) which is a text-file of the form:
+
+    >label1
+    ACTGTATCGATGCTAGCTACGTAGCTAGCTAGCTAGCTGACGTA
+    ACGATGTGCGAGGGTCATGGGACGCGAGCGAGTCTAGCACGATC
+    >label2
+    ACTGGGCTTGACTACGGCGGTATCTGACGGGCGAGCTGTACGAG
+    ACGGACTAGGGCGCGGCGGGGCGGATTTTCGAGTCGAGCGTTAT
+
+The first line starts with a ``>`` which is immediately followed by a label (an arbitrary string, e.g. the name of the gene). The sequence then starts on the second line, and may continue on several lines. It is common to limit the length of each line to 80, but this may vary from file to file. The sequence stops once either the file ends, or a line starts with ``>``, which indicates that a new sequence is being given. There may be any number of sequences in a file.
+
+Write a function `read_fasta()`, that takes the name of a file (as a string) and returns a Python dictionary containing all the sequences from the file, with the keys in the dictionary corresponding to the label. 
+
+Use this function and the functions you have written above to read in the [data/p1_fasta_q4.txt](data/p1_fasta_q4.txt) file and print out, for each sequence, the label, followed by the **amino acid** sequence (not the DNA sequence!).
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
