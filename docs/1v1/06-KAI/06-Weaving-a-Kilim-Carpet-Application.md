@@ -1446,7 +1446,11 @@ The result is: **7**
 
 ### C. Extra Credit (1 to 5):
 
+> C.额外学分(1 - 5分):
+
 For adding excellent technical features and implementing excellent and efficient algorithms
+
+> 增加优秀的技术特性和实现优秀和高效的算法
 
 
 
