@@ -277,6 +277,8 @@ print(r)
 
 In the previous questions, we have been specifying the DNA sequence by hand, but DNA sequences are usually long and are stored in files. A common file format is the [FASTA format](http://en.wikipedia.org/wiki/FASTA_format) which is a text-file of the form:
 
+> 在前面的问题中，我们一直手工指定DNA序列，但DNA序列通常很长，并且存储在文件中。常见的文件格式是[FASTA格式](http://en.wikipedia.org/wiki/FASTA_format)，它是一个格式为:
+
     >label1
     ACTGTATCGATGCTAGCTACGTAGCTAGCTAGCTAGCTGACGTA
     ACGATGTGCGAGGGTCATGGGACGCGAGCGAGTCTAGCACGATC
@@ -286,9 +288,36 @@ In the previous questions, we have been specifying the DNA sequence by hand, but
 
 The first line starts with a ``>`` which is immediately followed by a label (an arbitrary string, e.g. the name of the gene). The sequence then starts on the second line, and may continue on several lines. It is common to limit the length of each line to 80, but this may vary from file to file. The sequence stops once either the file ends, or a line starts with ``>``, which indicates that a new sequence is being given. There may be any number of sequences in a file.
 
+> 第一行以' ' &gt; ' '开头，后面紧跟着一个标签(任意字符串，例如基因名)。序列从第二行开始，并可能在几行上继续。通常将每行的长度限制为80，但这可能因文件而异。一旦文件结束，或者有一行以' ' &gt; ' '开头(这表示给出了一个新的序列)，序列就会停止。一个文件中可能有任意数量的序列。
+
 Write a function `read_fasta()`, that takes the name of a file (as a string) and returns a Python dictionary containing all the sequences from the file, with the keys in the dictionary corresponding to the label. 
 
-Use this function and the functions you have written above to read in the [data/p1_fasta_q4.txt](data/p1_fasta_q4.txt) file and print out, for each sequence, the label, followed by the **amino acid** sequence (not the DNA sequence!).
+> 编写一个函数' read_fasta() '，它接受文件的名称(作为字符串)，并返回一个包含文件中所有序列的Python字典，字典中的键对应于标签。
+
+Use this function and the functions you have written above to read in the [p1_fasta_q4.txt](/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/p1_fasta_q4.txt) file and print out, for each sequence, the label, followed by the **amino acid** sequence (not the DNA sequence!).
+
+> 使用这个函数和上面所写的函数来读取[p1_fasta_q4.txt](/1v1/08-LionGuo/01- homework - question -DNA-sequencing/p1_fasta_q4.txt)文件，并为每个序列打印出标签，后面跟着**氨基酸**序列(不是DNA序列!)
+
+## 答案
+
+```python
+def read_fasta():
+    with open("p1_fasta_q4.txt", "r") as f:
+        lines = f.read().split(">")
+        # print(lines)
+    result_lst = []
+    for line in lines:
+        if line:
+            # print(line)
+            line_lst = line.split("\n")[:-1]
+            # print(line_lst)
+            result_lst.append((line_lst[0], line_lst[1:]))
+        else:
+            pass
+    return dict(result_lst)
+```
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
