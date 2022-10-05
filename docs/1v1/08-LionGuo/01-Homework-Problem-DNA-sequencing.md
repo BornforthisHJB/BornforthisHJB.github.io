@@ -161,16 +161,63 @@ Write a Python function `dna_to_mrna()` that takes a DNA sequence and returns th
 
 ### 替换原则
 
-1. 
-2. 
+1. U-T
 
 ### 答案
+
+```python
+def dna_to_mrna(dna):
+    mRNA = dna.replace("T", "U")
+    return mRNA
+```
 
 
 
 ## Part 2
 
 ### Question 3
+
+When the mRNA is translated to a protein sequence, each set of three nucleotides, called a **codon**, is translated into a single amino acid. For example, the codon ``UUC`` translates to the amino acid *Phenylalanine*. Each amino acid can be represented by a single letter - for example Phenylalanine is represented by the letter ``F``.
+
+> 当mRNA被翻译成蛋白质序列时，每一组核苷酸(称为**密码子**)被翻译成一个单一的氨基酸。例如，密码子' ' UUC ' '翻译成氨基酸*苯丙氨酸*。每个氨基酸都可以用一个字母表示，例如苯丙氨酸用字母“F”表示。
+
+> A protein, which is formed from a sequence of amino acids, can therefore be written as a sequence of letters in the same way as DNA or mRNA, but using more of the letters of the alphabet since there are more than four amino acids.
+
+> 因此，由氨基酸序列组成的蛋白质可以像DNA或mRNA一样被写成字母序列，但由于氨基酸多于4个，所以蛋白质可以使用更多的字母。
+
+The [data/p1_codons.txt](data/p1_codons.txt) file contains a list of codon-amino acid pairs. There are two columns:
+
+> [data/p1_codons.txt](data/p1_codons.txt)文件包含密码子-氨基酸对的列表。有两栏:
+
+* first column: codon (represented by three letters).
+
+> 第一列:密码子(由三个字母表示)。
+
+* second column: corresponding amino acid (represented by a single letter).
+
+> 第二列:对应的氨基酸(用一个字母表示)。
+
+Certain codons do not correspond to an amino acid, but instead indicate that the amino acid sequence is finished. These are indicated by `Stop`.
+
+> 某些密码子并不对应某个氨基酸，而是表示该氨基酸序列结束了。它们由“Stop”表示。
+
+Write a function `mrna_to_protein()` that takes an mRNA sequence (as a string) and returns the sequence of amino acids (as a string), stopping the first time a `Stop` codon is encountered.
+
+> 编写一个函数' mrna_to_protein() '，它接受一个mRNA序列(作为字符串)并返回氨基酸序列(作为字符串)，在第一次遇到' Stop '密码子时停止。
+
+> Make sure that the codon map file is only read once when running the script (and not every time you want to translate a codon).
+
+> 确保在运行脚本时只读取一次密码子映射文件(而不是每次您想翻译密码子时都读取)。
+
+Then, write a function `dna_to_protein()` that takes a DNA sequence (as a string) and returns the sequence of amino acids (as a string), making use of the functions that you wrote previously.
+
+> 然后，编写一个函数' dna_to_protein() '，它接受一个DNA序列(作为字符串)并返回氨基酸序列(作为字符串)，使用前面编写的函数。
+
+Print out the amino acid sequence for the following DNA sequence:
+
+> 打印出以下DNA序列的氨基酸序列:
+
+    AATCTCTACGGAAGTAGGTCAGTACTGATCGATCAGTCGATCGGGCGGCGATTTCGATCTGATTGTACGGCGGGCTAG
 
 
 
