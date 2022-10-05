@@ -1380,7 +1380,7 @@ The result is: **7**
 
 - You can use a String to input the number especially in the case of binary so you don’t lose the leading zeros on the left when you input the number. 
 
-> 您可以使用String来输入数字，特别是在二进制的情况下，这样在输入数字时就不会丢失左边的前导零。
+> 您可以使用 String 来输入数字，特别是在二进制的情况下，这样在输入数字时就不会丢失左边的前导零。
 
 - Do NOT USE already Built-in method fin java for conversions. You should produce your own algorithms (code) to convert from one system to another.
 
@@ -1404,23 +1404,45 @@ The result is: **7**
 
 ### A. Program Execution (90%)
 
+> A.程序执行(90%)
+
 - Meeting all of the requirements of the assignments
+
+> 满足作业的所有要求
 
 - No syntax, logical and runtime errors at all times
 
+> 任何时候都没有语法、逻辑和运行时错误
+
 - Produces the correct output all of the time for all cases
+
+> 始终为所有情况产生正确的输出
+
+
 
 ### B. Coding Style (10%):
 
 - Code clear and easy to read
 
+> 代码清晰，易于阅读
+
 - Proper indentation and spacing 
+
+> 适当的缩进和间距
 
 - Good commenting style
 
+> 好的评论风格
+
 - Good identifier names
 
+> 好标识符名称
+
 - Clarity of code - code that’s easy to follow
+
+> 代码的清晰性——易于理解的代码
+
+
 
 ### C. Extra Credit (1 to 5):
 
@@ -1487,6 +1509,47 @@ For adding excellent technical features and implementing excellent and efficient
 ## Submission
 
 Make sure to submit the assignment by the deadline as there a penalty for each date late (see homework Late Policy on the website) to Brightspace under the assignment posted by midnight in your time zone. Put all the .java files in a folder. The folder should be named with your name and the assignment number with no spaces such as **GraceHopperAsg2.zip** and place all the .java files needed for this assignment inside this folder and then zip it and submit it to BrightSpace. 
+
+
+
+## 答案 1.0
+
+```java
+import java.util.Scanner;
+
+public class NumberSystem {
+    public static void main(String[] args) {
+        NumberSystem nb = new NumberSystem();
+        Scanner input = new Scanner(System.in);
+        int user_input = input.nextInt();
+        System.out.println(user_input);
+
+        String r = nb.DecToBin(user_input);
+        System.out.println(r);
+
+//        for (int i = 0; user_input / 2 == 0; i++) {
+////            System.out.println(5 / 2);
+//            result_binary = result_binary + user_input % 2;
+//            user_input = user_input / 2;
+//        }
+//        System.out.println(result_binary);
+
+    }
+
+    public String DecToBin(int userinput) {
+        String result_binary = "";
+        while (userinput != 0) {
+            result_binary = (userinput % 2) + result_binary;
+            userinput = userinput / 2;
+        }
+//        System.out.println(result_binary);
+        return result_binary;
+    }
+
+}
+```
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
