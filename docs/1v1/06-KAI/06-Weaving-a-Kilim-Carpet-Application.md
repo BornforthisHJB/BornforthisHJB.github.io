@@ -1553,6 +1553,84 @@ public class NumberSystem {
 }
 ```
 
+## 答案 2.0
+
+```java
+/**
+ * @ClassName: Part2
+ * @Description: NumberSystem
+ * @Author: AI悦创
+ * @date: 2022/10/5 09:28
+ * @Version: V1.0
+ */
+
+import java.util.Scanner;
+
+public class Part2 {
+    public static void main(String[] args) {
+        Part2 ns = new Part2();  // 类的是例化
+        Scanner in = new Scanner(System.in);  // 声明一个输入
+        System.out.print("Enter the name of the number system to convert from: bin, or dec, or oct or hex:");
+        String digital_system = in.next(); // 数字系统「用户描述用户输入的类型」
+        System.out.print("Enter number as a String:");
+        int inDec = in.nextInt();
+        System.out.print("Enter the name of the number system you want to convert to: bin, or dec, or oct or hex: "); // 用户要转换的目标类型
+        String target = in.next(); // 用户想要转换的目标类型
+
+        if (target.equals("dec")) {
+            String dec_to_binary = ns.DecToBin(inDec);
+            System.out.print(dec_to_binary);
+        } else if (target.equals("oct")) {
+            String dec_to_binary = ns.DecToOct(inDec);
+            System.out.print(dec_to_binary);
+        } else if (target.equals("hex")) {
+            String dec_to_binary = ns.DecToHex(inDec);
+            System.out.print(dec_to_binary);
+        }
+
+
+    }
+
+
+    public String DecToBin(int intDec) {
+        /* 十进制转二进制，利用除2取余*/
+        String result_binary = "";
+        while (intDec != 0) {
+            result_binary = (intDec % 2) + result_binary;
+            intDec = intDec / 2;
+        }
+        return result_binary;
+    }
+
+    public String DecToOct(int intDec) {
+        /* 十进制转二进制，利用除2取余*/
+        String result_binary = "";
+        while (intDec != 0) {
+            result_binary = (intDec % 8) + result_binary;
+            intDec = intDec / 8;
+        }
+        return result_binary;
+    }
+
+    public String DecToHex(int intDec) {
+        if (intDec == 0) {
+//            System.out.println(0);
+//            System.exit(0);
+            return "0";
+        }
+        StringBuffer stb = new StringBuffer(8);
+        /*当对字符串进行修改的时候，需要使用 StringBuffer 和 StringBuilder 类。
+        和 String 类不同的是，StringBuffer 和 StringBuilder 类的对象能够被多次的修改，并且不产生新的未使用对象。*/
+        char[] a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+        while (intDec != 0) {
+            stb = stb.append(a[intDec % 16]);
+            intDec /= 16;
+        }
+        return stb.reverse().toString();
+    }
+}
+```
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
