@@ -237,21 +237,27 @@ Here MSB stands for a Most significant bit and LSB stands for a least significan
 
 In this conversion, binary number to a decimal number, we use multiplication method, in such a way that, if a number with base n has to be converted into a number with base 10, then each digit of the given number is multiplied from MSB to LSB with reducing the power of the base. Let us understand this conversion with the help of an example.
 
-> 在这个将二进制数转换为十进制数的过程中，我们使用乘法方法，如果一个以 n 为基数的数必须转换为以10为基数的数，那么给定数的每个数字都要从MSB乘到LSB，并减少底数的幂。让我们通过一个例子来理解这种转换。
+> 在这个将二进制数转换为十进制数的过程中，我们使用乘法方法，如果一个以 n 为基数的数必须转换为以 10 为基数的数，那么给定数的每个数字都要从 MSB 乘到 LSB，并减少底数的幂。让我们通过一个例子来理解这种转换。
 
-**Example 1****.** Convert (1101)2 into a decimal number.
+**Example 1.** Convert $(1101)_{2}$ into a decimal number.
 
-**Solution:** Given a binary number (1101)2.
+> 示例 1. 将 (1101)2 转换为十进制数。
+
+**Solution:** Given a binary number $(1101)_{2}$.
+
+> 解：给定一个二进制数  $(1101)_{2}$。
 
 Now, multiplying each digit from MSB to LSB with reducing the power of the base number 2.
 
-1 × 23 + 1 × 22 + 0 × 21 + 1 × 20
+现在，将每个数字从 MSB 乘到 LSB，并减少基数 2 的幂。
+
+$1 × 2^3 + 1 × 2^2 + 0 × 2^1 + 1 × 2^0$
 
 = 8 + 4 + 0 + 1
 
 = 13
 
-Therefore, (1101)2 = (13)10
+Therefore, $(1101)_2 = (13)_10$
 
 **Octal to Decimal:**
 
