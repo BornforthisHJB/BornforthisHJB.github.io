@@ -1,7 +1,7 @@
 ---
-title: Homework Problem \#2 - Arctic Ice
+title: Homework Problem \#3 - Finding an exoplanet
 icon: python
-time: 2022-10-06 18:15:28
+time: 2022-10-06 18:18:52
 author: AI悦创
 isOriginal: true
 category: 
