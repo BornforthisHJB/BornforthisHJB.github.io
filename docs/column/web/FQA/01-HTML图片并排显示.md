@@ -1,11 +1,14 @@
 ---
-title: 3-2 VSCode 安装、配置和插件
+title: 01-实战之 HTML: 把两张图片并排（行）显示
 date: 2022-09-30 11:57:06
 author: AI悦创
 isOriginal: true
-category: web 专栏
+category: 
+    - web 专栏
+    - Web FQA
 tag:
     - web 专栏
+    - Web FQA
 icon: web
 sticky: false
 star: false
@@ -19,19 +22,15 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: txk_09.md
-next: txk_11.md
 backToTop: true
 toc: true
 ---
 
-## Visual Studio Code 简介
 
-- Visual Studio Code 简称 VS Code，来自微软
 
-![image-20220930120153347](./txk_10.assets/image-20220930120153347.png)
 
-- 优点：内置功能非常丰富、插件全且安装简单、轻量、有 Mac 版本
+
+
 
 
 
@@ -54,12 +53,3 @@ C++ 信息奥赛题解，长期更新！长期招收一对一中小学信息奥�
 :::
 
 ![](/zsxq.jpg)
-
-
-
-
-
-
-
-
-
