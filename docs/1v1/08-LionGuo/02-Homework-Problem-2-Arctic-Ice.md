@@ -76,6 +76,41 @@ Note: to get the correct orientation, you need the `origin='lower'` argument for
 
 ## 答案
 
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/6 18:26
+# @Author  : AI悦创
+# @FileName: hw2.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+import h5py
+
+
+# f = h5py.File('p2_icedata_area.hdf5', 'r')
+# # f = h5py.File('p2_icedata.hdf5', 'r')
+# print(f)
+# print(f.keys())
+# dataset = f["pixel_areas"]
+# print(dataset)
+# print(dataset.shape)
+# print(dataset.dtype)
+
+def read_hdf5(path):
+    f = h5py.File(path, 'r')
+    keys = f.keys()
+    for key in keys:
+        # print(key)
+        dataset = f[key]
+        print(key, dataset.shape, dataset.dtype, sep="\t")
+
+
+if __name__ == '__main__':
+    read_hdf5("p2_icedata.hdf5")
+
+```
+
+
+
 
 
 ## Part 2 - Ice concentration versus time
