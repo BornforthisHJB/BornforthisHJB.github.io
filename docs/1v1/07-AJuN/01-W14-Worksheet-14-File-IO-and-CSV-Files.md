@@ -408,9 +408,9 @@ Melbourne,41.2,35.5,37.4,29.3
 
 **Test File**
 
-So you can test your answer, we have provided a full year of data for many Australian cities in a file called max_temp.csv. The data was obtained from the Bureau of Meteorology website.
+So you can test your answer, we have provided a full year of data for many Australian cities in a file called [max_temp.csv](/1v1/07-AJuN/01-W14-Worksheet-14-File-IO-and-CSV-Files/max_temp.csv). The data was obtained from the Bureau of Meteorology website.
 
-> 你可以测试一下你的答案，我们在一个名为 max_temp.csv 的文件中提供了许多澳大利亚城市全年的数据。这些数据来自气象局网站。
+> 你可以测试一下你的答案，我们在一个名为  [max_temp.csv](/1v1/07-AJuN/01-W14-Worksheet-14-File-IO-and-CSV-Files/max_temp.csv) 的文件中提供了许多澳大利亚城市全年的数据。这些数据来自气象局网站。
 
 > CVS文件的一列是城市的名字，一行是月份
 >
