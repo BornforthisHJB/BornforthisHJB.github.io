@@ -109,7 +109,39 @@ if __name__ == '__main__':
 
 ```
 
+```python
+import matplotlib.pyplot as plt
+import h5py
+def read_hdf5(path):
+    year_lst = []
+    dataset_lst = []
+    f = h5py.File(path, 'r')
+    keys = f.keys()
+    for key in keys:
+        # print(key)
+        dataset = f[key]
+#         print(key, dataset.shape, dataset.dtype, sep="\t")
+        year_lst.append(key)
+        dataset_lst.append(dataset.shape)
+    # "g" 表示红色，marksize用来设置'D'菱形的大小
+    plt.plot(year_lst, dataset_lst, "g", marker='D', markersize=5, label="year")
+    # 绘制坐标轴标签
+    plt.xlabel("年")
+    plt.ylabel("数据")
+    plt.title("HDF5")
+    # 显示图例
+    plt.legend(loc="lower right")
+    # 调用 text()在图像上绘制注释文本
+    # x1、y1表示文本所处坐标位置，ha参数控制水平对齐方式, va控制垂直对齐方式，str(y1)表示要绘制的文本
+#     for x1, y1 in zip(year_lst, dataset_lst):
+#         plt.text(x1, y1, str(y1), ha='center', va='bottom', fontsize=10)
+    # 保存图片
+    plt.savefig("1.jpg")
+    plt.show()
 
+
+read_hdf5("p2_icedata.hdf5")
+```
 
 
 
@@ -145,6 +177,21 @@ Describe what you see in the plot.
 
 > 描述你在情节中看到了什么。
 
+```python
+def read_hdf5(path):
+    # year_lst = []
+    dataset_lst = []
+    f = h5py.File(path, 'r')
+    keys = f.keys()
+    for key in keys:
+        # print(key)
+        dataset = f[key]
+        # print(key, dataset.shape, dataset.dtype, sep="\t")
+        # year_lst.append(key)
+        dataset_lst.append((key, dataset.shape))
+    return dict(dataset_lst)
+```
+
 
 
 
@@ -174,8 +221,11 @@ The areas (in $\rm{km}^2$) are available in the file named `data/p2_icedata_area
 
 ## 文件读取
 
-```python
-```
+
+
+
+
+
 
 
 
