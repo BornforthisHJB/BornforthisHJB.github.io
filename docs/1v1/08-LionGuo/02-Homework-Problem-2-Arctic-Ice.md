@@ -114,6 +114,36 @@ Describe what you see in the plot.
 
 
 
+## Part 3 - Physical units
+
+> 第3部分-物理单元
+
+To be more quantitative we will compute the actual surface area of Earth in $\rm{km}^2$ over which the ice concentration is above a given threshold.
+
+> 为了更定量，我们将以$\rm{km}^2$为单位计算地球的实际表面积，在此范围内冰浓度超过给定的阈值。
+
+However, these maps are projections of a spherical surface, so [pixels have different area](https://en.wikipedia.org/wiki/Tissot%27s_indicatrix).
+
+> 然而，这些地图是球面的投影，所以[像素有不同的面积](https://en.wikipedia.org/wiki/Tissot%27s_indicatrix)。
+
+> Every map uses the same projection, so the pixel areas in each are the same.
+
+> 每个地图使用相同的投影，所以每个地图中的像素区域是相同的。
+
+The areas (in $\rm{km}^2$) are available in the file named `data/p2_icedata_area.hdf5`. Inspect, then load, this datafile. Plot it (with colorbar and units).
+
+> 区域(在$\rm{km}^2$中)在名为“data/p2_icedata_area.hdf5”的文件中可用。检查并加载这个数据文件。绘制它(用颜色条和单位)。
+
+- [p2_icedata_area.hdf5](/1v1/08-LionGuo/02-Homework-Problem-2-Arctic-Ice/p2_icedata_area.hdf5)
+- [p2_icedata.hdf5](/1v1/08-LionGuo/02-Homework-Problem-2-Arctic-Ice/p2_icedata.hdf5)
+
+## 文件读取
+
+```python
+```
+
+
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
