@@ -65,7 +65,7 @@ tr 元素定义表格行，th 元素定义表头，td 元素定义表格单元�
 </table>
 ```
 
-<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/web_base/base_03/base_03-5.html" target="_blank">尝试一下</a></button>
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/FAQ/01-HTML图片并排显示/index.html" target="_blank">尝试一下</a></button>
 
 
 
