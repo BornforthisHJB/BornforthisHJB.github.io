@@ -78,6 +78,42 @@ Note: to get the correct orientation, you need the `origin='lower'` argument for
 
 
 
+## Part 2 - Ice concentration versus time
+
+> 第二部分-冰浓度与时间的关系
+
+We want to make a plot of the ice concentration over time.
+
+> 我们要画出冰浓度随时间变化的曲线。
+
+First, write a loop to read all the datasets of the HDF5 file (e.g. into a dict).
+
+> 首先，编写一个循环来读取HDF5文件的所有数据集(例如到字典中)。
+
+Then, write an analysis function `frac_pixels_above(dict,value)` which, for each array in the input dict, computes the fraction of pixels above the input `value`. Use this to make a plot of the number of pixels with concentration above 50%, versus time.
+
+> 然后，编写一个分析函数' frac_pixels_above(dict,value) '，该函数对于输入dict中的每个数组，计算输入' value '以上像素的百分比。使用此方法绘制浓度超过50%的像素数量与时间的关系图。
+
+> Note: to include "time" on the x-axis of a plot, you may want to write a helper function to convert the dict keys from their `YYYYMMDD` string format into a 3-tuple of (year, month, day) integer values.
+
+> 注意:要在图形的x轴上包含“时间”，您可能需要编写一个helper函数来将字典键从它们的“YYYYMMDD”字符串格式转换为3元组(年、月、日)整数值。
+
+> This can then be converted into fractional years (e.g. 1 July 2012 is `2012.5`). For simplicity you can assume each month has 30 days.
+
+> 这可以转换为小数年(例如，2012年7月1日为“2012.5”)。为了简单起见，你可以假设每个月有30天。
+
+> Try experimenting with matplotlib `set_major_formatter` to get a good [representation of dates in the tick labels](https://matplotlib.org/3.5.1/gallery/text_labels_and_annotations/date.html).
+
+> 尝试使用matplotlib ' set_major_formatter '来获得一个很好的[在标记标签中日期的表示](https://matplotlib.org/3.5.1/gallery/text_labels_and_annotations/date.html)。
+
+Describe what you see in the plot.
+
+> 描述你在情节中看到了什么。
+
+
+
+
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
