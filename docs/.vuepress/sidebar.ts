@@ -446,7 +446,7 @@ export const zhSidebar = sidebar({
 			text: "FAQ",
 			collapsable: true,
 			children: [
-				"01-HTML图片并排显示",
+				"FAQ/01-HTML图片并排显示",
 			]
 		}
 	],
