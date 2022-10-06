@@ -1,5 +1,5 @@
 ---
-title: 01-实战之 HTML: 把两张图片并排（行）显示
+title: 01-实战之 HTML：把两张图片并排（行）显示
 date: 2022-09-30 11:57:06
 author: AI悦创
 isOriginal: true
