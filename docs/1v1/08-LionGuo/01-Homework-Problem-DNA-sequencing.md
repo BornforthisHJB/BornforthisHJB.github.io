@@ -26,6 +26,8 @@ backToTop: true
 toc: true
 ---
 
+[/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/problem_1.ipynb](/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/problem_1.ipynb)
+
 **Hand-in format:** IPython Notebook or python program. Submit via email.
 
 > **提交格式:** IPython Notebook 或 python 程序。通过电子邮件提交。
