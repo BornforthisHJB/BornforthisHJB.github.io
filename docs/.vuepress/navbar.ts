@@ -75,6 +75,7 @@ export const zhNavbar = navbar([
           { text: "在线转换2", icon: "web", link: "https://www.aconvert.com/cn/"},
           { text: "Python", icon: "python", link: "https://bornforthis.cn/python/#/"},
           { text: "Python", icon: "python", link: "https://bornforthis.cn/python/index.html#/"},
+          { text: "fonts", link: "https://fontshub.pro/"}
         ]
       },
       {

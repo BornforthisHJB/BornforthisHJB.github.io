@@ -200,6 +200,117 @@ body {
 <link rel="stylesheet" type="text/css" href="static/css/style.css">
 ```
 
+## Style.css
+
+```css
+/* This is my external stylesheet */
+
+			
+body {
+	background-image: url("/img/background.jpg");
+	font-family: 'Open Sans', sans-serif;
+}
+	
+	
+#whiteBox {
+	background-color: rgba(255,255,255,.85);
+	border: 5px solid blue;
+	width:85%;
+	margin:auto;
+	padding:60px;
+}
+
+h1 {
+	font-family: 'Bungee Spice', cursive;
+	font-size:80px;
+	text-align:center;
+	background-color:blue;
+	padding:15px;
+
+}
+
+h2 {
+	font-family: 'Bungee Spice', cursive;
+	font-size:50px;
+	text-align:center;
+}
+
+section img {
+	width:100%;
+}
+
+header img {
+	height:250px;
+	width: 250px;
+	display:block;
+	margin:auto;
+}
+
+/* nav */
+
+nav {
+	text-align:center;
+}
+
+nav ul li {
+	display:inline;
+}
+
+nav ul li a {
+	background-color:blue;
+	border:3px solid red;
+	padding:15px 50px 15px 50px;
+	margin:25px;
+	font-family: 'Bungee Spice', cursive;
+	font-size:35px;
+	text-decoration:none;
+}
+
+nav ul li a:hover {
+	background-color:white;
+	border:3px solid blue;
+}
+```
+
+## 内链「选用」
+
+```css
+<style>
+        h2 {
+            font-family: 'Bungee Spice', cursive;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav ol li {
+            display: inline;
+        }
+
+        nav ol li a {
+            background-color: gray;
+            border: 3px solid red;
+            padding: 15px 50px 15px 50px;
+            margin: 25px;
+            font-family: 'Bungee Spice', cursive;
+            font-size: 35px;
+            /*text-decoration: none;*/
+        }
+
+        /*hover  悬停*/
+        nav ol li a:hover {
+            background-color: white;
+            border: 3px solid blue;
+        }
+
+    </style>
+```
+
+## 字体
+
 
 
 
