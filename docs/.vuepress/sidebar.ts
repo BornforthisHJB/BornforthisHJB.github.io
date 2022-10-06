@@ -101,6 +101,8 @@ export const zhSidebar = sidebar({
 			icon: "python",
 			children: [
 				"01-Homework-Problem-DNA-sequencing",
+				"02-Homework-Problem-2-Arctic-Ice",
+				"03-Homework-Problem-3-Finding-an-exoplanet",
 			]
 		}
 	],
