@@ -35,6 +35,14 @@ toc: true
 
 
 
+## VS Code 下载
+
+- 下载地址：[https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+![image-20221006113643129](./txk_10.assets/image-20221006113643129.png)
+
+
+
 ::: details 公众号：AI悦创【二维码】
 
 ![](/gzh.jpg)
