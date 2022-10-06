@@ -441,6 +441,13 @@ export const zhSidebar = sidebar({
 			children: [
 				"book/html-01",
 			]
+		},
+		{
+			text: "FAQ",
+			collapsable: true,
+			children: [
+				"01-HTML图片并排显示",
+			]
 		}
 	],
 	"/column/photography/": [
