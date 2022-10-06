@@ -28,9 +28,9 @@ backToTop: true
 toc: true
 ---
 
-- [/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/problem_2.ipynb](/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/problem_2.ipynb)
+- [/1v1/08-LionGuo/02-Homework-Problem-2-Arctic-Iceproblem_2.ipynb](/1v1/08-LionGuo/02-Homework-Problem-2-Arctic-Ice/problem_2.ipynb)
 
-- [/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/day_2.ipynb](/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/day_2.ipynb)
+- [/1v1/08-LionGuo/02-Homework-Problem-2-Arctic-Ice/day_2.ipynb](/1v1/08-LionGuo/02-Homework-Problem-2-Arctic-Ice/day_2.ipynb)
 
 **Hand-in format:** IPython Notebook or python program. Submit via email.
 
