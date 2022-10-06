@@ -363,7 +363,140 @@ if __name__ == '__main__':
 
 > 排序 CSV 记录
 
+Write a function sort_records(csv_filename, new_filename) that sorts the records of a CSV file and writes the results as a new CSV file. The first column of the CSV file will be the city name. The rest of the columns will be months of the year. The first row of the CSV file will take the form of the column headings, with all columns other than the first being months of the year. Here is an example file fragment:
 
+> 编写一个函数 sort_records(cv_filename, new_filename)，它对CSV文件的记录进行排序，并将结果写入一个新的CSV文件。CSV文件的第一列是城市名称。其余的列将是一年中的月份。CSV文件的第一行将采用列标题的形式，除第一个列外的所有列都是一年中的月份。下面是一个示例文件片段:
+
+**max_temp.csv**
+
+```python
+city/month, Jan,Feb,Mar,Apr
+Melbourne,41.2,35.5,37.4,29.3
+Brisbane,31.3,40.2,37.9,29
+Darwin,34,34,33.2,34.5
+```
+
+Note that your code will be tested over different CSV files, with different ranges of months in them. Irrespective of the exact months contained in the file, you may assume that the city name will always be in the first column, and the months in the remaining columns.
+
+> 请注意，您的代码将在不同的CSV文件上进行测试，其中包含不同的月份范围。不管文件中包含的确切月份是多少，您都可以假定城市名称总是在第一列中，而月份则在其余列中。
+
+You must sort the data in alphabetical order according to the city name (stored in the first column). Your program should write the sorted records to a new file with the name given by the argument new_filename.
+
+> 您必须根据城市名称(存储在第一列中)按字母顺序对数据进行排序。您的程序应该将排序的记录写入一个新文件，其名称由参数new_filename指定。
+
+Here is an example of how sort_records() should work. 'program.py' is the program and below is its terminal output.
+
+> 下面是一个 sort_records() 应该如何工作的例子。'program.py'是程序，下面是它的终端输出。
+
+```python
+sort_records('max_temp.csv', 'sorted.csv')
+result = open('sorted.csv')
+print(result.read())
+result.close()
+```
+
+```python
+city/month,Jan,Feb,Mar,Apr
+Brisbane,31.3,40.2,37.9,29
+Darwin,34,34,33.2,34.5
+Melbourne,41.2,35.5,37.4,29.3
+```
+
+> Note that the row for Melbourne has been sorted below the rows for Brisbane and Darwin because Melbourne comes after Brisbane and Darwin, based on alphabetical ordering.
+
+> 注意，根据字母顺序，墨尔本排在布里斯班和达尔文之后，因此墨尔本排在布里斯班和达尔文之后。
+
+**Test File**
+
+So you can test your answer, we have provided a full year of data for many Australian cities in a file called max_temp.csv. The data was obtained from the Bureau of Meteorology website.
+
+> 你可以测试一下你的答案，我们在一个名为 max_temp.csv 的文件中提供了许多澳大利亚城市全年的数据。这些数据来自气象局网站。
+
+> CVS文件的一列是城市的名字，一行是月份
+>
+> 写一个Function,  sort_records(csv_filename, new_filename), 把CVS文件的城市 用字母顺序排列，
+>
+> 然后保存在一个名为new_filename的新文件
+
+## 提示：
+
+```python
+import csv
+data_2d = [[1, 2, 3], [4, 5, 6]]
+csv_file = open("2d-data.csv", "w")    
+writer = csv.writer(csv_file)
+writer.writerows(data_2d)
+csv_file.close()
+
+csv_file = open("2d-data.csv", "r")
+print(csv_file.read())
+csv_file.close()
+```
+
+
+
+## 答案
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/6 17:30
+# @Author  : AI悦创
+# @FileName: Sorting_CSV_Records.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+import csv
+
+
+def parse(data):
+    # s = ",".join(data[0][1]).split(",").insert(0, data_list[0][0])
+    # print(s)
+    detail = data[1]
+    detail.insert(0, data[0])
+    # print(detail)
+    return detail
+
+
+def read_csv(path):
+    target_lst = []
+    data_list = []
+    with open(path, newline='') as csvfile:
+        spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+        for row in spamreader:
+            # print(', '.join(row))
+            # print(row)
+            row_list = row[0].split(",")
+            data_list.append([row_list[0], row_list[1:]])
+    d = dict(data_list[1:])
+    sorted_by_key = sorted(data_list[1:], key=lambda x: x[0])
+    # print(sorted_by_key)
+    # print(data_list[0])
+    target_lst.append(parse(data_list[0]))
+    for d_list in sorted_by_key:
+        target_lst.append(parse(d_list))
+    # print(target_lst)
+    return target_lst
+
+
+def save_csv(path, head_and_content):
+    with open(path, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(head_and_content)
+
+
+def sort_records(cv_filename, new_filename):
+    result = read_csv(cv_filename)
+    save_csv(new_filename, result)
+    # print(result)
+
+
+if __name__ == '__main__':
+    path = 'data/max_temp.csv'
+    sort_records(path, "new_csv.csv")
+```
+
+
+
+ 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
