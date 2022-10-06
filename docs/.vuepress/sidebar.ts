@@ -91,7 +91,8 @@ export const zhSidebar = sidebar({
 				"",
 				{ text: "02-Part-1-Birth-Date-Application-30-pts", icon: "java", link: "02-Part-1-Birth-Date-Application-30-pts"},
 				{ text: "03-Mac-Windows命令行编写Java", icon: "java", link: "03-Mac-Windows命令行编写Java"},
-				{ text: "06-Weaving-a-Kilim-Carpet-Application", icon: "java", link: "06-Weaving-a-Kilim-Carpet-Application"}
+				{ text: "06-Weaving-a-Kilim-Carpet-Application", icon: "java", link: "06-Weaving-a-Kilim-Carpet-Application"},
+				{ text: "07-Assignment-3-java", icon: "java", link: "07-Assignment-3-java"},
 			]
 		}
 	],
