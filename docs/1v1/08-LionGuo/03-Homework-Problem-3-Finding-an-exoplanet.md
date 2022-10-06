@@ -26,7 +26,9 @@ backToTop: true
 toc: true
 ---
 
-[/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/problem_2.ipynb](/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/problem_2.ipynb)
+[/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/problem_3.ipynb](/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/problem_3.ipynb)
+
+
 
 
 
