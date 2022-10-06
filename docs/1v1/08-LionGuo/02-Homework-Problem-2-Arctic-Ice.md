@@ -7,9 +7,11 @@ isOriginal: true
 category: 
     - python 1v1
     - 1v1
+    - 物理
 tag:
     - python 1v1
     - 1v1
+    - 物理
 sticky: false
 star: false
 password: false
@@ -27,6 +29,14 @@ toc: true
 ---
 
 [/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/problem_2.ipynb](/1v1/08-LionGuo/01-Homework-Problem-DNA-sequencing/problem_2.ipynb)
+
+**Hand-in format:** IPython Notebook or python program. Submit via email.
+
+As a reminder: please make sure your code is clean, documentated, and understandable. Make sure it runs without errors.
+
+> **提交格式:** IPython Notebook或python程序。通过电子邮件提交。
+>
+> 作为一个提醒:请确保您的代码是干净的、有文档记录的和可理解的。确保它没有错误地运行。
 
 
 

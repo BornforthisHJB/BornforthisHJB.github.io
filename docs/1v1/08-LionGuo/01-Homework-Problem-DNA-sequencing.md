@@ -7,9 +7,11 @@ isOriginal: true
 category: 
     - python 1v1
     - 1v1
+    - 生物
 tag:
     - python 1v1
     - 1v1
+    - 生物
 sticky: false
 star: false
 password: false
