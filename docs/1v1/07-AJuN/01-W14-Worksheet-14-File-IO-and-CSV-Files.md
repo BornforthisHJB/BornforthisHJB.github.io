@@ -769,11 +769,40 @@ if __name__ == '__main__':
 
 ![image-20221007123301344](./01-W14-Worksheet-14-File-IO-and-CSV-Files.assets/image-20221007123301344.png)
 
+## Disentangling list comprehensions
 
+> 理清列表理解
 
+List comprehensions can be baffling verging on incomprehensible at first (joke!), so let's get some experience pulling a list comprehension apart into code that you are more familiar with. Given the following mystery function, write an equivalent function aha(minval, maxval) with the exact same functionality but which doesn't make use of list comprehensions.
 
+> 列表推导式一开始可能令人困惑，几乎无法理解(开玩笑!)，所以让我们获得一些将列表推导式分解为您更熟悉的代码的经验。给定下面的神秘函数，用完全相同的功能编写一个等价的函数 aha(minval, maxval)，但不使用列表推导式。
 
+```python
+def mystery(minval, maxval):
+    return [i**2 % 10 for i in range(minval, maxval + 1)]
+```
 
+For example:
+
+```python
+>>> aha(3, 7)
+[9, 6, 5, 6, 9]
+>>> aha(0, 10)
+[0, 1, 4, 9, 6, 5, 6, 9, 4, 1, 0]
+```
+
+## 答案
+
+```python
+def aha(minval, maxval):
+    r = []
+    for i in range(minval, maxval + 1):
+        r.append(i ** 2 % 10)
+    return r
+
+print(aha(3, 7))
+print(aha(0, 10))
+```
 
 
 
