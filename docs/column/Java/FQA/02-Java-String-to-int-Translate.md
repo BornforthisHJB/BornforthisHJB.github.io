@@ -28,7 +28,7 @@ toc: true
 
 ## 一、字符串转数字
 
-1. 通过基本类型对应的包装类则可以实现把字符串转换成基本类型。Java 为 8 种基本类型都提供了对应的包装类：[boolean](https://so.csdn.net/so/search?q=boolean&spm=1001.2101.3001.7020) 对应Boolean、byte 对应 Byte、short 对应Short、int 对应 Integer、long 对应 Long、char 对应 Character、float 对应 Float、double 对应 Double，8 个包装类都提供了一个 `parseXxx(String str)` 静态方法用于将字符串转换成基本类型。（**注意：如果字符串不是数值型字符串，转换将导致一个运行时错误。**）
+1. 通过基本类型对应的包装类则可以实现把字符串转换成基本类型。Java 几个包装类都提供了一个 `parseXxx(String str)` 静态方法用于将字符串转换成基本类型。（**注意：如果字符串不是数值型字符串，转换将导致一个运行时错误。**）
 
 ```java
 String s = "123";
@@ -37,15 +37,16 @@ byte b = Byte.parseByte(s);
 short t = Short.parseShort(s);
 int i = Integer.parseInt(s);
 long l = Long.parseLong(s);
-Float f = Float.parseFloat(s);
-Double d = Double.parseDouble(s);
+float f = Float.parseFloat(s);
+double d = Double.parseDouble(s);
 boolean bo = Boolean.parseBoolean(s);
-char c = Character.parseCharacter(s);
 ```
 
+2、`i = Integer.valueOf(s).intValue();`
 
+**总结：**方法 1 直接使用静态方法，不会产生多余的对象，但会抛出异常。方法 2，`Integer.valueOf(s)` 相当于 `new Integer(Integer.parseInt(s))`，也会抛异常，但会多产生一个对象。
 
-
+## 待整理！
 
 
 
@@ -70,4 +71,8 @@ C++ 信息奥赛题解，长期更新！长期招收一对一中小学信息奥�
 :::
 
 ![](/zsxq.jpg)
+
+[https://www.runoob.com/w3cnote/java-string-and-int-convert.html](https://www.runoob.com/w3cnote/java-string-and-int-convert.html)
+
+[https://blog.csdn.net/allenchan3721/article/details/71437394](https://blog.csdn.net/allenchan3721/article/details/71437394)
 
