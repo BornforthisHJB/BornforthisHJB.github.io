@@ -328,36 +328,7 @@ We have provided sample input files named [part1.txt](/1v1/07-AJuN/01-W14-Worksh
 
 **Remember to close your files!**
 
-## 答案
 
-```python
-# -*- coding: utf-8 -*-
-# @Time    : 2022/10/6 17:10
-# @Author  : AI悦创
-# @FileName: ConcatenateFiles.py
-# @Software: PyCharm
-# @Blog    ：https://bornforthis.cn/
-
-def read_file(path: str):
-    with open(path, "r", encoding="utf-8") as f:
-        return f.read()
-
-
-def save_file(path: str, content: str):
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(content)
-
-
-def concatenate_files(filename1, filename2, new_filename):
-    part1 = read_file(filename1)
-    part2 = read_file(filename2)
-    content = part1 + "\n" + part2
-    save_file(new_filename, content)
-
-
-if __name__ == '__main__':
-    concatenate_files("data/part1.txt", "data/part2.txt", "new_file.txt")
-```
 
 ## Sorting CSV Records
 
@@ -435,65 +406,6 @@ csv_file.close()
 
 
 
-## 答案
-
-```python
-# -*- coding: utf-8 -*-
-# @Time    : 2022/10/6 17:30
-# @Author  : AI悦创
-# @FileName: Sorting_CSV_Records.py
-# @Software: PyCharm
-# @Blog    ：https://bornforthis.cn/
-import csv
-
-
-def parse(data):
-    # s = ",".join(data[0][1]).split(",").insert(0, data_list[0][0])
-    # print(s)
-    detail = data[1]
-    detail.insert(0, data[0])
-    # print(detail)
-    return detail
-
-
-def read_csv(path):
-    target_lst = []
-    data_list = []
-    with open(path, newline='') as csvfile:
-        spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
-        for row in spamreader:
-            # print(', '.join(row))
-            # print(row)
-            row_list = row[0].split(",")
-            data_list.append([row_list[0], row_list[1:]])
-    d = dict(data_list[1:])
-    sorted_by_key = sorted(data_list[1:], key=lambda x: x[0])
-    # print(sorted_by_key)
-    # print(data_list[0])
-    target_lst.append(parse(data_list[0]))
-    for d_list in sorted_by_key:
-        target_lst.append(parse(d_list))
-    # print(target_lst)
-    return target_lst
-
-
-def save_csv(path, head_and_content):
-    with open(path, 'w', newline='') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerows(head_and_content)
-
-
-def sort_records(cv_filename, new_filename):
-    result = read_csv(cv_filename)
-    save_csv(new_filename, result)
-    # print(result)
-
-
-if __name__ == '__main__':
-    path = 'data/max_temp.csv'
-    sort_records(path, "new_csv.csv")
-```
-
 ## Hottest Month
 
 > 最热的月份
@@ -531,53 +443,6 @@ So you can test your code, we have provided a full year of data for many Austral
 > 因此您可以测试您的代码，我们在一个名为 max_temp.csv 的文件中提供了许多澳大利亚城市全年的数据。数据来自气象局网站(http: " [www.bom](http://www.bom).q[ov.au/climate/avera](ov.au/climate/avera)qes/)。
 
 > CVS文件的一列是城市的名字，一行是月份，月份下面的是当月温度,写一个function，，来找出所选城市的最高温度
-
- ## 答案
-
-```python
-# -*- coding: utf-8 -*-
-# @Time    : 2022/10/7 11:23
-# @Author  : AI悦创
-# @FileName: HottestMonth.py
-# @Software: PyCharm
-# @Blog    ：https://bornforthis.cn/
-
-DATE_DICT = {}
-
-
-def read_csv(path):
-    with open(path, "r") as f:
-        # print(f.read())
-        # f.close()
-        return f.readlines()
-
-
-def parse(line):
-    line_list = line.strip().split(",")
-    # print(line_list)
-    key = line_list[0]
-    value = list(map(float, line_list[1:]))
-    value.sort(reverse=True)
-    # print(key, value)
-    DATE_DICT[key] = value
-
-
-def max_city_temp(csv_filename, city):
-    content_lst = read_csv(csv_filename)
-    # print(content_lst)
-    for line in content_lst[1:]:
-        parse(line)
-    if city in DATE_DICT:
-        return DATE_DICT[city][0]
-    else:
-        pass
-
-
-if __name__ == '__main__':
-    r = max_city_temp(csv_filename="data/max_temp.csv", city="Darwin")
-    # read_csv("data/max_temp.csv")
-    print(r)
-```
 
 
 
