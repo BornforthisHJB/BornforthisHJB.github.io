@@ -587,7 +587,7 @@ if __name__ == '__main__':
 
 Write a function hottest_city(csv_filename) that analyses the temperatures recorded in a CSV file, and returns a 2-tuple made up of the maximum temperature in the whole dataset, along with a sorted list of the names of cities where that temperature was recorded.
 
-> 编写一个函数hottest_city(csv_filename)，它分析CSV文件中记录的温度，并返回一个由整个数据集中的最高温度组成的二元组，以及记录该温度的城市名称的排序列表。
+> 编写一个函数hottest_city(csv_filename)，它分析CSV文件中记录的温度，并返回一个由整个数据集中的最高温度组成的二元组，以及记录该温度的城市名称的排序列表。**要考虑相同最高温度时的城市。**
 
 The first column of the CSV file will contain the city name. The rest of the columns will be months of the year. The first row of the CSV files will provide column headings. Here is an example file (with an incomplete set of months):
 
@@ -674,6 +674,11 @@ if __name__ == '__main__':
     print(r)
     # read_csv("data/max_temp.csv")
     # print(r)
+```
+
+**要考虑相同最高温度时的城市。**
+
+```python
 ```
 
 
