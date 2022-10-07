@@ -1,19 +1,17 @@
 ---
-title: W14 - Worksheet 14： File IO and CSV Files
+title: 01-File IO and CSV Files
 icon: python
-time: 2022-10-04 19:42:05
+time: 2022-10-07 19:42:05
 author: AI悦创
 isOriginal: true
 category: 
     - 1v1
+    - Python Assignment
     - Python 1v1
-    - 澳洲大学一对一
-    - 墨尔本大学
 tag:
     - 1v1
+    - Python Assignment
     - Python 1v1
-    - 澳洲大学一对一
-    - 墨尔本大学
 sticky: false
 star: false
 password: false
