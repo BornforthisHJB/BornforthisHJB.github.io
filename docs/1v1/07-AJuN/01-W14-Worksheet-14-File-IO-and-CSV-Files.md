@@ -494,9 +494,48 @@ if __name__ == '__main__':
     sort_records(path, "new_csv.csv")
 ```
 
+## Hottest Month
+
+Write a function max_city_temp(csv_filename, city) which analyses temperatures recorded in a CSV file, and returns the maximum temperature recorded for the named city.
+
+> 编写函数max_city_temp(csv_filename, city)，它分析CSV文件中记录的温度，并返回指定城市记录的最高温度。
+
+Once again, the first column of the CSV file will be the city name, and the rest of the columns will be months of the year. The first row of the CSV file will provide the column headings. Here is an example file fragment:
+
+> 同样，CSV 文件的第一列将是城市名，其余列将是一年中的月份。CSV 文件的第一行将提供列标题。下面是一个示例文件片段:
+
+**max_temp_small.csv**
+
+```python
+city/month,Jan,Feb,Mar Apr
+Melbourne,41.2,35.5,37.4,29.3
+Brisbane,31.3,40.2,37.9,29
+Darwin,34,34,33.2,34.5
+```
+
+Here is an example of how max_city_temp() should work:
+
+> 下面是一个max_city_temp()应该如何工作的例子:
+
+```python
+max_city_temp('max_temp_small.csv', 'Brisbane')
+40.2
+```
+
+**Test File**
+
+So you can test your code, we have provided a full year of data for many Australian cities in a file called max_temp.csv. The data was obtained from the Bureau of Meteorology website (http:〃[www.bom](http://www.bom).q[ov.au/climate/avera](ov.au/climate/avera)qes/).
+
+> 因此您可以测试您的代码，我们在一个名为 max_temp.csv 的文件中提供了许多澳大利亚城市全年的数据。数据来自气象局网站(http: " [www.bom](http://www.bom).q[ov.au/climate/avera](ov.au/climate/avera)qes/)。
+
+> CVS文件的一列是城市的名字，一行是月份，月份下面的是当月温度,写一个function，，来找出所选城市的最高温度
+
+ ## 答案
+
+```python
+```
 
 
- 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
