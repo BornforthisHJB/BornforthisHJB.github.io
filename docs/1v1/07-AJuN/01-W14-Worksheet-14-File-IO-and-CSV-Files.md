@@ -496,9 +496,11 @@ if __name__ == '__main__':
 
 ## Hottest Month
 
+> 最热的月份
+
 Write a function max_city_temp(csv_filename, city) which analyses temperatures recorded in a CSV file, and returns the maximum temperature recorded for the named city.
 
-> 编写函数max_city_temp(csv_filename, city)，它分析CSV文件中记录的温度，并返回指定城市记录的最高温度。
+> 编写函数 max_city_temp(csv_filename, city)，它分析CSV文件中记录的温度，并返回指定城市记录的最高温度。
 
 Once again, the first column of the CSV file will be the city name, and the rest of the columns will be months of the year. The first row of the CSV file will provide the column headings. Here is an example file fragment:
 
@@ -533,6 +535,48 @@ So you can test your code, we have provided a full year of data for many Austral
  ## 答案
 
 ```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/7 11:23
+# @Author  : AI悦创
+# @FileName: HottestMonth.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+
+DATE_DICT = {}
+
+
+def read_csv(path):
+    with open(path, "r") as f:
+        # print(f.read())
+        # f.close()
+        return f.readlines()
+
+
+def parse(line):
+    line_list = line.strip().split(",")
+    # print(line_list)
+    key = line_list[0]
+    value = list(map(float, line_list[1:]))
+    value.sort(reverse=True)
+    # print(key, value)
+    DATE_DICT[key] = value
+
+
+def max_city_temp(csv_filename, city):
+    content_lst = read_csv(csv_filename)
+    # print(content_lst)
+    for line in content_lst[1:]:
+        parse(line)
+    if city in DATE_DICT:
+        return DATE_DICT[city][0]
+    else:
+        pass
+
+
+if __name__ == '__main__':
+    r = max_city_temp(csv_filename="data/max_temp.csv", city="Darwin")
+    # read_csv("data/max_temp.csv")
+    print(r)
 ```
 
 
