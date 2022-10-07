@@ -666,11 +666,12 @@ def hottest_city(csv_filename):
     for line in content_lst[1:]:
         parse(line)
     # pprint(DATE_DICT)
+    return select_max()
 
 
 if __name__ == '__main__':
-    r = hottest_city(csv_filename="data/max_temp.csv")
-    select_max()
+    r = hottest_city(csv_filename="data/max_temp_tiny.csv")
+    print(r)
     # read_csv("data/max_temp.csv")
     # print(r)
 ```
