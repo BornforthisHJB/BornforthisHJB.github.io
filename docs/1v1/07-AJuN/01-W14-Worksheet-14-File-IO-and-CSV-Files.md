@@ -617,6 +617,66 @@ So you can test your answer; we have provided a full year of data for many Austr
 
 > CVS文件的一列是城市的名字，一行是月份，月份下面的是当月温度写一个function， hottest_city(csv_filename)，来找出文件中最热的一个温度和所在城市，用一个 tuple 来表示，城市的名字用 list 表示
 
+## 答案
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/7 11:54
+# @Author  : AI悦创
+# @FileName: HottestCity.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+from pprint import pprint
+
+DATE_DICT = {}
+
+
+def read_csv(path):
+    with open(path, "r") as f:
+        # print(f.read())
+        # f.close()
+        return f.readlines()
+
+
+def parse(line):
+    line_list = line.strip().split(",")
+    # print(line_list)
+    # # print(line_list)
+    key = line_list[0]
+    value = list(map(float, line_list[1:]))
+    value.sort(reverse=True)
+    # print(key, value)
+    DATE_DICT[key] = value
+
+
+def select_max():
+    result_dict = {}
+    for key, value in DATE_DICT.items():
+        # print(key, value)
+        result_dict[key] = max(value)
+    # print(result_dict)
+    sorted_by_value = sorted(result_dict.items(), key=lambda x: x[1], reverse=True)
+    # print(sorted_by_value)
+    return (sorted_by_value[0][1], [sorted_by_value[0][0]])
+
+
+def hottest_city(csv_filename):
+    content_lst = read_csv(csv_filename)
+    # print(content_lst)
+    for line in content_lst[1:]:
+        parse(line)
+    # pprint(DATE_DICT)
+
+
+if __name__ == '__main__':
+    r = hottest_city(csv_filename="data/max_temp.csv")
+    select_max()
+    # read_csv("data/max_temp.csv")
+    # print(r)
+```
+
+
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
