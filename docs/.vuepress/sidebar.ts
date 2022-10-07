@@ -74,6 +74,9 @@ export const zhSidebar = sidebar({
 			]
 		}
 	],
+	"/1v1/07-AJuN": [
+		"01-W14-Worksheet-14-File-IO-and-CSV-Files"
+	],
 	"/1v1/06-KAI/": [
 		{
 			text: "一、Web",
