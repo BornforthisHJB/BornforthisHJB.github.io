@@ -617,157 +617,11 @@ So you can test your answer; we have provided a full year of data for many Austr
 
 > CVS文件的一列是城市的名字，一行是月份，月份下面的是当月温度写一个function， hottest_city(csv_filename)，来找出文件中最热的一个温度和所在城市，用一个 tuple 来表示，城市的名字用 list 表示
 
-## 答案
-
-```python
-# -*- coding: utf-8 -*-
-# @Time    : 2022/10/7 11:54
-# @Author  : AI悦创
-# @FileName: HottestCity.py
-# @Software: PyCharm
-# @Blog    ：https://bornforthis.cn/
-from pprint import pprint
-
-DATE_DICT = {}
-
-
-def read_csv(path):
-    with open(path, "r") as f:
-        # print(f.read())
-        # f.close()
-        return f.readlines()
-
-
-def parse(line):
-    line_list = line.strip().split(",")
-    # print(line_list)
-    # # print(line_list)
-    key = line_list[0]
-    value = list(map(float, line_list[1:]))
-    value.sort(reverse=True)
-    # print(key, value)
-    DATE_DICT[key] = value
-
-
-def select_max():
-    result_dict = {}
-    for key, value in DATE_DICT.items():
-        # print(key, value)
-        result_dict[key] = max(value)
-    # print(result_dict)
-    sorted_by_value = sorted(result_dict.items(), key=lambda x: x[1], reverse=True)
-    # print(sorted_by_value)
-    return (sorted_by_value[0][1], [sorted_by_value[0][0]])
-
-
-def hottest_city(csv_filename):
-    content_lst = read_csv(csv_filename)
-    # print(content_lst)
-    for line in content_lst[1:]:
-        parse(line)
-    # pprint(DATE_DICT)
-    return select_max()
-
-
-if __name__ == '__main__':
-    r = hottest_city(csv_filename="data/max_temp_tiny.csv")
-    print(r)
-    # read_csv("data/max_temp.csv")
-    # print(r)
-```
-
 **要考虑相同最高温度时的城市。**
 
-```python
-# -*- coding: utf-8 -*-
-# @Time    : 2022/10/7 11:54
-# @Author  : AI悦创
-# @FileName: HottestCity.py
-# @Software: PyCharm
-# @Blog    ：https://bornforthis.cn/
-from pprint import pprint
-
-DATE_DICT = {}
 
 
-def read_csv(path):
-    with open(path, "r") as f:
-        # print(f.read())
-        # f.close()
-        return f.readlines()
 
-
-def parse(line):
-    line_list = line.strip().split(",")
-    # print(line_list)
-    # # print(line_list)
-    key = line_list[0]
-    value = list(map(float, line_list[1:]))
-    value.sort(reverse=True)
-    # print(key, value)
-    DATE_DICT[key] = value
-
-
-def judge(sort_value_list: list):
-    index = 0
-    # print(sort_value_list)
-    result_data = []  # 存储最终的结果
-    while True:
-        first = sort_value_list[0]
-        second = sort_value_list[index + 1]
-        if first[1] != second[1]:
-            # print("break")
-            break
-            # return (first[1], [first[0]])
-        elif first[1] == second[1]:
-            result_data.append(second)
-            index += 1
-        else:
-            pass
-    if result_data:
-        result_data.append(sort_value_list[0])
-        print("result_data:>>>", result_data)
-        r = []
-        for key, value in result_data:
-            r.append(key)
-        return (value, r)
-    else:
-        return (sort_value_list[0][1], [sort_value_list[0][0]])
-
-
-def select_max():
-    result_dict = {}
-    for key, value in DATE_DICT.items():
-        # print(key, value)
-        result_dict[key] = max(value)
-    # print(result_dict)
-    sorted_by_value = sorted(result_dict.items(), key=lambda x: x[1], reverse=True)
-    # print(sorted_by_value)
-    return sorted_by_value
-    # return (sorted_by_value[0][1], [sorted_by_value[0][0]])
-
-
-def hottest_city(csv_filename):
-    content_lst = read_csv(csv_filename)
-    # print(content_lst)
-    for line in content_lst[1:]:
-        parse(line)
-    # pprint(DATE_DICT)
-    sorted_by_value = select_max()
-
-    return judge(sorted_by_value)
-
-
-if __name__ == '__main__':
-    # r = hottest_city(csv_filename="data/max_temp_tiny.csv")
-    # print(r)
-    # read_csv("data/max_temp.csv")
-    # print(r)
-    r = judge([('Melbourne', 41.2), ('Brisbane', 41.2), ('Darwin', 40.2)])
-    print(r)
-```
-
-![image-20221007123301344](./01-W14-Worksheet-14-File-IO-and-CSV-Files.assets/image-20221007123301344.png)
 
 ## Disentangling list comprehensions
 
@@ -790,21 +644,6 @@ For example:
 >>> aha(0, 10)
 [0, 1, 4, 9, 6, 5, 6, 9, 4, 1, 0]
 ```
-
-## 答案
-
-```python
-def aha(minval, maxval):
-    r = []
-    for i in range(minval, maxval + 1):
-        r.append(i ** 2 % 10)
-    return r
-
-print(aha(3, 7))
-print(aha(0, 10))
-```
-
-**要满足 PEP8**
 
 
 
@@ -829,3 +668,4 @@ C++ 信息奥赛题解，长期更新！长期招收一对一中小学信息奥�
 :::
 
 ![](/zsxq.jpg)
+
