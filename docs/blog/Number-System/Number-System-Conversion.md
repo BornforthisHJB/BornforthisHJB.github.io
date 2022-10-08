@@ -287,7 +287,7 @@ Therefore, $22_8 = 18_{10}$
 
 Example 3: Convert 12116 to decimal number.
 
-> 例3:将12116转换为十进制数。
+> 例3:将 $121_{16}$ 转换为十进制数。
 
 Solution: 1 x 162 + 2 x 161 + 1 x 160
 
