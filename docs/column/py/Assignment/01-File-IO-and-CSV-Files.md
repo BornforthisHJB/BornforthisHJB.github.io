@@ -34,7 +34,9 @@ toc: true
 
 - [somebody.txt](/1v1/07-AJuN/01-W14-Worksheet-14-File-IO-and-CSV-Files/somebody.txt)
 - [barbrastrelsand.txt](/1v1/07-AJuN/01-W14-Worksheet-14-File-IO-and-CSV-Files/barbrastrelsand.txt)
-- [faksong .txt](/1v1/07-AJuN/01-W14-Worksheet-14-File-IO-and-CSV-Files/faksong .txt)
+- [faksong.txt](/1v1/07-AJuN/01-W14-Worksheet-14-File-IO-and-CSV-Files/faksong.txt)
+
+
 
 > 健忘的卡拉ok
 
