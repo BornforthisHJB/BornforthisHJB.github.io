@@ -145,7 +145,14 @@ export default hopeTheme({
        */
        provider: "Waline",
        serverURL: "https://comment.bornforthis.cn/",
-       reaction: true,
+      //  reaction: true,
+      reaction: [
+        'https://unpkg.com/@waline/emojis/tieba/tieba_agree.png',
+        'https://unpkg.com/@waline/emojis/tieba/tieba_sunglasses.png',
+        'https://unpkg.com/@waline/emojis/tieba/tieba_pick_nose.png',
+        'https://unpkg.com/@waline/emojis/tieba/tieba_sleep.png',
+        'https://unpkg.com/@waline/emojis/tieba/tieba_awkward.png',
+      ],
        comment: true, // 评论数统计
        pageview: true, // 浏览量统计
        copyright: false,
