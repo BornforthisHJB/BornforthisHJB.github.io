@@ -261,6 +261,42 @@ Therefore, $(1101)_2 = (13)_{10}$
 
 **Octal to Decimal:**
 
+> 八进制转十进制：
+
+To convert octal to decimal, we multiply the digits of octal number with decreasing power of the base number 8, starting from MSB to LSB and then add them all together.
+
+> 为了将八进制转换为十进制，我们将八进制数的数字乘以基数 8 的递减幂，从 MSB 到 LSB，然后将它们加在一起。
+
+**Example 2: Convert $22_8$ to decimal number.**
+
+> 示例 2：将 $22_8$ 转换为十进制数。
+
+Solution: Given, $22_8$
+
+$2 x 8^1 + 2 x 8^0$
+
+= 16 + 2
+
+= 18
+
+Therefore, $22_8 = 18_{10}$
+
+**Hexadecimal to Decimal:**
+
+> 十六进制转十进制：
+
+Example 3: Convert 12116 to decimal number.
+
+> 例3:将12116转换为十进制数。
+
+Solution: 1 x 162 + 2 x 161 + 1 x 160
+
+= 16 x 16 + 2 x 16 + 1 x 1
+
+= 289
+
+Therefore, 12116 = 28910
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
