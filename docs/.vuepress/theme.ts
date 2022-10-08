@@ -152,6 +152,7 @@ export default hopeTheme({
         'https://unpkg.com/@waline/emojis/tieba/tieba_pick_nose.png',
         'https://unpkg.com/@waline/emojis/tieba/tieba_sleep.png',
         'https://unpkg.com/@waline/emojis/tieba/tieba_awkward.png',
+        'https://img-blog.csdnimg.cn/69eb549416b5436da42022855ddb79f8.png',
       ],
        comment: true, // 评论数统计
        pageview: true, // 浏览量统计
