@@ -30,6 +30,12 @@ toc: true
 
 ## 1. Forgetful Karaoke
 
+**文件下载：**
+
+- [somebody.txt](/1v1/07-AJuN/01-W14-Worksheet-14-File-IO-and-CSV-Files/somebody.txt)
+- [barbrastrelsand.txt](/1v1/07-AJuN/01-W14-Worksheet-14-File-IO-and-CSV-Files/barbrastrelsand.txt)
+- [faksong .txt](/1v1/07-AJuN/01-W14-Worksheet-14-File-IO-and-CSV-Files/faksong .txt)
+
 > 健忘的卡拉ok
 
 **Life hack:**  if you're really bad at karaoke and can't remember the words, you can just repeatedly sing one word. If it's the most common word in the song, you'll be right more often than you might think (and may get away with it!).
