@@ -1631,6 +1631,25 @@ public class Part2 {
 }
 ```
 
+## 测试
+
+```java
+public class 测试2 {
+    public static void main(String[] args) {
+        String bin = "aiyc";
+        int dec = 0, i = 0;
+        int str_length = bin.length();
+        while (str_length > 0) {
+//            dec += ()
+            char ch = bin.charAt(i);
+            System.out.println(ch);
+            i += 1;
+            str_length -= 1;
+        }
+    }
+}
+```
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
