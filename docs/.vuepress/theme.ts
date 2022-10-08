@@ -147,12 +147,16 @@ export default hopeTheme({
        serverURL: "https://comment.bornforthis.cn/",
       //  reaction: true,
       reaction: [
-        'https://unpkg.com/@waline/emojis/tieba/tieba_agree.png',
-        'https://unpkg.com/@waline/emojis/tieba/tieba_sunglasses.png',
-        'https://unpkg.com/@waline/emojis/tieba/tieba_pick_nose.png',
-        'https://unpkg.com/@waline/emojis/tieba/tieba_sleep.png',
-        'https://unpkg.com/@waline/emojis/tieba/tieba_awkward.png',
-        'https://img-blog.csdnimg.cn/69eb549416b5436da42022855ddb79f8.png',
+        '/Waline/tieba/tieba_agree.png',
+        '/Waline/tieba/tieba_sunglasses.png',
+        '/Waline/tieba/tieba_pick_nose.png',
+        '/Waline/tieba/tieba_sleep.png',
+        '/Waline/tieba/tieba_awkward.png',
+        '/Waline/tieba/tieba_coffee.png',
+        '/Waline/tieba/tieba_cute.png',
+        '/Waline/qq/qq_4.gif',
+        '/Waline/qq/qq_alpaca.gif',
+        '/Waline/qq/qq_bear2.gif',
       ],
        comment: true, // 评论数统计
        pageview: true, // 浏览量统计
