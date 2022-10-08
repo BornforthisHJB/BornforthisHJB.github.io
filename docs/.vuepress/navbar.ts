@@ -148,7 +148,7 @@ export const zhNavbar = navbar([
         children: [
           { text: "Vue", icon: "vue", link: "https://v2.vuepress.vuejs.org/zh/"},
           // { text: "主题", icon: "vue", link: "https://vuepress-theme-hope.github.io/v2/zh/"},
-          // { text: "Waline", icon: "waline", link: "https://waline.js.org/"},
+          { text: "Waline", icon: "waline", link: "https://waline.js.org/"},
           { text: "iconfont", link: "https://www.iconfont.cn/"},
           { text: "Leancloud", link: "https://leancloud.app/"},
           { text: "变更日志", icon: "time", link: "/changelog"},
