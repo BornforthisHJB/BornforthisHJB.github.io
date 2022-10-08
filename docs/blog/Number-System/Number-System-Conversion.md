@@ -289,13 +289,15 @@ Example 3: Convert 12116 to decimal number.
 
 > 例3:将 $121_{16}$ 转换为十进制数。
 
-Solution: 1 x 162 + 2 x 161 + 1 x 160
+Solution: 
+
+1 x $16^2$ + 2 x $16^1$ + 1 x $16^0$
 
 = 16 x 16 + 2 x 16 + 1 x 1
 
 = 289
 
-Therefore, 12116 = 28910
+Therefore, $121_{16} = 289_{10}$
 
 
 
