@@ -175,6 +175,7 @@ export default hopeTheme({
       "Badge",
       "PDF",
       "YouTube",
+      "VideoPlayer"
     ],
 
     // Disable features you don't want here
