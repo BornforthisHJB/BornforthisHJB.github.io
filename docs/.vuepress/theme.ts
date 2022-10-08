@@ -149,7 +149,7 @@ export default hopeTheme({
        comment: true, // 评论数统计
        pageview: true, // 浏览量统计
        copyright: false,
-       dark: true,
+       dark: "auto",
        emoji: [
          'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
          'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
