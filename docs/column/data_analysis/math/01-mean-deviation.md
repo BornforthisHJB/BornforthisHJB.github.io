@@ -55,7 +55,11 @@ toc: true
 
 ### 二、求每个数据只与平均值的距离：
 
+:::center
+
 <img src="./01-mean-deviation.assets/image-20221009232139634.png" alt="image-20221009232139634" style="zoom: 50%;" />
+
+:::
 
 | 值   | 与 9 的距离 |
 | ---- | ----------- |
@@ -70,9 +74,13 @@ toc: true
 
 像这样：
 
+::: center
+
 ![平均差](./01-mean-deviation.assets/mean-deviation.svg)
 
 *（没有正负号！）*
+
+:::
 
 ### 三、求**这些距离的平均**：
 
