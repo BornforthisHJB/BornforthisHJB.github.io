@@ -68,6 +68,12 @@ toc: true
 
 ![image-20221009101837911](./txk_10.assets/image-20221009101837911.png)
 
+## 快捷键
+
+<img src="./txk_10.assets/image-20221009102029268.png" alt="image-20221009102029268" style="zoom:25%;" />
+
+
+
 
 
 ::: details 公众号：AI悦创【二维码】
