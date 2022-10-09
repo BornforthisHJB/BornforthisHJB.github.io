@@ -23,9 +23,9 @@ backToTop: true
 toc: true
 ---
 
-:::center
+::: center
 
-各个数据值离平均值平均有多远
+## 各个数据值离平均值平均有多远
 
 :::
 
@@ -45,7 +45,7 @@ toc: true
 
 ### 一、求**平均**：
 
-:::center
+::: center
 
 平均=$\frac{3 + 6 + 6 + 7 + 8 + 11 + 15 + 16}{8}=\frac{72}{8}=9$ 
 
@@ -55,7 +55,7 @@ toc: true
 
 ### 二、求每个数据只与平均值的距离：
 
-:::center
+::: center
 
 <img src="./01-mean-deviation.assets/image-20221009232139634.png" alt="image-20221009232139634" style="zoom: 50%;" />
 
