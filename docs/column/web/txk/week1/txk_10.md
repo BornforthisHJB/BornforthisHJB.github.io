@@ -72,6 +72,23 @@ toc: true
 
 <img src="./txk_10.assets/image-20221009102029268.png" alt="image-20221009102029268" style="zoom:25%;" />
 
+## Sublime 快捷键扩展
+
+- Sublime 是另一非常著名的编辑器，Sublime 中的快捷键非常的经典，而 VS Code 可以集成 Sublime 的快捷键
+- 需要安装插件，在插件中心搜索 Sublime ，安装插件即可。
+
+![image-20221009102425462](./txk_10.assets/image-20221009102425462.png)
+
+
+
+## Sublime 快捷键扩展
+
+<img src="./txk_10.assets/image-20221009102534099.png" alt="image-20221009102534099" style="zoom:25%;" />
+
+## 多行编辑
+
+- 按住鼠标滚轮，然后下拉，即可进行多行编辑
+
 
 
 
