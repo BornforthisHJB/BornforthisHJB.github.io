@@ -23,7 +23,11 @@ backToTop: true
 toc: true
 ---
 
+:::center
 
+各个数据值离平均值平均有多远
+
+:::
 
 
 
