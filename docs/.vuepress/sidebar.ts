@@ -435,7 +435,9 @@ export const zhSidebar = sidebar({
 										},
 										{
 											text: "第四章 课程总结",
-											link: "txk/week1/txk_12",
+											children:[
+												"txk/week1/txk_12",
+											],
 										},
 									]
 								}
