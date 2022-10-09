@@ -432,7 +432,11 @@ export const zhSidebar = sidebar({
 												"txk/week1/txk_10",
 												"txk/week1/txk_11",
 											]
-										}
+										},
+										{
+											text: "第四章 课程总结",
+											link: "txk/week1/txk_12",
+										},
 									]
 								}
 							]
