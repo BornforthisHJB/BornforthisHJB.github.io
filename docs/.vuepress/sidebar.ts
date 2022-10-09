@@ -400,14 +400,14 @@ export const zhSidebar = sidebar({
 					children: [
 						{
 							text: "第1周: HTML5 基础语法与标签",
-							// collapsable: true,
+							collapsable: true,
 							children: [
 								{
 									text: "前置引导课（课前必看）",
+									collapsable: true,
 									children: [
 										{
 											text: "第1章 课程简介",
-											// collapsable: true,
 											children: [
 												"txk/week1/txk_01",
 												"txk/week1/txk_02",
@@ -434,15 +434,30 @@ export const zhSidebar = sidebar({
 											]
 										},
 										{
-											text: "第四章 课程总结",
+											text: "第4章 课程总结",
 											children:[
 												"txk/week1/txk_12",
 											],
 										},
 									]
-								}
+								},
+								{
+									text: "HTML5语法与基础标签",
+									collapsable: true,
+									children: [
+										{
+											text: "第1章 课程简介",
+											children: [
+												"txk/week1/txk_13",
+											],
+										},
+										
+									]
+								},
+								
 							]
-						}
+						},
+						
 					]
 				}
 			]
