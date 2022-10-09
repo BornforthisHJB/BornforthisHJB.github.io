@@ -57,6 +57,10 @@ toc: true
 - VS Code 提供了不同风格颜色的主题
 - 在文件—>首选项—>颜色主题中，将主题改为 Light —— (defaukt light)
 
+![image-20221009101108486](./txk_10.assets/image-20221009101108486.png)
+
+![image-20221009101139089](./txk_10.assets/image-20221009101139089.png)
+
 
 
 
