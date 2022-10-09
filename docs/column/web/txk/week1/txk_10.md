@@ -52,7 +52,10 @@ toc: true
 
 
 
+## VS Code 颜色主题
 
+- VS Code 提供了不同风格颜色的主题
+- 在文件—>首选项—>颜色主题中，将主题改为 Light —— (defaukt light)
 
 
 
