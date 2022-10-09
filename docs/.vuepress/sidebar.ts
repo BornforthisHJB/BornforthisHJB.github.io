@@ -247,6 +247,13 @@ export const zhSidebar = sidebar({
 				"FAQ/01-Excel中$.md",
 				"FAQ/02"
 			]
+		},
+		{
+			text: "Math Base",
+			collapsable: true,
+			children: [
+				"Math/01-mean-deviation"
+			]
 		}
 	],
 	// "/learning_web/": [
