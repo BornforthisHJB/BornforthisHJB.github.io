@@ -98,7 +98,21 @@ toc: true
 
 在这里，**差**就是**距离**
 
+## 公式
 
+公式是：
+
+::: center
+
+平均差 = $\frac{\sum|x−μ|}{N}$
+
+:::
+
+- **Σ** 是 [总和符号](https://www.shuxuele.com/algebra/sigma-notation.html)，意思是加起来
+- || （垂直线）的意思是 [绝对值](https://www.shuxuele.com/numbers/absolute-value.html)，就是不要正负号
+- **x** 是每个数据值（例如 3 或 16）
+- **μ** 是平均（在这例子里，**μ = 9**）
+- **N** 是数据点的个数（在这例子里，**N = 8**）
 
 ## 期待你和我一起，用数据解析世界
 
