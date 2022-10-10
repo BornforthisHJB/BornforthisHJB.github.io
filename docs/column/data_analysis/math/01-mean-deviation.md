@@ -172,9 +172,13 @@ $\hugeμ=\frac{3+6+6+7+8+11+15+16}{8}=\frac{72}{8}=9$
 
 <img src="./01-mean-deviation.assets/image-20221010084338645.png" alt="image-20221010084338645" style="zoom:50%;" />
 
+### 三、求**平均差**：
 
+::: center
 
+平均差 = $\huge\frac{\sum|x-μ|}{N}=\frac{30}{8}=3.75$
 
+:::
 
 
 
