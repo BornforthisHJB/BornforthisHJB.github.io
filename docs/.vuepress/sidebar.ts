@@ -253,7 +253,7 @@ export const zhSidebar = sidebar({
 			collapsable: true,
 			children: [
 				{ text: "01-平均差", icon: "zhuzhuangtu", link: "Math/01-mean-deviation"},
-				{ text: "", icon: "zhuzhuangtu", link: "Math/02-standard-deviation"}
+				{ text: "02-标准差和方差", icon: "zhuzhuangtu", link: "Math/02-standard-deviation"}
 				
 			]
 		}
