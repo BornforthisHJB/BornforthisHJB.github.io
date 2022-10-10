@@ -180,9 +180,19 @@ $\hugeμ=\frac{3+6+6+7+8+11+15+16}{8}=\frac{72}{8}=9$
 
 :::
 
+> *注意：平均差有时也叫平均绝对偏差（英语 Mean Absolute Deviation (MAD)），因为它是绝对偏差的平均。*
 
+## 平均差的意思是什么？
 
+平均差告诉我们，每个数据值平均离中心有多远。
 
+以下是个例子（用 [标准差](https://www.shuxuele.com/data/standard-deviation.html) 网页里的数据）：
+
+### 例子：你和你的朋友测量了你们的狗的身高（毫米）：
+
+![狗统计图](./01-mean-deviation.assets/statistics-dogs-graph.gif)
+
+身高（到肩膀）是：600mm、470mm、170mm、430mm 和 300mm。
 
 
 
