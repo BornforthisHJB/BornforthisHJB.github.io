@@ -457,6 +457,40 @@ C. 1.625
 
 D. 1.875
 
+#### Q7 Answer
+
+First complete a frequency table:
+
+![[cached] 0.063896179199219 ms](./01-mean-deviation.assets/c284c0bdde9ca5f6330757b385505f1.svg)
+
+Then calculate the mean and mean deviation from the following table:
+
+![[cached] 0.016927719116211 ms](./01-mean-deviation.assets/080ebe1f7db9ca6f89898e1d4ef0421.svg)
+
+### Question 8
+
+Rachel rolled a die forty five times with the following results:
+
+![[image]](./01-mean-deviation.assets/dbed293635c6463e44b56d6e191a692.jpg)
+
+What was the mean deviation of her scores?
+
+A. 1.564
+
+B. 1.609
+
+C. 1.64
+
+D. 1.653
+
+#### Q8 Answer
+
+Calculate the mean and mean deviation from the following table:
+
+![[cached] 0.051975250244141 ms](./01-mean-deviation.assets/e8fea5b4d9132fa458471545f6ead91.svg)
+
+
+
 
 
 
