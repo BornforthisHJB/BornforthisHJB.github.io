@@ -489,9 +489,51 @@ Calculate the mean and mean deviation from the following table:
 
 ![[cached] 0.051975250244141 ms](./01-mean-deviation.assets/e8fea5b4d9132fa458471545f6ead91.svg)
 
+### Question 9
 
+A spinner is in the shape of a regular heptagon marked with the numbers 1 to 7.
 
+Theodore spun the spinner 50 times and recorded his results in a table, as follows:
 
+![[image]](./01-mean-deviation.assets/69934bd04b949edeb2bd7cce0ca1942.jpg)
+
+Calculate the mean deviation of the scores.
+
+A. 1.6088
+
+B. 1.7288
+
+C. 1.7688
+
+D. 1.8088
+
+#### Q9 Answer
+
+Calculate the mean and mean deviation from the following table:
+
+![[cached] 0.063180923461914 ms](./01-mean-deviation.assets/9e24ddb8a8ffef6b672601f8848bef1.svg)
+
+### Question 10
+
+The children in a class did a survey of the number of siblings (brothers and sisters) each of them had. The results are recorded in the following table:
+
+![[image]](./01-mean-deviation.assets/0d3b9be27588b33900548947fd49a02.jpg)
+
+Calculate the mean deviation of the number of siblings.
+
+A. 1.38
+
+B. 1.41
+
+C. 1.45
+
+D. 1.48
+
+#### Q10 Answer
+
+Calculate the mean and mean deviation from the following table:
+
+![[cached] 0.046014785766602 ms](./01-mean-deviation.assets/5f022b81cc17a8e75baf3c9623f5da1.svg)
 
 
 
