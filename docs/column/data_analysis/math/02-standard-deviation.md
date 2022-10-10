@@ -49,6 +49,18 @@ toc: true
 - 从每一个数值减去平均，然后求*差的平方*。
 - 求结果的平均。（[为什么要求平方？](https://www.shuxuele.com/data/standard-deviation.html#WhySquare))
 
+## 例子
+
+你和朋友们量度了狗狗的身高（毫米）：
+
+![狗图肩高](./02-standard-deviation.assets/statistics-dogs-graph-20221010195743318.gif)
+
+身高（到肩膀）是：600mm、470mm、170mm、430mm 和 300mm。
+
+求平均、方差和标准差。
+
+第一步是求平均：
+
 
 
 
