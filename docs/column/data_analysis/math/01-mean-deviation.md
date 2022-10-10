@@ -265,7 +265,9 @@ $\hugeμ=\frac{600+470+170+430+300}{5}=\frac{1970}{5}=394$
 
 ## Question
 
-### Q1: Calculate the mean deviation for the numbers: 75, 83, 96, 100, 121 and 125
+### Question 1
+
+Calculate the mean deviation for the numbers: 75, 83, 96, 100, 121 and 125
 
 A. 14.33
 
@@ -289,7 +291,9 @@ D. 16
 
 ![[cached] 0.0061988830566406 ms](./01-mean-deviation.assets/b53955615c31ec62a4aaec98d455611.svg)
 
-### Q2: Ten friends scored the following marks in their end-of-year math exam: 23%, 37%, 45%, 49%, 56%, 63%, 63%, 70%, 72% and 82% 
+### Question 2
+
+Ten friends scored the following marks in their end-of-year math exam: 23%, 37%, 45%, 49%, 56%, 63%, 63%, 70%, 72% and 82%
 
 What was the mean deviation of their marks?
 
@@ -315,7 +319,9 @@ D. 17%
 
 ![[cached] 0.030040740966797 ms](./01-mean-deviation.assets/2b1da78d23f8c2fa45005cfd1bd1741.svg)
 
-### Q3: A booklet has 12 pages with the following numbers of words: 271, 354, 296, 301, 333, 326, 285, 298, 327, 316, 287 and 314
+### Question 3
+
+A booklet has 12 pages with the following numbers of words: 271, 354, 296, 301, 333, 326, 285, 298, 327, 316, 287 and 314
 
 What is the mean deviation of the number of words per page?
 
@@ -343,7 +349,76 @@ D. 20.17
 
 ![[cached] 0.010013580322266 ms](./01-mean-deviation.assets/7b62c597cbc37118b59fc653c9dfdc1.svg)
 
+### Question 4
 
+What is the mean deviation of the first 10 numbers of the Fibonacci sequence?
+
+A. 8.8
+
+B. 8.5
+
+C. 8.42
+
+D. 8.32
+
+#### Q4 Answer
+
+The first 10 numbers of the Fibonacci sequence are: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+**Step 1** Find the mean:
+
+μ = (0 + 1 + 1 + 2 + 3 + 5 + 8 + 13 + 21 + 34) ÷ 10 = 88 ÷ 10 = 8.8
+
+**Step 2** Find the Absolute Deviations:
+
+![[cached] 0.060796737670898 ms](./01-mean-deviation.assets/8fb366ba99d9abd412ec917554aca11.svg)
+
+**Step 3** Find the Mean Deviation:
+
+![[cached] 0.016927719116211 ms](./01-mean-deviation.assets/78005233858f7b438f02208bce4e811.svg)
+
+### Question 5
+
+The Lakers scored the following numbers of goals in their last twenty matches: 3, 0, 1, 5, 4, 3, 2, 6, 4, 2, 3, 3, 0, 7, 1, 1, 2, 3, 4, 6
+
+Calculate the Mean Deviation.
+
+A. 1.5
+
+B. 2
+
+C. 2.5
+
+D. 3
+
+#### Q5 Answer
+
+**Method 1**
+
+**Step 1** Find the mean:
+
+μ = (3 + 0 + 1 + 5 + 4 + 3 + 2 + 6 + 4 + 2 + 3 + 3 + 0 + 7 + 1 + 1 + 2 + 3 + 4 + 6) ÷ 20
+= 60 ÷ 20
+= 3
+
+**Step 2** Find the Absolute Deviations:
+
+![[cached] 0.056028366088867 ms](./01-mean-deviation.assets/e216c65a7dbfc6ade5e9a2a66da8ee1.svg)
+
+**Step 3** Find the Mean Deviation:
+
+![[cached] 0.011920928955078 ms](./01-mean-deviation.assets/328a4896378b19be392361747b9d2d1.svg)
+
+**Method 2**
+This can be done much more neatly using tables, as follows:
+
+First complete a frequency table:
+
+![[cached] 0.010967254638672 ms](./01-mean-deviation.assets/cf91c7659ed48babca1b5e911627c91.svg)
+
+Then calculate the mean and mean deviation from the following table:
+
+![[cached] 0.010967254638672 ms](./01-mean-deviation.assets/1b76aa877ddf88fbb5c47b816ab59a1.svg)
 
 
 
