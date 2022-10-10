@@ -291,6 +291,16 @@ D. 16
 
 ### Q2: Ten friends scored the following marks in their end-of-year math exam: 23%, 37%, 45%, 49%, 56%, 63%, 63%, 70%, 72% and 82% What was the mean deviation of their marks?
 
+A. 14%
+
+B. 15%
+
+C. 16%
+
+D. 17%
+
+
+
 
 
 
