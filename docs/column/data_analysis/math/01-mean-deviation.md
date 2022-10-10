@@ -422,6 +422,45 @@ Then calculate the mean and mean deviation from the following table:
 
 ### Question 6
 
+Ramiro did a survey of the number of pets owned by his classmates, with the following results:
+
+![[image]](./01-mean-deviation.assets/b7bba6fa4a5116a6aad9005c65a43a2.jpg)
+
+What was the mean deviation of the number of pets?
+
+A. 1.02
+
+B. 1.053
+
+C. 1.087
+
+D. 1.12
+
+#### Q6 Answer
+
+Calculate the mean and mean deviation from the following table:
+
+![[cached] 0.063896179199219 ms](./01-mean-deviation.assets/36b4dc652622ffee1f2e43a28fac181.svg)
+
+### Question 7
+
+Emma rolled a die a number of times and recorded her results in a bar graph, as follows:
+![[image]](./01-mean-deviation.assets/b7d76d61ffff15b74bb54f52d139952.gif)
+
+What was the mean deviation of the scores?
+
+A. 1.375
+
+B. 1.5
+
+C. 1.625
+
+D. 1.875
+
+
+
+
+
 
 
 ## 期待你和我一起，用数据解析世界
