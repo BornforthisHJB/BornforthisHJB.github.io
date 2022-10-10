@@ -252,8 +252,9 @@ export const zhSidebar = sidebar({
 			text: "Math Base",
 			collapsable: true,
 			children: [
-				"Math/01-mean-deviation",
-				"Math/02-standard-deviation"
+				{ text: "01-平均差", icon: "zhuzhuangtu", link: "Math/01-mean-deviation"},
+				{ text: "", icon: "zhuzhuangtu", link: "Math/02-standard-deviation"}
+				
 			]
 		}
 	],

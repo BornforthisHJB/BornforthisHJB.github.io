@@ -1,7 +1,7 @@
 ---
-title: 02-标准差和方差「
+title: 02-标准差和方差「Standard Deviation and Variance」
 icon: zhuzhuangtu
-time: 2022-10-09 22:25:46
+time: 2022-10-10 12:52:33
 author: AI悦创
 isOriginal: true
 category: 数据分析
@@ -25,7 +25,7 @@ toc: true
 
 ::: center
 
-## 各个数据值离平均值平均有多远
+## *Deviation just means how far from the normal*
 
 :::
 
