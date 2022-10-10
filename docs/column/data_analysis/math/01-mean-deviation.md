@@ -420,7 +420,7 @@ Then calculate the mean and mean deviation from the following table:
 
 ![[cached] 0.010967254638672 ms](./01-mean-deviation.assets/1b76aa877ddf88fbb5c47b816ab59a1.svg)
 
-
+### Question 6
 
 
 
