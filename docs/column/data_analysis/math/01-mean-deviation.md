@@ -120,7 +120,11 @@ toc: true
 
 在公式里求的每个距离是叫**绝对偏差**，因为它是偏差的[绝对值](https://www.shuxuele.com/numbers/absolute-value.html)（离平均值的距离）
 
+::: center
+
 ![绝对偏差](./01-mean-deviation.assets/absolute-deviation.svg)
+
+:::
 
 我们把 "|" 放在项的两变来代表 "绝对值"：
 
@@ -134,9 +138,35 @@ toc: true
 
 现在把它们加起来……
 
+## 总和符号
 
+"加起来" 的符号是 **Σ**（叫[总和符号](https://www.shuxuele.com/algebra/sigma-notation.html))，所以：
 
+::: center
 
+绝对偏差的总和 = Σ|x - μ|
+
+:::
+
+除以数据的个数 **N**，得到：
+
+::: center
+
+平均差 =$\huge\frac{\sum|x−μ|}{N}$
+
+:::
+
+我们再用正确的符号做一次：
+
+## 例子： 3、6、6、7、8、11、15、16 的 平均差
+
+### 一、求**平均**：
+
+::: center
+
+$\hugeμ=\frac{3+6+6+7+8+11+15+16}{8}=\frac{72}{8}=9$
+
+:::
 
 ## 期待你和我一起，用数据解析世界
 
