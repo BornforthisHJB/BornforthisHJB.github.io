@@ -25,6 +25,8 @@ toc: true
 
 ::: center
 
+*差的意思是离正常有多远*
+
 ## *Deviation just means how far from the normal*
 
 :::
