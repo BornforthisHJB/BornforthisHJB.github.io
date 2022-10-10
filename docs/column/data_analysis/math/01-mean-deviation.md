@@ -267,7 +267,27 @@ $\hugeμ=\frac{600+470+170+430+300}{5}=\frac{1970}{5}=394$
 
 ### Q1：Calculate the mean deviation for the numbers: 75, 83, 96, 100, 121 and 125
 
+A. 14.33
 
+B. 15
+
+C. 15.33
+
+D. 16
+
+#### Q1 Answer
+
+**Step 1** Find the mean:
+
+μ = (75 + 83 + 96 + 100 + 121 + 125) ÷ 6 = 600 ÷ 6 = 100
+
+**Step 2** Find the Absolute Deviations:
+
+![[cached] 0.02598762512207 ms](./01-mean-deviation.assets/e3b9af69c9090e4f5177796659130b1.svg)
+
+**Step 3** Find the Mean Deviation:
+
+![[cached] 0.0061988830566406 ms](./01-mean-deviation.assets/b53955615c31ec62a4aaec98d455611.svg)
 
 
 
