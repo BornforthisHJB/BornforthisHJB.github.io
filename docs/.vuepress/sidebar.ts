@@ -148,6 +148,7 @@ export const zhSidebar = sidebar({
 			icon: "java",
 			children: [
 				"FQA/01-Why-do-switch-case-statements-need-to-include-breaks",
+				"FQA/03-for-generate-rhombus",
 			]
 		}
 	],
