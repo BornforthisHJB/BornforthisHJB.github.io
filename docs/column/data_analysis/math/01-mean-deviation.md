@@ -289,7 +289,9 @@ D. 16
 
 ![[cached] 0.0061988830566406 ms](./01-mean-deviation.assets/b53955615c31ec62a4aaec98d455611.svg)
 
-### Q2: Ten friends scored the following marks in their end-of-year math exam: 23%, 37%, 45%, 49%, 56%, 63%, 63%, 70%, 72% and 82% What was the mean deviation of their marks?
+### Q2: Ten friends scored the following marks in their end-of-year math exam: 23%, 37%, 45%, 49%, 56%, 63%, 63%, 70%, 72% and 82% 
+
+What was the mean deviation of their marks?
 
 A. 14%
 
@@ -299,13 +301,47 @@ C. 16%
 
 D. 17%
 
+#### Q2 Answer
 
+**Step 1** Find the mean:
 
+μ = (23 + 37 + 45 + 49 + 56 + 63 + 63 + 70 + 72 + 82) ÷ 10 = 560 ÷ 10 = 56%
 
+**Step 2** Find the Absolute Deviations:
 
+![[cached] 0.043869018554688 ms](./01-mean-deviation.assets/ca0f7327677905480eb796749535a61.svg)
 
+**Step 3** Find the Mean Deviation:
 
+![[cached] 0.030040740966797 ms](./01-mean-deviation.assets/2b1da78d23f8c2fa45005cfd1bd1741.svg)
 
+### Q3: A booklet has 12 pages with the following numbers of words: 271, 354, 296, 301, 333, 326, 285, 298, 327, 316, 287 and 314
+
+What is the mean deviation of the number of words per page?
+
+A. 18.5
+
+B. 19.33
+
+C. 20
+
+D. 20.17
+
+#### Q3 Answer
+
+**Step 1** Find the mean:
+
+μ = (271 + 354 + 296 + 301 + 333 + 326 + 285 + 298 + 327 + 316 + 287 + 314) ÷ 12
+= 3,708 ÷ 12
+= 309
+
+**Step 2** Find the Absolute Deviations:
+
+![[cached] 0.045061111450195 ms](./01-mean-deviation.assets/6d6c38de7991ec959100d72e0c29031.svg)
+
+**Step 3** Find the Mean Deviation:
+
+![[cached] 0.010013580322266 ms](./01-mean-deviation.assets/7b62c597cbc37118b59fc653c9dfdc1.svg)
 
 
 
