@@ -39,6 +39,16 @@ toc: true
 
 公式很简单：**方差**的**平方根**。那么…… "方差是什么？”
 
+## 方差
+
+方差的定义是：离平均的**平方**距离的平均。
+
+按照以下的步骤来计算方差：
+
+- 求数值的 [平均](https://www.shuxuele.com/mean.html)
+- 从每一个数值减去平均，然后求*差的平方*。
+- 求结果的平均。（[为什么要求平方？](https://www.shuxuele.com/data/standard-deviation.html#WhySquare))
+
 
 
 
