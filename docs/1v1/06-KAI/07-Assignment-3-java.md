@@ -57,9 +57,34 @@ Any document and program code that you submit must be fully written by yourself.
 
 Every student is responsible for the work they submit. If there is any doubt during the grading about whether a student created the assignment themselves (e.g. if the solution matches that of others), we reserve the option to let the student explain why this is the case. In case doubts remain, or we decide to directly escalate the issue, the suspected violations will be reported to the academic administration according to the policies of NYU (see https://cs.nyu.edu/home/undergrad/policy.html).
 
+## Assignment # 2 Details
 
+Redesign same requirements but implement user-defined methods! You will notice that the rug might not be a perfect symmetry, but that’s ok. Just try your best.
 
+> 重新设计相同的需求，但实现用户定义的方法!你会注意到地毯可能不是完美的对称，但没关系。尽你最大的努力。
 
+## Part 1 (50 points): Weaving a Kilim Carpet Application Weaving a Kilim Carpet Application using loops and nested loops: Save as Part1.java
+
+> 第1部分(50分):编织 Kilim 地毯的应用使用循环和嵌套循环编织Kilim Carpet Application: 另存为Part1.java
+
+Kilims are woven carpets which generally use symmetrical designs. For this assignment, instead of using a loom, wool, and a shuttle, we are asking you to produce a pattern of your own design using loops and nested loops. 
+
+> Kilims是一种编织地毯，通常采用对称的设计。在这个作业中，我们不是使用织布机、羊毛和梭子，而是要求你使用循环和嵌套循环来制作你自己设计的图案。
+
+Write a program to weave **your own Kilim carpet** with 30 rows by 30 columns. The patterns should be **designed by you (it should be different than the design of carpet below**). **Your** **carpet though MUST include at least one diamond shape, checkerboards, and squares** (See example below for these patterns). **Also, use other characters such as $ or % or + or @ rather** **than a “\*” to weave the rug. Make sure not to copy the entire pattern from the below rug** **or copy patterns from another student**! Show your creativity by weaving a different design while meeting the requirements mentioned above. You will get extra credit for excellent design and added features.
+
+> 编写一个程序来编织你自己的30行30柱的Kilim地毯。的模式应该是你自己设计的(应该和下面地毯的设计不一样)。你的但地毯至少要有一种菱形、棋盘格和正方形(见下面是这些图案的例子。同样，使用其他字符，如$或%或+或@而不是用“*”来织地毯。一定不要从下面的地毯上复制整个图案或者复制其他学生的图案!通过编织不同的图案来展示你的创造力在满足上述要求的同时。优秀的设计将获得额外的学分并添加功能。
+
+Here is a 12 th Century Moroccan Kilim Carpet sample pattern made of 25 rows and36 columns: (This design is made up of stars (asterisks) and spaces, please ignore the border, color, and the shading effect):
+
+> 这是一张12世纪的摩洛哥基里姆地毯样品图案，由25行和36列:(本设计由星号(星号)和空格组成，请忽略边框，
+> 颜色，以及底纹效果):
+
+![image-20221010091358229](./07-Assignment-3-java.assets/image-20221010091358229.png)
+
+## Here are the requirements: 
+
+- Every print statement should print no more than one character such as '*' or one space ' '. Do not use statements such as: print("************************************") but rather use loops for every repetition. 
 
 
 
