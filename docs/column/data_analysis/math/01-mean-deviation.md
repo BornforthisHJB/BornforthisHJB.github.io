@@ -265,7 +265,7 @@ $\hugeμ=\frac{600+470+170+430+300}{5}=\frac{1970}{5}=394$
 
 ## Question
 
-### Q1：Calculate the mean deviation for the numbers: 75, 83, 96, 100, 121 and 125
+### Q1: Calculate the mean deviation for the numbers: 75, 83, 96, 100, 121 and 125
 
 A. 14.33
 
@@ -288,6 +288,18 @@ D. 16
 **Step 3** Find the Mean Deviation:
 
 ![[cached] 0.0061988830566406 ms](./01-mean-deviation.assets/b53955615c31ec62a4aaec98d455611.svg)
+
+### Q2: Ten friends scored the following marks in their end-of-year math exam: 23%, 37%, 45%, 49%, 56%, 63%, 63%, 70%, 72% and 82% What was the mean deviation of their marks?
+
+
+
+
+
+
+
+
+
+
 
 
 
