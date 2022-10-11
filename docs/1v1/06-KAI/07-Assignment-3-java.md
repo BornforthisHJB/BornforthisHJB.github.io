@@ -86,6 +86,24 @@ Here is a 12 th Century Moroccan Kilim Carpet sample pattern made of 25 rows and
 
 - Every print statement should print no more than one character such as '*' or one space ' '. Do not use statements such as: print("************************************") but rather use loops for every repetition. 
 
+> 每个打印语句应该打印不超过一个字符，例如'*'或一个空格' '。不要使用语句如:打印吗 ("************************************") 而是每个重复循环使用。
+
+**Here are the requirements:** 
+
+> 要求如下:
+
+Every print statement should print no more than one character such as '*' or one space ' '. Do not use statements such as: print("************************************") but rather use loops for every repetition. 
+
+> 每个打印语句应该打印不超过一个字符，例如'*'或一个空格' '。不要使用语句如:打印吗 ("************************************") 但每次重复都要使用循环。
+
+Use loops and nested loops to produce these patterns. 
+
+> 使用循环和嵌套循环来生成这些模式。
+
+You can't use control structure such as switch or if/ else if /else in your program.
+
+> 不能在程序中使用switch或if/ else if/ else等控制结构。
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
