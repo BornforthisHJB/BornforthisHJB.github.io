@@ -629,7 +629,7 @@ export const zhSidebar = sidebar({
 	"/column/pyauto/": [
 		"",
 		{
-			text: "卷一：办公自动化 BASE",
+			text: "卷一:办公自动化 BASE",
 			collapsable: true,
 			children: [
 				{ 
@@ -663,12 +663,11 @@ export const zhSidebar = sidebar({
 			],
 		},
 		{
-			text: "课前准备",
+			text: "卷二:课前准备",
 			collapsable: true,
 			children: [
-			"auto_01",
-
-		],
+				"auto_01",
+			],
 	}
 	],
 	"/column/tkinter/" :[
