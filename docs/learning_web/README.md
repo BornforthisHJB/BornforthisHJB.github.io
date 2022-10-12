@@ -36,7 +36,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | 09   | 流沙团队书籍                                                 | 全栈                      | [https://book.bornforthi.com/](https://book.bornforthi.com/) | zh   |                                |
 | 10   | mozilla                                                      | Web                       | [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/) | EN   | HTML em                        |
 | 11   | ![geeksforgeeks](./README.assets/gfg-gg-logo.svg)**geeksforgeeks** | 全栈                      | [https://www.geeksforgeeks.org/](https://www.geeksforgeeks.org/) | EN   | Python                         |
-| 12   | Pythons 数据之道                                             | Python、pandas            | [http://liyangbit.com/math/jupyter-latex/](http://liyangbit.com/math/jupyter-latex/) | zh   | Python「寻找 markdown 知识点」 |
+| 12   | Pythons 数据之道                                             | Python、pandas            | [http://liyangbit.com/math/jupyter-latex/](http://liyangbit.com/math/jupyter-latex/)<br />[http://liyangbit.com/](http://liyangbit.com/) | zh   | Python「寻找 markdown 知识点」 |
 |      |                                                              |                           |                                                              |      |                                |
 
 ## 好的开源项目
