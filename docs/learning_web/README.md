@@ -38,6 +38,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | 11   | ![geeksforgeeks](./README.assets/gfg-gg-logo.svg)**geeksforgeeks** | 全栈                      | [https://www.geeksforgeeks.org/](https://www.geeksforgeeks.org/) | EN    | Python                         |
 | 12   | Pythons 数据之道                                             | Python、pandas            | [http://liyangbit.com/math/jupyter-latex/](http://liyangbit.com/math/jupyter-latex/)<br />[http://liyangbit.com/](http://liyangbit.com/) | zh    | Python「寻找 markdown 知识点」 |
 | 13   | shuxuele                                                     | 数学                      | [https://www.mathsisfun.com/](https://www.mathsisfun.com/)<br/>[https://www.shuxuele.com/](https://www.shuxuele.com/) | en/zh | 数学                           |
+| 14   | NumberSystem                                                 |                           | [https://byjus.com/maths/number-system-conversion/](https://byjus.com/maths/number-system-conversion/) |       |                                |
 
 ## 好的开源项目
 
@@ -75,17 +76,20 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | 01   | 田浩良的精彩人生 | [https://www.tommytian57.com/](https://www.tommytian57.com/) | [https://github.com/tommytian57/tommytian57.github.io](https://github.com/tommytian57/tommytian57.github.io) | 成功日期：2022年8月6日，晚 11:35:30「美·纽约」正式上线 |
 | 02   | 刘家惠           | [https://www.imjmac.com/](https://www.imjmac.com/)           | [https://github.com/ImJ-MAC/ImJ-MAC.github.io](https://github.com/ImJ-MAC/ImJ-MAC.github.io) |                                                        |
 | 03   | Thomas           | [https://ohlalala1021.github.io/](https://ohlalala1021.github.io/) | [https://github.com/Ohlalala1021/Ohlalala1021.github.io](https://github.com/Ohlalala1021/Ohlalala1021.github.io) |                                                        |
-|      |                  |                                                              |                                                              |                                                        |
+| 04   | youpeng          | [https://www.cnblogs.com/youpeng/](https://www.cnblogs.com/youpeng/) | [https://www.cnblogs.com/youpeng/](https://www.cnblogs.com/youpeng/) |                                                        |
 |      |                  |                                                              |                                                              |                                                        |
 
 ## 方便备课
 
-| 序号 | 名称     | 内容 | 链接                                               | 说明   |
-| ---- | -------- | ---- | -------------------------------------------------- | ------ |
-| 01   | 简明教程 | IT   | [https://www.jmjc.tech/](https://www.jmjc.tech/)   | 备课用 |
-| 02   | 易百教程 | IT   | [https://www.yiibai.com/](https://www.yiibai.com/) | 备课用 |
-|      |          |      |                                                    |        |
-|      |          |      |                                                    |        |
+| 序号 | 名称     | 内容   | 链接                                                         | 说明   |
+| ---- | -------- | ------ | ------------------------------------------------------------ | ------ |
+| 01   | 简明教程 | IT     | [https://www.jmjc.tech/](https://www.jmjc.tech/)             | 备课用 |
+| 02   | 易百教程 | IT     | [https://www.yiibai.com/](https://www.yiibai.com/)           | 备课用 |
+| 03   |          |        |                                                              |        |
+| 04   | 数学题   | 数学题 | [https://www.mathopolis.com/index.php](https://www.mathopolis.com/index.php) |        |
+|      |          |        |                                                              |        |
+|      |          |        |                                                              |        |
+|      |          |        |                                                              |        |
 
 ## 论文平台
 
