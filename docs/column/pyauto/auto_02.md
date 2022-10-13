@@ -1,6 +1,6 @@
 ---
 title: 02-导读｜入门Python的必备知识
-date: 2022-06-03 18:07:00
+date: 2022-10-13 23:24:44
 author: AI悦创
 isOriginal: true
 category: Python 办公自动化
@@ -19,8 +19,6 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: false
-next: 01.md
 backToTop: true
 toc: true
 ---
