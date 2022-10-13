@@ -670,6 +670,7 @@ export const zhSidebar = sidebar({
 			collapsable: true,
 			children: [
 				"auto_01",
+				"auto_02",
 			],
 	}
 	],
