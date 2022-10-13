@@ -70,7 +70,10 @@ for key in sorted(dictionary.keys()):
 
 -   [data.txt](/1v1/05-Patrick/02-CS-shaoshuai-Python-cs/data.txt)
 -   [data2.txt](/1v1/05-Patrick/02-CS-shaoshuai-Python-cs/data2.txt)
--   [data2.txt](/1v1/05-Patrick/02-CS-shaoshuai-Python-cs/data2.txt)
+-   [data3.txt](/1v1/05-Patrick/02-CS-shaoshuai-Python-cs/data3.txt)
+-   [empty.txt](/1v1/05-Patrick/02-CS-shaoshuai-Python-cs/empty.txt)
+-   [jelly.txt](/1v1/05-Patrick/02-CS-shaoshuai-Python-cs/jelly.txt)
+-   [jolly.txt](/1v1/05-Patrick/02-CS-shaoshuai-Python-cs/jolly.txt)
 
 
 
