@@ -95,7 +95,16 @@ if __name__ == '__main__':
 	print(r)
 ```
 
+## 3. Question 3
 
+Sequences of numbers in which there are frequent "runs" of a particular number repeating several times can often be more compactly represented by use of what is called "run length encoding". A list is run-length encoded by representing it as a list of pairs (2-tuples), where each pair is a number and the length of the "run" of that number, where the length is 1 if a number occurs once, 2 if it occurs twice in a row, etc. Write a function run_length_encode(nums) that returns the run-length encoded representation of the list of integers, nums.
+
+>   一个特定的数字频繁地重复出现几次的数字序列，通常可以用所谓的“长度编码”来更紧凑地表示。通过将列表表示为一对(2元组)的列表，将其编码为运行长度，其中每对是一个数字和该数字的“运行”长度，如果一个数字出现一次，则长度为1，如果它在一行中出现两次，则长度为2，以此类推。编写一个函数run_length_encode(nums)，它返回整数列表nums的运行长度编码表示。
+
+![image-20221013112904773](./02-CS-shaoshuai-Python-cs.assets/image-20221013112904773.png)
+
+```python
+```
 
 
 
