@@ -74,7 +74,7 @@ for key in sorted(dictionary.keys()):
 
 
 
-## 2. Question 2
+## Question 2
 
 Define a function my_enumerate(items) that behaves in a similar way to the built-in enumerate function. It should return a list of tuples (i, item) where item is the ith item, with 0 origin, of the list items (see the examples below). Check the test cases for how the function should work. Your function must not call python's inbuilt enumerate function.
 
@@ -97,7 +97,7 @@ if __name__ == '__main__':
 	print(r)
 ```
 
-## 3. Question 3
+## Question 3
 
 Sequences of numbers in which there are frequent "runs" of a particular number repeating several times can often be more compactly represented by use of what is called "run length encoding". A list is run-length encoded by representing it as a list of pairs (2-tuples), where each pair is a number and the length of the "run" of that number, where the length is 1 if a number occurs once, 2 if it occurs twice in a row, etc. Write a function run_length_encode(nums) that returns the run-length encoded representation of the list of integers, nums.
 
@@ -123,6 +123,14 @@ if __name__ == '__main__':
 	r = run_length_encode([10, 20, 30, 30, 30, 30])
 	print(r)
 ```
+
+## Question 4
+
+Write a function composite2(N) which takes an integer N as an input and returns the Nth composite number which is NOT divisible by 2. 
+
+>   编写一个函数composit2 (N)，它接受整数N作为输入，并返回第N个不能被2整除的合数。
+
+![image-20221013114143581](./02-CS-shaoshuai-Python-cs.assets/image-20221013114143581.png)
 
 
 
