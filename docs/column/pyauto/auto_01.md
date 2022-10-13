@@ -19,8 +19,6 @@ headerDepth: 5
 comment: true
 lastUpdated: true
 editLink: true
-prev: false
-next: 01.md
 backToTop: true
 toc: true
 ---
@@ -162,21 +160,7 @@ import docx
 
 最后，我们来一起立个 Flag 吧：通过三个月的学习，让自己成为 10X 职场人！也欢迎你邀请你的小伙伴们一起来学习，共同成长！
 
-编辑小提示：专栏的完整代码位置是 https://github.com/wilsonyin123/python_productivity，可点击链接下载查看。或者通过 [网盘链接](https://pan.baidu.com/s/1UvEKDCGnU6yb0a7gHLSE4Q?pwd=5wf1) 提取后下载，提取码: 5wf1。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+编辑小提示：专栏的完整代码位置是 [https://github.com/AndersonHJB/PythonAuto](https://github.com/AndersonHJB/PythonAuto) ，可点击链接下载查看。或者通过 [网盘链接](https://pan.baidu.com/s/1UvEKDCGnU6yb0a7gHLSE4Q?pwd=5wf1) 提取后下载，提取码: 5wf1。
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
