@@ -104,6 +104,22 @@ Sequences of numbers in which there are frequent "runs" of a particular number r
 ![image-20221013112904773](./02-CS-shaoshuai-Python-cs.assets/image-20221013112904773.png)
 
 ```python
+def run_length_encode(nums: list):
+	count_dict = {}
+	for word in nums:
+		if word in count_dict:
+			count_dict[word] += 1
+		else:
+			count_dict[word] = 1
+	# print(count_dict)
+	return list(count_dict.items())
+
+
+if __name__ == '__main__':
+	r = run_length_encode([5, 5, 5, 10, 10])
+	print(r)
+	r = run_length_encode([10, 20, 30, 30, 30, 30])
+	print(r)
 ```
 
 

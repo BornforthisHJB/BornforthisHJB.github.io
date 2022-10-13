@@ -126,6 +126,7 @@ export const zhSidebar = sidebar({
 			icon: "python",
 			children: [
 				"01-CITS1401-Computational-Thinking-with-Python",
+				"02-CS-shaoshuai-Python-cs",
 			]
 		}
 	],
