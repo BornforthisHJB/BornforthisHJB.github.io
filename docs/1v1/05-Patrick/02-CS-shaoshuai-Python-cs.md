@@ -50,7 +50,7 @@ def make_dictionary(filename):
 		# print(words)
 		wdict = {}
 		for word in words:
-			if len(word) > 1:
+			if len(word) >= 1:
 				if word in wdict:
 					wdict[word] += 1
 				else:
@@ -61,8 +61,8 @@ def make_dictionary(filename):
 
 
 # Testing with the example data in the question
-dictionary = make_dictionary('data/jolly.txt')
-# print(dictionary)
+dictionary = make_dictionary('data/data2.txt')
+print(dictionary)
 for key in sorted(dictionary.keys()):
 	print(key + ': ' + str(dictionary[key]))
 	print(key + ': ' + str(dictionary[key]))
