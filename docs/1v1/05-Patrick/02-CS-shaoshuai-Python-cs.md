@@ -72,6 +72,21 @@ for key in sorted(dictionary.keys()):
 
 
 
+## 2. Question 2
+
+Define a function my_enumerate(items) that behaves in a similar way to the built-in enumerate function. It should return a list of tuples (i, item) where item is the ith item, with 0 origin, of the list items (see the examples below). Check the test cases for how the function should work. Your function must not call python's inbuilt enumerate function.
+
+>   定义一个函数 my_enumerate(items)，其行为方式与内置的 enumerate 函数类似。它应该返回元组(i, item)的列表，其中 item 是列表项的第 i 个项，原点为0(参见下面的示例)。检查测试用例以了解该功能应该如何工作。你的函数不能调用 python 的内置 enumerate 函数。
+
+
+
+```python
+```
+
+
+
+
+
 
 
 
