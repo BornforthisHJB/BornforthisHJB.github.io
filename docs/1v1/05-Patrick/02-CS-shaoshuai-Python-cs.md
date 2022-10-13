@@ -78,9 +78,21 @@ Define a function my_enumerate(items) that behaves in a similar way to the built
 
 >   定义一个函数 my_enumerate(items)，其行为方式与内置的 enumerate 函数类似。它应该返回元组(i, item)的列表，其中 item 是列表项的第 i 个项，原点为0(参见下面的示例)。检查测试用例以了解该功能应该如何工作。你的函数不能调用 python 的内置 enumerate 函数。
 
-
+![image-20221013112157390](./02-CS-shaoshuai-Python-cs.assets/image-20221013112157390.png)
 
 ```python
+def my_enumerate(items: list):
+	index = 0
+	result_lst = []
+	for i in items:
+		result_lst.append((index, i))
+		index = index + 1
+	return result_lst
+
+
+if __name__ == '__main__':
+	r = my_enumerate([10, 20, 30])
+	print(r)
 ```
 
 
