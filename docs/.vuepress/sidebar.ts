@@ -620,6 +620,8 @@ export const zhSidebar = sidebar({
 				"12-paihuanggua2",
 				"13-虾仁滑蛋",
 				"14-洋葱炒牛肉",
+				"15-红烧茄子",
+				"16-炒土豆粉",
 			],
 		}
 	],
