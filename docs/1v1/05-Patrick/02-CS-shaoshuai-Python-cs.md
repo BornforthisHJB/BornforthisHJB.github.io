@@ -68,7 +68,8 @@ for key in sorted(dictionary.keys()):
 	print(key + ': ' + str(dictionary[key]))
 ```
 
-[/05-Patrick/02-02-CS-shaoshuai-Python-cs](/05-Patrick/02-02-CS-shaoshuai-Python-cs/)
+-   [data.txt](/05-Patrick/02-02-CS-shaoshuai-Python-cs/data.txt)
+-   [/05-Patrick/02-02-CS-shaoshuai-Python-cs](/05-Patrick/02-02-CS-shaoshuai-Python-cs/data.txt)
 
 
 
