@@ -1,7 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { searchPlugin } from "@vuepress/plugin-search";
-// import { docsearchPlugin } from '@vuepress/plugin-docsearch';
+// import { searchPlugin } from "@vuepress/plugin-search";
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -69,23 +69,23 @@ export default defineUserConfig({
     //   copyright: false,
     // }),
 
-    // docsearchPlugin({
-    //   // 你的选项
-    //   // appId, apiKey 和 indexName 是必填的
-    //   appId: "ACD1S100IT",
-    //   apiKey: "409311158985cfee5c0a535e5998ddd2",
-    //   indexName: "bornforthis",
-    //   placeholder: "搜索",
-    // }),
-    
-    searchPlugin({
-      locales: {
-        "/": {
-          placeholder: "搜索",
-          
-        },
-      },
+    docsearchPlugin({
+      // 你的选项
+      // appId, apiKey 和 indexName 是必填的
+      appId: "ACD1S100IT",
+      apiKey: "409311158985cfee5c0a535e5998ddd2",
+      indexName: "bornforthis",
+      placeholder: "搜索",
     }),
+    
+    // searchPlugin({
+      // locales: {
+        // "/": {
+          // placeholder: "搜索",
+          // 
+        // },
+      // },
+    // }),
   ],
 
   theme,
