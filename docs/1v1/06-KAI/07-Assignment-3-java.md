@@ -210,7 +210,7 @@ public class demo {
 }
 ```
 
-2.0 上下单个菱形合并方法：
+2.0 上下单个菱形合并方法：包括笑脸
 
 ```java
 public class demo {
