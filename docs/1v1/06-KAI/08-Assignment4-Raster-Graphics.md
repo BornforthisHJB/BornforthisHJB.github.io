@@ -32,6 +32,10 @@ toc: true
 
 Did you ever want to see yourself at the top of Mount Everest, walking on a rainbow, or hanging out with world leaders at a global summit? In this assignment, you can . . .
 
+>   你是否曾想看到自己登上珠穆朗玛峰的顶峰，在彩虹上漫步，或在全球峰会上与世界各国领导人一起闲逛?在这个作业中，你可以……
+
+
+
 #### Your Image
 
 Using Photoshop, create a multilayered image that features you placed in an unlikely, unique, or impossible location. The final image should be 600 × 800 pixels (horizontal or vertical orientation). Your project should consist of at least five different layers.
