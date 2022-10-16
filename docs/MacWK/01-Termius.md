@@ -56,7 +56,9 @@ toc: true
 
 ![](./01-Termius.assets/202204061649206319901673.jpg)
 
-[]
+**软件下载地址：**[**https://xiaoniaoyun.im/f/R5SQS6**](https://xiaoniaoyun.im/f/R5SQS6)
+
+失效请留言。
 
 ::: details 公众号：AI悦创【二维码】
 
