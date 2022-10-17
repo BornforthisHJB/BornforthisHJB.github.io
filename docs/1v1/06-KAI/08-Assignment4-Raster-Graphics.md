@@ -94,7 +94,69 @@ Publish the web page, along with your image (the JPEG or PNG, not the Photoshop 
 
 ## Submitting Your Assignment
 
+>   提交作业
 
+Submit the following via Bright Space. 
+
+>   通过 Bright Space 提交以下内容。
+
+The URL to your new web page that displays the image on i6
+
+>   在 i6 上显示图像的新网页的URL
+
+A compressed archive containing your Photoshop project file, JPG or PNG, HTML and CSS The upload may take time; wait for confirmation before closing the browser window
+
+>   一个压缩档案包含您的Photoshop项目文件，JPG或PNG, HTML和CSS 上传可能需要时间;关闭浏览器窗口前请等待确认
+
+Please note that you are required to submit files along with the URL in order to receive credit for your work.
+
+>   请注意，您需要提交文件连同URL，以便为您的工作获得学分。
+
+## Grading
+
+>   分级
+
+This assignment is worth 10 points.
+
+>   这个作业值10分。
+
+A Photoshop project with at least 5 different layers: 4 image layers and 1 text layer (5 points—1 per layer)
+
+>   一个至少有5个不同层的Photoshop项目:4个图像层和1个文本层(每层5个点)
+
+A recognizable image of the student, skillfully decontextualized and proportionally placed in a new location (1 point)
+
+>   一个可识别的学生图像，巧妙地去文本化，并按比例放置在一个新位置(1点)
+
+The image should be 600 × 800 pixels (horizontal or vertical orientation) and the JPEG or PNG file should be under 2 MB in size (1 point)
+
+>   图片尺寸为600 × 800像素(水平或垂直方向)，JPEG或PNG文件大小不超过2mb(1点)
+
+A basic HTML web page that displays the JPG or PNG file on i6 along with a paragraph of text. (1 point)
+
+>   一个基本的HTML网页，在i6上显示JPG或PNG文件以及一段文本。(1分)
+
+Basic CSS for the image, text, and background of the page. (1 point)
+
+>   用于页面的图像、文本和背景的基本CSS。(1分)
+
+The web page's \!\[img\]\(\)  element should include `src`, `width`, `height`, and `alt` attributes that accurately correspond to the image. (1 point)
+
+>   网页的  \!\[img\]\(\) 元素应该包含 'src '， ' width '， ' height '和' alt '属性，准确对应图像。(1分)
+
+**Start Date**
+
+Oct 13, 2022 7:17 AM
+
+**Due Date**
+
+Oct 20, 2022 8:00 AM
+
+## Submit Assignment
+
+**Files to submit**
+
+**(0) file(s) to submit  After uploading, you must click Submit to complete the submission.**
 
 
 
