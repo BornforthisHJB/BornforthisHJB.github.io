@@ -27,6 +27,7 @@ export const zhSidebar = sidebar({
 		"learning_web",
 
 	],
+	"/ps/": "structure",
 	"/column/Python-core-technology-and-practice/": [
 		{
 			text: "开篇词",
