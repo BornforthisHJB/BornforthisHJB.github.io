@@ -84,7 +84,8 @@ export const zhSidebar = sidebar({
 			children: [
 				{ text: "01-Assignment-1-Unix", icon: "network", link: "01-Assignment-1-Unix"},
 				{ text: "02-Assignment2-HTML", icon: "network", link: "04-Assignment2-HTML"},
-				{ text: "03-Assignment3-CSS", icon: "network", link: "05-Assignment3-CSS"}
+				{ text: "03-Assignment3-CSS", icon: "network", link: "05-Assignment3-CSS"},
+				{ text: "04-Assignment4 Raster Graphics", icon: "network", link: "08-Assignment4-Raster-Graphics"},
 			]
 		},
 		{
