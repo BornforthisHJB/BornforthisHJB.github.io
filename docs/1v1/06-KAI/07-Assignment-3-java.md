@@ -1,5 +1,5 @@
 ---
-title: Assignment # 3-Java
+title: Assignment3Java
 icon: java
 time: 2022-10-06 23:23:00
 author: AI悦创

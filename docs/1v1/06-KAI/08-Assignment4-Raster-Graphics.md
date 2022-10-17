@@ -1,5 +1,5 @@
 ---
-title: Assignment 4-Raster Graphics
+title: Assignment-4Raster Graphics
 icon: network
 time: 2022-10-16 23:17:11
 author: AI悦创
