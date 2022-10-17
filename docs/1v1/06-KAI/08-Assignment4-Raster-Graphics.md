@@ -72,6 +72,18 @@ You should keep your PSD file after you've exported the images as well. Do not d
 
 > 在导出图像之后，您应该保留 PSD 文件。不要删除它，因为 Photoshop 文档将是你作业提交的一部分。
 
+## Publishing Your Image
+
+>   发布你的形象
+
+Create a new directory on your i6 account called "image". Within this directory, create a basic web page called "index.html" for your project and give the page a title.
+
+>   在你的i6账户上创建一个名为image的新目录。在这个目录中，为你的项目创建一个名为“index.html”的基本网页，并给这个页面一个标题。
+
+Use the \!\[img\]\(\)  element to display your JPEG or PNG on the page. The \!\[img\]\(\) element should include `src`, `width`, `height`, and `alt`attributes that correspond to the image. Add a short paragraph of text that describes the concept for your image.
+
+
+
 
 
 
