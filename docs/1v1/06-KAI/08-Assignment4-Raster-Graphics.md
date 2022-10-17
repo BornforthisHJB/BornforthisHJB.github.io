@@ -82,7 +82,17 @@ Create a new directory on your i6 account called "image". Within this directory,
 
 Use the \!\[img\]\(\)  element to display your JPEG or PNG on the page. The \!\[img\]\(\) element should include `src`, `width`, `height`, and `alt`attributes that correspond to the image. Add a short paragraph of text that describes the concept for your image.
 
+>   使用 \!\[img\]\(\)  元素在页面上显示你的JPEG或PNG。 \!\[img\]\(\) 元素应该包含与图像对应的 'src'， 'width '， ' height '和' alt '属性。添加一小段文字来描述你的图像的概念。
 
+Add CSS to give your page some basic styles. At minimum, this should include rule sets for the \!\[img\]\(\) element, paragraph text, and background of the page.
+
+>   添加 CSS 为您的页面提供一些基本样式。这至少应该包括用于 \!\[img\]\(\)  元素、段落文本和页面背景的规则集。
+
+Publish the web page, along with your image (the JPEG or PNG, not the Photoshop document), to the i6 server. Your project should be available at: i6.cims.nyu.edu/~netid/image/. Update the code of your assignments directory to link to this new page.
+
+>   将网页和您的图像(JPEG或PNG，不是Photoshop文档)一起发布到i6服务器。您的项目应该可以在以下网站获得:i6.cims.nyu.edu/~netid/image/。更新作业目录的代码以链接到这个新页面。
+
+## Submitting Your Assignment
 
 
 
