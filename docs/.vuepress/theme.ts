@@ -235,7 +235,7 @@ export default hopeTheme({
     
     // pwa: false,
     pwa: {
-      update: "hint",
+      update: "available",
       maxPicSize: 90000,
       maxSize: 9000000,
       // favicon: "/favicon.ico",
