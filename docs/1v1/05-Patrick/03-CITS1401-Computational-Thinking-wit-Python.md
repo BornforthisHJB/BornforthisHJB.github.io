@@ -62,21 +62,87 @@ In this project, you are required to write a computer program that can read the 
 
 
 
+**Specification: What your program is required to do**
 
+>   规范:你的程序需要做什么
 
+**Input:**
 
+Your program must define the function main with the following syntax: 
 
+>   你的程序必须用以下语法定义main 函数:
 
+`def main(csvfile, SubjIDs): `
 
+The input arguments to this function are:
 
+>   这个函数的输入参数是:
 
+-   csvfile: The name oftheCSVfile containing the facial data recordwhich needs to be analysed. Below are the first two rows of the sample file.
 
+>   csvfile:包含需要分析的面部数据记录的 csv 文件的名称。
+>
+>   下面是示例文件的前两行。
 
+![image-20221018124449914](./03-CITS1401-Computational-Thinking-wit-Python.assets/image-20221018124449914.png)
 
+The first row of the CSV file contains the following headers: 
 
+>   CSV 文件的第一行包含以下标题:
 
+-   SubjID: The identity of a human subject.
 
+>   SubjID:人类主体的身份。
 
+-   Landmark: The facial landmark as mentioned in Table 1.
+
+>   地标:如表1所示的面部地标。
+
+-   “OX”, “OY” and “OZ”: The 3D location of the landmark in X, Y and Z axes respectively on the original face (See Figure-1 (left)).
+
+>   “OX”、“OY”、“OZ”:分别是该标志在原面上X、Y、Z轴的三维位置(见图1(左))。
+
+-   “MX”, “MY” and “MZ”: The 3D location of the landmark in X, Y and Z axes respectively on the mirrored face (See Figure-1 (right)).
+
+>   “MX”、“MY”和“MZ”:分别是标志点在镜像面上X、Y、Z轴的三维位置(见图1(右))。
+
+-   We do not have prior knowledge about the number of subjects we have to analyse (i.e. the number of rows) that the CSV file contains. Also, we are not aware of the order of the columns, so your program needs to check for the column heading to retrieve respective information. The columns ‘SubjID’ and ‘Landmark’ are strings while the remaining data is numeric.
+
+>   对于CSV文件所包含的必须分析的主题的数量(即行数)，我们没有预先的知识。此外，我们不知道列的顺序，因此您的程序需要检查列标题以检索各自的信息。列' SubjID '和' Landmark '是字符串，而其余的数据是数字。
+
+-   **Note:** The X, Y and Z coordinates are in millimetres and need to be within the bounds [-200,200].
+
+>   **注:** X、Y和Z坐标以毫米为单位，需要在边界[-200,200]内。
+
+-   SubjIDs: A list of two IDs of the subjects which need to be analysed. Remember that the ID is a string and is case insensitive.
+
+>   SubjIDs:需要分析的主题的两个id的列表。请记住，ID是字符串，不区分大小写。
+
+**Output:**
+
+The function is required to return the following outputs in the order provided below. For ease of 
+
+>   该函数需要按下面提供的顺序返回以下输出。为了便于
+
+description, we will refer to the input SubjID containing two IDs: **“F1”** and **“F2”** as [“F1”,”F2”].
+
+>   描述中，我们将输入SubjID包含两个id:  " F1 " **和** " F2 " 作为[" F1 "， " F2 "]。
+
+-   **OP1:** A list of two dictionaries containing the facial asymmetry values between the original and mirrored face for the landmarks mentioned in Table-1 for each face F1 and F2 respectively. The keys in the dictionaries are the abbreviations (upper case) of the landmarks (e.g. EX, FT etc.) and their values contain the 3D asymmetry between the original and mirrored landmarks. The formula to calculate the 3D asymmetry is given at the end of this project sheet.
+
+>   **OP1:**两个字典的列表，包含表1中提到的地标的原始脸和镜像脸之间的面部不对称值，分别针对每个脸F1和F2。字典中的键是地标的缩写(大写)(例如EX, FT等)，它们的值包含原始地标和镜像地标之间的3D不对称。本文在项目表的最后给出了三维非对称性的计算公式。
+
+-   **OP2:** A list of two dictionaries containing the facial distances (as mentioned in Table-2) for each face F1 and F2 respectively. The keys in the dictionaries are the abbreviations (upper case) of the distances (e.g. EXEN, ENAL etc.) and their values contain the 3D Euclidean distance between the corresponding landmarks (see last two columns of Table-2) on the original face. The formula to calculate the Euclidean distance between two 3D landmarks is given at the end of this project sheet.
+
+>   **OP2:**两个字典的列表，分别包含每个面部F1和F2的面部距离(如表2所示)。字典中的键是距离的缩写(大写)(例如EXEN, ENAL等)，它们的值包含原始表面上相应地标(参见表2的最后两列)之间的3D欧氏距离。计算两个三维地标之间的欧氏距离的公式在项目表的最后给出。
+
+-   **OP3:** First calculate the total facial asymmetries of each subject in the CSV file. Your task is to return a list of Tuple sequences of the 5 faces having the lowest total face asymmetry. The first member of each tuple is the “SubjID” of the face while the second member is the total asymmetry of this face. The list must be in increasing order of total facial asymmetry such that the first tuple would indicate the face that has the lowest total facial asymmetry. Therefore, the 5 tuple sequences will represent 5 lowest total facial asymmetries. 
+
+>   **OP3:**首先计算CSV文件中每个受试者的面部不对称总数。您的任务是返回一个Tuple序列的列表，其中包含5个总面孔不对称程度最低的面孔。每个元组的第一个成员是脸的“SubjID”，而第二个成员是这个脸的完全不对称。列表必须按面部整体不对称的递增顺序排列，这样第一个元组将表示面部整体不对称程度最低的脸。因此，5元组序列将代表5个最低的面部不对称。
+
+-   **OP4:** The cosine similarity between faces F1 and F2 based on the six distances calculated above (OP2). The formula to calculate cosine similarity is provided at the end of this project sheet.
+
+>   **OP4:**基于上面计算的6个距离的面F1和F2之间的余弦相似度(OP2)。计算余弦相似度的公式在项目表的最后提供。
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
