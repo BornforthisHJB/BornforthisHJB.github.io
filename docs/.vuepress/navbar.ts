@@ -102,6 +102,8 @@ export const zhNavbar = navbar([
           { text: "摄影", link: "https://huangjiabaoaiyc.gitee.io/img/"},
           { text: "Search", link: "https://crawler.algolia.com/admin/crawlers"},
           { text: "领英", link: "https://www.linkedin.com/in/bornforthis/"},
+          { text: "AndersonHJB.github.io", icon: "github", link: "https://github.com/AndersonHJB/AndersonHJB.github.io/issues"},
+          { text: "1v1", icon: "github", link: "https://github.com/AndersonHJB/1v1/issues"},
 
           // { text: "随笔", children: [{ text: "AI悦创随笔1", link: "https://bornforthis.cn/posts/12.html"}, { text: "随笔2", link: "/essays"}]},
         ]
