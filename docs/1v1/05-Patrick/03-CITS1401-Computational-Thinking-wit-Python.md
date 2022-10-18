@@ -186,6 +186,38 @@ The outputs will be:
 
 0.9991
 
+**Additional requirements:**
+
+There are few more requirements for your program.
+
+-   Your program needs to validate the inputs to the main() function and gracefully terminate if invalid inputs are provided.
+
+>   您的程序需要验证main()函数的输入，并在提供无效输入时优雅地终止。
+
+-   You program needs to terminate *gracefully* if the file cannot be found or opened. For graceful terminations, you need to print the message related to the problem and return None for each output.
+
+>   如果找不到或打开该文件，您的程序需要“优雅地”终止。对于优雅终止，您需要打印与问题相关的消息，并为每个输出返回 None。
+
+-   Your program needs to validate the input data from the file. The X, Y or Z coordinate (or all coordinates) of a landmark could be corrupted or missing. In that case the value in the cell would be empty or out of bounds. If data is not correct, then consider the entire data of this particular subject as corrupted. In such a case return ‘None’ for each unavailable output.
+
+>   您的程序需要验证来自文件的输入数据。地标的X、Y或Z坐标(或所有坐标)可能损坏或丢失。在这种情况下，单元格中的值将为空或超出边界。如果数据不正确，则认为该特定主题的整个数据已损坏。在这种情况下，为每个不可用输出返回' None '。
+
+-   It is possible that the Research Assistant marking these landmarks on the faces could have forgotten to mark/ record a landmark. In this case, that particular landmark will be missing from the CSV file. In such a case, consider the entire data of this particular subject as corrupted and return ‘None’ for each unavailable output.
+
+>   有可能是研究助理在表面标记这些标志时忘记标记/记录一个标志。在本例中，CSV文件中将没有那个特定的地标。在这种情况下，将这个特定主题的整个数据视为已损坏，并为每个不可用输出返回“None”。
+
+-   The facial asymmetry at nose tip must be zero. In case this value is non-zero, it means that the subject data has been corrupted and needs to be discarded. In such a case return ‘None’ for each unavailable output.
+
+>   鼻尖的面部不对称必须为零。如果该值非零，则意味着主题数据已经损坏，需要丢弃。在这种情况下，为每个不可用输出返回' None '。
+
+-   Your program needs to consider that record of the landmarks for a particular Adult may not have any specific order or can be in any order (excluding header row).
+
+>   你的程序需要考虑到特定Adult的标记记录可能没有任何特定的顺序，也可能是任何顺序(不包括标题行)。
+
+-   The columns in the CSV file can be in any order and the headings are case insensitive. The headings expected are: SubjID, Landmark, OX,O Y,0Z,MX,MY AND MZ.
+
+>   CSV文件中的列可以是任意顺序的，标题不区分大小写。标题应该是:subject, Landmark, OX,O Y,0Z,MX,MY和MZ。
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
