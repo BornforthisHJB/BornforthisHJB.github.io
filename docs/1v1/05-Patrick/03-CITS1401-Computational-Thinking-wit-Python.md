@@ -24,6 +24,8 @@ backToTop: true
 toc: true
 ---
 
+[**SampleData.csv**](/1v1/05-Patrick/03-CITS1401-Computational-Thinking-wit-Python/SampleData.csv)
+
 **Project 2:** 
 
 **Submission deadlines:** **5:00 pm, Friday 21****st** **October 2022**
