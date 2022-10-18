@@ -58,7 +58,7 @@ In this project, you are required to write a computer program that can read the 
 
 >   在这个项目中，您被要求编写一个计算机程序，可以从提供给您的CSV(逗号分隔值)文件中读取数据。该文件包含表1中提到的每个受试者的7个面部标志的X、Y和Z轴的3D坐标。你的任务是写一个满足以下要求的程序。
 
-
+![image-20221018124254056](./03-CITS1401-Computational-Thinking-wit-Python.assets/image-20221018124254056.png)
 
 
 
