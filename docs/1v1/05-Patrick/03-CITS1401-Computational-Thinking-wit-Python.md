@@ -54,6 +54,18 @@ Your task is to find out facial asymmetry between 6 significant facial landmarks
 
 >   你的任务是找出6个重要面部标志之间的面部不对称，并计算出脸部某些标志之间的6个线性距离。面部不对称的计算方法是在较长的轴上翻转面部，并从原始的图像中减去镜像的地标值。表1提供了每个地标的详细信息，而图1和图2显示了它们在原始和镜像表面上的位置。表2给出了要计算的距离的详细信息。记住这些距离是表1中提到的地标之间的距离。因为脸在它的轴上翻转，鼻尖的不对称必须总是零，即“Prn”在原始和镜像脸之间的3D线性距离为零。我们将利用这个地标的不对称性作为控制点。
 
+In this project, you are required to write a computer program that can read the data from a CSV (comma separated values) file provided to you. The file contains the 3D coordinates in X, Y and Z axes for the 7 facial landmarks mentioned in Table 1 for each subject. Yourtask is to write a program which fulfills the following requirements.
+
+>   在这个项目中，您被要求编写一个计算机程序，可以从提供给您的CSV(逗号分隔值)文件中读取数据。该文件包含表1中提到的每个受试者的7个面部标志的X、Y和Z轴的3D坐标。你的任务是写一个满足以下要求的程序。
+
+
+
+
+
+
+
+
+
 
 
 
