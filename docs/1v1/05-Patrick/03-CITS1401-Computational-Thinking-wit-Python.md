@@ -144,6 +144,44 @@ description, we will refer to the input SubjID containing two IDs: **“F1”** 
 
 >   **OP4:**基于上面计算的6个距离的面F1和F2之间的余弦相似度(OP2)。计算余弦相似度的公式在项目表的最后提供。
 
+All returned numeric outputs (in dictionaries, lists and individual values) must be rounded off to four decimal places (if required to be rounded off). Do not round off the values during calculations and round them off only while saving them into the final output variables.
+
+>   所有返回的数字输出(在字典、列表和单个值中)必须四舍五入到小数点后四位(如果需要四舍五入)。不要在计算过程中对值进行四舍五入，只有在将值保存到最终输出变量时才对其进行四舍五入。
+
+**Examples:**
+
+Download sampledata.csv file from the folder of Project 2 on LMS or Moodle. Some examples of how you can call your program from the Python shell (and examine the results it returns) are:
+
+>   从LMS或Moodle上的Project 2文件夹中下载sampledata.csv文件。下面是一些如何从Python shell调用程序(并检查它返回的结果)的例子:
+
+\>>> [OP1,OP2,OP3,OP4]=main('SampleData.csv',['B7033','C1283'])
+
+The outputs will be:
+
+\>>> OP1
+
+[{'FT': 1.9198, 'EX': 1.8028, 'EN': 1.6555, 'AL': 2.5577, 'SBAL': 0.9023, 'CH': 1.7901}, 
+
+{'FT': 1.807, 'EX': 2.2892, 'EN': 0.9371, 'AL': 1.9393, 'SBAL': 1.1624, 'CH': 2.7713}]
+
+\>>> OP2
+
+[{'EXEN': 33.092, 'ENAL': 34.6946, 'ALEX': 50.1037, 'FTSBAL': 91.5324, 'SBALCH': 
+
+33.7109, 'CHFT': 98.1642}, {'EXEN': 34.4401, 'ENAL': 37.7494, 'ALEX': 54.0952, 
+
+'FTSBAL': 90.3202, 'SBALCH': 38.4123, 'CHFT': 104.8566}]
+
+\>>> OP3
+
+[('E4996', 8.3254), ('H1178', 9.1597), ('F7831', 9.3268), ('J6687', 9.3878), ('K6431', 
+
+9.6359)]
+
+\>>> OP4
+
+0.9991
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
