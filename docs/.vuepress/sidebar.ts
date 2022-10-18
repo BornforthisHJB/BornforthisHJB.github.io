@@ -132,6 +132,7 @@ export const zhSidebar = sidebar({
 			children: [
 				"01-CITS1401-Computational-Thinking-with-Python",
 				"02-CS-shaoshuai-Python-cs",
+				"03-CITS1401-Computational-Thinking-wit-Python",
 			]
 		}
 	],
