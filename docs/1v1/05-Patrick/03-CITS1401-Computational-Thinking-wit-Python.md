@@ -56,7 +56,7 @@ Impressed by your performance in Project-1, the scientists at UWA seek your help
 
 Your task is to find out facial asymmetry between 6 significant facial landmarks and also calculate 6 linear distances between certain landmarks on the face. Facial asymmetry is calculated by flipping the face on its longer axis and subtracting the mirrored landmark values from the original. Table 1 provides the details of each landmark, while Figures 1 and 2 show their location on the original and mirrored face. Table-2 gives you the details of the distances to be calculated. Remember these distances are between the landmarks mentioned in Table-1. Since the face is flipped on it axis, the asymmetry at the nose tip must always be zero i.e. 3D linear distance between “Prn” on original and mirrored faces is zero. We will use the asymmetry of this landmark as a control point.
 
->   你的任务是找出6个重要面部标志之间的面部不对称，并计算出脸部某些标志之间的6个线性距离。面部不对称的计算方法是在较长的轴上翻转面部，并从原始的图像中减去镜像的地标值。表1提供了每个地标的详细信息，而图1和图2显示了它们在原始和镜像表面上的位置。表2给出了要计算的距离的详细信息。记住这些距离是表1中提到的地标之间的距离。因为脸在它的轴上翻转，鼻尖的不对称必须总是零，即“Prn”在原始和镜像脸之间的3D线性距离为零。我们将利用这个地标的不对称性作为控制点。
+>   你的任务是找出6个重要面部标志之间的面部不对称，并计算出脸部某些标志之间的6个线性距离。面部不对称的计算方法是在较长的轴上翻转面部，并从原始的图像中减去镜像的地标值。表1提供了每个地标的详细信息，而图1和图2显示了它们在原始和镜像表面上的位置。表2给出了要计算的距离的详细信息。记住这些距离是表1中提到的地标之间的距离。因为脸在它的轴上翻转，鼻尖的不对称必须总是零， **即“Prn”在原始和镜像脸之间的3D线性距离为零。** 我们将利用这个地标的不对称性作为控制点。
 
 In this project, you are required to write a computer program that can read the data from a CSV (comma separated values) file provided to you. The file contains the 3D coordinates in X, Y and Z axes for the 7 facial landmarks mentioned in Table 1 for each subject. Yourtask is to write a program which fulfills the following requirements.
 
