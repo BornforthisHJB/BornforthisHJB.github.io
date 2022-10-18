@@ -196,7 +196,7 @@ There are few more requirements for your program.
 
 -   You program needs to terminate *gracefully* if the file cannot be found or opened. For graceful terminations, you need to print the message related to the problem and return None for each output.
 
->   如果找不到或打开该文件，您的程序需要“优雅地”终止。对于优雅终止，您需要打印与问题相关的消息，并为每个输出返回 None。
+>   如果找不到或打开该文件，您的程序需要“优雅地”终止。对于优雅终止，您需要打印与问题相关的消息，并为每个输出返回 None。✅
 
 -   Your program needs to validate the input data from the file. The X, Y or Z coordinate (or all coordinates) of a landmark could be corrupted or missing. In that case the value in the cell would be empty or out of bounds. If data is not correct, then consider the entire data of this particular subject as corrupted. In such a case return ‘None’ for each unavailable output.
 
