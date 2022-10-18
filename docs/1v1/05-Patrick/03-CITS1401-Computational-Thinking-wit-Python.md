@@ -218,6 +218,90 @@ There are few more requirements for your program.
 
 >   CSV文件中的列可以是任意顺序的，标题不区分大小写。标题应该是:subject, Landmark, OX,O Y,0Z,MX,MY和MZ。
 
+## OP1
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/18 12:59
+# @Author  : AI悦创
+# @FileName: OP1.py
+# @Software: PyCharm
+# OP1@Blog    ：https://bornforthis.cn/
+# 公式：0.5 ** ((MX - OX)^2 + (MY - OY)^2 + (MZ - OZ)^2)
+def read_csv(csvfile):
+    with open(csvfile, "rt") as f:
+        # print(f.readlines())
+        content_lst = f.readlines()
+        # print(f.read())
+        # content_lst = str(f.read())
+        return content_lst
+        # print(content_lst)
+
+
+def parse(content_lst, subid):
+    """
+    ((MX - OX)^2 + (MY - OY)^2 + (MZ - OZ)^2) ** 0.5
+    :param content_lst:
+    :return: op1
+    """
+    OX_POSITION = 2
+    OY_POSITION = 3
+    OZ_POSITION = 4
+    MX_POSITION = 5
+    MY_POSITION = 6
+    MZ_POSITION = 7
+
+    judge_set_keys = {'FT', 'CH', 'AL', 'EX', 'EN', 'SBAL'}
+    result_dict = {}
+    for detail_content in content_lst[1:]:
+        detail_lst = detail_content.replace("\n", "").split(",")
+        # print(detail_lst)
+        if subid in detail_lst:
+            mx_value = detail_lst[MX_POSITION]
+            ox_value = detail_lst[OX_POSITION]
+            my_value = detail_lst[MY_POSITION]
+            oy_value = detail_lst[OY_POSITION]
+            mz_value = detail_lst[MZ_POSITION]
+            oz_value = detail_lst[OZ_POSITION]
+            # print("OX:", ox_value, "OY:", oy_value, "OZ:", oz_value, "MX:", mx_value, "MY:", my_value, "MZ:", mz_value)
+            result_dict[detail_lst[1].upper()] = (
+                                                         (float(mx_value) - float(ox_value)) ** 2 +
+                                                         (float(my_value) - float(oy_value)) ** 2 +
+                                                         (float(mz_value) - float(oz_value)) ** 2
+                                                 ) ** 0.5
+        else:
+            pass
+    del result_dict["PRN"]
+    difference_set_keys = judge_set_keys - set(result_dict)
+    if difference_set_keys:
+        new_result_dict = {}
+        for not_key in difference_set_keys:
+            result_dict[not_key] = "None"
+        sort_key = ['FT', 'EX', 'EN', 'AL', 'SBAL', 'CH']
+        for key in sort_key:
+            new_result_dict[key] = result_dict[key]
+        return new_result_dict
+    return result_dict
+    # print(set(result_dict))
+
+
+def main(csvfile, SubjIDs: list):
+    content_lst = read_csv(csvfile)
+    # print(content_lst)
+    for subid in SubjIDs:
+        # print(subid)
+        r = parse(content_lst, subid)
+        print(r)
+    # print(content_lst)
+
+
+if __name__ == '__main__':
+    path = "data/SampleData.csv"  # 路径
+    main(path, ['B7033', 'C1283', 'I0951'])
+```
+
+
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
