@@ -27,6 +27,7 @@ export const zhSidebar = sidebar({
 		"learning_web",
 
 	],
+	"/blog/vuepress/": "structure",
 	"/ps/": [
 		"01",
 		"02",
