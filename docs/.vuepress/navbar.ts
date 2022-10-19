@@ -28,7 +28,7 @@ export const zhNavbar = navbar([
           { text: "数据结构与算法", icon: "shujujiegou-01", link: "/column/data-structure/week1/01"},
           { text: "Python 60 Day", icon: "python", link: "/column/python60/01"},
           { text: "AI悦创·天池计划", icon: "dianchi1", link: "/column/tianchi/Python/Python01"},
-          { text: "Java体系课", icon: "java", link: "/column/Java/chapter01/01.md"},
+          { text: "Java体系课", icon: "java", link: "/column/Java"},
           { text: "AI悦创·1v1", icon: "1v1-4", link: "/1v1/"},
           { text: "摄影入门课", icon: "cameraadd", link: "/column/摄影入门课/"},
           { text: "Python核心技术与实战", icon: "python", link: "/column/Python-core-technology-and-practice/01"},

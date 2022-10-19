@@ -4,9 +4,9 @@ home: true
 icon: home
 title: Java 体系课
 heroImage: /ColumnImages/pyauto/pyauto.jpg
-heroText: Java 体系课，从零开始带你～
+heroText: Java 体系课
 heroFullScreen: true
-tagline: 通过 Python 来实现自动化办公，减少手动操作，解放人力。
+tagline: 听得懂、学得会、用得上
 actions:
   - text: 开始学习 💡
     link: /column/Java/chapter01/01
@@ -37,7 +37,7 @@ footer: 立志降低教育成本，普及编程教育，提供优质资源教程
 
 考虑到有不少人想学习编程，但苦于没有合适的教材，或者没有掌握正确的方法，始终不得其门而入。
 
-因此，我编写了《Java 体系课》这门专栏，带过诸多大学学生、公司一对一私教的老师，相信凭借这些经验，他也会给广大初学者带来一门听得懂、学得会、用得上的 Java 入门课。
+因此，我编写了《Java 体系课》这门专栏，带过诸多大学学生、公司一对一私教的老师，相信凭借这些经验，也会给广大初学者带来一门听得懂、学得会、用得上的 Java 入门课。
 
 这门课将帮你轻松迈进编程世界的大门，并能够独立编写出规范、有用的 Java 程序，同时为后续的深入学习打下坚实的基础。
 
