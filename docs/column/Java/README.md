@@ -4,7 +4,7 @@ home: true
 icon: home
 title: Java 体系课
 heroImage: /ColumnImages/pyauto/pyauto.jpg
-heroText: Python 办公自动化
+heroText: Java 体系课，从零开始带你～
 heroFullScreen: true
 tagline: 通过 Python 来实现自动化办公，减少手动操作，解放人力。
 actions:
