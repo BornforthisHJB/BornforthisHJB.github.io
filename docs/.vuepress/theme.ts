@@ -113,6 +113,7 @@ export default hopeTheme({
       "/column/playback/01-Tommy.html": "20220517",
       "/column/playback/02-LKW.html": "lkw",
       "/column/playback/03-20220610.html": "20220610",
+      "/1v1/09-liujiahui/": "123123"
     },
   },
 
