@@ -3,7 +3,7 @@ blog: false
 home: true
 icon: home
 title: Java 体系课
-heroImage: /ColumnImages/pyauto/pyauto.jpg
+heroImage: /ColumnImages/Java/2022_JAVA_1920.jpg
 heroText: Java 体系课
 heroFullScreen: true
 tagline: 听得懂、学得会、用得上
