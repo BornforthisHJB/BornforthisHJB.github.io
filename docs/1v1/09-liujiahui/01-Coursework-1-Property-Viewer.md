@@ -26,7 +26,10 @@ backToTop: true
 toc: true
 ---
 
+## 资料
 
+-   [Asignment_1.pdf](/1v1/09-liujiahui/01-Coursework-1-Property-Viewer/Asignment_1.pdf)
+-   [cw1-base.zip](/1v1/09-liujiahui/01-Coursework-1-Property-Viewer/cw1-base.zip)
 
 
 
