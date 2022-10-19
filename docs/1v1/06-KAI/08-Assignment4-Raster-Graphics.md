@@ -159,6 +159,63 @@ Oct 20, 2022 8:00 AM
 **(0) file(s) to submit  After uploading, you must click Submit to complete the submission.**
 
 
+
+![over](./08-Assignment4-Raster-Graphics.assets/over.png)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raster Graphics</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1>Raster Graphics: Photoshop</h1>
+    <img id=whiteBox src="img/over.png" width="800" height="600" alt="">
+    <p>dwdwdwdw</p>
+</body>
+</html>
+```
+
+```css
+body {
+    background-color: dimgray;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#whiteBox {
+    background-color: rgba(187, 11, 11, 0.85);
+    border: 5px solid blue;
+    width: 75%;
+    margin: auto;
+    padding: 25px;
+    /*background-color: azure;*/
+}
+
+p {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 80px;
+    text-align: center;
+    background-color: gray;
+    padding: 15px;
+}
+```
+
+
+
+
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 
