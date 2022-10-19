@@ -166,6 +166,7 @@ export const zhNavbar = navbar([
         children: [
           { text: "Unsplash", icon: "pic", link: "https://unsplash.com/"},
           { text: "Dribbble", icon: "emoji", link: "https://dribbble.com/"},
+          { text: "openprocessing", icon: "pic", link: "https://openprocessing.org/"},
         ]
       },
       { 
