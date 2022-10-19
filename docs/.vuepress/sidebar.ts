@@ -105,6 +105,15 @@ export const zhSidebar = sidebar({
 			]
 		}
 	],
+	"/1v1/09-liujiahui": [
+		{
+			text: "Java",
+			icon: "java",
+			children: [
+				"01-Coursework-1-Property-Viewer"
+			]
+		}
+	],
 	"/1v1/08-LionGuo": [
 		{
 			text: "Python HW",
