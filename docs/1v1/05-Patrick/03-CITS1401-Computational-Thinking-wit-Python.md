@@ -1559,7 +1559,15 @@ if __name__ == '__main__':
 result_dict[detail_lst[1].upper()] = float("%.4f" % value)
 ```
 
+```python
+value = (
+                                                     (float(mx_value) - float(ox_value)) ** 2 +
+                                                     (float(my_value) - float(oy_value)) ** 2 +
+                                                     (float(mz_value) - float(oz_value)) ** 2
+                                             ) ** 0.5
 
+        result_dict[detail_lst[1].upper()] = float("%.4f" % value)
+```
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
