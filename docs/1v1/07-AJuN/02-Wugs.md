@@ -94,6 +94,90 @@ A sample genome:
 
 
 
+## Genome and characteristic levels
+
+>   基因组和特征水平
+
+Each characteristic is defined by a combination of (genome_length/4) genes. Each gene position in a genome corresponds to one of four zones.
+
+>   每个特征都是由(基因组长度/4)基因的组合定义的。基因组中的每个基因位置对应四个带中的一个。
+
+For example,
+
+-   Intelligence: 0101
+
+>   智力:0101
+
+-   Beauty: 1101
+
+>   美:1101
+
+-   Strength: 0001
+
+>   力量:0001
+
+-   Speed: 1010
+
+>   速度:1010
+
+The genome zoning is the same across the wugs. It's also the same across questions (but different to the one provided in the current example).
+
+>   整个wugs的基因组分区是一样的。在所有问题中也是一样的(但与当前示例中提供的不同)。
+
+![image-20221020132907867](./02-Wugs.assets/image-20221020132907867.png)
+
+## SuperWug
+
+There is a target ``super wug genome’’. Once a wug has that genome, it would demonstrate an outstanding level in each characteristic.
+
+>   有一个目标“超级wug基因组”。一旦一只wug有了这个基因组，它就会在每个特征上表现出出色的水平。
+
+-   Intelligence: 1111
+
+>   情报:1111
+
+-   Beauty: 0010
+
+>   美:0010
+
+-   Strength: 1000
+
+>   力量:1000
+
+-   Speed: 1010
+
+>   速度:1010
+
+![image-20221020133136142](./02-Wugs.assets/image-20221020133136142.png)
+
+## Normal vs. Superior
+
+If at least one gene within a genome zone doesn't coincide with that found in the ``super wug genome’’, the individual wug demonstrates a normal level in the respective characteristic. Otherwise, if all genes in a zone coincide with golden ones, an outstanding level in the respective property would be developed.
+
+>   如果基因组区中至少有一个基因与“超级wug基因组”中的基因不一致，则单个wug在各自的特征中显示正常水平。否则，如果一个区域的所有基因都与黄金基因重合，则会发展出各自属性的突出水平。
+
+![image-20221020133317255](./02-Wugs.assets/image-20221020133317255.png)
+
+![image-20221020133330593](./02-Wugs.assets/image-20221020133330593.png)
+
+
+
+
+
+
+
+## Question 1: Decode Genomes
+
+>    问题1:解码基因组
+
+
+
+
+
+
+
+
+
 
 
 
