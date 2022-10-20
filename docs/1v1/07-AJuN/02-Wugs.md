@@ -395,6 +395,10 @@ The order of characteristics will be provided and should be preserved!
 >   特征的顺序会提供的，应该保留!
 
 ```python
+>>> characteristics = ["intelligence", "beauty", "strength", "speed"]
+>>> superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+>>> gene_zones      = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+>>> genome_sample1 = [0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0]  #[False, False, False, False]
 >>> genome_sample2 = [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0]  #[False, False, True, False]
 >>> genome_sample3 = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]  #[True, True, True, False]
 >>> genome_sample4 = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1]  #[False, False, True, True]
@@ -412,6 +416,21 @@ The order of characteristics will be provided and should be preserved!
 A working implementation of the genome2features function have been made available, you may make calls to the function if you wish.
 
 >   genome2features 函数的工作实现已经可用，如果您愿意，您可以调用该函数。
+
+```python
+# DO NOT DELETE/EDIT THIS LINE OF CODE, AS IT IS USED TO PROVIDE ACCESS TO
+# A WORKING IMPLEMENTATION OF THE FUNCTION FROM Q1a
+from hidden import genome2features
+
+characteristics = ["intelligence", "beauty", "strength", "speed"]
+superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+gene_zones      = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+
+def rank(wug):
+    # TODO: Write your function here
+```
+
+### Q1c Answer
 
 ```python
 ```
