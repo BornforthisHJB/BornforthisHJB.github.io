@@ -170,11 +170,47 @@ If at least one gene within a genome zone doesn't coincide with that found in th
 
 >    问题1:解码基因组
 
+You will write a function called **genome2features** which produces levels of four characteristics for a wug based on its individual genome. You are provided with the "the superwug" genome and the genome zoning information.
 
+>   您将编写一个名为 genome2features 的函数，它根据wug的单个基因组为其生成四个特征的级别。您将获得“the superwug”基因组和基因组分区信息。
 
+`def genome2features(genome)`
 
+-   Input: genome (a list of 0s and 1s)
 
+>   输入:基因组(0和1的列表)
 
+-   Returns: a list of 4 True/False values for **Intelligence,     Beauty, Strength, Speed**. True – Superior, False – Normal
+
+>   返回:**智力，美貌，力量，速度**的4个真/假值列表。True -高级，False -普通
+
+The order of characteristics will be provided and should be preserved!
+
+>   特征的顺序会提供的，应该保留!
+
+```python
+>>> characteristics = ["intelligence", "beauty", "strength", "speed"]
+>>> superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+>>> gene_zones      = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+>>> genome_sample1 = [0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0]
+>>> genome_sample2 = [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0]
+>>> genome_sample3 = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+>>> genome_sample4 = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1]
+
+>>> genome2features(genome_sample1)
+[False, False, False, False]
+>>> genome2features(genome_sample2)
+[False, False, True, False]
+```
+
+```python
+characteristics = ["intelligence", "beauty", "strength", "speed"]
+superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+gene_zones      = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+
+def genome2features(genome):
+    # TODO: Write your function here
+```
 
 
 
