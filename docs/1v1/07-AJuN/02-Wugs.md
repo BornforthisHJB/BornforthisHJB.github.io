@@ -268,15 +268,57 @@ if __name__ == '__main__':
 
 ```
 
+## Question 1b: Describe Wugs
 
+>   问题1b:描述Wugs
 
+You will write a function called **report_population** which aggregates all wugs (the whole population) based on their characteristics. The function will return all observed sets of characteristics with their counts (the number of wugs that have the corresponding characteristics)
 
+>   您将编写一个名为 report_population 的函数，该函数基于所有wug(整个总体)的特征聚合它们。函数将返回所有观察到的特征集及其计数(具有相应特征的wug的数量)
 
+`def report_population(population)`
 
+-   Input: population (a list of tuples representing wugs)
 
+>   输入:population(表示wugs的元组列表)
 
+-   Returns: returns a summary of all population (a list of (tuple, int) pairs ) aggregating those that share the same characteristics. Follow a lexicographical order (descending) in output records.
 
+>   返回:返回所有填充((tuple, int)对的列表)的摘要，聚合了那些具有相同特征的填充。在输出记录中遵循字典顺序(降序)。
 
+The order of characteristics will be provided and should be preserved!
+
+>   特征的顺序会提供的，应该保留!
+
+```python
+>>> characteristics = ["intelligence", "beauty", "strength", "speed"]
+>>> superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+>>> gene_zones      = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+>>> genome_sample1 = [0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0]
+>>> genome_sample2 = [1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0]
+>>> genome_sample3 = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+>>> genome_sample4 = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1]
+
+>>> report_population([(genome_sample1, 'F'), (genome_sample2, 'F'), (genome_sample3, 'F'), (genome_sample4, 'F')])
+[((True, True, True, False, 'F'), 1), ((False, False, True, True, 'F'), 1), ((False, False, False, False, 'F'), 2)]
+```
+
+A working implementation of the genome2features function have been made available, you may make calls to the function if you wish
+
+>   genome2features函数的工作实现已经可用，如果您愿意，您可以调用该函数
+
+```python
+# DO NOT DELETE/EDIT THIS LINE OF CODE, AS IT IS USED TO PROVIDE ACCESS TO
+# A WORKING IMPLEMENTATION OF THE FUNCTION FROM Q1a
+from hidden import genome2features
+
+characteristics = ["intelligence", "beauty", "strength", "speed"]
+superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+gene_zones      = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+
+def report_population(population):
+    # TODO: Write your function here
+```
 
 
 
