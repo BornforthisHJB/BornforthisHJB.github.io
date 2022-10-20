@@ -346,7 +346,7 @@ def report_population(population):
         # print(g_s)
         r = genome2features(g_s)
         # print(r)
-        r.sort(reverse=True)
+        # r.sort(reverse=True)
         r.append(sex)
         result_lst.append(tuple(r))
     # print(result_lst)
@@ -372,19 +372,49 @@ if __name__ == '__main__':
 
 ```
 
+## Question 1c: How Many Superior Characteristics does a Wug Have?
 
+>   问题1c: Wug有多少优越的特性?
 
+You will write a function called **rank** which returns a number indicating how many superior characteristics a wug has.
 
+>   您将编写一个名为rank的函数，该函数返回一个数字，指示wug具有多少优越特征。
 
+`def rank(wug)`
 
+-   Input: a tuple describing an individual wug (in     which the very first element is genome)
 
+>   输入:描述单个wug的元组(其中第一个元素是基因组)
 
+-   Returns: a number of superior characteristics     that the given wug demonstrates
 
+>   返回:给定wug所演示的一些优越特性
 
+The order of characteristics will be provided and should be preserved!
 
+>   特征的顺序会提供的，应该保留!
 
+```python
+>>> genome_sample2 = [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0]  #[False, False, True, False]
+>>> genome_sample3 = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]  #[True, True, True, False]
+>>> genome_sample4 = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1]  #[False, False, True, True]
 
+>>> rank((genome_sample1, 'F'))
+0
+>>> rank((genome_sample2, 'M'))
+1
+>>> rank((genome_sample3, 'M'))
+3
+>>> rank((genome_sample4, 'F'))
+2
+```
 
+A working implementation of the genome2features function have been made available, you may make calls to the function if you wish.
+
+>   genome2features 函数的工作实现已经可用，如果您愿意，您可以调用该函数。
+
+```python
+```
 
 
 
