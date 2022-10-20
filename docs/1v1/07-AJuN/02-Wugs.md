@@ -212,6 +212,62 @@ def genome2features(genome):
     # TODO: Write your function here
 ```
 
+### Q1 Answer
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/20 13:39
+# @Author  : AI悦创
+# @FileName: q1.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+characteristics = ["intelligence", "beauty", "strength", "speed"]  # 特征，每个特征都对应着 4 个基因 superwug_genome
+superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+gene_zones = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]  # 下标
+
+
+def generate(g_z, super_genome):
+    d = {}
+    lst = list(zip(g_z, super_genome))
+    # print(list(lst))
+    for index, level in enumerate(characteristics):
+        middle_list = []
+        # print(index, level)
+        for t in lst:
+            # print("tttt", t)
+            if index == t[0]:
+                middle_list.append(t[1])
+        # print(middle_list)
+        d[level] = middle_list
+    return d
+
+def judge(d1, d2):
+    r_lst = []
+    d1_list = list(d1.items())
+    d2_list = list(d2.items())
+    # print(d1_list)
+    # print(d2_list)
+    for t1, t2 in zip(d1_list, d2_list):
+        # print(t1 == t2)
+        r_lst.append(t1 == t2)
+    return r_lst
+
+
+def genome2features(genome):
+    # TODO: Write your function here
+    super_d = generate(gene_zones, superwug_genome)
+    judge_d = generate(gene_zones, genome)
+    # print(super_d)
+    # print(judge_d)
+    return judge(super_d, judge_d)
+
+if __name__ == '__main__':
+    # genome = [0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0]
+    genome = [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0]
+    genome2features(genome)
+
+```
+
 
 
 
