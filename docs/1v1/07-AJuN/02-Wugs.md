@@ -320,6 +320,58 @@ def report_population(population):
     # TODO: Write your function here
 ```
 
+### Q1b Answer
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/20 15:26
+# @Author  : AI悦创
+# @FileName: q2.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+
+# DO NOT DELETE/EDIT THIS LINE OF CODE, AS IT IS USED TO PROVIDE ACCESS TO
+# A WORKING IMPLEMENTATION OF THE FUNCTION FROM Q1a
+from q1 import genome2features
+
+characteristics = ["intelligence", "beauty", "strength", "speed"]
+superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+gene_zones = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+
+
+def report_population(population):
+    # TODO: Write your function here
+    result_lst = []
+    for g_s, sex in population:
+        # print(g_s)
+        r = genome2features(g_s)
+        # print(r)
+        r.sort(reverse=True)
+        r.append(sex)
+        result_lst.append(tuple(r))
+    # print(result_lst)
+    # set_r = set(result_lst)
+    d = {}
+    for s in result_lst:
+        if s in d:
+            d[s] += 1
+        else:
+            d[s] = 1
+    new_lst = list(d.items())
+    new_lst.sort(reverse=True)
+    return new_lst
+
+
+if __name__ == '__main__':
+    genome_sample1 = [0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0]
+    genome_sample2 = [1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0]
+    genome_sample3 = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+    genome_sample4 = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1]
+    r = report_population([(genome_sample1, 'F'), (genome_sample2, 'F'), (genome_sample3, 'F'), (genome_sample4, 'F')])
+    print(r)
+
+```
+
 
 
 
