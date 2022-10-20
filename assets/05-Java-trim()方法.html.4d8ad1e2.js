@@ -1,0 +1,1 @@
+import{_}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as e,c as r}from"./app.9345c87b.js";const t={};function c(o,a){return e(),r("div")}const s=_(t,[["render",c],["__file","05-Java-trim()\u65B9\u6CD5.html.vue"]]);export{s as default};
