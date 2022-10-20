@@ -1569,6 +1569,12 @@ value = (
         result_dict[detail_lst[1].upper()] = float("%.4f" % value)
 ```
 
+```python
+middle_dict[key] = round(sum(middle_list), 4)
+```
+
+
+
 ::: details 完整代码
 
 ```python
@@ -1684,8 +1690,8 @@ def op3_parse(content_lst):
         result_dict[detail_lst[1].upper()] = float("%.4f" % value)
         # print(result_dict)
         result_list_data.append(result_dict)
-    print(result_list_data)
-    result_list_sort = []
+    # print(result_list_data)
+    # result_list_sort = []
     middle_dict = {}
     for key in keys_list:
         middle_list = []
@@ -1693,7 +1699,7 @@ def op3_parse(content_lst):
             if key == detail_d["ID"]:
                 middle_list.append(list(detail_d.values())[1])
         # print(f"key:>>>{key}", middle_list)
-        middle_dict[key] = sum(middle_list)
+        middle_dict[key] = round(sum(middle_list), 4)
     # print(middle_dict)
     sorted_by_value = sorted(middle_dict.items(), key=lambda x: x[1])[:5]
     # print(sorted_by_value)
@@ -1737,6 +1743,7 @@ def main(csvfile, SubjIDs: list):
             op2.append(r)
         # op3
         op3 = op3_parse(content_lst)
+        print(op3)
         op4 = op4_parse(op2)
         # print("op1:>>>>", op1)
         # ------------- OP Code -------------
@@ -1763,7 +1770,6 @@ if __name__ == '__main__':
     # lst = title(path)
     # main(path, ['B7033', 'C1283'])
     # main(path, lst)
-
 ```
 
 :::

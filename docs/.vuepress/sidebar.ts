@@ -276,6 +276,18 @@ export const zhSidebar = sidebar({
 				{ text: "02-标准差和方差", icon: "zhuzhuangtu", link: "Math/02-standard-deviation"}
 				
 			]
+		},
+		{
+			text: "数据分析45讲",
+			children: [
+				{ 
+					text: "Part 1",
+					children: [
+						"Data-analysis-practice-45-lectures/Phase-one/01",
+					]
+				}
+				
+			]
 		}
 	],
 	// "/learning_web/": [
