@@ -1490,15 +1490,8 @@ def op3_parse(content_lst):
     return sorted_by_value
 
 
-# def op4(op2):
-#     print(op2)
 
-
-# def op4(op2):
-#     pass
-
-
-def op4(op2):
+def op4_parse(op2):
     # print(op2)
     v1 = list(op2[0].values())
     v2 = list(op2[1].values())
@@ -1511,9 +1504,9 @@ def op4(op2):
         total_v1 += v1 ** 2
         total_v2 += v2 ** 2
     # print(total)
-    r = total / ((total_v1 ** 0.5) * (total_v2 ** 0.5))
-    print(r)
-
+    r = round(total / ((total_v1 ** 0.5) * (total_v2 ** 0.5)), 4)
+    # print(r)
+    return r
 
 def main(csvfile, SubjIDs: list):
     content_lst = read_csv(csvfile)
@@ -1534,10 +1527,10 @@ def main(csvfile, SubjIDs: list):
             op2.append(r)
         # op3
         op3 = op3_parse(content_lst)
-        op4(op2)
+        op4 = op4_parse(op2)
         # print("op1:>>>>", op1)
         # ------------- OP Code -------------
-        return [op1, op2, op3, None]
+        return [op1, op2, op3, op4]
     else:
         return [None, None, None, None]
 
@@ -1560,6 +1553,10 @@ if __name__ == '__main__':
     # lst = title(path)
     # main(path, ['B7033', 'C1283'])
     # main(path, lst)
+```
+
+```python
+result_dict[detail_lst[1].upper()] = float("%.4f" % value)
 ```
 
 
