@@ -281,9 +281,15 @@ export const zhSidebar = sidebar({
 			text: "数据分析45讲",
 			children: [
 				{ 
-					text: "Part 1",
+					text: "Introduction (Lecture 1)",
 					children: [
 						"Data-analysis-practice-45-lectures/Phase-one/01",
+					]
+				},
+				{
+					text: "Module 2: Data Analysis Algorithms (20 lectures)",
+					children: [
+						"Data-analysis-practice-45-lectures/Phase-three/17",
 					]
 				}
 				
