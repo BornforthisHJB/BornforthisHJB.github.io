@@ -8,7 +8,7 @@ export default defineUserConfig({
   title: "AI悦创",
   description: "Python 1v1,AI悦创,一对一,Python,编程一对一,C++,Java,AI,人工智能,黄家宝,Python一对一教学",
   base: "/",
-  shouldPrefetch: false,
+  // shouldPrefetch: false,
   head: [
     // [
     //   "script",

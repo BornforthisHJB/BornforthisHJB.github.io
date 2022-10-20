@@ -234,15 +234,15 @@ export default hopeTheme({
       disableSelection: false,
     },
     
-    // pwa: false,
-    pwa: {
-      update: "available",
-      maxPicSize: 90000,
-      maxSize: 9000000,
-      // favicon: "/favicon.ico",
-      cacheHTML: false,
-      cachePic: false,
-      appendBase: true,
-    },
+    pwa: false,
+    // pwa: {
+    //   update: "available",
+    //   maxPicSize: 90000,
+    //   maxSize: 9000000,
+    //   // favicon: "/favicon.ico",
+    //   cacheHTML: false,
+    //   cachePic: false,
+    //   appendBase: true,
+    // },
   },
 });
