@@ -1187,6 +1187,154 @@ if __name__ == '__main__':
 
 ```
 
+###  OP3
+
+```python
+def read_csv(csvfiles):
+    try:
+        with open(csvfiles, "rt") as f:
+            content_lst = f.readlines()[1:]
+            return content_lst
+    except FileNotFoundError as e:
+        return e
+
+
+def OP1_parse(content_lst, SubID):
+    judge_set_keys = {'FT', 'CH', 'AL', 'EX', 'EN', 'SBAL'}
+    OP1_dict = {}
+    for detail_content in content_lst:
+        detail_lst = detail_content.replace("\n", "").split(",")
+        # print(detail_lst)
+        if SubID in detail_lst:
+            ox_value, oy_value, oz_value, mx_value, my_value, mz_value = detail_lst[2:]
+            OP1_dict[detail_lst[1].upper()] = (
+                                                      (float(mx_value) - float(ox_value)) ** 2 +
+                                                      (float(my_value) - float(oy_value)) ** 2 +
+                                                      (float(mz_value) - float(oz_value)) ** 2
+                                              ) ** 0.5
+
+    if OP1_dict["PRN"] != 0:
+        return None
+    else:
+        del OP1_dict["PRN"]
+
+    difference_set_keys = judge_set_keys - set(OP1_dict)
+    if difference_set_keys:
+        #         new_result_dict = {}
+        #         for not_key in difference_set_keys:
+        #             OP1_dict[not_key] = "None"
+        #         sort_key = ['FT', 'EX', 'EN', 'AL', 'SBAL', 'CH']
+        #         for key in sort_key:
+        #             new_result_dict[key] = OP1_dict[key]
+        return None
+    return OP1_dict
+
+
+#     print(OP1_dict)
+def OP2_parse(content_lst, SubID):
+    result_list = []
+    for detail_content in content_lst:
+        content_lst = detail_content.replace("\n", "").split(",")
+        result_list.append(content_lst)
+    data_list = []
+    #     operation_list = []
+    for content in result_list:
+        if SubID == content[0]:
+            data_list.append(("SubID", content[0]))
+            data_list.append((content[1].upper(), content[2:]))
+    judge_dict = dict(data_list)
+    #     keys = ["EXEN", "ENAI", "ALEX", "FYSBAL", "SBALCH", "CHFT"]
+    result_dict = {}
+    EN_LIST = list(map(float, judge_dict["EN"]))[:3]
+    EX_LIST = list(map(float, judge_dict["EX"]))[:3]
+    AL_LIST = list(map(float, judge_dict["AL"]))[:3]
+    FT_LIST = list(map(float, judge_dict["FT"]))[:3]
+    SBAL_LIST = list(map(float, judge_dict["SBAL"]))[:3]
+    CH_LIST = list(map(float, judge_dict["CH"]))[:3]
+    #     print(EN_LIST)
+    f_lambda = lambda x: (x[0] - x[1]) ** 2
+    result_dict["EXEN"] = sum([f_lambda(detail) for detail in zip(EN_LIST, EX_LIST)]) ** 0.5
+    result_dict["ENAL"] = sum([f_lambda(detail) for detail in zip(AL_LIST, EN_LIST)]) ** 0.5
+    result_dict["ALEX"] = sum([f_lambda(detail) for detail in zip(EX_LIST, AL_LIST)]) ** 0.5
+    result_dict["FTSBAL"] = sum([f_lambda(detail) for detail in zip(SBAL_LIST, FT_LIST)]) ** 0.5
+    result_dict["SBALCH"] = sum([f_lambda(detail) for detail in zip(CH_LIST, SBAL_LIST)]) ** 0.5
+    result_dict["CHFT"] = sum([f_lambda(detail) for detail in zip(FT_LIST, CH_LIST)]) ** 0.5
+    return result_dict
+
+
+#     print(result_dict)
+
+def OP3_parse(content_lst):
+    keys_list = set()
+    result_list_data = []
+    for detail_content in content_lst:
+        result_dict = {}
+        # middle_lst = []
+        detail_lst = detail_content.replace("\n", "").split(",")
+        # print(detail_lst)
+        ox_value, oy_value, oz_value, mx_value, my_value, mz_value = detail_lst[2:]
+        # print(ox_value, oy_value, oz_value, mx_value, my_value, mz_value)
+        result_dict["ID"] = detail_lst[0]
+        keys_list.add(detail_lst[0])
+        result_dict[detail_lst[1].upper()] = (
+                                                     (float(mx_value) - float(ox_value)) ** 2 +
+                                                     (float(my_value) - float(oy_value)) ** 2 +
+                                                     (float(mz_value) - float(oz_value)) ** 2
+                                             ) ** 0.5
+
+        result_list_data.append(result_dict)
+    # print(result_list_data)
+    # result_list_sort = []
+    middle_dict = {}
+    for key in keys_list:
+        middle_list = []
+        for detail_d in result_list_data:
+            if key == detail_d["ID"]:
+                middle_list.append(list(detail_d.values())[1])
+        # print(f"key:>>>{key}", middle_list)
+        middle_dict[key] = sum(middle_list)
+    # print(middle_dict)
+    sorted_by_value = sorted(middle_dict.items(), key=lambda x: x[1])[:5]
+    print(sorted_by_value)
+
+def main(csvfiles, SubjIDs):
+    content_lst = read_csv(csvfiles)
+    string = "[Errno 2] No such file or directory: '{path}'".format(path=csvfiles)
+    OP1 = []
+    OP2 = []
+    if str(content_lst) != string:
+        for SubID in SubjIDs:
+            r = OP1_parse(content_lst, SubID)
+            OP1.append(r)
+            #         print(OP1)
+            r = OP2_parse(content_lst, SubID)
+            OP2.append(r)
+        OP3_parse(content_lst)
+        #         print(OP1)
+        #             r = OP3_parse(content_lst,SubID)
+        #             OP3.append(r)
+        # print(OP1)
+        # print(OP2)
+        return [OP1, OP2, None, None]
+    else:
+        return [None, None, None, None]
+
+
+def title(path):
+    content_lst = read_csv(path)
+    r = []
+    for d in content_lst:
+        n_d = d.split(",")[0]
+        r.append(n_d)
+    return r
+
+
+if __name__ == '__main__':
+    path = "data/SampleData.csv"
+    main(path, ['B7033', 'C1283'])
+
+```
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
