@@ -433,6 +433,36 @@ def rank(wug):
 ### Q1c Answer
 
 ```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/20 16:06
+# @Author  : AI悦创
+# @FileName: q3.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+# DO NOT DELETE/EDIT THIS LINE OF CODE, AS IT IS USED TO PROVIDE ACCESS TO
+# A WORKING IMPLEMENTATION OF THE FUNCTION FROM Q1a
+from q1 import genome2features
+
+characteristics = ["intelligence", "beauty", "strength", "speed"]
+superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+gene_zones = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+
+
+def rank(wug):
+    # TODO: Write your function here
+    # for g_s, sex in wug:
+    bool_numbers = genome2features(wug[0]).count(True)
+    return bool_numbers
+
+if __name__ == '__main__':
+    genome_sample2 = [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0]  # [False, False, True, False]
+    genome_sample3 = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]  # [True, True, True, False]
+    genome_sample4 = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1]  # [False, False, True, True]
+    r = rank((genome_sample2, 'M'))
+    print(r)
+    r = rank((genome_sample3, 'M'))
+    print(r)
+
 ```
 
 
