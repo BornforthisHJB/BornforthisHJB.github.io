@@ -813,6 +813,52 @@ def proliferate(population, limit=64):
 
 ### Q2a Answer
 
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/21 20:34
+# @Author  : AI悦创
+# @FileName: lo.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/21 16:53
+# @Author  : AI悦创
+# @FileName: q5.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+
+
+def proliferate(pop_lst, limit=64):
+    result_lst = []
+    new_pop = pop_lst[0].copy()
+    word = pop_lst[1]
+    for index, item in enumerate(new_pop):
+        loop = new_pop.copy()
+        # print("loop:", loop)
+        if item == 1:
+            loop[index] = 0
+            tup = (loop, word)
+            result_lst.append(tup)
+        elif item == 0:
+            loop[index] = 1
+            tup = (loop, word)
+            result_lst.append(tup)
+    # return result_lst
+    # print(len(result_lst))
+    result_lst.insert(0, pop_lst)
+    pop_lst[0][:] = result_lst
+
+
+if __name__ == '__main__':
+    wug1 = ([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1], 'F')
+    wug2 = ([0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1], 'M')
+    wug3 = ([1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1], 'F')
+    proliferate(wug1)
+    # print(population)
+    print(wug1)
+
+```
+
 
 
 
