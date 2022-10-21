@@ -14,6 +14,6 @@ git add -A
 git commit -m 'deploy'
 git push -f git@121.89.218.11:/home/www/website/ts.git main
 git push -f website main
-yarn run docs:dev
+# yarn run docs:dev
 
 cd -
