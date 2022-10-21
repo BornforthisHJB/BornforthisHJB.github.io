@@ -1774,6 +1774,225 @@ if __name__ == '__main__':
 
 :::
 
+::: details 最终答案
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/18 12:59
+# @Author  : AI悦创
+# @FileName: OP1.py
+# @Software: PyCharm
+# OP1@Blog    ：https://bornforthis.cn/
+# op1 公式1： ((MX - OX)^2 + (MY - OY)^2 + (MZ - OZ)^2) ** 0.5
+# op2 公式2： ((En)) ** 0.5
+NONE_START = False
+KEYS = set()
+
+def read_csv(csvfile):
+    global KEYS
+    try:
+        with open(csvfile, "rt") as f:
+            # print(f.readlines())
+            content_lst = f.readlines()[1:]
+            for text in content_lst:
+                KEYS.add(text.replace("\n", "").split(",")[0])
+            return content_lst
+            # print(content_lst)
+    except FileNotFoundError as e:
+        # print(e)
+        return e
+
+
+def op1_parse(content_lst, subid):
+    """
+    ((MX - OX)^2 + (MY - OY)^2 + (MZ - OZ)^2) ** 0.5
+    :param content_lst:
+    :return: op1
+    """
+
+    judge_set_keys = {'FT', 'CH', 'AL', 'EX', 'EN', 'SBAL'}
+    result_dict = {}
+    for detail_content in content_lst:
+        detail_lst = detail_content.replace("\n", "").split(",")
+        # print(detail_lst)
+        if subid in detail_lst:
+            ox_value, oy_value, oz_value, mx_value, my_value, mz_value = detail_lst[2:]
+            result_dict[detail_lst[1].upper()] = (
+                                                         (float(mx_value) - float(ox_value)) ** 2 +
+                                                         (float(my_value) - float(oy_value)) ** 2 +
+                                                         (float(mz_value) - float(oz_value)) ** 2
+                                                 ) ** 0.5
+            # print(dict(result_dict))
+    if result_dict["PRN"] != 0:
+        return None
+    else:
+        del result_dict["PRN"]
+    difference_set_keys = judge_set_keys - set(result_dict)
+    if difference_set_keys:
+        global NONE_START
+        NONE_START = True
+        return None
+    return result_dict
+
+
+def op2_parse(contet_lst, subid):
+    result_list = []
+    for detail_content in contet_lst:
+        # print(detail_content)
+        content_lst = detail_content.replace("\n", "").split(",")
+        result_list.append(content_lst)
+
+    data_list = []
+    operation_lst = []
+    for content in result_list:
+        # print(content)
+        if subid == content[0]:
+            data_list.append(("SubID", content[0]))
+            data_list.append((content[1].upper(), content[2:]))
+    judge_dict = dict(data_list)
+    # print(judge_dict)
+    judge_set_keys = {'FT', 'CH', 'AL', 'EX', 'EN', 'SBAL'}
+    if (set(judge_dict) & judge_set_keys) == judge_set_keys:
+        result_dict = {}
+        EN_LIST = list(map(float, judge_dict["EN"]))[:3]
+        EX_LIST = list(map(float, judge_dict["EX"]))[:3]
+        AL_LIST = list(map(float, judge_dict["AL"]))[:3]
+        FT_LIST = list(map(float, judge_dict["FT"]))[:3]
+        SBAL_LIST = list(map(float, judge_dict["SBAL"]))[:3]
+        CH_LIST = list(map(float, judge_dict["CH"]))[:3]
+        f_lambda = lambda x: (x[0] - x[1]) ** 2
+        result_dict["EXEN"] = sum([f_lambda(detail) for detail in zip(EN_LIST, EX_LIST)]) ** 0.5
+        result_dict["ENAL"] = sum([f_lambda(detail) for detail in zip(AL_LIST, EN_LIST)]) ** 0.5
+        result_dict["ALEX"] = sum([f_lambda(detail) for detail in zip(EX_LIST, AL_LIST)]) ** 0.5
+        result_dict["FTSBAL"] = sum([f_lambda(detail) for detail in zip(SBAL_LIST, FT_LIST)]) ** 0.5
+        result_dict["SBALCH"] = sum([f_lambda(detail) for detail in zip(CH_LIST, SBAL_LIST)]) ** 0.5
+        result_dict["CHFT"] = sum([f_lambda(detail) for detail in zip(FT_LIST, CH_LIST)]) ** 0.5
+        # print(result_dict)
+        return result_dict
+    else:
+        return None
+
+
+def op3_parse(content_lst):
+    keys_list = set()
+    result_list_data = []
+    for detail_content in content_lst:
+        result_dict = {}
+        # middle_lst = []
+        detail_lst = detail_content.replace("\n", "").split(",")
+        ox_value, oy_value, oz_value, mx_value, my_value, mz_value = detail_lst[2:]
+        result_dict["ID"] = detail_lst[0]
+        keys_list.add(detail_lst[0])
+        value = (
+                        (float(mx_value) - float(ox_value)) ** 2 +
+                        (float(my_value) - float(oy_value)) ** 2 +
+                        (float(mz_value) - float(oz_value)) ** 2
+                ) ** 0.5
+
+        result_dict[detail_lst[1].upper()] = float("%.4f" % value)
+        # print(result_dict)
+        result_list_data.append(result_dict)
+    # print(result_list_data)
+    # result_list_sort = []
+    middle_dict = {}
+    for key in keys_list:
+        middle_list = []
+        for detail_d in result_list_data:
+            if key == detail_d["ID"]:
+                middle_list.append(list(detail_d.values())[1])
+        # print(f"key:>>>{key}", middle_list)
+        middle_dict[key] = round(sum(middle_list), 4)
+    # print(middle_dict)
+    sorted_by_value = sorted(middle_dict.items(), key=lambda x: x[1])[:5]
+    # print(sorted_by_value)
+    return sorted_by_value
+
+
+def op4_parse(op2):
+    # print("ssss", op2)
+    if None in op2:
+        return None
+    v1 = list(op2[0].values())
+    v2 = list(op2[1].values())
+    total = 0
+    total_v1 = 0
+    total_v2 = 0
+    for v1, v2 in zip(v1, v2):
+        # print(v1, v2)
+        total += v1 * v2
+        total_v1 += v1 ** 2
+        total_v2 += v2 ** 2
+    # print(total)
+    r = round(total / ((total_v1 ** 0.5) * (total_v2 ** 0.5)), 4)
+    # print(r)
+    return r
+
+
+def main(csvfile, SubjIDs: list):
+    content_lst = read_csv(csvfile)
+    # print(content_lst)
+    string = "[Errno 2] No such file or directory: '{path}'".format(path=csvfile)
+    # print(string)
+    # print(str(content_lst) != string)
+    # ------------- OP Code -------------
+    for id in SubjIDs:
+        if id not in KEYS:
+            return [None, None, None, None]
+    if str(content_lst) != string:
+        # print(content_lst)
+        op1 = []
+        op2 = []
+        for subid in SubjIDs:
+            # op1
+            r = op1_parse(content_lst, subid)
+            op1.append(r)
+            # op2
+            r = op2_parse(content_lst, subid)
+            op2.append(r)
+        # op3
+        op3 = op3_parse(content_lst)
+        # print(op3)
+        op4 = op4_parse(op2)
+        # print("op1:>>>>", op1)
+        # ------------- OP Code -------------
+        # if NONE_START:
+        #     return [None, None, None, None]
+        # else:
+        return [op1, op2, op3, op4]
+    else:
+        return [None, None, None, None]
+
+
+def title(path):
+    content_lst = read_csv(path)
+    r = []
+    for d in content_lst[1:]:
+        n_d = d.split(",")[0]
+        r.append(n_d)
+    # print(r)
+    return r
+
+
+if __name__ == '__main__':
+    path = "data/SampleData.csv"  # 路径
+    # op1, op2, op3, op4 = main(path, ['B7033', 'C1283', 'I0951'])
+    op1, op2, op3, op4 = main(path, ['I0951', 'I0951'])
+    # op1, op2, op3, op4 = main(path, ['B7033', 'C1283'])
+    # main(path, ['B7033'])
+    # print(op1, op2, op3, op4)
+    print(op1)
+    print(op2)
+    print(op3)
+    print(op4)
+
+    # lst = title(path)
+    # main(path, ['B7033', 'C1283'])
+    # main(path, lst)
+
+```
+
+:::
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
