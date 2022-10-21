@@ -559,7 +559,7 @@ def insert_ranked(population, new_wug, limit=64):
     # TODO: Write your function here
 ```
 
-### Q3 Answer
+### Q2a Answer
 
 ```python
 # -*- coding: utf-8 -*-
@@ -616,6 +616,144 @@ if __name__ == '__main__':
     insert_ranked(population, (genome_sample3, 'F'), 4)
     print([rank(wug) for wug in population])
 
+```
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/21 13:49
+# @Author  : AI悦创
+# @FileName: q4.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+
+
+# DO NOT DELETE/EDIT THIS LINE OF CODE, AS IT IS USED TO PROVIDE ACCESS TO
+# WORKING IMPLEMENTATIONS OF THE FUNCTIONS FROM Q1
+from q1 import genome2features
+from q3 import rank
+
+characteristics = ["intelligence", "beauty", "strength", "speed"]
+superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+gene_zones = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+
+genome_sample1 = [0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0]  # [False, False, False, False]
+genome_sample2 = [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0]  # [False, False, True, False]
+genome_sample3 = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]  # [True, True, True, False]
+genome_sample4 = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1]  # [False, False, True, True]
+
+
+def insert_ranked(population1: list, new_wug, limit=64):
+    # TODO: Write your function here
+    global population
+    population1.append(new_wug)
+    # new_p = population + [new_wug]
+    data_list = []
+    for p_c in population1:
+        data_list.append((p_c, rank(p_c)))
+        # data_list.append((p_c, genome2features(p_c[0]).count(True)))
+    sorted_by_value = sorted(data_list, key=lambda x: x[1], reverse=True)
+    # print("sorted_by_value:>>>>", sorted_by_value)
+    if len(sorted_by_value) <= limit:
+        middle_list = []
+        for s_t in sorted_by_value:
+            middle_list.append(s_t[0])
+        # print("middle_list:>>>", middle_list)
+        population = middle_list
+        # middle_list.sort(reverse=False)
+    else:
+        middle_list = []
+        # sorted_by_value.sort(reverse=True)
+        for s_t in sorted_by_value[:limit]:
+            middle_list.append(s_t[0])
+        # middle_list.sort(reverse=False)
+        population = middle_list
+
+
+if __name__ == '__main__':
+    population = [(genome_sample2, 'F'), (genome_sample1, 'M')]
+    print("1:>>>>", population)
+    print([rank(wug) for wug in population])
+    insert_ranked(population, (genome_sample1, 'M'), 4)
+    print("2:>>>>", population)
+    print([rank(wug) for wug in population])
+    insert_ranked(population, (genome_sample3, 'F'), 4)
+    print("3:>>>>", population)
+    print([rank(wug) for wug in population])
+    insert_ranked(population, (genome_sample2, 'F'), 4)
+    print("4:>>>>", population)
+    print([rank(wug) for wug in population])
+    insert_ranked(population, (genome_sample1, 'M'), 4)
+    print("5:>>>>", population)
+    print([rank(wug) for wug in population])
+```
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/21 13:49
+# @Author  : AI悦创
+# @FileName: q4.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+
+
+# DO NOT DELETE/EDIT THIS LINE OF CODE, AS IT IS USED TO PROVIDE ACCESS TO
+# WORKING IMPLEMENTATIONS OF THE FUNCTIONS FROM Q1
+from q1 import genome2features
+from q3 import rank
+
+characteristics = ["intelligence", "beauty", "strength", "speed"]
+superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+gene_zones = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+
+genome_sample1 = [0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0]  # [False, False, False, False]
+genome_sample2 = [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0]  # [False, False, True, False]
+genome_sample3 = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]  # [True, True, True, False]
+genome_sample4 = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1]  # [False, False, True, True]
+
+
+def insert_ranked(population1: list, new_wug, limit=64):
+    # TODO: Write your function here
+    global population
+    population1.append(new_wug)
+    # new_p = population + [new_wug]
+    data_list = []
+    for p_c in population1:
+        data_list.append((p_c, rank(p_c)))
+        # data_list.append((p_c, genome2features(p_c[0]).count(True)))
+    sorted_by_value = sorted(data_list, key=lambda x: x[1], reverse=True)
+    # print("sorted_by_value:>>>>", sorted_by_value)
+    if len(sorted_by_value) <= limit:
+        middle_list = []
+        for s_t in sorted_by_value:
+            middle_list.append(s_t[0])
+        # print("middle_list:>>>", middle_list)
+        population = middle_list
+        # middle_list.sort(reverse=False)
+    else:
+        middle_list = []
+        # sorted_by_value.sort(reverse=True)
+        for s_t in sorted_by_value[:limit]:
+            middle_list.append(s_t[0])
+        # middle_list.sort(reverse=False)
+        population = middle_list
+
+
+if __name__ == '__main__':
+    population = [(genome_sample2, 'F'), (genome_sample1, 'M')]
+    print("1:>>>>", population)
+    print([rank(wug) for wug in population])
+    insert_ranked(population, (genome_sample1, 'M'), 4)
+    print("2:>>>>", population)
+    print([rank(wug) for wug in population])
+    insert_ranked(population, (genome_sample3, 'F'), 4)
+    print("3:>>>>", population)
+    print([rank(wug) for wug in population])
+    insert_ranked(population, (genome_sample2, 'F'), 4)
+    print("4:>>>>", population)
+    print([rank(wug) for wug in population])
+    insert_ranked(population, (genome_sample1, 'M'), 4)
+    print("5:>>>>", population)
+    print([rank(wug) for wug in population])
 ```
 
 
