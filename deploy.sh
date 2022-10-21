@@ -5,7 +5,7 @@ git add .
 git commit . -m "update"
 git push -u origin main
 # 生成静态文件
-yarn run docs:build
+# yarn run docs:build
 # 进入生成的文件夹
 # cd docs/.vuepress/dist
 
