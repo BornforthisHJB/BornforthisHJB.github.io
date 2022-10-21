@@ -465,13 +465,158 @@ if __name__ == '__main__':
 
 ```
 
+## Question 2a: Implement Ranked Wug Population
+
+>   问题2a:实施Wug人口排名
+
+You will write a function called insert_ranked which adds an element to a list keeping the list
+
+>   您将编写一个名为 insert_ranking 的函数，该函数将一个元素添加到保持列表的列表中
+
+-   sorted according to the rank (in a descending order)
+
+>   按等级(按降序)排序
+
+-   not exceeding a predefined maximum number of elements
+
+>   不超过预定义的元素的最大数量
+
+-   preserving chronological order of elements whenever a rank tie occurs
+
+>   每当出现排名相同的情况时，保持元素的时间顺序
+
+`def insert_ranked(population, new_wug, limit=64)`
+
+-   Input: a list to insert into; a new wug; (opt.; default value = 64) the maximum number of elements in the list. You may assume that the input population is already sorted correctly.
+
+>   输入:要插入的列表;一个新的wug;(选择。默认值= 64)列表中元素的最大数量。您可以假设输入总体已经正确排序。
+
+-   Returns: nothing, but modifies the list
+
+>   返回:什么都没有，但是修改列表
+
+Below are some sample function calls:
+
+>   下面是一些函数调用示例:
+
+```python
+>>> characteristics = ["intelligence", "beauty", "strength", "speed"]
+>>> superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+>>> gene_zones   =   [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+>>> genome_sample1 = [0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0]  #[False, False, False, False]
+>>> genome_sample2 = [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0]  #[False, False, True, False]
+>>> genome_sample3 = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]  #[True, True, True, False]
+>>> genome_sample4 = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1]  #[False, False, True, True]
+
+# Step1. Start with initial population, example a Female-rank1 and a Male-rank0
+>>> population = [ (genome_sample2, 'F'), (genome_sample1, 'M') ]
+>>> [rank(wug) for wug in population]
+[1, 0]
+
+# Step2. Insert a wug, Male-Rank0
+>>> insert_ranked(population, (genome_sample1, 'M'), 4)
+>>> [rank(wug) for wug in population]
+[1, 0, 0]
+# the new Male-Rank0 wug is inserted after the original Male-rank0 wug based on chronological order if there is a tie
+
+# Step3. Insert another wug, Female-Rank3
+>>> insert_ranked(population, (genome_sample3, 'F'), 4)
+>>> [rank(wug) for wug in population]
+[3, 1, 0, 0]
+# the new Female-Rank3 wug is inserted at top list based on sort order
+
+# after the 2 inserts (Step2 and Step3), the population list is now equivalent to: 
+# population = [ (genome_sample3, 'F'), (genome_sample2, 'F'), (genome_sample1, 'M'), (genome_sample1, 'M') ]
+
+# Step4. Insert another wug, Female-Rank1
+>>> insert_ranked(population, (genome_sample2, 'F'), 4)
+>>> [rank(wug) for wug in population]
+[3, 1, 1, 0]
+# the new Female-Rank1 wug is inserted after the original Female-Rank1 (from Step1) based on chronological order 
+# if there is a tie and sort order, and thus pushing the last Male-rank0 out because of list size limit
+
+# Step5. Insert another wug, Male-Rank0
+>>> insert_ranked(population, (genome_sample1, 'M'), 4)
+>>> [rank(wug) for wug in population]
+[3, 1, 1, 0]
+# Nothing has been inserted due to a low rank of new wug (
+```
+
+Working implementations of the genome2features and rank functions have been made available, you may make calls to these functions if you wish.
+
+>   genome2features和rank函数的工作实现已经可用，如果你愿意，你可以调用这些函数。
+
+```python
+# DO NOT DELETE/EDIT THIS LINE OF CODE, AS IT IS USED TO PROVIDE ACCESS TO
+# WORKING IMPLEMENTATIONS OF THE FUNCTIONS FROM Q1
+from hidden import genome2features, rank
+
+characteristics = ["intelligence", "beauty", "strength", "speed"]
+superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+gene_zones      = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+
+def insert_ranked(population, new_wug, limit=64):
+    # TODO: Write your function here
+```
+
+### Q3 Answer
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/21 13:49
+# @Author  : AI悦创
+# @FileName: q4.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
 
 
+# DO NOT DELETE/EDIT THIS LINE OF CODE, AS IT IS USED TO PROVIDE ACCESS TO
+# WORKING IMPLEMENTATIONS OF THE FUNCTIONS FROM Q1
+from q1 import genome2features
+from q3 import rank
+
+characteristics = ["intelligence", "beauty", "strength", "speed"]
+superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+gene_zones = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+
+genome_sample1 = [0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0]  # [False, False, False, False]
+genome_sample2 = [1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0]  # [False, False, True, False]
+genome_sample3 = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]  # [True, True, True, False]
+genome_sample4 = [1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1]  # [False, False, True, True]
 
 
+def insert_ranked(population: list, new_wug, limit=64):
+    # TODO: Write your function here
+    population.append(new_wug)
+    data_list = []
+    for p_c in population:
+        data_list.append((p_c, rank(p_c)))
+    sorted_by_value = sorted(data_list, key=lambda x: x[1], reverse=True)
+    # print(sorted_by_value)
+    if len(sorted_by_value) <= limit:
+        middle_list = []
+        for s_t in sorted_by_value:
+            middle_list.append(s_t[0])
+        population = middle_list
+        # middle_list.sort(reverse=False)
+    else:
+        middle_list = []
+        # sorted_by_value.sort(reverse=True)
+        for s_t in sorted_by_value[:limit]:
+            middle_list.append(s_t[0])
+        # middle_list.sort(reverse=False)
+        population = middle_list
 
 
+if __name__ == '__main__':
+    population = [(genome_sample2, 'F'), (genome_sample1, 'M')]
+    print([rank(wug) for wug in population])
+    insert_ranked(population, (genome_sample1, 'M'), 4)
+    print([rank(wug) for wug in population])
+    insert_ranked(population, (genome_sample3, 'F'), 4)
+    print([rank(wug) for wug in population])
 
+```
 
 
 
