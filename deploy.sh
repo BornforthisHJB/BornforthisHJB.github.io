@@ -12,6 +12,7 @@ cd docs/.vuepress/dist
 git init
 git add -A
 git commit -m 'deploy'
+git reflog master
 git push -f git@121.89.218.11:/home/www/website/ts.git master
 # git push -f website main
 # yarn run docs:dev
