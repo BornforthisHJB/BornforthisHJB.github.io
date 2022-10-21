@@ -279,6 +279,7 @@ export const zhSidebar = sidebar({
 		},
 		{
 			text: "数据分析45讲",
+			collapsable: true,
 			children: [
 				{ 
 					text: "Introduction (Lecture 1)",
