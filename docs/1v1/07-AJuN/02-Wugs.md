@@ -756,11 +756,62 @@ if __name__ == '__main__':
     print([rank(wug) for wug in population])
 ```
 
+## Question 2b: Implement Wug Cloning with Gene Mutations
 
+>   问题2b:用基因突变实现Wug克隆
 
+You will write a function called proliferate which clones 16 wugs from each existing wug in a population. Each cloned wug has exactly one gene altered from its cloned value, at different positions across the mentioned 16 wugs. Use previously developed insert_ranked function to put the offsprings to the population, accounting for the population size limit and ranking requirements.
 
+>   您将编写一个名为 proliferate 的函数，它从种群中的每个现有 wug 中克隆16个wug。每个克隆的wug都有一个基因从其克隆值改变，在上述16个wug的不同位置。使用以前开发的insert_ranking函数将后代放到种群中，考虑种群大小限制和排序要求。
 
+Note that the function can be called for both male and female wugs.
 
+>   注意，对于男性wugs和女性wugs都可以调用该函数。
+
+`def proliferate(population, limit = 64)`
+
+-   Input: a population, i.e. a list of (genome, sex) tuples and the maximum size of the population
+
+>   输入:种群，即(基因组，性别)元组列表和种群的最大大小
+
+-   Returns: nothing, but modifies the list
+
+>   返回:什么都没有，但是修改列表
+
+Below are some sample function calls:
+
+>   下面是一些函数调用示例:
+
+```python
+>>> characteristics = ["intelligence", "beauty", "strength", "speed"]
+>>> superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+>>> gene_zones      =   [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+>>> wug1 = ([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1], 'F')
+>>> wug2 = ([0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1], 'M')
+>>> wug3 = ([1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1], 'F')
+
+>>> population1 = [wug1]
+>>> proliferate(population1)
+>>> population1
+[([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1], 'F'), ([1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1], 'F'), ([0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1], 'F'), ([0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1], 'F'), ([0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1], 'F'), ([0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1], 'F'), ([0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1], 'F'), ([0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1], 'F'), ([0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1], 'F'), ([0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1], 'F'), ([0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1], 'F'), ([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1], 'F'), ([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1], 'F'), ([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1], 'F'), ([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1], 'F'), ([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1], 'F'), ([0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0], 'F')]
+>>> report_population(population1)
+[((False, False, False, False, 'F'), 17)]
+```
+
+```python
+# DO NOT DELETE/EDIT THIS LINE OF CODE, AS IT IS USED TO PROVIDE ACCESS TO
+# WORKING IMPLEMENTATIONS OF THE FUNCTIONS FROM Q1 and Q2a
+from hidden import genome2features, report_population, rank, insert_ranked  
+
+characteristics = ["intelligence", "beauty", "strength", "speed"]
+superwug_genome = [1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+gene_zones      = [2, 1, 2, 3, 3, 1, 3, 3, 0, 0, 2, 2, 0, 1, 0, 1]
+
+def proliferate(population, limit=64):
+    # TODO: Write your function here
+```
+
+### Q2a Answer
 
 
 
