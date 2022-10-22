@@ -158,6 +158,13 @@ export const zhSidebar = sidebar({
 				"chapter01/03",
 				"chapter01/04",
 				"chapter01/05",
+				"chapter01/06",
+				"chapter01/07",
+				"chapter01/08",
+				"chapter01/09",
+				"chapter01/10",
+				"chapter01/11",
+				"chapter01/12",
 			],
 		},
 		{
