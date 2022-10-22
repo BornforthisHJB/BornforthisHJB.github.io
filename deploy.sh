@@ -5,7 +5,7 @@ git add .
 git commit . -m "update"
 git push -u origin main
 
-git push -u gitee "master"
+git push -u gitee main
 
 # yarn run docs:build
 # cd docs/.vuepress/dist
