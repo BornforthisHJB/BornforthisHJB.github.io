@@ -111,7 +111,8 @@ export const zhSidebar = sidebar({
 			text: "Java",
 			icon: "java",
 			children: [
-				"01-Coursework-1-Property-Viewer"
+				"01-Coursework-1-Property-Viewer",
+				"01-Coursework-1-Property-Viewer-zh",
 			]
 		}
 	],
