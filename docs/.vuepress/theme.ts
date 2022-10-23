@@ -163,17 +163,17 @@ export default hopeTheme({
        pageview: true, // 浏览量统计
        copyright: false,
        dark: "auto",
-       emoji: [
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
-       ],
+      //  emoji: [
+      //    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq',
+      //    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+      //    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili',
+      //    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
+      //    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+      //    'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji',
+      //  ],
     },
     components: [
-      "Badge",
+      // "Badge",
       "PDF",
       "YouTube",
       "VideoPlayer",
