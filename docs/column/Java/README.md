@@ -1,7 +1,7 @@
 ---
 blog: false
 home: true
-icon: home
+icon: java
 title: Java 体系课
 heroImage: /ColumnImages/Java/2022_JAVA_1920.jpg
 heroText: Java 体系课
