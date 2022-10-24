@@ -7,7 +7,7 @@ heroText: AI悦创学习网站分享
 tagline: 阅读网站\资源网站，与你分享~
 actions:
   - text: 开始学习 💡
-    link: /learning_web/01
+    link: /learning_web/
 
   - text: 专栏 📚
     link: https://bornforthis.cn/column.html
