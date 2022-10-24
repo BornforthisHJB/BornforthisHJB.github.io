@@ -16,13 +16,13 @@ export default hopeTheme({
 
   logo: "/img_home/logo_min.png",
 
-  repo: "BornforthisHJB/BornforthisHJB.github.io",
+  // repo: "BornforthisHJB/BornforthisHJB.github.io",
   // repo: "AndersonHJB/AndersonHJB.github.io",
-  // repo: "AndersonHJB?tab=repositories",
+  repo: "AndersonHJB?tab=repositories",
   // editLink: false,
   // lastUpdated: true,
 
-  docsDir: "docs",
+  docsDir: "docss",
 
   // darkmode: "enable", // 强制深色模式
   // darkmode: "switch",
