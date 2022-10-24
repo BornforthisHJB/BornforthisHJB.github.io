@@ -48,7 +48,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | 02   | **httrack**   | [https://www.httrack.com/page/2/en/index.html](https://www.httrack.com/page/2/en/index.html) |                    |
 | 03   | **cdnpkg**    | [https://www.cdnpkg.com/](https://www.cdnpkg.com/)           |                    |
 | 04   | **okpy**      | [https://okpy.org/](https://okpy.org/)<br />[https://github.com/okpy/ok](https://github.com/okpy/ok) | 伯克利 Python 判题 |
-|      |               |                                                              |                    |
+| 05   | **geogebra**  | [https://www.geogebra.org/calculator](https://www.geogebra.org/calculator) | 在线数学计算       |
 
 ## 资源网站
 
