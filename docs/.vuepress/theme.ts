@@ -19,10 +19,10 @@ export default hopeTheme({
   // repo: "BornforthisHJB/BornforthisHJB.github.io",
   // repo: "AndersonHJB/AndersonHJB.github.io",
   repo: "AndersonHJB?tab=repositories",
-  // editLink: false,
+  editLink: false,
   // lastUpdated: true,
 
-  docsDir: "docss",
+  // docsDir: "docss",
 
   // darkmode: "enable", // 强制深色模式
   // darkmode: "switch",
