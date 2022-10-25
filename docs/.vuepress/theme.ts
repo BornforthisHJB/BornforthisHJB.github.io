@@ -99,7 +99,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/1v1/07-AJuN/": "123123",
+      "/1v1/07-AJuN/": "aiyclosshwhwhwshxw",
       "/1v1/03-Dannie/01.html": "123123",
       "/1v1/01-Thomas-hw-note/": ["123123"],
       "/column/python60/": "123123a",
