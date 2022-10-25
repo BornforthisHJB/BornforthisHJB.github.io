@@ -212,6 +212,7 @@ export const zhSidebar = sidebar({
 			collapsable: true,
 			children: [
 				"01-Variable",
+				{ text: "02-初识数据类型", icon: "python", link: "13-Python01"}
 
 			]
 		}
