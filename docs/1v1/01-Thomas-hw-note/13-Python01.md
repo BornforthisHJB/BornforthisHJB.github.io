@@ -28,6 +28,8 @@ toc: true
 
 ## 1. 作业讲解
 
+题目链接：[https://bornforthis.cn/column/py/basequestion/special_variabl.html](https://bornforthis.cn/column/py/basequestion/special_variabl.html)
+
 
 
 
