@@ -50,11 +50,36 @@ Austin, Jaden = Jaden, Austin
 print(Austin, Jaden)
 ```
 
+## 变量的命名规则
+
+```python
+Name = "aiyc"
+name = "look"
+print(Name)
+
+user_name = "aiyc"
+
+# print(help("keywords"))
+# as = "aiyc"
+# As = "aiyc"
+
+# print = "aiyc"
+# print(print)
+# 01username = "aiyc"
+u1s1e1r121name1212122121 = "aiyc"
+```
 
 
 
+![image-20221025205310126](./13-Python01.assets/image-20221025205310126.png)
 
+## 练习
 
+![image-20221025205509785](./13-Python01.assets/image-20221025205509785.png)
+
+## 作业
+
+![image-20221025205624012](./13-Python01.assets/image-20221025205624012.png)
 
 
 ## 课后反馈
