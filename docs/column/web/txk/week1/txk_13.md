@@ -1,6 +1,6 @@
 ---
 title: 1-1 课程简介
-date: 2022-10-09 10:47:34
+date: 2022-10-25 10:47:34
 author: AI悦创
 isOriginal: true
 category: web 专栏
@@ -18,7 +18,7 @@ sidebarIcon: true
 headerDepth: 5
 comment: true
 lastUpdated: true
-editLink: true
+editLink: false
 prev: txk_12.md
 next: txk_14.md
 backToTop: true

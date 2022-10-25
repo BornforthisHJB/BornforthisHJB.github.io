@@ -18,7 +18,7 @@ sidebarIcon: true
 headerDepth: 5
 comment: true
 lastUpdated: true
-editLink: true
+editLink: false
 prev: txk_06.md
 next: txk_08.md
 backToTop: true
