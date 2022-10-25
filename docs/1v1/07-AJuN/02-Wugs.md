@@ -28,7 +28,7 @@ lastUpdated: true
 editLink: false
 backToTop: true
 toc: true
-footer: '长期招收编程一对一学员!微信:Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>',
+footer: 长期招收编程一对一学员!微信:Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>
 ---
 
 ![image-20221020131355774](./02-Wugs.assets/image-20221020131355774.png)
