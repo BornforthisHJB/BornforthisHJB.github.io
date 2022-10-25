@@ -30,13 +30,25 @@ toc: true
 
 题目链接：[https://bornforthis.cn/column/py/basequestion/special_variabl.html](https://bornforthis.cn/column/py/basequestion/special_variabl.html)
 
+![image-20221025200943729](./13-Python01.assets/image-20221025200943729.png)
+
+![image-20221025201904609](./13-Python01.assets/image-20221025201904609.png)
 
 
 
+## 2. 同时给多个变量赋予相同的值
+
+![image-20221025202105339](./13-Python01.assets/image-20221025202105339.png)
 
 
 
+```python
+Austin = "可乐"
+Jaden = "果汁"
 
+Austin, Jaden = Jaden, Austin
+print(Austin, Jaden)
+```
 
 
 
