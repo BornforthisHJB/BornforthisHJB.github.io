@@ -19,7 +19,7 @@ export default hopeTheme({
   // repo: "BornforthisHJB/BornforthisHJB.github.io",
   // repo: "AndersonHJB/AndersonHJB.github.io",
   repo: "AndersonHJB?tab=repositories",
-  editLink: false,
+  // editLink: false,
   // lastUpdated: true,
 
   // docsDir: "docss",
@@ -54,7 +54,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "Default footer",
+      footer: '长期招收编程一对一学员!微信:Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>',
 
       displayFooter: true,
 
@@ -65,36 +65,12 @@ export default hopeTheme({
         intro: "/intro.md",
         articlePerPage: 6,
       },
+      editLink: false,
 
       // metaLocales: {
       //   editLink: "Edit this page on GitHub",
       // },
     },
-
-    /**
-     * Chinese locale config
-     */
-    // "/zh/": {
-    //   // navbar
-    //   navbar: zhNavbar,
-
-    //   // sidebar
-    //   sidebar: zhSidebar,
-
-    //   footer: "默认页脚",
-
-    //   displayFooter: true,
-
-    //   blog: {
-    //     description: "一个前端开发者",
-    //     intro: "/zh/intro.html",
-    //   },
-
-    //   // page meta
-    //   metaLocales: {
-    //     editLink: "在 GitHub 上编辑此页",
-    //   },
-    // },
   },
 
   encrypt: {
