@@ -310,6 +310,7 @@ export const zhSidebar = sidebar({
 					text: "Module 2: Data Analysis Algorithms (20 lectures)",
 					children: [
 						"Data-analysis-practice-45-lectures/Phase-three/17",
+						"Data-analysis-practice-45-lectures/Phase-three/18",
 					]
 				}
 				
