@@ -63,6 +63,113 @@ toc: true
 4.   View Property on Map 这个按钮是坏的，因为它只在地图上显示 Bush House。修复此功能，让它在地图上显示属性的位置
 5.   添加一个新的 Statistic 按钮在程序上，点开后将打开一个新窗口，显示来自无语挑战的两个新 method 的统计信息
 
+## PropertyViewer.java
+
+```python
+import java.awt.Desktop;
+import java.net.URI;
+import java.net.URISyntaxException;
+
+/**
+ * This project implements a simple application. Properties from a fixed
+ * file can be displayed.
+ *
+ * @author Michael Kölling and Josh Murphy
+ * @version 1.0
+ */
+public class PropertyViewer {
+    private PropertyViewerGUI gui;     // the Graphical User Interface
+    private Portfolio portfolio;
+    private Property property; // 引用
+    static int row = 0;
+    static int view_count = 1;
+
+    /**
+     * Create a PropertyViewer and display its GUI on screen.
+     */
+    public PropertyViewer() {
+        gui = new PropertyViewerGUI(this);
+        portfolio = new Portfolio("airbnb-london.csv");
+        property = portfolio.getProperty(row);
+        gui.showID(property);
+        gui.showProperty(property);
+        gui.showFavourite(property);
+    }
+
+    /**
+     *
+     */
+    public void nextProperty() {
+        view_count = view_count + 1;
+        row = row + 1;
+        if (row >= portfolio.numberOfProperties()) {
+            row = 0;
+        }
+        property = portfolio.getProperty(row);
+        gui.showID(property);
+        gui.showProperty(property);
+        gui.showFavourite(property);
+    }
+
+    /**
+     *
+     */
+    public void previousProperty() {
+        view_count = view_count + 1;
+        row = row - 1;
+        if (row < 0) {
+            row = portfolio.numberOfProperties() - 1;
+        }
+        property = portfolio.getProperty(row);
+        gui.showID(property);
+        gui.showProperty(property);
+        gui.showFavourite(property);
+
+    }
+
+    /**
+     *
+     */
+    public void toggleFavourite() {
+        property = portfolio.getProperty(row);  // index 获取当前数据，index
+        property.toggleFavourite(); // 标记喜欢的，更新喜欢的
+        gui.showFavourite(property); // gui 显示出来
+    }
+
+
+    //----- methods for challenge tasks -----
+
+    /**
+     * This method opens the system's default internet browser
+     * The Google maps page should show the current properties location on the map.
+     */
+    public void viewMap() throws Exception {
+        double latitude;
+        double longitude;
+        latitude = property.getLatitude();
+        longitude = property.getLongitude();
+
+        URI uri = new URI("https://www.google.com/maps/place/" + latitude + "," + longitude);
+        java.awt.Desktop.getDesktop().browse(uri);
+    }
+
+    /**
+     *
+     */
+    public int getNumberOfPropertiesViewed() {
+        return 0;
+    }
+
+    /**
+     *
+     */
+    public int averagePropertyPrice() {
+        return 0;
+    }
+}
+
+```
+
 
 
 
