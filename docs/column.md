@@ -37,15 +37,15 @@ features:
     details: 本人平时参考的网站，逐步更新中~
     link: /learning_web
 
-  - title: 编程初学者入门训练
+  - title: 人人都能学会的编程入门课
     icon: code
-    details: 该专题为编程入门级别，涉及编程基础语法，基本结构等。
+    details: 敲出人生第一段代码
     link: /column/practice_code
 
   - title: 程序员数学基础课
     icon: geometry
     details: 数学基础的好坏，会直接决定一个程序员的发展潜力
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/interface/darkmode.html
+    link: 
 
   - title: 私教学员回放
     icon: lock

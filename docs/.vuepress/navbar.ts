@@ -32,6 +32,7 @@ export const zhNavbar = navbar([
           { text: "AI悦创·1v1", icon: "1v1-4", link: "/1v1/"},
           { text: "摄影入门课", icon: "cameraadd", link: "/column/摄影入门课/"},
           { text: "Python核心技术与实战", icon: "python", link: "/column/Python-core-technology-and-practice/01"},
+          { text: "人工智能基础课", icon: "centos", link: "/column/Basic-course-of-artificial-intelligence"},
         ]
       },
       { 

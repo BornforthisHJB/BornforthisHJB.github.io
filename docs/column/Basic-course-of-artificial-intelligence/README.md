@@ -3,10 +3,10 @@ blog: false
 home: true
 icon: home
 title: 人工智能基础课
-heroImage: /ColumnImages/pyauto/pyauto.jpg
-heroText: Python 办公自动化
+heroImage: /ColumnImages/AI/ai_blog1.jpg
+heroText: 人工智能基础课
 heroFullScreen: true
-tagline: 通过 Python 来实现自动化办公，减少手动操作，解放人力。
+tagline: 人工智能成了新时代的必修课
 actions:
   - text: 开始学习 💡
     link: /column/pyauto/auto_base01
