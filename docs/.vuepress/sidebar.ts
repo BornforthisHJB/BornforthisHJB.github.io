@@ -8,6 +8,13 @@ export const zhSidebar = sidebar({
 			children: [
 				"detail/chapter01/01",
 			]
+		},
+		{
+			text: "语言基础篇 (13讲)",
+			icon: "code",
+			children: [
+				"detail/chapter02/01"
+			]
 		}
 	],
   "/": [
