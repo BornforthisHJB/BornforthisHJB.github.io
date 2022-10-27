@@ -16,6 +16,12 @@ time: 2022-09-01 14:38:16
 | 08   | **LionGuo**   | [08-LionGuo](08-LionGuo/01-Homework-Problem-DNA-sequencing.md) |
 | 09   | **Liujiahui** | [09-LiuJiaHui](09-liujiahui/01-Coursework-1-Property-Viewer.md) |
 | 10   | **Java note** | [10-Java Note](10-java-note/01.md)                           |
+| 11   | **MaLin**     | [11-MaLin](11-MaLin/01-Java-Hw.md)                           |
+|      |               |                                                              |
+|      |               |                                                              |
+|      |               |                                                              |
+|      |               |                                                              |
+|      |               |                                                              |
 |      |               |                                                              |
 
 
