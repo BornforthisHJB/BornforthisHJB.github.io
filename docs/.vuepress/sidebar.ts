@@ -190,7 +190,14 @@ export const zhSidebar = sidebar({
 		}
 	],
 	"/1v1/10-java-note/": [
-		"01"
+		{ 
+			text: "第一章 Java编程基础 (30讲)",
+			icon: "java",
+			children: [
+				"01"
+			]
+		
+		}
 	],
 	"/1v1/01-Thomas-hw-note/": [
 		{
