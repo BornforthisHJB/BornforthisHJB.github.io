@@ -1,6 +1,15 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
+	"/column/An-introductory-programming-class-that-anyone-can-learn/": [
+		{
+			text: "开篇词 (1讲)",
+			icon: "code",
+			children: [
+				"detail/chapter01/01",
+			]
+		}
+	],
   "/": [
 		"",
 		"intro",

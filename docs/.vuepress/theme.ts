@@ -75,6 +75,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
+      "/column/An-introductory-programming-class-that-anyone-can-learn/detail/": "123123",
       "/1v1/07-AJuN/": "aiyclosshwhwhwshxw",
       "/1v1/03-Dannie/01.html": "123123",
       "/1v1/01-Thomas-hw-note/": ["123123"],

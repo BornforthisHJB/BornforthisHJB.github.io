@@ -9,7 +9,7 @@ heroFullScreen: true
 tagline: 敲出人生第一段代码
 actions:
   - text: 开始学习 💡
-    link: /column/crawler/s1_01
+    link: /column/An-introductory-programming-class-that-anyone-can-learn/detail/chapter01/01.md
     type: primary	
 
   - text: 与作者联系 👋
