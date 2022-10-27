@@ -1,6 +1,22 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
+	"/column/Basic-course-of-artificial-intelligence/": [
+		{
+			text: "开篇词 (1讲)",
+			icon: "code",
+			children: [
+				"detail/chapter01/01",
+			]
+		},
+		{
+			text: "数学基础 (7讲)",
+			icon: "code",
+			children: [
+				"detail/chapter02/01"
+			]
+		}
+	],
 	"/column/An-introductory-programming-class-that-anyone-can-learn/": [
 		{
 			text: "开篇词 (1讲)",

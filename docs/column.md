@@ -42,10 +42,10 @@ features:
     details: 敲出人生第一段代码
     link: /column/An-introductory-programming-class-that-anyone-can-learn
 
-  - title: 程序员数学基础课
+  - title: 人工智能基础课
     icon: geometry
     details: 数学基础的好坏，会直接决定一个程序员的发展潜力
-    link: 
+    link: /column/Basic-course-of-artificial-intelligence
 
   - title: 私教学员回放
     icon: lock
@@ -113,10 +113,22 @@ features:
     link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/
 copyright: false
 footer: MIT Licensed | Copyright © 2018-present AndersonHJB
+
 ---
 
 如果你有其他需求或者疑问，点击：[QQ 在线客服](http://wpa.qq.com/msgrd?v=3&uin=1432803776&site=qq&menu=yes)
 
 微信：
 
-<div align=center><img src="/ewm/Jiabcdefh.jpg" alt="微信号：Jiabcdefh" style="zoom:25%;" /></div>
+
+				HTML
+
+
+​					
+​				
+​				
+​						
+​				
+​			
+
+		​
