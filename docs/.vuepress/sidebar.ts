@@ -4,14 +4,14 @@ export const zhSidebar = sidebar({
 	"/column/Basic-course-of-artificial-intelligence/": [
 		{
 			text: "开篇词 (1讲)",
-			icon: "code",
+			icon: "rengongzhineng",
 			children: [
 				"detail/chapter01/01",
 			]
 		},
 		{
 			text: "数学基础 (7讲)",
-			icon: "code",
+			icon: "rengongzhineng",
 			children: [
 				"detail/chapter02/01"
 			]
