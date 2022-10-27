@@ -189,6 +189,9 @@ export const zhSidebar = sidebar({
 			],
 		}
 	],
+	"/1v1/10-java-note/": [
+		"01"
+	],
 	"/1v1/01-Thomas-hw-note/": [
 		{
 			text: "搭建个人博客",

@@ -15,7 +15,7 @@ time: 2022-09-01 14:38:16
 | 07   | **AJuN**      | [07-AJuN](07-AJuN/01-W14-Worksheet-14-File-IO-and-CSV-Files.md) |
 | 08   | **LionGuo**   | [08-LionGuo](08-LionGuo/01-Homework-Problem-DNA-sequencing.md) |
 | 09   | **Liujiahui** | [09-LiuJiaHui](09-liujiahui/01-Coursework-1-Property-Viewer.md) |
-| 10   | **Java note** | [10-Java Note](10-java-note/01-从加减乘除到变量.md)          |
+| 10   | **Java note** | [10-Java Note](10-java-note/01.md)                           |
 |      |               |                                                              |
 
 
