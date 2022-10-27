@@ -40,7 +40,7 @@ features:
   - title: 人人都能学会的编程入门课
     icon: code
     details: 敲出人生第一段代码
-    link: /column/practice_code
+    link: /column/An-introductory-programming-class-that-anyone-can-learn
 
   - title: 程序员数学基础课
     icon: geometry
