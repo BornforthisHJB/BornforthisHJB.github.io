@@ -9,6 +9,19 @@ export const zhSidebar = sidebar({
 				"The-University-of-Melbourne/exam-2016s1",
 				"The-University-of-Melbourne/exam-2019s2",
 			]
+		},
+		{
+			text: "答案",
+			icon: "python",
+			children: [
+				{
+					text: "墨尔本大学 Answer",
+					icon: "python",
+					children: [
+						{ text: "exam-2019s2-solution", icon: "python", link: "Answer/The-University-of-Melbourne/exam-2019s2-solution"}
+					]
+				}
+			]
 		}
 	],
 	"/column/Basic-course-of-artificial-intelligence/": [
