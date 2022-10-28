@@ -107,6 +107,11 @@ features:
     details: Python 60天精通～
     link: /column/python60/01
 
+  - title: Python 练习
+    icon: python
+    details: Python 专项练习
+    link: /column/Python-practice/
+
   - title: 更多新特性
     icon: more
     details: 包括图标支持、全屏按钮、返回顶部按钮等
