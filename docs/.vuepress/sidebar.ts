@@ -18,7 +18,9 @@ export const zhSidebar = sidebar({
 					text: "墨尔本大学 Answer",
 					icon: "python",
 					children: [
-						{ text: "exam-2019s2-solution", icon: "python", link: "Answer/The-University-of-Melbourne/exam-2019s2-solution"}
+						{ text: "exam-2019s1-solution", icon: "python", link: "Answer/The-University-of-Melbourne/exam-2019s1-solution"},
+						{ text: "exam-2019s2-solution", icon: "python", link: "Answer/The-University-of-Melbourne/exam-2019s2-solution"},
+						
 					]
 				}
 			]

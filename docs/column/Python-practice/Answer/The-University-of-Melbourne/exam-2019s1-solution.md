@@ -1,6 +1,6 @@
 ---
-title: exam-2019s2-solution「The University of Melbourne」
-date: 2022-10-28 23:35:36
+title: exam-2019s1-solution「The University of Melbourne」
+date: 2022-10-28 23:49:36
 author: AI悦创
 isOriginal: true
 category: 
@@ -27,9 +27,7 @@ editLink: false
 backToTop: true
 ---
 
-<PDF url="/Python-practice/The-University-of-Melbourne/exam-2019s2-solution.pdf" :toolbar="false" />
-
-
+<PDF url="/Python-practice/The-University-of-Melbourne/exam-2019s1-solution.pdf" :toolbar="false" />
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
