@@ -1,6 +1,16 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
+	"/column/Python-practice/": [
+		{
+			text: "墨尔本大学 Python",
+			icon: "python",
+			children: [
+				"The-University-of-Melbourne/exam-2016s1",
+				"The-University-of-Melbourne/exam-2019s2",
+			]
+		}
+	],
 	"/column/Basic-course-of-artificial-intelligence/": [
 		{
 			text: "开篇词 (1讲)",

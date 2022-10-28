@@ -6,7 +6,7 @@ title: Python真题演练
 heroImage: /ColumnImages/Python-practice/python_qKk0Tqp.jpg
 heroText: Python真题演练
 heroFullScreen: true
-tagline: Python试卷·开启你的
+tagline: Python试卷·开启你的编程之旅
 actions:
   - text: 开始学习 💡
     link: /column/Python-practice/The-University-of-Melbourne/exam-2016s1
