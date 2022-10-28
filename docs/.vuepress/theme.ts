@@ -75,6 +75,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
+      "/column/Python-practice/Answer/The-University-of-Melbourne/exam-2019s2-solution.html": "exam-2019s2-solution",
       "/1v1/11-MaLin/": "malin",
       "/column/An-introductory-programming-class-that-anyone-can-learn/detail/": "123123",
       "/1v1/07-AJuN/": "aiyclosshwhwhwshxw",
