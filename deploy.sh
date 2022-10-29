@@ -5,11 +5,11 @@ git add .
 git commit . -m "update"
 git push -u origin main
 git push -u githubcopy main
-yarn run docs:build
-cd docs/.vuepress/dist
+# yarn run docs:build
+# cd docs/.vuepress/dist
 
-git init
-git add -A
-git commit -m 'deploy'
-git push -f root@121.89.218.11:/root/ts.git master
-cd -
+# git init
+# git add -A
+# git commit -m 'deploy'
+# git push -f root@121.89.218.11:/root/ts.git master
+# cd -
