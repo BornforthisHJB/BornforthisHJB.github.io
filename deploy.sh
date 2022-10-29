@@ -4,8 +4,6 @@ git status
 git add .
 git commit . -m "update"
 git push -u origin main
-
-# git push -u gitee main
 git push -u githubcopy main
 # yarn run docs:build
 cd docs/.vuepress/dist
