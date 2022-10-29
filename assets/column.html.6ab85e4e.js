@@ -1,0 +1,3 @@
+import{_ as t}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as r,c,a as e,d as n,b as l,r as s}from"./app.f12c260d.js";const _={},a={href:"http://wpa.qq.com/msgrd?v=3&uin=1432803776&site=qq&menu=yes",target:"_blank",rel:"noopener noreferrer"},d=e("p",null,"\u5FAE\u4FE1\uFF1A",-1),u=e("pre",null,[e("code",null,`			HTML
+`)],-1),i=e("p",null,"\u200B \u200B \u200B \u200B \u200B \u200B",-1),m=e("pre",null,[e("code",null,`	\u200B
+`)],-1);function p(f,h){const o=s("ExternalLinkIcon");return r(),c("div",null,[e("p",null,[n("\u5982\u679C\u4F60\u6709\u5176\u4ED6\u9700\u6C42\u6216\u8005\u7591\u95EE\uFF0C\u70B9\u51FB\uFF1A"),e("a",a,[n("QQ \u5728\u7EBF\u5BA2\u670D"),l(o)])]),d,u,i,m])}const q=t(_,[["render",p],["__file","column.html.vue"]]);export{q as default};
