@@ -182,7 +182,7 @@ export default hopeTheme({
       imageSize: true,
       include: true,
       katex: true,
-      lazyLoad: true,
+      // lazyLoad: true,
       mark: true,
       mermaid: true,
       playground: {

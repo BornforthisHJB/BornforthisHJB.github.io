@@ -1,0 +1,1 @@
+{"version":3,"file":"notFoundIcon.js","sourceRoot":"","sources":["../../../../src/client/components/icons/notFoundIcon.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAGxB,MAAM,CAAC,MAAM,YAAY,GAAwB,GAAG,EAAE,CACpD,CAAC,CAAC,KAAK,EAAE;IACP,KAAK,EAAE,4BAA4B;IACnC,KAAK,EAAE,gBAAgB;IACvB,OAAO,EAAE,aAAa;IACtB,SAAS,EACP,mlLAAmlL;CACtlL,CAAC,CAAC"}
