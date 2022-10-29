@@ -7,7 +7,7 @@ export default hopeTheme({
 
   author: {
     name: "AndersonHJB",
-    url: "https://www.bornforthis.cn/",
+    url: "https://bornforthis.cn/",
   },
 
   iconPrefix: "iconfont icon-",
