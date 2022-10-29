@@ -57,7 +57,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | 01   | ![精品MAC应用分享](./README.assets/logo-8305990.png) | [https://xclient.info/](https://xclient.info/)           |          |
 | 02   | MacWk                                                | [https://www.macwk.com/](https://www.macwk.com/)         | 绝绝子   |
 | 03   | IDE 激活                                             | [https://idea.medeming.com/](https://idea.medeming.com/) | IDE 激活 |
-|      |                                                      |                                                          |          |
+| 04   | PPT、演示星球                                        | [https://www.pop-ppt.com/](https://www.pop-ppt.com/)     |          |
 |      |                                                      |                                                          |          |
 
 ## 设计类网站分享

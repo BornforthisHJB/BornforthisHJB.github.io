@@ -75,6 +75,9 @@ export default hopeTheme({
 
   encrypt: {
     config: {
+      "/column/Python-practice/Answer/The-University-of-Melbourne/exam-2016s1-solution": "exam-2016s1-solution",
+      "/column/Python-practice/Answer/The-University-of-Melbourne/exam-2017s1-solution": "exam-2017s1-solution",
+      "/column/Python-practice/Answer/The-University-of-Melbourne/exam-2018s1-solution": "exam-2018s1-solution",
       "/column/Python-practice/Answer/The-University-of-Melbourne/exam-2019s1-solution.html": "exam-2019s1-solution",
       "/column/Python-practice/Answer/The-University-of-Melbourne/exam-2019s2-solution.html": "exam-2019s2-solution",
       "/1v1/11-MaLin/": "malin",
