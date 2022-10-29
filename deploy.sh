@@ -11,7 +11,7 @@ git push -u githubcopy main
 cd docs/.vuepress/dist
 
 git init
-git add -A
+git add .
 git commit -m 'deploy'
 git push -f git@121.89.218.11:/home/www/website/ts.git master
 cd -
