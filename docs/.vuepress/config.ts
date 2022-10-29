@@ -79,12 +79,12 @@ export default defineUserConfig({
     }),
     
     // searchPlugin({
-      // locales: {
-        // "/": {
-          // placeholder: "搜索",
-          // 
-        // },
-      // },
+    //   locales: {
+    //     "/": {
+    //       placeholder: "搜索",
+          
+    //     },
+    //   },
     // }),
   ],
 
