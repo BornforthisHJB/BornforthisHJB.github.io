@@ -11,5 +11,5 @@ cd docs/.vuepress/dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f root@121.89.218.11:/home/www/website/ts.git master
+git push -f root@121.89.218.11:/root/ts.git master
 cd -
