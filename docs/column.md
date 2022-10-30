@@ -125,15 +125,4 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 
 微信：
 
-
-				HTML
-
-
-​					
-​				
-​				
-​						
-​				
-​			
-
-		​
+<div align=center><img src="/ewm/Jiabcdefh.jpg" alt="微信号：Jiabcdefh" style="zoom:25%;" /></div>

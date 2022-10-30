@@ -1,12 +1,16 @@
 ---
-title: Python exam-2022-online「The University of Melbourne」
-date: 2022-10-30 19:45:26
+title: exam-2022-solution「The University of Melbourne」
+date: 2022-10-30 19:58:13
 author: AI悦创
 isOriginal: true
 category: 
-    - Python 练习
+    - Python 练习答案
+    - 墨尔本大学
+    - The University of Melbourne
 tag:
-    - Python 练习
+    - Python 练习答案
+    - 墨尔本大学
+    - The University of Melbourne
 icon: python
 sticky: false
 star: false
@@ -23,67 +27,11 @@ editLink: false
 backToTop: true
 ---
 
-Construct a **single** Python expression which evaluates to the following values, and incorporates the specified operations in each case (executed in any order).
-
-> 构造一个 Python 表达式，求值为以下值，并在每种情况下合并指定的操作(以任何顺序执行)。
-
 **(a) Output value: 'grin'**
 
-Required operations:
-
-> 要求操作:
-
-1. string slicing
-
-> 字符串分割
-
-2. string indexing
-
-> 字符串索引
-
-**(b) Output value: True**
-
-Required operations:
-
-1. range() function
-
-2. in
-
-**(c) Output value: 2**
-
-Required operations:
-
-1. (float) division
-
-2. integer division
-
-**(d) Output value: 0**
-
-Required operations:
-
-1. dictionary lookup
-
-> 字典查找
-
-2. .pop() method
-
-3. list indexing
-
-**(e) Output value:  'ace'**
-
-Required operations:
-
-1. items method
-
-2. list indexing
-
-3. tuple indexing
-
-
-
-
-
-
+```python
+print("grinabc"[:4])
+```
 
 
 
@@ -114,8 +62,3 @@ C++ 信息奥赛题解，长期更新！长期招收一对一中小学信息奥�
 :::
 
 ![](/zsxq.jpg)
-
-
-
-
-
