@@ -77,6 +77,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | 02   | 刘家惠           | [https://www.imjmac.com/](https://www.imjmac.com/)           | [https://github.com/ImJ-MAC/ImJ-MAC.github.io](https://github.com/ImJ-MAC/ImJ-MAC.github.io) |                                                        |
 | 03   | Thomas           | [https://ohlalala1021.github.io/](https://ohlalala1021.github.io/) | [https://github.com/Ohlalala1021/Ohlalala1021.github.io](https://github.com/Ohlalala1021/Ohlalala1021.github.io) |                                                        |
 | 04   | youpeng          | [https://www.cnblogs.com/youpeng/](https://www.cnblogs.com/youpeng/) | [https://www.cnblogs.com/youpeng/](https://www.cnblogs.com/youpeng/) |                                                        |
+| 05   | Cava             | [https://github.com/augwewe/augwewe.github.io](https://github.com/augwewe/augwewe.github.io) | [https://augwewe.cn/](https://augwewe.cn/)                   |                                                        |
 |      |                  |                                                              |                                                              |                                                        |
 
 ## 方便备课
