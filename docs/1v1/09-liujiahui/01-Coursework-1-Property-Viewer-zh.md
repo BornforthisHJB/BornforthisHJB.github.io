@@ -26,6 +26,17 @@ backToTop: true
 toc: true
 ---
 
+## 资料
+
+-   [Asignment_1.pdf](/1v1/09-liujiahui/01-Coursework-1-Property-Viewer/Asignment_1.pdf)
+-   [cw1-base.zip](/1v1/09-liujiahui/01-Coursework-1-Property-Viewer/cw1-base.zip)
+-   [PPA-Term1-01.pdf](/1v1/09-liujiahui/kejian/PPA-Term1-01.pdf)
+-   [PPA-Term1-02.pdf](/1v1/09-liujiahui/kejian/PPA-Term1-02.pdf)
+-   [PPA-Term1-03.pdf](/1v1/09-liujiahui/kejian/PPA-Term1-03.pdf)
+-   [PPA-Term1-04.pdf](/1v1/09-liujiahui/kejian/PPA-Term1-04.pdf)
+-   [PPA-Term1-05.pdf](/1v1/09-liujiahui/kejian/PPA-Term1-05.pdf)
+-   [PPA-Term1-05.pdf](/1v1/09-liujiahui/kejian/PPA-Term1-05.pdf)
+
 ## PPA01A
 
 Class: Programming Practice & Applications
