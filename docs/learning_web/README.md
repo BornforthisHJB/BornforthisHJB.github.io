@@ -53,14 +53,19 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 
 ## 资源网站
 
-| 序号 | 名称                                                 | 链接                                                     | 描述     |
-| ---- | ---------------------------------------------------- | -------------------------------------------------------- | -------- |
-| 01   | ![精品MAC应用分享](./README.assets/logo-8305990.png) | [https://xclient.info/](https://xclient.info/)           |          |
-| 02   | MacWk「挂了」                                        | [https://www.macwk.com/](https://www.macwk.com/)         | 绝绝子   |
-| 03   | IDE 激活                                             | [https://idea.medeming.com/](https://idea.medeming.com/) | IDE 激活 |
-| 04   | PPT、演示星球                                        | [https://www.pop-ppt.com/](https://www.pop-ppt.com/)     |          |
-| 05   | Mac-01                                               | [https://t.me/geekshare/435](https://t.me/geekshare/435) | 待验证   |
-|      |                                                      |                                                          |          |
+| 序号 | 名称                                                 | 链接                                                     | 描述        |
+| ---- | ---------------------------------------------------- | -------------------------------------------------------- | ----------- |
+| 01   | ![精品MAC应用分享](./README.assets/logo-8305990.png) | [https://xclient.info/](https://xclient.info/)           |             |
+| 02   | MacWk「挂了」                                        | [https://www.macwk.com/](https://www.macwk.com/)         | 绝绝子      |
+| 03   | IDE 激活                                             | [https://idea.medeming.com/](https://idea.medeming.com/) | IDE 激活    |
+| 04   | PPT、演示星球                                        | [https://www.pop-ppt.com/](https://www.pop-ppt.com/)     |             |
+| 05   | Mac-01                                               | [https://t.me/geekshare/435](https://t.me/geekshare/435) | 待验证      |
+| 06   | Mac破解【估计是乱收费的】                            | [https://www.zhiniw.com/](https://www.zhiniw.com/)       | 待验证      |
+| 07   | appstorrent「看起来不错」                            | [https://appstorrent.ru/](https://appstorrent.ru/)       | 待验证      |
+| 08   | **macos.one**                                        | [https://macos.one/](https://macos.one/)                 | 搬运：MacWk |
+| 09   | macyy                                                | [https://www.macyy.cn/](https://www.macyy.cn/)           | 待验证      |
+| 10   | macapp                                               | [https://macapp.org.cn/](https://macapp.org.cn/)         | 待验证      |
+|      |                                                      |                                                          |             |
 
 ## 设计类网站分享
 
@@ -90,7 +95,7 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 | 02   | 易百教程 | IT     | [https://www.yiibai.com/](https://www.yiibai.com/)           | 备课用 |
 | 03   |          |        |                                                              |        |
 | 04   | 数学题   | 数学题 | [https://www.mathopolis.com/index.php](https://www.mathopolis.com/index.php) |        |
-|      |          |        |                                                              |        |
+| 05   | AI       |        | [https://github.com/d2l-ai/d2l-zh](https://github.com/d2l-ai/d2l-zh) |        |
 |      |          |        |                                                              |        |
 |      |          |        |                                                              |        |
 
