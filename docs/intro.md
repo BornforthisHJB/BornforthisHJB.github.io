@@ -5,7 +5,7 @@ title: 关于博主
 heroImage: /me/aiyc.jpg
 heroText: 关于博主
 tagline: 简单的描述，略有丢失，随缘~~~
-date: 2022-09-04 12:11:00
+date: 2019-09-04 12:11:00
 footer: 长期招收编程一对一学员！微信：Jiabcdefh, <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备19021486号-6</a>
 ---
 
