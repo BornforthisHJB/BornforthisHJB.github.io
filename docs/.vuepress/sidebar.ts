@@ -8,6 +8,7 @@ export const zhSidebar = sidebar({
 			children: [
 				"The-University-of-Melbourne/exam-2016s1",
 				"The-University-of-Melbourne/exam-2019s2",
+				"The-University-of-Melbourne/exam-2022-online",
 			]
 		},
 		{

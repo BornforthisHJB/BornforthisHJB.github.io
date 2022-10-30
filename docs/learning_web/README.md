@@ -42,22 +42,24 @@ footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 
 ## 好的开源项目
 
-| 序号 | 名称          | 链接                                                         | 作用               |
-| ---- | ------------- | ------------------------------------------------------------ | ------------------ |
-| 01   | **LiaScript** | [https://github.com/LiaScript/LiaScript](https://github.com/LiaScript/LiaScript) | 交互式 Python      |
-| 02   | **httrack**   | [https://www.httrack.com/page/2/en/index.html](https://www.httrack.com/page/2/en/index.html) |                    |
-| 03   | **cdnpkg**    | [https://www.cdnpkg.com/](https://www.cdnpkg.com/)           |                    |
-| 04   | **okpy**      | [https://okpy.org/](https://okpy.org/)<br />[https://github.com/okpy/ok](https://github.com/okpy/ok) | 伯克利 Python 判题 |
-| 05   | **geogebra**  | [https://www.geogebra.org/calculator](https://www.geogebra.org/calculator) | 在线数学计算       |
+| 序号 | 名称            | 链接                                                         | 作用               |
+| ---- | --------------- | ------------------------------------------------------------ | ------------------ |
+| 01   | **LiaScript**   | [https://github.com/LiaScript/LiaScript](https://github.com/LiaScript/LiaScript) | 交互式 Python      |
+| 02   | **httrack**     | [https://www.httrack.com/page/2/en/index.html](https://www.httrack.com/page/2/en/index.html) |                    |
+| 03   | **cdnpkg**      | [https://www.cdnpkg.com/](https://www.cdnpkg.com/)           |                    |
+| 04   | **okpy**        | [https://okpy.org/](https://okpy.org/)<br />[https://github.com/okpy/ok](https://github.com/okpy/ok) | 伯克利 Python 判题 |
+| 05   | **geogebra**    | [https://www.geogebra.org/calculator](https://www.geogebra.org/calculator) | 在线数学计算       |
+| 06   | **SwitchHosts** | [https://github.com/oldj/SwitchHosts](https://github.com/oldj/SwitchHosts) | 修改 host          |
 
 ## 资源网站
 
 | 序号 | 名称                                                 | 链接                                                     | 描述     |
 | ---- | ---------------------------------------------------- | -------------------------------------------------------- | -------- |
 | 01   | ![精品MAC应用分享](./README.assets/logo-8305990.png) | [https://xclient.info/](https://xclient.info/)           |          |
-| 02   | MacWk                                                | [https://www.macwk.com/](https://www.macwk.com/)         | 绝绝子   |
+| 02   | MacWk「挂了」                                        | [https://www.macwk.com/](https://www.macwk.com/)         | 绝绝子   |
 | 03   | IDE 激活                                             | [https://idea.medeming.com/](https://idea.medeming.com/) | IDE 激活 |
 | 04   | PPT、演示星球                                        | [https://www.pop-ppt.com/](https://www.pop-ppt.com/)     |          |
+| 05   | Mac-01                                               | [https://t.me/geekshare/435](https://t.me/geekshare/435) | 待验证   |
 |      |                                                      |                                                          |          |
 
 ## 设计类网站分享
