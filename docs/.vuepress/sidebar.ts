@@ -376,6 +376,7 @@ export const zhSidebar = sidebar({
 					children: [
 						"Data-analysis-practice-45-lectures/Phase-three/17",
 						"Data-analysis-practice-45-lectures/Phase-three/18",
+						"Data-analysis-practice-45-lectures/Phase-three/24",
 					]
 				}
 				
