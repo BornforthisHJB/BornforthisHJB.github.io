@@ -10,6 +10,7 @@ export default defineUserConfig({
   base: "/",
   // shouldPrefetch: false,
   head: [
+    // <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=0&id=7716733181&auto=1&height=32"></iframe>
     // [
     //   "script",
     //   {
@@ -33,6 +34,12 @@ export default defineUserConfig({
         href: "/favicon.ico",
       }
     ],
+    // [
+    //   "iframe", {
+    //     src: "//music.163.com/outchain/player?type=0&id=7716733181&auto=1&height=32",
+    //     // href: "/favicon.ico",
+    //   }
+    // ],
     // [
     //   "script", {
     //     type: "text/javascript",
