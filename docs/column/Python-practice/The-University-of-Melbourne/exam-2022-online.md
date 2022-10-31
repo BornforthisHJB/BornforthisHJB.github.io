@@ -168,6 +168,8 @@ Any subject that appears as a prerequisite in a prereq_list tuple but does not a
 
 > 在prereq_list元组中作为先决条件出现但不作为主题出现的任何主题都可以假定为没有先决条件。此外，我们假设Sandy有能力每学期选修要求的课程，只要他们完成了他们的先决条件。
 
+
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
