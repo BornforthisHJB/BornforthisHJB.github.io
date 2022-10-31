@@ -81,11 +81,32 @@ Required operations:
 
 3. tuple indexing
 
+## Question 2
 
+The following function is intended to calculate the similarity between two names by calculating what proportion of "n-grams" (substrings of n characters) from the first name can be found in the second name, and averaging across the resulting values for each value of n from 2 up to maxn (by default, 3). If the first name has fewer characters than any tested value of n, the function should return 0.0.
 
+> 下面的函数旨在计算两个名称之间的相似度，方法是计算第一个名称的“n-grams”(n个字符的子字符串)在第二个名称中所占的比例，并对n从2到maxn(默认为3)的每个值的结果值进行平均。如果第一个名称的字符数少于n的任何测试值，函数应该返回0.0。
 
+Example function calls are:
 
+```python
+>>> name_similarity('toto', 'totoro')
+1.0
+>>> name_similarity('tim', 'totoro')
+0.0
+>>> name_similarity('totoro', 'toto')
+0.55
+>>> name_similarity('', 'totoro')
+0.0
+```
 
+All the required lines of the function are available, out of order, in the editor panel. Drag each line across to the solution area to the right, put them in the correct order, and introduce appropriate indentation. Note that ALL lines must be used in your solution.
+
+> 在编辑器面板中，函数所需的所有行都是可用的，但顺序不同。将每一行拖到解决方案区域的右侧，将它们按正确的顺序排列，并引入适当的缩进。注意，解决方案中必须使用ALL行。
+
+![image-20221031161310234](./exam-2022-online.assets/image-20221031161310234.png)
+
+![image-20221031161256042](./exam-2022-online.assets/image-20221031161256042.png)
 
 
 

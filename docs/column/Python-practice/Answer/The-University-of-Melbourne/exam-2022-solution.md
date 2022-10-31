@@ -27,6 +27,8 @@ editLink: false
 backToTop: true
 ---
 
+## Question 1
+
 **(a) Output value: 'grin'**
 
 ```python
@@ -35,9 +37,60 @@ print("grinabc"[:4])
 
 
 
+## Question 2
+
+```python
+# -*- coding: utf-8 -*-
+# @Time    : 2022/10/28 22:23
+# @Author  : AI悦创
+# @FileName: demo.py
+# @Software: PyCharm
+# @Blog    ：https://bornforthis.cn/
+# def name_similarity(name1, name2, maxn=3):
+#     matches = 0
+#     sim_list = []
+#     for n in range(2, maxn + 1):
+#         if len(name1) >= n:
+#             for start in range(0, len(name1) - (n - 1)):
+#                 ngram = name1[start: start + n]
+#                 if ngram in name2:
+#                     matches += 1
+#             sim_list.append(matches / len(name1) - (n - 1))
+#             if sim_list:
+#                 return sum(sim_list) / len(sim_list)
+#         return 0.0
+def name_similarity(name1, name2, maxn=4):
+    sim_list = []
+    for n in range(2, maxn):
+        if len(name1) >= n:
+            matches = 0
+            for start in range(0, len(name1) - (n - 1)):
+                ngram = name1[start:start + n]
+                if ngram in name2:
+                    matches += 1
+            sim_list.append(matches/(len(name1) - (n - 1)))
+    if sim_list:
+        return sum(sim_list)/len(sim_list)
+    return 0.0
+
+if __name__ == '__main__':
+    r = name_similarity('toto', 'totoro')
+    r1 = name_similarity('tim', 'totoro')
+    r2 = name_similarity('totoro', 'toto')
+    r3 = name_similarity('', 'totoro')
+    print(r)
+    print(r1)
+    print(r2)
+    print(r3)
+```
 
 
 
+
+
+
+
+---
 
 ```python
 from collections import defaultdict
