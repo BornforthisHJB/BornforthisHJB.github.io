@@ -39,6 +39,39 @@ print("grinabc"[:4])
 
 
 
+```python
+from collections import defaultdict
+
+
+def wiz_study_length(prereq_list: list, final='WIZ90001'):
+    prereqs = defaultdict(list)
+    for subject in prereq_list:
+        prereqs[subject[0]].append(subject[1])
+
+    semesters = 0
+    cur_prereqs = [final]
+
+    while cur_prereqs:
+        new_prereqs = []
+        for subject in cur_prereqs:
+            if subject in prereqs:
+                new_prereqs += prereqs[subject]
+        cur_prereqs = new_prereqs
+        semesters += 1
+    return semesters
+
+
+if __name__ == '__main__':
+    r = wiz_study_length([('WIZ90001', 'WIZ40027'), ('WIZ90001', 'WIZ20003')])
+    print(r)
+```
+
+
+
+
+
+
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
