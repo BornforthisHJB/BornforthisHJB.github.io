@@ -112,7 +112,9 @@ All the required lines of the function are available, out of order, in the edito
 
 
 
-## Question 变成 while loop
+## Question3
+
+变成 while loop
 
 ```python
 SUIT = 1
@@ -134,40 +136,9 @@ def same_colour(cards):
     return True
 ```
 
-答案：
-
-```python
-SUIT = 1
-
-BLACK = 0
-RED = 1
-
-SUIT_COLOURS = {'S': BLACK,
-                'H': RED,
-                'D': RED,
-                'C': BLACK}
 
 
-# def same_colour(cards):
-#     for i in range(len(cards)):
-#         if i == 0:
-#             colour = SUIT_COLOURS[cards[i][SUIT]]
-#         elif SUIT_COLOURS[cards[i][SUIT]] != colour:
-#             return False
-#     return True
-
-def same_colour1(cards):
-    i = 0
-    while i < len(cards):
-        if i == 0:
-            colour = SUIT_COLOURS[cards[i][SUIT]]
-            i += 1
-        elif SUIT_COLOURS[cards[i][SUIT]] != colour:
-            return False
-    return True
-```
-
-## Question 排序
+## Question 4
 
 Sandy has enrolled in a Bachelor of Magical Arts. In order to graduate, they must complete the subject WIZ90001 Advanced Wizardry. However, this subject has a number of prerequisites, each of which must be completed before they can take WIZ90001. Each of those subjects in turn may have its own prerequisites, and so on.
 
@@ -227,34 +198,9 @@ In this case, it will take 4 semesters for Sandy graduate, due to the prerequisi
 •	return semesters
 ```
 
-```python
-from collections import defaultdict
 
 
-def wiz_study_length(prereq_list: list, final='WIZ90001'):
-    prereqs = defaultdict(list)
-    for subject in prereq_list:
-        prereqs[subject[0]].append(subject[1])
-
-    semesters = 0
-    cur_prereqs = [final]
-
-    while cur_prereqs:
-        new_prereqs = []
-        for subject in cur_prereqs:
-            if subject in prereqs:
-                new_prereqs += prereqs[subject]
-        cur_prereqs = new_prereqs
-        semesters += 1
-    return semesters
-
-
-if __name__ == '__main__':
-    r = wiz_study_length([('WIZ90001', 'WIZ40027'), ('WIZ90001', 'WIZ20003')])
-    print(r)
-```
-
-## Question 纠错
+## Question 5
 
 A school of minnows swims in the sea. Sharks eat minnows, according to the following strict rules. Sharks swim, one at a time, from left to right and eat each minnow they encounter, starting at the height of the first minnow that remains uneaten. Each time a shark eats a minnow it gets heavier and sinks one metre lower in the water. Once a shark reaches the sea floor, it is no longer able to eat minnows.
 
@@ -282,7 +228,109 @@ The third shark will start at height 4 and eat the minnow at that height (elemen
 
 > 第三条鲨鱼会从高度4开始，吃掉这个高度的米诺鱼(元素4)，之后就没有米诺鱼了。
 
+The function sharks_minnows(minnows, sharks) is intended to determine whether a given number of sharks will be sufficient to eat all of the minnows in the sea, positioned based on minnows. The function takes the following parameters:
 
+> 函数sharks_minnows(minnows，鲨鱼)的目的是确定给定数量的鲨鱼是否足以吃掉海里所有的minnows，根据minnows定位。该函数接受以下参数:
+
+- minnows, a list of positive integers indicating the height of each minnow, as in the example above.
+
+> Minnows，一个正整数列表，表示每条鲦鱼的高度，如上例所示。
+
+- sharks, a positive integer number of sharks.
+
+> 鲨鱼的数量是正整数。
+
+The function should return True if the specified number of sharks is sufficient to eat all the minnows, and False otherwise.
+
+> 如果指定的鲨鱼数量足够吃掉所有的鲦鱼，函数应该返回True，否则返回False。
+
+```python
+def sharks_minnows(minnows, sharks):
+    shark_count = 0
+    minnow_count = len(minnows)
+    for i in range(minnow_count):
+        curr_shark_height = minnows[i]
+        if curr_shark_height is not None:
+            minnows[i] = None
+            for j in range(i + 1, minnow_count):
+                if minnows[j] == curr_shark_height:
+                    minnows[j] = None
+                    curr_shark_height -= 1
+            shark_count += 1
+    return shark_count <= sharks
+```
+
+The provided code is imperfect, in that it sometimes returns `True` when it should return `False`, and sometimes returns `False` when it should return `True`.
+
+> 所提供的代码是不完美的，因为它有时在应该返回' False '时返回' True '，有时在应该返回' True '时返回' False '。
+
+(a) Provide an example of a function call where the provided code will correctly return `True` (i.e. a True Positive)
+
+> 提供一个函数调用的例子，其中所提供的代码将正确返回' True '(即True Positive)
+
+(b) Provide an example of a function call where the provided code will correctly return `False` (i.e. a True Negative)
+
+> 提供一个函数调用的例子，其中所提供的代码将正确返回' False '(即True Negative)
+
+(c) Provide an example of a function call where the provided code will *incorrectly* return `True` (i.e. a False Positive)
+
+> 提供一个函数调用的例子，其中提供的代码将*错误地*返回' True '(即假阳性)
+
+(d) Provide an example of a function call where the provided code will *incorrectly* return `False` (i.e. a False Negative)
+
+> 提供一个函数调用的例子，其中提供的代码将*错误地*返回' False '(即假阴性)
+
+
+
+## Question 6
+
+Construct a **single** Python expression which evaluates to the following values, and incorporates the specified operations in each case (executed in any order).
+
+> 构造一个 Python 表达式，求值为以下值，并在每种情况下合并指定的操作(以任何顺序执行)。
+
+**(a) Output value: 'eeezy'**
+
+Required operations:
+
+1. string indexing
+
+2. `*`
+
+**(b) Output value: True**
+
+Required operations:
+
+1. in
+
+2. `range()`
+
+**(c) Output value: '100% pythonic'**
+
+Required operations:
+
+1. `f-string`
+
+2. `/`
+
+**(d) Output value: 'comp10001'**
+
+Required operations:
+
+1. tuple indexing
+
+2. dictionary lookup
+
+3. `.lower()`
+
+**(e) Output value: '42'**
+
+Required operations:
+
+1. list indexing
+
+2. `.keys()`
+
+3. string slicing
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 

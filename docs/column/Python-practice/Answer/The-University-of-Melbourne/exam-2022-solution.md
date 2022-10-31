@@ -84,13 +84,40 @@ if __name__ == '__main__':
     print(r3)
 ```
 
+## Question3
+
+```python
+SUIT = 1
+
+BLACK = 0
+RED = 1
+
+SUIT_COLOURS = {'S': BLACK,
+                'H': RED,
+                'D': RED,
+                'C': BLACK}
 
 
+def same_colour(cards):
+    for i in range(len(cards)):
+        if i == 0:
+            colour = SUIT_COLOURS[cards[i][SUIT]]
+        elif SUIT_COLOURS[cards[i][SUIT]] != colour:
+            return False
+    return True
 
+def same_colour1(cards):
+    i = 0
+    while i < len(cards):
+        if i == 0:
+            colour = SUIT_COLOURS[cards[i][SUIT]]
+            i += 1
+        elif SUIT_COLOURS[cards[i][SUIT]] != colour:
+            return False
+    return True
+```
 
-
-
----
+## Question 4
 
 ```python
 from collections import defaultdict
