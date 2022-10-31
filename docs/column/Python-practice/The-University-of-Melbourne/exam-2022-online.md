@@ -372,8 +372,6 @@ def reorder(my_string):               #  1
 
 找出三个错误并说出是那种错误（as syntax, run-time, or logic）并且改正
 
-
-
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】
