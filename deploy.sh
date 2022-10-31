@@ -1,4 +1,3 @@
-# yarn run docs:build
 git pull
 git status
 git add .
