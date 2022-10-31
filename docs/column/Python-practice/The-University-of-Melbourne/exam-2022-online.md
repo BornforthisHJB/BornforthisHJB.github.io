@@ -332,6 +332,48 @@ Required operations:
 
 3. string slicing
 
+## Question 7
+
+The following function is meant to take a lowercase string as input and return a reordered version of that string in which all of the vowels appear first (in the order in which they appear in the original string), followed by all of the consonants (again, in the order in which they appear in the original string), discarding any non-alphabetic characters in the process.
+
+> 下面的函数将接受一个小写字符串作为输入，并返回该字符串的重新排序版本，其中所有元音都在前面出现(按照它们在原始字符串中出现的顺序)，然后是所有辅音(同样，按照它们在原始字符串中出现的顺序)，在此过程中丢弃所有非字母字符。
+
+For example:
+
+```python
+>>> reorder('stay at home')
+'aaoestythm'
+>>> reorder('the cat in the hat')
+'eaieathctnthht'
+>>> reorder('rhythm')
+'rhythm'
+```
+
+However, there are several errors in the given function definition.
+
+> 然而，在给定的函数定义中有几个错误。
+
+Identify **exactly** three (3) errors and specify: (a) the line number where the error occurs; (b) the type of error, as *syntax*, *run-time*, or logic; and (c) how you would fix each error, in the form of the corrected (single) line of code.
+
+> 准确识别 三(3)个错误，并指定:(a)错误发生的行号;(b)错误类型，如*语法*、*运行时*或逻辑;和(c)你将如何修复每个错误，以纠正的(单行)代码的形式。
+
+```python
+def reorder(my_string):               #  1
+    v_list = list(aeiou)              #  2
+    vowels = []                       #  3
+    consonants = []                   #  4
+    for c in my_string:               #  5
+        if c not in v_list:           #  6
+            vowels.append(c)          #  7
+        else c:isalpha():             #  8
+            consonants.append(c)      #  9
+    return join(vowels + consonants)  # 10
+```
+
+找出三个错误并说出是那种错误（as syntax, run-time, or logic）并且改正
+
+
+
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
 ::: details 公众号：AI悦创【二维码】

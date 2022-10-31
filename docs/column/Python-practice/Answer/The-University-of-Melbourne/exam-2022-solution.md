@@ -148,6 +148,36 @@ if __name__ == '__main__':
 
 
 
+## Question 7
+
+1. 序号 2，aeiou 应为字符串：`"aeiou"`
+2. 序号 8，else 后面不能跟条件，改成 elif
+3. 序号 8，`:` 改成 `c.isalpha()`
+4. 序号 10，join 的用法错误，改成：`"".join()`
+5. 序号 6，出现逻辑错误，不能使用 not。
+
+完整代码：
+
+```python
+def reorder(my_string):  # 1
+    v_list = list("aeiou")  # 2
+    vowels = []  # 3 #   # 元音
+    consonants = []  # 4  # 辅音
+    for c in my_string:  # 5
+        if c in v_list:  # 6
+            vowels.append(c)  # 7
+        elif c.isalpha():  # 8
+            consonants.append(c)  # 9
+    return "".join(vowels + consonants)  # 10
+
+r1 = reorder('stay at home')
+r2 = reorder('the cat in the hat')
+r3 = reorder('rhythm')
+print(r1)
+print(r2)
+print(r3)
+```
+
 
 
 
