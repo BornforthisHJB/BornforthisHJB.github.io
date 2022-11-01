@@ -1,6 +1,6 @@
 ---
 title: 00-微专业整体课程介绍
-icon: compare
+icon: cameraadd
 time: 2022-07-02 19:46:43
 author: AI悦创
 isOriginal: true

@@ -78,12 +78,12 @@ features:
     link: /column/PPT
 
   - title: 摄影专栏
-    icon: compare
+    icon: cameraadd
     details: 为你私人定制的摄影课程
     link: /column/photography
 
   - title: 摄影入门课
-    icon: compare
+    icon: cameraadd
     details: 带你零基础入门摄影
     link: /column/摄影入门课
 
