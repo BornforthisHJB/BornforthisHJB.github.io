@@ -1,6 +1,10 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
+	"/column/svg/": [
+		"",
+		"01"
+	],
 	"/column/Python-practice/": [
 		{
 			text: "墨尔本大学 Python",

@@ -1,7 +1,7 @@
 ---
 blog: false
 home: true
-icon: home
+icon: svg
 title: SVG 教程
 heroImage: /ColumnImages/svg/SVG_Logo.svg.png
 heroText: SVG 教程
