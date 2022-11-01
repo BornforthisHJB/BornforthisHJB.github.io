@@ -43,7 +43,21 @@ SVG 使用 XML 格式定义图像。
 
 <button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/svg/README/README.html" target="_blank">尝试一下</a></button>
 
+**点击 "尝试一下" 按钮查看运行结果.**
 
+## SVG 实例
+
+我们可以在线编辑 SVG 实例，并且在线查看运行结果!
+
+[在线实例](#)
+
+## SVG 参考手册
+
+在菜鸟教程中， 我们为您提供完整的 SVG 参考手册，其中列出了所有 W3C 推荐标准（SVG Version 1.1）中的 SVG 的元素。
+
+[SVG 参考手册](#)
+
+[SVG 在线编辑器](#) 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
