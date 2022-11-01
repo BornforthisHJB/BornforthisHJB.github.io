@@ -9,7 +9,7 @@ heroFullScreen: true
 tagline: SVG 意为可缩放矢量图形（Scalable Vector Graphics）
 actions:
   - text: 开始学习 💡
-    link: /column/Python-practice/The-University-of-Melbourne/exam-2016s1
+    link: /column/svg/01
     type: primary	
 
   - text: 与作者联系 👋
@@ -49,15 +49,15 @@ SVG 使用 XML 格式定义图像。
 
 我们可以在线编辑 SVG 实例，并且在线查看运行结果!
 
-[在线实例](#)
+[在线实例](#)待更新
 
 ## SVG 参考手册
 
 在菜鸟教程中， 我们为您提供完整的 SVG 参考手册，其中列出了所有 W3C 推荐标准（SVG Version 1.1）中的 SVG 的元素。
 
-[SVG 参考手册](#)
+[SVG 参考手册](#)待更新
 
-[SVG 在线编辑器](#) 
+[SVG 在线编辑器](#) 待更新
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
