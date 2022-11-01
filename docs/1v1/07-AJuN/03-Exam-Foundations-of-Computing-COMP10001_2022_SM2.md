@@ -152,6 +152,26 @@ if __name__ == '__main__':
     print(r)
 ```
 
+## Question 4
+
+for 编程 while
+
+```python
+def make_pack(weights, _max):
+    weights.sort()
+
+    for i in range(2, len(weights)):
+        if weights[i] <= sum(weights[:i]):
+            return []
+    pack = []
+    remaining = _max
+    for item in weights[::-1]:
+        if item <= remaining:
+            pack.append(item)
+            remaining = remaining - item
+    return pack
+```
+
 
 
 ## Question 6
@@ -315,7 +335,87 @@ if __name__ == '__main__':
     print(r7)
 ```
 
+## Question 8
 
+Write a function digisum`(num)` that takes a positive integer as its input num, and returns an integer containing a single digit, which is calculated as follows:
+
+> 编写一个函数 digisum ' (num) '，它接受一个正整数作为输入num，并返回一个包含单个数字的整数，其计算方法如下:
+
+- Your function should add up the digits  in num.
+
+> 函数应该将num中的数字相加。
+
+- If the resulting sum is in the range 0 to 9, i.e., the sum has a single digit, then return that sum.
+
+> 如果结果的和在0到9的范围内，也就是说，这个和只有一个数字，那么返回这个和。
+
+- Otherwise, the resulting sum has more than  one digit, so you need to repeat the process by adding up the digits in     the resulting sum.
+
+> 否则，得到的和有不止一个数字，因此您需要通过将得到的和中的数字相加来重复这个过程。
+
+- You need to keep repeating the process of calculating a new sum by adding up the digits in the previous sum until you reach a sum that has a single digit.
+
+> 你需要不断重复计算一个新的和的过程，将前一个和中的数字相加，直到得到一个只有一个数字的和。
+
+For example, if the input num is 8979, the sum of its digits is 8+ 9+7+9=33. Since this sum has more than one digit, we repeat by calculating the sum of its digits 3 + 3 = 6. Since this new sum has a single digit, we return the new sum 6.
+
+> 例如，如果输入的数字是 8979，则其数字的和为 8+ 9+7+9=33。因为这个和不止一个数字，我们重复计算它的数字3 + 3 = 6的和。因为这个新的和只有一位数字，所以我们返回新的和6。
+
+Similarly, if the input num is 999999999999993, the return value is 3, since 9+9+9+9+9+9+9+9+9+9+9+9+9+9+3 = 129, and 1+2+9 = 12, and 1+2 = 3.
+
+> 类似地，如果输入数字为999999999999993，则返回值为3，因为9+9+9+9+9+9+9+9+9+9+9+9+9+9+3 = 129,1+2+9 = 12,1+2 = 3。
+
+For example:
+
+```python
+>>> digisum(8979)
+6
+>>> digisum(999999999999993)
+3
+>>> digisum(88)
+7
+>>> digisum(6)
+6
+```
+
+### 答案
+
+```python
+def parse(num):
+    num_list = []
+    while (num > 0):
+        num_list.append(num % 10)
+        num = num // 10
+    return sum(list(reversed(num_list)))  # 将顺序倒过来
+
+
+def digisum(num):
+    if 0 <= num < 10:
+        return num
+    value = parse(num)
+    while True:
+        # print("xsxsxsxsxs", value)
+        if 0 <= value < 10:
+            # print("if:>>>", value)
+            return value
+        # else:
+        value = parse(value)
+        # print("xx", value)
+            # break
+
+
+if __name__ == '__main__':
+    r1 = digisum(8979)
+    print(r1)
+    r2 = digisum(999999999999993)
+    print(r2)
+    r3 = digisum(88)
+    print(r3)
+    r4 = digisum(6)
+    print(r4)
+    r5 = digisum(4567)
+    print(r5)
+```
 
 
 
