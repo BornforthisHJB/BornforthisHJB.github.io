@@ -116,6 +116,11 @@ features:
     icon: svg
     details: 包括图标支持、全屏按钮、返回顶部按钮等
     link: /column/svg
+
+  - title: Git 原理详解与实操指南
+    icon: git
+    details: 前后端通用系列课
+    link: /column/git
 copyright: false
 footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 

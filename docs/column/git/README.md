@@ -6,6 +6,7 @@ title: Git原理详解与实操指南
 heroImage: /ColumnImages/git/git-github.png
 heroText: Git 原理详解与实操指南
 heroFullScreen: true
+comment: true
 tagline: 前后端通用系列课
 actions:
   - text: 开始学习 💡
@@ -50,13 +51,7 @@ footer: 立志降低教育成本，普及编程教育，提供优质资源教程
 - 进阶：本模块以 Git 的一些高级功能为主，虽然这些功能使用频率不算太高，但能够快速解决团队工作中的很多实际问题；
 - 协作：本模块以在工作中如何使用 Git 协作为主进行讲解，以提升团队整体效率为目的，讲解一些 Git 的应用场景。
 
-
-
-
-
-
-
-
+![img](./README.assets/5d882ce60001659f07503532.jpg)
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 

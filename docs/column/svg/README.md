@@ -3,7 +3,7 @@ blog: false
 home: true
 icon: svg
 title: SVG 教程
-heroImage: /ColumnImages/svg/SVG_Logo.svg.png
+heroImage: /ColumnImages/svg/SVG_Logo.png
 heroText: SVG 教程
 heroFullScreen: true
 tagline: SVG 意为可缩放矢量图形（Scalable Vector Graphics）
