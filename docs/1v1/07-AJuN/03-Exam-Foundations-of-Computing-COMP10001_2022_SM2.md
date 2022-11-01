@@ -152,6 +152,10 @@ if __name__ == '__main__':
     print(r)
 ```
 
+## Question 3
+
+
+
 ## Question 4
 
 for 编程 while
@@ -163,6 +167,47 @@ def make_pack(weights, _max):
     for i in range(2, len(weights)):
         if weights[i] <= sum(weights[:i]):
             return []
+    pack = []
+    remaining = _max
+    for item in weights[::-1]:
+        if item <= remaining:
+            pack.append(item)
+            remaining = remaining - item
+    return pack
+```
+
+### 答案
+
+```python
+def make_pack(weights, _max):
+    weights.sort()
+    index = 2
+    while index < len(weights):
+        if weights[index] <= sum(weights[:index]):
+            return []
+        index += 1
+    pack = []
+    remaining = _max
+    index = 0
+    opt_object = weights[::-1]
+    while index < len(weights[::-1]):
+        item = opt_object[index]
+        if item <= remaining:
+            pack.append(item)
+            remaining = remaining - item
+    return pack
+```
+
+### 学员答案
+
+```python
+def make_pack(weights, _max):
+    weights.sort()
+    i = 2
+    while i <= len(weights):
+        if weights[i] <= sum(weights[:i]):
+            return []
+        i+=1
     pack = []
     remaining = _max
     for item in weights[::-1]:
