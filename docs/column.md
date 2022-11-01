@@ -82,6 +82,11 @@ features:
     details: 为你私人定制的摄影课程
     link: /column/photography
 
+  - title: 摄影入门课
+    icon: compare
+    details: 带你零基础入门摄影
+    link: /column/摄影入门课
+
   - title: web
     icon: network
     details: web 专栏
