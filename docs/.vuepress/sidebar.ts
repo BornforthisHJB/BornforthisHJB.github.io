@@ -1,6 +1,18 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
+	"/column/git/": [
+		"",
+		{
+			text: "入门基础",
+			icon: "git",
+			children: [
+				"base/01",
+				
+			]
+		}
+		
+	],
 	"/column/svg/": [
 		"",
 		"01",
