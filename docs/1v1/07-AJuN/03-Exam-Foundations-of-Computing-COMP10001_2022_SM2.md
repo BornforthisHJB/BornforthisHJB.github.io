@@ -237,7 +237,7 @@ if __name__ == '__main__':
 
 Write a function brackets_match`(instring)` that takes a string as input, and returns True if all the brackets in instring match correctly, or False otherwise. You can assume that the input string contains only digits (i.e., '0123456789') and brackets (i.e., '(' and ')').
 
-> 编写一个函数 brackets_match(instring)，它接受一个字符串作为输入，如果instring中的所有方括号都正确匹配则返回True，否则返回False。您可以假设输入字符串只包含数字(即'0123456789')和括号(即'('和')')。
+> 编写一个函数 brackets_match(instring)，它接受一个字符串作为输入，如果instring中的所有方括号都正确匹配则返回 True，否则返回False。您可以假设输入字符串只包含数字(即'0123456789')和括号(即'('和')')。
 
 The brackets in the string are considered to match correctly if for every opening bracket '(' there is a matching closing bracket ')' later in the string, and conversely every closing bracket has a matching opening bracket earlier in the string.
 
@@ -262,6 +262,57 @@ False
 False
 >>> brackets_match('(1(')
 False
+```
+
+### 答案
+
+```python
+def brackets_match(instring):
+    left_parentheses = "("
+    right_parentheses = ")"
+    # left_parentheses_count = instring.count("(")
+    # right_parentheses_count = instring.count(")")
+    # if left_parentheses_count == right_parentheses_count:
+    #     return True
+    # return False
+    detail_str = ""
+    # sum_count = 0
+    for s in instring:
+        if not s.isdigit():
+            detail_str += s
+        else:
+            pass
+    # print("xxx:>>>", detail_str)
+    if detail_str.count("()") != 0:
+        # sum_count += detail_str.count("()")
+        new_detail_str = detail_str.replace("()", "")
+        if new_detail_str:
+            if new_detail_str.count("()") != 0:
+                # sum_count += new_detail_str.count("()")
+                return True
+            else:
+                return False
+        return True
+    else:
+        return False
+    # print(detail_str)
+
+
+if __name__ == '__main__':
+    r1 = brackets_match('()')
+    print(r1)
+    r2 = brackets_match('(1)(2)')
+    print(r2)
+    r3 = brackets_match('(1(3))')
+    print(r3)
+    r4 = brackets_match(')((3)')
+    print(r4)
+    r5 = brackets_match('(1)(56))')
+    print(r5)
+    r6 = brackets_match('(1(')
+    print(r6)
+    r7 = brackets_match('(1())(1)')
+    print(r7)
 ```
 
 
