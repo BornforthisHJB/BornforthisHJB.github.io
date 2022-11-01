@@ -3,7 +3,9 @@ import { sidebar } from "vuepress-theme-hope";
 export const zhSidebar = sidebar({
 	"/column/svg/": [
 		"",
-		"01"
+		"01",
+		"02",
+		"03",
 	],
 	"/column/Python-practice/": [
 		{
