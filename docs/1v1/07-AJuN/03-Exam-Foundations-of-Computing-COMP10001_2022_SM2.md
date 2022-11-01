@@ -34,6 +34,66 @@ This assignment is locked until Nov 1 at 15:00.
 
 > 此作业锁定到11月1日15:00。
 
+## Question 1
+
+### (a) Output value: `'wombat'`
+
+Required operations:
+
+1. `.join()` method
+2. list slicing
+
+```python
+In [22]: "".join(list('waobmcbdaet')[::2])
+Out[22]: 'wombat'
+```
+
+### (b) Output value: True
+
+Required operations:
+
+1. len() function
+2. dictionary lookup
+
+```python
+len({1:[1,2,3]}[1]) == 3
+```
+
+### (c) Output value: '6 // 3 == 2!'
+
+Required operations:
+
+1. floor division
+2. f-string
+
+```python
+f'{12//2} // 3 == 2'
+```
+
+### (d) Output value: 1
+
+Required operations:
+
+1. `.pop()` method
+2. `.split()` method
+3. `.index()` method
+
+```python
+"1,2,3".split(",").index("2") + [1, 2, 0].pop()
+```
+
+### (e) Output value:  True
+
+Required operations:
+
+1. `.keys()` method
+2. in operator
+3. tuple indexing
+
+```python
+tuple({(1, 2): "value"}.keys())[0][0] in (1, 2, 3)
+```
+
 
 
 ## Question 2
@@ -154,6 +214,58 @@ if __name__ == '__main__':
 
 ## Question 3
 
+In this question, we will play with a new form of poetry. In this form of poetry, each line of the poem should follow a specified format, in terms of containing a sequence of short and long words. The function provided here is designed to check whether a given poem follows the provided format.
+
+> 在这个问题中，我们将玩转一种新的诗歌形式。在这种形式的诗歌中，诗的每一行都应该遵循特定的格式，即包含一系列长短词。这里提供的函数旨在检查给定的诗歌是否遵循所提供的格式。
+
+The format for a line in a poem is specified by a string of the characters `'S'` (for short words) and `'L'` (for long words). For example, the format `'SSL'` specifies that the corresponding line of the poem should contain 3 words: a short word, followed by another short word, followed by a long word. We will consider a word with 3 characters or less to be a short word, otherwise it is considered a long word. The line of poetry 'a big balloon' satisfies the format `'SSL'`, while none of the lines 'one big dog', 'advance australia fair' or 'tomorrow for dinner' satisfy the format `'SSL'`.
+
+> 诗中一行的格式由一串字符“S”(用于短词)和“L”(用于长词)指定。例如，“SSL”格式指定诗歌的对应行应该包含3个单词:一个短单词，后面跟着另一个短单词，后面跟着一个长单词。我们会认为一个少于3个字符的单词是短单词，否则它被认为是长单词。“一个大气球”这一行诗满足“SSL”的格式，而“一只大狗”、“推进澳大利亚博览会”或“明天的晚餐”这几行诗都不满足“SSL”的格式。
+
+The format for a poem is given as a list of strings, where each string represents the format of the corresponding line of the poem. For example, `['SSSL', 'LL', 'SLS']` is the format for poems containing 3 lines, where the first line has the format `'SSSL'`, and so on. An example of a poem that matches this format is:
+
+> 一首诗的格式是一个字符串列表，其中每个字符串代表诗中相应行的格式。例如，[' ssl '， 'LL'， 'SLS']是包含3行诗的格式，其中第一行的格式为' ssl '，以此类推。一个符合这种格式的诗歌例子是:
+
+```python
+I saw a crocodile
+Smiling strangely
+But rather fat
+```
+
+This poem can be represented as a single string, with each line separated by a newline character `\n`, for example, 'I saw a crocodile\nSmiling strangely\nBut rather fat'. Each word contains only letters, and words in a line are separated by whitespace.
+
+> 这首诗可以表示为单行，每行之间用换行字符“n”隔开，例如，“我看到一条鳄鱼\n微笑得很奇怪\n但很胖”。每个单词只包含字母，一行中的单词用空格分隔。
+
+The function `check_poem(poem, structure)` takes as input a poem and its format specification, and returns either `True` or `False`. The `True` value is returned if the poem matches the given format, otherwise it should return `False`.
+
+> 函数check_poem(poem, structure)接受一首诗及其格式规范作为输入，并返回True或False。如果诗歌匹配给定的格式，则返回True值，否则返回False值。
+
+- `poem` - a non-empty string comprising lines separated by `\n` that represents a poem.
+-  `structure` - a list of strings representing the correct format of a poem.
+
+```python
+def check_poem(poem, structure):
+    short = 3
+    lines = poem.strip().split('\n')
+    all_match = True
+    for (line, form) in zip(lines, structure):
+        words = line.split()
+        line_match = True
+        i = 0
+        while i < len(words) and i < len(form):
+            if form[i] == 'S' and len(words[i]) >= short:
+                line_match = False
+            if form[i] == 'L' and len(words[i]) < short:
+                line_match = False
+            i += 1
+        all_match = all_match and line_match
+return all_match
+```
+
+
+
+
+
 
 
 ## Question 4
@@ -217,7 +329,97 @@ def make_pack(weights, _max):
     return pack
 ```
 
+## Question 5
 
+Esperanto is one of the most widely used constructed languages. Unlike many natural languages, it is considered to be easy to learn as it has high regularity. For instance, the suffixes ‑o, ‑a, ‑e, and ‑i indicate that a word is a noun (kato, a cat), adjective (bela, beautiful), adverb (bele, beautifully), and infinitive verb (paroli, to speak), respectively. It has a single definite article (la) and a set of pronouns (mi, ni, vi, li, ŝi, ĝi, ili). Plural forms of nouns and adjectives are formed by attaching j as in katoj (cats).
+
+> 世界语是使用最广泛的构造语言之一。与许多自然语言不同，它被认为很容易学习，因为它有很高的规律性。例如，后缀o、a、e和i分别表示一个单词是名词(kato，一只猫)、形容词(bela，美丽)、副词(bele，美丽)和不定式动词(paroli，说话)。它有一个定冠词(la)和一组代词(mi, ni, vi, li， ŝi, i, ili)。名词和形容词的复数形式是通过在katoj (cats)中加上j来形成的。
+
+The sentence structure is very much like English (Subject–Verb–Object) while objects are additionally marked by the n suffix (La hundo amas la katon, the dog loves the cat).
+
+> 这句话的句子结构很像英语(主语-动词-宾语)，而宾语则附加了n后缀(La hundo amas La katon，狗爱猫)。
+
+Verbs tenses are also expressed via endings: -is, -as, -os for the past, present, future tense, respectively. E.g., estas means is, ĉasis— chased, esperos— will hope. Finally, negation is expressed via the ne particle.
+
+> 动词的时态也可以通过结尾来表达:-is， -as， -os分别用于过去时，现在时和将来时。例如，estas的意思是“是”、“是”、“是”、“是”。最后，否定通过ne粒子来表达。
+
+Here are some sample sentences and their English translations:
+
+> 下面是一些例句和它们的英文翻译:
+
+- La floro estas bela //  The flower is beautiful
+
+> La floro estas bela //这朵花很漂亮
+
+- La kato ne kuris //     The cat didn't run
+
+> 灵魂使者不跟猫咪跑
+
+- Ŝi havas belajn florojn // She has beautiful flowers
+
+> Ŝi havas belajn florojn //她有漂亮的花
+
+- Kato kuris // A cat ran
+
+> Kato kuris //一只猫跑了
+
+The code is intended to take an Esperanto sentence as its input and return a list of parts of speech (verb, noun,...) for each word in the sentence. The word classes (parts of speech) are provided as a dictionary pos comprising markers that signify each part of speech and the corresponding part of speech. The markers are either 1-3 character suffixes starting with "-" for nouns, verbs, adjectives, adverbs, or whole 2-3 character words for pronouns, articles, particles). The function process(text) takes a string text and returns a list of parts of speech. It attempts to match the whole-word units first and then suffixes (starting from the longest ones). If it doesn't find a string match, it assigns a corresponding word to OOV (out-of-vocabulary).
+
+> 该代码的目的是将世界语句子作为输入，并返回句子中每个单词的词性(动词、名词、……)的列表。词类(词类)作为字典pos提供，其中包含标记，表示每个词类和对应的词类。标记要么是名词、动词、形容词、副词以“-”开头的1-3个字符的后缀，要么是代词、冠词、助词的2-3个字符的完整单词)。函数process(text)接受字符串文本并返回词性列表。它首先尝试匹配整个单词的单位，然后是后缀(从最长的开始)。如果它没有找到匹配的字符串，它就将相应的单词分配给OOV(词汇表外)。
+
+```python
+def process(text):                              # 1
+    pos = {'-o': 'N', '-oj': 'N', '-on': 'N', '-ojn': 'N', '-a': 'ADJ', '-aj': 'ADJ', '-an': 'ADJ', '-ajn': 'ADJ', '-i': 'V', '-is': 'V', '-as': 'V', '-os': 'V', '-e': 'ADV', 'mi': 'PRON', 'ni': 'PRON', 'vi': 'PRON', 'li': 'PRON', 'ŝi': 'PRON', 'ĝi': 'PRON', 'ili': 'PRON', 'la': 'ART', 'ne': 'NEG'}  # 2
+    out = ()                                    # 3
+    for word in text.split():                   # 4
+        found = False                           # 5
+        word = word.lower().replace('.','').replace(',','')  # 6
+        if len(word)>1 and len(word)<=4:        # 7
+            if word in pos:                     # 8
+                found = True                    # 9
+                out.append(pos[word])           # 10
+        elif len(word)>=4:                      # 11
+            for i in range(3,0,-1)              # 12
+                if '-'+word[-i:] in pos:        # 13
+                    found = True                # 14
+                    out.append(pos[word[-i:]])  # 15
+                    break                       # 16
+        if not found:                           # 17
+            out.append('OOV')                   # 18
+    return out
+```
+
+examples:
+
+```python
+>>> process('La floro estas bela')
+['ART', 'N', 'V', 'ADJ']
+>>> process('La virino ne estas malbela')
+['ART', 'N', 'NEG', 'V', 'ADJ']
+>>> process('Ili ne taŭgas por karesi')
+['PRON', 'NEG', 'V', 'OOV', 'V']
+```
+
+However, there are several errors in the given function definitions. Identify **exactly** three (3) errors and specify:
+
+> 然而，在给定的函数定义中有几个错误。确定**准确**三(3)个错误并指定:
+
+ (a) the line where the error occurs;
+
+> (a)发生错误的线;
+
+ (b) the type of error, as *syntax*, *run-time*, or logic; and
+
+> (b)错误类型，如*语法*、*运行时*或逻辑;和
+
+(c) how you would fix each error, in the form of the corrected (single) line of code.
+
+> (c)你们将如何以纠正的(单)行代码的形式修正每个错误。
+
+### 答案
+
+1. 12 行的 for 缺少冒号 `:`
+2. 10、15 tuple 没有 append，把 3行改成列表。
 
 ## Question 6
 
