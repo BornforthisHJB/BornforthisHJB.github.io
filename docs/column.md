@@ -112,10 +112,10 @@ features:
     details: Python 专项练习
     link: /column/Python-practice/
 
-  - title: 更多新特性
-    icon: more
+  - title: SVG 教程
+    icon: svg
     details: 包括图标支持、全屏按钮、返回顶部按钮等
-    link: https://vuepress-theme-hope.github.io/v2/zh/guide/feature/
+    link: /column/svg
 copyright: false
 footer: MIT Licensed | Copyright © 2018-present AndersonHJB
 

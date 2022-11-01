@@ -20,7 +20,28 @@ footer: 立志降低教育成本，普及编程教育，提供优质资源教程
 
 你好，我是悦创。
 
-Python 专项真题演练！
+SVG 意为可缩放矢量图形（Scalable Vector Graphics）。
+
+SVG 使用 XML 格式定义图像。
+
+**现在开始学习 SVG!**
+
+```html
+<html>
+<body>
+ 
+<h1>My first SVG</h1>
+ 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <circle cx="100" cy="50" r="40" stroke="black"
+  stroke-width="2" fill="red" />
+</svg>
+ 
+</body>
+</html>
+```
+
+
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
 
