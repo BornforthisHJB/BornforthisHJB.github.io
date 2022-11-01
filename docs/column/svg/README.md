@@ -41,6 +41,8 @@ SVG 使用 XML 格式定义图像。
 </html>
 ```
 
+<button name="button" style="color: black"><a href="https://bornforthis.cn/web_runing/svg/README/README.html" target="_blank">尝试一下</a></button>
+
 
 
 欢迎关注我公众号：AI悦创，有更多更好玩的等你发现！
