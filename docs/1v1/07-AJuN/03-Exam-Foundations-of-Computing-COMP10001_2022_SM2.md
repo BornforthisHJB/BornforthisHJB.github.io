@@ -123,7 +123,7 @@ return ngrams.most_common(5)
 
 ![image-20221101121000208](./03-Exam-Foundations-of-Computing-COMP10001_2022_SM2.assets/image-20221101121000208.png)
 
-## 答案
+### 答案
 
 ```python
 from collections import Counter
@@ -154,19 +154,115 @@ if __name__ == '__main__':
 
 
 
+## Question 6
+
+The following function csvdict`(filename)` is intended to read a csv file with the given filename. The first line of the csv file contains the headings of each column in the file. Each subsequent line of the csv file contains an integer value for each column. You can assume that the csv file exists, is correctly formatted, it contains at least one column, it has at least one row of values in addition to the heading row, and each row has the correct number of values.
+
+> 下面的函数csvdict ' (filename) '用于读取具有给定文件名的csv文件。csv文件的第一行包含文件中每个列的标题。csv文件的后续每一行都包含每个列的整数值。您可以假设csv文件存在，格式正确，至少包含一列，除标题行外至少有一行值，并且每行值的数量正确。
+
+The function csvdict`(filename)` should return a dictionary, whose keys correspond to the headings of the columns in the csv file, and the value of each key is the integer sum of the values of the corresponding column.
+
+> 函数 `csvdict'(filename)'` 应该返回一个字典，它的键对应于 csv 文件中列的标题，每个键的值是对应列值的整数和。
+
+For example, if the csv file test `.csv` contains:
+
+> 例如，如果 csv 文件test ' .csv '包含:
+
+```python
+col1, col2, col3
+12, 2, 101
+10, 3, 102
+8, 4, 110
+```
+
+then csvdict`('test.csv')` will return:
+
+```python
+{'col1': 30, 'col2': 9, 'col3': 313}
+```
+
+Provide code to insert into each of the numbered boxes in the code below to complete the function as described. Note that your code will be evaluated at the indentation level indicated for each box.
+
+> 提供代码，将其插入到下面代码中的每个编号框中，以完成所述的功能。请注意，您的代码将在每个框所指示的缩进级别上计算。
+
+```python
+import csv
+
+def csvdict(filename):
+    #    1 
+    summary_dict = {}
+    reader = csv.reader(open(filename))
+    #    2 
+        if line_count == 0:
+            headings = line
+            for val in line:
+                #    3 
+        else:
+            for index in range(len(line)):
+                #    4 
+        line_count += 1  
+#    5
+```
+
+![image-20221101122727959](./03-Exam-Foundations-of-Computing-COMP10001_2022_SM2.assets/image-20221101122727959.png)
+
+### 答案
+
+```python
+import csv
 
 
+def csvdict(filename):
+    line_count = 0  # 1
+    summary_dict = {}
+    reader = csv.reader(open(filename))
+    for line in reader:  # 2
+        if line_count == 0:
+            headings = line
+            for val in line:
+                summary_dict[val] = 0  # 3
+        else:
+            for index in range(len(line)):
+                summary_dict[headings[index]] += int(line[index])  # 4
+        line_count += 1
+    return summary_dict  # 5
 
 
+if __name__ == '__main__':
+    r = csvdict("q6.csv")
+    print(r)
+```
 
+## Question 7
 
+Write a function brackets_match`(instring)` that takes a string as input, and returns True if all the brackets in instring match correctly, or False otherwise. You can assume that the input string contains only digits (i.e., '0123456789') and brackets (i.e., '(' and ')').
 
+> 编写一个函数 brackets_match(instring)，它接受一个字符串作为输入，如果instring中的所有方括号都正确匹配则返回True，否则返回False。您可以假设输入字符串只包含数字(即'0123456789')和括号(即'('和')')。
 
+The brackets in the string are considered to match correctly if for every opening bracket '(' there is a matching closing bracket ')' later in the string, and conversely every closing bracket has a matching opening bracket earlier in the string.
 
+> 如果字符串中后面的每个开始括号'('有一个匹配的结束括号')'，则认为字符串中的括号是正确匹配的，相反，每个结束括号在字符串中较早的时候都有一个匹配的开始括号。
 
+Note that digits can appear anywhere in the string but can be ignored, and instring will always contain one or more brackets.
 
+> 注意，数字可以出现在字符串中的任何位置，但可以忽略，instring 将始终包含一个或多个方括号。
 
+For example:
 
+```python
+>>> brackets_match('()')
+True
+>>> brackets_match('(1)(2)')
+True
+>>> brackets_match('(1(3))')
+True
+>>> brackets_match(')((3)')
+False
+>>> brackets_match('(1)(56))')
+False
+>>> brackets_match('(1(')
+False
+```
 
 
 

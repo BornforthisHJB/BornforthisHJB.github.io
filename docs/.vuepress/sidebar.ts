@@ -143,7 +143,8 @@ export const zhSidebar = sidebar({
 	],
 	"/1v1/07-AJuN": [
 		"01-W14-Worksheet-14-File-IO-and-CSV-Files",
-		"02-Wugs"
+		"02-Wugs",
+		"03-Exam-Foundations-of-Computing-COMP10001_2022_SM2",
 	],
 	"/1v1/06-KAI/": [
 		{
