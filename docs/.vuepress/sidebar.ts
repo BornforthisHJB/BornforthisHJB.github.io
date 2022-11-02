@@ -8,6 +8,9 @@ export const zhSidebar = sidebar({
 			icon: "git",
 			children: [
 				"base/01",
+				"base/02",
+				"base/03",
+				"base/04",
 				
 			]
 		}
