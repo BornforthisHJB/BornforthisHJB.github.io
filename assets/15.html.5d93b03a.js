@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c,a as e}from"./app.877bbf98.js";const s={},_=e("nav",{class:"table-of-contents"},[e("ul")],-1),n=[_];function a(r,l){return o(),c("div",null,n)}const m=t(s,[["render",a],["__file","15.html.vue"]]);export{m as default};
