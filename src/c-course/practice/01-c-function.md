@@ -46,7 +46,7 @@ void processAndSumDigits(long num);
 ```
 
 输出：
-```
+```c
 Digits: 1 2 3 4 5
 Sum: 15
 ```
