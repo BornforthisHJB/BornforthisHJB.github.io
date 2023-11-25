@@ -356,6 +356,22 @@ print(num_lakes_list)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Section B (35 marks)
 
 In this question we will investigate the binary heap data structure.
