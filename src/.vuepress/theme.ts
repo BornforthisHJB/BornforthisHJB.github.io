@@ -50,29 +50,30 @@ export default hopeTheme({
   // },
 
   plugins: {
+    comment: false,
     // You should generate and use your own comment service
-    comment: {
-      provider: "Waline",
-      serverURL: "https://comment.bornforthis.cn/",
-      reaction: [
-        '/Waline/tieba/tieba_agree.png',
-        '/Waline/tieba/tieba_sunglasses.png',
-        '/Waline/tieba/tieba_pick_nose.png',
-        // '/Waline/tieba/tieba_sleep.png',
-        '/Waline/tieba/tieba_awkward.png',
-        '/Waline/tieba/1f613.png',
-        '/Waline/tieba/1f60f.png',
-        // '/Waline/tieba/tieba_coffee.png',
-        // '/Waline/tieba/tieba_cute.png',
-        // '/Waline/qq/qq_4.gif',
-        // '/Waline/qq/qq_alpaca.gif',
-        // '/Waline/qq/qq_bear2.gif',
-      ],
-      comment: true, // 评论数统计
-      pageview: true, // 浏览量统计
-      copyright: false,
-      dark: "auto",
-    },
+    // comment: {
+    //   provider: "Waline",
+    //   serverURL: "https://comment.bornforthis.cn/",
+    //   reaction: [
+    //     '/Waline/tieba/tieba_agree.png',
+    //     '/Waline/tieba/tieba_sunglasses.png',
+    //     '/Waline/tieba/tieba_pick_nose.png',
+    //     // '/Waline/tieba/tieba_sleep.png',
+    //     '/Waline/tieba/tieba_awkward.png',
+    //     '/Waline/tieba/1f613.png',
+    //     '/Waline/tieba/1f60f.png',
+    //     // '/Waline/tieba/tieba_coffee.png',
+    //     // '/Waline/tieba/tieba_cute.png',
+    //     // '/Waline/qq/qq_4.gif',
+    //     // '/Waline/qq/qq_alpaca.gif',
+    //     // '/Waline/qq/qq_bear2.gif',
+    //   ],
+    //   comment: true, // 评论数统计
+    //   pageview: true, // 浏览量统计
+    //   copyright: false,
+    //   dark: "auto",
+    // },
     
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {

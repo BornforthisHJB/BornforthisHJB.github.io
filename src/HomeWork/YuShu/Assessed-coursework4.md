@@ -721,6 +721,8 @@ Implement a function called `linear_time_heapify` which takes as input an array 
 
 **结论**：因此，根据数学归纳法，证明了对于任意的 $i$ ，当插入算法到达第 4 行时，最多再返回到第 4 行 $1+\log_2(i+1)$  次，从而证明了引理。
 
+### Q2
+
 
 
 ## Section C (30 marks)
