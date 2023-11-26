@@ -414,6 +414,47 @@ def number_connected_components_bfs(graph: Graph, print_val: bool = False) -> in
 ### Q2
 
 ```python
+def number_connected_components_dfs(graph: Graph, print_val: bool = False) -> int:
+    # 创建一个集合来存储已访问的节点
+    visited = set()
+
+    # 定义深度优先搜索的辅助函数
+    # 它接收一个节点和当前连通分量的列表
+    def dfs(node, component):
+        # 将当前节点标记为已访问
+        visited.add(node)
+        # 将当前节点添加到连通分量列表中
+        component.append(node)
+        # 遍历当前节点的所有邻接节点
+        for edge in node.adjacency_list:
+            neighbor = edge.to_node
+            # 如果邻接节点未被访问，递归调用dfs
+            if neighbor not in visited:
+                dfs(neighbor, component)
+
+    # 初始化连通分量的数量
+    num_connected_components = 0
+    # 用于存储所有连通分量的列表
+    components = []
+
+    # 遍历图中的每个节点
+    for node in graph.node_array:
+        # 对于每个未访问的节点，开始一个新的连通分量搜索
+        if node not in visited:
+            # 创建一个新的连通分量列表
+            current_component = []
+            # 使用dfs搜索连通分量
+            dfs(node, current_component)
+            # 将当前连通分量添加到总列表中
+            components.append(current_component)
+            # 增加连通分量的计数
+            num_connected_components += 1
+            # 如果print_val为True，打印当前连通分量的信息
+            if print_val:
+                print(f"Connected Component {num_connected_components}: {[n.name for n in current_component]}")
+
+    # 返回连通分量的总数
+    return num_connected_components
 ```
 
 
