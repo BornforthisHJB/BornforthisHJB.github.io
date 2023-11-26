@@ -1201,6 +1201,41 @@ def dijkstras_max_bandwidth_algorithm(graph: Graph, initial_node: GraphNode):
                 heapq.heappush(max_bw_heap, (-path_bw, neighbor))
 ```
 
+@tab code3
+
+```python
+def dijkstras_max_bandwidth_algorithm(graph: Graph, initial_node: GraphNode):
+    # 初始化每个节点的最大带宽为0.0（浮点数）
+    for node in graph.node_array:
+        node.max_path_bandwidth = 0.0
+
+    # 将起始节点的最大带宽设置为无限大（浮点数）
+    initial_node.max_path_bandwidth = float(np.Inf)
+
+    # 创建一个优先队列（最小堆），用于存储节点和它们的最大带宽
+    # Python的heapq实现的是最小堆，因此我们通过存储负值来模拟最大堆的行为
+    max_bw_heap = []
+    heapq.heappush(max_bw_heap, (-float(np.Inf), initial_node))
+
+    # 循环直到优先队列为空
+    while max_bw_heap:
+        # 从队列中弹出当前最大带宽的节点（由于我们存储的是负值，因此需要取反）
+        current_bw, current_node = heapq.heappop(max_bw_heap)
+        current_bw = -current_bw
+
+        # 遍历当前节点的所有邻居节点
+        for edge in current_node.adjacency_list:
+            neighbor = edge.to_node
+            # 计算到邻居节点的路径的带宽，这是当前节点的带宽和边的带宽中较小的一个
+            path_bw = min(current_bw, edge.bandwidth)
+
+            # 如果计算出的路径带宽大于邻居节点当前的最大带宽，则更新邻居节点的最大带宽
+            if path_bw > neighbor.max_path_bandwidth:
+                neighbor.max_path_bandwidth = float(path_bw)  # 以浮点数形式更新
+                # 将更新后的邻居节点和其带宽重新加入优先队列（最小堆）中
+                heapq.heappush(max_bw_heap, (-path_bw, neighbor))
+```
+
 
 
 :::
