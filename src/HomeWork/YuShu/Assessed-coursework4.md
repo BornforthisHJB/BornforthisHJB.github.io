@@ -501,24 +501,6 @@ def compute_number_lakes(grid_map: np.array) -> int:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Section B (35 marks)
 
 In this question we will investigate the binary heap data structure.
@@ -716,6 +698,28 @@ The final question in this section is optional.
 **(Q6)** (Optional and non-assessed) (⋄) The simple_heapify method in the MinHeap class takes as input an array $input\_array=[(k_0,v_0),...,(k_{n−1},v_{n−1})]$ consisting of n key-value tuples ($k\ell$, $v\ell$) and the heap into one containing the set of tuples $\{(k_0,v_0),...,(k_{n−1},v_{n−1})\}$ within input_array. The worst-case run-time complexity of the `simple_heapify` method is $O(nlog(n))$ where n is the number of tuples within `input_array`. Can you find a method with a worst-case time complexity of $O(n)$?
 
 Implement a function called `linear_time_heapify` which takes as input an array $input_array = [(k_0,v_0),...,(k_{n−1},v_{n−1})]$ consisting of n key-value tuples ($k\ell$,$v\ell$) and returns an object belonging to the MinHeap class containing containing the set of tuples $\{(k_0, v_0),...,(k_{n−1},v_{n−1})\}$ and satisfying the ‘’heap property” in O(n) time.
+
+## Solution B
+
+### Q1
+
+1. 引理
+
+如果插入算法到达第 4 行，则算法最多再返回到第 4 行 $1+\log_2(i+1)$  次，其中 $i$ 为当前的 `index` 值。
+
+2. 证明方法
+
+使用数学归纳法进行证明。
+
+**基础情况**：当 $i=0$  时，我们正在插入的元素是堆中的第一个元素。由于它没有父节点，因此无需上移（也就是不执行循环），这符合 $1+\log_2(1)=1$（即执行 0 次循环）。
+
+**归纳假设**：假设对于所有 $i<k$，引理成立。即对于小于 $k$ 的任意 $i$ ，算法最多返回到第 4 行 $1+\log_2(i+1)$ 次。
+
+**归纳步骤**：考虑 $i=k$ 的情况。在循环中，每次迭代 `index` 至少减半（因为每次都移动到父节点位置），即 `index` 的值变为 $\lfloor (index-1)/2 \rfloor$。这意味着，从 $i$  开始，`index` 的值会变为 $i, \lfloor (i-1)/2 \rfloor, \lfloor ((i-1)/2-1)/2 \rfloor, \ldots$ ，直到它变为 0（根节点位置）。
+
+每次迭代减少的 `index` 值形成了一个几何级数，其中每个项都是前一个项的一半。这个级数的长度就是循环执行的次数。由于 $i$  可以表示为 $2^m$  的形式（对于某个整数 $m$ ），迭代将在大约 $m$  次之后结束，其中 $m=\log_2(i+1)$ 。因此，最多执行 $1+\log_2(i+1)$  次循环。
+
+**结论**：因此，根据数学归纳法，证明了对于任意的 $i$ ，当插入算法到达第 4 行时，最多再返回到第 4 行 $1+\log_2(i+1)$  次，从而证明了引理。
 
 
 
