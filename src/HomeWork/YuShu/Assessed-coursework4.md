@@ -753,6 +753,75 @@ Implement a function called `linear_time_heapify` which takes as input an array 
 
 ### Q3
 
+```python
+class MinHeap:
+    # implementation of the binary heap data structure
+    def __init__(self, input_array=[]):
+        self.data = []  # 存储堆元素的数组
+        self.size = 0   # 堆中元素的数量
+        self.simple_heapify(input_array)  # 使用输入数组构建堆
+
+    def insert(self, key, value):
+        # 插入方法
+        self.data.append((key, value))  # 在数组末尾添加新元素
+        self.size += 1
+        index = self.size - 1
+        parent_index = (index - 1) // 2
+        
+        # 向上调整元素直到恢复最小堆性质
+        while parent_index >= 0 and self.data[parent_index][0] > self.data[index][0]:
+            self.swap(parent_index, index)
+            index = parent_index
+            parent_index = (index - 1) // 2
+
+    def swap(self, i, j):
+        # 交换堆中两个元素的位置
+        self.data[i], self.data[j] = self.data[j], self.data[i]
+
+    def simple_heapify(self, input_array):
+        # 堆化输入数组
+        for x in input_array:
+            if isinstance(x, (int, float)):
+                self.insert(x, None)
+            else:
+                self.insert(x[0], x[1])
+
+    def extract_min(self):
+        # 移除并返回最小元素
+        if self.size == 0:
+            raise Exception("Heap is empty")
+        self.swap(0, self.size - 1)  # 将堆顶元素与数组最后一个元素交换
+        min_element = self.data.pop()  # 弹出并保存最小元素
+        self.size -= 1
+        if self.size > 0:
+            self.min_heap_restore(0)  # 恢复最小堆性质
+        return min_element
+
+    def min_heap_restore(self, index):
+        # 恢复最小堆性质
+        min_index = index
+        left_child = 2 * index + 1  # 左子节点的索引
+        right_child = 2 * index + 2  # 右子节点的索引
+
+        # 寻找三者中的最小值
+        if left_child < self.size and self.data[left_child][0] < self.data[min_index][0]:
+            min_index = left_child
+        if right_child < self.size and self.data[right_child][0] < self.data[min_index][0]:
+            min_index = right_child
+
+        # 如果找到更小的子节点，则交换并递归调用
+        if min_index != index:
+            self.swap(index, min_index)
+            self.min_heap_restore(min_index)
+h = MinHeap()
+h.insert(95, "Alice")
+h.insert(82, "Bob")
+h.insert(98, "Charlie")
+
+for i in range(3):
+    print(h.extract_min())
+```
+
 
 
 
