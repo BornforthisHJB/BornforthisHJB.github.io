@@ -1153,7 +1153,57 @@ def dijkstras_algorithm(graph: Graph, initial_node: GraphNode):
                 heapq.heappush(min_dists_heap, (new_dist, neighbor))
 ```
 
+### Q2
 
+::: code-tabs
+
+@tab code1
+
+```python
+def dijkstras_max_bandwidth_algorithm(graph: Graph, initial_node: GraphNode):
+    for node in graph.node_array:
+        node.max_path_bandwidth = 0
+    initial_node.max_path_bandwidth = np.Inf
+    max_bw_heap = []
+    heapq.heappush(max_bw_heap, (-np.Inf, initial_node))
+
+    while max_bw_heap:
+        current_bw, current_node = heapq.heappop(max_bw_heap)
+        current_bw = -current_bw
+
+        for edge in current_node.adjacency_list:
+            neighbor = edge.to_node
+            path_bw = min(current_bw, edge.bandwidth)
+            if path_bw > neighbor.max_path_bandwidth:
+                neighbor.max_path_bandwidth = path_bw
+                heapq.heappush(max_bw_heap, (-path_bw, neighbor))
+```
+
+@tab code2
+
+```python
+def dijkstras_max_bandwidth_algorithm(graph: Graph, initial_node: GraphNode):
+    for node in graph.node_array:
+        node.max_path_bandwidth = 0.0  # 初始化为浮点数0
+    initial_node.max_path_bandwidth = float(np.Inf)  # 确保起始节点的带宽是浮点数
+    max_bw_heap = []
+    heapq.heappush(max_bw_heap, (-float(np.Inf), initial_node))  # 使用浮点数
+
+    while max_bw_heap:
+        current_bw, current_node = heapq.heappop(max_bw_heap)
+        current_bw = -current_bw
+
+        for edge in current_node.adjacency_list:
+            neighbor = edge.to_node
+            path_bw = min(current_bw, edge.bandwidth)
+            if path_bw > neighbor.max_path_bandwidth:
+                neighbor.max_path_bandwidth = float(path_bw)  # 更新为浮点数
+                heapq.heappush(max_bw_heap, (-path_bw, neighbor))
+```
+
+
+
+:::
 
 ## Section D (15 marks)
 
