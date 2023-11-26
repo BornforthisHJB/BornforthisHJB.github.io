@@ -933,28 +933,6 @@ def online_median(X):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Section C (30 marks)
 
 In this section we will consider the application of the heap data structure to Dijkstra’s algorithm.
@@ -1131,6 +1109,39 @@ print_dijkstras_max_bandwidth_algorithm_output(G,"A")
 ## The maximum bandwidth path from node A to node H is 11.0
 ## The maximum bandwidth path from node A to node I is 1.0
 ## The maximum bandwidth path from node A to node J is 1.0
+```
+
+## Solution C
+
+### Q1
+
+```python
+def dijkstras_algorithm(graph: Graph, initial_node: GraphNode):
+    # 初始化所有节点的距离为无穷大
+    for node in graph.node_array:
+        node.distance_from_start = np.Inf
+    # 创建一个最小堆，并将初始节点放入其中
+    min_dists_heap = []
+    heapq.heappush(min_dists_heap, (0, initial_node))
+
+    # 当堆不为空时，继续算法
+    while len(min_dists_heap) > 0:
+        # 从堆中取出当前最小距离的节点
+        current_dist, current_node = heapq.heappop(min_dists_heap)
+
+        # 如果当前节点的距离已经不是最小的了，跳过当前节点
+        if current_dist > current_node.distance_from_start:
+            continue
+
+        # 遍历当前节点的所有邻居
+        for edge in current_node.adjacency_list:
+            neighbor = edge.to_node
+            new_dist = current_dist + edge.length
+
+            # 如果通过当前节点到邻居节点的距离更小，更新邻居节点的距离并加入堆中
+            if new_dist < neighbor.distance_from_start:
+                neighbor.distance_from_start = new_dist
+                heapq.heappush(min_dists_heap, (new_dist, neighbor))
 ```
 
 
