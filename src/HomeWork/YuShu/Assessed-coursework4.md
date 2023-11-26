@@ -751,6 +751,34 @@ Implement a function called `linear_time_heapify` which takes as input an array 
 
 总结：插入算法的最坏情况运行时间复杂度是 $O(\log n)$，主要受到堆高度（即树的深度）的影响。
 
+### Q3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Section C (30 marks)
 
 In this section we will consider the application of the heap data structure to Dijkstra’s algorithm.
