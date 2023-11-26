@@ -822,6 +822,33 @@ for i in range(3):
     print(h.extract_min())
 ```
 
+### Q4
+
+```python
+def heap_sort(X):
+    # 创建一个最小堆实例
+    heap = MinHeap()
+
+    # 遍历输入数组 X 中的每个元素
+    # 将每个元素插入到最小堆中
+    # 这里的 None 表示每个元素的值（与键无关，所以设置为 None）
+    for x in X:
+        heap.insert(x, None)
+
+    # 创建一个空数组用于存储排序后的元素
+    sorted_array = []
+
+    # 当堆的大小大于0时，循环执行以下操作
+    while heap.size > 0:
+        # 从堆中提取最小元素（即堆顶元素）
+        # extract_min 函数返回的是一个 (key, value) 元组
+        # 我们只关心 key（即数组 X 中的元素），所以取 [0]
+        sorted_array.append(heap.extract_min()[0])
+
+    # 返回排序后的数组
+    return sorted_array
+```
+
 
 
 

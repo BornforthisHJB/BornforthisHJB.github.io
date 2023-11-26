@@ -90,7 +90,7 @@ export default hopeTheme({
       // insert component easily
       // component: true,
 
-      demo: true,
+      demo: false,
       tabs: true,
 
       // install echarts before enabling it
