@@ -457,6 +457,48 @@ def number_connected_components_dfs(graph: Graph, print_val: bool = False) -> in
     return num_connected_components
 ```
 
+### Q3
+
+```python
+def compute_number_lakes(grid_map: np.array) -> int:
+    # 获取网格地图的尺寸
+    n = grid_map.shape[0]
+    # 检查网格地图是否为正方形
+    if grid_map.shape[0] != grid_map.shape[1]:
+        print("The grid map must be a square array")
+        return None
+
+    # 初始化用于湖泊计算的图结构
+    lake_graph = Graph()
+
+    # 定义一个函数，将网格坐标转换为图中的节点名称
+    def coord_to_name(i, j):
+        return f"{i}_{j}"
+
+    # 遍历网格地图，添加表示水域的节点到图中
+    for i in range(n):
+        for j in range(n):
+            if grid_map[i, j] == 0:  # 0 表示水域
+                lake_graph.add_node(coord_to_name(i, j))
+
+    # 遍历网格地图，添加边以连接相邻的水域节点
+    for i in range(n):
+        for j in range(n):
+            if grid_map[i, j] == 0:  # 只对水域单元格处理
+                # 检查左、右、上、下四个方向的相邻单元格
+                if i > 0 and grid_map[i - 1, j] == 0:  # 上
+                    lake_graph.add_edge(coord_to_name(i, j), coord_to_name(i - 1, j))
+                if i < n - 1 and grid_map[i + 1, j] == 0:  # 下
+                    lake_graph.add_edge(coord_to_name(i, j), coord_to_name(i + 1, j))
+                if j > 0 and grid_map[i, j - 1] == 0:  # 左
+                    lake_graph.add_edge(coord_to_name(i, j), coord_to_name(i, j - 1))
+                if j < n - 1 and grid_map[i, j + 1] == 0:  # 右
+                    lake_graph.add_edge(coord_to_name(i, j), coord_to_name(i, j + 1))
+
+    # 使用广度优先搜索算法计算连通分量的数量，即湖泊的数量
+    return number_connected_components_bfs(lake_graph)
+```
+
 
 
 
