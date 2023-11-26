@@ -34,7 +34,7 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "默认页脚",
+  footer: "Copyright © 2018-2023 长期招收编程一对一学员!微信:Jiabcdefh",
 
   displayFooter: true,
 

@@ -653,7 +653,7 @@ for i in range(5):
 ## [7, 22, 25, 34, 45, 49, 53, 77, 87, 91]
 ```
 
-**(Q5)** Write pseudo-code for an algorithm called online_median which leverages the heap data structure for the following task. Your algorithm should take as input an array $X=[X_0,X_1,X_2,...,X_n-1]$ a length $n \geq 1$ consisting of distinct numerical values. Your function should return a vector $Z=[Z_0,Z_1,...,Z_{⌊(n+1)/2⌋−1}]$  of length $⌊(n+1)/2⌋$, where for each $\ell \in \{0,...,⌊(n+1)/2⌋−1\}$, the $Z\ell$ is the median element of the set ${X_0,..., X_{2\ell}} $ consisting of the first $2\ell+1$ values within the array $X$.
+**(Q5)** Write pseudo-code for an algorithm called online_median which leverages the heap data structure for the following task. Your algorithm should take as input an array $X=[X_0,X_1,X_2,...,X_n-1]$ a length $n \geq 1$ consisting of distinct numerical values. Your function should return a vector $Z=[Z_0,Z_1,...,Z_{⌊(n+1)/2⌋−1}]$  of length $⌊(n+1)/2⌋$, where for each $\ell \in \{0,...,⌊(n+1)/2⌋−1\}$, the $Z\ell$ is the median element of the set $\{X_0,..., X_{2\ell}\}$ consisting of the first $2\ell+1$ values within the array $X$.
 
 Can you think of a method with a worst-case time complexity of $O(n log(n))$
 
@@ -847,6 +847,86 @@ def heap_sort(X):
 
     # 返回排序后的数组
     return sorted_array
+```
+
+### Q5
+
+```python
+import numpy as np
+import heapq
+
+class MaxHeap:
+    def __init__(self):
+        self.data = []  # 初始化一个空的列表，用于存储堆的元素
+
+    def insert(self, item):
+        # 将元素插入最大堆中
+        heapq.heappush(self.data, -item)  # Python的heapq模块提供的是最小堆，通过插入元素的相反数来模拟最大堆
+
+    def extract_max(self):
+        # 从最大堆中取出最大元素
+        return -heapq.heappop(self.data)  # 取出时将元素的相反数取反，得到原始的最大值
+
+    def peek_max(self):
+        # 查看最大堆中的最大元素
+        return -self.data[0] if self.data else None  # 如果堆不为空，则返回最大元素；否则返回None
+
+    def __len__(self):
+        # 返回堆中元素的数量
+        return len(self.data)
+
+    def is_empty(self):
+        # 检查堆是否为空
+        return len(self.data) == 0
+
+class MinHeap:
+    def __init__(self):
+        self.data = []  # 初始化一个空的列表，用于存储堆的元素
+
+    def insert(self, key):
+        # 将元素插入最小堆中
+        heapq.heappush(self.data, key)  # 使用heapq模块的heappush方法插入元素
+
+    def extract_min(self):
+        # 从最小堆中取出最小元素
+        return heapq.heappop(self.data) if self.data else None  # 如果堆不为空，则取出最小元素；否则返回None
+
+    def peek_min(self):
+        # 查看最小堆中的最小元素
+        return self.data[0] if self.data else None  # 如果堆不为空，则返回最小元素；否则返回None
+
+    def __len__(self):
+        # 返回堆中元素的数量
+        return len(self.data)
+
+def online_median(X):
+    min_heap = MinHeap()  # 创建一个最小堆，用于存储较大的一半元素
+    max_heap = MaxHeap()  # 创建一个最大堆，用于存储较小的一半元素
+    medians = []  # 初始化一个列表，用于存储每次插入后的中位数
+
+    for i, x in enumerate(X):
+        # 遍历输入数组
+        if max_heap.is_empty() or x < max_heap.peek_max():
+            max_heap.insert(x)  # 如果最大堆为空或元素小于最大堆的最大元素，则插入最大堆
+        else:
+            min_heap.insert(x)  # 否则，插入最小堆
+
+        # 平衡两个堆的大小
+        while len(max_heap) > len(min_heap) + 1:
+            min_heap.insert(max_heap.extract_max())
+        while len(min_heap) > len(max_heap):
+            max_heap.insert(min_heap.extract_min())
+
+        # 计算中位数
+        if i % 2 == 0:
+            # 每插入两个元素计算一次中位数
+            if len(max_heap) == len(min_heap):
+                median = (max_heap.peek_max() + min_heap.peek_min()) / 2
+            else:
+                median = max_heap.peek_max() if len(max_heap) > len(min_heap) else min_heap.peek_min()
+            medians.append(median)  # 将计算出的中位数添加到列表中
+
+    return medians  # 返回所有计算出的中位数
 ```
 
 
