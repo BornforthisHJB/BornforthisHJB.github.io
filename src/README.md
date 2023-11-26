@@ -12,7 +12,7 @@ heroText: 编程一对一辅导
 tagline: Python｜Java｜C｜Unity｜数据结构｜Web｜代做✨
 actions:
     - text: Memoirs 🧭
-      link: /HomeWork
+      link: /HomeWork/
       type: primary
 
     - text: 1v1 Docs 📄
