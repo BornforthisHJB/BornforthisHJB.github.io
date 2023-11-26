@@ -354,6 +354,70 @@ print(num_lakes_list)
 
 ## Solution A
 
+### Q1
+
+```python
+from collections import deque
+
+def number_connected_components_bfs(graph: Graph, print_val: bool = False) -> int:
+    # 初始化连通分量计数器
+    num_connected_components = 0
+
+    # 遍历图中的每个节点，将它们的访问状态设为未访问
+    for node in graph.node_array:
+        node.visited = False
+
+    # 初始化一个列表来存储每个连通分量中的节点名称
+    current_connected_components_lists = []
+    
+    # 再次遍历图中的每个节点
+    for node in graph.node_array:
+        # 如果当前节点尚未被访问
+        if not node.visited:
+            # 初始化当前连通分量的列表
+            current_component = []
+            # 使用队列进行BFS
+            queue = deque([node])
+            # 标记当前节点为已访问
+            node.visited = True
+
+            # 当队列不为空时
+            while queue:
+                # 从队列中弹出一个节点
+                current_node = queue.popleft()
+                # 将这个节点添加到当前连通分量列表中
+                current_component.append(current_node.name)
+
+                # 遍历当前节点的所有邻居
+                for edge in current_node.adjacency_list:
+                    neighbor = edge.to_node
+                    # 如果邻居节点未被访问
+                    if not neighbor.visited:
+                        # 标记邻居为已访问并将其加入队列
+                        neighbor.visited = True
+                        queue.append(neighbor)
+
+            # 完成当前连通分量的搜索后，增加连通分量的数量
+            num_connected_components += 1
+            # 将当前连通分量的节点列表添加到总列表中
+            current_connected_components_lists.append(current_component)
+    
+    # 如果需要打印连通分量的详细信息
+    if print_val:
+        for i, component in enumerate(current_connected_components_lists):
+            print(f"Component {i + 1}: {component}")
+
+    # 返回总的连通分量数量
+    return num_connected_components
+```
+
+### Q2
+
+```python
+```
+
+
+
 
 
 
