@@ -1117,30 +1117,39 @@ print_dijkstras_max_bandwidth_algorithm_output(G,"A")
 
 ```python
 def dijkstras_algorithm(graph: Graph, initial_node: GraphNode):
-    # 初始化所有节点的距离为无穷大
+    # 初始化所有节点的最短路径距离为无穷大
     for node in graph.node_array:
         node.distance_from_start = np.Inf
-    # 创建一个最小堆，并将初始节点放入其中
+    # 将初始节点的最短路径距离设置为0
+    initial_node.distance_from_start = 0
+    # 初始化一个空的最小堆（min-heap）
     min_dists_heap = []
+    # 将初始节点和其距离（0）加入到堆中
     heapq.heappush(min_dists_heap, (0, initial_node))
 
-    # 当堆不为空时，继续算法
-    while len(min_dists_heap) > 0:
-        # 从堆中取出当前最小距离的节点
-        current_dist, current_node = heapq.heappop(min_dists_heap)
+    # 创建一个集合来跟踪已访问的节点
+    visited = set()
 
-        # 如果当前节点的距离已经不是最小的了，跳过当前节点
-        if current_dist > current_node.distance_from_start:
+    # 当堆不为空时，继续执行循环
+    while len(min_dists_heap) > 0:
+        # 从堆中弹出当前最小距离的节点及其距离
+        current_dist, current_node = heapq.heappop(min_dists_heap)
+        
+        # 如果当前节点已经被访问过，则跳过后续操作
+        if current_node in visited:
             continue
+        # 将当前节点标记为已访问
+        visited.add(current_node)
 
         # 遍历当前节点的所有邻居
         for edge in current_node.adjacency_list:
             neighbor = edge.to_node
+            # 计算到达该邻居节点的新距离
             new_dist = current_dist + edge.length
-
-            # 如果通过当前节点到邻居节点的距离更小，更新邻居节点的距离并加入堆中
+            # 如果新的距离小于邻居节点当前的最短路径距离，则进行更新
             if new_dist < neighbor.distance_from_start:
                 neighbor.distance_from_start = new_dist
+                # 将更新后的邻居节点和新的距离加入到堆中
                 heapq.heappush(min_dists_heap, (new_dist, neighbor))
 ```
 
