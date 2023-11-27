@@ -264,7 +264,7 @@ print("The number of connected components is "+ str(number_connected_components_
 
 **(Q3)** In the final task in this question is to create a function `compute_number_lakes`. Your function will take as input an $n \times n$ NumPy matrix consisting of zeroes and ones called `grid_map` and output an non-negative integer.
 
-For each $(i,j) \in {0,...,n-1}$, `grid_map[i,j]` corresponds to square metre on a map with the interpretation that `grid_map[i,j]=0` means that the corresponding square metre is mostly water, and `grid_map[i,j]=1` means that the corresponding square metre is mostly land. The outer square of our grid map will consist entirely of land,i.e. `grid_map[i,j]=1` whenever $i \in {0,n-1}$ or $j \in {0, n−1}$. We shall assume that a fish can occupy a grid square $(i,j) \in \{0,...,n-1\}^2$ if and only if the corresponding square metre is mostly water `grid_map[i,j]=0`. A fish can also move from any grid square $(i,j)\in \{0,...,n − 1\}^2$ they are currently occupying to any of the grid squares $(i′,j′) \in \{(i-1,j),(i+1,j),(i,j-1),(i,j+1)\}$, provided that the corresponding square metre is also mostly water `grid_map[i',j']=0`. Thus, the fish can move directly to any grid square which is` "up"`,`"down"`,`"left"` or `"right"`, but not along the diagonal. We then define a lake as a maximal collection of grid squares $(i,j) \in \{0,...,n-1\}^2$ consisting of mostly water `grid_map[i,j]=0`, such that a fish can move from one grid square in the lake to any other grid square in the lake. Your function `compute_number_lakes` should take as input the matrix `grid_map` and output the total number of lakes.
+For each $(i,j) \in {0,...,n-1}$, `grid_map[i,j]` corresponds to square metre on a map with the interpretation that `grid_map[i,j]=0` means that the corresponding square metre is mostly water, and `grid_map[i,j]=1` means that the corresponding square metre is mostly land. The outer square of our grid map will consist entirely of land,i.e. `grid_map[i,j]=1` whenever $i \in {0,n-1}$ or $j \in {0, n−1}$. We shall assume that a fish can occupy a grid square $(i,j) \in \{0,...,n-1\}^2$ if and only if the corresponding square metre is mostly water `grid_map[i,j]=0`. A fish can also move from any grid square $(i,j)\in \{0,...,n − 1\}^2$ they are currently occupying to any of the grid squares $(i$′,$j$′) $\in \{(i-1,j),(i+1,j),(i,j-1),(i,j+1)\}$, provided that the corresponding square metre is also mostly water `grid_map[i',j']=0`. Thus, the fish can move directly to any grid square which is` "up"`,`"down"`,`"left"` or `"right"`, but not along the diagonal. We then define a lake as a maximal collection of grid squares $(i,j) \in \{0,...,n-1\}^2$ consisting of mostly water `grid_map[i,j]=0`, such that a fish can move from one grid square in the lake to any other grid square in the lake. Your function `compute_number_lakes` should take as input the matrix `grid_map` and output the total number of lakes.
 
 You may wish to start with the following outline code.
 
@@ -1236,8 +1236,6 @@ def dijkstras_max_bandwidth_algorithm(graph: Graph, initial_node: GraphNode):
                 heapq.heappush(max_bw_heap, (-path_bw, neighbor))
 ```
 
-
-
 :::
 
 ## Section D (15 marks)
@@ -1303,6 +1301,34 @@ for i in range(num_rounds):
     if naive_square_plus(X, t) != square_plus(X, t):
         num_differences += 1
 print("The two methods differed on {nd} cases.".format(nd=num_differences))
+```
+
+## Solution D
+
+```python
+def square_plus(input_array: list, target: int) -> bool:
+    # 初始化一个空字典，用于存储数组中每个元素的平方值。
+    # 字典的键是元素的平方值，值是元素本身。
+    squares_dict = {}
+
+    # 遍历输入数组中的每个元素。
+    for num in input_array:
+        # 计算当前元素的平方，并将其作为键存储在字典中。
+        # 由于我们只关心是否存在满足条件的a和b，而不关心它们是什么，
+        # 因此这里不需要存储每个平方值对应的原始数值。
+        squares_dict[num ** 2] = num
+
+    # 再次遍历输入数组。
+    for num in input_array:
+        # 检查字典中是否存在键为 target - num 的项。
+        # 如果存在，这意味着存在两个元素 a 和 b，使得 t = a^2 + b，
+        # 其中 a 是字典中平方值对应的元素，b 是当前遍历的元素。
+        if target - num in squares_dict:
+            # 如果找到符合条件的键，返回 True。
+            return True
+
+    # 如果遍历了整个数组也没有找到符合条件的元素对，返回 False。
+    return False
 ```
 
 
