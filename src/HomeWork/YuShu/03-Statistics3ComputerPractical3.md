@@ -391,11 +391,9 @@ if (p_value < 0.05) {
 }
 ```
 
-
-
 :::
 
-------------------------------------------------------------------------
+---
 
 ## 4. Testing multinomial distributions
 
@@ -403,7 +401,7 @@ We assume that the number of passengers with each ticket `class` comefrom $Y{\si
 
 Formally, we would like to test
 
-$$H_0:\textbf{p}=\textbf{p}_0=(1/3, 1/3, 1/3)\qquad \text{vs.}\qquad H_{1}:\textbf{p} \neq \textbf{p}_0. \qquad (2)$$ .
+`$$H_0:\textbf{p}=\textbf{p}_0=(1/3, 1/3, 1/3)\qquad \text{vs.}\qquad H_{1}:\textbf{p} \neq \textbf{p}_0. \qquad (2)$$ .`
 
 We can tabulate the number of passengers in each category using thefollowing code:
 
@@ -418,7 +416,7 @@ tab
 
 **Question 4**. [2 marks] Use the Pearson's chi-squared test statisticto perform hypothesis test (2) for a significance level of 0.05.
 
-------------------------------------------------------------------------
+---
 
 **Solution**
 
@@ -453,7 +451,7 @@ chisq_test_result
 
 :::
 
-卡方检验的统计量 $X^2$ 为 100.75，自由度（df）为 2，p 值小于 $2.2 \times 10^{-16}$。因为 p 值远小于常用的显著性水平（如 0.05 或 0.01），我们可以非常有信心地拒绝零假设 $H_0: \textbf{p} = \textbf{p}_0 = (1/3, 1/3, 1/3)$。
+卡方检验的统计量 $X^2$ 为 100.75，自由度（df）为 2，p 值小于 $2.2 \times 10^{-16}$。因为 p 值远小于常用的显著性水平（如 0.05 或 0.01），我们可以非常有信心地拒绝零假设 $H_0:\textbf{p}=\textbf{p}_0=(1/3, 1/3, 1/3)$。
 
 这意味着有强烈的统计证据表明，乘客在不同票类之间的分布并不是均匀的。具体来说，这个结果表明票类的分布与每一类都有相同比例的假设相矛盾。
 
@@ -467,19 +465,21 @@ chisq_test_result
 
 由于 p 值远小于 0.05 的显著性水平，我们拒绝零假设 $H_0: \textbf{p} = \textbf{p}_0 = (1/3, 1/3, 1/3)$。这表明在乘客票类的分布上存在显著差异，因此，我们有充足的证据表明票类的分布并不是均匀的。
 
-------------------------------------------------------------------------
+---
 
 **Question 5** [1 mark] Bob suggests that a passenger is twice as likelyto be in third class than in first class, and also twice as likely to bein third class than in second class. Evaluate this statement formallyusing hypothesis testing. You should define your hypotheses, calculateyour Pearson test statistic and evaluate your p value.
 
-------------------------------------------------------------------------
+---
 
 **Solution**
 
 Your solution here.
 
+---
 
 
-------------------------------------------------------------------------
+
+
 
 ## 5. Logistic regression
 
