@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-204fb21e","path":"/HomeWork/YuShu/","title":"Yu Shu","lang":"zh-CN","frontmatter":{"title":"Yu Shu","article":false,"feed":false,"sitemap":false,"seo":false,"head":[]},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"copyright":{"author":"黄家宝|AI悦创"}}');export{e as data};
