@@ -40,7 +40,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/HomeWork/YuShu/Assessed-coursework4": ["aiyc", "ys"]
+      "/HomeWork/YuShu/": ["aiyc", "ys"]
     },
   },
 
