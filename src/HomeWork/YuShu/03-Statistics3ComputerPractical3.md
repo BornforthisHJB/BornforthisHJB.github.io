@@ -459,7 +459,7 @@ We assume that the number of passengers with each ticket `class` comefrom $Y{\si
 
 Formally, we would like to test
 
-$$H_0:\textbf{p}=\textbf{p}_0=(1/3, 1/3, 1/3)\qquad \text{vs.}\qquad H_{1}:\textbf{p} \neq \textbf{p}_0. \qquad (2)$$ .
+`$$H_0:\textbf{p}=\textbf{p}_0=(1/3, 1/3, 1/3)\qquad \text{vs.}\qquad H_{1}:\textbf{p} \neq \textbf{p}_0. \qquad (2)$$` .
 
 We can tabulate the number of passengers in each category using thefollowing code:
 
