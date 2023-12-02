@@ -99,81 +99,133 @@ You may assume that the Hessian of the log-likelihood under $\Theta$ isnegative 
 Your solution here.
 
 1. **定义似然函数**：
-   
    - 对于男性票价的指数分布，似然函数是 $L(\lambda_1; \mathbf{x}) = \lambda_1^n e^{-\lambda_1 \sum_{i=1}^{n} x_i}$。
    - 对于女性票价的指数分布，似然函数是 $L(\lambda_2; \mathbf{y}) = \lambda_2^m e^{-\lambda_2 \sum_{j=1}^{m} y_j}$。
    - 当 $\lambda_1 = \lambda_2 = \lambda_0$，似然函数变为 $L(\lambda_0; \mathbf{x}, \mathbf{y}) = \lambda_0^{n+m} e^{-\lambda_0 \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)}$。
-   
-   > $\lambda_1 = \lambda_2 = \lambda_0$ 来自于零假设 $H_0$ 的设定。这是假设检验的一部分，在上面的题目中，我们想要测试票价指数分布率（$\lambda$)对于男性和女性是否相同。
-   >
-   > 在统计假设检验中，零假设 ($H_0$) 通常表示没有效应或没有差异的情况。
-   >
-   >
-   > 在上面的案例中，零假设是指两个群体（男性和女性）的票价指数分布率是相等的，即 $\lambda_1 = \lambda_2$。我用 $\lambda_0$ 来表示这个共同的分布率。
-   >
-   > 具体地，这个假设用于似然比 ($\Lambda$) 的计算。似然比是在零假设下的似然函数值与在备择假设（$\lambda_1 \neq \lambda_2$）下的似然函数值的比值。如果零假设是真的，我们期望这个比值接近1，而如果零假设不成立，我们期望这个比值远离1。
-   >
-   > 所以，当 $\lambda_1 = \lambda_2 = \lambda_0$，在说在零假设 $H_0$ 下，我们用单一的参数 $\lambda_0$ 来表示男性和女性的票价分布率，这是我们要测试的条件。
-   >
-   >
-   > “共同的分布率”：是指在零假设 $H_0: \lambda_1 = \lambda_2$ 条件下，认为男性和女性票价的指数分布率相同，因此可以用一个共同的分布率 $\lambda_0$ 来描述这两个群体的票价分布。
-   >
-   > 在假设检验中，零假设通常设定为两个被比较的群体之间没有差异的情况。对于指数分布来说，这个“没有差异”的情况就是说两个群体的分布率参数相同。因此，将这个共同的参数记为 $\lambda_0$，它是在假定男性和女性的票价遵循同一指数分布率时的最大似然估计。这个参数是在零假设下，用所有数据计算得到的，不区分男性和女性。
-   
+
+::: details 步骤
+
+$\lambda_1 = \lambda_2 = \lambda_0$ 来自于零假设 $H_0$ 的设定。这是假设检验的一部分，在上面的题目中，我们想要测试票价指数分布率（$\lambda$)对于男性和女性是否相同。
+
+在统计假设检验中，零假设 ($H_0$) 通常表示没有效应或没有差异的情况。
+
+
+在上面的案例中，零假设是指两个群体（男性和女性）的票价指数分布率是相等的，即 $\lambda_1 = \lambda_2$。我用 $\lambda_0$ 来表示这个共同的分布率。
+
+具体地，这个假设用于似然比 ($\Lambda$) 的计算。似然比是在零假设下的似然函数值与在备择假设（$\lambda_1 \neq \lambda_2$）下的似然函数值的比值。如果零假设是真的，我们期望这个比值接近1，而如果零假设不成立，我们期望这个比值远离1。
+
+所以，当 $\lambda_1 = \lambda_2 = \lambda_0$，在说在零假设 $H_0$ 下，我们用单一的参数 $\lambda_0$ 来表示男性和女性的票价分布率，这是我们要测试的条件。
+
+
+“共同的分布率”：是指在零假设 $H_0: \lambda_1 = \lambda_2$ 条件下，认为男性和女性票价的指数分布率相同，因此可以用一个共同的分布率 $\lambda_0$ 来描述这两个群体的票价分布。
+
+在假设检验中，零假设通常设定为两个被比较的群体之间没有差异的情况。对于指数分布来说，这个“没有差异”的情况就是说两个群体的分布率参数相同。因此，将这个共同的参数记为 $\lambda_0$，它是在假定男性和女性的票价遵循同一指数分布率时的最大似然估计。这个参数是在零假设下，用所有数据计算得到的，不区分男性和女性。
+
+:::
+
 2. **对数似然函数**：
-   
-   - 对数似然函数是似然函数的对数，对于男性票价是 $\log L(\lambda_1; \mathbf{x}) = n \log(\lambda_1) - \lambda_1 \sum_{i=1}^{n} x_i$。
-   - 对于女性票价是 $\log L(\lambda_2; \mathbf{y}) = m \log(\lambda_2) - \lambda_2 \sum_{j=1}^{m} y_j$。
-   - 对于合并时是 $\log L(\lambda_0; \mathbf{x}, \mathbf{y}) = (n+m) \log(\lambda_0) - \lambda_0 \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)$。
-   
+
+- 对数似然函数是似然函数的对数，对于男性票价是 $\log L(\lambda_1; \mathbf{x}) = n \log(\lambda_1) - \lambda_1 \sum_{i=1}^{n} x_i$。
+- 对于女性票价是 $\log L(\lambda_2; \mathbf{y}) = m \log(\lambda_2) - \lambda_2 \sum_{j=1}^{m} y_j$。
+- 对于合并时是 $\log L(\lambda_0; \mathbf{x}, \mathbf{y}) = (n+m) \log(\lambda_0) - \lambda_0 \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)$。
+
 3. **最大似然估计**：
-   - 对 $\log L(\lambda_1; \mathbf{x})$ 关于 $\lambda_1$ 求导并令导数等于 0，得到 $\hat{\lambda}_1 = \frac{n}{\sum_{i=1}^{n} x_i}$。
-   - 同理，对 $\log L(\lambda_2; \mathbf{y})$ 求导得到 $\hat{\lambda}_2 = \frac{m}{\sum_{j=1}^{m} y_j}$。
-   - 对 $\log L(\lambda_0; \mathbf{x}, \mathbf{y})$ 求导得到 $\hat{\lambda}_0 = \frac{n+m}{\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j}$。
 
-   > 对于男性乘客的票价，我们有 $X_i \sim \text{Exp}(\lambda_1)$。似然函数为 $L(\lambda_1; \mathbf{x}) = \lambda_1^n e^{-\lambda_1 \sum_{i=1}^{n} x_i}$。取对数得到对数似然函数：
-   >
-   > $$\log L(\lambda_1; \mathbf{x}) = n \log(\lambda_1) - \lambda_1 \sum_{i=1}^{n} x_i$$
-   >
-   > 我们对 $\lambda_1$ 求导，得到：
-   >
-   > $$\frac{\partial}{\partial \lambda_1} \log L(\lambda_1; \mathbf{x}) = \frac{n}{\lambda_1} - \sum_{i=1}^{n} x_i$$
-   >
-   > 为了找到最大值，我们设此导数等于零：
-   >
-   > $$\frac{n}{\lambda_1} - \sum_{i=1}^{n} x_i = 0$$
-   >
-   > 解这个方程得到 $\lambda_1$ 的最大似然估计：
-   >
-   > $$\hat{\lambda}_1 = \frac{n}{\sum_{i=1}^{n} x_i}$$
-   >
-   > 同样地，对于女性乘客的票价 $Y_j \sim \text{Exp}(\lambda_2)$，我们有似然函数 $L(\lambda_2; \mathbf{y}) = \lambda_2^m e^{-\lambda_2 \sum_{j=1}^{m} y_j}$。对数似然函数和其导数为：
-   >
-   > $$ \log L(\lambda_2; \mathbf{y}) = m \log(\lambda_2) - \lambda_2 \sum_{j=1}^{m} y_j$$
-   >
-   > $$\frac{\partial}{\partial \lambda_2} \log L(\lambda_2; \mathbf{y}) = \frac{m}{\lambda_2} - \sum_{j=1}^{m} y_j$$
-   >
-   > 同样，令导数等于零，得到 $\lambda_2$ 的最大似然估计：
-   >
-   > $$\hat{\lambda}_2 = \frac{m}{\sum_{j=1}^{m} y_j}$$
-   >
-   > 最后，对于似然比中使用的共同参数 $\lambda_0$，我们将男性和女性的票价合并，得到：
-   >
-   > $$L(\lambda_0; \mathbf{x}, \mathbf{y}) = \lambda_0^{n+m} e^{-\lambda_0 \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)}$$
-   >
-   > $$\log L(\lambda_0; \mathbf{x}, \mathbf{y}) = (n+m) \log(\lambda_0) - \lambda_0 \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)$$
-   >
-   > $$\frac{\partial}{\partial \lambda_0} \log L(\lambda_0; \mathbf{x}, \mathbf{y}) = \frac{n+m}{\lambda_0} - \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)$$
-   >
-   > 将此导数设为零，得到 $\lambda_0$ 的最大似然估计：
-   >
-   > $$\hat{\lambda}_0 = \frac{n+m}{\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j}$$
-   
+- 对 $\log L(\lambda_1; \mathbf{x})$ 关于 $\lambda_1$ 求导并令导数等于 0，得到 $\hat{\lambda}_1 = \frac{n}{\sum_{i=1}^{n} x_i}$。
+- 同理，对 $\log L(\lambda_2; \mathbf{y})$ 求导得到 $\hat{\lambda}_2 = \frac{m}{\sum_{j=1}^{m} y_j}$。
+- 对 $\log L(\lambda_0; \mathbf{x}, \mathbf{y})$ 求导得到 $\hat{\lambda}_0 = \frac{n+m}{\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j}$。
+
+::: details 步骤
+
+对于男性乘客的票价，我们有 $X_i \sim \text{Exp}(\lambda_1)$。似然函数为 $L(\lambda_1; \mathbf{x}) = \lambda_1^n e^{-\lambda_1 \sum_{i=1}^{n} x_i}$。取对数得到对数似然函数：
+
+$$\log L(\lambda_1; \mathbf{x}) = n \log(\lambda_1) - \lambda_1 \sum_{i=1}^{n} x_i$$
+
+我们对 $\lambda_1$ 求导，得到：
+
+$$\frac{\partial}{\partial \lambda_1} \log L(\lambda_1; \mathbf{x}) = \frac{n}{\lambda_1} - \sum_{i=1}^{n} x_i$$
+
+为了找到最大值，我们设此导数等于零：
+
+$$\frac{n}{\lambda_1} - \sum_{i=1}^{n} x_i = 0$$
+
+解这个方程得到 $\lambda_1$ 的最大似然估计：
+
+$$\hat{\lambda}_1 = \frac{n}{\sum_{i=1}^{n} x_i}$$
+
+同样地，对于女性乘客的票价 $Y_j \sim \text{Exp}(\lambda_2)$，我们有似然函数 $L(\lambda_2; \mathbf{y}) = \lambda_2^m e^{-\lambda_2 \sum_{j=1}^{m} y_j}$。对数似然函数和其导数为：
+
+$$ \log L(\lambda_2; \mathbf{y}) = m \log(\lambda_2) - \lambda_2 \sum_{j=1}^{m} y_j$$
+
+$$\frac{\partial}{\partial \lambda_2} \log L(\lambda_2; \mathbf{y}) = \frac{m}{\lambda_2} - \sum_{j=1}^{m} y_j$$
+
+同样，令导数等于零，得到 $\lambda_2$ 的最大似然估计：
+
+$$\hat{\lambda}_2 = \frac{m}{\sum_{j=1}^{m} y_j}$$
+
+最后，对于似然比中使用的共同参数 $\lambda_0$，我们将男性和女性的票价合并，得到：
+
+$$L(\lambda_0; \mathbf{x}, \mathbf{y}) = \lambda_0^{n+m} e^{-\lambda_0 \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)}$$
+
+$$\log L(\lambda_0; \mathbf{x}, \mathbf{y}) = (n+m) \log(\lambda_0) - \lambda_0 \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)$$
+
+$$\frac{\partial}{\partial \lambda_0} \log L(\lambda_0; \mathbf{x}, \mathbf{y}) = \frac{n+m}{\lambda_0} - \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)$$
+
+将此导数设为零，得到 $\lambda_0$ 的最大似然估计：
+
+$$\hat{\lambda}_0 = \frac{n+m}{\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j}$$
+
+:::
+
 4. **似然比**：
-   - 似然比定义为 $\Lambda(\mathbf{x}, \mathbf{y}) = \frac{L(\hat{\lambda}_0; \mathbf{x}, \mathbf{y})}{L(\hat{\lambda}_1; \mathbf{x}) \times L(\hat{\lambda}_2; \mathbf{y})}$。
-   - 将 $\hat{\lambda}_1$、$\hat{\lambda}_2$ 和 $\hat{\lambda}_0$ 代入上述表达式，得到 $\Lambda(\mathbf{x}, \mathbf{y}) = \left(\frac{\hat{\lambda}_0}{\hat{\lambda}_1}\right)^n \left(\frac{\hat{\lambda}_0}{\hat{\lambda}_2}\right)^m$。
 
-5. **测试统计量**：
+- 似然比定义为 $\Lambda(\mathbf{x}, \mathbf{y}) = \frac{L(\hat{\lambda}_0; \mathbf{x}, \mathbf{y})}{L(\hat{\lambda}_1; \mathbf{x}) \times L(\hat{\lambda}_2; \mathbf{y})}$。
+- 将 $\hat{\lambda}_1$、$\hat{\lambda}_2$ 和 $\hat{\lambda}_0$ 代入上述表达式，得到 $\Lambda(\mathbf{x}, \mathbf{y}) = \left(\frac{\hat{\lambda}_0}{\hat{\lambda}_1}\right)^n \left(\frac{\hat{\lambda}_0}{\hat{\lambda}_2}\right)^m$。
+
+::: details 步骤
+
+我们开始时有两个独立的最大似然估计（MLEs）：
+- $\hat{\lambda}_1 = \frac{n}{\sum_{i=1}^{n}x_{i}}$，对应于男性票价的 MLE，
+- $\hat{\lambda}_2 = \frac{m}{\sum_{j=1}^{m}y_{j}}$，对应于女性票价的 MLE，
+- $\hat{\lambda}_0 = \frac{n+m}{\sum_{i=1}^{n}x_{i} + \sum_{j=1}^{m}y_{j}}$，是在零假设下（$\lambda_1 = \lambda_2$）的 MLE。
+
+似然比是这样定义的：
+
+$$\Lambda(\mathbf{x}, \mathbf{y}) = \frac{L(\hat{\lambda}_0; \mathbf{x}, \mathbf{y})}{L(\hat{\lambda}_1, \hat{\lambda}_2; \mathbf{x}, \mathbf{y})}$$
+
+我们需要计算两个分布的似然函数 $L$，一个是在最优参数 $\hat{\lambda}_0$ 下，另一个是在独立的最优参数 $\hat{\lambda}_1$ 和 $\hat{\lambda}_2$ 下。
+
+在 $\Theta$ 下的似然函数为：
+
+$$L(\hat{\lambda}_1, \hat{\lambda}_2; \mathbf{x}, \mathbf{y}) = \prod_{i=1}^{n} \hat{\lambda}_1 e^{-\hat{\lambda}_1 x_i} \prod_{j=1}^{m} \hat{\lambda}_2 e^{-\hat{\lambda}_2 y_j}$$
+
+将 MLEs 代入上述表达式得到：
+
+$$L(\hat{\lambda}_1, \hat{\lambda}_2; \mathbf{x}, \mathbf{y}) = \left(\frac{n}{\sum_{i=1}^{n}x_{i}}\right)^n e^{-n} \left(\frac{m}{\sum_{j=1}^{m}y_{j}}\right)^m e^{-m}$$
+
+在 $\Theta_0$ 下的似然函数为：
+
+$$L(\hat{\lambda}_0; \mathbf{x}, \mathbf{y}) = \left(\frac{n+m}{\sum_{i=1}^{n}x_{i} + \sum_{j=1}^{m}y_{j}}\right)^{n+m} e^{-(n+m)}$$
+
+现在我们可以计算似然比 $\Lambda$：
+
+$$\Lambda(\mathbf{x}, \mathbf{y}) = \frac{\left(\frac{n+m}{\sum_{i=1}^{n}x_{i} + \sum_{j=1}^{m}y_{j}}\right)^{n+m} e^{-(n+m)}}{\left(\frac{n}{\sum_{i=1}^{n}x_{i}}\right)^n e^{-n} \left(\frac{m}{\sum_{j=1}^{m}y_{j}}\right)^m e^{-m}}$$
+
+化简上式中的 $e^{-n}$ 和 $e^{-m}$ 项：
+
+$$\Lambda(\mathbf{x}, \mathbf{y}) = \left(\frac{\sum_{i=1}^{n}x_{i}}{n}\right)^n \left(\frac{\sum_{j=1}^{m}y_{j}}{m}\right)^m \left(\frac{n+m}{\sum_{i=1}^{n}x_{i} + \sum_{j=1}^{m}y_{j}}\right)^{-(n+m)}$$
+
+因为 $\hat{\lambda}_1$ 和 $\hat{\lambda}_2$ 的倒数分别是男性和女性票价的样本平均值，而 $\hat{\lambda}_0$ 的倒数是所有票价的样本平均值。用这些 MLEs 替换掉相应的样本平均值，我们得到：
+
+$$\Lambda(\mathbf{x}, \mathbf{y}) = \left(\frac{1/\hat{\lambda}_0}{1/\hat{\lambda}_1}\right)^n \left(\frac{1/\hat{\lambda}_0}{1/\hat{\lambda}_2}\right)^m$$
+
+简化得到最终的似然比表达式：
+
+$$\Lambda(\mathbf{x}, \mathbf{y}) = \left(\frac{\hat{\lambda}_0}{\hat{\lambda}_1}\right)^n \left(\frac{\hat{\lambda}_0}{\hat{\lambda}_2}\right)^m$$
+
+:::
+
+1. **测试统计量**：
    - 测试统计量 $T$ 是 $-2$ 乘以似然比的对数，即 $T = -2 \log \Lambda(\mathbf{x}, \mathbf{y})$。
    - 在大样本理论下，如果零假设成立，$T$ 近似服从自由度为 1 的卡方分布。
 
