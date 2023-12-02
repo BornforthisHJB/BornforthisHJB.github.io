@@ -99,15 +99,33 @@ You may assume that the Hessian of the log-likelihood under $\Theta$ isnegative 
 Your solution here.
 
 1. **定义似然函数**：
+   
    - 对于男性票价的指数分布，似然函数是 $L(\lambda_1; \mathbf{x}) = \lambda_1^n e^{-\lambda_1 \sum_{i=1}^{n} x_i}$。
    - 对于女性票价的指数分布，似然函数是 $L(\lambda_2; \mathbf{y}) = \lambda_2^m e^{-\lambda_2 \sum_{j=1}^{m} y_j}$。
    - 当 $\lambda_1 = \lambda_2 = \lambda_0$，似然函数变为 $L(\lambda_0; \mathbf{x}, \mathbf{y}) = \lambda_0^{n+m} e^{-\lambda_0 \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)}$。
-
+   
+   > $\lambda_1 = \lambda_2 = \lambda_0$ 来自于零假设 $H_0$ 的设定。这是假设检验的一部分，在上面的题目中，我们想要测试票价指数分布率（$\lambda$)对于男性和女性是否相同。
+   >
+   > 在统计假设检验中，零假设 ($H_0$) 通常表示没有效应或没有差异的情况。
+   >
+   >
+   > 在上面的案例中，零假设是指两个群体（男性和女性）的票价指数分布率是相等的，即 $\lambda_1 = \lambda_2$。我用 $\lambda_0$ 来表示这个共同的分布率。
+   >
+   > 具体地，这个假设用于似然比 ($\Lambda$) 的计算。似然比是在零假设下的似然函数值与在备择假设（$\lambda_1 \neq \lambda_2$）下的似然函数值的比值。如果零假设是真的，我们期望这个比值接近1，而如果零假设不成立，我们期望这个比值远离1。
+   >
+   > 所以，当 $\lambda_1 = \lambda_2 = \lambda_0$，在说在零假设 $H_0$ 下，我们用单一的参数 $\lambda_0$ 来表示男性和女性的票价分布率，这是我们要测试的条件。
+   >
+   >
+   > “共同的分布率”：是指在零假设 $H_0: \lambda_1 = \lambda_2$ 条件下，认为男性和女性票价的指数分布率相同，因此可以用一个共同的分布率 $\lambda_0$ 来描述这两个群体的票价分布。
+   >
+   > 在假设检验中，零假设通常设定为两个被比较的群体之间没有差异的情况。对于指数分布来说，这个“没有差异”的情况就是说两个群体的分布率参数相同。因此，将这个共同的参数记为 $\lambda_0$，它是在假定男性和女性的票价遵循同一指数分布率时的最大似然估计。这个参数是在零假设下，用所有数据计算得到的，不区分男性和女性。
+   
 2. **对数似然函数**：
+   
    - 对数似然函数是似然函数的对数，对于男性票价是 $\log L(\lambda_1; \mathbf{x}) = n \log(\lambda_1) - \lambda_1 \sum_{i=1}^{n} x_i$。
    - 对于女性票价是 $\log L(\lambda_2; \mathbf{y}) = m \log(\lambda_2) - \lambda_2 \sum_{j=1}^{m} y_j$。
    - 对于合并时是 $\log L(\lambda_0; \mathbf{x}, \mathbf{y}) = (n+m) \log(\lambda_0) - \lambda_0 \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)$。
-
+   
 3. **最大似然估计**：
    - 对 $\log L(\lambda_1; \mathbf{x})$ 关于 $\lambda_1$ 求导并令导数等于 0，得到 $\hat{\lambda}_1 = \frac{n}{\sum_{i=1}^{n} x_i}$。
    - 同理，对 $\log L(\lambda_2; \mathbf{y})$ 求导得到 $\hat{\lambda}_2 = \frac{m}{\sum_{j=1}^{m} y_j}$。
@@ -391,9 +409,11 @@ if (p_value < 0.05) {
 }
 ```
 
+
+
 :::
 
----
+------------------------------------------------------------------------
 
 ## 4. Testing multinomial distributions
 
@@ -401,7 +421,7 @@ We assume that the number of passengers with each ticket `class` comefrom $Y{\si
 
 Formally, we would like to test
 
-`$$H_0:\textbf{p}=\textbf{p}_0=(1/3, 1/3, 1/3)\qquad \text{vs.}\qquad H_{1}:\textbf{p} \neq \textbf{p}_0. \qquad (2)$$ .`
+$$H_0:\textbf{p}=\textbf{p}_0=(1/3, 1/3, 1/3)\qquad \text{vs.}\qquad H_{1}:\textbf{p} \neq \textbf{p}_0. \qquad (2)$$ .
 
 We can tabulate the number of passengers in each category using thefollowing code:
 
@@ -416,7 +436,7 @@ tab
 
 **Question 4**. [2 marks] Use the Pearson's chi-squared test statisticto perform hypothesis test (2) for a significance level of 0.05.
 
----
+------------------------------------------------------------------------
 
 **Solution**
 
@@ -451,7 +471,7 @@ chisq_test_result
 
 :::
 
-卡方检验的统计量 $X^2$ 为 100.75，自由度（df）为 2，p 值小于 $2.2 \times 10^{-16}$。因为 p 值远小于常用的显著性水平（如 0.05 或 0.01），我们可以非常有信心地拒绝零假设 $H_0:\textbf{p}=\textbf{p}_0=(1/3, 1/3, 1/3)$。
+卡方检验的统计量 $X^2$ 为 100.75，自由度（df）为 2，p 值小于 $2.2 \times 10^{-16}$。因为 p 值远小于常用的显著性水平（如 0.05 或 0.01），我们可以非常有信心地拒绝零假设 $H_0: \textbf{p} = \textbf{p}_0 = (1/3, 1/3, 1/3)$。
 
 这意味着有强烈的统计证据表明，乘客在不同票类之间的分布并不是均匀的。具体来说，这个结果表明票类的分布与每一类都有相同比例的假设相矛盾。
 
@@ -465,21 +485,97 @@ chisq_test_result
 
 由于 p 值远小于 0.05 的显著性水平，我们拒绝零假设 $H_0: \textbf{p} = \textbf{p}_0 = (1/3, 1/3, 1/3)$。这表明在乘客票类的分布上存在显著差异，因此，我们有充足的证据表明票类的分布并不是均匀的。
 
----
+------------------------------------------------------------------------
 
 **Question 5** [1 mark] Bob suggests that a passenger is twice as likelyto be in third class than in first class, and also twice as likely to bein third class than in second class. Evaluate this statement formallyusing hypothesis testing. You should define your hypotheses, calculateyour Pearson test statistic and evaluate your p value.
 
----
+------------------------------------------------------------------------
 
 **Solution**
 
 Your solution here.
 
----
+::: code-tabs
+
+@tab Code1
+
+```r
+titanic_original = read.csv("original_titanic.csv")
+
+titanic = titanic_original[which(!is.na(titanic_original$age) & 
+                                   titanic_original$embarked != "" &
+                                   !is.na(titanic_original$fare)), c(1:7,9,11)]
+
+# 统计各个舱位的乘客数量
+tab <- table(titanic$pclass)
+
+print(tab)
+
+# 之前的表格数据
+# observed <- c(282, 261, 500) # 实际观察到的每个舱位的乘客数
+observed  <- tab
+
+# Bob的比例假设
+expected_proportions <- c(1/4, 1/4, 1/2)
+
+# 根据Bob的比例假设计算期望频数
+expected <- sum(observed) * expected_proportions
+
+# 执行Pearson卡方检验
+test <- chisq.test(x = observed, p = expected_proportions, rescale.p = TRUE)
+
+# 输出检验结果
+print(test)
+
+
+# 输出
+  1   2   3 
+282 261 500 
+
+	Chi-squared test for given probabilities
+
+data:  observed
+X-squared = 2.6184, df = 2, p-value = 0.27
+```
+
+@tab Code2
+
+```r
+# 统计各个舱位的乘客数量
+tab <- table(titanic$pclass)
+
+print(tab)
+
+# 之前的表格数据
+# observed <- c(282, 261, 500) # 实际观察到的每个舱位的乘客数
+observed  <- tab
+
+# Bob的比例假设
+expected_proportions <- c(1/4, 1/4, 1/2)
+
+# 根据Bob的比例假设计算期望频数
+expected <- sum(observed) * expected_proportions
+
+# 执行Pearson卡方检验
+test <- chisq.test(x = observed, p = expected_proportions, rescale.p = TRUE)
+
+# 输出检验结果
+print(test)
+```
 
 
 
 
+
+:::
+
+
+
+
+
+进行Pearson卡方检验后，我们得到的卡方统计量为2.6184，自由度为2，p值为0.27。在0.05的显著性水平下，由于p值大于0.05，因此我们没有足够的证据拒绝零假设。这意味着，根据我们的样本数据，乘客在各个舱位的分布与Bob提出的比例（即三等舱的乘客概率是一等舱和二等舱的两倍）没有显著性差异。简而言之，我们的统计检验结果支持Bob的说法。
+
+------------------------------------------------------------------------
 
 ## 5. Logistic regression
 
