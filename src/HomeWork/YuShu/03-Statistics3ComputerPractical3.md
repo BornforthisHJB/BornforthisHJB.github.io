@@ -131,6 +131,44 @@ Your solution here.
    - 同理，对 $\log L(\lambda_2; \mathbf{y})$ 求导得到 $\hat{\lambda}_2 = \frac{m}{\sum_{j=1}^{m} y_j}$。
    - 对 $\log L(\lambda_0; \mathbf{x}, \mathbf{y})$ 求导得到 $\hat{\lambda}_0 = \frac{n+m}{\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j}$。
 
+   > 对于男性乘客的票价，我们有 $X_i \sim \text{Exp}(\lambda_1)$。似然函数为 $L(\lambda_1; \mathbf{x}) = \lambda_1^n e^{-\lambda_1 \sum_{i=1}^{n} x_i}$。取对数得到对数似然函数：
+   >
+   > $$\log L(\lambda_1; \mathbf{x}) = n \log(\lambda_1) - \lambda_1 \sum_{i=1}^{n} x_i$$
+   >
+   > 我们对 $\lambda_1$ 求导，得到：
+   >
+   > $$\frac{\partial}{\partial \lambda_1} \log L(\lambda_1; \mathbf{x}) = \frac{n}{\lambda_1} - \sum_{i=1}^{n} x_i$$
+   >
+   > 为了找到最大值，我们设此导数等于零：
+   >
+   > $$\frac{n}{\lambda_1} - \sum_{i=1}^{n} x_i = 0$$
+   >
+   > 解这个方程得到 $\lambda_1$ 的最大似然估计：
+   >
+   > $$\hat{\lambda}_1 = \frac{n}{\sum_{i=1}^{n} x_i}$$
+   >
+   > 同样地，对于女性乘客的票价 $Y_j \sim \text{Exp}(\lambda_2)$，我们有似然函数 $L(\lambda_2; \mathbf{y}) = \lambda_2^m e^{-\lambda_2 \sum_{j=1}^{m} y_j}$。对数似然函数和其导数为：
+   >
+   > $$ \log L(\lambda_2; \mathbf{y}) = m \log(\lambda_2) - \lambda_2 \sum_{j=1}^{m} y_j$$
+   >
+   > $$\frac{\partial}{\partial \lambda_2} \log L(\lambda_2; \mathbf{y}) = \frac{m}{\lambda_2} - \sum_{j=1}^{m} y_j$$
+   >
+   > 同样，令导数等于零，得到 $\lambda_2$ 的最大似然估计：
+   >
+   > $$\hat{\lambda}_2 = \frac{m}{\sum_{j=1}^{m} y_j}$$
+   >
+   > 最后，对于似然比中使用的共同参数 $\lambda_0$，我们将男性和女性的票价合并，得到：
+   >
+   > $$L(\lambda_0; \mathbf{x}, \mathbf{y}) = \lambda_0^{n+m} e^{-\lambda_0 \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)}$$
+   >
+   > $$\log L(\lambda_0; \mathbf{x}, \mathbf{y}) = (n+m) \log(\lambda_0) - \lambda_0 \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)$$
+   >
+   > $$\frac{\partial}{\partial \lambda_0} \log L(\lambda_0; \mathbf{x}, \mathbf{y}) = \frac{n+m}{\lambda_0} - \left(\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j\right)$$
+   >
+   > 将此导数设为零，得到 $\lambda_0$ 的最大似然估计：
+   >
+   > $$\hat{\lambda}_0 = \frac{n+m}{\sum_{i=1}^{n} x_i + \sum_{j=1}^{m} y_j}$$
+   
 4. **似然比**：
    - 似然比定义为 $\Lambda(\mathbf{x}, \mathbf{y}) = \frac{L(\hat{\lambda}_0; \mathbf{x}, \mathbf{y})}{L(\hat{\lambda}_1; \mathbf{x}) \times L(\hat{\lambda}_2; \mathbf{y})}$。
    - 将 $\hat{\lambda}_1$、$\hat{\lambda}_2$ 和 $\hat{\lambda}_0$ 代入上述表达式，得到 $\Lambda(\mathbf{x}, \mathbf{y}) = \left(\frac{\hat{\lambda}_0}{\hat{\lambda}_1}\right)^n \left(\frac{\hat{\lambda}_0}{\hat{\lambda}_2}\right)^m$。
