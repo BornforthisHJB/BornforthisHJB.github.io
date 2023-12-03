@@ -766,6 +766,49 @@ I suggest that you use the fact that $\frac{d\sigma(z)}{dz} = \sigma(z)[1-\sigma
 **Solution**
 
 Your solution here.
+$$
+Y_i \overset{\text{ind}}{\sim} \text{Bernoulli}(\sigma(\theta^T x_i)),
+$$
+
+其中 $\sigma(z) = \frac{1}{1 + e^{-z}}$ 是标准逻辑函数，它的导数是 $\sigma'(z) = \sigma(z)(1 - \sigma(z))$。
+
+
+
+似然函数是：
+
+$$
+L(\theta; y) = \prod_{i=1}^{n} \sigma(\theta^T x_i)^{y_i}(1 - \sigma(\theta^T x_i))^{1 - y_i},
+$$
+
+对数似然函数是：
+
+$$
+\ell(\theta; y) = \sum_{i=1}^{n} y_i \log(\sigma(\theta^T x_i)) + (1 - y_i) \log(1 - \sigma(\theta^T x_i)).
+$$
+
+为了找到似然函数关于参数 $\theta_j$ 的导数，我们需要计算以下表达式：
+
+$$
+\frac{\partial}{\partial \theta_j} \ell(\theta; y) = \sum_{i=1}^{n} \left[ y_i \frac{1}{\sigma(\theta^T x_i)} - (1 - y_i) \frac{1}{1 - \sigma(\theta^T x_i)} \right] \frac{\partial}{\partial \theta_j} \sigma(\theta^T x_i).
+$$
+
+利用链式法则，我们有：
+
+$$
+\frac{\partial}{\partial \theta_j} \sigma(\theta^T x_i) = \sigma(\theta^T x_i)(1 - \sigma(\theta^T x_i)) \frac{\partial}{\partial \theta_j} (\theta^T x_i) = \sigma(\theta^T x_i)(1 - \sigma(\theta^T x_i)) x_{ij}.
+$$
+
+将这个导数代入到上述导数中，我们得到：
+
+$$
+\frac{\partial}{\partial \theta_j} \ell(\theta; y) = \sum_{i=1}^{n} \left[ y_i \frac{1}{\sigma(\theta^T x_i)} - (1 - y_i) \frac{1}{1 - \sigma(\theta^T x_i)} \right] \sigma(\theta^T x_i)(1 - \sigma(\theta^T x_i)) x_{ij}.
+$$
+
+化简上式，我们得到：
+
+$$
+\frac{\partial}{\partial \theta_j} \ell(\theta; y) = \sum_{i=1}^{n} [y_i - \sigma(\theta^T x_i)] x_{ij}.
+$$
 
 ------------------------------------------------------------------------
 
