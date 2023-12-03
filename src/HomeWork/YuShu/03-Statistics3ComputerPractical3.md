@@ -734,8 +734,11 @@ $$
 
 **3. 对数似然函数的具体形式**
 
-因为 $\log \sigma(\theta^T x_i) = \log \left( \frac{1}{1 + e^{-\theta^T x_i}} \right)$ 和 $\log(1 - \sigma(\theta^T x_i)) = \log \left( \frac{e^{-\theta^T x_i}}{1 + e^{-\theta^T x_i}} \right) $，进一步简化对数似然函数为：
-
+因为 $\log \sigma(\theta^T x_i) = \log \left( \frac{1}{1 + e^{-\theta^T x_i}} \right)$ 和 $\log(1 - \sigma(\theta^T x_i)) = \log \left( \frac{e^{-\theta^T x_i}}{1 + e^{-\theta^T x_i}} \right)$，带入上面得到的：
+$$
+\ell(\theta) = \sum_{i=1}^n \left( y_i \log \sigma(\theta^T x_i) + (1 - y_i) \log(1 - \sigma(\theta^T x_i)) \right)
+$$
+把其中的 $\log \sigma(\theta^T x_i)$ 和 $\log(1 - \sigma(\theta^T x_i))$ 分别替换为：$\log \left( \frac{1}{1 + e^{-\theta^T x_i}} \right)$ 和 $\log \left( \frac{e^{-\theta^T x_i}}{1 + e^{-\theta^T x_i}} \right)$ 得到如下：
 $$
 \ell(\theta) = \sum_{i=1}^n \left( y_i \log \left( \frac{1}{1 + e^{-\theta^T x_i}} \right) + (1 - y_i) \log \left( \frac{e^{-\theta^T x_i}}{1 + e^{-\theta^T x_i}} \right) \right).
 $$
