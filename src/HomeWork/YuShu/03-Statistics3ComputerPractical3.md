@@ -743,7 +743,7 @@ $$
 \ell(\theta) = \sum_{i=1}^n \left( y_i \log \left( \frac{1}{1 + e^{-\theta^T x_i}} \right) + (1 - y_i) \log \left( \frac{e^{-\theta^T x_i}}{1 + e^{-\theta^T x_i}} \right) \right).
 $$
 
-这是因为 $y_i$ 只能取值 0 或 1，所以 $y_i^2 = y_i$ 和 $(1 - y_i)^2 = (1 - y_i)$。
+
 
 **4. 最终形式**
 
