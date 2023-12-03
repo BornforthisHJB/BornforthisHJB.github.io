@@ -511,7 +511,10 @@ We assume that the number of passengers with each ticket `class` comefrom $Y{\si
 
 Formally, we would like to test
 
-`$$H_0:\textbf{p}=\textbf{p}_0=(1/3, 1/3, 1/3)\qquad \text{vs.}\qquad H_{1}:\textbf{p} \neq \textbf{p}_0. \qquad (2)$$` .
+$$
+H_0:\textbf{p}=\textbf{p}_0=(1/3, 1/3, 1/3)\qquad \text{vs.}\qquad H_{1}:\textbf{p} \neq \textbf{p}_0. \qquad (2)
+$$
+
 
 We can tabulate the number of passengers in each category using thefollowing code:
 
@@ -688,6 +691,64 @@ $$\ell(\theta ; {\bf y}) = \sum_{i=1}^n y_i \log (\sigma(\theta^Tx_i)) + (1-y_i)
 **Solution**
 
 Your solution here.
+
+在逻辑回归中，响应变量 $Y_i$ 对于每个观察 $i$ 是二项分布（Bernoulli分布），其概率由逻辑函数 $\sigma$  映射的线性预测变量 $\theta^T x_i$ 来决定。其中，$\theta$ 是模型参数的向量，$x_i$ 是第 $i$ 个观察的预测变量向量。
+
+**1. 逻辑函数（Logistic Function）和对数似然（Log-likelihood）**
+
+逻辑函数定义为：
+
+$$\sigma(z) = \frac{1}{1 + e^{-z}}.$$
+
+因此，对于给定的观察 $$x_i$$，有：
+
+$$
+p_i = P(Y_i = 1) = \sigma(\theta^T x_i) = \frac{1}{1 + e^{-\theta^T x_i}}.
+$$
+
+对于二项分布，概率质量函数（PMF）是：
+
+$$
+P(Y_i = y_i) = p_i^{y_i} (1 - p_i)^{1 - y_i}.
+$$
+
+取对数以得到对数似然函数：
+
+$$
+\log P(Y_i = y_i) = y_i \log p_i + (1 - y_i) \log(1 - p_i).
+$$
+
+**2. 对数似然函数的总和**
+
+对所有观察 $i$ 进行总和，得到总的对数似然函数：
+
+$$
+\ell(\theta) = \sum_{i=1}^n \log P(Y_i = y_i) = \sum_{i=1}^n \left( y_i \log p_i + (1 - y_i) \log(1 - p_i) \right).
+$$
+
+将 $p_i$ 替换为 $\sigma(\theta^T x_i)$，有：
+
+$$
+\ell(\theta) = \sum_{i=1}^n \left( y_i \log \sigma(\theta^T x_i) + (1 - y_i) \log(1 - \sigma(\theta^T x_i)) \right).
+$$
+
+**3. 对数似然函数的具体形式**
+
+因为 $\log \sigma(\theta^T x_i) = \log \left( \frac{1}{1 + e^{-\theta^T x_i}} \right)$ 和 $\log(1 - \sigma(\theta^T x_i)) = \log \left( \frac{e^{-\theta^T x_i}}{1 + e^{-\theta^T x_i}} \right) $，进一步简化对数似然函数为：
+
+$$
+\ell(\theta) = \sum_{i=1}^n \left( y_i \log \left( \frac{1}{1 + e^{-\theta^T x_i}} \right) + (1 - y_i) \log \left( \frac{e^{-\theta^T x_i}}{1 + e^{-\theta^T x_i}} \right) \right).
+$$
+
+这是因为 $y_i$ 只能取值 0 或 1，所以 $y_i^2 = y_i$ 和 $(1 - y_i)^2 = (1 - y_i)$。
+
+**4. 最终形式**
+
+最终，可以将对数似然函数写为：
+
+$$
+\ell(\theta ; \mathbf{y}) = \sum_{i=1}^n y_i \log (\sigma(\theta^T x_i)) + (1-y_i) \log (1 - \sigma(\theta^T x_i)),
+$$
 
 ------------------------------------------------------------------------
 
