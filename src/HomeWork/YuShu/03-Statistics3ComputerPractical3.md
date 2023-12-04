@@ -1040,6 +1040,144 @@ print(Lambda_n)
 'log Lik.' 4.372231 (df=4)
 ```
 
+@tab Code-Py
+
+```python
+import pandas as pd
+import statsmodels.api as sm
+from scipy.stats import chi2
+
+# 加载数据
+file_path = 'original_titanic.csv'
+titanic_original = pd.read_csv(file_path)
+
+# 数据预处理
+titanic = titanic_original.dropna(subset=['age', 'fare', 'embarked'])
+titanic = titanic[titanic['embarked'] != ""]
+titanic = titanic[['pclass', 'survived', 'sex', 'age', 'sibsp', 'parch', 'fare', 'embarked']]
+
+# 编码性别变量
+titanic['sex'] = titanic['sex'].map({'male': 0, 'female': 1})
+
+# 准备数据
+X_full = titanic[['sex', 'age', 'fare']]
+X_full = sm.add_constant(X_full)  # 添加常数项
+X_rest = titanic[['sex', 'fare']]
+X_rest = sm.add_constant(X_rest)
+Y = titanic['survived']
+
+# 构建逻辑回归模型
+model_full = sm.Logit(Y, X_full).fit()
+model_rest = sm.Logit(Y, X_rest).fit()
+
+# 计算广义似然比
+Lambda_n = 2 * (model_full.llf - model_rest.llf)
+p_value = chi2.sf(Lambda_n, df=1)  # 自由度为 1（因为只测试一个变量）
+
+Lambda_n, p_value
+```
+
+@tab Code2-Py注释
+
+```python
+import pandas as pd
+import statsmodels.api as sm
+from scipy.stats import chi2
+
+# 加载数据
+# file_path 是数据文件的路径
+file_path = 'original_titanic.csv'
+titanic_original = pd.read_csv(file_path)
+
+# 数据预处理
+# 删除包含 'age', 'fare', 'embarked' 中任一 NA 值的行
+# 还删除了 'embarked' 列中空字符串的行
+# 最后选择了进行分析所需的列
+titanic = titanic_original.dropna(subset=['age', 'fare', 'embarked'])
+titanic = titanic[titanic['embarked'] != ""]
+titanic = titanic[['pclass', 'survived', 'sex', 'age', 'sibsp', 'parch', 'fare', 'embarked']]
+
+# 将性别从字符串转换为数字，男性为 0，女性为 1
+titanic['sex'] = titanic['sex'].map({'male': 0, 'female': 1})
+
+# 准备自变量（解释变量）和因变量（响应变量）的数据
+# X_full 包含完整模型的解释变量（包括 'sex', 'age', 'fare'）
+# X_rest 包含受限模型的解释变量（不包括 'age'）
+# Y 是因变量 'survived'
+X_full = titanic[['sex', 'age', 'fare']]
+X_full = sm.add_constant(X_full)  # 为模型添加常数项（截距）
+X_rest = titanic[['sex', 'fare']]
+X_rest = sm.add_constant(X_rest)
+Y = titanic['survived']
+
+# 使用 statsmodels 的 Logit 函数构建逻辑回归模型
+# model_full 是包括 'age' 的完整模型
+# model_rest 是不包括 'age' 的受限模型
+model_full = sm.Logit(Y, X_full).fit()
+model_rest = sm.Logit(Y, X_rest).fit()
+
+# 计算广义似然比
+# 用完整模型和受限模型的对数似然值的差的两倍计算
+Lambda_n = 2 * (model_full.llf - model_rest.llf)
+
+# 计算 p-value
+# 使用卡方分布的累积分布函数，自由度为 1（因为测试了一个额外的参数）
+p_value = chi2.sf(Lambda_n, df=1)
+
+# 输出广义似然比和对应的 p-value
+Lambda_n, p_value
+```
+
+@tab Code 注释 R「你的眼睛要看这个答案」
+
+```r
+titanic_original = read.csv("original_titanic.csv")
+titanic = titanic_original[which(!is.na(titanic_original$age) & 
+                                   titanic_original$embarked != "" &
+                                   !is.na(titanic_original$fare)), c(1:7,9,11)]
+# 准备数据
+survived = titanic$survived
+# 将性别从文本（male/female）映射为数字（0/1），方便后续的数值计算
+sex <- ifelse(titanic$sex == "male", 0, 1)
+age <- titanic$age
+fare <- titanic$fare
+
+# 选取分析所需的列，包括添加一个常数项（intercept）作为逻辑回归模型的截距
+intercept <- rep(1, length(survived))
+data <- data.frame(intercept, sex, age, fare, survived)
+
+# 构建逻辑回归模型的矩阵
+# X_full 包含所有变量（包括 age），用于完整模型
+X_full <- as.matrix(data[c('intercept', 'sex', 'age', 'fare')])
+# X_rest 不包含 age 变量，用于受限模型
+X_rest <- as.matrix(data[c('intercept', 'sex', 'fare')])
+# Y 是响应变量，即生存状态
+Y <- data[, 'survived']
+
+# 使用 glm 函数进行逻辑回归
+# model_full 是包含 age 的完整模型
+# model_full <- glm(survived ~ intercept + sex + age + fare, family = binomial(link = "logit"), data = data)
+model_full <- glm(survived ~ sex + age + fare, family = binomial(link = "logit"), data = data)
+# model_rest 是不包含 age 的受限模型
+# model_rest <- glm(survived ~ intercept + sex + fare, family = binomial(link = "logit"), data = data)
+model_rest <- glm(survived ~ sex + fare, family = binomial(link = "logit"), data = data)
+
+# 计算广义似然比
+# 使用 logLik 函数获取每个模型的对数似然值
+# Lambda_n 是两个模型的对数似然值之差的两倍，用于比较模型的拟合优度
+Lambda_n <- 2 * (logLik(model_full) - logLik(model_rest))
+
+# 计算 p-value
+# 使用 pchisq 函数计算卡方分布的累积分布函数值
+# df = 1 表示自由度为 1（因为比较的模型只有一个参数的不同）
+# lower.tail = FALSE 用于获取尾部概率
+p_value <- pchisq(Lambda_n, df = 1, lower.tail = FALSE)
+
+# 输出 p-value
+print(p_value)
+print(Lambda_n)
+```
+
 
 
 
