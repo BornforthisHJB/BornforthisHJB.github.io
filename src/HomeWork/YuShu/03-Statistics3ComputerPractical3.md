@@ -766,11 +766,114 @@ I suggest that you use the fact that $\frac{d\sigma(z)}{dz} = \sigma(z)[1-\sigma
 **Solution**
 
 Your solution here.
+
+链式法则是微积分中的一个基本定理，它指出如果一个变量 $z$ 依赖于另一个变量 $y$，而 $y$ 又依赖于第三个变量 $x$，那么 $z$ 相对于 $x$ 的导数可以通过乘以 $z$ 相对于 $y$ 的导数和 $y$ 相对于 $x$ 的导数来计算：
+
+$$
+\frac{dz}{dx} = \frac{dz}{dy} \cdot \frac{dy}{dx}
+$$
+
 $$
 Y_i \overset{\text{ind}}{\sim} \text{Bernoulli}(\sigma(\theta^T x_i)),
 $$
 
-其中 $\sigma(z) = \frac{1}{1 + e^{-z}}$ 是标准逻辑函数，它的导数是 $\sigma'(z) = \sigma(z)(1 - \sigma(z))$。
+其中 $\sigma(z) = \frac{1}{1 + e^{-z}}$ 是标准逻辑函数，接下来对它进行求导：
+$$
+\sigma(z) = \frac{1}{1 + e^{-z}}
+\\
+\text{可以将逻辑函数写成} \Rightarrow \sigma(z) = (1 + e^{-z})^{-1}
+\\
+\text{应用链式法则，先对内部函数求导}\Rightarrow u = 1 + e^{-z} \text{得到} \frac{du}{dz} = -e^{-z}
+\\
+\text{接着对外部函数} v = u^{-1} \text{求导,得到} \frac{dv}{du} = -u^{-2} = -(1 + e^{-z})^{-2}
+\\
+\text{由链式法则，可知} \frac{dv}{dz} = \frac{dv}{du} \cdot \frac{du}{dz}
+\\
+\text{结合以上步骤，可以得到：} \frac{d\sigma(z)}{dz} = -(1 + e^{-z})^{-2} \cdot (-e^{-z}) = \frac{e^{-z}}{(1 + e^{-z})^{2}}= \frac{1}{1 + e^{-z}} \left(1 - \frac{1}{1 + e^{-z}}\right) = \sigma(z)(1 - \sigma(z)).
+$$
+所以，它的导数是 $\sigma'(z) = \sigma(z)(1 - \sigma(z))$。
+
+逻辑回归模型的似然函数对数形式为：
+$$
+\ell(\theta ; \mathbf{y}) = \sum_{i=1}^n y_i \log (\sigma(\theta^T x_i)) + (1-y_i) \log (1 - \sigma(\theta^T x_i))
+$$
+似然函数中每个样本 $i$ 对应的项可以表示为：
+$$
+\ell_i(\theta) = y_i \log (\sigma(\theta^T x_i)) + (1-y_i) \log (1 - \sigma(\theta^T x_i))
+$$
+目标是计算似然函数对参数 $\theta_j$ 的偏导数。首先，需要知道逻辑函数的导数。逻辑函数的导数是上面求到的：
+$$
+\frac{d\sigma(z)}{dz} = \sigma(z)(1-\sigma(z))
+$$
+现在，对 $\ell_i(\theta)$ 求关于 $\theta_j$ 的偏导数：
+$$
+\frac{\partial \ell_i(\theta)}{\partial \theta_j} = \frac{\partial}{\partial \theta_j} \left( y_i \log (\sigma(\theta^T x_i)) + (1-y_i) \log (1 - \sigma(\theta^T x_i)) \right)
+$$
+在逻辑回归的情况中有：
+
+- $z$ 代表 $\sigma(\theta^T x_i)$，即 $\sigma$ 函数应用于 $\theta^T x_i$。
+- $y$ 代表 $\theta^T x_i$，即参数 $\theta$ 和特征向量 $x_i$ 的点积。
+- $x$ 代表参数向量 $\theta$。
+
+现在，需要计算 $\ell_i(\theta)$ 对 $\theta_j$ 的偏导数。我们有两项需要应用链式法则：
+
+1. 对于 $y_i \log (\sigma(\theta^T x_i))$ 这一项，首先对 $\log (\sigma(\theta^T x_i))$ 关于 $\sigma(\theta^T x_i)$ 求导，然后再对 $\sigma(\theta^T x_i)$ 关于 $\theta^T x_i$ 求导，最后对 $\theta^T x_i$ 关于 $\theta_j$ 求导。
+2. 对于 $(1-y_i) \log (1 - \sigma(\theta^T x_i))$ 这一项，步骤类似，只是这次是在 $1 - \sigma(\theta^T x_i)$ 上应用链式法则。
+
+对于第一项 $y_i \log (\sigma(\theta^T x_i))$：
+
+- $\frac{d}{d\sigma} \log (\sigma) = \frac{1}{\sigma}$（对数函数的导数）
+- $\frac{d\sigma(z)}{dz} = \sigma(z)(1-\sigma(z))$（逻辑函数的导数）
+- $\frac{\partial \theta^T x_i}{\partial \theta_j} = x_{ij}$（参数向量与特征向量的点积关于 $\theta_j$ 的偏导数，只剩下第 $j$ 项的系数，即 $x_{ij}$）
+
+将上面的三个导数相乘，得到：
+
+$$
+\frac{d}{d\theta_j} y_i \log (\sigma(\theta^T x_i)) = y_i \cdot \frac{1}{\sigma(\theta^T x_i)} \cdot \sigma(\theta^T x_i)(1-\sigma(\theta^T x_i)) \cdot x_{ij}
+$$
+对于第二项 $(1-y_i) \log (1 - \sigma(\theta^T x_i))$：
+
+- $\frac{d}{d\sigma} \log (1-\sigma) = \frac{-1}{1-\sigma}$（对数函数的导数）
+- $\frac{d\sigma(z)}{dz}$ 和 $\frac{\partial \theta^T x_i}{\partial \theta_j}$ 的导数与上面相同。
+
+将上面的三个导数相乘，得到：
+
+$$
+\frac{d}{d\theta_j} (1-y_i) \log (1 - \sigma(\theta^T x_i)) = (1-y_i) \cdot \frac{-1}{1-\sigma(\theta^T x_i)} \cdot \sigma(\theta^T x_i)(1-\sigma(\theta^T x_i)) \cdot x_{ij}
+$$
+将两项合并，最终得到：
+
+$$
+\frac{\partial \ell_i(\theta)}{\partial \theta_j} = y_i \cdot \frac{1}{\sigma(\theta^T x_i)} \cdot \sigma(\theta^T x_i)(1-\sigma(\theta^T x_i)) \cdot x_{ij} - (1-y_i) \cdot \frac{-1}{1-\sigma(\theta^T x_i)} \cdot \sigma(\theta^T x_i)(1-\sigma(\theta^T x_i)) \cdot x_{ij}
+$$
+简化后，我们得到：
+
+$$
+\frac{\partial \ell_i(\theta)}{\partial \theta_j} = (y_i - \sigma(\theta^T x_i)) x_{ij}
+$$
+
+
+最后，得到整个数据集的得分向量，它是每个样本得分的和：
+$$
+\frac{\partial \ell (\theta ; \mathbf{y})}{\partial \theta_j} = \sum_{i=1}^n \frac{\partial \ell_i(\theta)}{\partial \theta_j} = \sum_{i=1}^n [y_i - \sigma(\theta^T x_i)] x_{ij}
+$$
+
+
+
+
+```markdown
+利用链式法则，有：
+$$
+\frac{\partial \ell_i(\theta)}{\partial \theta_j} = y_i \frac{1}{\sigma(\theta^T x_i)} \frac{d\sigma(\theta^T x_i)}{d\theta^T x_i} \frac{\partial \theta^T x_i}{\partial \theta_j} - (1-y_i) \frac{1}{1 - \sigma(\theta^T x_i)} \frac{d\sigma(\theta^T x_i)}{d\theta^T x_i} \frac{\partial \theta^T x_i}{\partial \theta_j}
+$$
+代入逻辑函数的导数，得到：
+$$
+\frac{\partial \ell_i(\theta)}{\partial \theta_j} = y_i (1-\sigma(\theta^T x_i)) x_{ij} - (1-y_i) \sigma(\theta^T x_i) x_{ij}
+$$
+简化后得到：
+$$
+\frac{\partial \ell_i(\theta)}{\partial \theta_j} = (y_i - \sigma(\theta^T x_i)) x_{ij}
+$$
 
 
 
@@ -809,8 +912,13 @@ $$
 $$
 \frac{\partial}{\partial \theta_j} \ell(\theta; y) = \sum_{i=1}^{n} [y_i - \sigma(\theta^T x_i)] x_{ij}.
 $$
+```
 
-------------------------------------------------------------------------
+
+
+`$$\frac{\partial}{\partial \theta_j} \sigma(\theta^T x_i)$$`
+
+---
 
 From Equation A, the score can be written as
 
@@ -888,6 +996,55 @@ return(list(theta=optim.out$par, value=optim.out$value))
 **Solution**
 
 Your solution here.
+
+::: code-tabs
+
+@tab Code1
+
+```r
+titanic_original = read.csv("original_titanic.csv")
+titanic = titanic_original[which(!is.na(titanic_original$age) & 
+                                   titanic_original$embarked != "" &
+                                   !is.na(titanic_original$fare)), c(1:7,9,11)]
+# 准备数据
+survived <- titanic$survived
+sex <- ifelse(titanic$sex == "male", 0, 1)
+age <- titanic$age
+fare <- titanic$fare
+intercept <- rep(1, length(survived))
+data <- data.frame(intercept, sex, age, fare, survived)
+
+# 构建模型的矩阵
+X_full <- as.matrix(data[c('intercept', 'sex', 'age', 'fare')])
+X_rest <- as.matrix(data[c('intercept', 'sex', 'fare')])
+Y <- data[, 'survived']
+
+# 使用 glm 函数进行逻辑回归
+model_full <- glm(survived ~ intercept + sex + age + fare, family = binomial(link = "logit"), data = data)
+model_rest <- glm(survived ~ intercept + sex + fare, family = binomial(link = "logit"), data = data)
+
+# 计算广义似然比
+Lambda_n <- 2 * (logLik(model_full) - logLik(model_rest))
+
+# 计算 p-value
+p_value <- pchisq(Lambda_n, df = 1, lower.tail = FALSE)
+
+# 输出 p-value
+print(p_value)
+
+# 查看结果
+print(Lambda_n)
+
+# 输出
+'log Lik.' 0.03652914 (df=4)
+'log Lik.' 4.372231 (df=4)
+```
+
+
+
+
+
+:::
 
 ------------------------------------------------------------------------
 
