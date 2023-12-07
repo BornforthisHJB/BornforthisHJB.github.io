@@ -16,7 +16,7 @@ actions:
       type: primary
 
     - text: 1v1 Docs 📄
-      link: ./1v1
+      link: https://bornforthis.cn/
 
 highlights:
     - header: 零基础轻松接轨时代～
