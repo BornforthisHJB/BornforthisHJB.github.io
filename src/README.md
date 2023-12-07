@@ -15,7 +15,7 @@ actions:
       link: /HomeWork/
       type: primary
 
-    - text: 1v1 Docs 📄
+    - text: 1v1 官网
       link: https://bornforthis.cn/
 
 highlights:
