@@ -283,9 +283,73 @@ y 现在的值: ['cava', 2, 3, 4, 5, 6, ['rxx', 'Python', 'good']]
 
 ## 6. 解决上面的问题代码
 
+- 下面的两种方法都是在修改原本的列表 L
+
+::: code-tabs
+
+@tab code1
+
+```python
+def remove_all(L, x):
+    new_l = L.copy()
+    for i in new_l:
+        if i == x:
+            L.remove(i)
+    return L
+
+print(remove_all([9, 9, 1, 9, 8, 1], 9))
+```
+
+@tab code2
+
+```python
+from copy import deepcopy
+def remove_all(L, x):
+    new_l = deepcopy(L)
+    for i in new_l:
+        if i == x:
+            L.remove(i)
+    return L
+
+print(remove_all([9, 9, 1, 9, 8, 1], 9))
+```
+
+:::
+
+- 如何不修改原本的列表实现呢？
+
+::: code-tabs
+
+@tab code1
+
+```python
+def remove_all(L, x):
+    new_l = L.copy()
+    for i in L:
+        if i == x:
+            new_l.remove(i)
+    return new_l
+
+print(remove_all([9, 9, 1, 9, 8, 1], 9))
+```
+
+@tab code2
+
+```python
+from copy import deepcopy
+def remove_all(L, x):
+    new_l = deepcopy(L)
+    for i in L:
+        if i == x:
+            new_l.remove(i)
+    return new_l
+
+print(remove_all([9, 9, 1, 9, 8, 1], 9))
+```
 
 
 
+:::
 
 
 
