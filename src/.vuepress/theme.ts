@@ -81,8 +81,8 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      katex: false,
-      mathjax: true,
+      katex: true,
+      mathjax: false,
 
       // install chart.js before enabling it
       // chart: true,
