@@ -1,6 +1,5 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-
 export default defineUserConfig({
   lang: "zh-CN",
   title: "AI悦创-Python一对一辅导",
@@ -20,8 +19,7 @@ export default defineUserConfig({
     
 
   ],
-    
-
+  
   shouldPrefetch: false,
   markdown: {
     headers: {

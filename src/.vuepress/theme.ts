@@ -154,6 +154,7 @@ export default hopeTheme({
       // vuePlayground: true,
     },
 
+    autoCatalog: true,
     copyright: {
       author: "黄家宝|AI悦创",
       global: true,
