@@ -16,6 +16,7 @@ actions:
       type: primary
 
     - text: 1v1 官网
+      icon: home
       link: https://bornforthis.cn/
 
 highlights:
