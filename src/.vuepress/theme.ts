@@ -35,7 +35,7 @@ export default hopeTheme({
   sidebar,
 
   footer: "Copyright © 2018-2023 长期招收编程一对一学员!微信:Jiabcdefh",
-
+  editLink: false,
   displayFooter: true,
 
   encrypt: {
@@ -43,6 +43,7 @@ export default hopeTheme({
       "/HomeWork/YuShu/": ["aiyc", "ys"],
       "/R-Course/base/01.html": ["aiyc", "zl"],
       "/R-Course/base/02.html": ["aiyc", "zl"],
+      "/Python/Assignment/Assignment1.html": ["aiyc", "YDN"],
     },
   },
 
@@ -52,30 +53,30 @@ export default hopeTheme({
   // },
 
   plugins: {
-    comment: false,
+    // comment: false,
     // You should generate and use your own comment service
-    // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://comment.bornforthis.cn/",
-    //   reaction: [
-    //     '/Waline/tieba/tieba_agree.png',
-    //     '/Waline/tieba/tieba_sunglasses.png',
-    //     '/Waline/tieba/tieba_pick_nose.png',
-    //     // '/Waline/tieba/tieba_sleep.png',
-    //     '/Waline/tieba/tieba_awkward.png',
-    //     '/Waline/tieba/1f613.png',
-    //     '/Waline/tieba/1f60f.png',
-    //     // '/Waline/tieba/tieba_coffee.png',
-    //     // '/Waline/tieba/tieba_cute.png',
-    //     // '/Waline/qq/qq_4.gif',
-    //     // '/Waline/qq/qq_alpaca.gif',
-    //     // '/Waline/qq/qq_bear2.gif',
-    //   ],
-    //   comment: true, // 评论数统计
-    //   pageview: true, // 浏览量统计
-    //   copyright: false,
-    //   dark: "auto",
-    // },
+    comment: {
+      provider: "Waline",
+      serverURL: "https://comment.bornforthis.cn/",
+      reaction: [
+        '/Waline/tieba/tieba_agree.png',
+        '/Waline/tieba/tieba_sunglasses.png',
+        '/Waline/tieba/tieba_pick_nose.png',
+        // '/Waline/tieba/tieba_sleep.png',
+        '/Waline/tieba/tieba_awkward.png',
+        '/Waline/tieba/1f613.png',
+        '/Waline/tieba/1f60f.png',
+        // '/Waline/tieba/tieba_coffee.png',
+        // '/Waline/tieba/tieba_cute.png',
+        // '/Waline/qq/qq_4.gif',
+        // '/Waline/qq/qq_alpaca.gif',
+        // '/Waline/qq/qq_bear2.gif',
+      ],
+      comment: true, // 评论数统计
+      pageview: true, // 浏览量统计
+      copyright: false,
+      dark: "auto",
+    },
     
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
@@ -159,7 +160,7 @@ export default hopeTheme({
       author: "黄家宝|AI悦创",
       global: true,
       triggerLength: 100,
-      disableCopy: false,
+      disableCopy: true,
       disableSelection: false,
     },
   },
