@@ -43,7 +43,7 @@ export default hopeTheme({
       "/HomeWork/YuShu/": ["aiyc", "ys"],
       "/R-Course/base/01.html": ["aiyc", "zl"],
       "/R-Course/base/02.html": ["aiyc", "zl"],
-      "/Python/Assignment/Assignment1.html": ["aiyc", "YDN"],
+      "/Python/Assignment/Assignment1.html": ["aiyc", "YDN", "ydn"],
     },
   },
 
