@@ -61,7 +61,6 @@ export default hopeTheme({
       reaction: [
         '/Waline/tieba/tieba_agree.png',
         '/Waline/tieba/tieba_sunglasses.png',
-        
         '/Waline/tieba/tieba_pick_nose.png',
         // '/Waline/tieba/tieba_sleep.png',
         '/Waline/tieba/tieba_awkward.png',
