@@ -4,10 +4,6 @@ icon: python
 date: 2023-04-02 20:48:25
 author: AI悦创
 isOriginal: true
-category: 
-    - Python Assignment
-tag:
-    - Python 1v1
 sticky: false
 star: false
 article: true
@@ -172,6 +168,14 @@ Your loot box contains a rare item: False
 What is your level? 5
 Your loot box contains a rare item: False
 ```
+
+**Note**: random
+
+```python
+random_num = random(1, 100)
+```
+
+
 
 ## Question 07: Collective Timetables
 
