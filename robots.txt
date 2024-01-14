@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://bornforthis.cn/docs/sitemap.xml
+Sitemap: https://bornforthis.cn/sitemap.xml
