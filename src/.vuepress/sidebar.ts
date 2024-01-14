@@ -4,7 +4,7 @@ export default sidebar({
   // "/HomeWork": "structure",
   // "/R-Course/": "structure",
   // "/note/": "structure",
-  "Python/Python-core-technology-and-practice": [
+  "/Python/Python-core-technology-and-practice": [
     {
       text: "开篇词",
       collapsible: true,
