@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-f7bd7cd8","path":"/Python/Python-core-technology-and-practice/Algorithm/","title":"Algorithm","lang":"zh-CN","frontmatter":{"title":"Algorithm","article":false,"feed":false,"sitemap":false,"seo":false,"head":[]},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null}');export{e as data};

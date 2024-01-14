@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-011808a2","path":"/Python/Python-core-technology-and-practice/Binary-search/","title":"Binary Search","lang":"zh-CN","frontmatter":{"title":"Binary Search","article":false,"feed":false,"sitemap":false,"seo":false,"head":[]},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null}');export{e as data};

@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-05777f80","path":"/Python/Python-core-technology-and-practice/Casual-essay/","title":"Casual Essay","lang":"zh-CN","frontmatter":{"title":"Casual Essay","article":false,"feed":false,"sitemap":false,"seo":false,"head":[]},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null}');export{a as data};
