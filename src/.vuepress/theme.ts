@@ -165,7 +165,7 @@ export default hopeTheme({
       author: "黄家宝|AI悦创",
       global: true,
       triggerLength: 100,
-      disableCopy: true,
+      disableCopy: false,
       disableSelection: false,
     },
   },
