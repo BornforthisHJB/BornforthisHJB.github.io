@@ -47,7 +47,7 @@ export default hopeTheme({
       "/Python/Assignment/Assignment2.html": ["aiyc", "ydn", "Vector", "yh", "zy", "xxy", "lcy", "kai"],
       "/Python/basequestion/": ["aiyc", "ydn", "Vector", "yh", "zy", "xxy", "lcy", "kai"],
       "/Python/Python-core-technology-and-practice/": ["aiyc", "kai"],
-      "/Python/NoteBook/": ["aiyc", "lcy"],
+      "/Python/NoteBook/": ["aiyc", "lcy", "ydn", "ytq"],
     },
   },
 
