@@ -45,7 +45,7 @@ export default hopeTheme({
       "/R-Course/base/02.html": ["aiyc", "zl"],
       "/Python/Assignment/Assignment1.html": ["aiyc", "ydn", "Vector", "yh", "zy", "xxy", "lcy", "kai", "lyf"],
       "/Python/Assignment/Assignment2.html": ["aiyc", "ydn", "Vector", "yh", "zy", "xxy", "lcy", "kai", "lyf"],
-      "/Python/basequestion/": ["aiyc", "ydn", "Vector", "yh", "zy", "xxy", "lcy", "kai"],
+      "/Python/basequestion/": ["aiyc", "ydn", "Vector", "yh", "zy", "xxy", "lcy", "kai", "ytq"],
       "/Python/Python-core-technology-and-practice/": ["aiyc", "kai"],
       "/Python/NoteBook/": ["aiyc", "lcy", "ydn", "ytq", "lyf"],
     },
