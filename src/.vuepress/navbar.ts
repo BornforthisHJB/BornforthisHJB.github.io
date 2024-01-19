@@ -11,6 +11,7 @@ export default navbar([
       { text: "NoteBook", icon: "notebook", link: "/Python/NoteBook/" },
       { text: "Assignment", icon: "code", link: "/Python/Assignment/" },
       { text: "Python 核心", icon: "python", link: "/Python/Python-core-technology-and-practice/" },
+      { text: "basequestion", icon: "python", link: "/Python/basequestion/" },
     ]
    },
 ]);
