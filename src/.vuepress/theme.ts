@@ -41,6 +41,7 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/HomeWork/YuShu/": ["aiyc", "ys"],
+      "/Python/pyauto/": ["aiyc", "rxx", "kai"],
       "/R-Course/base/01.html": ["aiyc", "zl"],
       "/R-Course/base/02.html": ["aiyc", "zl"],
       "/Python/Assignment/Assignment1.html": ["aiyc", "ydn", "Vector", "yh", "zy", "xxy", "lcy", "kai", "lyf"],
