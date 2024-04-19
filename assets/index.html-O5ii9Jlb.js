@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-04f32d42","path":"/Python/Python-core-technology-and-practice/supplement/","title":"Supplement","lang":"zh-CN","frontmatter":{"title":"Supplement","article":false,"feed":false,"sitemap":false,"seo":false,"head":[]},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null}');export{e as data};
