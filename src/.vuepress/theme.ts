@@ -48,8 +48,8 @@ export default hopeTheme({
       "/Python/Assignment/Assignment2.html": ["aiyc", "ydn", "Vector", "yh", "zy", "xxy", "lcy", "kai", "lyf", "sgr"],
       "/Python/basequestion/": ["aiyc", "ydn", "Vector", "yh", "zy", "xxy", "lcy", "kai", "ytq"],
       "/Python/Python-core-technology-and-practice/": ["aiyc", "kai"],
-      "/Python/NoteBook/": ["aiyc", "lcy", "ydn", "ytq", "lyf", 'kk', 'Julie', '1v1'],
-      "/Python/NoteBook/05-python-list": ["aiyc", "lcy", "ydn", "ytq", "lyf", 'kk', 'Julie', '1v1', 'lxj'],
+      "/Python/NoteBook/": ["aiyc", "lcy", "ydn", "ytq", "lyf", 'kk', 'Julie', '1v1', 'lxj'],
+      // "/Python/NoteBook/05-python-list": ["aiyc", "lcy", "ydn", "ytq", "lyf", 'kk', 'Julie', '1v1', 'lxj'],
     },
   },
 
