@@ -62,7 +62,7 @@ export default hopeTheme({
   plugins: {
     shiki: {
       langAlias: {
-        ['ipython']: 'python',
+        'ipython': 'python',
         'tips': 'python',
       }
     },
