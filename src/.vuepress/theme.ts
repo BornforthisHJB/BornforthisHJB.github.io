@@ -60,6 +60,12 @@ export default hopeTheme({
 
   
   plugins: {
+    shiki: {
+      langAlias: {
+        ['ipython']: 'python',
+        'tips': 'python',
+      }
+    },
     // comment: false,
     // You should generate and use your own comment service
     comment: {
