@@ -91,61 +91,38 @@ export default hopeTheme({
       dark: "auto",
     },
     
-    // All features are enabled for demo, only preserve features you need here
-    mdEnhance: {
-      align: true,
-      attrs: true,
-      katex: true,
-      mathjax: false,
-
-      // install chart.js before enabling it
-      // chart: true,
-
-      codetabs: true,
-
-      // insert component easily
-      // component: true,
-
-      demo: false,
-      tabs: true,
-
-      // install echarts before enabling it
-      // echarts: true,
-
-      figure: true,
-
-      // install flowchart.ts before enabling it
-      // flowchart: true,
-
-      // gfm requires mathjax-full to provide tex support
-      // gfm: true,
-
-      imgLazyload: true,
-      imgSize: true,
-      include: true,
-
-      // install katex before enabling it
-      // katex: true,
-
-      // install mathjax-full before enabling it
-      // mathjax: true,
-
+    markdownImage: {
       mark: true,
-
-      // install mermaid before enabling it
-      // mermaid: true,
-      
-
-      playground: {
-        presets: ["ts", "vue"],
-      },
-
-      // install reveal.js before enabling it
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
-      
-
+      size: true,
+      lazyload: true,
+      figure: true,
+    },
+    markdownHint: {
+      hint: true,
+      alert: true,
+    },
+    markdownTab: {
+      codeTabs: true,
+      tabs: true,
+    },
+    markdownMath: true,
+    mdEnhance: {
+      chart: false, 
+      echarts: false,
+      mermaid: true,
+      vuePlayground: false,
+      sub: true,
+      spoiler: true,
+      sup: true,
+      demo: true,
+      tasklist: true,
+      include: true,
+      attrs: false,
+      mark: true, 
+      footnote: true,
+      align: true, 
+      flowchart: false, 
+      gfm: true,
       stylize: [
         {
           matcher: "Recommended",
@@ -159,13 +136,7 @@ export default hopeTheme({
           },
         },
       ],
-      sub: true,
-      sup: true,
       vPre: true,
-      tasklist: true,
-
-      // install @vue/repl before enabling it
-      // vuePlayground: true,
     },
 
 
