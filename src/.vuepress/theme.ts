@@ -146,7 +146,7 @@ export default hopeTheme({
       global: true,
       triggerLength: 100,
       disableCopy: true,
-      disableSelection: false,
+      disableSelection: true,
     },
   },
 });
