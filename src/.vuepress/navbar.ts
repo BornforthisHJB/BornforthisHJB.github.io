@@ -16,5 +16,5 @@ export default navbar([
       // { text: "PyAuto", icon: "python", link: "/Python/pyauto/" },
     // ]
    },
-   { text: "Java", icon: "java", link: "Java" }
+   { text: "Java", icon: "java", link: "/Java/" }
 ]);

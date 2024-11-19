@@ -40,6 +40,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
+      "/Java/": ['LL', 'aiyc'],
       "/HomeWork/YuShu/": ["aiyc", "ys"],
       "/Python/pyauto/": ["aiyc", "rxx", "kai"],
       "/R-Course/base/01.html": ["aiyc", "zl"],
