@@ -40,6 +40,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
+      "/1v1/96-Four-dimensional/": ['FD', 'aiyc'],
       "/Java/": ['LL', 'aiyc'],
       "/HomeWork/YuShu/": ["aiyc", "ys"],
       "/Python/pyauto/": ["aiyc", "rxx", "kai"],
