@@ -142,6 +142,11 @@ export default sidebar({
 			children: [
 				"CSCA20-Lab1",
 				"CSCA20-Lab2",
+				"CSCA20-Lab3",
+				"CSCA20-Lab4",
+				"CSCA20-Lab5",
+				"CSCA20-Lab6",
+				"CSCA20-Lab7",
 			]
 		},
 		{

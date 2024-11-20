@@ -76,13 +76,81 @@ The Unbelievably Trained Security Council (UTSC) wants you to build them a progr
 
 After the trainer has entered the password, the trainee will be allowed to guess 5 letters. For each letter, the system will print True if that letter is in the password, or False if it isn’t.
 
+```python
+#prompt the trainer for the passcode
+passcode = input("Trainer: enter 5 letter passcode: ")
+#print a bunch of empty lines so that the entered passcode scrolls off the screen
+print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
+n\n\n\n\n\n\n\n\n\n\n\n\n")
+####ROUND 1#####
+print("Round 1: Guess 5 letters to see if they're in the passcode ")
+#do this 5 times... later when we learn about loops, we can come back and make
+#this a lot simpler
+guess_1 = input("Guess #1: letter to check: ")
+print(guess_1 in passcode)
+guess_2 = input("Guess #2: letter to check: ")
+print(guess_2 in passcode)
+guess_3 = input("Guess #3: letter to check: ")
+print(guess_3 in passcode)
+guess_4 = input("Guess #4: letter to check: ")
+print(guess_4 in passcode)
+guess_5 = input("Guess #5: letter to check: ")
+print(guess_5 in passcode)
+```
+
+
+
 ## 7. Round 2
 
 Now that the trainee knows (hopefully) the letters in the password, they will be prompted to enter the letters and their predicted positions (e.g., I think ’X’ is in position 3), and will be told True if the letter is in that position, and False otherwise. The trainee will get 5 chances to guess in this round.
 
+```python
+#####ROUND 2#####
+print("Round 2: Guess 5 letter/position combinations to see if you have them correct")
+letter_guess_1 = input("Guess #1: letter to check: ")
+position_guess_1 = input("Guess #1: position to check: ")
+position_guess_1 = int(position_guess_1)
+print(passcode[position_guess_1] == letter_guess_1)
+letter_guess_2 = input("Guess #2: letter to check: ")
+position_guess_2 = input("Guess #2: position to check: ")
+position_guess_2 = int(position_guess_1)
+print(passcode[position_guess_2] == letter_guess_2)
+letter_guess_3 = input("Guess #3: letter to check: ")
+position_guess_3 = input("Guess #3: position to check: ")
+position_guess_3 = int(position_guess_3)
+print(passcode[position_guess_3] == letter_guess_3)
+letter_guess_4 = input("Guess #4: letter to check: ")
+position_guess_4 = input("Guess #4: position to check: ")
+position_guess_4 = int(position_guess_4)
+print(passcode[position_guess_4] == letter_guess_4)
+letter_guess_5 = input("Guess #5: letter to check: ")
+position_guess_5 = input("Guess #5: position to check: ")
+position_guess_5 = int(position_guess_5)
+print(passcode[position_guess_5] == letter_guess_5)
+```
+
+
+
 ## 8. Round 3
 
 At this point, the trainee has 5 chances to input the whole password. If the guessed password is correct, the system will print True. If a guess is incorrect, the program will print False (note: even if the trainee guesses correctly on the first try, the system will still prompt for all five attempts).
+
+```python
+#####ROUND 3#####
+print("Round 3: Guess the whole word, and I'll tell you if it's correct")
+guess = input("Guess #1: guess the passcode: ")
+print(guess == passcode)
+guess = input("Guess #2: guess the passcode: ")
+print(guess == passcode)
+guess = input("Guess #3: guess the passcode: ")
+print(guess == passcode)
+guess = input("Guess #4: guess the passcode: ")
+print(guess == passcode)
+guess = input("Guess #5: guess the passcode: ")
+print(guess == passcode)
+```
+
+
 
 ## 9. Starter Code
 
@@ -141,7 +209,13 @@ In [7]: '1' == '1'
 Out[7]: True
 ```
 
+### 13.4 语法3: input
 
+::: warning
+
+input 得到的永远都是字符串类型，如需使用需要慎重思考所需要的数据类型！
+
+:::
 
 
 
