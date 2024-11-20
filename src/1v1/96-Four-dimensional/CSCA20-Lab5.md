@@ -60,7 +60,11 @@ In this scenario, we want to check whether a string matches a specific template.
 
 Once we have the function to match single characters, matching entire strings of those characters should be relatively easy. In fact, if you wanted, you could write your entire `matches_string` function without having written your `matches_character` function, but that would be a bad idea. The goal here is to think about breaking the ideas down and only thinking about one thing at a time. So having all the details of matching characters and templates dealt with in `matches_character` should mean that in `matches_string`, you only have to worry about looping over the string(s).
 
+## 8. Menu
 
+You’ll need to build a menu that prompts the user for their phone number, donor `ID`, and the booking time, and then makes sure the format is correct (and informs them if it isn’t).
+
+## 9. Hints
 
 
 

@@ -91,9 +91,83 @@ If you finish early and want to practice more, here are a few things you can try
 - You can try to make the code more error-proof, so that if the user enters bad input, the code doesn’t crash. If they enter a time greater than any runner took, or less than the fastest runner, it would be nice if the code did something sensible instead of just crashing.
 - Try to add another field. Maybe name, time, and age, and then lets the user do advanced stuff like setting a maximum number in a specific age category, or printing out the average time for runners over a certain age (this one will likely require you to read ahead to learn about IF statements)
 
+## 12. 知识点
+
+1. for 循环遍历出列表每个元素
+
+    ```python
+    lst = [1, 2, 3, 4, 5]
+    for i in lst:
+        print(i) d
+    ```
+
+2. range() 左闭右开
+
+    ```python
+    for i in range(10):
+        print(i)
+    ```
+
+3. 使用 range 生成的数字提取列表内的元素
+
+    ```python
+    ```
+
+    
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::: code-tabs
+
+@tab 模版
+
+```python
+#this will be our continue flag... if it's set to 'N', we're done, if it's
+#set to 'Y' (or anything else really), we add more runners
+cont = "Y"
+#lists to hold our runners and their times, so runner[n] will be the name of
+#the n'th place finisher and times[n] will be their time (in minutes)
+runners = []
+times = []
+#loop until the user says they're out of runners to process
+while(cont != "N"):
+#get the name and time of the next runner
+runner_name = input("Please enter name of next runner: ")
+runner_time = float(input("Please enter runner time: "))
+#add the name and time to their respective lists
+runners.append(runner_name)
+times.append(runner_time)
+#ask if the user is done
+cont = input("Any more runners to add? (Y/N)")
+#------ DO NOT EDIT ANYTHING ABOVE THIS LINE-----#
+#NEED A LOOP HERE
+average_time = 0
+print("Average time of all runners: " + str(average_time))
+num_qualifiers = int(input("Enter number of runners who qualified: "))
+average_time = 0
+#NEED A LOOP HERE
+print("Average time for qualified runners: " + str(average_time))
+cutoff_time = float(input("Enter cutoff time to qualify: "))
+average_time = 0
+#NEED A LOOP HERE
+print("Average for qualifying runners: " + str(average_time))
+```
+
+:::
 
 
 
