@@ -134,5 +134,27 @@ export default sidebar({
         "14",
       ],
     },
-  ]
+  ],
+  "/1v1/96-Four-dimensional/": [
+		{
+			text: "Lab",
+			icon: "laboratorylab",
+			children: [
+				"CSCA20-Lab1",
+				"CSCA20-Lab2",
+			]
+		},
+		{
+			text: "HomeWork",
+			icon: "lianxi",
+			children: [
+			]
+		},
+		{
+			text: "Review",
+			icon: "idea",
+			children: [
+			]
+		}
+	],
 });
