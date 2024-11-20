@@ -106,6 +106,49 @@ If you get this working and want to move beyond the basics, there are several th
 - (once you’ve learned selection) improve this code so that it keeps track of the number of correct guesses and gives better feedback than just True or False
 - (once you’ve learned loops & selection) make a better version of this program that actually shows the user the parts of the password they’ve figured out already. e.g., if they’ve guessed the positions of A and L and the password is APPLE, prompt them with A_L_
 
+## 13. 知识点
+
+### 13.1 思路
+
+题目要输入，那么咱们就按输入的思路来实现。
+
+### 13.2 语法1：判断一个值是否存在字符串
+
+```python
+Value in Squence
+In [2]: '1' in 'aiyuechuang12345678'
+Out[2]: True
+
+In [3]: '213' in 'aiyuechuang12345678'
+Out[3]: False
+
+In [4]: '1234' in 'aiyuechuang12345678'
+Out[4]: True
+```
+
+
+
+### 13.3 语法2: 判断是否相等
+
+```python
+In [5]: 1 == 3
+Out[5]: False
+
+In [6]: 1 == '11'
+Out[6]: False
+
+In [7]: '1' == '1'
+Out[7]: True
+```
+
+
+
+
+
+
+
+
+
 
 
 ::: details 公众号：AI悦创【二维码】

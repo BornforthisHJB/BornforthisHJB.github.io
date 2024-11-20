@@ -32,9 +32,35 @@ watermark: true
 
 This lab focuses on looping and lists, and in particular getting comfortable with the 3 types of loops (elemental for, counted for, and while loops)
 
+## 2. Prelab
 
+We’ve provided you with some starter code that prints a menu and asks the user to choose an option. Before your tutorial, you should get this code running, and try to implement the at least the add data, and end program options. For the other options, just have it print something like: 
 
+```python
+Get Overload Days Here
+```
 
+## 3. Demonstration & Evaluation
+
+This lab allows the demonstration of User Input/Output, Lists, and Selection.
+
+## 4. The Scenario
+
+The Union for Tracking Seaborn Contaminants (UTSC) has asked you to build a tool to track the number of kilograms of plastic their ocean cleanup rigs clean on a daily basis. They want to be able to add the kilograms cleaned each day, calculate the total amount removed over certain time periods, and the number of days that their rigs were pushed beyond their approved limits by collecting too much plastic.
+
+## 5. Menu
+
+The starter code presents a simple menu that gives the user options for entering data, retrieving information, or quitting.
+
+If the user enters any other letter, the code should say invalid input: please try again and present the menu again.
+
+## 6. Adding Data
+
+Your code should prompt the user with the date and ask for input. e.g., Enter kg of plastic
+
+```python
+removed on day 17:
+```
 
 
 
