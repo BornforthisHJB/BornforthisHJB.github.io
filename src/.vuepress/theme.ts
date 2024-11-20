@@ -167,7 +167,7 @@ export default hopeTheme({
       global: true,
       triggerLength: 100,
       disableCopy: true,
-      disableSelection: true,
+      disableSelection: false,
     },
   },
 });
