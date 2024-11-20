@@ -84,9 +84,27 @@ Now that the trainee knows (hopefully) the letters in the password, they will be
 
 At this point, the trainee has 5 chances to input the whole password. If the guessed password is correct, the system will print True. If a guess is incorrect, the program will print False (note: even if the trainee guesses correctly on the first try, the system will still prompt for all five attempts).
 
+## 9. Starter Code
 
+`lab2_starter.py` has been uploaded to Quercus. You should start by reading through it, and running it to make sure you understand how and why it prints the True and False values that it does. If you don’t understand something, ask your TA for help. Once you understand what the starter code is doing, your job is to modify it so that it prints True and False correctly based on the input of the users.
 
+## 10. Hints
 
+Here are a few hints that might help you with this assignment:
+
+- Your code only needs to print out True or False, later on, when we learn about loops and selection, we can do fancy things like keeping track of the number of correct guesses, or giving them feedback on how they’re doing.
+- You can assume that the trainee understands enough about computer science that they will know that computer scientists start counting at 0 (or you can try to change it so they don’t have to, it’s up to you)
+- You will need to store the passcode and the trainee’s guesses. But do you really need 5 separate variables for each guess of the trainee? If you won’t need a value anymore, you don’t need to store it and can re-use the variable to point to a new value.
+- We haven’t covered all the features of strings you need in order to complete this lab in lectures. But we HAVE covered where you should go to find out the features of strings.
+
+## 11. Extra Practice
+
+If you get this working and want to move beyond the basics, there are several things you can do:
+
+- Not all passwords are case-sensitive. Try to make a version of the program where it doesn’t matter if the trainer/trainee uses upper or lower case letters.
+- (once you’ve learned loops) improve this code so that each input/print statement is only in the code once for each round.
+- (once you’ve learned selection) improve this code so that it keeps track of the number of correct guesses and gives better feedback than just True or False
+- (once you’ve learned loops & selection) make a better version of this program that actually shows the user the parts of the password they’ve figured out already. e.g., if they’ve guessed the positions of A and L and the password is APPLE, prompt them with A_L_
 
 
 
