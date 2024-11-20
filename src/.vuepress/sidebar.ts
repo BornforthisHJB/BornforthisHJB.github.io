@@ -93,6 +93,15 @@ export default sidebar({
 				}
 
 			],
+		},
+		{
+			text: "练习题",
+			icon: "java",
+			prefix: "practice",
+			collapsible: true,
+			children: [
+				"01-Array-exercise"
+			]
 		}
 	],
   "/Python/Python-core-technology-and-practice/": [
