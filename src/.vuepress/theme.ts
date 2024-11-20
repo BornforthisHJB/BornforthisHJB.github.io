@@ -62,10 +62,31 @@ export default hopeTheme({
   
   plugins: {
     shiki: {
-      langAlias: {
-        'ipython': 'python',
-        'tips': 'python',
-      }
+      collapsedLines: 15,
+    //   lineNumbers: 1,
+      notationDiff: true,
+      notationFocus: true,
+      highlightLines: true,
+      notationHighlight: true,
+    //   langs: ['sql', 'python', 'java', 'javascript', 'c', 'c#', 'c++', 'html', 'css',
+    //     'bash', 'rust', 'php', 'r', 'cmd', 'yaml', 'markdown', 'http', 'cmake', 'matlab',
+    //     'plsql', 'ini', "fortran-free-form", "fortran-fixed-form", 'go', 'vue', 'tex', 'text', 'csv', 'fish',
+    //     'makefile', 'typescript',
+    //   ],
+      // langAlias: {
+      //   ["fortran"]: "fortran-free-form",
+      // },
+      theme: "monokai",
+      // themes: {
+      //   light: "monokai",
+      //   dark: "one-dark-pro",
+      // },
+    },
+    watermark: {
+      enabled: true,
+      watermarkOptions: {
+        content: "AI悦创-Python一对一辅导 bornforthis.cn"
+      },
     },
     // comment: false,
     // You should generate and use your own comment service
