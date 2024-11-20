@@ -111,9 +111,30 @@ If you finish early and want to practice more, here are a few things you can try
 3. 使用 range 生成的数字提取列表内的元素
 
     ```python
+    lst = ['李雷', '韩梅梅', '马冬梅']
+    for i in range(3):
+        print(lst[i])
     ```
 
-    
+4. len 获取列表长度
+
+    ```python
+    lst = ['李雷', '韩梅梅', '马冬梅']
+    for i in range(len(lst)):
+        print(lst[i])
+    ```
+
+5. for 循环里面的会重复执行！
+
+
+
+
+
+
+
+
+
+
 
 
 
