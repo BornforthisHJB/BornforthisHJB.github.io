@@ -66,6 +66,21 @@ You’ll need to build a menu that prompts the user for their phone number, dono
 
 ## 9. Hints
 
+Here are a few hints that might help you with this assignment:
+
+- Work on one function at a time. Don’t waste mental resources thinking about how you’re going to use the character matching function while you’re implementing it, and likewise, when you’re implementing it, just trust that the function itself will work.
+- Test each function before you move on. It can get really complicated if you have a bug in your function that you don’t realize until it’s being called by another function.
+- Document your functions thoroughly, and read the provided documentation. This goes back to separating algorithm from implementation: focus on the algorithm with the documenta-tion, then you can worry about implementation separately.
+- There are a few assumptions you can make that will simplify your life. For example: Since the documentation for matches_string says the strings must be of the same length, inside the function you can just take that for granted. Then worrying about different length strings becomes a separate (and easily solved) problem.
+
+## 10. Extra Practice
+
+Here are some ideas of things you can do if you’re finished early or just want more to do:
+
+- Adding extra templates is fairly easy, but what about adding extra template types? For example, what about adding a a symbol that works for only upper case letters? Or what about one that works for anything **except** spaces?
+- For a real challenge, try making `#` match any string of numbers and `&` match any string of letters. So phone numbers would be `(#)#-#`, which would match (123)456-7890 (but would also match (12345)6-123456789. (As a hint for this one, make a function that doesn’t return `True` or `False` if a string matches a template, but the number of characters that it matches before failing)
+- If you like the fun of the templates part, you can learn more about these sort of tools: we call them regular expressions, and they can actually be very powerful. We will see these more later in the term, but you can play around with them now: [https://www.w3schools.com/python/python_regex.asp](https://www.w3schools.com/python/python_regex.asp)
+
 
 
 

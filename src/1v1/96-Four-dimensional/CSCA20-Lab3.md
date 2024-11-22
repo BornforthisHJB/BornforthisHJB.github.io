@@ -126,6 +126,87 @@ If you finish early and want to practice more, here are a few things you can try
 
 5. for 循环里面的会重复执行！
 
+6. while 循环语法
+
+    ```python
+    while 条件: # 条件为 True 的时候才可以执行
+        while 循环内的代码
+    ```
+
+    ```python
+    while 2 > 1:
+        print("hello")
+    ```
+
+    ```python
+    num = 10
+    while num > 0:
+        print(f"hello,{num}")
+        num -= 1
+    ```
+
+7. while 循环实现 0～100 和
+
+    ```python
+    total = 0
+    n = 0
+    while n <= 100:
+        total = total + n
+        n = n + 1
+    print(total)
+    ```
+
+8. append() 添加列表元素
+
+    ```python
+    lst = [1, 2, 3]
+    lst.append(5)
+    print(lst)
+    lst.append([1, 2, 3])
+    print(lst)
+    ```
+
+9. 列表删除
+
+    ```python
+    lst = [1, 2, 3]
+    lst.pop()
+    print(lst)
+    lst.pop(0)
+    print(lst)
+    ```
+
+    ```python
+    lst = [1, 2, 3, 4]
+    del lst[0]
+    print(lst)
+    del lst[0]
+    print(lst)
+    ```
+
+    ```python
+    lst = [1, 2, 3, 4]
+    lst.remove(3)
+    print(lst)
+    ```
+
+10. 列表的修改元素
+
+    ```python
+    lst = [1, 2, 3, 4, 5, 6]
+    lst[0] = 100
+    print(lst)
+    ```
+
+    ```python
+    lst = [1, 2, 3, 4, 5, 6]
+    for i in range(len(lst)):
+        lst[i] = lst[i] ** 2
+    print(lst)
+    ```
+
+    
+
 
 
 
@@ -187,6 +268,73 @@ average_time = 0
 #NEED A LOOP HERE
 print("Average for qualifying runners: " + str(average_time))
 ```
+
+@tab Code
+
+```python
+# This will be our continue flag... if it's set to 'N', we're done. 
+# If it's set to 'Y' (or anything else), we add more runners.
+cont = "Y"
+
+# Lists to hold our runners and their times, so runners[n] will be the name of
+# the n'th place finisher and times[n] will be their time (in minutes).
+runners = []
+times = []
+
+# Loop until the user says they're out of runners to process.
+while cont != "N":
+    # Get the name and time of the next runner.
+    runner_name = input("Please enter the name of the next runner: ")
+    runner_time = float(input("Please enter the runner's time: "))
+    
+    # Add the name and time to their respective lists.
+    runners.append(runner_name)
+    times.append(runner_time)
+    
+    # Ask if the user is done.
+    cont = input("Any more runners to add? (Y/N): ")
+
+# Calculate the average time of all runners.
+total = 0
+num_runners = 0
+for next_time in times:
+    total += next_time
+    num_runners += 1
+print("Average time of all runners: " + str(total / num_runners))
+
+# Calculate the average time and list of qualified runners.
+total = 0
+max_num_runners = int(input("Enter the number of runners who qualified: "))
+
+# Loop over the positions (0, 1, 2, etc.) to access both lists (names and times).
+for runner_num in range(0, max_num_runners):
+    total += times[runner_num]
+    print(runners[runner_num] + " qualified")
+print("Average time for qualified runners: " + str(total / max_num_runners))
+
+# Handle cutoff time to qualify.
+cutoff_time = float(input("Enter cutoff time to qualify: "))
+total = 0
+
+# We need to keep track of our own position and values this time.
+num_runners = 0
+next_runner = runners[0]
+next_time = times[0]
+
+# Keep looping until we hit a time that doesn't qualify.
+while next_time < cutoff_time:
+    print(next_runner + " qualified")
+    total += next_time
+    
+    # Update the counter and fetch the next runner.
+    num_runners += 1
+    if num_runners >= len(runners):  # Ensure we don't exceed the list size.
+        break
+    next_runner = runners[num_runners]
+    next_time = times[num_runners]
+```
+
+
 
 :::
 
