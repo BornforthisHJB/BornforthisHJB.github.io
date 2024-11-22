@@ -100,7 +100,7 @@ In [137]: %save aiyc.py 1-135
 
 例如，这允许引用较早的会话，例如
 
-``` dpython
+```python
 %save current_session ~0/
 %save previous_session ~1/
 ```
