@@ -26,6 +26,32 @@ watermark: true
 
 ## 1. 字符串
 
+### 1.0 字符串元素提取
+
+1. 提取单个元素
+
+    ```python
+    string = 'bornforthis'
+    select = string[0]
+    print(select) # 输出：b
+    ```
+
+2. 提取多个元素
+
+    ```python
+    string = 'bornforthis'
+    select = string[0:3]
+    print(select) # 输出：bor
+    ```
+
+3. 提取多个不连续的数据
+
+    ```python
+    string = 'bornforthis'
+    select = string[0:11:2]
+    print(select) # 输出：brfrhs
+    ```
+
 ### 1.1 input 获取用户输入
 
 `input()` 是一个内置函数，用于从用户获取输入。
@@ -189,7 +215,6 @@ print(f"你好, {name}!")
     print(select)  # 输出：['plum', 'watermelon', 'banana', 'apple']
     ```
 
-    
 
 ### 2.1 添加元素
 
@@ -378,6 +403,206 @@ print(new_lst)
 ```
 
 
+
+## 3. for 循环
+
+Python 的 `for` 循环用于遍历**可迭代对象**（如列表、字符串、字典、集合、元组等），或者用于执行一段代码块的多次重复操作。以下是详细讲解：
+
+### 3.1 基本语法
+
+```python
+for 变量 in 可迭代对象:
+    执行的代码块
+```
+
+- **变量**：每次循环时，从可迭代对象中提取的元素会赋值给这个变量。
+- **可迭代对象**：可以是列表、元组、字符串、字典等。
+- **代码块**：循环体中需要执行的代码。
+
+### 3.2 常见使用场景
+
+#### 3.2.1 遍历列表
+
+```python
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+```
+
+**输出**：
+
+```
+apple
+banana
+cherry
+```
+
+#### 3.2.2 遍历字符串
+
+```python
+text = "hello"
+for char in text:
+    print(char)
+```
+
+**输出**：
+
+```
+h
+e
+l
+l
+o
+```
+
+#### 3.2.3 遍历字典
+
+遍历字典的**键**、**值**或**键值对**。
+
+```python
+person = {"name": "Alice", "age": 25, "city": "New York"}
+
+# 遍历键
+for key in person:
+    print(key)
+
+# 遍历值
+for value in person.values():
+    print(value)
+
+# 遍历键值对
+for key, value in person.items():
+    print(key, value)
+```
+
+
+
+### 3.3 结合`range()`函数
+
+`range()` 是生成一系列数字的函数，常用于生成索引或循环计数。
+
+#### 3.3.1 基本用法
+
+```python
+for i in range(5):  # 生成 0 到 4 的数字
+    print(i)
+```
+
+**输出**：
+
+```
+0
+1
+2
+3
+4
+```
+
+#### 3.3.2 带起始值和步长
+
+```python
+for i in range(1, 10, 2):  # 从 1 开始，步长为 2，生成 1, 3, 5, 7, 9
+    print(i)
+```
+
+**输出**：
+
+```
+1
+3
+5
+7
+9
+```
+
+### 3.4 `for` 循环中的常用控制语句
+
+#### 3.4.1  `break`
+
+提前终止循环。
+
+```python
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+```
+
+**输出**：
+
+```
+0
+1
+2
+```
+
+#### 3.4.2 `continue`
+
+跳过当前循环的剩余代码，直接进入下一次循环。
+
+```python
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+```
+
+**输出**：
+
+```
+0
+1
+2
+4
+```
+
+#### 3.4.3 `else`
+
+当 `for` 循环没有被 `break` 中断时，执行 `else` 中的代码。
+
+```python
+for i in range(5):
+    print(i)
+else:
+    print("循环完成")
+```
+
+**输出**：
+
+```
+0
+1
+2
+3
+4
+循环完成
+```
+
+### 3.5 嵌套循环
+
+`for` 循环可以嵌套使用，用于处理二维或多维数据。
+
+```python
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for row in matrix:
+    for num in row:
+        print(num, end=" ")
+```
+
+**输出**：
+
+```
+1 2 3 4 5 6 7 8 9
+```
+
+------
+
+### 3.6 总结
+
+- **优点**：简单易用，适合遍历各种数据结构。
+- 注意点：
+    1. 如果循环目标是空对象，`for` 循环不会执行。
+    2. 在循环中修改可迭代对象时要小心，可能会引发意外行为。
 
 
 
