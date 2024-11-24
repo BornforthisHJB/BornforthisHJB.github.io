@@ -727,7 +727,152 @@ print("密码正确，欢迎进入系统")
 
 ## 5. 字典
 
+在 Python 中，字典（`dict`）是一种用于存储键值对的数据结构。字典循环主要用来遍历字典中的键（`keys`）、值（`values`）或者键值对（`items`）。以下是字典循环的几种常见用法和它们的特点：
 
+### 5.0 字典的提取和修改、添加
+
+```python
+```
+
+
+
+### 5.1 遍历键（Keys）
+
+默认情况下，用 `for` 循环直接遍历字典，会遍历它的键。
+
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+for key in my_dict:
+    print(f"键: {key}")
+```
+
+等价于：
+
+```python
+for key in my_dict.keys():
+    print(f"键: {key}")
+```
+
+输出：
+
+```
+键: a
+键: b
+键: c
+```
+
+
+
+### 5.2 遍历值（Values）
+
+通过 `dict.values()` 方法可以遍历字典的值。
+
+```python
+for value in my_dict.values():
+    print(f"值: {value}")
+```
+
+输出：
+
+```
+值: 1
+值: 2
+值: 3
+```
+
+
+
+### 5.3 遍历键值对（Key-Value Pairs）
+
+使用 `dict.items()` 方法可以同时获取字典的键和值。
+
+```python
+for key, value in my_dict.items():
+    print(f"键: {key}, 值: {value}")
+```
+
+输出：
+
+```
+键: a, 值: 1
+键: b, 值: 2
+键: c, 值: 3
+```
+
+
+
+### 5.4 使用 `enumerate()` 在字典循环中获取索引
+
+虽然字典本身没有顺序，但如果需要索引，可以配合 `enumerate()` 使用：
+
+```python
+for index, (key, value) in enumerate(my_dict.items()):
+    print(f"索引: {index}, 键: {key}, 值: {value}")
+```
+
+输出：
+
+```
+索引: 0, 键: a, 值: 1
+索引: 1, 键: b, 值: 2
+索引: 2, 键: c, 值: 3
+```
+
+
+
+### 5.5 条件过滤循环
+
+可以在循环时加条件过滤，只处理满足条件的键或值。
+
+例如，筛选值大于 1 的键值对：
+
+```python
+for key, value in my_dict.items():
+    if value > 1:
+        print(f"键: {key}, 值: {value}")
+```
+
+输出：
+
+```
+键: b, 值: 2
+键: c, 值: 3
+```
+
+
+
+### 5.6 字典嵌套循环
+
+如果字典的值本身是另一个字典，可以使用嵌套循环遍历。
+
+```python
+nested_dict = {
+    'group1': {'a': 1, 'b': 2},
+    'group2': {'c': 3, 'd': 4},
+}
+
+for group, sub_dict in nested_dict.items():
+    print(f"组: {group}")
+    for key, value in sub_dict.items():
+        print(f"  键: {key}, 值: {value}")
+```
+
+输出：
+
+```
+组: group1
+  键: a, 值: 1
+  键: b, 值: 2
+组: group2
+  键: c, 值: 3
+  键: d, 值: 4
+```
+
+### 5.7 注意事项
+
+1. **顺序**：从 Python 3.7 开始，字典的插入顺序默认会被保留。
+2. **性能**：直接访问字典的键、值或项（`keys()`、`values()`、`items()`）的时间复杂度为 $O(1)$。
 
 
 
