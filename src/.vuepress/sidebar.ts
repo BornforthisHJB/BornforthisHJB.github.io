@@ -160,7 +160,8 @@ export default sidebar({
 			icon: "idea",
 			children: [
 				"03",
-				"2022F_TT2"
+				"2022F_TT2",
+				"yufa"
 			]
 		}
 	],
