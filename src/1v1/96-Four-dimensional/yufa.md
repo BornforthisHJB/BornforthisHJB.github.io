@@ -162,13 +162,31 @@ print(f"你好, {name}!")
     ```python
     lst = [1, 2, 3]
     select = lst[0] # 数字 1 的下标是 0
-    print(select)  # 输出 1
+    print(select)  # 输出：1
     ```
 
 2. 提取连续的数据
 
     ```python
-    
+    lst = ['apple', 'banana', 'watermelon', 'plum']
+    select = lst[1:3]
+    print(select)  # 输出：['banana', 'watermelon']
+    ```
+
+3. 提取不连续的数据
+
+    ```python
+    lst = ['apple', 'banana', 'watermelon', 'plum']
+    select = lst[0:4:2]
+    print(select)  # 输出：['apple', 'watermelon']
+    ```
+
+4. 列表元素倒过来
+
+    ```python
+    lst = ['apple', 'banana', 'watermelon', 'plum']
+    select = lst[::-1]
+    print(select)  # 输出：['plum', 'watermelon', 'banana', 'apple']
     ```
 
     
