@@ -39,7 +39,9 @@ export default sidebar({
 			// collapsible: true,
 			icon: "java",
 			children: [
-				"chapter02/01",
+				"chapter02/23",
+				"chapter02/24",
+				"chapter02/25",
 			],
 		},
 		{
