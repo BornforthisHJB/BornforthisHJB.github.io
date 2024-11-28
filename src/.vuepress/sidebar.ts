@@ -42,6 +42,9 @@ export default sidebar({
 				"chapter02/23",
 				"chapter02/24",
 				"chapter02/25",
+				"chapter02/26",
+				"chapter02/27",
+				"chapter02/28",
 			],
 		},
 		{
