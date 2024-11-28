@@ -174,6 +174,10 @@ public static int[] reverseArray(int[] nums);
 
 **答案：**
 
+::: code-tabs
+
+@tab Code1
+
 ```java
 public static int[] reverseArray(int[] nums) {
     int start = 0, end = nums.length - 1; // 定义双指针
@@ -195,9 +199,28 @@ public static void main(String[] args) {
 }
 ```
 
+@tab Code2
+
+```java
+public class ReverseArray {
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3, 4, 5};
+        int[] reversedArray = new int[nums.length];
+        int index = 4;
+
+        for (int i = 4; i >= 0; i--) {
+            reversedArray[4-i] = nums[i];
+        }
+        for (int i = 0; i < reversedArray.length; i++) {
+            System.out.print(reversedArray[i] + " ");
+        }
+    }
+}
+```
 
 
 
+:::
 
 
 
@@ -322,6 +345,10 @@ public static int[] findIntersection(int[] nums1, int[] nums2);
 
 **答案：**
 
+::: code-tabs
+
+@tab Code1
+
 ```java
 public static int[] findIntersection(int[] nums1, int[] nums2) {
     Set<Integer> set1 = new HashSet<>();
@@ -340,9 +367,33 @@ public static void main(String[] args) {
 }
 ```
 
+@tab Code2
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArraysIntersection {
+    public static void main(String[] args) {
+        int[] nums1 = {1, 2, 2, 3};
+        int[] nums2 = {2, 2, 3, 4};
+        List<Integer> intersection = new ArrayList<>();
+
+        for (int i = 0; i < nums1.length; i++) {
+            for (int j = 0; j < nums2.length; j++) {
+                if (nums1[i] == nums2[j] && !intersection.contains(nums1[i])) {
+                    intersection.add(nums1[i]);
+                }
+            }
+        }
+        System.out.println(intersection);
+    }
+}
+```
 
 
 
+:::
 
 
 
@@ -431,19 +482,104 @@ public static int maxSubArraySum(int[] nums);
 
 **答案：**
 
+::: code-tabs
+
+@tab Code1
+
 ```java
-public static boolean isSorted(int[] nums) {
-    for (int i = 1; i < nums.length; i++) { // 遍历数组
-        if (nums[i] < nums[i - 1]) return false; // 检查是否降序
+public class MaxSubArraySum {
+    public static int maxSubArraySum(int[] nums) {
+        // 初始值：全局最大值和当前最大值都设为数组的第一个元素
+        int maxSum = nums[0];
+        int currentSum = nums[0];
+        
+        // 从第二个元素开始遍历数组
+        for (int i = 1; i < nums.length; i++) {
+            // 当前子数组和：选择加上当前元素，或者从当前元素重新开始
+            currentSum = Math.max(nums[i], currentSum + nums[i]);
+            // 更新全局最大值
+            maxSum = Math.max(maxSum, currentSum);
+        }
+        
+        return maxSum;
     }
-    return true; // 如果所有元素都符合升序，返回 true
+
+    public static void main(String[] args) {
+        int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        System.out.println("最大子数组和: " + maxSubArraySum(nums)); // 输出：6
+    }
+}
+```
+
+@tab Code2
+
+```java
+public static int maxSubArraySum(int[] nums) {
+    int maxSum = nums[0]; // 初始化最大值
+    int currentSum = nums[0]; // 当前子数组和
+    for (int i = 1; i < nums.length; i++) {
+        currentSum = Math.max(nums[i], currentSum + nums[i]); // 更新当前子数组和
+        maxSum = Math.max(maxSum, currentSum); // 更新最大值
+    }
+    return maxSum;
 }
 
 public static void main(String[] args) {
-    int[] nums = {1, 2, 3, 4, 5};
-    System.out.println("Is Sorted: " + isSorted(nums));
+    int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+    System.out.println("Max Subarray Sum: " + maxSubArraySum(nums));
 }
 ```
+
+@tab 推荐答案
+
+```java
+public class MaxSubArray {
+    // 定义方法，输入一个整数数组，返回具有最大和的连续子数组的和
+    public static int maxSubArraySum(int[] nums) {
+        // 如果输入数组为空或长度为0，返回0（边界条件）
+        if (nums == null || nums.length == 0) {
+            return 0; // 空数组情况下返回0
+        }
+        
+        // 初始化最大子数组和，初始值设为最小的整数，因为最小值可能是最优解
+        int maxSum = Integer.MIN_VALUE;
+        
+        // 当前子数组的和，初始化为0
+        int currentSum = 0;
+        
+        // 遍历数组中的每个元素
+        for (int num : nums) {
+            // 判断当前子数组和是否应继续累加当前元素
+            // 如果 `currentSum + num` 大于 `num`，说明继续将当前元素加入子数组更合适
+            if (currentSum + num > num) {
+                currentSum = currentSum + num;  // 累加当前元素到子数组和
+            } else {
+                currentSum = num;  // 否则，从当前元素重新开始子数组
+            }
+            
+            // 更新最大子数组和
+            // 如果当前子数组和 `currentSum` 大于记录的最大子数组和 `maxSum`，就更新 `maxSum`
+            if (currentSum > maxSum) {
+                maxSum = currentSum;  // 更新最大子数组和
+            }
+        }
+        
+        // 返回最大子数组和
+        return maxSum;
+    }
+    
+    // 主方法，用于测试
+    public static void main(String[] args) {
+        // 测试数组
+        int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        
+        // 调用 maxSubArraySum 方法，输出结果
+        System.out.println(maxSubArraySum(nums)); // 输出 6
+    }
+}
+```
+
+:::
 
 
 
@@ -525,8 +661,8 @@ public static void main(String[] args) {
 - **输出**：
 
      ```java
-     45
-     ```
+    45
+    ```
 
     
 
@@ -547,6 +683,8 @@ public static void main(String[] args) {
     ```
 
 - **扩展**：如果觉得轻松，你可以尝试：在奇偶分离后，分别对奇偶进行排序，例如原本的数组是无序的！
+
+
 
 
 
@@ -587,6 +725,52 @@ public static void main(String[] args) {
 
     
 
+## 18. 数组中连续子数组的最大和
+
+- **描述**：给定一个整数数组，找到其连续子数组的最大和。
+
+- **输入**：
+
+    ```java 
+    int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+    ```
+
+- **输出**：
+
+    ```java 
+    6
+    ```
+
+    
+
+## 19. 找出数组中的缺失数字
+
+- **描述**：给定一个包含 1 到 N 的数组，但缺少其中一个数字，找出缺失的数字。
+
+- **输入**：
+
+    ```java 
+    int[] arr = {3, 7, 1, 2, 8, 4, 5};
+    ```
+
+- **输出**：
+
+    ```java 
+    6
+    ```
+
+
+
+## 20. 找出数组中出现次数超过一半的元素
+
+- **描述**：给定一个数组，找出出现次数超过数组长度一半的元素。
+
+- **输入**：
+
+    ```python
+    ```
+
+    
 
 
 
@@ -604,6 +788,135 @@ public static void main(String[] args) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+## 11. 斐波那契数组
+
+创建一个长度为 `n` 的数组，并用循环填充前 `n` 个斐波那契数。
+
+
+
+## 12. **数组累积和**
+给定一个整数数组，生成一个新数组，其中第 `i` 个元素是原数组从头到第 `i` 个元素的累积和。
+
+
+
+## 13. 字符串数组的连接
+
+输入一个字符串数组，将其所有元素连接成一个字符串，中间用指定分隔符（如 `-` 或 `,`）连接。
+
+
+
+## 16. 数组排序（冒泡排序）
+
+实现冒泡排序算法，对一个整数数组从小到大排序，输出每一轮排序后的数组状态。
+
+
+
+## 17. 数组排序「选择排序」
+
+::: code-tabs
+
+@tab Code1
+
+```java
+import java.util.Arrays;
+
+public class SelectionSortWithTwoArrays {
+    public static void selectionSort(int[] array) {
+        int n = array.length;
+        int[] sortedArray = new int[n];  // 用于存储排序后的元素
+        boolean[] used = new boolean[n]; // 标记原始数组中的元素是否已使用
+
+        // 遍历原始数组，逐步构建排序数组
+        for (int i = 0; i < n; i++) {
+            int minIndex = -1;
+
+            // 找到未使用的元素中最小的元素
+            for (int j = 0; j < n; j++) {
+                if (!used[j] && (minIndex == -1 || array[j] < array[minIndex])) {
+                    minIndex = j;
+                }
+            }
+
+            // 将找到的最小元素放入排序数组
+            sortedArray[i] = array[minIndex];
+            used[minIndex] = true; // 标记该元素为已使用
+        }
+
+        // 将排序后的结果写回原数组
+        System.arraycopy(sortedArray, 0, array, 0, n);
+    }
+
+    public static void main(String[] args) {
+        int[] array = {64, 25, 12, 22, 11};
+        System.out.println("排序前的数组: " + Arrays.toString(array));
+
+        selectionSort(array);
+
+        System.out.println("排序后的数组: " + Arrays.toString(array));
+    }
+}
+```
+
+@tab Code2
+
+```java
+import java.util.Arrays;
+
+public class SelectionSort {
+    public static void selectionSort(int[] array) {
+        int n = array.length;
+
+        // 遍历数组的每一个元素
+        for (int i = 0; i < n - 1; i++) {
+            // 假设当前元素是最小值
+            int minIndex = i;
+
+            // 找到未排序部分的最小值
+            for (int j = i + 1; j < n; j++) {
+                if (array[j] < array[minIndex]) {
+                    minIndex = j;
+                }
+            }
+
+            // 如果最小值不是当前值，则交换
+            if (minIndex != i) {
+                int temp = array[i];
+                array[i] = array[minIndex];
+                array[minIndex] = temp;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] array = {64, 25, 12, 22, 11};
+        System.out.println("排序前的数组: " + Arrays.toString(array));
+
+        selectionSort(array);
+
+        System.out.println("排序后的数组: " + Arrays.toString(array));
+    }
+}
+```
+
+
+
+:::
+
+
+
+## 18. 猜数字游戏
+
+随机生成一个包含10个元素的数组，提示用户输入一个数字，判断该数字是否在数组中，并输出索引。
 
 
 

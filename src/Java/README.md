@@ -9,7 +9,7 @@ heroFullScreen: false
 tagline: 听得懂、学得会、用得上
 actions:
   - text: 开始学习 💡
-    link: /Java/chapter01/01
+    link: /column/Java/chapter01/01
     type: primary	
 
   - text: 与作者联系 👋
