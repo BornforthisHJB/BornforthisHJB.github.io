@@ -158,7 +158,7 @@ public class ArraySum {
 
 
 
-### 3. 反转数组
+## 3. 反转数组
 
 **描述**: 编写一个 Java 方法，将给定的整数数组反转。
 
@@ -201,7 +201,7 @@ public static void main(String[] args) {
 
 
 
-### 4. 查找目标元素的索引
+## 4. 查找目标元素的索引
 
 **描述**: 编写一个 Java 方法，接收一个整数数组和一个目标值，返回目标值的索引，如果不存在则返回 -1。
 
@@ -236,7 +236,7 @@ public static void main(String[] args) {
 
 
 
-### 5. 去除数组中的重复值
+## 5. 去除数组中的重复值
 
 **描述**: 编写一个 Java 方法，删除数组中的重复值，返回新的数组。
 
@@ -271,7 +271,7 @@ public static void main(String[] args) {
 
 
 
-### 6. 数组的元素平方
+## 6. 数组的元素平方
 
 **描述**: 编写一个 Java 方法，返回一个数组，其中每个元素是原数组对应元素的平方值。
 
@@ -306,7 +306,7 @@ public static void main(String[] args) {
 
 
 
-### 7. 两个数组的交集
+## 7. 两个数组的交集
 
 **描述**: 编写一个 Java 方法，接收两个数组并返回它们的交集，结果不包含重复值。
 
@@ -346,7 +346,7 @@ public static void main(String[] args) {
 
 
 
-### 8. 数组的左旋
+## 8. 数组的左旋
 
 **描述**: 编写一个 Java 方法，将数组中的元素向左旋转 k 个位置。
 
@@ -383,7 +383,7 @@ public static void main(String[] args) {
 
 
 
-### 9. 数组是否有序
+## 9. 数组是否有序
 
 **描述**: 编写一个 Java 方法判断数组是否为升序排列。
 
@@ -415,7 +415,7 @@ public static void main(String[] args) {
 
 
 
-### 10. 数组的子数组之和最大值
+## 10. 数组的子数组之和最大值
 
 **描述**: 编写一个 Java 方法，找出具有最大和的连续子数组，并返回其和。
 
@@ -449,7 +449,7 @@ public static void main(String[] args) {
 
 
 
-
+## 11. 
 
 
 

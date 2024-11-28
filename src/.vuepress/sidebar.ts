@@ -7,7 +7,7 @@ export default sidebar({
   "/Java/": [
 		{
 			text: "第一章 Java 编程基础",
-			// collapsible: true,
+			collapsible: true,
 			icon: "java",
 			children: [
 				"chapter01/01",
@@ -36,7 +36,7 @@ export default sidebar({
 		},
 		{
 			text: "第二章 Java面向对象编程",
-			// collapsible: true,
+			collapsible: true,
 			icon: "java",
 			children: [
 				"chapter02/23",
