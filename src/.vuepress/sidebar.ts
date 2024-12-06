@@ -4,6 +4,7 @@ export default sidebar({
   // "/HomeWork": "structure",
   // "/R-Course/": "structure",
   // "/note/": "structure",
+  "/1v1/97-Loyal/": "structure",
   "/Java/": [
 		{
 			text: "第一章 Java 编程基础",
