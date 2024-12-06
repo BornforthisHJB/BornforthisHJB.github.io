@@ -353,11 +353,66 @@ else:
 
 
 
-### 3. 文件读取
+### 3. 文件操作
+
+::: tabs
+
+@tab 文件读取
+
+### 一次性读取全部内容
+
+```python
+f = open("text.txt", mode="r")
+content = f.read()  # 一次性读取全部内容
+print(content)
+f.close()
+```
+
+```python
+The input temperature is 45f  
+The temperature in Celsius is 7 degrees.
+
+# output
+Input the temperature you like to convert?  
+45f
+```
+
+### 逐行读取
+
+```python
+f = open("text.txt", mode="r")
+content = f.readlines()
+print(content)
+f.close() 
+```
+
+```python
+['The input temperature is 45f  \n', 'The temperature in Celsius is 7 degrees.\n', '\n', '# output\n', 'Input the temperature you like to convert?  \n', '45f']
+```
+
+@tab 文件写入
+
+```python
+f = open("text.txt", mode="w", encoding="utf-8")
+f.write("哈哈哈哈\n\n")
+f.write("黑河\n\n")
+f.write("呵呵呵")
+
+f.close()
+
+"""
+哈哈哈哈哈
+
+
+黑河
+
+呵呵呵
+"""
+```
 
 
 
-
+:::
 
 
 
