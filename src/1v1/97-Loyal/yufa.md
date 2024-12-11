@@ -1,6 +1,6 @@
 ---
 title: Python 语法速查「考试辅助」
-date: 2024-12-09 19:42:04
+date: 2024-11-24 19:42:04
 author: AI悦创
 isOriginal: true
 icon: blog
@@ -23,6 +23,25 @@ watermark: true
 你好，我是悦创。
 
 预祝你考试顺利！此内容为提供的速查笔记📒。
+
+- User I/O✅
+- User I/O (Advanced)✅
+- Documentation (Internal)➖
+- Documentation (External)➖
+- Testing➖
+- Debugging➖
+- Selection✅
+- Loops✅
+- Loops + Selection✅
+- Functions
+- Strings/Lists
+- Strings/Lists (Advanced)
+- File I/O
+- CSV files
+- Dictionaries 
+- Dictionaries (Advanced)
+- SQL
+- 3rd Party Tools
 
 ## 1. 字符串
 
@@ -732,6 +751,13 @@ print("密码正确，欢迎进入系统")
 ### 5.0 字典的提取和修改、添加
 
 ```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+my_dict['a'] = 1000  # 修改
+print(my_dict)
+
+my_dict['pool'] = 2000  # 添加
+print(my_dict)
 ```
 
 
@@ -873,6 +899,642 @@ for group, sub_dict in nested_dict.items():
 
 1. **顺序**：从 Python 3.7 开始，字典的插入顺序默认会被保留。
 2. **性能**：直接访问字典的键、值或项（`keys()`、`values()`、`items()`）的时间复杂度为 $O(1)$。
+
+## 6. if
+
+### 6.1 缩进
+
+```python
+condition = True
+while condition:
+    a = 1
+    if a < 10:
+        print(f"a:>>>{a}")
+# 1 tab = 4 space
+```
+
+### 6.2 判断用户输入
+
+```python
+user_gender = input("请输入您的性别(F/M):")
+
+if user_gender == "F":
+    print("你是萌妹子")
+elif user_gender == "M":
+    print("你是糙汉子")
+else:
+    print("输入不正确，请输入 F 或 M")
+```
+
+改进，使之支持不区分大小写字母：
+
+```python {1}
+user_gender = input("请输入您的性别(F/M):").upper()
+
+if user_gender == "F":
+    print("你是萌妹子")
+elif user_gender == "M":
+    print("你是糙汉子")
+else:
+    print("输入不正确，请输入 F 或 M")
+```
+
+```python
+user_gender = input()
+user_gender = user_gender.upper()
+
+if user_gender == "F":
+    print("你是萌妹子")
+elif user_gender == "M":
+    print("你是糙汉子")
+else:
+    print("输入不正确，请输入 F 或 M")
+```
+
+### 6.3 使用多个 elif 来优化决策流程「elif 可以有多个」
+
+```python
+# 输入一个数字
+number = int(input("请输入一个数字："))
+
+# 检查数字的范围
+if number < 0:
+    print("这是一个负数")
+elif number == 0:
+    print("数字是零")
+elif number > 0 and number <= 10:
+    print("数字在1到10之间")
+elif number > 10 and number <= 20:
+    print("数字在11到20之间")
+elif number > 20 and number <= 30:
+    print("数字在21到30之间")
+else:
+    print("数字大于30")
+```
+
+优化1：
+
+```python
+# 输入一个数字
+number = int(input("请输入一个数字："))
+
+# 检查数字的范围
+if number < 0:
+    print("这是一个负数")
+elif number == 0:
+    print("数字是零")
+elif number <= 10:
+    print("数字在1到10之间")
+elif number <= 20:
+    print("数字在11到20之间")
+elif number <= 30:
+    print("数字在21到30之间")
+else:
+    print("数字大于30")
+```
+
+### 6.4 多重 if 语句
+
+```python
+user_gender = input("请输入您的性别 (F/M): ")
+user_is_student = input("您是学生吗? (Y/N): ")
+
+if user_gender == 'F':
+    if user_is_student == 'Y':
+        print("你是萌妹子学生")
+    elif user_is_student == 'N':
+        print("你是萌妹子")
+    else:
+        print("输入不正确")
+elif user_gender == 'M':
+    print("你是糙汉子")
+else:
+    print("输入不正确，请输入 F 或 M")
+```
+
+
+
+### 6.5 判断用户输入的数据是否是奇数-or-偶数
+
+```python
+# 获取用户输入
+number = int(input("请输入一个整数: "))
+
+# 使用模运算符来判断奇数还是偶数
+if number % 2 == 0:
+    print(f"{number} 是偶数。")
+else:
+    print(f"{number} 是奇数。")
+```
+
+上面不是纯数字字符串会报错，我们如何优化代码呢？
+
+```python
+# 获取用户输入
+number = input("请输入一个整数: ")
+
+# 使用模运算符来判断奇数还是偶数
+if number.isdigit() == True:
+    if int(number) % 2 == 0:
+        print(f"{number} 是偶数。")
+    else:
+        print(f"{number} 是奇数。")
+elif number.isdigit() == False:
+    print("不是纯数字")
+```
+
+上面代码中，使用到了 `if number.isdigit() == True` 这个语法实际上可以改写成 `if True` 的形式。
+
+```python
+# 获取用户输入
+number = input("请输入一个整数: ")
+
+# 使用模运算符来判断奇数还是偶数
+if number.isdigit():
+    if int(number) % 2 == 0:
+        print(f"{number} 是偶数。")
+    else:
+        print(f"{number} 是奇数。")
+else:
+    print("不是纯数字")
+```
+
+### 6.6 编写一个程序，接收三个整数作为输入，并输出其中的最大值。
+
+```python
+a = int(input("输入第一个整数: "))
+b = int(input("输入第二个整数: "))
+c = int(input("输入第三个整数: "))
+
+if a >= b and a >= c:
+    print(f"最大的数是 {a}")
+elif b >= a and b >= c:
+    print(f"最大的数是 {b}")
+else:
+    print(f"最大的数是 {c}")
+```
+
+### 6.7 闰年
+
+编写一个程序，根据用户输入的年份，判断该年份是平年还是闰年。闰年的条件如下：
+
+- 如果年份能被 4 整除但不能被 100 整除，或者能被 400 整除，则是闰年。
+
+如果是闰年，程序还需要进一步判断该年份是不是一个世纪年（即是否能被 100 整除）。输出应包括年份是平年、闰年还是世纪闰年。
+
+```python
+# 获取用户输入的年份
+year = int(input("请输入一个年份："))
+
+# 判断是否是闰年
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    # 检查是否是世纪年
+    if year % 100 == 0:
+        print(f"{year}是世纪闰年")
+    else:
+        print(f"{year}是闰年")
+else:
+    print(f"{year}是平年")
+```
+
+
+
+## 7. loop + if
+
+### 7.1 0~100 的和
+
+```python
+total = 0
+for i in range(101):
+    total += i
+print(total)
+```
+
+### 7.2 只要偶数的和
+
+```python
+# 同时保存奇数和、偶数和
+# for+if
+
+odd_total = 0
+even_total = 0
+for i in range(101):
+    if i % 2 == 0:
+        even_total += i
+    else:
+        odd_total += i
+print(f'odd total: {odd_total}')
+print(f'even total: {even_total}')
+```
+
+### 7.3 题目 1：判断奇偶数
+
+编写一个程序，输入一个整数列表，输出其中的奇数，并统计奇数的个数。
+
+示例输入：
+
+```python
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+示例输出：
+
+```python
+奇数: [1, 3, 5, 7, 9]
+奇数的个数: 5
+```
+
+**答案：**
+
+```python
+# 定义一个整数列表
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# 初始化一个列表，用于存储奇数
+odd_numbers = []
+
+# 使用 for 循环遍历每个数字
+for num in nums:
+    # 判断数字是否为奇数（除以2余数不为0）
+    if num % 2 != 0:
+        odd_numbers.append(num)  # 将奇数添加到列表中
+
+# 输出结果
+print("奇数:", odd_numbers)
+print("奇数的个数:", len(odd_numbers))  # 统计奇数的个数
+```
+
+### 7.4 题目 2：筛选特定条件的数字
+
+给定一个包含任意整数的列表，编写程序输出其中所有同时满足以下条件的数字：
+
+1. 是3的倍数。
+2. 是5的倍数。
+
+示例输入：
+
+```python
+[1, 3, 5, 15, 20, 30, 45, 60]
+```
+
+示例输出：
+
+```python
+满足条件的数字: [15, 30, 45, 60]
+```
+
+**答案：**
+
+```python
+# 定义一个包含整数的列表
+nums = [1, 3, 5, 15, 20, 30, 45, 60]
+
+# 初始化一个列表，用于存储满足条件的数字
+filtered_numbers = []
+
+# 使用 for 循环遍历每个数字
+for num in nums:
+    # 判断数字是否同时是3和5的倍数
+    if num % 3 == 0 and num % 5 == 0:
+        filtered_numbers.append(num)  # 满足条件的数字添加到列表中
+
+# 输出结果
+print("满足条件的数字:", filtered_numbers)
+```
+
+
+
+### 7.5 题目 3：统计字母出现频率
+
+输入一段英文字符串，编写程序统计每个字母出现的次数（忽略大小写），并输出所有出现次数大于2次的字母及其出现的次数。
+
+示例输入：
+
+```python
+"Programming is fun, especially Python Programming!"
+```
+
+示例输出：
+
+```python
+字母统计: {'p': 4, 'r': 4, 'o': 3, 'g': 4, 'a': 3, 'm': 4, 'i': 4, 'n': 4}
+```
+
+提示：
+
+1. 使用`for`循环遍历字符串。
+2. 结合`if`条件判断字母是否重复出现。
+
+**答案：**
+
+```python
+# 输入一段英文字符串
+text = "Programming is fun, especially Python Programming!"
+
+# 将字符串转换为小写，忽略大小写
+text = text.lower()
+
+# 初始化一个字典，用于存储字母及其出现次数
+letter_count = {}
+
+# 使用 for 循环遍历字符串的每个字符
+for char in text:
+    # 判断字符是否为字母（忽略标点符号和空格）
+    if char.isalpha():
+        # 如果字母已经在字典中，则次数加1
+        if char in letter_count:
+            letter_count[char] += 1
+        else:
+            # 如果字母不在字典中，则初始化为1
+            letter_count[char] = 1
+
+# 筛选出出现次数大于2次的字母
+result = {letter: count for letter, count in letter_count.items() if count > 2}
+
+# 输出结果
+print("字母统计:", result)
+```
+
+## 8. while
+
+### 8.1 while 0～100 之和
+
+```python
+```
+
+### 8.2 奇数偶数之和
+
+```python
+```
+
+### 8.3 奇偶数判断
+
+获取用户输入，把用户输入的数据转换成对应的类型。
+
+1. 循环
+2. 用户输入整数——>整数
+3. 用户输入浮点数——>转换成小数
+4. Other——>提示❌不合法，重新输入或退出程序
+
+```python
+while True:
+    user_input = input("Enter a number: ")
+    condition = user_input.replace('.', '', 1)
+    if user_input.isdigit():
+        int_number = int(user_input)
+        break
+    elif condition.isdigit():
+        float_number = float(user_input)
+        break
+    else:
+        print("Invalid input")
+```
+
+```python
+while True:
+    user_input = input("Enter a number: ")
+    count_point = user_input.count(".")
+    if user_input.isdigit():
+        integer = int(user_input)
+        break
+    elif count_point == 1:
+        index = user_input.index(".")
+        pre_point = user_input[:index]
+        post_point = user_input[index + 1:]
+        if pre_point.isdigit() and post_point.isdigit():
+            float_point = float(user_input)
+            break
+    else:
+        print("Invalid input")
+```
+
+```python
+while True:
+    a=input("请输入一个数字：")
+    condition=a.split(".")
+
+    if a.isdigit():
+        print(f"{int(a)}是一个整数")
+        break
+    elif len(condition)==2 and condition[0].isdigit() and condition[1].isdigit():
+        print(f"{float(a)}是一个小数")
+        break
+    else:
+        print("格式不对，请重试")
+```
+
+## 9. Functions
+
+::: tabs
+
+@tab 基础语法
+
+1. 函数基本创建
+
+```python
+def 函数名称():
+    函数内的代码
+```
+
+2. 具体例子
+
+```python
+def Hello():
+    print("欢迎学习Python,利用Python统计学")
+
+# 函数调用
+Hello()
+```
+
+3. 如果函数需要参数
+
+```python
+def Hello(name):
+    print("欢迎学习Python,利用Python统计学{}".format(name))
+
+# 函数调用
+name = "FD"
+Hello(name)
+
+name = "bornforthis"
+Hello(name)
+
+Hello("bornforthis")
+```
+
+4. 多个参数
+
+```python
+def Hello(name, age):
+    print("欢迎学习Python,利用Python统计学{}".format(name))
+    print(age)
+
+# 函数调用
+name = "FD"
+Hello(name, 19)
+
+name = "bornforthis"
+Hello(name, 20)
+
+age = 200
+Hello("bornforthis", age)
+```
+
+@tab 小试牛刀
+
+1. 实现一个求和程序
+
+```python
+# 实现一个求和程序
+
+sum_fun(12, 90)  # 102
+sum_fun(1, 2.1)  # 3.1
+```
+
+```python
+# 实现一个求和程序
+def sum_fun(x, y):
+    result = x + y
+    print(result)
+sum_fun(12, 90)  # 102
+sum_fun(1, 2.1)  # 3.1
+```
+
+2. 实现简易的计算器
+
+```python
+calculate(1, 2, '+')  # 3
+calculate(1, 2, '-')  # -1
+calculate(1, 2, '*')  # 2
+```
+
+@tab return
+
+```python
+# # 实现一个求和程序
+# def sum_fun(x, y):
+#     result = x + y
+#     # print(result)
+#     return result
+# res = sum_fun(12, 90)
+# print(res)
+#
+lst = [1, 2, 3]
+def pow():
+    index = 0
+    for i in lst:
+        lst[index] = i ** 2
+        index = index + 1
+pow()
+print(lst)
+
+lst = [1, 2, 3]
+def pow():
+    新列表 = []
+    for i in lst:
+        新列表.append(i ** 2)
+    return 新列表
+
+结果 = pow()
+# print(lst)
+print(结果)
+```
+
+@tab 小试牛刀
+
+### 题目 1：计算数字列表的平均值
+
+**描述：**
+ 编写一个名为 `calculate_average` 的函数，该函数接收一个数字列表并返回其平均值。如果列表为空，返回 `None`。
+
+**函数签名：**
+
+```python
+def calculate_average(numbers):
+    pass
+```
+
+**示例：**
+
+```python
+print(calculate_average([1, 2, 3, 4, 5]))  # 输出: 3.0
+print(calculate_average([]))  # 输出: None
+```
+
+```python
+def calculate_average(numbers: list) -> float:
+    if not numbers:  # 如果列表为空
+        return None
+    return sum(numbers) / len(numbers)
+
+# 示例测试
+print(calculate_average([1, 2, 3, 4, 5]))  # 输出: 3.0
+print(calculate_average([]))  # 输出: None
+```
+
+
+
+### 题目 2：检查字符串是否是回文
+
+**描述：**
+ 编写一个名为 `is_palindrome` 的函数，该函数接收一个字符串，判断该字符串是否是回文。回文是指正读和反读都一样的字符串。忽略大小写和非字母字符。
+
+**函数签名：**
+
+```python
+def is_palindrome(s):
+    pass
+```
+
+**示例：**
+
+```python
+print(is_palindrome("A man, a plan, a canal, Panama"))  # 输出: True
+print(is_palindrome("hello"))  # 输出: False
+```
+
+------
+
+```python
+import re
+
+def is_palindrome(s: str) -> bool:
+    # 去除非字母字符并转换为小写
+    cleaned = re.sub(r'[^a-zA-Z0-9]', '', s).lower()
+    # 判断清理后的字符串是否与其反转相等
+    return cleaned == cleaned[::-1]
+
+# 示例测试
+print(is_palindrome("A man, a plan, a canal, Panama"))  # 输出: True
+print(is_palindrome("hello"))  # 输出: False
+```
+
+
+
+### 题目 3：生成斐波那契数列
+
+**描述：**
+ 编写一个名为 `generate_fibonacci` 的函数，该函数接收一个整数 `n`，返回长度为 `n` 的斐波那契数列。如果 `n <= 0`，返回空列表。
+
+**函数签名：**
+
+```python
+def generate_fibonacci(n: int) -> list:
+    pass
+```
+
+**示例：**
+
+```python
+print(generate_fibonacci(5))  # 输出: [0, 1, 1, 2, 3]
+print(generate_fibonacci(0))  # 输出: []
+```
+
+
+
+
+
+:::
 
 
 
