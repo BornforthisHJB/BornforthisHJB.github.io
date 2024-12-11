@@ -46,6 +46,13 @@ export default sidebar({
 				"chapter02/26",
 				"chapter02/27",
 				"chapter02/28",
+				"chapter02/29",
+				"chapter02/30",
+				"chapter02/31",
+				"chapter02/32",
+				"chapter02/33",
+				"chapter02/34",
+				"chapter02/35",
 			],
 		},
 		{
@@ -57,6 +64,7 @@ export default sidebar({
 				"FQA/02-Java-String-to-int-Translate",
 				"FQA/03-for-generate-rhombus",
 				"FQA/05-Java-trim()方法",
+				"FQA/06-instance-object",
 			]
 		},
 		{
