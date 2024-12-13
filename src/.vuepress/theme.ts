@@ -56,26 +56,62 @@ export default hopeTheme({
       // "/Python/NoteBook/05-python-list": ["aiyc", "lcy", "ydn", "ytq", "lyf", 'kk', 'Julie', '1v1', 'lxj'],
     },
   },
-
-  // page meta
-  // metaLocales: {
-  //   editLink: "在 GitHub 上编辑此页",
-  // },
-
-  
-  plugins: {
-    shiki: {
+  markdown: {
+    // 启用 figure
+    figure: true,
+    // 启用图片懒加载
+    imgLazyload: true,
+    // 启用图片标记
+    imgMark: true,
+    // 启用图片大小
+    imgSize: true,
+    mark: true,
+    codeTabs: true,
+    tabs: true,
+    math: true,
+    hint: true,
+    alert: true,
+    chartjs: false,
+    echarts: false,
+    mermaid: true,
+    vuePlayground: false,
+    sub: true,
+    spoiler: true,
+    sup: true,
+    demo: true,
+    tasklist: true,
+    include: true,
+    attrs: false,
+    footnote: true,
+    align: true,
+    flowchart: false,
+    gfm: true,
+    stylize: [
+      {
+        matcher: "Recommended",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "tip" },
+              content: "Recommended",
+            };
+        },
+      },
+    ],
+    highlighter: {
+      type: "shiki",
       collapsedLines: 15,
-    //   lineNumbers: 1,
+      //   lineNumbers: 1,
       notationDiff: true,
       notationFocus: true,
       highlightLines: true,
       notationHighlight: true,
-    //   langs: ['sql', 'python', 'java', 'javascript', 'c', 'c#', 'c++', 'html', 'css',
-    //     'bash', 'rust', 'php', 'r', 'cmd', 'yaml', 'markdown', 'http', 'cmake', 'matlab',
-    //     'plsql', 'ini', "fortran-free-form", "fortran-fixed-form", 'go', 'vue', 'tex', 'text', 'csv', 'fish',
-    //     'makefile', 'typescript',
-    //   ],
+      //   langs: ['sql', 'python', 'java', 'javascript', 'c', 'c#', 'c++', 'html', 'css',
+      //     'bash', 'rust', 'php', 'r', 'cmd', 'yaml', 'markdown', 'http', 'cmake', 'matlab',
+      //     'plsql', 'ini', "fortran-free-form", "fortran-fixed-form", 'go', 'vue', 'tex', 'text', 'csv', 'fish',
+      //     'makefile', 'typescript',
+      //   ],
       // langAlias: {
       //   ["fortran"]: "fortran-free-form",
       // },
@@ -85,6 +121,16 @@ export default hopeTheme({
       //   dark: "one-dark-pro",
       // },
     },
+    vPre: true,
+  },
+
+  // page meta
+  // metaLocales: {
+  //   editLink: "在 GitHub 上编辑此页",
+  // },
+
+  
+  plugins: {
     watermark: {
       enabled: true,
       watermarkOptions: {
@@ -115,54 +161,7 @@ export default hopeTheme({
       copyright: false,
       dark: "auto",
     },
-    
-    markdownImage: {
-      mark: true,
-      size: true,
-      lazyload: true,
-      figure: true,
-    },
-    markdownHint: {
-      hint: true,
-      alert: true,
-    },
-    markdownTab: {
-      codeTabs: true,
-      tabs: true,
-    },
-    markdownMath: true,
-    mdEnhance: {
-      chart: false, 
-      echarts: false,
-      mermaid: true,
-      vuePlayground: false,
-      sub: true,
-      spoiler: true,
-      sup: true,
-      demo: true,
-      tasklist: true,
-      include: true,
-      attrs: false,
-      mark: true, 
-      footnote: true,
-      align: true, 
-      flowchart: false, 
-      gfm: true,
-      stylize: [
-        {
-          matcher: "Recommended",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
-      ],
-      vPre: true,
-    },
+  
 
 
     copyright: {
