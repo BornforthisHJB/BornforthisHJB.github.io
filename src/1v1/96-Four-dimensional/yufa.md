@@ -2043,6 +2043,8 @@ print(lst)
 | Dictionaries             |      | ✓    | ✓    |      |
 | External Tools           |      | ✓    |      | ✓    |
 
+
+
 ### 12.1 模拟题
 
 ::: tabs
@@ -2295,9 +2297,180 @@ print(lst)
         print(f"{word}: {count}")
     ```
 
+    @tab Code3
+
+    ```python
+    # 文件统计器
+    
+    def word_statistics(file_path):
+        """
+        统计指定文件的总单词数和每个单词的出现次数。
+    
+        参数:
+            file_path (str): 文件路径。
+    
+        返回:
+            tuple: 总单词数 (int) 和包含单词统计的字典 (dict)。
+        """
+        word_count = {}  # 用于存储单词和它们的出现次数
+        total_words = 0  # 单词总数初始化为 0
+    
+        # 使用 f=open 打开文件，确保文件读取操作符合要求
+        try:
+            f = open(file_path, 'r', encoding='utf-8')  # 打开文件
+            for line in f:
+                words = line.strip().split()  # 分割行中的单词
+                for word in words:
+                    word = word.lower().strip(",.?!")  # 转小写并去除标点
+                    total_words += 1
+                    word_count[word] = word_count.get(word, 0) + 1  # 更新单词计数
+            f.close()  # 确保文件被正确关闭
+        except FileNotFoundError:
+            print("文件未找到，请检查文件路径是否正确。")
+            return None, None
+    
+        return total_words, word_count  # 返回总单词数和单词统计字典
+    
+    
+    def main():
+        """
+        主程序逻辑，包含用户输入和结果输出。
+        """
+        # 用户输入文件路径
+        file_path = input("请输入文件路径: ")
+    
+        # 检查文件是否存在并读取
+        total_words, word_count = word_statistics(file_path)
+    
+        if total_words is not None:  # 确保统计成功
+            # 输出总单词数
+            print(f"\n总单词数: {total_words}")
+    
+            # 输出单词统计
+            print("单词统计:")
+            for word, count in word_count.items():
+                print(f"{word}: {count}")
+    
+    
+    if __name__ == "__main__":
+        main()
+    ```
+
+    @tab 正确答案
+
+    ```python
+    string = "aiyc love aiyc book banana, good、dog"
+    new_string = string.replace(',', ' ').replace('、', ' ').split()
+    print(new_string)
+    word_count = {}
+    for word in new_string:
+        if word in word_count:
+            word_count[word] =  word_count[word] + 1
+        else:
+            word_count[word] = 1
+    print(word_count)
+    # d = {}
+    # d['aiyc'] = 1
+    # print(d)
+    # d['aiyc'] = 2
+    # print(d)
+    ```
+
     
 
     :::
+
+@tab 题目 3: 简易任务管理器
+
+**技能要求**: File I/O, Dictionaries, Documentation (internal), Documentation (external)
+
+**描述**: 创建一个任务管理器程序，允许用户添加、查看和保存任务。
+
+要求：
+
+1. 任务存储在字典中，格式为 `{task_name: priority}`。
+2. 提供以下功能：
+    - 添加任务（用户输入任务名和优先级）。
+    - 查看任务（按优先级从高到低排序）。
+    - 保存任务到文件中（JSON 格式）。
+3. 在代码中添加内部文档，解释每个模块功能。
+
+**示例**:
+
+```python
+1. 添加任务
+2. 查看任务
+3. 保存任务
+4. 退出
+选择: 1
+请输入任务名: 学习Python
+请输入优先级 (1-5): 5
+任务已添加!
+```
+
+```python
+import json
+
+def add_task(tasks):
+    """
+    添加新任务。
+    
+    参数:
+        tasks (dict): 当前任务字典。
+    """
+    task_name = input("请输入任务名: ")
+    priority = int(input("请输入优先级 (1-5): "))
+    tasks[task_name] = priority
+    print("任务已添加!")
+
+def view_tasks(tasks):
+    """
+    按优先级查看任务。
+    
+    参数:
+        tasks (dict): 当前任务字典。
+    """
+    print("任务列表 (按优先级从高到低):")
+    sorted_tasks = sorted(tasks.items(), key=lambda x: x[1], reverse=True)
+    for task, priority in sorted_tasks:
+        print(f"{task}: 优先级 {priority}")
+
+def save_tasks(tasks, file_path):
+    """
+    将任务保存到文件 (JSON 格式)。
+    
+    参数:
+        tasks (dict): 当前任务字典。
+        file_path (str): 保存文件路径。
+    """
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(tasks, file, ensure_ascii=False, indent=4)
+    print(f"任务已保存到 {file_path}!")
+
+def main():
+    tasks = {}
+    file_path = "tasks.json"
+    while True:
+        print("\n1. 添加任务\n2. 查看任务\n3. 保存任务\n4. 退出")
+        choice = input("选择: ")
+        if choice == "1":
+            add_task(tasks)
+        elif choice == "2":
+            view_tasks(tasks)
+        elif choice == "3":
+            save_tasks(tasks, file_path)
+        elif choice == "4":
+            print("退出程序。")
+            break
+        else:
+            print("无效选择，请重试。")
+
+if __name__ == "__main__":
+    main()
+
+```
+
+
 
 :::
 
