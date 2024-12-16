@@ -33,11 +33,11 @@ watermark: true
 - Selection✅
 - Loops✅
 - Loops + Selection✅
-- Functions
+- Functions✅
 - Strings/Lists
 - Strings/Lists (Advanced)
-- File I/O
-- CSV files
+- File I/O✅
+- CSV files✅
 - Dictionaries 
 - Dictionaries (Advanced)
 - SQL
@@ -1530,11 +1530,750 @@ print(generate_fibonacci(5))  # 输出: [0, 1, 1, 2, 3]
 print(generate_fibonacci(0))  # 输出: []
 ```
 
+:::
+
+## 10. 文件操作
+
+::: tabs
+
+@tab 1. 文件读取
+
+1. 基础读取
+
+```python
+f = open('data.txt', mode='r', encoding='utf-8')  # r 就是 read
+content = f.read()  # 一次性读取全部内容
+f.close()
+
+print(content)
+```
+
+2. readlines()
+
+```python
+f = open('data.txt', mode='r', encoding='utf-8')  # r 就是 read
+content = f.readlines()
+f.close()
+
+print(content)
+```
+
+3. 读取文件内容，并求和
+
+```python
+# data.txt: 1,2,3,4,5,6,7,8
+f = open('data.txt', mode='r', encoding='utf-8')  # r 就是 read
+content = f.read()
+f.close()
+
+nums = content.split(',')
+# print(nums)
+total = 0
+for num in nums:
+    total += int(num)
+print(total)
+```
+
+4. Q2
+
+```python
+f = open('data.txt', mode='r', encoding='utf-8')  # r 就是 read
+content = f.readlines()
+f.close()
+
+total = 0
+for line in content:
+    numbers = line.split(',')
+    for number in numbers:
+        total += int(number)
+print(total)
+```
+
+```python
+f = open('data.txt', mode='r', encoding='utf-8')  # r 就是 read
+content = f.readlines()
+f.close()
+result = []
+for line in content:
+    new_result = []  # 临时存储
+    numbers = line.split(',')
+    # print(numbers)
+    for number in numbers:
+        new_result.append(int(number))
+    result.append(new_result)
+# print(result)
+last = []
+for i in range(len(result[0])):
+    r = result[0][i] + result[1][i]
+    last.append(r)
+print(last)
+# lst1 = [1, 2, 3, 4, 5]
+# lst2 = [1, 2, 3, 4, 5]
+# new = []
+# new.append(lst1[0] + lst2[0])
+# new.append(lst1[1] + lst2[1])
+```
+
+@tab 文件的写入
+
+```python
+file = open('like.txt', mode='w', encoding='utf-8')
+file.write('HHHHhhhhh哈哈哈哈哈哈哈')
+file.close()
+```
+
+```python
+file = open('like.txt', mode='w', encoding='utf-8')
+file.write('HHHHhhhhh哈哈哈哈哈哈哈\n')
+file.write('HHHHhhhhh哈哈哈哈哈哈哈\n')
+file.write('HHHHhhhhh哈哈哈哈哈哈哈\n')
+file.close()
+```
+
+```python
+# file = open('like.txt', mode='w', encoding='utf-8')
+# file.write('HHHHhhhhh哈哈哈哈哈哈哈\n')
+# file.write('HHHHhhhhh哈哈哈哈哈哈哈\n')
+# file.write('HHHHhhhhh哈哈哈哈哈哈哈\n')
+# file.close()
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+file = open('数据.txt', 'w', encoding='utf-8')
+for i in lst:
+    file.write(str(i** 2) + '\n')
+file.close()
+```
+
+@tab CSV
+
+```python
+file = open('data.csv', 'r', encoding = 'utf-8')
+contents = file.readlines()
+file.close()
+# print(content)
+for z in contents[1:]:
+    print(z.split(','))
+```
+
+```python
+name,age,class,gender
+aiyc,18,一班,男
+FD,19,二班,女
+bornforthis,21,三班,男
+```
+
 
 
 
 
 :::
+
+## 11. 题目
+
+### Question 1
+
+**Completion of this question demonstrates the skills of User I/O, Variables and For Loops**
+
+In the space below, write code that asks the user for their name, and a number. Then prints a countdown from that number, followed by an encouraging message personalized to them. An example input and output is given on the opposite page. (Hint: Remember that Python always reads user input as a string, and that print only takes strings)
+
+```python
+What is your name?: Brian
+Where do we start the countdown?: 5
+Blastoff in 5
+Blastoff in 4
+Blastoff in 3
+Blastoff in 2
+Blastoff in 1
+Go Brian Go!
+```
+
+**答案：**
+
+```python
+# 提问用户的名字
+name = input("What is your name?: ")
+
+# 提问用户的倒数起始数字，并转换为整数
+start_number = int(input("Where do we start the countdown?: "))
+
+# 使用 for 循环进行倒数
+for i in range(start_number, 0, -1):
+    print(f"Blastoff in {i}")
+
+# 输出个性化的鼓励信息
+print(f"Go {name} Go!")
+```
+
+
+
+### Question 2
+
+**Completion of this question demonstrates the skills of While Loops and Selection**
+
+In the space below, write a program that plays a guessing game. The first user will input a target number.
+
+The second user will then guess numbers, being told if the number is higher or lower than the target until they get it correct. If the user guesses a value below $0$ or over $100$, the program should tell them that is an invalid guess. The game then outputs the total number of guesses required to find the target number.
+
+A sample input/output is given on the opposite page.
+
+```python
+Enter a target number: 42
+Enter a guess: 20
+Target is higher
+Enter a guess: 50
+Target is lower
+Enter a guess 40
+Target is higher
+Enter a guess: 45
+Target is lower
+Enter a guess: 120
+Guesses must be between 1-100
+Enter a guess: 42
+CORRECT! it took you 5 guesses
+```
+
+**答案：**
+
+```python
+# 输入目标数字
+target = int(input("Enter a target number: "))
+
+# 检查目标数字是否有效
+if target < 0 or target > 100:
+    print("Target must be between 0-100")
+else:
+    guesses = 0  # 记录猜测次数
+    while True:
+        guess = int(input("Enter a guess: "))
+        if guess < 0 or guess > 100:
+            print("Guesses must be between 1-100")
+        else:
+            guesses += 1  # 每次有效猜测次数加1
+            if guess < target:
+                print("Target is higher")
+            elif guess > target:
+                print("Target is lower")
+            else:
+                print(f"CORRECT! it took you {guesses} guesses")
+                break
+```
+
+
+
+### Question 3
+
+**Completion of this question demonstrates the skills of Loops + Selection, and Nesting Loops**
+
+In the space below, write a program that asks the user how many courses are in a semester. Then the program will ask them for their grades for each course until they get a B or above in at least half of their courses for a semester, at which point the program congratulates them and exits. If at any time the student fails any course, the program stops asking for grades for that semester and moves on to the next semester.
+
+A sample input/output is given on the opposite page.
+
+```python
+How many courses are in a semester?: 4
+Enter grade for course 1: A
+Enter grade for course 2: F
+I'm sorry, you didn't pass all of your courses
+Enter grade for course 1: B
+Enter grade for course 2: C
+Enter grade for course 3: D
+Enter grade for course 4: C
+I'm sorry, you didn't get B or above in at least half of your courses
+Enter grade for course 1: A
+Enter grade for course 2: B
+Enter grade for course 3: A
+Enter grade for course 4: C
+Congratulations: You got B or above in over half of your courses
+```
+
+::: code-tabs
+
+@tab Code1
+
+```python
+while True:
+    try:
+        num_courses = int(input("How many courses are in a semester?: "))
+        if num_courses <= 0:
+            print("Please enter a positive number.")
+            continue
+        break
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+
+# 定义成绩转换为分数的方法
+def grade_to_score(grade):
+    grade = grade.upper()
+    if grade == "A":
+        return 4
+    elif grade == "B":
+        return 3
+    elif grade == "C":
+        return 2
+    elif grade == "D":
+        return 1
+    elif grade == "F":
+        return 0
+    else:
+        return -1
+
+while True:  # 每个学期开始
+    grades = []
+    for i in range(num_courses):
+        while True:  # 确保用户输入有效的成绩
+            grade = input(f"Enter grade for course {i + 1}: ").strip()
+            score = grade_to_score(grade)
+            if score == -1:
+                print("Invalid grade. Please enter A, B, C, D, or F.")
+            else:
+                grades.append(score)
+                break
+        
+        if 0 in grades:  # 如果有一门课挂科，则退出本学期
+            print("I'm sorry, you didn't pass all of your courses")
+            break
+    else:
+        # 检查是否有至少一半的课程成绩为 B 或以上
+        passed_count = sum(1 for g in grades if g >= 3)
+        if passed_count >= (num_courses / 2):
+            print("Congratulations: You got B or above in over half of your courses")
+            break
+        else:
+            print("I'm sorry, you didn't get B or above in at least half of your courses")
+            continue
+    # 如果挂科，直接跳到下个学期
+```
+
+@tab Code2
+
+```python
+while True:
+    try:
+        num_courses = int(input("How many courses are in a semester?: "))
+        if num_courses <= 0:
+            print("Please enter a positive number.")
+            continue
+        break
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+
+while True:  # 每个学期开始
+    grades = []
+    for i in range(num_courses):
+        while True:  # 确保用户输入有效的成绩
+            grade = input(f"Enter grade for course {i + 1}: ").strip().upper()
+            
+            # 直接处理成绩转换
+            if grade == "A":
+                score = 4
+            elif grade == "B":
+                score = 3
+            elif grade == "C":
+                score = 2
+            elif grade == "D":
+                score = 1
+            elif grade == "F":
+                score = 0
+            else:
+                print("Invalid grade. Please enter A, B, C, D, or F.")
+                continue
+            
+            grades.append(score)
+            break  # 有效成绩输入后退出当前循环
+        
+        if 0 in grades:  # 如果有一门课挂科，则退出本学期
+            print("I'm sorry, you didn't pass all of your courses")
+            break
+    else:
+        # 检查是否有至少一半的课程成绩为 B 或以上
+        passed_count = sum(1 for g in grades if g >= 3)
+        if passed_count >= (num_courses / 2):
+            print("Congratulations: You got B or above in over half of your courses")
+            break
+        else:
+            print("I'm sorry, you didn't get B or above in at least half of your courses")
+            continue
+    # 如果挂科，直接跳到下个学期
+```
+
+
+
+:::
+
+### Question 4
+
+**Completion of this question demonstrates the skills of Looping over lists, manipulating lists and strings, and functions**
+
+In the space below, write a function that takes a list of strings, a keyword, and a replacement word. The function will count the number of occurrences of the keyword in the list, and also replace all occurrences of that keyword with the replacement word. Example code calling the function is given on the page opposite.
+
+To demonstrate the skill of functions, your function must include proper documentation.
+
+```python
+test_list = ['Apple', 'Bear', 'Apple', 'Car']
+count = replace_words(test_list, 'Apple', 'Zebra')
+print(count) #<-- this will print 2
+print(test_list) #<-- this will print ['Zebra', 'Bear', 'Zebra', 'Car']
+```
+
+**答案：**
+
+::: code-tabs
+
+@tab Code1
+
+```python
+def replace_words(string_list, keyword, replacement):
+    """
+    Replaces all occurrences of a keyword in a list of strings with a replacement word
+    and counts the occurrences of the keyword.
+
+    Args:
+        string_list (list of str): The list of strings to be processed.
+        keyword (str): The word to be replaced and counted.
+        replacement (str): The word to replace the keyword.
+
+    Returns:
+        int: The count of occurrences of the keyword in the list.
+    
+    Example:
+        >>> test_list = ['Apple', 'Bear', 'Apple', 'Car']
+        >>> count = replace_words(test_list, 'Apple', 'Zebra')
+        >>> print(count)  # Outputs: 2
+        >>> print(test_list)  # Outputs: ['Zebra', 'Bear', 'Zebra', 'Car']
+    """
+    # Initialize a counter for the keyword occurrences
+    count = 0
+    
+    # Loop through the list and replace keyword while counting occurrences
+    for i in range(len(string_list)):
+        if string_list[i] == keyword:
+            count += 1
+            string_list[i] = replacement
+    
+    return count
+
+# 测试代码
+test_list = ['Apple', 'Bear', 'Apple', 'Car']
+count = replace_words(test_list, 'Apple', 'Zebra')
+print(count)  # 2
+print(test_list)  # ['Zebra', 'Bear', 'Zebra', 'Car']
+```
+
+@tab Code2
+
+```python
+def replace_words(string_list, keyword, replacement):
+    """
+    替换字符串列表中所有关键词为指定的替换词，并统计关键词出现的次数。
+
+    参数:
+        string_list (list of str): 待处理的字符串列表。
+        keyword (str): 要被替换和统计的关键词。
+        replacement (str): 用于替换关键词的字符串。
+
+    返回值:
+        int: 关键词在列表中出现的次数。
+
+    示例:
+        >>> test_list = ['Apple', 'Bear', 'Apple', 'Car']
+        >>> count = replace_words(test_list, 'Apple', 'Zebra')
+        >>> print(count)  # 输出: 2
+        >>> print(test_list)  # 输出: ['Zebra', 'Bear', 'Zebra', 'Car']
+    """
+    # 初始化计数器，用于统计关键词出现次数
+    count = 0
+    
+    # 遍历字符串列表，通过索引修改内容
+    for i in range(len(string_list)):
+        # 如果当前元素等于关键词
+        if string_list[i] == keyword:
+            # 计数器加一
+            count += 1
+            # 将关键词替换为替换词
+            string_list[i] = replacement
+    
+    # 返回关键词出现的次数
+    return count
+
+# 测试代码
+test_list = ['Apple', 'Bear', 'Apple', 'Car']
+count = replace_words(test_list, 'Apple', 'Zebra')  # 调用函数，替换关键词
+print(count)  # 输出: 2
+print(test_list)  # 输出: ['Zebra', 'Bear', 'Zebra', 'Car']
+```
+
+@tab Code3
+
+```python
+def replace_words(string_list, keyword, replacement):
+    count = 0
+    for i in range(len(string_list)):
+        if string_list[i] == keyword:
+            count += 1
+            string_list[i] = replacement
+    return count
+test_list = ['Apple', 'Bear', 'Apple', 'Car']
+xxxxxx = replace_words(test_list, 'Apple', 'Zebra')  # 调用函数，替换关键词
+print(xxxxxx)  # 输出: 2
+print(test_list)  # 输出: ['Zebra', 'Bear', 'Zebra', 'Car']
+
+lst = [1, 2, 3, 4]
+lst[0] = 'aiyc'
+print(lst)
+```
+
+
+
+:::
+
+
+
+## 12. 考前冲刺
+
+| Skills Demonstrated      | Q1   | Q2   | Q3   | Q4   |
+| :----------------------- | :--- | :--- | :--- | :--- |
+| User I/O                 |      | ✓    |      |      |
+| Loops                    | ✓    |      |      |      |
+| Selection                |      | ✓    |      |      |
+| Loops + Selection        | ✓    |      |      |      |
+| Strings/Lists            | ✓    |      |      |      |
+| Functions                | ✓    |      |      |      |
+| Testing                  | ✓    |      |      |      |
+| Documentation (internal) |      | ✓    | ✓    |      |
+| Documentation (external) | ✓    |      |      |      |
+| File I/O                 |      | ✓    | ✓    |      |
+| Dictionaries             |      | ✓    | ✓    |      |
+| External Tools           |      | ✓    |      | ✓    |
+
+### 12.1 模拟题
+
+::: tabs
+
+@tab  题目 1: Palindrome 检测器
+
+- **技能要求**：Loops, Strings/Lists, Loops + Selection, Functions, Testing, Documentation (external)
+
+- **描述**：编写一个函数 `is_palindrome(string)`，判断输入字符串是否为回文（正着读和反着读都相同）。
+
+- **要求：**
+    1. 使用循环和条件语句实现回文检测。
+    2. 提供测试用例验证代码正确性。
+    3. 在函数顶部添加外部文档，描述函数的功能、参数和返回值。
+
+- **示例：**
+
+    ```python
+    print(is_palindrome("racecar"))  # 输出: True
+    print(is_palindrome("hello"))    # 输出: False
+    ```
+
+- **答案：**
+
+    ::: code-tabs
+
+    @tab 前置知识
+
+    ```python
+    string = 'aiyuechuang'
+    index = len(string) - 1
+    
+    reverse_string = ""
+    for i in range(len(string)):
+        # print(string[index])
+        reverse_string += string[index]
+        index -= 1
+    print(reverse_string)
+    
+    
+    string = 'aiyuechuang'
+    
+    reverse_string = ""
+    for char in string:
+        # print(char)
+        reverse_string = char + reverse_string
+    print(reverse_string)
+    
+    string = 'aiyuechuang'
+    
+    reverse_string = ""
+    for i in range(len(string)-1, -1, -1):
+        reverse_string += string[i]
+    print(reverse_string)
+    ```
+
+    
+
+    @tab Code1
+
+    ```python
+    def is_palindrome(string):
+        """
+        判断输入字符串是否为回文。
+        
+        参数:
+            string (str): 输入的字符串。
+            
+        返回:
+            bool: 如果字符串是回文返回 True，否则返回 False。
+        """
+        string = string.lower().replace(" ", "")  # 忽略大小写并去除空格
+        reversed_string = string[::-1]  # 获取反转后的字符串
+        return string == reversed_string
+    
+    # 测试用例
+    print(is_palindrome("racecar"))  # 输出: True
+    print(is_palindrome("hello"))    # 输出: False
+    print(is_palindrome("A man a plan a canal Panama"))  # 输出: True
+    ```
+
+    
+
+    @tab Code2
+
+    ```python
+    def is_palindrome(string):
+        """
+        判断输入字符串是否为回文。
+        
+        参数:
+            string (str): 输入的字符串。
+            
+        返回:
+            bool: 如果字符串是回文返回 True，否则返回 False。
+        """
+        # 转为小写并去除空格
+        string = string.lower().replace(" ", "")
+        
+        # 使用循环比较字符串前后字符
+        for i in range(len(string) // 2):
+            if string[i] != string[-(i + 1)]:
+                return False
+        return True
+    
+    # 测试用例
+    def test_is_palindrome():
+        """
+        测试 is_palindrome 函数。
+        """
+        assert is_palindrome("racecar") == True, "测试失败: 'racecar'"
+        assert is_palindrome("hello") == False, "测试失败: 'hello'"
+        assert is_palindrome("A man a plan a canal Panama") == True, "测试失败: 'A man a plan a canal Panama'"
+        print("所有测试用例通过！")
+    
+    # 执行测试
+    test_is_palindrome()
+    ```
+
+    
+
+    :::
+
+@tab 题目 2: 文件统计器
+
+- **技能要求**：User I/O, Selection, Documentation (internal), File I/O, Dictionaries
+
+- **描述**： 编写一个程序，统计指定文本文件中的单词数量和每个单词出现的次数。
+
+- **要求：**
+
+    - 从用户输入读取文件路径。
+    - 使用条件语句检查文件是否存在，若不存在则提示用户重新输入路径。
+    - 使用字典存储单词及其出现次数。
+    - 在代码中使用内联注释解释关键步骤。
+
+- **示例**：假设文件内容如下：
+
+    ```python
+    hello world
+    hello programming world
+    ```
+
+- **程序输出：**
+
+    ```python
+    总单词数: 5
+    单词统计:
+    hello: 2
+    world: 2
+    programming: 1
+    ```
+
+- **答案：**
+
+    ::: code-tabs
+
+    @tab Code 1
+
+    ```python
+    import os
+    
+    def word_statistics(file_path):
+        """
+        统计文件中的总单词数和每个单词的出现次数。
+        
+        参数:
+            file_path (str): 文件路径。
+            
+        返回:
+            tuple: 总单词数 (int) 和单词统计 (dict)。
+        """
+        word_count = {}
+        total_words = 0
+        
+        with open(file_path, 'r', encoding='utf-8') as file:
+            for line in file:
+                words = line.strip().split()
+                for word in words:
+                    total_words += 1
+                    word = word.lower().strip(",.?!")  # 转小写并去除标点符号
+                    word_count[word] = word_count.get(word, 0) + 1
+        
+        return total_words, word_count
+    
+    # 用户输入文件路径
+    while True:
+        file_path = input("请输入文件路径: ")
+        if os.path.exists(file_path):
+            break
+        else:
+            print("文件不存在，请重新输入。")
+    
+    # 获取统计信息
+    total_words, word_count = word_statistics(file_path)
+    
+    # 打印结果
+    print(f"总单词数: {total_words}")
+    print("单词统计:")
+    for word, count in word_count.items():
+        print(f"{word}: {count}")
+    ```
+
+    
+
+    @tab Code 2
+
+    ```python
+    ```
+
+    
+
+    :::
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
