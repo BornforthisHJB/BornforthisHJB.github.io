@@ -53,6 +53,11 @@ export default sidebar({
 				"chapter02/33",
 				"chapter02/34",
 				"chapter02/35",
+				"chapter02/36",
+				"chapter02/37",
+				"chapter02/38",
+				"chapter02/39",
+				"chapter02/40",
 			],
 		},
 		{
