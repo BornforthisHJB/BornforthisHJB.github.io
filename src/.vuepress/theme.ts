@@ -11,17 +11,6 @@ export default hopeTheme({
     url: "https://bornforthis.cn/",
   },
 
-  // iconAssets: "fontawesome-with-brands",
-  iconPrefix: "iconfont icon-",
-  // navbarIcon: true,
-  // sidebarIcon: true,
-  iconAssets: [
-    // "//at.alicdn.com/t/c/font_3426793_24yf7lwsroo.css",
-    "https://bornforthis.cn/icon/iconfont.css",
-    // "fontawesome",
-    // "//at.alicdn.com/t/c/font_3426793_b8qrvh36wiq.css",
-  ],
-
   logo: "/aiyc.svg",
 
   repo: "https://github.com/AndersonHJB",
@@ -131,6 +120,12 @@ export default hopeTheme({
 
   
   plugins: {
+    icon: {
+      prefix: "iconfont icon-",
+      assets: [
+        "https://bornforthis.cn/icon/iconfont.css",
+      ],
+    },
     watermark: {
       enabled: true,
       watermarkOptions: {
