@@ -1090,6 +1090,49 @@ public class JFrameView extends JFrame implements IView {
 }
 ```
 
+@tab 3. 控制器调用示例（如有需要）
+
+```java
+// 如果你的控制器中需要调用：
+view.showMessage("操作成功！");
+
+// 或者
+view.showError("出现了一些错误！");
+```
+
+@tab Message
+
+```java
+// 只要控制器持有的是这个更新后的 IView 接口对象，并且底层是用 JFrameView 来实例化，就能正常调用并看到对话框弹出。
+// 例子（只展示核心片段）：
+@Override
+public void actionPerformed(ActionEvent e) {
+  switch (e.getActionCommand()) {
+    case "Echo Button":
+      String inputVal = view.getInputString();
+      if (inputVal.isEmpty()) {
+        // 如果用户没输入内容，就调用 showError 提示
+        view.showError("请输入有效的内容！");
+      } else {
+        model.setString(inputVal);
+        view.setEchoOutput(model.getString());
+        view.clearInputString();
+        // 也可以调用 showMessage 表示操作成功
+        view.showMessage("更新成功！");
+      }
+      break;
+    case "Exit Button":
+      System.exit(0);
+      break;
+    default:
+      // 其他情况
+      view.showError("未知命令：" + e.getActionCommand());
+  }
+}
+```
+
+
+
 :::
 
 **IView 要点**：
@@ -1107,7 +1150,7 @@ public class JFrameView extends JFrame implements IView {
 
 
 
-### 2.2 方案 2：删除对 `view.showMessage(...)` 的调用
+### 2.2 方案 2：删除对 `view.showMessage(...)` 的调用「推荐」
 
 如果**图形版**并不需要再以文字形式输出消息（比如不想弹对话框，也不想写到某个文本区），那就可以把**控制器**里的 `view.showMessage(...)` 相关行删掉或替换成其他逻辑。这样就不会再调用一个没有定义的方法，自然也就消除了“找不到符号”的问题。
 
@@ -1126,6 +1169,10 @@ public class JFrameView extends JFrame implements IView {
 
 在 `IView` 里加入：
 
+::: code-tabs
+
+@tab 简单版
+
 ```java
 import java.awt.event.KeyListener;
 
@@ -1139,15 +1186,378 @@ public interface IView {
 }
 ```
 
+@tab all-code
+
+```java
+import java.awt.event.ActionListener;
+import java.awt.event.KeyListener;
+
+/**
+ * 视图接口，定义 GUI 视图所需的最基本方法。
+ */
+public interface IView {
+  /**
+   * 返回用户在文本框中输入的字符串
+   */
+  String getInputString();
+
+  /**
+   * 清空文本框
+   */
+  void clearInputString();
+
+  /**
+   * 在界面上显示一个字符串（比如更新某个 label）
+   * @param s 要显示的内容
+   */
+  void setEchoOutput(String s);
+
+  /**
+   * 显示窗口
+   */
+  void display();
+
+  /**
+   * 提供给外部设置按钮监听器（用于处理按钮点击事件）
+   * @param listener 控制器传入的 ActionListener
+   */
+  void setListener(ActionListener listener);
+
+  /**
+   * 新增：在视图上注册键盘监听
+   * @param kbd 要注册的 KeyListener
+   */
+  void addKeyListener(KeyListener kbd);
+}
+```
 
 
 
+:::
+
+### 2. JFrameView 中实现
+
+::: code-tabs
+
+@tab 简单
+
+```java
+public class JFrameView extends JFrame implements IView {
+  ...
+  @Override
+  public void addKeyListener(KeyListener kbd) {
+    // 要求聚焦才能监听键盘，所以一般需要设置
+    this.setFocusable(true);
+    this.requestFocus();
+    super.addKeyListener(kbd);
+  }
+  ...
+}
+```
+
+@tab all-code
+
+```java
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyListener;
+
+/**
+ * JFrame 实现的具体视图类。
+ */
+public class JFrameView extends JFrame implements IView {
+  private final JLabel display;
+  private final JTextField input;
+  private final JButton echoButton;
+  private final JButton exitButton;
+
+  /**
+   * 构造函数
+   * @param caption 窗口标题
+   */
+  public JFrameView(String caption) {
+    super(caption);
+    this.setLayout(new FlowLayout());
+
+    // 初始化组件
+    display = new JLabel("初始状态");
+    this.add(display);
+
+    input = new JTextField(10);
+    this.add(input);
+
+    echoButton = new JButton("Echo");
+    echoButton.setActionCommand("Echo Button");
+    this.add(echoButton);
+
+    exitButton = new JButton("Exit");
+    exitButton.setActionCommand("Exit Button");
+    this.add(exitButton);
+
+    // 布局完毕后打包
+    this.pack();
+    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  }
+
+  @Override
+  public String getInputString() {
+    return input.getText();
+  }
+
+  @Override
+  public void clearInputString() {
+    input.setText("");
+  }
+
+  @Override
+  public void setEchoOutput(String s) {
+    display.setText(s);
+  }
+
+  @Override
+  public void display() {
+    this.setVisible(true);
+  }
+
+  @Override
+  public void setListener(ActionListener listener) {
+    // 把外部传进来的 ActionListener 添加到按钮上
+    echoButton.addActionListener(listener);
+    exitButton.addActionListener(listener);
+  }
+
+  /**
+   * 允许外部注册键盘监听器
+   * 通过 setFocusable(true) 和 requestFocus() 确保能捕获键盘事件
+   */
+  @Override
+  public void addKeyListener(KeyListener kbd) {
+    this.setFocusable(true);  // 允许当前组件获得键盘焦点
+    this.requestFocus();      // 主动请求焦点
+    super.addKeyListener(kbd);
+  }
+}
+
+```
 
 
 
+:::
+
+### 3. 在 Controller 中实现 KeyListener
+
+我们可以让 `Controller` 同时 `implements KeyListener`，或者写一个单独的类 `KeyboardHandler` 并在 Controller 中组合使用。下面是让 `Controller` 直接实现的例子。
+
+在原有的 `Controller` 基础上，增加 `implements KeyListener`，并实现相关方法（`keyTyped`, `keyPressed`, `keyReleased`）。以一个简单示例为演示：
+
+- 当用户敲击 `'d'` 键：切换文字颜色（这里仅在控制台打印提示，可自行改进到视图上）。
+- 当用户按下 `'c'` 键：把 Model 中的字符串大写显示到 View。
+- 当用户松开 `'c'` 键：恢复原有字符串。
+
+::: code-tabs
+
+@tab 简单
+
+```java
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+public class Controller implements ActionListener, KeyListener {
+  private final IModel model;
+  private final IView view;
+  private boolean colorRed = false; // 用于示例：是否已切换成红色
+
+  public Controller(IModel m, IView v) {
+    this.model = m;
+    this.view = v;
+    this.view.setListener(this);
+    this.view.addKeyListener(this);
+  }
+
+  public void start() {
+    view.display();
+  }
+
+  // 按钮事件
+  @Override
+  public void actionPerformed(ActionEvent e) {
+    ...
+  }
+
+  // 键盘事件
+  @Override
+  public void keyTyped(KeyEvent e) {
+    // 如果用户敲击 'd'，则切换颜色
+    if (e.getKeyChar() == 'd') {
+      // 这里仅做简单演示，可以让 view 提供 toggleColor() 等方法
+      colorRed = !colorRed;
+      if (colorRed) {
+        // 比如让标签设置成红色文字（需在 View 中提供一个接口或直接拿到 JLabel）
+        // 此处只是示例，不代表完整实现
+        System.out.println("切换为红色文字！");
+      } else {
+        System.out.println("切换回黑色文字！");
+      }
+    }
+  }
+
+  @Override
+  public void keyPressed(KeyEvent e) {
+    // 如果按下 'c' 键，把 model 中的字符串转大写并显示
+    if (e.getKeyCode() == KeyEvent.VK_C) {
+      String text = model.getString();
+      view.setEchoOutput(text.toUpperCase());
+    }
+  }
+
+  @Override
+  public void keyReleased(KeyEvent e) {
+    // 如果松开 'c' 键，则恢复原有字符串
+    if (e.getKeyCode() == KeyEvent.VK_C) {
+      String text = model.getString();
+      view.setEchoOutput(text);
+    }
+  }
+}
+```
+
+@tab all-code
+
+```java
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+/**
+ * GUI 控制器，负责响应按钮和键盘事件，并更新模型与视图。
+ */
+public class Controller implements ActionListener, KeyListener {
+  private final IModel model;
+  private final IView view;
+
+  // 用于示例：文字是否切换为红色
+  private boolean isRed = false;
+
+  /**
+   * 构造函数
+   * @param m 模型
+   * @param v 视图
+   */
+  public Controller(IModel m, IView v) {
+    this.model = m;
+    this.view = v;
+
+    // 把自己注册为视图的按钮监听器
+    this.view.setListener(this);
+
+    // 把自己注册为视图的键盘监听器
+    this.view.addKeyListener(this);
+  }
+
+  /**
+   * 启动程序
+   */
+  public void start() {
+    view.display();
+  }
+
+  /**
+   * 按钮点击事件
+   */
+  @Override
+  public void actionPerformed(ActionEvent e) {
+    switch (e.getActionCommand()) {
+      case "Echo Button":
+        // 读取视图的输入设置到模型，再让视图回显
+        String input = view.getInputString();
+        model.setString(input);
+        view.setEchoOutput(model.getString());
+        // 可自行决定要不要清空输入框
+        view.clearInputString();
+        break;
+
+      case "Exit Button":
+        System.exit(0);
+        break;
+
+      default:
+        // do nothing
+    }
+  }
+
+  /**
+   * 键盘事件 - keyTyped
+   * 当用户敲击某个键并释放（能输入字符的键），会触发 keyTyped
+   */
+  @Override
+  public void keyTyped(KeyEvent e) {
+    // 用户敲击 'd' 时，示例：切换文字颜色
+    if (e.getKeyChar() == 'd') {
+      isRed = !isRed;
+      if (isRed) {
+        System.out.println("切换为红色文字（示例，可改为真实 GUI 操作）");
+      } else {
+        System.out.println("切换回黑色文字（示例，可改为真实 GUI 操作）");
+      }
+    }
+  }
+
+  /**
+   * 键盘事件 - keyPressed
+   * 当用户按下某个键时触发
+   */
+  @Override
+  public void keyPressed(KeyEvent e) {
+    // 如果按下 'c' 键，把 model 中字符串转大写显示到 view
+    if (e.getKeyCode() == KeyEvent.VK_C) {
+      String text = model.getString();
+      view.setEchoOutput(text.toUpperCase());
+    }
+  }
+
+  /**
+   * 键盘事件 - keyReleased
+   * 当用户松开某个键时触发
+   */
+  @Override
+  public void keyReleased(KeyEvent e) {
+    // 如果松开 'c' 键，则恢复原有字符串
+    if (e.getKeyCode() == KeyEvent.VK_C) {
+      String text = model.getString();
+      view.setEchoOutput(text);
+    }
+  }
+}
+
+```
 
 
 
+:::
+
+这样，当用户按 `d`、`c` 键时，就能触发特定逻辑。
+
+```java
+import controller.Controller;
+import model.IModel;
+import model.Model;
+import view.IView;
+import view.JFrameView;
+
+public class MainGUI {
+  public static void main(String[] args) {
+    IModel model = new Model();                 // 创建模型
+    IView view = new JFrameView("GUI with KeyListener"); // 创建视图
+    Controller controller = new Controller(model, view); // 创建控制器
+    controller.start();                         // 启动应用
+  }
+}
+
+```
 
 
 
