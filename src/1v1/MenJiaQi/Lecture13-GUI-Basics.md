@@ -1539,6 +1539,8 @@ public class Controller implements ActionListener, KeyListener {
 
 :::
 
+### 4. MainGUI
+
 这样，当用户按 `d`、`c` 键时，就能触发特定逻辑。
 
 ```java
@@ -1558,6 +1560,410 @@ public class MainGUI {
 }
 
 ```
+
+
+
+## Stage 8: 使用 Map 来映射更多键盘/按钮动作
+
+若想灵活地让用户自定义热键，可以把键值和对应动作用 `Map`（或 `ActionMap`, `InputMap`）来维护。核心思想是：
+
+1. **将原本 `switch`/`if` 里的逻辑转换为“数据”**（如 map，把 `KeyEvent` 或 `char` 映射到具体要执行的 `Runnable`）。
+2. 这样能够在运行时根据配置文件或用户选项改变“按键 → 动作”的映射。
+
+::: tabs
+
+@tab 1. IModel.java
+
+```java
+/**
+ * 模型接口，定义对字符串的基本操作
+ */
+public interface IModel {
+  /**
+   * 获取当前存储的字符串
+   * @return 模型中的字符串
+   */
+  String getString();
+
+  /**
+   * 设置新的字符串
+   * @param str 要设置的新字符串
+   */
+  void setString(String str);
+}
+```
+
+@tab Model.java
+
+```java
+/**
+ * IModel 的具体实现，内部用一个 String 来存储数据
+ */
+public class Model implements IModel {
+  private String data;
+
+  /**
+   * 无参构造函数，初始化为空字符串
+   */
+  public Model() {
+    this.data = "";
+  }
+
+  @Override
+  public String getString() {
+    return this.data;
+  }
+
+  @Override
+  public void setString(String str) {
+    this.data = str;
+  }
+}
+```
+
+@tab IView.java
+
+这里的视图接口需要支持以下功能：
+
+1. 获取文本框内容
+2. 清空文本框
+3. 设置并显示标签上的文本
+4. 显示窗口
+5. 设置按钮监听（ActionListener）
+6. 注册键盘监听（KeyListener）
+
+```java
+import java.awt.event.ActionListener;
+import java.awt.event.KeyListener;
+
+/**
+ * 视图接口，定义界面可提供的操作
+ */
+public interface IView {
+  /**
+   * @return 用户在文本框中输入的字符串
+   */
+  String getInputString();
+
+  /**
+   * 清空文本框
+   */
+  void clearInputString();
+
+  /**
+   * 设置界面上标签显示的内容
+   * @param s 要显示的内容
+   */
+  void setEchoOutput(String s);
+
+  /**
+   * 显示整个窗口
+   */
+  void display();
+
+  /**
+   * 为按钮设置监听器（在 Controller 里实现处理逻辑）
+   * @param listener 要注册的监听器
+   */
+  void setListener(ActionListener listener);
+
+  /**
+   * 在视图上注册键盘监听器
+   * @param kbd 要注册的 KeyListener
+   */
+  void addKeyListener(KeyListener kbd);
+
+  /**
+   * 切换颜色（本示例仅演示，实际可用来改变文字/背景等）
+   * 在配合键盘事件时用于演示颜色切换
+   */
+  void toggleColor();
+}
+```
+
+@tab JFrameView.java
+
+这是一个基于 Swing 的简单视图实现。支持两个按钮、一个文本框和一个标签，同时提供对键盘监听的支持，并在示例中提供了 `toggleColor` 方法用于演示颜色切换（把标签文字在红色和黑色之间切换）。
+
+```java
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyListener;
+
+/**
+ * JFrame 视图的具体实现
+ */
+public class JFrameView extends JFrame implements IView {
+  private final JLabel display;       // 用于显示文本
+  private final JTextField input;     // 用户输入的文本框
+  private final JButton echoButton;   // Echo 按钮
+  private final JButton exitButton;   // Exit 按钮
+
+  // 为了演示 toggleColor，记录当前是否为红色
+  private boolean isRed = false;
+
+  public JFrameView(String caption) {
+    super(caption);
+    this.setLayout(new FlowLayout());
+
+    // 标签
+    display = new JLabel("初始状态");
+    this.add(display);
+
+    // 文本输入框
+    input = new JTextField(10);
+    this.add(input);
+
+    // Echo 按钮
+    echoButton = new JButton("Echo");
+    echoButton.setActionCommand("Echo Button");
+    this.add(echoButton);
+
+    // Exit 按钮
+    exitButton = new JButton("Exit");
+    exitButton.setActionCommand("Exit Button");
+    this.add(exitButton);
+
+    // 设置窗口大小、默认关闭操作等
+    this.pack();
+    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  }
+
+  @Override
+  public String getInputString() {
+    return input.getText();
+  }
+
+  @Override
+  public void clearInputString() {
+    input.setText("");
+  }
+
+  @Override
+  public void setEchoOutput(String s) {
+    display.setText(s);
+  }
+
+  @Override
+  public void display() {
+    this.setVisible(true);
+  }
+
+  @Override
+  public void setListener(ActionListener listener) {
+    echoButton.addActionListener(listener);
+    exitButton.addActionListener(listener);
+  }
+
+  @Override
+  public void addKeyListener(KeyListener kbd) {
+    // 必须先让当前组件可以聚焦并请求焦点，否则无法接收键盘事件
+    this.setFocusable(true);
+    this.requestFocus();
+    super.addKeyListener(kbd);
+  }
+
+  @Override
+  public void toggleColor() {
+    if (isRed) {
+      display.setForeground(Color.BLACK);
+    } else {
+      display.setForeground(Color.RED);
+    }
+    isRed = !isRed;
+  }
+}
+```
+
+@tab KeyboardHandler.java
+
+通过 `Map` 将键盘事件与相应的逻辑（`Runnable`) 映射起来，避免在 `keyPressed / keyReleased / keyTyped` 中写大量 `if` / `switch` 语句。
+
+```java
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * 一个通用的键盘监听器，可以通过 Map 配置各个按键对应的动作
+ */
+public class KeyboardHandler implements KeyListener {
+  // keyTyped 用 char 做 key
+  private Map<Character, Runnable> keyTypedMap = new HashMap<>();
+  // keyPressed/keyReleased 用 int 做 key
+  private Map<Integer, Runnable> keyPressedMap = new HashMap<>();
+  private Map<Integer, Runnable> keyReleasedMap = new HashMap<>();
+
+  public void setKeyTypedMap(Map<Character, Runnable> map) {
+    this.keyTypedMap = map;
+  }
+
+  public void setKeyPressedMap(Map<Integer, Runnable> map) {
+    this.keyPressedMap = map;
+  }
+
+  public void setKeyReleasedMap(Map<Integer, Runnable> map) {
+    this.keyReleasedMap = map;
+  }
+
+  @Override
+  public void keyTyped(KeyEvent e) {
+    char c = e.getKeyChar();
+    if (keyTypedMap.containsKey(c)) {
+      keyTypedMap.get(c).run();
+    }
+  }
+
+  @Override
+  public void keyPressed(KeyEvent e) {
+    int code = e.getKeyCode();
+    if (keyPressedMap.containsKey(code)) {
+      keyPressedMap.get(code).run();
+    }
+  }
+
+  @Override
+  public void keyReleased(KeyEvent e) {
+    int code = e.getKeyCode();
+    if (keyReleasedMap.containsKey(code)) {
+      keyReleasedMap.get(code).run();
+    }
+  }
+}
+```
+
+@tab Controller.java
+
+1. 继承/实现 `ActionListener` 用于处理按钮点击事件。
+
+2. 使用 `KeyboardHandler` 来管理键盘事件映射。
+
+3. 将输入框内容设置到 `model` 或让 `view` 执行对应操作。
+
+```java
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Controller 负责连接 Model 和 View，处理用户交互
+ */
+public class Controller implements ActionListener {
+  private final IModel model;
+  private final IView view;
+
+  // 构造时注入 model 和 view
+  public Controller(IModel model, IView view) {
+    this.model = model;
+    this.view = view;
+
+    // 告诉 View：按钮事件交给当前 Controller 来处理
+    this.view.setListener(this);
+
+    // 配置键盘事件
+    configureKeyboard();
+
+    // 最后显示视图
+    this.view.display();
+  }
+
+  /**
+   * 为键盘事件配置对应的 Runnable 动作
+   */
+  private void configureKeyboard() {
+    // 创建并配置 KeyboardHandler
+    KeyboardHandler kbd = new KeyboardHandler();
+
+    // 1) keyTyped 映射（char）
+    Map<Character, Runnable> typedMap = new HashMap<>();
+    // 当用户输入 'r' 字符时，切换颜色
+    typedMap.put('r', () -> {
+      view.toggleColor();
+    });
+
+    // 2) keyPressed 映射（int）
+    Map<Integer, Runnable> pressedMap = new HashMap<>();
+    // 当按下 C 时，将模型中的字符串转为大写显示
+    pressedMap.put(KeyEvent.VK_C, () -> {
+      String text = model.getString();
+      view.setEchoOutput(text.toUpperCase());
+    });
+
+    // 3) keyReleased 映射（int）
+    Map<Integer, Runnable> releasedMap = new HashMap<>();
+    // 当松开 C 时，恢复原始大小写
+    releasedMap.put(KeyEvent.VK_C, () -> {
+      String text = model.getString();
+      view.setEchoOutput(text);
+    });
+
+    // 将这三类映射传给 KeyboardHandler
+    kbd.setKeyTypedMap(typedMap);
+    kbd.setKeyPressedMap(pressedMap);
+    kbd.setKeyReleasedMap(releasedMap);
+
+    // 将这个 KeyboardHandler 注册到 view
+    this.view.addKeyListener(kbd);
+  }
+
+  @Override
+  public void actionPerformed(ActionEvent e) {
+    switch (e.getActionCommand()) {
+      case "Echo Button":
+        // 将输入框内容写入 Model，并让 View 显示
+        String input = view.getInputString();
+        model.setString(input);
+        view.setEchoOutput(model.getString());
+        // 清空输入框
+        view.clearInputString();
+        break;
+      case "Exit Button":
+        System.exit(0);
+        break;
+      default:
+        // 未识别的命令，不做处理
+    }
+  }
+}
+```
+
+@tab MainStage8.java
+
+最后是一个演示用的 `main` 函数，创建 `Model`, `View`, `Controller`，并运行程序。
+
+```java
+public class MainStage8 {
+  public static void main(String[] args) {
+    IModel model = new Model();
+    IView view = new JFrameView("Stage 8 Demo (Keyboard Maps)");
+
+    // 创建 Controller，即可自动配置好键盘、按钮等逻辑，并显示窗口
+    new Controller(model, view);
+
+    // 程序将保持运行，直到用户点击 "Exit" 按钮或手动关闭窗口
+  }
+}
+```
+
+
+
+:::
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
