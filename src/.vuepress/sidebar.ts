@@ -79,6 +79,7 @@ export default sidebar({
 			children: [
 				"supplement/01-Java-String-contains-Method",
 				"supplement/02-Java-String-charAt-Method",
+				"/1v1/MenJiaQi/Lecture13-GUI-Basics",
 			],
 		},
 		{
