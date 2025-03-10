@@ -67,3 +67,17 @@ toc: true
 
 
 **到这一步，就可以再次去手动开关一次系统代理！**
+
+## 5. 更新相关
+
+::: tabs
+
+@tab 1. 电脑手动更新
+
+![](ClashVerge/image-3.png)
+
+@tab 2. iPhone
+
+![](ClashVerge/image-4.png)
+
+:::
