@@ -31,3 +31,10 @@ toc: true
 
 :::
 
+## 2. 登陆信息💻
+
+1. 链接🔗：[https://fv.bornforthis.cn/user_login](https://fv.bornforthis.cn/user_login)
+2. 账号：你微信昵称
+3. 密码：你微信号
+4. 之后过期续费后，还是相同的账户密码
+5. 欢迎推荐购买，推荐一个月
