@@ -11,16 +11,16 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.20",
-    "@vuepress/plugin-watermark": "2.0.0-rc.82",
-    "katex": "^0.16.21",
-    "mermaid": "^11.4.1",
+    "@vuepress/bundler-vite": "2.0.0-rc.23",
+    "@vuepress/plugin-watermark": "2.0.0-rc.109",
+    "katex": "^0.16.22",
+    "mermaid": "^11.6.0",
     "recaptcha-v3": "^1.11.3",
-    "sass-embedded": "^1.85.1",
-    "vue": "^3.5.13",
-    "vuepress": "2.0.0-rc.20",
-    "vuepress-plugin-copyright2": "2.0.0-rc.18",
-    "vuepress-theme-hope": "2.0.0-rc.74"
+    "sass-embedded": "^1.89.2",
+    "vue": "^3.5.17",
+    "vuepress": "2.0.0-rc.23",
+    "vuepress-plugin-copyright": "1.0.2",
+    "vuepress-theme-hope": "2.0.0-rc.93"
   },
   "dependencies": {
     "@waline/client": "2.15.8"

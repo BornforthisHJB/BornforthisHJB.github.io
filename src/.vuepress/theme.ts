@@ -4,7 +4,6 @@ import sidebar from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://bornforthis.cn/",
-  headerDepth: 6,
 
   author: {
     name: "AndersonHJB",

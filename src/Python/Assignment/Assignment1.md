@@ -11,7 +11,7 @@ timeline: true
 image: false
 navbar: true
 sidebarIcon: true
-headerDepth: 5
+
 comment: true
 lastUpdated: true
 editLink: false
