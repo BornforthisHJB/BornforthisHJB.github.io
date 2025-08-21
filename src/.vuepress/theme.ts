@@ -39,7 +39,7 @@ export default hopeTheme({
       "/Python/basequestion/": ["aiyc", "ydn", "Vector", "yh", "zy", "xxy", "lcy", "kai", "ytq", "JJ"],
       "/Python/Python-core-technology-and-practice/": ["aiyc", "kai"],
       // "/Python/NoteBook/": ["aiyc", "lcy", "ydn", "ytq", "lyf", 'kk', 'Julie', '1v1', 'lxj', 'Loyal'],
-      "/Python/Lab/Lab01": ["aiyc", "SscramblerR", "mr", "r"],
+      "/Python/Lab/Lab01": ["aiyc", "SscramblerR", "mr", "r", "Leo"],
       // "/Python/NoteBook/05-python-list": ["aiyc", "lcy", "ydn", "ytq", "lyf", 'kk', 'Julie', '1v1', 'lxj'],
     },
   },
